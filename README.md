@@ -9,7 +9,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Temple Healer Costs](#temple-healer-costs)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
-  - [TinTin++](#tintin++)
+  - [TinTin++](#tintin)
 
 ## Directions
 - Aliuna: 11e3s6e4s5e
