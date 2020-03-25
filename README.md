@@ -7,6 +7,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Temple Upgrade Costs](#temple-upgrade-costs)
 - [Quest Rewards](#quest-rewards)
 - [Temple Healer Costs](#temple-healer-costs)
+- [Prompts](#prompts)
 
 ## Directions
 - Aliuna: 11e3s6e4s5e
@@ -121,3 +122,11 @@ A collection of resources and information surrounding the Adventures Unlimited M
 | mana | restore mana | 10g | 
 | bless | bless spell | 50g | 
 | armor | armor spell | 15g | 
+
+## Prompts
+
+** Monk Prompt **
+![monk prompt example](./monk-prompt-example.png)
+```
+prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{Dqp {r%X{Dtnl] ( {r%p {D) {r%B%c
+```h
