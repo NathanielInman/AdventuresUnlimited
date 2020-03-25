@@ -125,8 +125,9 @@ A collection of resources and information surrounding the Adventures Unlimited M
 
 ## Prompts
 
-** Monk Prompt **
+**Monk Prompt**
+
 ![monk prompt example](./monkPromptExample.png)
 ```
 prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{Dqp {r%X{Dtnl] ( {r%p {D) {r%B%c
-```h
+```
