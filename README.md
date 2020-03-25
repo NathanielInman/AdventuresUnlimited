@@ -8,6 +8,8 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Quest Rewards](#quest-rewards)
 - [Temple Healer Costs](#temple-healer-costs)
 - [Prompts](#prompts)
+- [MUD Client Configuration](#mud-client-configuration)
+  - [TinTin++](#tintin++)
 
 ## Directions
 - Aliuna: 11e3s6e4s5e
@@ -134,4 +136,22 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 
 // next line is for tintin++ configuration of the same prompt
 #prompt {[%1/%2hp %3/%4mp %5/%6mv %7/%8chi %9/%10q %11qp %12tnl] (%13) %14} {<109>[<119>%1<109>/<019>%2<109>hp <159>%3<109>/<059>%4<109>mp <129>%5<109>/<029>%6<109>mv <169>%7<109>/<069>%8<109>chi <139>%9<109>/<039>%10<109>q <019>%11<109>qp <019>%12<109>tnl] (<119>%13<109>) <119>%14}
+```
+
+## MUD Client Configuration
+### Tintin++
+```
+// log into au when tt++ opens automatically
+#event {PROGRAM START} {#ses AdventuresUnlimited tharel.net 5005;y;####USERNAME####;####PASSWORD####;y}
+
+// separate input from output
+#split
+
+// f1 and f2 hotkeys
+#macro {\eOP} {take flask pocket;drink flask;drink flask;drink flask;drink flask;put flask pocket;}
+#macro {\eOQ} {order ####PETNAME#### rescue ####USERNAME####}
+
+// some basic aliases, this is for a quickly - hence `haste` and `slow`
+#alias {sleep} {stand;take blanket pocket;drop blanket;r blanket;slow;sl}
+#alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
