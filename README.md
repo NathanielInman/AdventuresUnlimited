@@ -19,6 +19,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
+- [Items For Leveling](#items-for-leveling)
 
 ## Directions
 - Aliuna: 11e3s6e4s5e
@@ -332,3 +333,19 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 #alias {sleep} {stand;take blanket pocket;drop blanket;r blanket;slow;sl}
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
+
+## Items For Leveling
+
+- [Lights Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Lights)
+- [Head Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Head-Armor)
+- [Neck Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Neck-Armor)
+- [Shoulder Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Shoulder-Armor)
+- [Torso Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Torso-Armor)
+- [Waist Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Waist-Armor)
+- [Arms Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Arms-Armor)
+- [Wrist Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Wrist-Armor)
+- [Hand Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Hands-Armor)
+- [Finger Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Finger-Armor)
+- [Leg Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Leg-Armor)
+- [Held Items](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Held-Items)
+- [Floater Items](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Floater-Items)
