@@ -3,10 +3,11 @@ A collection of resources and information surrounding the Adventures Unlimited M
 
 ## Table of Contents
 - [Directions](#directions)
-- [Temple Rank Costs](#temple-rank-costs)
-- [Temple Upgrade Costs](#temple-upgrade-costs)
+- [Temple](#temple)
+  - [Temple Rank Costs](#temple-rank-costs)
+  - [Temple Upgrade Costs](#temple-upgrade-costs)
+  - [Temple Healer Costs](#temple-healer-costs)
 - [Quest Rewards](#quest-rewards)
-- [Temple Healer Costs](#temple-healer-costs)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
@@ -52,7 +53,10 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - Woodfell Forest: 5w9n4e;open north;6n3e1s
 - Zzukkenathaft: 5w17s5e7s2e1s2e1d1w1s2d
 
-## Temple Rank Costs
+## Temple
+A collection of helpful information related to AU temples
+
+### Temple Rank Costs
 | rank | good name | neutral name | evil name | devotion required |
 | --- | --- | --- | --- | --- |
 | 1 | follower | follower | follower | 0 |
@@ -66,7 +70,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 | 9 | Pol'sion | Moy'dian | Ure'fiel | 70,000 |
 | 10 | Ili'sion | Auy'dian | Ezt'fiel | 100,000 |
 
-## Temple Upgrade Costs
+### Temple Upgrade Costs
 | stat | rank | cost |
 | --- | --- | --- | 
 | hp | apostle / defender / conspirator | 900g |
@@ -84,6 +88,22 @@ A collection of resources and information surrounding the Adventures Unlimited M
 | mv | Rha'sion / Nuy'dian / Tza'fiel | 215g |
 | hit | Rha'sion / Nuy'dian / Tza'fiel | 2750g |
 | dam | Rha'sion / Nuy'dian / Tza'fiel | 4700g |
+
+### Temple Healer Costs
+| name | description | cost |
+| --- | --- | --- | 
+| light | cure light wounds | 10g | 
+| serious | cure serious wounds | 15g | 
+| critic | cure critical wounds | 25g | 
+| heal | healing spell | 50g | 
+| blind | cure blindness | 20g | 
+| disease | cure disease | 15g | 
+| poison | cure poison | 25g | 
+| uncurse | remove curse from equipment | 50g | 
+| refresh | restore movement | 5g | 
+| mana | restore mana | 10g | 
+| bless | bless spell | 50g | 
+| armor | armor spell | 15g | 
 
 ## Quest Rewards
 | name | cost |
@@ -108,22 +128,6 @@ A collection of resources and information surrounding the Adventures Unlimited M
 | an adventurer's everfull flask | 1,500qp | 
 | beacon rod | 2,000qp | 
 | writ of entitlement | 2,000qp | 
-
-## Temple Healer Costs
-| name | description | cost |
-| --- | --- | --- | 
-| light | cure light wounds | 10g | 
-| serious | cure serious wounds | 15g | 
-| critic | cure critical wounds | 25g | 
-| heal | healing spell | 50g | 
-| blind | cure blindness | 20g | 
-| disease | cure disease | 15g | 
-| poison | cure poison | 25g | 
-| uncurse | remove curse from equipment | 50g | 
-| refresh | restore movement | 5g | 
-| mana | restore mana | 10g | 
-| bless | bless spell | 50g | 
-| armor | armor spell | 15g | 
 
 ## Prompts
 
