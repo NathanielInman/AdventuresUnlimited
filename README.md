@@ -7,6 +7,14 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Temple Rank Costs](#temple-rank-costs)
   - [Temple Upgrade Costs](#temple-upgrade-costs)
   - [Temple Healer Costs](#temple-healer-costs)
+- [Monk](#monk)
+  - [Monk Mantras](#monk-mantras)
+  - [Monk Fight Moves](#monk-fight-moves)
+  - [Monk Techniques](#monk-techniques)
+  - [Monk Abilities](#monk-abilities)
+  - [Monk Chi](#monk-chi)
+  - [Monk Stances](#monk-stances)
+  - [Monk Combos](#monk-combos)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
@@ -104,6 +112,171 @@ A collection of helpful information related to AU temples
 | mana | restore mana | 10g | 
 | bless | bless spell | 50g | 
 | armor | armor spell | 15g | 
+
+## Monk
+
+### Monk Mantras
+| name | description |
+| --- | --- | 
+| spirit invisibility | invisibility | 
+| stone hands | damage enhancement | 
+| spirit eyes | detect magic, detect invis, detect hidden | 
+| stone skin | ac self buff | 
+| levitate | fly | 
+| strength enhance | giant strength | 
+| metabolize | haste, cures some illnesses and maledictions | 
+| know object | identify item | 
+| iron hands | damage enhancement | 
+| celestial path | limited gate to adjacent areas, gate out of norecall rooms | 
+| know speech | translate | 
+| steel hands | damage enhancement | 
+| life cloak | regenerate | 
+| healing touch | heal anybody regardless of where they are | 
+| harden | halves slash, blunt or pierce damage | 
+| flaming hands | damage enhancement | 
+| spirit hands | damage enhancement | 
+
+| name | level | mana | awareness | combat | focus | body | spirit |
+| --- | --- | --- | --- | --- | --- | --- | --- | 
+| spirit invisibility | 13 | 20 | 1 | 0 | 0 | 1 | 1 |
+| stone hands | 19 | 35 | 0 | 2 | 1 | 1 | 1 |
+| spirit eyes | 22 | 20 | 2 | 0 | 1 | 0 | 2 |
+| stone skin | 29 | 20 | 2 | 0 | 1 | 2 | 0 |
+| levitate | 30 | 30 | 0 | 2 | 2 | 2 | 2 |
+| strength enhance | 30 | 20 | 2 | 0 | 0 | 3 | 2 |
+| metabolize | 37 | 30 | 2 | 2 | 0 | 3 | 2 |
+| know object | 37 | 20 | 2 | 0 | 3 | 0 | 3 |
+| iron hands | 39 | 50 | 0 | 3 | 0 | 2 | 2 |
+| celestial path | 40 | 25 | 4 | 0 | 3 | 3 | 3 |
+| know speech | 42 | 20 | 2 | 0 | 3 | 0 | 3 |
+| steel hands | 59 | 50 | 2 | 3 | 2 | 2 | 2 |
+| life cloak | 60 | 50 | 3 | 0 | 2 | 3 | 3 |
+| healing touch | 65 | 100 | 2 | 0 | 2 | 3 | 2 |
+| harden | 65 | 80 | 4 | 4 | 4 | 4 | 4 |
+| flaming hands | 79 | 50 | 2 | 3 | 2 | 3 | 3 |
+| spirit hands | 99 | 50 | 4 | 4 | 0 | 4 | 4 |
+
+### Monk Fight Moves
+| name | level | requirements |
+| --- | --- | --- |
+| knee | 1 | none |
+| punch | 1 | none |
+| elbow | 1 | none |
+| kick | 1 | none |
+| bodyblow | 10 | none |
+| trip | 10 | none |
+| stamp | 17 | kick |
+| swiftkick | 18 | kick |
+| grapple | 23 | bodyblow |
+| hook | 24 | none |
+| charge | 26 | bodyblow |
+| backfist | 27 | bodyblow, punch |
+| uppercut | 31 | grapple, punch |
+| forearm | 34 | punch, charge |
+| hurl | 42 | bodyblow, punch |
+| jumpkick | 49 | kick, bodyblow |
+| hammer | 49 | kick, charge |
+| sweep | 51 | kick, bodyblow |
+| spinkick | 55 | sweep |
+| headbutt | 57 | none |
+
+### Monk Techniques
+| name | level | requirements |
+| --- | --- | --- |
+| thrust kick | 12 | kick, bodyblow |
+| knee | 17 | knee |
+| elbow | 23 | punch, thrust kick |
+| shin kick | 27 | kick, stamp |
+| back fist | 33 | backfist, elbow |
+| palm strike | 39 | backfist |
+| sweep | 43 | shin kick |
+| spin kick | 61 | spinkick, thrust kick |
+| double punch | 67 | punch, backfist |
+| triple kick | 73 | kick, spinkick |
+
+### Monk Abilities
+| name | level | requirements | effects |
+| --- | --- | --- | --- |
+| awareness 1 | 1 | 10 practices | unknown |
+| awareness 2 | 15 | 20 practices | unknown |
+| awareness 3 | 30 | 30 practices | unknown |
+| awareness 4 | 45 | 40 practices | unknown |
+| combat 1 | 1 | 10 practices | +3 damroll, +3 hitroll |
+| combat 2 | 15 | 20 practices | +3 damroll, +3 hitroll |
+| combat 3 | 30 | 30 practices | +3 damroll, +3 hitroll |
+| combat 4 | 45 | 40 practices | +3 damroll, +3 hitroll |
+| focus 1 | 1 | 10 practices | longer, more reliable chi |
+| focus 2 | 15 | 20 practices | longer, more reliable chi |
+| focus 3 | 30 | 30 practices | longer, more reliable chi |
+| focus 4 | 45 | 40 practices | longer, more reliable chi |
+| body 1 | 1 | 10 practices | unknown |
+| body 2 | 15 | 20 practices | unknown |
+| body 3 | 30 | 30 practices | unknown |
+| body 4 | 45 | 40 practices | unknown |
+| spirit 1 | 1 | 10 practices | longer, more reliable chi |
+| spirit 2 | 15 | 20 practices | longer, more reliable chi |
+| spirit 3 | 30 | 30 practices | longer, more reliable chi |
+| spirit 4 | 45 | 40 practices | longer, more reliable chi |
+
+### Monk Chi
+| chi level | trains | player level | mana | other |
+| --- | --- | --- | --- | --- |
+| 1 | 0 | 1 | 5 | |
+| 2 | 10 | 15 | 10 | usage of pressure point |
+| 3 | 15 | 30 | 15 | |
+| 4 | 20 | 45 | 20 | |
+| 5 | 25 | 45 | 25 | |
+| 6 | 30 | 60 | 30 | |
+
+### Monk Stances
+Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can grandmaster 1 stance per 10 levels.
+
+1. apprentice
+2. trainee
+3. student
+4. fairely experienced
+5. well trained
+6. highly skilled
+7. expert
+8. master
+9. grandmaster
+
+| name | requirement | description |
+| --- | --- | --- |
+| viper | none | aggressive fast combat |
+| crane | none | semi-aggresive blocking combat |
+| crab | none | semi-aggressive defensive combat |
+| mongoose | none | semi-aggresive dodging combat |
+| bull | none | aggresive strong combat |
+| mantis | crane, viper | defensive & counter attacks |
+| dragon | bull, crab | strong & defensive combat |
+| tiger | bull, viper | strong & fast combat |
+| monkey | crane, mongoose | nullify advantages of opponents stance |
+| swallow | mongoose, crab | most defensive of all stances |
+| grandmaster | mantis, dragon, tiger, swallow, monkey | most offennsive & defensive of all stances |
+
+### Monk Combos
+The aboslute key to mastering monk combat is leveraging all the techniques to perform combinations that deliver drastic effect.
+
+| name | combo (required aura) | effects |
+| --- | --- | --- |
+| silence | elbow (red), palm strike | target can no talk, read scrolls or cast magic |
+| knock | knee (bright blue), elbow (red), thrust kick | chance to knock mob/player out cold |
+| knee spike | thrust kick (red), knee | tiny damage |
+| trip | shin kick (yellow), sweep | slightly helps prevent fleeing, tiny damage |
+| leg sweep | sweep (red), shin kick | slightly helps prevent fleeing, tiny damage |
+| elbow strike | palm strike (bright red), elbow | average damage |
+| burning hands | back fist (blue), elbow (red), double punch | average damage |
+| thrust kick | spin kick (gold), thrust kick | average damage |
+| forcekick | thrust kick (red), thrust kick (bright red), triple kick | average damage |
+| back fist | elbow (red), back fist | average damage |
+| glowing hands | elbow (red), elbow (red), double punch | average damage |
+| elbow strike | shin kick (yellow), thrust kick (red), elbow | high damage |
+| lightning kick | thrust kick (red), thrust kick (bright red), spin kick | high damage |
+| palm strike | back fist (blue), palm strike | high damage |
+| flaming hands | double punch (white), double punch | massive damage |
+| lightning kick | triple kick (gold), double kick (white), spin kick | massive damage |
+| palm strike | spin kick (gold), back fist (blue), palm strike | massive damage |
 
 ## Quest Rewards
 | name | cost |
