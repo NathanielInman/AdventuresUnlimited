@@ -40,10 +40,10 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - Hythian Forest: 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e
 - Illianathoren Pass: 8e7n1w1n1e5n3e3n4e
 - Jasporin: 5w9n4e6n6w2s6s2w1n1w3n
+- Littlefist Glade: **41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n** *(new!)*
 - Longbottom's Shire: 5w9n4e;open north;6n6w3n2w3n2e
-- Littlefist Glade: **41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n** *new!*
-- Mines of Noal'xyn: 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w
 - Mines of Markov: 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n
+- Mines of Noal'xyn: 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w
 - Nerezza: 7e1d2s1e7s7e2n3w
 - Plains of Blodai: 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w
 - Racomva: 5w17s5e7s2e1s2e1d3n1e1u2n
