@@ -49,7 +49,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 1 - 20 | Heishnum Desert | 4e;open east;7e3s6e4s2e1s |
 | 1 - 20 | The Eastern Moors | 8e1n |
 | 5 - 8 | School of Faith | 6w6s1w |
-| 5 - 10 | T'leisins Pool | Unknown |
+| 5 - 10 | T'leisins Pool | 8w4s2w;search north;open n;1n2w2s |
 | 5 - 10 | The Stone Quarry | 14w1s |
 | 5 - 10 | Nerezza | 7e1d2s1e7s7e2n3w |
 | 5 - 10 | Equinilis | 12w4n1w |
