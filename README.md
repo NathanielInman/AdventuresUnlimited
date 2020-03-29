@@ -37,7 +37,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | ALL | The Western Trails | 42w2s |
 | ALL | The Western Road | 17w |
 | ALL | Western Tharel | Unknown |
-| OOC | The Lounge | Unknown |
+| OOC | The Lounge | 3n;go ooc |
 | ALL | The Dwarven Forest | Unknown |
 | ALL | Tucker's Hotel | Unknown |
 | ALL | Beaches | 5w17s5e7s2e1s2e1d2s1e1s2e5s1w2s2e1d2e1s1e1s |
@@ -45,17 +45,17 @@ All `directions` start from `Market Square` within `Naerlan`.
 | ALL | The Neighborhood | Unknown |
 | ALL | Ether | Unknown |
 | ALL | Naerlan | Starting Position |
-| 1 - 5 | Survival Training | Unknown |
+| 1 - 5 | Survival Training | 2e1n |
 | 1 - 20 | Heishnum Desert | 4e;open east;7e3s6e4s2e1s |
-| 1 - 20 | The Eastern Moors | Unknown |
+| 1 - 20 | The Eastern Moors | 8e1n |
 | 5 - 8 | School of Faith | 6w6s1w |
 | 5 - 10 | T'leisins Pool | Unknown |
 | 5 - 10 | The Stone Quarry | 14w1s |
 | 5 - 10 | Nerezza | 7e1d2s1e7s7e2n3w |
 | 5 - 10 | Equinilis | 12w4n1w |
-| 5 - 10 | Lunatic's Alley | Unknown |
+| 5 - 10 | Lunatic's Alley | 5w17s2e1n |
 | 5 - 10 | Gypsy Camp | 8w2s |
-| 5 - 10 | Naerlan Graveyard | Unknown |
+| 5 - 10 | Naerlan Graveyard | 6w10s1w1s |
 | 5 - 10 | Woodfell Forest | 5w9n4e;open north;6n3e1s |
 | 5 - 15 | The Mines of Markov | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n |
 | 5 - 15 | Shrine of Barbades | 4e9n5w6n9e2n1w1n1w1u |
