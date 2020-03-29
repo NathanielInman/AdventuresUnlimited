@@ -223,11 +223,11 @@ A collection of helpful information related to AU temples
 | chi level | trains | player level | mana | other |
 | --- | --- | --- | --- | --- |
 | 1 | 0 | 1 | 5 | |
-| 2 | 10 | 15 | 10 | usage of pressure point |
-| 3 | 15 | 30 | 15 | |
-| 4 | 20 | 45 | 20 | |
-| 5 | 25 | 45 | 25 | |
-| 6 | 30 | 60 | 30 | |
+| 2 | 10 | 11 | 10 | usage of pressure point |
+| 3 | 15 | 21 | 15 | |
+| 4 | 20 | 31 | 20 | |
+| 5 | 25 | 41 | 25 | |
+| 6 | 30 | 51 | 30 | |
 
 ### Monk Stances
 Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can grandmaster 1 stance per 10 levels.
