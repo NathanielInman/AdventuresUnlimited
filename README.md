@@ -51,6 +51,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - School of Faith: 6w6s1w
 - Sewers: 4s2w1d
 - Shrine of Barbades: 4e9n5w6n9e2n1w1n1w1u
+- Tark Valley: **9w1d5n11w;open n;1n;open w;1w;open n;n** *(new!)*
 - The Bog of Durlah: 7e1d2w2n12w2s
 - The Hand of Markov: 7s4e10s4w9s2w2s2w
 - The Renault House: 7w2n2w;search n
