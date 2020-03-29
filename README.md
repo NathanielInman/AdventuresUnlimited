@@ -126,13 +126,20 @@ A collection of helpful information related to AU temples
 | a timber wolf | 9 | 8g10s | Naerlan |
 | a tabby cat | 10 | 10g0s | Hand of Markov |
 | a small lion cub | 11 | 12g10s | Aliuna |
+| the female human slave | 11 | 12g10s | The Underdark |
 | a huge dog | 14 | 19g60s | Aliuna |
 | a white chicken | 15 | 22g50s | Hand of Markov |
 | a young serpent | 18 | 32g40s | Aliuna |
+| the orc slave | 18 | 32g40s | The Underdark |
+| the goblin slave | 18 | 32g40s | The Underdark |
+| a male human slave | 19 | 36g10s | The Underdark |
 | a huge, bloated spider | 20 | 40g0s | Hand of Markov |
+| the kobold | 20 | 40g0s | The Underdark |
 | a small bear cub | 21 | 44g10s | Aliuna |
 | a crafty brown stoat | 22 | 48g40s | Northern Barreston |
+| the elven slave | 24 | 57g60s | The Underdark |
 | an alert black and tan bloodhound | 26 | 67g60s | Northern Barreston |
+| the dwarven slave | 26 | 67g60s | The Underdark |
 | a grey peregrine falcon | 30 | 90g0s | Northern Barreston |
 
 ## Monk
