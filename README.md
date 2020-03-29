@@ -74,7 +74,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 10 - 15 | The Bog of Durlah | 7e1d2w2n12w2s |
 | 10 - 15 | Hagarth | 4e17s4w9s2w2s1w1s |
 | 10 - 20 | Tark Valley | 9w1d5n11w;open n;1n;open w;1w;open n;n |
-| 10 - 20 | Mt Ka'lri | Unknown |
+| 10 - 20 | Mt Ka'lri | 4e9n5w6n6w8s2w1n2w4s1s;search west;open w;1qw |
 | 10 - 20 | Tzimosh's Camp | 5w9n4e6n11e3n1e1n |
 | 10 - 20 | Hythian Forest | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
 | 10 - 20 | Burrowholme | 5w9n4e;open north;5n4w1n |
@@ -93,7 +93,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 15 - 25 | Longbottom's Shire | 5w9n4e;open north;6n6w3n2w3n2e |
 | 15 - 25 | Fidael's Lake | 9w2d5n2w1n |
 | 15 - 25 | Zzukenathaft | 5w17s5e7s2e1s2e1d1w1s2d |
-| 15 - 30 | Du'Rahath | Unknown |
+| 15 - 30 | Du'Rahath | 16w2s1e2s1e |
 | 15 - 30 | Mines of Noal'xyn | 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w |
 | 15 - 30 | Caldera Ruins | 16w2s4w |
 | 15 - 30 | Shaolin Temple |  7e1d2s1e7s1w |
