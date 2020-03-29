@@ -7,6 +7,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Temple Rank Costs](#temple-rank-costs)
   - [Temple Upgrade Costs](#temple-upgrade-costs)
   - [Temple Healer Costs](#temple-healer-costs)
+- [Pets](#pets)
 - [Monk](#monk)
   - [Monk Mantras](#monk-mantras)
   - [Monk Fight Moves](#monk-fight-moves)
@@ -113,6 +114,23 @@ A collection of helpful information related to AU temples
 | mana | restore mana | 10g | 
 | bless | bless spell | 50g | 
 | armor | armor spell | 15g | 
+
+## Pets
+| name | level | cost | location |
+| --- | --- | --- | --- |
+| a large white rat | 1 | 0g10s | Naerlan |
+| a scruffy dog | 3 | 0g90s | Naerlan |
+| a boa constrictor | 5 | 2g50s | Naerlan |
+| a hunting dog | 5 | 2g50s | Hand of Markov |
+| a rottweiler | 7 | 4g90s | Naerlan |
+| a timber wolf | 9 | 8g10s | Naerlan |
+| a tabby cat | 10 | 10g0s | Hand of Markov |
+| a small lion cub | 11 | 12g10s | Aliuna |
+| a huge dog | 14 | 19g60s | Aliuna |
+| a white chicken | 15 | 22g50s | Hand of Markov |
+| a young serpent | 18 | 32g40s | Aliuna |
+| a huge, bloated spider | 20 | 40g0s | Hand of Markov |
+| a small bear cub | 21 | 44g10s | Aliuna |
 
 ## Monk
 
