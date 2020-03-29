@@ -105,7 +105,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 20 - 30 | The Meridian | Unknown |
 | 20 - 35 | Dleivain | Unknown |
 | 20 - 55 | Yrenelania | Unknown |
-| 25 - 30 | Goblin Pass | Unknown |
+| 25 - 30 | Goblin Pass | e e e e n n n n n n n n n w w w w w n n n n n n e e e e e e e e e e e n n n e e e e e n e e e n n n n n n n w w n n n n n n n n n w n w w w n n n n n n n w w n |
 | 25 - 35 | The Hamlet of Elsfar | Unknown |
 | 25 - 35 | Blackeye's Camp | Unknown |
 | 25 - 45 | Valeda | Unknown |
