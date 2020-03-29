@@ -27,6 +27,7 @@ The following are unlisted or possibly removed areas that may need to be removed
 - Plains of Blodai: 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w
 - Ruined Gerighelm: 5w9n4e6n6w3n2w3n2w
 
+All `directions` start from `Market Square` within `Naerlan`.
 | level | name | directions |
 | --- | --- | --- |
 | ALL | The Western Beaches | Unknown |
