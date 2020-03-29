@@ -23,47 +23,152 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Items For Leveling](#items-for-leveling)
 
 ## Directions
-- Aliuna: 11e3s6e4s5e
-- Avian Tree: 5w9n4e6n11e3n1e1n
-- Barreston: 5w9n4e6n6w3n2w3n2w
-- Beaches: 5w17s5e7s2e1s2e1d2s1e1s2e5s1w2s2e1d2e1s1e1s
-- Bose'nisten: 5w9n4e6n6w2s
-- Brovlancor: 4e9n5w6n6w8s2w1n2w4s1w4s2e1s
-- Burrowholme: 5w9n4e;open north;5n4w1n
-- Cartwrights Farm: 9w1d5n7w2n1e
-- Deltherian: 8e7n
-- Equinilis: 12w4n1w
-- Goblin Stronghold: 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s
-- Grugnison Catacombs: 5w17s5e9s2w2s1w1n2w1n1d
-- Gypsy Camp: 8w2s
-- Heishnum Desert: 4e;open east;7e3s6e4s2e1s
-- Hythian Forest: 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e
-- Illianathoren Pass: 8e7n1w1n1e5n3e3n4e
-- Jasporin: 5w9n4e6n6w2s6s2w1n1w3n
-- Littlefist Glade: **41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n** *(new!)*
-- Longbottom's Shire: 5w9n4e;open north;6n6w3n2w3n2e
-- Mines of Markov: 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n
-- Mines of Noal'xyn: 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w
-- Nerezza: 7e1d2s1e7s7e2n3w
+The following are unlisted or possibly removed areas that may need to be removed or added to the `areas` list within the game:
 - Plains of Blodai: 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w
-- Racomva: 5w17s5e7s2e1s2e1d3n1e1u2n
 - Ruined Gerighelm: 5w9n4e6n6w3n2w3n2w
-- School of Faith: 6w6s1w
-- Sewers: 4s2w1d
-- Shrine of Barbades: 4e9n5w6n9e2n1w1n1w1u
-- Tark Valley: **9w1d5n11w;open n;1n;open w;1w;open n;n** *(new!)*
-- The Bog of Durlah: 7e1d2w2n12w2s
-- The Hand of Markov: 7s4e10s4w9s2w2s2w
-- The Renault House: 7w2n2w;search n
-- The Stone Quarry: 14w1s
-- The Western Road: 17w
-- The Western Trails: 42w2s
-- Travellers' Rest: 11e3s5w
-- Tzimosh's Camp: 5w9n4e6n11e3n1e1n
-- Underdark: 4e9n5w6n3e2s1e1s2w
-- Volencymale: 12w4n1e
-- Woodfell Forest: 5w9n4e;open north;6n3e1s
-- Zzukkenathaft: 5w17s5e7s2e1s2e1d1w1s2d
+
+| level | name | directions |
+| --- | --- | --- |
+| ALL | The Western Beaches | Unknown |
+| ALL | The Western Ocean | Unknown |
+| ALL | The Western Coastline | Unknown |
+| ALL | More Western Ocean | Unknown |
+| ALL | The Western Trails | 42w2s |
+| ALL | The Western Road | 17w |
+| ALL | Western Tharel | Unknown |
+| OOC | The Lounge | Unknown |
+| ALL | The Dwarven Forest | Unknown |
+| ALL | Tucker's Hotel | Unknown |
+| ALL | Beaches | 5w17s5e7s2e1s2e1d2s1e1s2e5s1w2s2e1d2e1s1e1s |
+| ALL | Underground Highway | Unknown |
+| ALL | The Neighborhood | Unknown |
+| ALL | Ether | Unknown |
+| ALL | Naerlan | Starting Position |
+| 1 - 5 | Survival Training | Unknown |
+| 1 - 20 | Heishnum Desert | 4e;open east;7e3s6e4s2e1s |
+| 1 - 20 | The Eastern Moors | Unknown |
+| 5 - 8 | School of Faith | 6w6s1w |
+| 5 - 10 | T'leisins Pool | Unknown |
+| 5 - 10 | The Stone Quarry | 14w1s |
+| 5 - 10 | Nerezza | 7e1d2s1e7s7e2n3w |
+| 5 - 10 | Equinilis | 12w4n1w |
+| 5 - 10 | Lunatic's Alley | Unknown |
+| 5 - 10 | Gypsy Camp | 8w2s |
+| 5 - 10 | Naerlan Graveyard | Unknown |
+| 5 - 10 | Woodfell Forest | 5w9n4e;open north;6n3e1s |
+| 5 - 15 | The Mines of Markov | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n |
+| 5 - 15 | Shrine of Barbades | 4e9n5w6n9e2n1w1n1w1u |
+| 5 - 15 | Deltherian | 8e7n |
+| 5 - 15 | Taverns of Naerlan | Unknown |
+| 5 - 15 | Travellers' Rest | 11e3s5w |
+| 5 - 15 | Brovlancor | 4e9n5w6n6w8s2w1n2w4s1w4s2e1s |
+| 5 - 30 | Naerlan Sewers | 4s2w1d |
+| 5 - 40 | The City of Aliuna | 11e3s6e4s5e |
+| 8 - 22 | Haythor Dungeon | Unknown |
+| 10 - 15 | The Drow Mines | Unknown |
+| 10 - 15 | Cartwrights Farm | 9w1d5n7w2n1e |
+| 10 - 15 | Volencymale | 12w4n1e |
+| 10 - 15 | The Renault House | 7w2n2w;search n |
+| 10 - 15 | Bose'nisten | 5w9n4e6n6w2s |
+| 10 - 15 | The Bog of Durlah | 7e1d2w2n12w2s |
+| 10 - 15 | Hagarth | Unknown |
+| 10 - 20 | Tark Valley | 9w1d5n11w;open n;1n;open w;1w;open n;n |
+| 10 - 20 | Mt Ka'lri | Unknown |
+| 10 - 20 | Tzimosh's Camp | 5w9n4e6n11e3n1e1n |
+| 10 - 20 | Hythian Forest | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
+| 10 - 20 | Burrowholme | 5w9n4e;open north;5n4w1n |
+| 10 - 20 | Goblin Stronghold | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
+| 10 - 20 | Grungel | Unknown |
+| 10 - 25 | The Hand of Markov | 7s4e10s4w9s2w2s2w |
+| 10 - 30 | Illianathoren Pass | 8e7n1w1n1e5n3e3n4e |
+| 10 - 30 | Khetes | Unknown |
+| 10 - 40 | Northern Barreston | 5w9n4e6n6w3n2w3n2w |
+| 10 - 40 | Lower Barreston | Unknown |
+| 10 - 40 | Upper Barreston | Unknown |
+| 13 - 30 | Sanctuary | Unknown |
+| 13 - 50 | Underdark | 4e9n5w6n3e2s1e1s2w |
+| 15 - 25 | Littlefist Glade | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
+| 15 - 25 | Jasporin | 5w9n4e6n6w2s6s2w1n1w3n |
+| 15 - 25 | Longbottom's Shire | 5w9n4e;open north;6n6w3n2w3n2e |
+| 15 - 25 | Fidael's Lake | Unknown |
+| 15 - 25 | Zzukenathaft | 5w17s5e7s2e1s2e1d1w1s2d |
+| 15 - 30 | Du'Rahath | Unknown |
+| 15 - 30 | Mines of Noal'xyn | 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w |
+| 15 - 30 | Caldera Ruins | Unknown |
+| 15 - 30 | Shaolin Temple | Unknown |
+| 15 - 30 | Grungnison Catacombs | 5w17s5e9s2w2s1w1n2w1n1d |
+| 20 - 20 | The Frozen Waste | Unknown |
+| 20 - 30 | Racomva | 5w17s5e7s2e1s2e1d3n1e1u2n |
+| 20 - 30 | Mirage City | Unknown |
+| 20 - 30 | The Avian Tree | 5w9n4e6n11e3n1e1n |
+| 20 - 30 | The Meridian | Unknown |
+| 20 - 35 | Dleivain | Unknown |
+| 20 - 55 | Yrenelania | Unknown |
+| 25 - 30 | Goblin Pass | Unknown |
+| 25 - 35 | The Hamlet of Elsfar | Unknown |
+| 25 - 35 | Blackeye's Camp | Unknown |
+| 25 - 45 | Valeda | Unknown |
+| 30 - 40 | Castle of Burden | Unknown |
+| 30 - 40 | Whirlpool | Unknown |
+| 30 - 40 | R'tescra | Unknown |
+| 30 - 40 | Reskel | Unknown |
+| 30 - 45 | Quickling Village | Unknown |
+| 30 - 50 | Darathorn's Pit | Unknown |
+| 35 - 45 | The Sandcastle | Unknown |
+| 35 - 45 | Oterion | Unknown |
+| 35 - 45 | Eirenole | Unknown |
+| 35 - 50 | Tyyrinn Village | Unknown |
+| 35 - 50 | The City of Terrason | Unknown |
+| 35 - 50 | Uchduruk | Unknown |
+| 40 - 45 | Eirenole Thistle | Unknown |
+| 40 - 50 | The Four Seasons | Unknown |
+| 40 - 50 | Schwartz Glacier | Unknown |
+| 40 - 50 | Mystery Manor | Unknown |
+| 40 - 55 | Pyrainn Mountains | Unknown |
+| 40 - 60 | Draek'le | Unknown |
+| 45 - 55 | Kaer Tzoun | Unknown |
+| 45 - 55 | Beehive | Unknown |
+| 45 - 60 | Xuergothe Castle | Unknown |
+| 45 - 60 | Eirenole Castle | Unknown |
+| 50 - 60 | Heishaer City | Unknown |
+| 50 - 60 | Breyard Village | Unknown |
+| 50 - 60 | The Acoma Estate | Unknown |
+| 55 - 65 | The Overlook Grounds | Unknown |
+| 55 - 65 | The Overlook Towers | Unknown |
+| 55 - 65 | Xe'lith | Unknown |
+| 55 - 70 | Ruins of Khezauch | Unknown |
+| 55 - 75 | Necropolis | Unknown |
+| 60 - 70 | Caranos' Tomb | Unknown |
+| 60 - 70 | Rivendale | Unknown |
+| 60 - 75 | Tiny Rapids | Unknown |
+| 60 - 85 | Lost Kingdoms | Unknown |
+| 65 - 75 | Forest of Dreams | Unknown |
+| 65 - 75 | The Overlook Maze | Unknown |
+| 65 - 75 | Ktharstu | Unknown |
+| 65 - 80 | The Forbidden Wastes | Unknown |
+| 65 - 80 | Ship in a Bottle | Unknown |
+| 70 - 80 | Connerty Crossing | Unknown |
+| 70 - 80 | Wildlife Refuge | Unknown |
+| 70 - 85 | Tekkit Hill | Unknown |
+| 70 - 85 | Ruins of Khezaderth | Unknown |
+| 70 - 85 | Meneth Naur | Unknown |
+| 70 - 90 | Fireblast Mountains | Unknown |
+| 75 - 85 | The Overlook Citadel | Unknown |
+| 75 - 90 | Vlauchauch | Unknown |
+| 75 - 90 | The Haze | Unknown |
+| 75 - 100 | Drakyri Isle | Unknown |
+| 80 - 90 | Shadowbox | Unknown |
+| 85 - 95 | The White Shrine | Unknown |
+| 85 - 95 | Sildarak's Crypt | Unknown |
+| 85 - 110 | Urbyrtnol | Unknown |
+| 90 - 95 | Eirenole Valley | Unknown |
+| 90 - 110 | Ayasil | Unknown |
+| 90 - 110 | Arthmore | Unknown |
+| HERO | Kallenpesh Palace | Unknown |
+| HERO | Kallendale Forest | Unknown |
+| HERO | The Hall of Heroes | Unknown |
+| HERO | Il'kaethe | Unknown |
+| HERO | The Giants Outpost | Unknown |
 
 ## Temple
 A collection of helpful information related to AU temples
