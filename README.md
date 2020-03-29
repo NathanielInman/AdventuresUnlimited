@@ -100,7 +100,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 15 - 30 | Grungnison Catacombs | 5w17s5e9s2w2s1w1n2w1n1d |
 | 20 - 20 | The Frozen Waste | Unknown |
 | 20 - 30 | Racomva | 5w17s5e7s2e1s2e1d3n1e1u2n |
-| 20 - 30 | Mirage City | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e1n1e3s1e1s2e2n2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;go pool;go mirage |
+| 20 - 30 | Mirage City | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e 1n1e3s1e1s2e2n2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;go pool;go mirage |
 | 20 - 30 | The Avian Tree | 5w9n4e6n11e3n1e1n |
 | 20 - 30 | The Meridian | 11e3s6e4s23e2n4e |
 | 20 - 35 | Dleivain | 4e9n5w6n9e2n4w1n1w1n;go doorl |
