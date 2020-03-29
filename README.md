@@ -41,6 +41,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - Illianathoren Pass: 8e7n1w1n1e5n3e3n4e
 - Jasporin: 5w9n4e6n6w2s6s2w1n1w3n
 - Longbottom's Shire: 5w9n4e;open north;6n6w3n2w3n2e
+- Littlefist Glade: w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w w s w w w s e s s s s s w w n s w s s w w w n n n w w w s w n w w w w w w w w n n w w s s w w n n n w w w w w n n n n n n n (in progress of cleaning up)
 - Mines of Noal'xyn: 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w
 - Mines of Markov: 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n
 - Nerezza: 7e1d2s1e7s7e2n3w
