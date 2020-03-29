@@ -329,7 +329,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 #macro {\eOP} {take flask pocket;drink flask;drink flask;drink flask;drink flask;put flask pocket;}
 #macro {\eOQ} {order ####PETNAME#### rescue ####USERNAME####}
 
-// some basic aliases, this is for a quickly - hence `haste` and `slow`
+// some basic aliases, this is for a quickling - hence `haste` and `slow`
 #alias {sleep} {stand;take blanket pocket;drop blanket;r blanket;slow;sl}
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
