@@ -138,9 +138,15 @@ A collection of helpful information related to AU temples
 | a small bear cub | 21 | 44g10s | Aliuna |
 | a crafty brown stoat | 22 | 48g40s | Northern Barreston |
 | the elven slave | 24 | 57g60s | The Underdark |
+| a black-skinned griffin | 25 | 62g50s | Terrason |
 | an alert black and tan bloodhound | 26 | 67g60s | Northern Barreston |
 | the dwarven slave | 26 | 67g60s | The Underdark |
 | a grey peregrine falcon | 30 | 90g0s | Northern Barreston |
+| a small fire dragon | 30 | 90g0s | Terrason |
+| a glowing-eyed serpent | 35 | 122g50s | Terrason |
+| a living whip of flame | 40 | 160g0s | Terrason |
+| a spectre of light | 45 | 202g50s | Terrason |
+| an enchanted gauntlet of power | 50 | 250g0s | Terrason |
 
 ## Monk
 
