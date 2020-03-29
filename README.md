@@ -131,6 +131,9 @@ A collection of helpful information related to AU temples
 | a young serpent | 18 | 32g40s | Aliuna |
 | a huge, bloated spider | 20 | 40g0s | Hand of Markov |
 | a small bear cub | 21 | 44g10s | Aliuna |
+| a crafty brown stoat | 22 | 48g40s | Northern Barreston |
+| an alert black and tan bloodhound | 26 | 67g60s | Northern Barreston |
+| a grey peregrine falcon | 30 | 90g0s | Northern Barreston |
 
 ## Monk
 
