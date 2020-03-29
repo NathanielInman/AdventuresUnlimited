@@ -72,38 +72,38 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 10 - 15 | The Renault House | 7w2n2w;search n |
 | 10 - 15 | Bose'nisten | 5w9n4e6n6w2s |
 | 10 - 15 | The Bog of Durlah | 7e1d2w2n12w2s |
-| 10 - 15 | Hagarth | Unknown |
+| 10 - 15 | Hagarth | 4e17s4w9s2w2s1w1s |
 | 10 - 20 | Tark Valley | 9w1d5n11w;open n;1n;open w;1w;open n;n |
 | 10 - 20 | Mt Ka'lri | Unknown |
 | 10 - 20 | Tzimosh's Camp | 5w9n4e6n11e3n1e1n |
 | 10 - 20 | Hythian Forest | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
 | 10 - 20 | Burrowholme | 5w9n4e;open north;5n4w1n |
 | 10 - 20 | Goblin Stronghold | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
-| 10 - 20 | Grungel | Unknown |
+| 10 - 20 | Grungel | 7e1d2s1e3s1w |
 | 10 - 25 | The Hand of Markov | 7s4e10s4w9s2w2s2w |
 | 10 - 30 | Illianathoren Pass | 8e7n1w1n1e5n3e3n4e |
-| 10 - 30 | Khetes | Unknown |
+| 10 - 30 | Khetes | 11e5n2e1s7e3n |
 | 10 - 40 | Northern Barreston | 5w9n4e6n6w3n2w3n2w |
 | 10 - 40 | Lower Barreston | Unknown |
 | 10 - 40 | Upper Barreston | Unknown |
-| 13 - 30 | Sanctuary | Unknown |
+| 13 - 30 | Sanctuary | 7e1d2w2n9w5s2e2s2re |
 | 13 - 50 | Underdark | 4e9n5w6n3e2s1e1s2w |
 | 15 - 25 | Littlefist Glade | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
 | 15 - 25 | Jasporin | 5w9n4e6n6w2s6s2w1n1w3n |
 | 15 - 25 | Longbottom's Shire | 5w9n4e;open north;6n6w3n2w3n2e |
-| 15 - 25 | Fidael's Lake | Unknown |
+| 15 - 25 | Fidael's Lake | 9w2d5n2w1n |
 | 15 - 25 | Zzukenathaft | 5w17s5e7s2e1s2e1d1w1s2d |
 | 15 - 30 | Du'Rahath | Unknown |
 | 15 - 30 | Mines of Noal'xyn | 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w |
-| 15 - 30 | Caldera Ruins | Unknown |
-| 15 - 30 | Shaolin Temple | Unknown |
+| 15 - 30 | Caldera Ruins | 16w2s4w |
+| 15 - 30 | Shaolin Temple |  7e1d2s1e7s1w |
 | 15 - 30 | Grungnison Catacombs | 5w17s5e9s2w2s1w1n2w1n1d |
 | 20 - 20 | The Frozen Waste | Unknown |
 | 20 - 30 | Racomva | 5w17s5e7s2e1s2e1d3n1e1u2n |
-| 20 - 30 | Mirage City | Unknown |
+| 20 - 30 | Mirage City | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e1n1e3s1e1s2e2n2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;go pool;go mirage |
 | 20 - 30 | The Avian Tree | 5w9n4e6n11e3n1e1n |
-| 20 - 30 | The Meridian | Unknown |
-| 20 - 35 | Dleivain | Unknown |
+| 20 - 30 | The Meridian | 11e3s6e4s23e2n4e |
+| 20 - 35 | Dleivain | 4e9n5w6n9e2n4w1n1w1n;go doorl |
 | 20 - 55 | Yrenelania | Unknown |
 | 25 - 30 | Goblin Pass | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
 | 25 - 35 | The Hamlet of Elsfar | Unknown |
