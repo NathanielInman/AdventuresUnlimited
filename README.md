@@ -208,6 +208,11 @@ A collection of helpful information related to AU temples
 | mv | Rha'sion / Nuy'dian / Tza'fiel | 215g |
 | hit | Rha'sion / Nuy'dian / Tza'fiel | 2750g |
 | dam | Rha'sion / Nuy'dian / Tza'fiel | 4700g |
+| hp | Kru'sion / Ley'dian / Rte'fiel | 750g |
+| wp | Kru'sion / Ley'dian / Rte'fiel | 750g |
+| mv | Kru'sion / Ley'dian / Rte'fiel | 165g |
+| hit | Kru'sion / Ley'dian / Rte'fiel | 2700g |
+| dam | Kru'sion / Ley'dian / Rte'fiel | 4650g |
 
 ### Temple Healer Costs
 | name | description | cost |
