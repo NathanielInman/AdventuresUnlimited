@@ -250,14 +250,18 @@ A collection of helpful information related to AU temples
 | a male human slave | 19 | 36g10s | The Underdark |
 | a huge, bloated spider | 20 | 40g0s | Hand of Markov |
 | the kobold | 20 | 40g0s | The Underdark |
+| a large vulture | 20 | 40g0s | Mirage City |
 | a small bear cub | 21 | 44g10s | Aliuna |
 | a crafty brown stoat | 22 | 48g40s | Northern Barreston |
 | the elven slave | 24 | 57g60s | The Underdark |
+| a giant scorpion | 25 | 62g50s | Mirage City |
 | a black-skinned griffin | 25 | 62g50s | Terrason |
 | an alert black and tan bloodhound | 26 | 67g60s | Northern Barreston |
 | the dwarven slave | 26 | 67g60s | The Underdark |
+| a large tarantula | 27 | 72g90s | Mirage City |
 | a grey peregrine falcon | 30 | 90g0s | Northern Barreston |
 | a small fire dragon | 30 | 90g0s | Terrason |
+| a large cobra | 30 | 90g0s | Mirage City |
 | a glowing-eyed serpent | 35 | 122g50s | Terrason |
 | a living whip of flame | 40 | 160g0s | Terrason |
 | a spectre of light | 45 | 202g50s | Terrason |
