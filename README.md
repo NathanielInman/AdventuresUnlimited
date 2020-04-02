@@ -110,7 +110,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 25 - 30 | Goblin Pass | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
 | 25 - 35 | The Hamlet of Elsfar | Unknown |
 | 25 - 35 | Blackeye's Camp | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
-| 25 - 45 | Valeda | Unknown |
+| 25 - 45 | Valeda | 4e9n5w6n11e3n5e1n3e9n |
 | 30 - 40 | Castle of Burden | Unknown |
 | 30 - 40 | Whirlpool | Unknown |
 | 30 - 40 | R'tescra | Unknown |
@@ -193,26 +193,31 @@ A collection of helpful information related to AU temples
 ### Temple Upgrade Costs
 | stat | rank | cost |
 | --- | --- | --- | 
-| hp | apostle / defender / conspirator | 900g |
-| wp | apostle / defender / conspirator | 900g |
-| mv | apostle / defender / conspirator | 315g |
-| hit | apostle / defender / conspirator | 2850g |
-| dam | apostle / defender / conspirator | 4800g |
-| hp | champion / guardian / fiend | 850g |
-| wp | champion / guardian / fiend | 850g |
-| mv | champion / guardian / fiend | 265g |
-| hit | champion / guardian / fiend | 2800g |
-| dam | champion / guardian / fiend | 4750g |
-| hp | Rha'sion / Nuy'dian / Tza'fiel | 800g |
-| wp | Rha'sion / Nuy'dian / Tza'fiel | 800g |
-| mv | Rha'sion / Nuy'dian / Tza'fiel | 215g |
-| hit | Rha'sion / Nuy'dian / Tza'fiel | 2750g |
-| dam | Rha'sion / Nuy'dian / Tza'fiel | 4700g |
-| hp | Kru'sion / Ley'dian / Rte'fiel | 750g |
-| wp | Kru'sion / Ley'dian / Rte'fiel | 750g |
-| mv | Kru'sion / Ley'dian / Rte'fiel | 165g |
-| hit | Kru'sion / Ley'dian / Rte'fiel | 2700g |
-| dam | Kru'sion / Ley'dian / Rte'fiel | 4650g |
+| hp | 5: apostle / defender / conspirator | 900g |
+| wp | 5: apostle / defender / conspirator | 900g |
+| mv | 5: apostle / defender / conspirator | 315g |
+| hit | 5: apostle / defender / conspirator | 2850g |
+| dam | 5: apostle / defender / conspirator | 4800g |
+| hp | 6: champion / guardian / fiend | 850g |
+| wp | 6: champion / guardian / fiend | 850g |
+| mv | 6: champion / guardian / fiend | 265g |
+| hit | 6: champion / guardian / fiend | 2800g |
+| dam | 6: champion / guardian / fiend | 4750g |
+| hp | 7: Rha'sion / Nuy'dian / Tza'fiel | 800g |
+| wp | 7: Rha'sion / Nuy'dian / Tza'fiel | 800g |
+| mv | 7: Rha'sion / Nuy'dian / Tza'fiel | 215g |
+| hit | 7: Rha'sion / Nuy'dian / Tza'fiel | 2750g |
+| dam | 7: Rha'sion / Nuy'dian / Tza'fiel | 4700g |
+| hp | 8: Kru'sion / Ley'dian / Rte'fiel | 750g |
+| wp | 8: Kru'sion / Ley'dian / Rte'fiel | 750g |
+| mv | 8: Kru'sion / Ley'dian / Rte'fiel | 165g |
+| hit | 8: Kru'sion / Ley'dian / Rte'fiel | 2700g |
+| dam | 8: Kru'sion / Ley'dian / Rte'fiel | 4650g |
+| hp | 9: Pol'sion / Moy'dian / Ure'fiel | 700g |
+| wp | 9: Pol'sion / Moy'dian / Ure'fiel | 700g |
+| mv | 9: Pol'sion / Moy'dian / Ure'fiel | 115g |
+| hit | 9: Pol'sion / Moy'dian / Ure'fiel | 2650g |
+| dam | 9: Pol'sion / Moy'dian / Ure'fiel | 4600g |
 
 ### Temple Healer Costs
 | name | description | cost |
