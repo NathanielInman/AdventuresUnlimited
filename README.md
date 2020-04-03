@@ -621,3 +621,4 @@ None yet.
 | a dark-trimmed amethyst | 14 | 12g51s | wis +2 | goblin stronghold |
 | a dark-trimmed sapphire | 14 | 13g63s | str +2 | goblin stronghold |
 | a dark-trimmed pearl | 14 | 11g85s | con +2 | goblin stronghold |
+| an aviak eye | 30 | 14g85s | str +1, con +1, dex +1 | the avian tree |
