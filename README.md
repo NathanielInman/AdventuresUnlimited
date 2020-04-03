@@ -20,7 +20,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
-- [Potions, Wands, Staves & Scrolls](#potions-wands-staves-&-scrolls)
+- [Potions Wands Staves & Scrolls](#potions-wands-staves-and-scrolls)
 - [Items For Leveling](#items-for-leveling)
 
 ## Directions
@@ -493,7 +493,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
 
-## Potions, Wands, Staves & Scrolls
+## Potions Wands Staves and Scrolls
 
 | name | required level | item level | cost | found in | description |
 | --- | --- | --- | --- | --- | --- |
