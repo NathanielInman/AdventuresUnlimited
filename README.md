@@ -20,6 +20,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
+- [Potions, Wands, Staves & Scrolls](#potions-wands-staves-&-scrolls)
 - [Items For Leveling](#items-for-leveling)
 
 ## Directions
@@ -491,6 +492,27 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 #alias {sleep} {stand;take blanket pocket;drop blanket;r blanket;slow;sl}
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
+
+## Potions, Wands, Staves & Scrolls
+
+| name | required level | item level | cost | found in | description |
+| --- | --- | --- | --- | --- | --- |
+| a potion of protection | 5 | 10 | 2g0s | naerlan | armor |
+| a small seed | 5 | 15 | 4g0s | naerlan | farsight |
+| a potion of revealing | 7 | 15 | 2g90s | naerlan | detect invis, detect magic, detect hidden |
+| a dry ivy leaf | 7 | 12 | 4g50s | naerlan | create spring, cure disease |
+| a potion of sickness removal | 8 | 14 | 5g50s | naerlan | cure poison, cure light, cure disease |
+| a potion of sight | 8 | 13 | 2g30s | naerlan | cure blindness, infravision |
+| an elixir of negation | 9 | 20 | 8g30s | naerlan | cancellation |
+| a dirty root | 9 | 14 | 5g0s | naerlan | refresh, floating disc |
+| a simple sycamore wand | 10 | 10 | 4g0s | aliuna | invisibility x 2 |
+| a swirling maple wand | 10 | 14 | 15g0s | aliuna | faerie fog x 2 |
+| a feather | 10 | 15 | 8g70s | naerlan | fly x 1 |
+| an elixir of tranquility | 11 | 20 | 8g0s | naerlan | sanctuary |
+| a pink willow wand | 14 | 17 | 10g0s | aliuna | faerie fire x 3 |
+| a pink & white oak wand | 14 | 17 | 20g0s | aliuna | sleep x 2 |
+| a brilliant white wand of ash | 14 | 15 | 50g0s | aliuna | sanctuary x 2 |
+| a potion of crifus' favor | 15 | 5 | 3g90s | naerlan | cure critical, bless |
 
 ## Items For Leveling
 
