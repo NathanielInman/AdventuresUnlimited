@@ -22,6 +22,20 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [TinTin++](#tintin)
 - [Potions Wands Staves & Scrolls](#potions-wands-staves-and-scrolls)
 - [Items For Leveling](#items-for-leveling)
+  - [Light Items](#light-items)
+  - [Head Armor](#head-armor)
+  - [Neck Armor](#neck-armor)
+  - [Shoulder Armor](#shoulder-armor)
+  - [Torso Armor](#torso-armor)
+  - [Waist Armor](#waist-armor)
+  - [Arms Armor](#arms-armor)
+  - [Wrist Armor](#wrist-armor)
+  - [Hand Armor](#hand-armor)
+  - [Finger Armor](#finger-armor)
+  - [Leg Armor](#leg-armor)
+  - [Feet Armor](#feet-armor)
+  - [Held Items](#held-items)
+  - [Floater Items](#floater-items)
 
 ## Directions
 The following are unlisted or possibly removed areas that may need to be removed or added to the `areas` list within the game:
@@ -495,7 +509,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 
 ## Potions Wands Staves and Scrolls
 
-| name | required level | item level | cost | found in | description |
+| name | req lvl | item lvl | cost | found in | description |
 | --- | --- | --- | --- | --- | --- |
 | a potion of protection | 5 | 10 | 2g0s | naerlan | armor |
 | a small seed | 5 | 15 | 4g0s | naerlan | farsight |
@@ -516,16 +530,94 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 
 ## Items For Leveling
 
-- [Lights Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Lights)
-- [Head Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Head-Armor)
-- [Neck Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Neck-Armor)
-- [Shoulder Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Shoulder-Armor)
-- [Torso Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Torso-Armor)
-- [Waist Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Waist-Armor)
-- [Arms Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Arms-Armor)
-- [Wrist Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Wrist-Armor)
-- [Hand Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Hands-Armor)
-- [Finger Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Finger-Armor)
-- [Leg Armor](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Leg-Armor)
-- [Held Items](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Held-Items)
-- [Floater Items](https://github.com/NathanielInman/AdventuresUnlimited/wiki/Floater-Items)
+### Light Items
+None yet.
+### Head Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| a brass helmet | 14 | 6g20s | wis +2 | unknown |
+| a large mithril helmet | 15 | 14g34s | hitroll +3 | loahan, foreman in mines of noal'xyn |
+| a golden helmet of courage | 15 | 1g78s | hitroll +2, damroll +1 | shrine of barbades guards |
+| a sheer black veil | 15 | 3g46s | int +1, wis +1 | drow mines |
+| a pair of dirty horns | 20 | 18g92s | str +1, con +1, damroll +2, hitroll +1 | grungel boss |
+| the eye circlet of un'hlehya | 25 | 0g93s | wis +2, int +1 | tzimosh camp |
+### Neck Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| a tattered cloak | 11 | 1g18s | damroll +1 | unknown |
+| a heavy cloak | 13 | 4g95s | con +1, damroll +1 | guard in renault house |
+| a jewelled necklace | 15 | 3g86s | wis +1, int +1 | renault house |
+| a thick leather collar | 20 | 30g69s | hitroll +1, damroll +1, str +1 | deltherian from dog |
+### Shoulder Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| a grey robe | 5 | 1g27s | hitroll +1 | unknown |
+| a flowing robe | 13 | 11g88s | damroll +1, hitroll +1, hp +2 | unknown |
+| a black spider silk surcoat | 15 | 2g7s | hp -1, saves -1, hitroll +1, damroll +1 | vampire in nerezza behind door |
+| the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
+### Torso Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| studded ream hide armor | 9 | 8g47s | damroll +3, hitroll +1 | unknown |
+| a steel chest-plate | 13 | 1g53s | con +1, str +1 | renault house |
+| a shining chest plate | 15 | 28g35s | hitroll +3, damroll +2 | guard in front of shrine of barbades |
+| a black tunic | 20 | 27g72s | hitroll +2, dex +1 | drow mines |
+| a mithril vest | 24 | 17g88s | damroll +1, hitroll +1 | mines of noal'xyn foreman loahan |
+| a shadow steel platemail cuirass | 25 | 2g84s | move +100, saves -2, ac -2, dex +1, str +1 | drow in grungnison catacombs |
+### Waist Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| a jewelled belt | 15 | 2g52s | str +1, hitroll +2 | renault house |
+### Arms Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| dark steel arm guards | 12 | 11g1s | constitution +1 | unknown |
+
+### Wrist Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| an iron bracer | 5 | 0g99s | hitroll +1 | unknown |
+| an obsidian bracer | 12 | 0g95s | damroll +1, hitroll +1 | unknown |
+| a steel-banded bracer | 12 | 0g27s | hitroll +1, damroll +1 | burrowholme guards |
+| a steel bracer | 13 | 3g76s | damroll +1, dex +1 | renault house |
+| a dryad's bracelet | 15 | 3g96s | int +1, hitroll +2 | behind hidden waterfall near goblin stronghold |
+| a bracelet of elf-hide | 15 | 0g99s | damroll +2 | goblin stronghold |
+| an acid-eaten steel bracer | 18 | 1g97s | hitroll +2, dex +1 | nerezza, gelatinus cube on top |
+### Hand Armor
+None yet.
+### Finger Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| a silver ring | 6 | 0g0s | damroll +1 |  unknown |
+| a beautiful silver ring | 10 | 1g28s | wis +1 | unknown |
+| a battered silver ring | 10 | 3g18s | hitroll +2 | grungel |
+| a granite ring | 15 | 16g66s | int +1 | khetes priest |
+| a copper ring | 16 | 8g23s | damroll +1, saves -1, hitroll +2 | naerlan patrol guard |
+### Leg Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| thick leather leggings | 15 | 20g79s | move +50, hp +5, damroll +1 | equinalas |
+| bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | unknown |
+| a pair of black leggings | 22 | 34g65s | damroll +2, con +1 | drow mines |
+| mithril greaves | 24 | 27g47s | hitroll +2 | loahann, foreman at mines of noal'xyn |
+### Feet Armor
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- |
+| a pair of hard leather boots | 14 | 0g49s | damroll +1 | unknown |
+| a pair of soft-hide boots | 15 | 2g97s | dex +1, move +75 | unknown |
+| a pair of knee-high boots | 18 | 76g56s | damroll +2, con +1 | drow mines |
+| mithril boots | 24 | 27g10s | damroll +2 | loahan, mines of noal'xyn |
+### Held Items
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- | 
+| a small idol of asteri | 9 | 12g0s | str +1, damroll +1 | lunatics alley |
+| a goblin fetish | 12 | 0g0s | int +1, damroll +1 | unknown |
+| a magical torch | 15 | 21g0s | int +2 | unknown |
+### Floater Items
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- |
+| a dark-trimmed emerald | 14 | 12g48s | int +2 | goblin stronghold |
+| a dark-trimmed ruby | 14 | 12g42s | dex +2 | goblin stronghold |
+| a dark-trimmed amethyst | 14 | 12g51s | wis +2 | goblin stronghold |
+| a dark-trimmed sapphire | 14 | 13g63s | str +2 | goblin stronghold |
+| a dark-trimmed pearl | 14 | 11g85s | con +2 | goblin stronghold |
