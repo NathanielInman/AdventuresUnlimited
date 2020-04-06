@@ -308,7 +308,7 @@ A collection of helpful information related to AU temples
 | --- | --- | 
 | spirit invisibility | invisibility | 
 | stone hands | damage enhancement | 
-| spirit eyes | detect magic, detect invis, detect hidden | 
+| spirit eyes | detect magic, detect invis, ~detect hidden~ | 
 | stone skin | ac self buff | 
 | levitate | fly | 
 | strength enhance | giant strength | 
