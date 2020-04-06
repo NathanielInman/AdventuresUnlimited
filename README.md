@@ -7,6 +7,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Temple Rank Costs](#temple-rank-costs)
   - [Temple Upgrade Costs](#temple-upgrade-costs)
   - [Temple Healer Costs](#temple-healer-costs)
+- [Entitlement](#entitlement)
 - [Pets](#pets)
 - [Monk](#monk)
   - [Monk Mantras](#monk-mantras)
@@ -249,6 +250,19 @@ A collection of helpful information related to AU temples
 | mana | restore mana | 10g | 
 | bless | bless spell | 50g | 
 | armor | armor spell | 15g | 
+
+## Entitlement
+| name | gold cost | equivalent qp cost | equivalent qp total |
+| --- | --- | --- | --- |
+| 1. Citizen | 10,000 | 3,000 | 3,000 |
+| 2. Watcher/Seeker | 20,000 | 4,000 | 7,000 |
+| 3. Master/Mistress | 30,000 | 5,000 | 12,000 |
+| 4. Seneschal | 40,000 | 6,000 | 18,000 |
+| 5. Lord/Lady | 50,000 | 7,000 | 25,000 |
+| 6. Baron/Baroness | 60,000 | 8,000 | 33,000 |
+| 7. Count/Countess | 70,000 | 9,000 | 42,000 |
+| 8. Marquis/Marquise | 80,000 | 10,000 | 52,000 |
+| 9. Duke/Duchess | 90,000 | 11,000 | 63,000 |
 
 ## Pets
 | name | level | cost | location |
