@@ -8,6 +8,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Temple Upgrade Costs](#temple-upgrade-costs)
   - [Temple Healer Costs](#temple-healer-costs)
 - [Entitlement](#entitlement)
+  - [Housing Costs](#housing-costs)
 - [Pets](#pets)
 - [Monk](#monk)
   - [Monk Mantras](#monk-mantras)
@@ -263,6 +264,34 @@ A collection of helpful information related to AU temples
 | 7. Count/Countess | 70,000 | 9,000 | 42,000 |
 | 8. Marquis/Marquise | 80,000 | 10,000 | 52,000 |
 | 9. Duke/Duchess | 90,000 | 11,000 | 63,000 |
+
+### Housing Costs
+| description | diamonds | equivalent gold |
+| --- | --- | --- |
+| additional room heal rate 10% (to a max of 300%) | 125 | 13,750 |
+| portal | 400 | 44,000 |
+| lock upgrade (hard) | 200 | 22,000 from default easy |
+| lock upgrade (infuriating) | 200 | 22,000 (44,000 from easy) |
+| lock upgrade (implausible) | 200 | 22,000 (66,000 from easy) |
+| lock upgrade (improbable) | 200 | 22,000 (88,000 from easy) |
+| lock upgrade (impossible) | 200 | 22,000 (110,000 from easy) |
+| lock level upgrade each (default level is 50)| 10 | 1,100 |
+| lock level upgrade to max | 500 | 55,000 |
+| furniture | 25 | 2,750 |
+| fireplace | 50 | 5,500 |
+| fountain (water) | 150 | 16,500 |
+| fountain (other liquid) | 200 | 22,000 |
+| redecoration | 20 | 2,200 |
+| rekey a lock (not including replacement) | 250 | 27,500 |
+| key replacement | 50 | 5,500 |
+| wood door (default) | free | free |
+| stone door | 50 | 5,500 |
+| metal door | 100 | 11,000 |
+| trough | 50 | 5,500 |
+| crucible | 100 | 11,000 |
+| anvil | 250 | 27,500 |
+| workbench | 250 | 27,500 |
+| forge | 500 | 55,000 |
 
 ## Pets
 | name | level | cost | location |
