@@ -640,6 +640,7 @@ None yet.
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | thick leather leggings | 15 | 20g79s | move +50, hp +5, damroll +1 | equinalas |
+| a pair of shadow steel leg plates | 15 | 6g3s | hitroll +3 | Zzukenethaft |
 | bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | unknown |
 | a pair of black leggings | 22 | 34g65s | damroll +2, con +1 | drow mines |
 | mithril greaves | 24 | 27g47s | hitroll +2 | loahann, foreman at mines of noal'xyn |
