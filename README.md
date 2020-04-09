@@ -584,6 +584,8 @@ None yet.
 | a sheer black veil | 15 | 3g46s | int +1, wis +1 | drow mines |
 | a pair of dirty horns | 20 | 18g92s | str +1, con +1, damroll +2, hitroll +1 | grungel boss |
 | the eye circlet of un'hlehya | 25 | 0g93s | wis +2, int +1 | tzimosh camp |
+| a dark helmet | 28 | 49g50s | hitroll +2, damroll +4 | east tower guard, mines of noal'xyn |
+| a spirit helmet | 28 | 49g50s | hitroll +2, damroll +4 | west tower guard, mines of noal'xyn |
 ### Neck Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -607,6 +609,7 @@ None yet.
 | a black tunic | 20 | 27g72s | hitroll +2, dex +1 | drow mines |
 | a mithril vest | 24 | 17g88s | damroll +1, hitroll +1 | mines of noal'xyn foreman loahan |
 | a shadow steel platemail cuirass | 25 | 2g84s | move +100, saves -2, ac -2, dex +1, str +1 | drow in grungnison catacombs |
+| shadow armor | 28 | 49g50s | con +2, hitroll +5 | east tower guard, mines of noal'xyn |
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
