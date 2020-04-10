@@ -639,6 +639,7 @@ None yet.
 | a battered silver ring | 10 | 3g18s | hitroll +2 | grungel |
 | a granite ring | 15 | 16g66s | int +1 | khetes priest |
 | a copper ring | 16 | 8g23s | damroll +1, saves -1, hitroll +2 | naerlan patrol guard |
+| (invis) an elemental ring of frost | 37 | 24g48s | hitroll +4, damroll +3 | valeda elemental |
 ### Leg Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
