@@ -574,7 +574,10 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ## Items For Leveling
 
 ### Light Items
-None yet.
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- |
+| a ssmall jar of glow-moss | 14 | 1g0s | hitroll +3 | sold in kargath |
+| a black guard's lantern | 28 | 15g0s | ac -2, hitroll +2 | guard in mirage |
 ### Head Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -610,14 +613,17 @@ None yet.
 | a mithril vest | 24 | 17g88s | damroll +1, hitroll +1 | mines of noal'xyn foreman loahan |
 | a shadow steel platemail cuirass | 25 | 2g84s | move +100, saves -2, ac -2, dex +1, str +1 | drow in grungnison catacombs |
 | shadow armor | 28 | 49g50s | con +2, hitroll +5 | east tower guard, mines of noal'xyn |
+| a suit of silver armor | 28 | 41g8s | damroll +4 | guard in mirage |
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | a jewelled belt | 15 | 2g52s | str +1, hitroll +2 | renault house |
+| a silver girth | 28 | 23g6s | hitroll +3, dex -1, con +2 | guard in mirage |
 ### Arms Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | dark steel arm guards | 12 | 11g1s | constitution +1 | unknown |
+| silver armguards | 28 | 12g99s | hitroll +3, damroll + | guard in mirage | 
 
 ### Wrist Armor
 | name | req lvl | cost | description | found |
@@ -629,6 +635,7 @@ None yet.
 | a dryad's bracelet | 15 | 3g96s | int +1, hitroll +2 | behind hidden waterfall near goblin stronghold |
 | a bracelet of elf-hide | 15 | 0g99s | damroll +2 | goblin stronghold |
 | an acid-eaten steel bracer | 18 | 1g97s | hitroll +2, dex +1 | nerezza, gelatinus cube on top |
+| a silver bracer | 28 | 11g21s | hitroll +2, damroll +2 | guard in mirage |
 ### Hand Armor
 None yet.
 ### Finger Armor
@@ -648,6 +655,8 @@ None yet.
 | bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | unknown |
 | a pair of black leggings | 22 | 34g65s | damroll +2, con +1 | drow mines |
 | mithril greaves | 24 | 27g47s | hitroll +2 | loahann, foreman at mines of noal'xyn |
+| a stylish set of trousers | 26 | 14g85s | hitroll +3, damroll +1 | girl in merchants house, aliuna |
+| silver greaves | 28 | 16g93s | hitroll +5, int -1, dex +1 | guard in mirage |
 ### Feet Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
