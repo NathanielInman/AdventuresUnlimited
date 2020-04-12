@@ -125,7 +125,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 20 - 35 | Dleivain | 4e9n5w6n9e2n4w1n1w1n;go door |
 | 20 - 55 | Yrenelania | Unknown |
 | 25 - 30 | Goblin Pass | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
-| 25 - 35 | The Hamlet of Elsfar | Unknown |
+| 25 - 35 | The Hamlet of Elsfar | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | 25 - 35 | Blackeye's Camp | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
 | 25 - 45 | Valeda | 4e9n5w6n11e3n5e1n3e9n |
 | 30 - 40 | Castle of Burden | Unknown |
