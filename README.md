@@ -657,6 +657,7 @@ None yet.
 | mithril greaves | 24 | 27g47s | hitroll +2 | loahann, foreman at mines of noal'xyn |
 | a stylish set of trousers | 26 | 14g85s | hitroll +3, damroll +1 | girl in merchants house, aliuna |
 | silver greaves | 28 | 16g93s | hitroll +5, int -1, dex +1 | guard in mirage |
+| rotting hide greaves | 34 | 6g79s | hitroll +3, damroll +3 | valeda orc |
 ### Feet Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
