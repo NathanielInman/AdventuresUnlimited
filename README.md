@@ -101,8 +101,8 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 10 - 30 | Illianathoren Pass | 8e7n1w1n1e5n3e3n4e |
 | 10 - 30 | Khetes | 11e5n2e1s7e3n |
 | 10 - 40 | Northern Barreston | 5w9n4e6n6w3n2w3n2w |
-| 10 - 40 | Lower Barreston | Unknown |
-| 10 - 40 | Upper Barreston | Unknown |
+| 10 - 40 | Lower Barreston | 5w9n4e6n6w3n2w3n2w |
+| 10 - 40 | Upper Barreston | 5w9n4e6n6w3n2w3n2w |
 | 13 - 30 | Sanctuary | 7e1d2w2n9w5s2e2s2re |
 | 13 - 50 | Underdark | 4e9n5w6n3e2s1e1s2w |
 | 15 - 25 | Littlefist Glade | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
@@ -123,7 +123,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 20 - 30 | The Avian Tree | 5w9n4e6n11e3n1e1n |
 | 20 - 30 | The Meridian | 11e3s6e4s23e2n4e |
 | 20 - 35 | Dleivain | 4e9n5w6n9e2n4w1n1w1n;go door |
-| 20 - 55 | Yrenelania | Unknown |
+| 20 - 55 | Yrenelania | 8e7n1w1n1e4n2e4n8e1d1s2e;go crack;1e1n1e;search south;open south;1s3e1n2e2n3e |
 | 25 - 30 | Goblin Pass | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
 | 25 - 35 | The Hamlet of Elsfar | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | 25 - 35 | Blackeye's Camp | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
