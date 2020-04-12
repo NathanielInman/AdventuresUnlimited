@@ -667,6 +667,7 @@ None yet.
 | a pair of soft-hide boots | 15 | 2g97s | dex +1, move +75 | unknown |
 | a pair of knee-high boots | 18 | 76g56s | damroll +2, con +1 | drow mines |
 | mithril boots | 24 | 27g10s | damroll +2 | loahan, mines of noal'xyn |
+| an aviak anklet | 25 | 12g37s | hitroll +4, dex +1 | aviak sentry in avian tree |
 ### Held Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
