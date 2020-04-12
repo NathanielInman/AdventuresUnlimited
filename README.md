@@ -596,6 +596,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a heavy cloak | 13 | 4g95s | con +1, damroll +1 | guard in renault house |
 | a jewelled necklace | 15 | 3g86s | wis +1, int +1 | renault house |
 | a thick leather collar | 20 | 30g69s | hitroll +1, damroll +1, str +1 | deltherian from dog |
+| a dark-blue cloak | 32 | 89g10s | +3 damroll, hp +25 | Yrenelania Orgath |
 ### Shoulder Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -680,3 +681,4 @@ None yet.
 | a dark-trimmed sapphire | 14 | 13g63s | str +2 | goblin stronghold |
 | a dark-trimmed pearl | 14 | 11g85s | con +2 | goblin stronghold |
 | an aviak eye | 30 | 14g85s | str +1, con +1, dex +1 | the avian tree |
+| a bronze coin | 35 | 86g53s | +3 damroll, hp +25 | Yrenelania Orgath |
