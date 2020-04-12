@@ -131,9 +131,9 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 30 - 40 | Castle of Burden | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n1u |
 | 30 - 40 | Whirlpool |  4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e2s1e1w1s4e1s2e |
 | 30 - 40 | R'tescra | Unknown |
-| 30 - 40 | Reskel | Unknown |
+| 30 - 40 | Reskel | 4e9n5w6n11e3n5e1n3e8n1e |
 | 30 - 45 | Quickling Village | Unknown |
-| 30 - 50 | Darathorn's Pit | Unknown |
+| 30 - 50 | Darathorn's Pit | 4e9n5w6n3e2s1e2s1w1n |
 | 35 - 45 | The Sandcastle | Unknown |
 | 35 - 45 | Oterion | Unknown |
 | 35 - 45 | Eirenole | Unknown |
