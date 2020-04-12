@@ -128,8 +128,8 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 25 - 35 | The Hamlet of Elsfar | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | 25 - 35 | Blackeye's Camp | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
 | 25 - 45 | Valeda | 4e9n5w6n11e3n5e1n3e9n |
-| 30 - 40 | Castle of Burden | Unknown |
-| 30 - 40 | Whirlpool | Unknown |
+| 30 - 40 | Castle of Burden | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n1u |
+| 30 - 40 | Whirlpool |  4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e2s1e1w1s4e1s2e |
 | 30 - 40 | R'tescra | Unknown |
 | 30 - 40 | Reskel | Unknown |
 | 30 - 45 | Quickling Village | Unknown |
