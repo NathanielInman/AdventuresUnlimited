@@ -82,7 +82,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 5 - 15 | Brovlancor | 4e9n5w6n6w8s2w1n2w4s1w4s2e1s |
 | 5 - 30 | Naerlan Sewers | 4s2w1d |
 | 5 - 40 | The City of Aliuna | 11e3s6e4s5e |
-| 8 - 22 | Haythor Dungeon | Unknown |
+| 8 - 22 | Haythor Dungeon | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
 | 10 - 15 | The Drow Mines | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s1e2s1w1s2e1s |
 | 10 - 15 | Cartwrights Farm | 9w1d5n7w2n1e |
 | 10 - 15 | Volencymale | 12w4n1e |
