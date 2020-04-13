@@ -119,7 +119,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | contin. | contin. | 2w1s1w1s3w1n2w1n2w2s1w1s1e1s1e2s1e6s1w2s |
 | 20 - 30 | Racomva | 5w17s5e7s2e1s2e1d3n1e1u2n |
 | 20 - 30 | Mirage City | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e1n1e3s1e1s2e2n |
-| contin. | contin. | 2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;go pool;go mirage |
+| contin. | contin. | 2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;search;go pool;go mirage |
 | 20 - 30 | The Avian Tree | 5w9n4e6n11e3n1e1n |
 | 20 - 30 | The Meridian | 11e3s6e4s23e2n4e |
 | 20 - 35 | Dleivain | 4e9n5w6n9e2n4w1n1w1n;go door |
