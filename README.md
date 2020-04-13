@@ -584,6 +584,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a heavy cloak | 13 | 4g95s | con +1, damroll +1 | guard in renault house |
 | a jewelled necklace | 15 | 3g86s | wis +1, int +1 | renault house |
 | a thick leather collar | 20 | 30g69s | hitroll +1, damroll +1, str +1 | deltherian from dog |
+| a golden signet necklace, 'Nobility' | 31 | 9g20s | hitroll +3, dex +1, saves +3, ac +6 | Elium in Aliuna |
 | a dark-blue cloak | 32 | 89g10s | +3 damroll, hp +25 | Yrenelania Orgath |
 ### Shoulder Armor
 | name | req lvl | cost | description | found |
@@ -592,7 +593,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a flowing robe | 13 | 11g88s | damroll +1, hitroll +1, hp +2 | unknown |
 | a black spider silk surcoat | 15 | 2g7s | hp -1, saves -1, hitroll +1, damroll +1 | vampire in nerezza behind door |
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
-### Torso Armor
+### Torso / Body Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | studded ream hide armor | 9 | 8g47s | damroll +3, hitroll +1 | unknown |
@@ -603,6 +604,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a shadow steel platemail cuirass | 25 | 2g84s | move +100, saves -2, ac -2, dex +1, str +1 | drow in grungnison catacombs |
 | shadow armor | 28 | 49g50s | con +2, hitroll +5 | east tower guard, mines of noal'xyn |
 | a suit of silver armor | 28 | 41g8s | damroll +4 | guard in mirage |
+| an Eliem's robe | 30 | 99g0s | hitroll +2, damroll +2, wis +1, int +1, con +1 | Elium in Aliuna |
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
