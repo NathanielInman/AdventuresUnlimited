@@ -22,7 +22,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
-- [Potions Wands Staves & Scrolls](#potions-wands-staves-and-scrolls)
+- [Potions Wands Staves & Scrolls](#potions-pills-wands-staves-and-scrolls)
 - [Items For Leveling](#items-for-leveling)
   - [Light Items](#light-items)
   - [Head Armor](#head-armor)
@@ -550,12 +550,16 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
 
-## Potions Wands Staves and Scrolls
+## Potions Pills Wands Staves and Scrolls
 
 | name | req lvl | item lvl | cost | found in | description |
 | --- | --- | --- | --- | --- | --- |
+| a purple pill | 5 | 10 | 0g80s | brovlancor | invisibility |
+| a blue pill | 5 | 10 | 2g3s | brovlancor | sanctuary |
 | a potion of protection | 5 | 10 | 2g0s | naerlan | armor |
 | a small seed | 5 | 15 | 4g0s | naerlan | farsight |
+| a flame-painted wand | 5 | 10 | 10g0s | brovlancor | fireball |
+| a lightning-painted wand | 7 | 9 | 12g71s | brovlancor | lightning bolt |
 | a potion of revealing | 7 | 15 | 2g90s | naerlan | detect invis, detect magic, detect hidden |
 | a dry ivy leaf | 7 | 12 | 4g50s | naerlan | create spring, cure disease |
 | a potion of sickness removal | 8 | 14 | 5g50s | naerlan | cure poison, cure light, cure disease |
