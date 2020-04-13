@@ -146,7 +146,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 40 - 50 | Mystery Manor | Unknown |
 | 40 - 55 | Pyrainn Mountains | Unknown |
 | 40 - 60 | Draek'le | Unknown |
-| 45 - 55 | Kaer Tzoun | Unknown |
+| 45 - 55 | Kaer Tzoun | 20w1n6w3n1w1u9w3n1u |
 | 45 - 55 | Beehive | Unknown |
 | 45 - 60 | Xuergothe Castle | Unknown |
 | 45 - 60 | Eirenole Castle | Unknown |
