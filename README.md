@@ -208,33 +208,14 @@ A collection of helpful information related to AU temples
 | 10 | Ili'sion | Auy'dian | Ezt'fiel | 100,000 |
 
 ### Temple Upgrade Costs
-| stat | rank | cost |
-| --- | --- | --- | 
-| hp | 5: apostle / defender / conspirator | 900g |
-| wp | 5: apostle / defender / conspirator | 900g |
-| mv | 5: apostle / defender / conspirator | 315g |
-| hit | 5: apostle / defender / conspirator | 2850g |
-| dam | 5: apostle / defender / conspirator | 4800g |
-| hp | 6: champion / guardian / fiend | 850g |
-| wp | 6: champion / guardian / fiend | 850g |
-| mv | 6: champion / guardian / fiend | 265g |
-| hit | 6: champion / guardian / fiend | 2800g |
-| dam | 6: champion / guardian / fiend | 4750g |
-| hp | 7: Rha'sion / Nuy'dian / Tza'fiel | 800g |
-| wp | 7: Rha'sion / Nuy'dian / Tza'fiel | 800g |
-| mv | 7: Rha'sion / Nuy'dian / Tza'fiel | 215g |
-| hit | 7: Rha'sion / Nuy'dian / Tza'fiel | 2750g |
-| dam | 7: Rha'sion / Nuy'dian / Tza'fiel | 4700g |
-| hp | 8: Kru'sion / Ley'dian / Rte'fiel | 750g |
-| wp | 8: Kru'sion / Ley'dian / Rte'fiel | 750g |
-| mv | 8: Kru'sion / Ley'dian / Rte'fiel | 165g |
-| hit | 8: Kru'sion / Ley'dian / Rte'fiel | 2700g |
-| dam | 8: Kru'sion / Ley'dian / Rte'fiel | 4650g |
-| hp | 9: Pol'sion / Moy'dian / Ure'fiel | 700g |
-| wp | 9: Pol'sion / Moy'dian / Ure'fiel | 700g |
-| mv | 9: Pol'sion / Moy'dian / Ure'fiel | 115g |
-| hit | 9: Pol'sion / Moy'dian / Ure'fiel | 2650g |
-| dam | 9: Pol'sion / Moy'dian / Ure'fiel | 4600g |
+| rank | hp cost | wp cost | mv cost | hit cost | dam cost |
+| --- | --- | --- | --- | --- | --- |
+| 5: apostle / defender / conspirator | 900g | 900g | 315g | 2850g | 4800g |
+| 6: champion / guardian / fiend | 850g | 850g | 265g | 2800g | 4750g |
+| 7: Rha'sion / Nuy'dian / Tza'fiel | 800g | 800g | 215g | 2750g | 4700g |
+| 8: Kru'sion / Ley'dian / Rte'fiel | 750g | 750g | 165g | 2700g | 4650g |
+| 9: Pol'sion / Moy'dian / Ure'fiel | 700g | 700g | 115g | 2650g | 4600g |
+| 10: Ili'sion / Auy'dian / Ezt'fiel | 650g | 650g | 65g | 2600g | 4550g |
 
 ### Temple Healer Costs
 | name | description | cost |
