@@ -583,6 +583,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a ssmall jar of glow-moss | 14 | 1g0s | hitroll +3 | sold in kargath |
 | a black guard's lantern | 28 | 15g0s | ac -2, hitroll +2 | guard in mirage |
 | a glowing green ball | 29 | 13g82s | hitroll +3, dex +1 | kid in valeda |
+| (invis) a ghostly flame | 31 | 17g40s | hitroll +2, damroll +2, mana +20 | servant in dleivan |
 | elemental water beacon | 35 | 15g62s | hitroll +2, damroll +2, ac -2 | elemental in valeda |
 ### Head Armor
 | name | req lvl | cost | description | found |
