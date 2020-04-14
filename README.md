@@ -134,12 +134,12 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 30 - 40 | Reskel | 4e9n5w6n11e3n5e1n3e8n1e |
 | 30 - 45 | Quickling Village | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e4s1e |
 | 30 - 50 | Darathorn's Pit | 4e9n5w6n3e2s1e2s1w1n |
-| 35 - 45 | The Sandcastle | Unknown |
+| 35 - 45 | The Sandcastle | 43w3n1w4n3w5n1s1e1n3w |
 | 35 - 45 | Oterion | 7e1d2s1e9s4w1n3w |
 | 35 - 45 | Eirenole | Unknown |
 | 35 - 50 | Tyyrinn Village | 7e1d2s1e7s5e2s |
-| 35 - 50 | The City of Terrason | Unknown |
-| 35 - 50 | Uchduruk | Unknown |
+| 35 - 50 | The City of Terrason | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
+| 35 - 50 | Uchduruk | 11e4n4e1n1e |
 | 40 - 45 | Eirenole Thistle | Unknown |
 | 40 - 50 | The Four Seasons | Unknown |
 | 40 - 50 | Schwartz Glacier | Unknown |
@@ -573,6 +573,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a glowing green ball | 29 | 13g82s | hitroll +3, dex +1 | kid in valeda |
 | a large light | 30 | 22g50s | hitroll +2, strength +1 | spelunker in castle burdon |
 | (invis) a ghostly flame | 31 | 17g40s | hitroll +2, damroll +2, mana +20 | servant in dleivan |
+| a magical purple ball | 33 | 27g50s | hitroll +4, damroll +2 | scowling guard aliuna |
 | elemental water beacon | 35 | 15g62s | hitroll +2, damroll +2, ac -2 | elemental in valeda |
 ### Head Armor
 | name | req lvl | cost | description | found |
@@ -619,6 +620,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a rotting leather belt | 1g9s | damroll +1 | nerezza |
 | a jewelled belt | 15 | 2g52s | str +1, hitroll +2 | renault house |
 | a silver girth | 28 | 23g6s | hitroll +3, dex -1, con +2 | guard in mirage |
+| a dark purple aliunan belt | 37 | 25g74s | damroll +2, dex +1, con +1, str +1 | scowling guard aliuna |
 ### Arms Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
