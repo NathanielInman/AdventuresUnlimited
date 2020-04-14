@@ -577,7 +577,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Head Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| a brass helmet | 14 | 6g20s | wis +2 | unknown |
+| the shroud of deception | 10 | 2g97s | hitroll +3 | lunatic's alley |
 | a large mithril helmet | 15 | 14g34s | hitroll +3 | loahan, foreman in mines of noal'xyn |
 | a golden helmet of courage | 15 | 1g78s | hitroll +2, damroll +1 | shrine of barbades guards |
 | a sheer black veil | 15 | 3g46s | int +1, wis +1 | drow mines |
