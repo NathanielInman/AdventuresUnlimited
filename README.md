@@ -568,7 +568,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Light Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
-| a ssmall jar of glow-moss | 14 | 1g0s | hitroll +3 | sold in kargath |
+| a small jar of glow-moss | 14 | 4g48s | hitroll +3 | sold in kargath |
 | a black guard's lantern | 28 | 15g0s | ac -2, hitroll +2 | guard in mirage |
 | a glowing green ball | 29 | 13g82s | hitroll +3, dex +1 | kid in valeda |
 | a large light | 30 | 22g50s | hitroll +2, strength +1 | spelunker in castle burdon |
@@ -605,6 +605,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | studded ream hide armor | 9 | 8g47s | damroll +3, hitroll +1 | unknown |
+| a chain-mail shirt | 11 | 12g62s | hitroll +1, str +1 | hagarth |
 | a steel chest-plate | 13 | 1g53s | con +1, str +1 | renault house |
 | a shining chest plate | 15 | 28g35s | hitroll +3, damroll +2 | guard in front of shrine of barbades |
 | a black tunic | 20 | 27g72s | hitroll +2, dex +1 | drow mines |
@@ -624,6 +625,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Arms Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
+| a pair of leather armbands | 8 | 1g3s | hitroll +2 | lunatic's alley |
 | silver armguards | 28 | 12g99s | hitroll +3, damroll + | guard in mirage | 
 
 ### Wrist Armor
@@ -647,8 +649,9 @@ None yet.
 | the heart of the elven people | 30 | 3g6s | damroll +3, con +1, ac -2 | illiathorn pass commander |
 ### Leg Armor
 | name | req lvl | cost | description | found |
-| --- | --- | --- | --- | --- | 
+| --- | --- | --- | --- | --- |
 | a pair of steel-banded leg guards | 13 | 0g37s | move +50, dex +1 | burrowholme |
+| a pair of leggings | 14 | 24g75s | strength +2 | hagarth |
 | thick leather leggings | 15 | 20g79s | move +50, hp +5, damroll +1 | equinalas |
 | a pair of shadow steel leg plates | 15 | 6g3s | hitroll +3 | Zzukenethaft |
 | bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | unknown |
