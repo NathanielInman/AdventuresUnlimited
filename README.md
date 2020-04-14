@@ -135,9 +135,9 @@ All `directions` start from `Market Square` within `Naerlan`.
 | 30 - 45 | Quickling Village | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e4s1e |
 | 30 - 50 | Darathorn's Pit | 4e9n5w6n3e2s1e2s1w1n |
 | 35 - 45 | The Sandcastle | Unknown |
-| 35 - 45 | Oterion | Unknown |
+| 35 - 45 | Oterion | 7e1d2s1e9s4w1n3w |
 | 35 - 45 | Eirenole | Unknown |
-| 35 - 50 | Tyyrinn Village | Unknown |
+| 35 - 50 | Tyyrinn Village | 7e1d2s1e7s5e2s |
 | 35 - 50 | The City of Terrason | Unknown |
 | 35 - 50 | Uchduruk | Unknown |
 | 40 - 45 | Eirenole Thistle | Unknown |
