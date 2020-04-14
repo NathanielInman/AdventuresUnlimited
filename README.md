@@ -540,6 +540,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a potion of protection | 5 | 10 | 2g0s | naerlan | armor |
 | a small seed | 5 | 15 | 4g0s | naerlan | farsight |
 | a flame-painted wand | 5 | 10 | 10g0s | brovlancor | fireball |
+| a potion of crifus' favor | 5 | 15 | 3g90s | naerlan | cure critical, bless |
 | a lightning-painted wand | 7 | 9 | 12g71s | brovlancor | lightning bolt |
 | a potion of revealing | 7 | 15 | 2g90s | naerlan | detect invis, detect magic, detect hidden |
 | a dry ivy leaf | 7 | 12 | 4g50s | naerlan | create spring, cure disease |
@@ -554,7 +555,10 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a pink willow wand | 14 | 17 | 10g0s | aliuna | faerie fire x 3 |
 | a pink & white oak wand | 14 | 17 | 20g0s | aliuna | sleep x 2 |
 | a brilliant white wand of ash | 14 | 15 | 50g0s | aliuna | sanctuary x 2 |
-| a potion of crifus' favor | 5 | 15 | 3g90s | naerlan | cure critical, bless |
+| a purple scroll | 20 | 23 | 22g75s | mirage city | faerie fire |
+| a potion of desert survival | 22 | 25 | 23g88s | mirage city | refresh, cure poison |
+| a black potion | 25 | 30 | 32g50s | mirage city | fly |
+| a darkened parchment | 28 | 33 | 40g0s | mirage city | colour spray |
 | a mysterious potion | 30 | 35 | 30g0s | castle of burdon | armor, stone skin |
 | a mysterious pill | 30 | 35 | 30g0s | castle of burdon | infravision, giant strength |
 | a mysterious scroll | 30 | 35 | 30g0s | castle of burdon | shocking grasp |
