@@ -13,10 +13,10 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Monk](#monk)
   - [Monk Mantras](#monk-mantras)
   - [Monk Fight Moves](#monk-fight-moves)
-  - [Monk Techniques](#monk-techniques)
   - [Monk Abilities](#monk-abilities)
   - [Monk Chi](#monk-chi)
   - [Monk Stances](#monk-stances)
+  - [Monk Techniques](#monk-techniques)
   - [Monk Combos](#monk-combos)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
@@ -378,20 +378,6 @@ A collection of helpful information related to AU temples
 | spinkick | 55 | sweep |
 | headbutt | 57 | none |
 
-### Monk Techniques
-| name | level | requirements |
-| --- | --- | --- |
-| thrust kick | 12 | kick, bodyblow |
-| knee | 17 | knee |
-| elbow | 23 | punch, thrust kick |
-| shin kick | 27 | kick, stamp |
-| back fist | 33 | backfist, elbow |
-| palm strike | 39 | backfist |
-| sweep | 43 | shin kick |
-| spin kick | 61 | spinkick, thrust kick |
-| double punch | 67 | punch, backfist |
-| triple kick | 73 | kick, spinkick |
-
 ### Monk Abilities
 | name | level | requirements | effects |
 | --- | --- | --- | --- |
@@ -453,28 +439,42 @@ Stances take exactly 25 improvements to advance in skill level and have 9 ranks 
 | swallow | mongoose, crab | most defensive of all stances |
 | grandmaster | mantis, dragon, tiger, swallow, monkey | most offennsive & defensive of all stances |
 
-### Monk Combos
-The aboslute key to mastering monk combat is leveraging all the techniques to perform combinations that deliver drastic effect.
-
-| name | combo (required aura) | effects |
+### Monk Techniques
+| name | level | requirements |
 | --- | --- | --- |
-| silence | elbow (red), palm strike | target can no talk, read scrolls or cast magic |
-| knock | knee (bright blue), elbow (red), thrust kick | chance to knock mob/player out cold |
-| knee spike | thrust kick (red), knee | tiny damage |
-| trip | shin kick (yellow), sweep | slightly helps prevent fleeing, tiny damage |
-| leg sweep | sweep (red), shin kick | slightly helps prevent fleeing, tiny damage |
-| elbow strike | palm strike (bright red), elbow | average damage |
-| burning hands | back fist (blue), elbow (red), double punch | average damage |
-| thrust kick | spin kick (gold), thrust kick | average damage |
-| forcekick | thrust kick (red), thrust kick (bright red), triple kick | average damage |
-| back fist | elbow (red), back fist | average damage |
-| glowing hands | elbow (red), elbow (red), double punch | average damage |
-| elbow strike | shin kick (yellow), thrust kick (red), elbow | high damage |
-| lightning kick | thrust kick (red), thrust kick (bright red), spin kick | high damage |
-| palm strike | back fist (blue), palm strike | high damage |
-| flaming hands | double punch (white), double punch | massive damage |
-| lightning kick | triple kick (gold), double kick (white), spin kick | massive damage |
-| palm strike | spin kick (gold), back fist (blue), palm strike | massive damage |
+| thrust kick | 12 | kick, bodyblow |
+| knee | 17 | knee |
+| elbow | 23 | punch, thrust kick |
+| shin kick | 27 | kick, stamp |
+| back fist | 33 | backfist, elbow |
+| palm strike | 39 | backfist |
+| sweep | 43 | shin kick |
+| spin kick | 61 | spinkick, thrust kick |
+| double punch | 67 | punch, backfist |
+| triple kick | 73 | kick, spinkick |
+
+### Monk Combos
+The absolute key to mastering monk combat is leveraging all the techniques to perform combinations that deliver drastic effect.
+
+| lvl available | name | combo (required aura) | effects |
+| --- | --- | --- | --- |
+| 17 | knee spike | thrust kick (red), knee | tiny damage |
+| 23 | knock | knee (bright blue), elbow (red), thrust kick | chance to knock mob/player out cold |
+| 27 | elbow strike | shin kick (yellow), thrust kick (red), elbow | high damage |
+| 33 | back fist | elbow (red), back fist | average damage |
+| 33 | palm strike | back fist (blue), palm strike | high damage |
+| 39 | silence | elbow (red), palm strike | target can no talk, read scrolls or cast magic |
+| 39 | elbow strike | palm strike (bright red), elbow | average damage |
+| 43 | trip | shin kick (yellow), sweep | slightly helps prevent fleeing, tiny damage |
+| 43 | leg sweep | sweep (red), shin kick | slightly helps prevent fleeing, tiny damage |
+| 61 | thrust kick | spin kick (gold), thrust kick | average damage |
+| 61 | lightning kick | thrust kick (red), thrust kick (bright red), spin kick | high damage |
+| 61 | palm strike | spin kick (gold), back fist (blue), palm strike | massive damage |
+| 67 | burning hands | back fist (blue), elbow (red), double punch | average damage |
+| 67 | glowing hands | elbow (red), elbow (red), double punch | average damage |
+| 67 | flaming hands | double punch (white), double punch | massive damage |
+| 73 | forcekick | thrust kick (red), thrust kick (bright red), triple kick | average damage |
+| 73 | lightning kick | triple kick (gold), double kick (white), spin kick | massive damage |
 
 ## Quest Rewards
 | name | cost |
