@@ -577,6 +577,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Head Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
+| a spiked steel helm | 8 | 0g68s | damroll +1 | duergar in naerlan |
 | the shroud of deception | 10 | 2g97s | hitroll +3 | lunatic's alley |
 | a large mithril helmet | 15 | 14g34s | hitroll +3 | loahan, foreman in mines of noal'xyn |
 | a golden helmet of courage | 15 | 1g78s | hitroll +2, damroll +1 | shrine of barbades guards |
@@ -588,7 +589,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Neck Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| a tattered cloak | 11 | 1g18s | damroll +1 | unknown |
+| an ancient iron brooch | 11 | 0g65s | hitroll +2 | nerezza |
 | a heavy cloak | 13 | 4g95s | con +1, damroll +1 | guard in renault house |
 | a jewelled necklace | 15 | 3g86s | wis +1, int +1 | renault house |
 | a thick leather collar | 20 | 30g69s | hitroll +1, damroll +1, str +1 | deltherian from dog |
@@ -597,8 +598,6 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Shoulder Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| a grey robe | 5 | 1g27s | hitroll +1 | unknown |
-| a flowing robe | 13 | 11g88s | damroll +1, hitroll +1, hp +2 | unknown |
 | a black spider silk surcoat | 15 | 2g7s | hp -1, saves -1, hitroll +1, damroll +1 | vampire in nerezza behind door |
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
 ### Torso / Body Armor
@@ -617,19 +616,17 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
+| a rotting leather belt | 1g9s | damroll +1 | nerezza |
 | a jewelled belt | 15 | 2g52s | str +1, hitroll +2 | renault house |
 | a silver girth | 28 | 23g6s | hitroll +3, dex -1, con +2 | guard in mirage |
 ### Arms Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| dark steel arm guards | 12 | 11g1s | constitution +1 | unknown |
 | silver armguards | 28 | 12g99s | hitroll +3, damroll + | guard in mirage | 
 
 ### Wrist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| an iron bracer | 5 | 0g99s | hitroll +1 | unknown |
-| an obsidian bracer | 12 | 0g95s | damroll +1, hitroll +1 | unknown |
 | a steel-banded bracer | 12 | 0g27s | hitroll +1, damroll +1 | burrowholme guards |
 | a steel bracer | 13 | 3g76s | damroll +1, dex +1 | renault house |
 | a dryad's bracelet | 15 | 3g96s | int +1, hitroll +2 | behind hidden waterfall near goblin stronghold |
@@ -641,8 +638,6 @@ None yet.
 ### Finger Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| a silver ring | 6 | 0g0s | damroll +1 |  unknown |
-| a beautiful silver ring | 10 | 1g28s | wis +1 | unknown |
 | a battered silver ring | 10 | 3g18s | hitroll +2 | grungel |
 | a granite ring | 15 | 16g66s | int +1 | khetes priest |
 | a copper ring | 16 | 8g23s | damroll +1, saves -1, hitroll +2 | naerlan patrol guard |
@@ -651,6 +646,7 @@ None yet.
 ### Leg Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
+| a pair of steel-banded leg guards | 13 | 0g37s | move +50, dex +1 | burrowholme |
 | thick leather leggings | 15 | 20g79s | move +50, hp +5, damroll +1 | equinalas |
 | a pair of shadow steel leg plates | 15 | 6g3s | hitroll +3 | Zzukenethaft |
 | bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | unknown |
@@ -662,8 +658,7 @@ None yet.
 ### Feet Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
-| a pair of hard leather boots | 14 | 0g49s | damroll +1 | unknown |
-| a pair of soft-hide boots | 15 | 2g97s | dex +1, move +75 | unknown |
+| a pair of steel-toed boots | 8 | 1g97s | damroll +1 | duergar in Naerlan |
 | a pair of knee-high boots | 18 | 76g56s | damroll +2, con +1 | drow mines |
 | mithril boots | 24 | 27g10s | damroll +2 | loahan, mines of noal'xyn |
 | an aviak anklet | 25 | 12g37s | hitroll +4, dex +1 | aviak sentry in avian tree |
@@ -671,11 +666,12 @@ None yet.
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | a small idol of asteri | 9 | 12g0s | str +1, damroll +1 | lunatics alley |
-| a goblin fetish | 12 | 0g0s | int +1, damroll +1 | unknown |
-| a magical torch | 15 | 21g0s | int +2 | unknown |
+| a goblin fetish | 12 | 0g0s | int +1, damroll +1 | goblin stronghold |
 ### Floater Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
+| an aura of strength | 9 | 0g0s | strength +1 | nerezza |
+| a smooth, round pebble | 10 | 0g0s | damroll +1, hp +1 | shrine of barbades |
 | a dark-trimmed emerald | 14 | 12g48s | int +2 | goblin stronghold |
 | a dark-trimmed ruby | 14 | 12g42s | dex +2 | goblin stronghold |
 | a dark-trimmed amethyst | 14 | 12g51s | wis +2 | goblin stronghold |
