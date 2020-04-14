@@ -554,7 +554,10 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a pink willow wand | 14 | 17 | 10g0s | aliuna | faerie fire x 3 |
 | a pink & white oak wand | 14 | 17 | 20g0s | aliuna | sleep x 2 |
 | a brilliant white wand of ash | 14 | 15 | 50g0s | aliuna | sanctuary x 2 |
-| a potion of crifus' favor | 15 | 5 | 3g90s | naerlan | cure critical, bless |
+| a potion of crifus' favor | 5 | 15 | 3g90s | naerlan | cure critical, bless |
+| a mysterious potion | 30 | 35 | 30g0s | castle of burdon | armor, stone skin |
+| a mysterious pill | 30 | 35 | 30g0s | castle of burdon | infravision, giant strength |
+| a mysterious scroll | 30 | 35 | 30g0s | castle of burdon | shocking grasp |
 
 ## Items For Leveling
 
@@ -606,6 +609,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | shadow armor | 28 | 49g50s | con +2, hitroll +5 | east tower guard, mines of noal'xyn |
 | a suit of silver armor | 28 | 41g8s | damroll +4 | guard in mirage |
 | an Eliem's robe | 30 | 99g0s | hitroll +2, damroll +2, wis +1, int +1, con +1 | Elium in Aliuna |
+| a suit of black chainmail | 30 | 15g24s | damroll +2, dex +2 | guard in castle of burdon |
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
