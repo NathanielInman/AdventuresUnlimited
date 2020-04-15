@@ -600,6 +600,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | a black spider silk surcoat | 15 | 2g7s | hp -1, saves -1, hitroll +1, damroll +1 | vampire in nerezza behind door |
+| flowing priest's robes | 32 | 6g3s | damroll +1, hitroll +1, str +1, wis +1 | priest on justice road barreston |
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
 ### Torso / Body Armor
 | name | req lvl | cost | description | found |
@@ -621,6 +622,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a rotting leather belt | 1g9s | damroll +1 | nerezza |
 | a jewelled belt | 15 | 2g52s | str +1, hitroll +2 | renault house |
 | a silver girth | 28 | 23g6s | hitroll +3, dex -1, con +2 | guard in mirage |
+| a braided rope belt | 32 | 3g96s | hitroll +4, str +2, con +1, ac +3 | priest on justice road barreston |
 | a dark purple aliunan belt | 37 | 25g74s | damroll +2, dex +1, con +1, str +1 | scowling guard aliuna |
 ### Arms Armor
 | name | req lvl | cost | description | found |
