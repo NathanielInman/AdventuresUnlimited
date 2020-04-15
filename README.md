@@ -638,6 +638,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a dryad's bracelet | 15 | 3g96s | int +1, hitroll +2 | behind hidden waterfall near goblin stronghold |
 | a bracelet of elf-hide | 15 | 0g99s | damroll +2 | goblin stronghold |
 | an acid-eaten steel bracer | 18 | 1g97s | hitroll +2, dex +1 | nerezza, gelatinus cube on top |
+| a wide iron bracer | 27 | 3g84s | hitroll +1, damroll +3 | barreston guards near entrance |
 | a silver bracer | 28 | 11g21s | hitroll +2, damroll +2 | guard in mirage |
 ### Hand Armor
 None yet.
