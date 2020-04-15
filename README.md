@@ -629,6 +629,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | --- | --- | --- | --- | --- | 
 | a pair of leather armbands | 8 | 1g3s | hitroll +2 | lunatic's alley |
 | silver armguards | 28 | 12g99s | hitroll +3, damroll + | guard in mirage | 
+| boiled leather armguards | 32 | 29g70s | damroll +5 | Liun, main council floor aliuna |
 
 ### Wrist Armor
 | name | req lvl | cost | description | found |
