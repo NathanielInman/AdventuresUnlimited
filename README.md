@@ -681,6 +681,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a pixie doll | 45 | 47 | 35g0s | valeda | haste x 6 |
 
 ## Items For Leveling
+Keep in mind that the intention for this is **not** to be a comprehensive list of items, but the **best-in-slot** leveling items. Adventures Unlimited has a huge focus on tradeskills, where created items will always be the strongest items for each level tier group (armor is crafted for levels 10, 20, 30 etc.) But if you're leveling quickly, don't have access to an armorsmith or simply the crafted item isn't as strong as it could be, these are great fall-back options.
 
 ### Light Items
 These are **unlimited only** light sources.
@@ -701,9 +702,9 @@ These are **unlimited only** light sources.
 | a golden helmet of courage | 15 | 1g78s | hitroll +2, damroll +1 | shrine of barbades guards |
 | a sheer black veil | 15 | 3g46s | int +1, wis +1 | drow mines |
 | a pair of dirty horns | 20 | 18g92s | str +1, con +1, damroll +2, hitroll +1 | grungel boss |
-| the eye circlet of un'hlehya | 25 | 0g93s | wis +2, int +1 | tzimosh camp |
-| a dark helmet | 28 | 49g50s | hitroll +2, damroll +4 | east tower guard, mines of noal'xyn |
-| a spirit helmet | 28 | 49g50s | hitroll +2, damroll +4 | west tower guard, mines of noal'xyn |
+| a red bandana | 24 | 19g80s | damroll +2, hitroll +2, hp +2 | a deck hand, meridian |
+| a dark helmet | 28 | 49g50s | [-G, -N] hitroll +2, damroll +4 | east tower guard, mines of noal'xyn |
+| a spirit helmet | 28 | 49g50s | [-E, -N] hitroll +2, damroll +4 | west tower guard, mines of noal'xyn |
 | a crown of flowers | 45 | 9g99s | int +5 | hiilyraajie, valeda |
 ### Neck Armor
 | name | req lvl | cost | description | found |
@@ -720,7 +721,11 @@ These are **unlimited only** light sources.
 | --- | --- | --- | --- | --- | 
 | a rotting cape | 11 | 0g0s | damroll +1, hitroll +1 | nerezza, bleached warrior |
 | a black leather cape | 15 | 15g0s | damroll +2 | kreneth, aliuna |
-| a blue cape with the signet of Elsfar | 15| 13g96s | hitroll +3 | Metes, inn of the newt, naerlan |
+| a blue cape with the signet of Elsfar | 15 | 13g96s | hitroll +3 | Metes, inn of the newt, naerlan |
+| flowing soft brown robes | 20 | 17g32s | hitroll +2, damroll +1 | a honey-tongued priest, aliuna |
+| an ogre talisman made from a human skull | 24 | 20g81s |  hitroll +3, damroll +1 | svirfneblin hangharid, underdark |
+| a practical grey robe | 27 | 28g96s | [-G,-E] saves -3, damroll +2, hitroll +5 | a wise old bridge mage, aliuna |
+| a cleric's tunic | 27 | 23g76s | hitroll +4, damroll +2 | grand clerk alissandra, aliuna |
 | flowing priest's robes | 32 | 6g3s | damroll +1, hitroll +1, str +1, wis +1 | priest on justice road barreston |
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
 ### Torso / Body Armor
@@ -731,11 +736,15 @@ These are **unlimited only** light sources.
 | studded ream hide armor | 9 | 8g47s | damroll +3, hitroll +1 | unknown |
 | an iron breast-plate | 13 | 9g90s | damroll +2 | a mountain goblin, bose'nisten |
 | a shining chest plate | 15 | 28g35s | hitroll +3, damroll +2 | guard in front of shrine of barbades |
+| a bladed suit of plate
 | a black tunic | 20 | 27g72s | hitroll +2, dex +1 | drow mines |
+| a soft velvet vest | 22 | 22g27s | hitroll +2, damroll +2 | aliuna |
 | a mithril vest | 24 | 17g88s | damroll +1, hitroll +1 | mines of noal'xyn foreman loahan |
 | a shadow steel platemail cuirass | 25 | 2g84s | move +100, saves -2, ac -2, dex +1, str +1 | drow in grungnison catacombs |
-| shadow armor | 28 | 49g50s | con +2, hitroll +5 | east tower guard, mines of noal'xyn |
+| shadow armor | 28 | 49g50s | [-G, -N] con +2, hitroll +5 | east tower guard, mines of noal'xyn |
+| spirit armor | 28 | 49g50s | [-E, -N] con +2, hitroll +5 | west tower guard, mines of noal'xyn |
 | a suit of silver armor | 28 | 41g8s | damroll +4 | guard in mirage |
+| a cotton palace uniform | 29 | hitroll +2, damroll +2, con +1 |
 | an Eliem's robe | 30 | 99g0s | hitroll +2, damroll +2, wis +1, int +1, con +1 | Elium in Aliuna |
 | a suit of black chainmail | 30 | 15g24s | damroll +2, dex +2 | guard in castle of burdon |
 ### Waist Armor
@@ -744,6 +753,8 @@ These are **unlimited only** light sources.
 | a thick bronze belt | 5 | 0g28s | hitroll +1 | equinilis |
 | a belt of bones strung with human hair | 10 | 0g0s | hitroll +1, damroll +1 | underground highway, skeleton |
 | a jewelled belt | 15 | 2g52s | str +1, hitroll +2 | renault house |
+| a bell covered belt | 24 | 0g29s | hitroll +3 | a smiling halfling bard, longbottoms shire |
+| fine silk sash reads 'aliuna forever' | 24 | 24g75s | hitroll +2, damroll +1 | former eliem dal, aliuna |
 | a silver girth | 28 | 23g6s | hitroll +3, dex -1, con +2 | guard in mirage |
 | a braided rope belt | 32 | 3g96s | hitroll +4, str +2, con +1, ac +3 | priest on justice road barreston |
 | a dark purple aliunan belt | 37 | 25g74s | damroll +2, dex +1, con +1, str +1 | scowling guard aliuna |
@@ -753,6 +764,7 @@ These are **unlimited only** light sources.
 | a pair of leather armbands | 8 | 1g3s | hitroll +2 | lunatic's alley |
 | brass armguards | 14 | 9g79s | damroll +1 | vampire spawn, nerezza |
 | assassin's sleeves | 15 | 32g47s | damroll +1, hitroll +1 | a drow murderer, underdark |
+| chain mail sleeves | 23 | 3g66s | damroll +3 | an impatient duergar, fideals lake |
 | silver armguards | 28 | 12g99s | hitroll +3, damroll +1 | guard in mirage | 
 | boiled leather armguards | 32 | 29g70s | damroll +5 | Liun, main council floor aliuna |
 
@@ -764,8 +776,10 @@ These are **unlimited only** light sources.
 | a dryad's bracelet | 15 | 3g96s | int +1, hitroll +2 | behind hidden waterfall near goblin stronghold |
 | a bracelet of elf-hide | 15 | 0g99s | damroll +2 | goblin stronghold |
 | an acid-eaten steel bracer | 18 | 1g97s | hitroll +2, dex +1 | nerezza, gelatinus cube on top |
+| a du'rahathian guard tattoo | 24 | 0g0s | damroll +1, hitroll +2 | an angry duergar, du'rahath |
 | a wide iron bracer | 27 | 3g84s | hitroll +1, damroll +3 | barreston guards near entrance |
 | a silver bracer | 28 | 11g21s | hitroll +2, damroll +2 | guard in mirage |
+| a fealtic feather cord | 30 | 22g27s | hitroll +4, wis +1, int +1 | a fealtic bird, the avian tree |
 | a sparkling mithril bangle bracelets | 41 | 24g49s | hitroll +2, damroll +2, wis +1, int +1, con +1, | a small pixie mother, valeda |
 ### Hand Armor
 | name | req lvl | cost | description | found |
@@ -773,6 +787,7 @@ These are **unlimited only** light sources.
 | a pair of thin leather gloves | 12 | 9g79s | dex +1 | the filcher, underdark |
 | a set of iron-spiked gauntlets | 13 | 4g15s | damroll +2 | a moutain goblin, bose'nisten |
 | gauntlets of rage | 18 | 9g50s | damroll +3 | zel's armory, burrowholme |
+| a pair of red dragon claws | 20 | 11g38s | damroll +3, hitroll +1 | the red dragon, sewers |
 ### Finger Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -792,6 +807,7 @@ These are **unlimited only** light sources.
 | a pair of black leggings | 22 | 34g65s | damroll +2, con +1 | drow mines |
 | mithril greaves | 24 | 27g47s | hitroll +2 | loahann, foreman at mines of noal'xyn |
 | a stylish set of trousers | 26 | 14g85s | hitroll +3, damroll +1 | girl in merchants house, aliuna |
+| a pair of bloodied leather pants | 27 | 14g85s | damroll +4 | the meridian, the styweard |
 | silver greaves | 28 | 16g93s | hitroll +5, int -1, dex +1 | guard in mirage |
 | rotting hide greaves | 34 | 6g79s | hitroll +3, damroll +3 | valeda orc |
 ### Feet Armor
@@ -802,6 +818,8 @@ These are **unlimited only** light sources.
 | a pair of knee-high boots | 18 | 76g56s | damroll +2, con +1 | drow mines |
 | mithril boots | 24 | 27g10s | damroll +2 | loahan, mines of noal'xyn |
 | an aviak anklet | 25 | 12g37s | hitroll +4, dex +1 | aviak sentry in avian tree |
+| a pair of black leather boots | 26 | 24g5s | hitroll +2, damroll +2 | half-orc orak, underdark |
+| boots of flying | 29 | 97g52s | +flying, +300 move | drevlin, underdark |
 | a painted ankle bracelet | 39 | 9g43s | hitroll +5, damroll +3 | a dancing sylvan female, valeda |
 ### Held Items
 | name | req lvl | cost | description | found |
@@ -811,6 +829,8 @@ These are **unlimited only** light sources.
 | a dark-glowing statue | 11 | 25g0s | hitroll +1, damroll +1 | artifact merchant, aliuna |
 | a goblin fetish | 12 | 0g0s | int +1, damroll +1 | goblin stronghold |
 | the spirit of darkness | 18 | 0g9s | ac -1, damroll +1, hitroll +4 | nightwalker, nerezza |
+| a life-like wolf carving | 25 | 32g50s | hitroll +4, damroll +1 | a master woodcarver, valeda |
+| a large bear carving | 25 | 25g0s | damroll +2, str +2 | a master woodcarver, valeda |
 ### Floater Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
@@ -822,6 +842,7 @@ These are **unlimited only** light sources.
 | a dark-trimmed amethyst | 14 | 12g51s | wis +2 | goblin stronghold |
 | a dark-trimmed sapphire | 14 | 13g63s | str +2 | goblin stronghold |
 | a dark-trimmed pearl | 14 | 11g85s | con +2 | goblin stronghold |
+| a swooping parrot | 20 | 14g85s | hitroll +3, ac -2 | the avian tree, raven darter |
 | an aviak eye | 30 | 14g85s | str +1, con +1, dex +1 | the avian tree |
 | a bronze coin | 35 | 86g53s | +3 damroll, hp +25 | Yrenelania Orgath |
 | the mark of the head priest | 38 | 49g50s | hitroll +5, damroll +5 | aliuna head priest |
