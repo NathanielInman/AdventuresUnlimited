@@ -195,7 +195,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 All `directions` start from `Market Square` within `Naerlan`.
 | Alignment | Levels | Name | directions |
 | --- | --- | --- | --- | 
-| Good | 1-35 | Unknown | Unknown |
+| Good | 1-35 | Valerie | 3w1n1u1n |
 | Good | 36-75 | Selinia | 11e4n9e2s2w1u1w1n1u |
 | Good | 76-100 | Markaile | 4e9n5w6n6w8s2w1n2w1s1u1n1u1s1u1s |
 | Neutral | 1-35 | Rovlan | 4s1w1s |
