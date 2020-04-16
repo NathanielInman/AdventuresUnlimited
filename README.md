@@ -195,12 +195,12 @@ All `directions` start from `Market Square` within `Naerlan`.
 All `directions` start from `Market Square` within `Naerlan`.
 | Alignment | Levels | Name | directions |
 | --- | --- | --- | --- | 
-| Good | 1-35 | Denias | 4e9n5w6n6e2n1w1n;open up;1u |
+| Good | 1-35 | Unknown | Unknown |
 | Good | 36-75 | Selinia | 11e4n9e2s2w1u1w1n1u |
 | Good | 76-100 | Markaile | 4e9n5w6n6w8s2w1n2w1s1u1n1u1s1u1s |
 | Neutral | 1-35 | Rovlan | 4s1w1s |
-| Neutral | 36-75 | Corlando | 11e3s6e4s7e5n4e5n1e2n1u1e1n |
-| Neutral | 76-100 | Unknown | Unknown |
+| Neutral | 36-75 | Denias | 4e9n5w6n6e2n1w1n;open up;1u |
+| Neutral | 76-100 | Corlando | 11e3s6e4s7e5n4e5n1e2n1u1e1n |
 | Evil | 1-35 | Varzola | 4s1e2n1d |
 | Evil | 36-75 | Braime | 4e17s4w7s2e1s2e1d2s1e2n2e1s1u |
 | Evil | 76-100 | Jioxo | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2w1u1s |
