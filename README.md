@@ -3,6 +3,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 
 ## Table of Contents
 - [Directions](#directions)
+- [Quest Masters](#quest-masters)
 - [Temple](#temple)
   - [Temple Rank Costs](#temple-rank-costs)
   - [Temple Upgrade Costs](#temple-upgrade-costs)
@@ -189,6 +190,19 @@ All `directions` start from `Market Square` within `Naerlan`.
 | HERO | The Hall of Heroes | Unknown |
 | HERO | Il'kaethe | Unknown |
 | HERO | The Giants Outpost | Unknown |
+
+## Quest Masters
+| Alignment | Levels | Name | directions |
+| --- | --- | --- | --- | 
+| Good | 1-35 | Unknown | Unknown |
+| Good | 36-75 | Unknown | Unknown |
+| Good | 76-100 | Unknown | Unknown |
+| Neutral | 1-35 | Unknown | Unknown |
+| Neutral | 36-75 | Unknown | Unknown |
+| Neutral | 76-100 | Unknown | Unknown |
+| Evil | 1-35 | Unknown | Unknown |
+| Evil | 36-75 | Braime | 4e17s4w7s2e1s2e1d2s1e2n2e1s1u |
+| Evil | 76-100 | Unknown | Unknown |
 
 ## Temple
 A collection of helpful information related to AU temples
