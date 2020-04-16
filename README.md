@@ -3,7 +3,8 @@ A collection of resources and information surrounding the Adventures Unlimited M
 
 ## Table of Contents
 - [Directions](#directions)
-- [Quest Masters](#quest-masters)
+  - [Areas](#areas)
+  - [Quest Masters](#quest-masters)
 - [Temple](#temple)
   - [Temple Rank Costs](#temple-rank-costs)
   - [Temple Upgrade Costs](#temple-upgrade-costs)
@@ -41,11 +42,13 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Floater Items](#floater-items)
 
 ## Directions
+All `directions` start from `Market Square` within `Naerlan`.
+
+### Areas
 The following are unlisted or possibly removed areas that may need to be removed or added to the `areas` list within the game:
 - Plains of Blodai: 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w
 - Ruined Gerighelm: 5w9n4e6n6w3n2w3n2w
 
-All `directions` start from `Market Square` within `Naerlan`.
 | level | name | directions |
 | --- | --- | --- |
 | ALL | The Western Beaches | Unknown |
@@ -191,8 +194,7 @@ All `directions` start from `Market Square` within `Naerlan`.
 | HERO | Il'kaethe | Unknown |
 | HERO | The Giants Outpost | Unknown |
 
-## Quest Masters
-All `directions` start from `Market Square` within `Naerlan`.
+### Quest Masters
 | Alignment | Levels | Name | directions |
 | --- | --- | --- | --- | 
 | Good | 1-35 | Valerie | 3w1n1u1n |
