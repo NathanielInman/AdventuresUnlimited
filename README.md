@@ -550,37 +550,140 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 
 | name | req lvl | item lvl | cost | found in | description |
 | --- | --- | --- | --- | --- | --- |
+| scroll of reveal | 1 | 15 | 3g40s | underdark | faerie fog |
+| a dirty root | 1 | 15 | 22g0s | underdark | armor, stone skin, shield |
+| a pink wand | 2 | 7 | 2g50s | the meridian | faerie fire x 3 |
+| a wand of oak | 3 | 8 | 4g10s | the meridian | armor x 4 |
+| a wand of magic missiles | 5 | 10 | naerlan | magic missile x 2 |
+| a crumpled scroll | 5 | 7 | 1g50s | naerlan | magic missile x 2 |
 | a purple pill | 5 | 10 | 0g80s | brovlancor | invisibility |
 | a blue pill | 5 | 10 | 2g3s | brovlancor | sanctuary |
 | a potion of protection | 5 | 10 | 2g0s | naerlan | armor |
 | a small seed | 5 | 15 | 4g0s | naerlan | farsight |
 | a flame-painted wand | 5 | 10 | 10g0s | brovlancor | fireball |
 | a potion of crifus' favor | 5 | 15 | 3g90s | naerlan | cure critical, bless |
+| an ivory wand | 7 | 7 | 3g0s | equinilis | dispel evil x 2 |
+| a scroll of identify | 7 | 12 | 8g90s | naerlan | identify |
+| a travel-light flask | 7 | 5 | 1g0s | equinilis | cure light, refresh |
 | a lightning-painted wand | 7 | 9 | 12g71s | brovlancor | lightning bolt |
 | a potion of revealing | 7 | 15 | 2g90s | naerlan | detect invis, detect magic, detect hidden |
 | a dry ivy leaf | 7 | 12 | 4g50s | naerlan | create spring, cure disease |
+| a jade wand | 8 | 8 | 1g15s | equinilis | harm |
+| a bent stick | 8 | 10 | 10g0s | aliuna | change sex |
+| a small blue pill | 8 | 8 | 1g0s | equinilis | heal |
 | a potion of sickness removal | 8 | 14 | 5g50s | naerlan | cure poison, cure light, cure disease |
 | a potion of sight | 8 | 13 | 2g30s | naerlan | cure blindness, infravision |
+| a sunshine-yellow stick | 9 | 10 | 10g0s | aliuna | continual light x 2 |
+| a bright pink wand | 9 | 10 | 10g0s | aliuna | faerie fire x 2 |
+| a scroll of cancellation | 9 | 14 | 11g90s | naerlan | cancellation |
 | an elixir of negation | 9 | 20 | 8g30s | naerlan | cancellation |
 | a dirty root | 9 | 14 | 5g0s | naerlan | refresh, floating disc |
+| a wand of curing | 10 | 15 | 10g0s | naerlan | cure light x 7 |
+| the hand of shocking grasp | 10 | 15 | 53g0s | underdark | shocking grasp x 4 |
+| a wand of petrification | 10 | 15 | 68g0s | underdark | freeze x 8 |
+| a blue wand with purple spots | 10 | 10 | 20g0s | aliuna | haste x 2 |
+| a simple xycamore wand | 10 | 10 | 4g0s | aliuna | invisibility x 2 |
+| a swirling maple wand | 10 | 14 | 15g0s | aliuna | faerie fog x 2 |
+| a short oak wand | 10 | 10 | 2g0s | deltherian | magic missile x 8 |
+| a purple crystal staff | 10 | 15 | aliuna | cure light x 2 |
+| a scroll in a yellow case | 10 | 10 | deltherian | continual light |
+| a scroll in a red case | 10 | 10 | deltherian | detect hidden |
+| a scroll in a blue case | 10 | 8 | deltherian | haste |
+| a scroll in a white case | 10 | 8 | deltherian | cure light |
+| essence of troll | 10 | 5 | 2g0s | equinilis | regeneration |
+| potion of detection | 10 | 15 | 13g0s | underdark | detect hidden, detect invis, detect magic |
+| a frothing black potion | 10 | 15 | 50g0s | bose'nisten |
 | a simple sycamore wand | 10 | 10 | 4g0s | aliuna | invisibility x 2 |
 | a swirling maple wand | 10 | 14 | 15g0s | aliuna | faerie fog x 2 |
-| a feather | 10 | 15 | 8g70s | naerlan | fly x 1 |
+| a feather | 10 | 15 | 8g70s | naerlan | fly x 1 | 
+| the root of a black willow tree | 10 | 15 | 4g1s | bog of durlah | cure critical, cure disease, cure blindness |
+| a blue crystal staff | 11 | 15 | 25g0s | aliuna | slow x 2 |
+| an off white potion | 11 | 16 | 8g20s | the meridian | haste |
+| flask of holy water | 11 | 16 | 8g80s | dwarven catacombs | bless, sanctuary |
 | an elixir of tranquility | 11 | 20 | 8g0s | naerlan | sanctuary |
+| a prism wand | 12 | 17 | 22g0s | dwarven catacombs | colour spray x 4 |
+| a deep-green potion | 12 | 17 | 9g50s | the meridian | stone skin, blindness |
+| a misty potion | 12 | 17 | 4g60s | dwarven catacombs | pass door, faerie fire |
+| a cold vial | 12 | 15 | 12g0s | aliuna | armor, bless, blindness |
+| a small crystal flask | 10 | 10 | 1g0s | cure light, cure light |
+| a golden eagle feather | 14 | 19 | 7g99s | nerezza | haste |
 | a pink willow wand | 14 | 17 | 10g0s | aliuna | faerie fire x 3 |
 | a pink & white oak wand | 14 | 17 | 20g0s | aliuna | sleep x 2 |
 | a brilliant white wand of ash | 14 | 15 | 50g0s | aliuna | sanctuary x 2 |
+| a blood shot eye | 15 | 20 | 23g99s | underdark | flamestrike x 2 |
+| an olde lute | 15 | 10 | 7g50s | renault house | charm person x 3 |
+| a staff of withering | 15 | 20 | 17g71s | naerlan | weaken x 7 |
+| a scroll of recall | 15 | 20 | 29g0s | naerlan | word of recall |
+| a crimson-colored book | 15 | 14 | 5g0s | burrowholme | magic missile, blindness |
+| an obsidian tablet | 15 | 20 | 0g5s | volencymale | sanctuary |
+| a vial full of mist | 15 | 20 | 15g0s | illianathoren pass | detect hidden, faerie fog |
+| a feather of a dove | 15 | 20 | 0g10s | illianathoren pass | fly, refresh |
+| a mottled wand of rosewood | 16 | 20 | 16g0s | aliuna | haste x 3 |
+| a grey seal skin | 17 | 20 | 0g0s | fideals lake | charm person |
+| a blue and red vial | 17 | 20 | 15g0s | aliuna | giant strength, slow |
+| a strange purple vial | 17 | 20 | 20g0s | aliuna | detect hidden, calm |
+| a green-glowing decanter | 17 | 20 | 17g0s | aliuna | cure poison |
+| a transluscent red wand | 18 | 18 | 4g50s | mt ka'lri | infravision x 3 |
+| a worn page covered in writing | 18 | 20 | 18g0s | khetes | fireproof, continual light |
+| a staff of destruction | 20 | 25 | 9g90s | naerlan | earthquake x 9 |
+| a black scroll | 20 | 25 | 50g0s | mines of noal'xyn | curse, plague |
+| a white scroll | 20 | 25 | 50g0s | mines of noal'xyn | haste, armor |
+| a blue scroll | 20 | 25 | 50g0s | mines of noal'xyn | shield, stone skin |
+| a rolled parchment | 20 | 20 | 0g0s | sanctuary | identify |
+| the root of the Al'nar bush | 20 | 25 | 25g11s | naerlan | stone skin, cure poison |
+| a vial filled with sticky green ooze | 20 | 20 | du'rahath | regeneration, armor, slow |
+| a tiny beaker full of thinned out black liquid | 20 | 20 | du'rahath | detect invis, detect hidden, detect evil, detect good |
+| a beaker of thick blue liquid | 20 | 20 | du'rahath | phase, blindness, shield, plague |
+| a bubbling crimson potion | 20 | 20 | du'rahath | fireshield, giant strength |
+| a vial of elven spirit | 20 | 20 | illianathoren pass | armor, shield |
+| a vial of elven courage | 20 | 20 | illianathoren pass | giant strength, haste |
+| a vial of elven honour | 20 | 20 | illianathoren pass | sanctuary |
 | a purple scroll | 20 | 23 | 22g75s | mirage city | faerie fire |
+| the red dragonorb | 21 | 13 | 186g0s | sewers | sanctuary x 6 |
 | a potion of desert survival | 22 | 25 | 23g88s | mirage city | refresh, cure poison |
+| a fire gem | 23 | 28 | 119g0s | underdark | fireball x 5 |
+| the leaf of an ulo tree | 23 | 28 | 27g12s | naerlan | fly, armor, infravision |
+| the stalk of the verbank plant | 24 | 29 | 32g11s | naerlan | shield, detect good, protection good |
+| the gem of gate | 25 | 30 | 128g80s | underdark | teleport x 5 |
+| a dark grey potion | 25 | 30 | 50g0s | mines of noal'xyn | giant strength, invisibility, weaken |
+| a green potion | 25 | 30 | 50g0s | mines of noal'xyn | cure critical, cure critical |
+| a clear potion | 25 | 30 | 50g0s | mines of noal'xyn | pass door, poison |
+| a cold black potion | 25 | 30 | 18g0s | caldera ruins | fireshield, protection evil |
+| a slime of the enforcing eye | 25 | 25 | 134g0s | underdark | detect invis, detect hidden, mend, refresh |
+| a black vial | 25 | 25 | 0g0s | sanctuary | curse, weaken, poison |
 | a black potion | 25 | 30 | 32g50s | mirage city | fly |
+| a talisman of elemental control | 27 | 32 | 24g11s | dleivain | charm person x 6 |
 | a darkened parchment | 28 | 33 | 40g0s | mirage city | colour spray |
+| the dark wizard's athame | 30 | 35 | 30g0s | du'rahath | lightning bold x 10 |
+| a glowing silver staff | 30 | 30 | 75g0s | mines of noal'xyn | sanctuary x 5 |
+| a berry from a cleash bush | 30 | 35 | 35g1s | naerlan | sanctuary, remove curse |
+| a red pill | 30 | 35 | 50g0s | mines of noal'xyn | protection evil, frenzy, heal |
+| a yellow pill | 30 | 35 | 50g0s | mines of noal'xyn | frenzy, protection good, heal |
+| a dark pill | 30 | 35 | 50g0s | mines of noal'xyn | bless, stone skin |
 | a mysterious potion | 30 | 35 | 30g0s | castle of burdon | armor, stone skin |
 | a mysterious pill | 30 | 35 | 30g0s | castle of burdon | infravision, giant strength |
 | a mysterious scroll | 30 | 35 | 30g0s | castle of burdon | shocking grasp |
+| a powdered snake scale paste | 35 | 39 | 30g0s | valeda | earthshield |
+| crushed white flower petals | 35 | 39 | 30g0s | valeda | armor |
+| thorn shavings | 35 | 39 | 30g0s | valeda | bless |
+| some mint leaves | 35 | 39 | 30g0s | valeda | iceshield |
+| a blue potion | 38 | 38 | 57g0s | castle of burden | phase, plague, curse |
+| a red potion | 38 | 38 | 57g50s | castle of burden | detect invis, detect hidden |
+| a sacred staff | 40 | 45 | 26g75s | castle of burden | heal x 10 |
+| a black book | 40 | 45 | 45g0s | castle of burden | energy drain x 10 |
+| a slender mithril rod | 40 | 43 | 30g0s | valeda | lightning bolt x 6 |
+| burning coals | 40 | 43 | 35g0s | valeda | magic missile x 6 |
+| an emerald rod | 40 | 43 | 45g0s | valeda | sleep x 6 |
+| a glass rod | 40 | 43 | 25g0s | valeda | invisibility x 6 |
+| a pink rod | 40 | 43 | 25g0s | valeda | faerie fire x 6 |
+| a ruby staff | 40 | 40 | 65g75s | castle of burden | heat metal x 3 |
+| a jeweled sceptre | 45 | 47 | 40g0s | valeda | translate x 6 |
+| a pixie doll | 45 | 47 | 35g0s | valeda | haste x 6 |
 
 ## Items For Leveling
 
 ### Light Items
+These are **unlimited only** light sources.
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
 | a small jar of glow-moss | 14 | 4g48s | hitroll +3 | sold in kargath |
@@ -588,7 +691,6 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a glowing green ball | 29 | 13g82s | hitroll +3, dex +1 | kid in valeda |
 | a large light | 30 | 22g50s | hitroll +2, strength +1 | spelunker in castle burdon |
 | (invis) a ghostly flame | 31 | 17g40s | hitroll +2, damroll +2, mana +20 | servant in dleivan |
-| a magical purple ball | 33 | 27g50s | hitroll +4, damroll +2 | scowling guard aliuna |
 | elemental water beacon | 35 | 15g62s | hitroll +2, damroll +2, ac -2 | elemental in valeda |
 ### Head Armor
 | name | req lvl | cost | description | found |
@@ -602,27 +704,32 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | the eye circlet of un'hlehya | 25 | 0g93s | wis +2, int +1 | tzimosh camp |
 | a dark helmet | 28 | 49g50s | hitroll +2, damroll +4 | east tower guard, mines of noal'xyn |
 | a spirit helmet | 28 | 49g50s | hitroll +2, damroll +4 | west tower guard, mines of noal'xyn |
+| a crown of flowers | 45 | 9g99s | int +5 | hiilyraajie, valeda |
 ### Neck Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | an ancient iron brooch | 11 | 0g65s | hitroll +2 | nerezza |
 | a heavy cloak | 13 | 4g95s | con +1, damroll +1 | guard in renault house |
-| a jewelled necklace | 15 | 3g86s | wis +1, int +1 | renault house |
+| a yellow cloak | 17 | 10g0s | damroll +2, hitroll +1 | zel's armory, burrowholme |
 | a thick leather collar | 20 | 30g69s | hitroll +1, damroll +1, str +1 | deltherian from dog |
 | a golden signet necklace, 'Nobility' | 31 | 9g20s | hitroll +3, dex +1, saves +3, ac +6 | Elium in Aliuna |
 | a dark-blue cloak | 32 | 89g10s | +3 damroll, hp +25 | Yrenelania Orgath |
-### Shoulder Armor
+| an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
+### Shoulder / About Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| a black spider silk surcoat | 15 | 2g7s | hp -1, saves -1, hitroll +1, damroll +1 | vampire in nerezza behind door |
+| a rotting cape | 11 | 0g0s | damroll +1, hitroll +1 | nerezza, bleached warrior |
+| a black leather cape | 15 | 15g0s | damroll +2 | kreneth, aliuna |
+| a blue cape with the signet of Elsfar | 15| 13g96s | hitroll +3 | Metes, inn of the newt, naerlan |
 | flowing priest's robes | 32 | 6g3s | damroll +1, hitroll +1, str +1, wis +1 | priest on justice road barreston |
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
 ### Torso / Body Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
+| a barded poncho | 5 | 1g3s | hitroll +3 | equinilis |
+| a striped poncho | 7 | 1g48s | damroll +1 | equinilis |
 | studded ream hide armor | 9 | 8g47s | damroll +3, hitroll +1 | unknown |
-| a chain-mail shirt | 11 | 12g62s | hitroll +1, str +1 | hagarth |
-| a steel chest-plate | 13 | 1g53s | con +1, str +1 | renault house |
+| an iron breast-plate | 13 | 9g90s | damroll +2 | a mountain goblin, bose'nisten |
 | a shining chest plate | 15 | 28g35s | hitroll +3, damroll +2 | guard in front of shrine of barbades |
 | a black tunic | 20 | 27g72s | hitroll +2, dex +1 | drow mines |
 | a mithril vest | 24 | 17g88s | damroll +1, hitroll +1 | mines of noal'xyn foreman loahan |
@@ -634,7 +741,8 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
-| a rotting leather belt | 1g9s | damroll +1 | nerezza |
+| a thick bronze belt | 5 | 0g28s | hitroll +1 | equinilis |
+| a belt of bones strung with human hair | 10 | 0g0s | hitroll +1, damroll +1 | underground highway, skeleton |
 | a jewelled belt | 15 | 2g52s | str +1, hitroll +2 | renault house |
 | a silver girth | 28 | 23g6s | hitroll +3, dex -1, con +2 | guard in mirage |
 | a braided rope belt | 32 | 3g96s | hitroll +4, str +2, con +1, ac +3 | priest on justice road barreston |
@@ -643,7 +751,9 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | a pair of leather armbands | 8 | 1g3s | hitroll +2 | lunatic's alley |
-| silver armguards | 28 | 12g99s | hitroll +3, damroll + | guard in mirage | 
+| brass armguards | 14 | 9g79s | damroll +1 | vampire spawn, nerezza |
+| assassin's sleeves | 15 | 32g47s | damroll +1, hitroll +1 | a drow murderer, underdark |
+| silver armguards | 28 | 12g99s | hitroll +3, damroll +1 | guard in mirage | 
 | boiled leather armguards | 32 | 29g70s | damroll +5 | Liun, main council floor aliuna |
 
 ### Wrist Armor
@@ -656,24 +766,29 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | an acid-eaten steel bracer | 18 | 1g97s | hitroll +2, dex +1 | nerezza, gelatinus cube on top |
 | a wide iron bracer | 27 | 3g84s | hitroll +1, damroll +3 | barreston guards near entrance |
 | a silver bracer | 28 | 11g21s | hitroll +2, damroll +2 | guard in mirage |
+| a sparkling mithril bangle bracelets | 41 | 24g49s | hitroll +2, damroll +2, wis +1, int +1, con +1, | a small pixie mother, valeda |
 ### Hand Armor
-None yet.
+| name | req lvl | cost | description | found |
+| --- | --- | --- | --- | --- |
+| a pair of thin leather gloves | 12 | 9g79s | dex +1 | the filcher, underdark |
+| a set of iron-spiked gauntlets | 13 | 4g15s | damroll +2 | a moutain goblin, bose'nisten |
+| gauntlets of rage | 18 | 9g50s | damroll +3 | zel's armory, burrowholme |
 ### Finger Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | a battered silver ring | 10 | 3g18s | hitroll +2 | grungel |
 | a granite ring | 15 | 16g66s | int +1 | khetes priest |
 | a copper ring | 16 | 8g23s | damroll +1, saves -1, hitroll +2 | naerlan patrol guard |
+| a silver ring twisted with amethyst | 38 | 29g13s | hitroll +6 | scowling guard, aliuna |
 | (invis) an elemental ring of frost | 37 | 24g48s | hitroll +4, damroll +3 | valeda elemental |
 | the heart of the elven people | 30 | 3g6s | damroll +3, con +1, ac -2 | illiathorn pass commander |
+| a ruby ring, twisted with silver | 40 | 39g60s | damroll +3, hitroll +5 | a hurried pixie man, valeda |
 ### Leg Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
-| a pair of steel-banded leg guards | 13 | 0g37s | move +50, dex +1 | burrowholme |
-| a pair of leggings | 14 | 24g75s | strength +2 | hagarth |
-| thick leather leggings | 15 | 20g79s | move +50, hp +5, damroll +1 | equinalas |
+| a set of iron-spiked leg plates | 13 | 9g0s | damroll +2 | a mountain goblin, bose'nisten |
 | a pair of shadow steel leg plates | 15 | 6g3s | hitroll +3 | Zzukenethaft |
-| bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | unknown |
+| bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | master vampire, nerezza |
 | a pair of black leggings | 22 | 34g65s | damroll +2, con +1 | drow mines |
 | mithril greaves | 24 | 27g47s | hitroll +2 | loahann, foreman at mines of noal'xyn |
 | a stylish set of trousers | 26 | 14g85s | hitroll +3, damroll +1 | girl in merchants house, aliuna |
@@ -683,19 +798,25 @@ None yet.
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
 | a pair of steel-toed boots | 8 | 1g97s | damroll +1 | duergar in Naerlan |
+| a lightweight pair of boots | 10 | 0g0s | move +100 | gypsy in naerlan |
 | a pair of knee-high boots | 18 | 76g56s | damroll +2, con +1 | drow mines |
 | mithril boots | 24 | 27g10s | damroll +2 | loahan, mines of noal'xyn |
 | an aviak anklet | 25 | 12g37s | hitroll +4, dex +1 | aviak sentry in avian tree |
+| a painted ankle bracelet | 39 | 9g43s | hitroll +5, damroll +3 | a dancing sylvan female, valeda |
 ### Held Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | a small idol of asteri | 9 | 12g0s | str +1, damroll +1 | lunatics alley |
+| a small idol of mahrina | 10 | 0g99s | hitroll +2 | t'liesin clan leader, gypsy camp |
+| a dark-glowing statue | 11 | 25g0s | hitroll +1, damroll +1 | artifact merchant, aliuna |
 | a goblin fetish | 12 | 0g0s | int +1, damroll +1 | goblin stronghold |
+| the spirit of darkness | 18 | 0g9s | ac -1, damroll +1, hitroll +4 | nightwalker, nerezza |
 ### Floater Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
 | an aura of strength | 9 | 0g0s | strength +1 | nerezza |
 | a smooth, round pebble | 10 | 0g0s | damroll +1, hp +1 | shrine of barbades |
+| an undead stench | 13 | 0g0s | damroll +2 | zombie, nerezza |
 | a dark-trimmed emerald | 14 | 12g48s | int +2 | goblin stronghold |
 | a dark-trimmed ruby | 14 | 12g42s | dex +2 | goblin stronghold |
 | a dark-trimmed amethyst | 14 | 12g51s | wis +2 | goblin stronghold |
@@ -703,3 +824,4 @@ None yet.
 | a dark-trimmed pearl | 14 | 11g85s | con +2 | goblin stronghold |
 | an aviak eye | 30 | 14g85s | str +1, con +1, dex +1 | the avian tree |
 | a bronze coin | 35 | 86g53s | +3 damroll, hp +25 | Yrenelania Orgath |
+| the mark of the head priest | 38 | 49g50s | hitroll +5, damroll +5 | aliuna head priest |
