@@ -5,6 +5,8 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Directions](#directions)
   - [Areas](#areas)
   - [Quest Masters](#quest-masters)
+  - [Trainers](#trainers)
+  - [Tradesguilds](#tradesguilds)
 - [Temple](#temple)
   - [Temple Rank Costs](#temple-rank-costs)
   - [Temple Upgrade Costs](#temple-upgrade-costs)
