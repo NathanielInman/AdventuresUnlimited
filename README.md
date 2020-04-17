@@ -207,6 +207,15 @@ The following are unlisted or possibly removed areas that may need to be removed
 | Evil | 36-75 | Braime | 4e17s4w7s2e1s2e1d2s1e2n2e1s1u |
 | Evil | 76-100 | Jioxo | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2w1u1s |
 
+### Trainers
+Barreston: myrmidon, mage
+Rivendale: good cleric, paladin
+Terrason: charlatan, thief, warrior, evil cleric, antipaladin
+Aliuna: monk
+
+### Tradesguilds
+south east of aliuna, down in hargath.. south of erinole castle, east north of terrason
+
 ## Temple
 A collection of helpful information related to AU temples
 
@@ -225,6 +234,8 @@ A collection of helpful information related to AU temples
 | 10 | Ili'sion | Auy'dian | Ezt'fiel | 100,000 |
 
 ### Temple Upgrade Costs
+The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll`.
+
 | rank | hp cost | wp cost | mv cost | hit cost | dam cost |
 | --- | --- | --- | --- | --- | --- |
 | 5: apostle / defender / conspirator | 900g | 900g | 315g | 2850g | 4800g |
