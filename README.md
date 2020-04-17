@@ -371,7 +371,7 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 | spirit eyes | 22 | 20 | 2 | 0 | 1 | 0 | 2 |
 | stone skin | 29 | 20 | 2 | 0 | 1 | 2 | 0 |
 | levitate | 30 | 30 | 0 | 2 | 2 | 2 | 2 |
-| strength enhance | 30 | 20 | 2 | 0 | 0 | 3 | 2 |
+| strength enhance | 37 | 20 | 2 | 0 | 0 | 3 | 2 |
 | metabolize | 37 | 30 | 2 | 2 | 0 | 3 | 2 |
 | know object | 37 | 20 | 2 | 0 | 3 | 0 | 3 |
 | iron hands | 39 | 50 | 0 | 3 | 0 | 2 | 2 |
