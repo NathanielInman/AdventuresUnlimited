@@ -751,7 +751,7 @@ These are **unlimited only** light sources.
 | a cleric's tunic | 27 | 23g76s | hitroll +4, damroll +2 | grand clerk alissandra, aliuna |
 | flowing priest's robes | 32 | 6g3s | damroll +1, hitroll +1, str +1, wis +1 | priest on justice road barreston |
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
-| blue tent-like robes | 35 | 44g55s | hitroll +5, damroll +3, ac +3, saves +2 | a corpulent honored guest, aliuna |
+| blue tent-like robes | 35 | 44g55s | [-G,-E] hitroll +5, damroll +3, ac +3, saves +2 | a corpulent honored guest, aliuna |
 | a shimmering robe | 42 | 75g22s | damroll +5 | malrya the flutist, valeda |
 | a blue master's robe | 45 | 13g76s | hitroll +6, damroll +3 | magical pixie master, valeda |
 ### Torso / Body Armor
