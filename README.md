@@ -110,7 +110,7 @@ The following are unlisted or possibly removed areas that may need to be removed
 | 10 - 40 | Lower Barreston | 5w9n4e6n6w3n2w3n2w |
 | 10 - 40 | Upper Barreston | 5w9n4e6n6w3n2w3n2w |
 | 13 - 30 | Sanctuary | 7e1d2w2n9w5s2e2s2re |
-| 13 - 50 | Underdark | 4e9n5w6n3e2s1e1s2w |
+| 13 - 50 | [Underdark](https://raw.githubusercontent.com/NathanielInman/AdventuresUnlimited/master/underdark.gif) | 4e9n5w6n3e2s1e1s2w |
 | 15 - 25 | Littlefist Glade | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
 | 15 - 25 | Jasporin | 5w9n4e6n6w2s6s2w1n1w3n |
 | 15 - 25 | Longbottom's Shire | 5w9n4e;open north;6n6w3n2w3n2e |
