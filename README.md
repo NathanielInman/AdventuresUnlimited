@@ -348,45 +348,25 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 ## Monk
 
 ### Monk Mantras
-| name | description |
-| --- | --- | 
-| spirit invisibility | invisibility | 
-| stone hands | damage enhancement | 
-| spirit eyes | detect magic, detect invis, ~detect hidden~ | 
-| stone skin | ac self buff | 
-| levitate | fly | 
-| strength enhance | giant strength | 
-| metabolize | haste, cures some illnesses and maledictions | 
-| know object | identify item | 
-| iron hands | damage enhancement | 
-| celestial path | limited gate to adjacent areas, gate out of norecall rooms | 
-| know speech | translate | 
-| steel hands | damage enhancement | 
-| life cloak | regenerate | 
-| healing touch | heal anybody regardless of where they are | 
-| harden | halves slash, blunt or pierce damage | 
-| flaming hands | damage enhancement | 
-| spirit hands | damage enhancement | 
-
-| name | level | mana | awareness | combat | focus | body | spirit |
-| --- | --- | --- | --- | --- | --- | --- | --- | 
-| spirit invisibility | 13 | 20 | 1 | 0 | 0 | 1 | 1 |
-| stone hands | 19 | 35 | 0 | 2 | 1 | 1 | 1 |
-| spirit eyes | 22 | 20 | 2 | 0 | 1 | 0 | 2 |
-| stone skin | 29 | 20 | 2 | 0 | 1 | 2 | 0 |
-| levitate | 30 | 30 | 0 | 2 | 2 | 2 | 2 |
-| strength enhance | 37 | 20 | 2 | 0 | 0 | 3 | 2 |
-| metabolize | 37 | 30 | 2 | 2 | 0 | 3 | 2 |
-| know object | 37 | 20 | 2 | 0 | 3 | 0 | 3 |
-| iron hands | 39 | 50 | 0 | 3 | 0 | 2 | 2 |
-| celestial path | 40 | 25 | 4 | 0 | 3 | 3 | 3 |
-| know speech | 42 | 20 | 2 | 0 | 3 | 0 | 3 |
-| steel hands | 59 | 50 | 2 | 3 | 2 | 2 | 2 |
-| life cloak | 60 | 50 | 3 | 0 | 2 | 3 | 3 |
-| healing touch | 65 | 100 | 2 | 0 | 2 | 3 | 2 |
-| harden | 65 | 80 | 4 | 4 | 4 | 4 | 4 |
-| flaming hands | 79 | 50 | 2 | 3 | 2 | 3 | 3 |
-| spirit hands | 99 | 50 | 4 | 4 | 0 | 4 | 4 |
+| name | level | mana | awareness | combat | focus | body | spirit | description |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| spirit invisibility | 13 | 20 | 1 | 0 | 0 | 1 | 1 | invisibility |
+| stone hands | 19 | 35 | 0 | 2 | 1 | 1 | 1 | damage enhancement |
+| spirit eyes | 22 | 20 | 2 | 0 | 1 | 0 | 2 | detect magic, invis, hidden (lvl 31) |
+| stone skin | 29 | 20 | 2 | 0 | 1 | 2 | 0 | | ac self buff |
+| levitate | 30 | 30 | 0 | 2 | 2 | 2 | 2 | fly |
+| strength enhance | 37 | 20 | 2 | 0 | 0 | 3 | 2 | giant strength |
+| metabolize | 37 | 30 | 2 | 2 | 0 | 3 | 2 | haste, cure illness & maledictions |
+| know object | 37 | 20 | 2 | 0 | 3 | 0 | 3 | identify item |
+| iron hands | 39 | 50 | 0 | 3 | 0 | 2 | 2 | damage enhancement |
+| celestial path | 40 | 25 | 4 | 0 | 3 | 3 | 3 | limited gate to adjacent areas & norecall |
+| know speech | 42 | 20 | 2 | 0 | 3 | 0 | 3 | translate |
+| steel hands | 59 | 50 | 2 | 3 | 2 | 2 | 2 | damage enhancement |
+| life cloak | 60 | 50 | 3 | 0 | 2 | 3 | 3 | regenerate
+| healing touch | 65 | 100 | 2 | 0 | 2 | 3 | 2 | heal target regardless of location |
+| harden | 65 | 80 | 4 | 4 | 4 | 4 | 4 | halves non-exotic damage |
+| flaming hands | 79 | 50 | 2 | 3 | 2 | 3 | 3 | damage enhancement |
+| spirit hands | 99 | 50 | 4 | 4 | 0 | 4 | 4 | damage enhancement |
 
 ### Monk Fight Moves
 | name | level | requirements |
