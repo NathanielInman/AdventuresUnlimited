@@ -142,7 +142,7 @@ The following are unlisted or possibly removed areas that may need to be removed
 | 30 - 50 | Darathorn's Pit | 4e9n5w6n3e2s1e2s1w1n |
 | 35 - 45 | The Sandcastle | 43w3n1w4n3w5n1s1e1n3w |
 | 35 - 45 | Oterion | 7e1d2s1e9s4w1n3w |
-| 35 - 45 | Eirenole | Unknown |
+| 35 - 45 | Eirenole | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock north;open north;2n1e1n |
 | 35 - 50 | Tyyrinn Village | 7e1d2s1e7s5e2s |
 | 35 - 50 | The City of Terrason | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
 | 35 - 50 | Uchduruk | 11e4n4e1n1e |
