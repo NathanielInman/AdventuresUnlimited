@@ -712,6 +712,7 @@ These are **unlimited only** light sources.
 | a large light | 30 | 22g50s | hitroll +2, strength +1 | spelunker in castle burdon |
 | (invis) a ghostly flame | 31 | 17g40s | hitroll +2, damroll +2, mana +20 | servant in dleivan |
 | elemental water beacon | 35 | 15g62s | hitroll +2, damroll +2, ac -2 | elemental in valeda |
+| a steel lantern | 39 | 12g50s | hitroll +2, damroll +1, hp +10 | hunter in oterion |
 ### Head Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -832,6 +833,7 @@ These are **unlimited only** light sources.
 | a set of iron-spiked gauntlets | 13 | 4g15s | damroll +2 | a moutain goblin, bose'nisten |
 | gauntlets of rage | 18 | 9g50s | damroll +3 | zel's armory, burrowholme |
 | a pair of red dragon claws | 20 | 11g38s | damroll +3, hitroll +1 | the red dragon, sewers |
+| giant skin gloves | 38 | 19g80s | damroll +1, hitroll +5 | oterion hunter |
 | a pair of gauntlets of the eye | 42 | 183g15s | damroll +3, hp +10, hitroll +2 | underling, underdark |
 ### Finger Armor
 | name | req lvl | cost | description | found |
@@ -885,6 +887,7 @@ These are **unlimited only** light sources.
 | the spirit of darkness | 18 | 0g9s | ac -1, damroll +1, hitroll +4 | nightwalker, nerezza |
 | a life-like wolf carving | 25 | 32g50s | hitroll +4, damroll +1 | a master woodcarver, valeda |
 | a large bear carving | 25 | 25g0s | damroll +2, str +2 | a master woodcarver, valeda |
+| a frost wolf's tusk | 39 | 9g90s | damroll +3, con +1 | oterion hunter |
 | a sacred tome | 40 | 37g12s | [-E] damroll +1, hitroll +2, saves -1, hp +20 | tyrlonde, castle of burdon |
 ### Floater Items
 | name | req lvl | cost | description | found |
