@@ -337,8 +337,12 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 | a small fire dragon | 30 | 90g0s | Terrason |
 | a large cobra | 30 | 90g0s | Mirage City |
 | a glowing-eyed serpent | 35 | 122g50s | Terrason |
+| a weasel | 35 | 122g50s | A Quickling Village |
 | a living whip of flame | 40 | 160g0s | Terrason |
+| a ferret | 40 | 160g0s | A Quickling Village |
+| a carrier pigeon | 40 | 160g0s | A Quickling Village |
 | a spectre of light | 45 | 202g50s | Terrason |
+| a fierce falcon | 45 | 202g50s | A Quickling Village|
 | an enchanted gauntlet of power | 50 | 250g0s | Terrason |
 
 ## Monk
