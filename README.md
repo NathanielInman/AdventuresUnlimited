@@ -50,15 +50,27 @@ All `directions` start from `Market Square` within `Naerlan`.
 The following are unlisted or possibly removed areas that may need to be removed or added to the `areas` list within the game:
 - Plains of Blodai: 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w
 - Ruined Gerighelm: 5w9n4e6n6w3n2w3n2w
+Additional helpful maps on the [official website](tharel.net):
+  - [Tharel](https://tharel.net/img/map-tharel.gif)
+  - [Naerlan](https://tharel.net/img/map-naerlan.jpg)
+  - [Naerlan: Out the East Gate](https://tharel.net/img/map-gate-east.png)
+  - [Naerlan: Out the North Gate](https://tharel.net/img/map-gate-north.png)
+  - [Naerlan: Out the South Gate](https://tharel.net/img/map-gate-south.png)
+  - [Naerlan: Out the West Gate](https://tharel.net/img/map-gate-west.png)
+  - [Dragon Sea Waterways](https://tharel.net/img/map-dragonsea.png)
+  - [Northern & Caravan Roads](https://tharel.net/img/map-caravannorthernroads.png)
+  - [Northern River Path](https://tharel.net/img/map-northernriverpath.png)
+  - [Western Ocean Waterways](https://tharel.net/img/map-westernocean.png)
+  - [The Western Road](https://tharel.net/img/map-westernroad.png)
 
 | level | name | directions |
 | --- | --- | --- |
 | ALL | The Western Beaches | Unknown |
-| ALL | The Western Ocean | Unknown |
+| ALL | [The Western Ocean](https://tharel.net/img/map-westernocean.png) | Unknown |
 | ALL | The Western Coastline | Unknown |
 | ALL | More Western Ocean | Unknown |
 | ALL | The Western Trails | 42w2s |
-| ALL | The Western Road | 17w |
+| ALL | [The Western Road](https://tharel.net/img/map-westernroad.png) | 17w |
 | ALL | Western Tharel | Unknown |
 | OOC | The Lounge | 3n;go ooc |
 | ALL | The Dwarven Forest | Unknown |
@@ -67,53 +79,53 @@ The following are unlisted or possibly removed areas that may need to be removed
 | ALL | Underground Highway |  4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s |
 | ALL | The Neighborhood | Unknown |
 | ALL | Ether | Unknown |
-| ALL | Naerlan | Starting Position |
+| ALL | [Naerlan](https://tharel.net/img/map-naerlan.jpg) | Starting Position |
 | 1 - 5 | Survival Training | 2e1n |
-| 1 - 20 | Heishnum Desert | 4e;open east;7e3s6e4s2e1s |
-| 1 - 20 | The Eastern Moors | 8e1n |
-| 5 - 8 | School of Faith | 6w6s1w |
+| 1 - 20 | [Heishnum Desert](https://tharel.net/img/map-heishnumdesert.gif) | 4e;open east;7e3s6e4s2e1s |
+| 1 - 20 | [The Eastern Moors](https://tharel.net/img/map-easternmoors.png) | 8e1n |
+| 5 - 8 | [School of Faith](https://tharel.net/img/map-schooloffaith.gif) | 6w6s1w |
 | 5 - 10 | T'leisins Pool | 8w4s2w;search north;open n;1n2w2s |
 | 5 - 10 | The Stone Quarry | 14w1s |
 | 5 - 10 | Nerezza | 7e1d2s1e7s7e2n3w |
-| 5 - 10 | Equinilis | 12w4n1w |
+| 5 - 10 | [Equinilis](https://tharel.net/img/map-equinilis.gif) | 12w4n1w |
 | 5 - 10 | Lunatic's Alley | 5w17s2e1n |
-| 5 - 10 | Gypsy Camp | 8w2s |
+| 5 - 10 | [Gypsy Camp](https://tharel.net/img/map-gypsycamp.jpg) | 8w2s |
 | 5 - 10 | Naerlan Graveyard | 6w10s1w1s |
 | 5 - 10 | Woodfell Forest | 5w9n4e;open north;6n3e1s |
 | 5 - 15 | The Mines of Markov | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n |
 | 5 - 15 | Shrine of Barbades | 4e9n5w6n9e2n1w1n1w1u |
-| 5 - 15 | Deltherian | 8e7n |
+| 5 - 15 | [Deltherian](https://tharel.net/img/map-deltherian.jpg) | 8e7n |
 | 5 - 15 | Taverns of Naerlan | Unknown |
-| 5 - 15 | Travellers' Rest | 11e3s5w |
+| 5 - 15 | [Travellers' Rest](https://tharel.net/img/map-travellersrest.gif) | 11e3s5w |
 | 5 - 15 | Brovlancor | 4e9n5w6n6w8s2w1n2w4s1w4s2e1s |
 | 5 - 30 | Naerlan Sewers | 4s2w1d |
-| 5 - 40 | The City of Aliuna | 11e3s6e4s5e |
-| 8 - 22 | Haythor Dungeon | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
+| 5 - 40 | [The City of Aliuna](https://tharel.net/img/map-aliuna.png) | 11e3s6e4s5e |
+| 8 - 22 | [Haythor Dungeon](https://tharel.net/img/map-haythordungeon.jpg) | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
 | 10 - 15 | The Drow Mines | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s1e2s1w1s2e1s |
-| 10 - 15 | Cartwrights Farm | 9w1d5n7w2n1e |
-| 10 - 15 | Volencymale | 12w4n1e |
-| 10 - 15 | The Renault House | 7w2n2w;search n |
+| 10 - 15 | [Cartwrights Farm](https://tharel.net/img/map-cartwrightsfarm.gif) | 9w1d5n7w2n1e |
+| 10 - 15 | [Volencymale](https://tharel.net/img/map-cathedralvolencymale.gif) | 12w4n1e |
+| 10 - 15 | [The Renault House](https://tharel.net/img/map-renaulthouse.jpg) | 7w2n2w;search n |
 | 10 - 15 | Bose'nisten | 5w9n4e6n6w2s |
 | 10 - 15 | The Bog of Durlah | 7e1d2w2n12w2s |
 | 10 - 15 | Hagarth | 4e17s4w9s2w2s1w1s |
 | 10 - 20 | Tark Valley | 9w1d5n11w;open n;1n;open w;1w;open n;n |
-| 10 - 20 | Mt Ka'lri | 4e9n5w6n6w8s2w1n2w4s1s;search west;open w;1qw |
-| 10 - 20 | Tzimosh's Camp | 5w9n4e6n11e3n1e1n |
+| 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | 4e9n5w6n6w8s2w1n2w4s1s;search west;open w;1qw |
+| 10 - 20 | [Tzimosh's Camp](https://tharel.net/img/map-tzimoshscamp.jpg) | 5w9n4e6n11e3n1e1n |
 | 10 - 20 | Hythian Forest | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
-| 10 - 20 | Burrowholme | 5w9n4e;open north;5n4w1n |
+| 10 - 20 | [urrowholme](https://tharel.net/img/map-burrowholme.gif) | 5w9n4e;open north;5n4w1n |
 | 10 - 20 | Goblin Stronghold | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
-| 10 - 20 | Grungel | 7e1d2s1e3s1w |
-| 10 - 25 | The Hand of Markov | 7s4e10s4w9s2w2s2w |
+| 10 - 20 | [Grungel](https://tharel.net/img/map-grungel.jpg) | 7e1d2s1e3s1w |
+| 10 - 25 | [The Hand of Markov](https://tharel.net/img/map-handofmarkov.gif) | 7s4e10s4w9s2w2s2w |
 | 10 - 30 | Illianathoren Pass | 8e7n1w1n1e5n3e3n4e |
-| 10 - 30 | Khetes | 11e5n2e1s7e3n |
-| 10 - 40 | Northern Barreston | 5w9n4e6n6w3n2w3n2w |
-| 10 - 40 | Lower Barreston | 5w9n4e6n6w3n2w3n2w |
-| 10 - 40 | Upper Barreston | 5w9n4e6n6w3n2w3n2w |
-| 13 - 30 | Sanctuary | 7e1d2w2n9w5s2e2s2re |
+| 10 - 30 | [Khetes](https://tharel.net/img/map-khetes.jpg) | 11e5n2e1s7e3n |
+| 10 - 40 | [Northern Barreston](https://tharel.net/img/map-barreston.png) | 5w9n4e6n6w3n2w3n2w |
+| 10 - 40 | [Lower Barreston](https://tharel.net/img/map-barreston.png) | 5w9n4e6n6w3n2w3n2w |
+| 10 - 40 | [Upper Barreston](https://tharel.net/img/map-barrestonupper.png) | 5w9n4e6n6w3n2w3n2w |
+| 13 - 30 | [Sanctuary](https://tharel.net/img/map-sanctuary.gif) | 7e1d2w2n9w5s2e2s2re |
 | 13 - 50 | [Underdark](https://raw.githubusercontent.com/NathanielInman/AdventuresUnlimited/master/underdark.gif) | 4e9n5w6n3e2s1e1s2w |
 | 15 - 25 | Littlefist Glade | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
-| 15 - 25 | Jasporin | 5w9n4e6n6w2s6s2w1n1w3n |
-| 15 - 25 | Longbottom's Shire | 5w9n4e;open north;6n6w3n2w3n2e |
+| 15 - 25 | [Jasporin](https://tharel.net/img/map-jasporin.jpg) | 5w9n4e6n6w2s6s2w1n1w3n |
+| 15 - 25 | [Longbottom's Shire](https://tharel.net/img/map-longbottomsshire.gif) | 5w9n4e;open north;6n6w3n2w3n2e |
 | 15 - 25 | Fidael's Lake | 9w2d5n2w1n |
 | 15 - 25 | Zzukenathaft | 5w17s5e7s2e1s2e1d1w1s2d |
 | 15 - 30 | Du'Rahath | 16w2s1e2s1e |
@@ -126,7 +138,7 @@ The following are unlisted or possibly removed areas that may need to be removed
 | 20 - 30 | Racomva | 5w17s5e7s2e1s2e1d3n1e1u2n |
 | 20 - 30 | Mirage City | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e1n1e3s1e1s2e2n |
 | contin. | contin. | 2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;search;go pool;go mirage |
-| 20 - 30 | The Avian Tree | 4e9n5w6n9e2n1e1n |
+| 20 - 30 | [The Avian Tree](https://tharel.net/img/map-aviantree.png) | 4e9n5w6n9e2n1e1n |
 | 20 - 30 | The Meridian | 11e3s6e4s23e2n4e |
 | 20 - 35 | Dleivain | 4e9n5w6n9e2n4w1n1w1n;go door |
 | 20 - 55 | Yrenelania | 8e7n1w1n1e4n2e4n8e1d1s2e;go crack;1e1n1e;search south;open south;1s3e1n2e2n3e |
@@ -144,7 +156,7 @@ The following are unlisted or possibly removed areas that may need to be removed
 | 35 - 45 | Oterion | 7e1d2s1e9s4w1n3w |
 | 35 - 45 | Eirenole | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock north;open north;2n1e1n |
 | 35 - 50 | Tyyrinn Village | 7e1d2s1e7s5e2s |
-| 35 - 50 | The City of Terrason | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
+| 35 - 50 | [The City of Terrason](https://tharel.net/img/map-terrason.jpg) | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
 | 35 - 50 | Uchduruk | 11e4n4e1n1e |
 | 40 - 45 | Eirenole Thistle | Unknown |
 | 40 - 50 | The Four Seasons | Unknown |
@@ -165,7 +177,7 @@ The following are unlisted or possibly removed areas that may need to be removed
 | 55 - 70 | Ruins of Khezauch | Unknown |
 | 55 - 75 | Necropolis | Unknown |
 | 60 - 70 | Caranos' Tomb | Unknown |
-| 60 - 70 | Rivendale | Unknown |
+| 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | Unknown |
 | 60 - 75 | Tiny Rapids | Unknown |
 | 60 - 85 | Lost Kingdoms | Unknown |
 | 65 - 75 | Forest of Dreams | Unknown |
