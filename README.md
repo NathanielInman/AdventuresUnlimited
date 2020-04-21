@@ -686,7 +686,7 @@ Keep in mind that the intention for this is **not** to be a comprehensive list o
 These are **unlimited only** light sources.
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
-| a small jar of glow-moss | 14 | 4g48s | hitroll +3 | sold in kargath |
+| a small jar of glow-moss | 14 | 4g48s | hitroll +3 | sold in hargath |
 | a black guard's lantern | 28 | 15g0s | ac -2, hitroll +2 | guard in mirage |
 | a glowing green ball | 29 | 13g82s | hitroll +3, dex +1 | kid in valeda |
 | a large light | 30 | 22g50s | hitroll +2, strength +1 | spelunker in castle burdon |
