@@ -489,7 +489,7 @@ The absolute key to mastering monk combat is leveraging all the techniques to pe
 | 23 | knock | knee (bright blue), elbow (red), thrust kick | chance to knock mob/player out cold |
 | 27 | elbow strike | shin kick (yellow), thrust kick (red), elbow | high damage |
 | 33 | back fist | elbow (red), back fist | average damage |
-| 33 | palm strike | back fist (blue), palm strike | high damage |
+| 39 | palm strike | back fist (blue), palm strike | high damage |
 | 39 | silence | elbow (red), palm strike | target can no talk, read scrolls or cast magic |
 | 39 | elbow strike | palm strike (bright red), elbow | average damage |
 | 43 | trip | shin kick (yellow), sweep | slightly helps prevent fleeing, tiny damage |
