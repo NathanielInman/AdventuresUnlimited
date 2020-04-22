@@ -164,7 +164,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 40 - 50 | Schwartz Glacier | Unknown |
 | 40 - 50 | Mystery Manor | Unknown |
 | 40 - 55 | Pyrainn Mountains | Unknown |
-| 40 - 60 | Draek'le | Unknown |
+| 40 - 60 | Draek'le | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | 20w1n6w3n1w1u9w3n1u |
 | 45 - 55 | Beehive | Unknown |
 | 45 - 60 | Xuergothe Castle | Unknown |
