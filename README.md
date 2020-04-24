@@ -695,6 +695,11 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ## Items For Leveling
 Keep in mind that the intention for this is **not** to be a comprehensive list of items, but the **best-in-slot** leveling items. Adventures Unlimited has a huge focus on tradeskills, where created items will always be the strongest items for each level tier group (armor is crafted for levels 10, 20, 30 etc.) But if you're leveling quickly, don't have access to an armorsmith or simply the crafted item isn't as strong as it could be, these are great fall-back options.
 
+** Alignment Restriction Flags **
+- **[-E]** = Anti-evil item, evil alignment characters cannot wear it
+- **[-N]** = Anti-neutral item, neutral alignment characters cannot wear it
+- **[-G]** = Anti-good item, good alignment characters cannot wear it
+
 ### Light Items
 These are **unlimited only** light sources.
 | name | req lvl | cost | description | found |
@@ -732,7 +737,7 @@ These are **unlimited only** light sources.
 | a heavy cloak | 13 | 4g95s | con +1, damroll +1 | guard in renault house |
 | a yellow cloak | 17 | 10g0s | damroll +2, hitroll +1 | zel's armory, burrowholme |
 | a thick leather collar | 20 | 30g69s | hitroll +1, damroll +1, str +1 | deltherian from dog |
-| a golden signet necklace, 'Nobility' | 31 | 9g20s | hitroll +3, dex +1, saves +3, ac +6 | Elium in Aliuna |
+| a golden signet necklace, 'Nobility' | 31 | 9g20s | [-E] hitroll +3, dex +1, saves +3, ac +6 | Elium in Aliuna |
 | a dark-blue cloak | 32 | 89g10s | damroll +3, hp +25 | Yrenelania Orgath |
 | an elemental lake amulet | 35 | 20g1s | damroll +2, hitroll +3, wis +1, int +1 | lake elemental, valeda |
 | an elemental helmet of vigilance | 36 | 0g0s | damroll +4, int +2 | vigilance elemental, valeda |
