@@ -597,11 +597,11 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a simple xycamore wand | 10 | 10 | 4g0s | aliuna | invisibility x 2 |
 | a swirling maple wand | 10 | 14 | 15g0s | aliuna | faerie fog x 2 |
 | a short oak wand | 10 | 10 | 2g0s | deltherian | magic missile x 8 |
-| a purple crystal staff | 10 | 15 | aliuna | cure light x 2 |
-| a scroll in a yellow case | 10 | 10 | deltherian | continual light |
-| a scroll in a red case | 10 | 10 | deltherian | detect hidden |
-| a scroll in a blue case | 10 | 8 | deltherian | haste |
-| a scroll in a white case | 10 | 8 | deltherian | cure light |
+| a purple crystal staff | 10 | 15 | 0g0s | aliuna | cure light x 2 |
+| a scroll in a yellow case | 10 | 10 | 1g0s | deltherian | continual light |
+| a scroll in a red case | 10 | 10 | 1g0s | deltherian | detect hidden |
+| a scroll in a blue case | 10 | 8 | 1g0s | deltherian | haste |
+| a scroll in a white case | 10 | 8 | 1g0s | deltherian | cure light |
 | essence of troll | 10 | 5 | 2g0s | equinilis | regeneration |
 | potion of detection | 10 | 15 | 13g0s | underdark | detect hidden, detect invis, detect magic |
 | a frothing black potion | 10 | 15 | 50g0s | bose'nisten |
@@ -743,6 +743,7 @@ These are **unlimited only** light sources.
 | a dark-blue cloak | 32 | 89g10s | damroll +3, hp +25 | Yrenelania Orgath |
 | an elemental lake amulet | 35 | 20g1s | damroll +2, hitroll +3, wis +1, int +1 | lake elemental, valeda |
 | an elemental helmet of vigilance | 36 | 0g0s | damroll +4, int +2 | vigilance elemental, valeda |
+| a cape embroidered with nightmares | 40 | 33g91s | damroll +4, str +1, dex +1 | jailcell, terrason |
 | a brass-reinforced neck brace | 43 | 16g86s | hitroll +4, saves -3, ac -3 | pixie guard, valeda |
 | an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
 ### Shoulder / About Armor
@@ -809,6 +810,7 @@ These are **unlimited only** light sources.
 | a pair of ravenskin sleeves | 30 | 29g70s | damroll +2, hitroll +2, con +1 | a razor raven, the avian tree |
 | boiled leather armguards | 32 | 29g70s | damroll +5 | Liun, main council floor aliuna |
 | armplates of flesh | 35 | 49g50s | damroll +3, hitroll +3 | the disgrace, reskel |
+| simple leather armbands | 39 | 10g89s | hitroll +3, dex +1, con -1 | halfling citizen, tyyrinn village |
 | dull steel chain sleeves | 45 | 16g25s | damroll +4, hitroll +5 | jrek, the guardian, valeda |
 
 ### Wrist Armor
@@ -827,6 +829,7 @@ These are **unlimited only** light sources.
 | a hardened wood bracer | 39 | 12g37s | damroll +1, hitroll +8 | alert elven scout, valeda |
 | a sparkling mithril bangle bracelets | 41 | 24g49s | hitroll +2, damroll +2, wis +1, int +1, con +1, | a small pixie mother, valeda |
 | an engraved brass bracer | 43 | 30g36s | hitroll +7, damroll +1, dex +1 | a zipping pixie guard, valeda |
+
 ### Hand Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
@@ -906,6 +909,7 @@ These are **unlimited only** light sources.
 | an aviak eye | 30 | 14g85s | str +1, con +1, dex +1 | the avian tree |
 | a cloud of smoke | 32 | 24g96s | hitroll +3, hp +20 | smoke elemental, dleivain |
 | a bronze coin | 35 | 86g53s | +3 damroll, hp +25 | Yrenelania Orgath |
+| a pair of fluttering pixie wings | 36 | 80g0s | hitroll +4, dex +2 | flirting pixie, sandcastle |
 | an elemental aura of fear | 37 | 2g17s | hitroll +2, damroll +5, str -2 | fear elemental, valeda |
 | the mark of the head priest | 38 | 49g50s | hitroll +5, damroll +5 | aliuna head priest |
 | an aura of contentment | 41 | 29g91s | hitroll +4, damroll +3, ac -3 | pixie mother, valeda |
