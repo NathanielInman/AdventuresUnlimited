@@ -675,6 +675,8 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a mysterious potion | 30 | 35 | 30g0s | castle of burdon | armor, stone skin |
 | a mysterious pill | 30 | 35 | 30g0s | castle of burdon | infravision, giant strength |
 | a mysterious scroll | 30 | 35 | 30g0s | castle of burdon | shocking grasp |
+| a jar of fiddlehead cream | 35 | 35 | 20g80s | tyyrinn village | cure poison x 2, cure disease x 2 |
+| a jar of dandelion cream | 35 | 35 | 20g80s | tyyrinn village | heal x 2 |
 | a powdered snake scale paste | 35 | 39 | 30g0s | valeda | earthshield |
 | crushed white flower petals | 35 | 39 | 30g0s | valeda | armor |
 | thorn shavings | 35 | 39 | 30g0s | valeda | bless |
@@ -741,6 +743,7 @@ These are **unlimited only** light sources.
 | a dark-blue cloak | 32 | 89g10s | damroll +3, hp +25 | Yrenelania Orgath |
 | an elemental lake amulet | 35 | 20g1s | damroll +2, hitroll +3, wis +1, int +1 | lake elemental, valeda |
 | an elemental helmet of vigilance | 36 | 0g0s | damroll +4, int +2 | vigilance elemental, valeda |
+| a brass-reinforced neck brace | 43 | 16g86s | hitroll +4, saves -3, ac -3 | pixie guard, valeda |
 | an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
 ### Shoulder / About Armor
 | name | req lvl | cost | description | found |
@@ -875,6 +878,7 @@ These are **unlimited only** light sources.
 | an expensive pair of leather boots | 36 | 44g55s | hitroll +4, damroll +3 | merchant graegor, aliuna |
 | simple leather boots | 38 | 19g90s | hitroll +2, damroll +4, saves -2 | enthralled older elf, valeda |
 | a painted ankle bracelet | 39 | 9g43s | hitroll +5, damroll +3 | a dancing sylvan female, valeda |
+| a pair of brass-reinforced boots | 43 | 17g32s | hitroll +4, damroll +2, str +2 | pixie guard, valeda |
 ### Held Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -902,6 +906,7 @@ These are **unlimited only** light sources.
 | an aviak eye | 30 | 14g85s | str +1, con +1, dex +1 | the avian tree |
 | a cloud of smoke | 32 | 24g96s | hitroll +3, hp +20 | smoke elemental, dleivain |
 | a bronze coin | 35 | 86g53s | +3 damroll, hp +25 | Yrenelania Orgath |
+| an elemental aura of fear | 37 | 2g17s | hitroll +2, damroll +5, str -2 | fear elemental, valeda |
 | the mark of the head priest | 38 | 49g50s | hitroll +5, damroll +5 | aliuna head priest |
 | an aura of contentment | 41 | 29g91s | hitroll +4, damroll +3, ac -3 | pixie mother, valeda |
 | a zipping fly | 43 | 15g82s | hitroll ;4, damroll +3 | zipping pixie guuard, valeda |
