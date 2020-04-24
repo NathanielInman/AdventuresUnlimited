@@ -695,7 +695,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 ## Items For Leveling
 Keep in mind that the intention for this is **not** to be a comprehensive list of items, but the **best-in-slot** leveling items. Adventures Unlimited has a huge focus on tradeskills, where created items will always be the strongest items for each level tier group (armor is crafted for levels 10, 20, 30 etc.) But if you're leveling quickly, don't have access to an armorsmith or simply the crafted item isn't as strong as it could be, these are great fall-back options.
 
-** Alignment Restriction Flags **
+**Alignment Restriction Flags**
 - **[-E]** = Anti-evil item, evil alignment characters cannot wear it
 - **[-N]** = Anti-neutral item, neutral alignment characters cannot wear it
 - **[-G]** = Anti-good item, good alignment characters cannot wear it
