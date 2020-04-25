@@ -163,7 +163,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 35 - 50 | Uchduruk | 11e4n4e1n1e |
 | 40 - 45 | Eirenole Thistle | Unknown |
 | 40 - 50 | The Four Seasons | Unknown |
-| 40 - 50 | Schwartz Glacier | Unknown |
+| 40 - 50 | Schwartz Glacier | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
 | 40 - 50 | Mystery Manor | 11e4n9e1s3e1n2e1n |
 | 40 - 55 | Pyrainn Mountains | Unknown |
 | 40 - 60 | Draek'le | 4e9n5w6n11e3n5e1n3e7n5w5s |
