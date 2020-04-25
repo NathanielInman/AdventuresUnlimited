@@ -169,7 +169,8 @@ Additional helpful maps on the [official website](tharel.net):
 | 40 - 55 | Pyrainn Mountains | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n3w1s |
 | 40 - 60 | Draek'le | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | 20w1n6w3n1w1u9w3n1u |
-| 45 - 55 | Beehive | Unknown |
+| 45 - 55 | Beehive | 4e17s4w7s2e1s2e1d2s1e1s2e5s5e2s3e;search south; |
+| contin. | contin. | open south;2s1e2n5e;go beehive |
 | 45 - 60 | Xuergothe Castle | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s1w6s1w6s2u1s |
 | 45 - 60 | Eirenole Castle | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | buy key;unlock north;open north;2n1e2n7e1n |
