@@ -161,7 +161,8 @@ Additional helpful maps on the [official website](tharel.net):
 | 35 - 50 | Tyyrinn Village | 7e1d2s1e7s5e2s |
 | 35 - 50 | [The City of Terrason](https://tharel.net/img/map-terrason.jpg) | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
 | 35 - 50 | Uchduruk | 11e4n4e1n1e |
-| 40 - 45 | Eirenole Thistle | Unknown |
+| 40 - 45 | Eirenole Thistle | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
+| contin. | contin. | buy key;unlock north;open north;2n1e6n1e1n2e2s |
 | 40 - 50 | The Four Seasons | 4s3w2s;go portrait |
 | 40 - 50 | Schwartz Glacier | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
 | 40 - 50 | Mystery Manor | 11e4n9e1s3e1n2e1n |
@@ -169,9 +170,10 @@ Additional helpful maps on the [official website](tharel.net):
 | 40 - 60 | Draek'le | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | 20w1n6w3n1w1u9w3n1u |
 | 45 - 55 | Beehive | Unknown |
-| 45 - 60 | Xuergothe Castle | Unknown |
-| 45 - 60 | Eirenole Castle | Unknown |
-| 50 - 60 | Heishaer City | Unknown |
+| 45 - 60 | Xuergothe Castle | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s1w6s1w6s2u1s |
+| 45 - 60 | Eirenole Castle | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
+| contin. | contin. | buy key;unlock north;open north;2n1e2n7e1n |
+| 50 - 60 | Heishaer City | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
 | 50 - 60 | Breyard Village | Unknown |
 | 50 - 60 | The Acoma Estate | Unknown |
 | 55 - 65 | The Overlook Grounds | Unknown |
@@ -202,7 +204,8 @@ Additional helpful maps on the [official website](tharel.net):
 | 85 - 95 | The White Shrine | Unknown |
 | 85 - 95 | Sildarak's Crypt | Unknown |
 | 85 - 110 | Urbyrtnol | Unknown |
-| 90 - 95 | Eirenole Valley | Unknown |
+| 90 - 95 | Eirenole Valley | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n | 
+| contin. | contin. | buy key;unlock north;open north;2n1e9n2e5n |
 | 90 - 110 | Ayasil | Unknown |
 | 90 - 110 | Arthmore | Unknown |
 | HERO | Kallenpesh Palace | Unknown |
