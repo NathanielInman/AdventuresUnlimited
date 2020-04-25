@@ -786,6 +786,7 @@ These are **unlimited only** light sources.
 | an elemental flower gown | 36 | 29g68s | damroll +3, hitroll +5 | flower elemental, valeda |
 | a stiff hide breastplate | 36 | 24g85s | [-G] damroll +4, hitroll +4, dex +2 | orc chieftan grarg, valeda |
 | grass green robes | 42 | 13g51s | damroll +4, hitroll +6, dex -1 | caretaker's assistant, valeda |
+| a tinted chest-plate | 43 | 5g64s | damroll +2, hitroll +8, str +2 | a halfling guard, tyyrinn village |
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -868,6 +869,7 @@ These are **unlimited only** light sources.
 | elemental arbed pants of pain | 36 | 6g8s | damroll +3, hitroll +3, str +2, hp -50 | pain elemental, valeda |
 | runed steel greaves | 37 | 16g83s | hitroll +6, damroll +2 | captain merciata, aliuna |
 | a pair of engraved brass leg plates | 43 | 21g73s | damroll +5 | fast pixie patroller, valeda |
+| a pair of tinted leg-guards | 43 | 13g69s | damroll +5,hitroll +5 | halfling guard, tyrinn village |
 | stiff hide leggings | 46 | 16g70s | damroll +4, hitroll +4, str +2 | orc chieftan grarg, valeda |
 ### Feet Armor
 | name | req lvl | cost | description | found |
