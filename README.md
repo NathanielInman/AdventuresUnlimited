@@ -165,7 +165,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 40 - 50 | The Four Seasons | Unknown |
 | 40 - 50 | Schwartz Glacier | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
 | 40 - 50 | Mystery Manor | 11e4n9e1s3e1n2e1n |
-| 40 - 55 | Pyrainn Mountains | Unknown |
+| 40 - 55 | Pyrainn Mountains | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n3w1s |
 | 40 - 60 | Draek'le | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | 20w1n6w3n1w1u9w3n1u |
 | 45 - 55 | Beehive | Unknown |
