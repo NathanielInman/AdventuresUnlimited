@@ -453,7 +453,7 @@ Stances take exactly 25 improvements to advance in skill level and have 9 ranks 
 1. apprentice
 2. trainee
 3. student
-4. fairely experienced
+4. fairly experienced
 5. well trained
 6. highly skilled
 7. expert
@@ -699,6 +699,10 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a glass rod | 40 | 43 | 25g0s | valeda | invisibility x 6 |
 | a pink rod | 40 | 43 | 25g0s | valeda | faerie fire x 6 |
 | a ruby staff | 40 | 40 | 65g75s | castle of burden | heat metal x 3 |
+| a blue-trimmed scroll | 40 | 45 | 24g59s | heishaer city | cure diseases |
+| a green vial | 40 | 43 | 8g48s | heishaer city | cure critical |
+| a jar of woodruff cream | 40 | 40 | 40g90s | tyyrinn village | detect hidden, detect invis, translate |
+| a jar of black elder cream | 40 | 40 | 150g39s | tyyrinn village | stone skin, giant strength |
 | a jeweled sceptre | 45 | 47 | 40g0s | valeda | translate x 6 |
 | a pixie doll | 45 | 47 | 35g0s | valeda | haste x 6 |
 
@@ -721,6 +725,8 @@ These are **unlimited only** light sources.
 | (invis) a ghostly flame | 31 | 17g40s | hitroll +2, damroll +2, mana +20 | servant in dleivan |
 | elemental water beacon | 35 | 15g62s | hitroll +2, damroll +2, ac -2 | elemental in valeda |
 | a steel lantern | 39 | 12g50s | hitroll +2, damroll +1, hp +10 | hunter in oterion |
+| a sylvan-made everlasting light | 46 | 59g23s | hitroll +3, con +1, str +1 | sylvan guard, draek'le |
+
 ### Head Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -738,8 +744,10 @@ These are **unlimited only** light sources.
 | a black headpiece | 38 | 37g62s | hitroll +3, damroll +3, ac +3 | head senator abana, aliuna |
 | a dark hood | 38 | 45g4s | hitroll +4, damroll +2 | shi'jal, castle of burden |
 | a hardened wood helmet | 42 | 24g75s | hitroll +6, damroll +2 | loud-voiced sergeant, valeda |
+| a silver head piece | 42 | 12g10s | hitroll +3, damroll +5 | merakki, merakkis kitchen, valeda |
 | a crown of flowers | 45 | 9g99s | int +5 | hiilyraajie, valeda |
 | a hide head-dress | 45 | 10g87s | damroll +3, hitroll +5, hp +50 | orc chieftan grarg, valeda |
+
 ### Neck Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -751,9 +759,11 @@ These are **unlimited only** light sources.
 | a dark-blue cloak | 32 | 89g10s | damroll +3, hp +25 | Yrenelania Orgath |
 | an elemental lake amulet | 35 | 20g1s | damroll +2, hitroll +3, wis +1, int +1 | lake elemental, valeda |
 | an elemental helmet of vigilance | 36 | 0g0s | damroll +4, int +2 | vigilance elemental, valeda |
+| a green hunting cloak | 37 | 33g68s | damroll +4, hitroll +4 | hunter, eirenole |
 | a cape embroidered with nightmares | 40 | 33g91s | damroll +4, str +1, dex +1 | jailcell, terrason |
 | a brass-reinforced neck brace | 43 | 16g86s | hitroll +4, saves -3, ac -3 | pixie guard, valeda |
 | an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
+
 ### Shoulder / About Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -768,7 +778,9 @@ These are **unlimited only** light sources.
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
 | blue tent-like robes | 35 | 44g55s | [-G,-E] hitroll +5, damroll +3, ac +3, saves +2 | a corpulent honored guest, aliuna |
 | a shimmering robe | 42 | 75g22s | damroll +5 | malrya the flutist, valeda |
+| an elsfaren cape | 42 | 31g69s | hitroll +4, damroll +4 | forest guard, eirenole |
 | a blue master's robe | 45 | 13g76s | hitroll +6, damroll +3 | magical pixie master, valeda |
+
 ### Torso / Body Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -777,7 +789,6 @@ These are **unlimited only** light sources.
 | studded ream hide armor | 9 | 8g47s | damroll +3, hitroll +1 | unknown |
 | an iron breast-plate | 13 | 9g90s | damroll +2 | a mountain goblin, bose'nisten |
 | a shining chest plate | 15 | 28g35s | hitroll +3, damroll +2 | guard in front of shrine of barbades |
-| a bladed suit of plate
 | a black tunic | 20 | 27g72s | hitroll +2, dex +1 | drow mines |
 | a soft velvet vest | 22 | 22g27s | hitroll +2, damroll +2 | aliuna |
 | a mithril vest | 24 | 17g88s | damroll +1, hitroll +1 | mines of noal'xyn foreman loahan |
@@ -791,8 +802,10 @@ These are **unlimited only** light sources.
 | a small, simple green dress | 33 | 23g41s | damroll +3, hitroll +4 | a happy elven girl, valeda |
 | an elemental flower gown | 36 | 29g68s | damroll +3, hitroll +5 | flower elemental, valeda |
 | a stiff hide breastplate | 36 | 24g85s | [-G] damroll +4, hitroll +4, dex +2 | orc chieftan grarg, valeda |
+| a satin, sky blue dress | 40 | 55g55s | damroll +2, hitroll +3, ac -5, saves -4 | floraena, marakkis kitchen, valeda |
 | grass green robes | 42 | 13g51s | damroll +4, hitroll +6, dex -1 | caretaker's assistant, valeda |
 | a tinted chest-plate | 43 | 5g64s | damroll +2, hitroll +8, str +2 | a halfling guard, tyyrinn village |
+
 ### Waist Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -806,6 +819,7 @@ These are **unlimited only** light sources.
 | a braided rope belt | 32 | 3g96s | hitroll +4, str +2, con +1, ac +3 | priest on justice road barreston |
 | a dark purple aliunan belt | 37 | 25g74s | damroll +2, dex +1, con +1, str +1 | scowling guard aliuna |
 | a wide brown sash | 37 | 16g58s | hitroll +5, con +2 | wide old woman, valeda |
+| a hardened wood bracer | 39 | 12g37s | hit+8,dam+1 | weaponmaster, valeda |
 | an engraved brass girth | 43 | 14g86s | damroll +5, hitroll +2 | fast pixie patroller, valeda |
 
 ### Arms Armor
@@ -820,6 +834,7 @@ These are **unlimited only** light sources.
 | boiled leather armguards | 32 | 29g70s | damroll +5 | Liun, main council floor aliuna |
 | armplates of flesh | 35 | 49g50s | damroll +3, hitroll +3 | the disgrace, reskel |
 | simple leather armbands | 39 | 10g89s | hitroll +3, dex +1, con -1 | halfling citizen, tyyrinn village |
+| braided strands of silver | 42 | 20g29s | hitroll +6, damroll +3 | merakki, merakkis kitchen, valeda |
 | dull steel chain sleeves | 45 | 16g25s | damroll +4, hitroll +5 | jrek, the guardian, valeda |
 
 ### Wrist Armor
@@ -838,6 +853,7 @@ These are **unlimited only** light sources.
 | a hardened wood bracer | 39 | 12g37s | damroll +1, hitroll +8 | alert elven scout, valeda |
 | a sparkling mithril bangle bracelets | 41 | 24g49s | hitroll +2, damroll +2, wis +1, int +1, con +1, | a small pixie mother, valeda |
 | an engraved brass bracer | 43 | 30g36s | hitroll +7, damroll +1, dex +1 | a zipping pixie guard, valeda |
+| an electrum bracelet | 45 | 25g22s | damroll +3, hitroll +3, str +1 | cyan-haired sprite, heishaer city |
 
 ### Hand Armor
 | name | req lvl | cost | description | found |
@@ -848,6 +864,7 @@ These are **unlimited only** light sources.
 | a pair of red dragon claws | 20 | 11g38s | damroll +3, hitroll +1 | the red dragon, sewers |
 | giant skin gloves | 38 | 19g80s | damroll +1, hitroll +5 | oterion hunter |
 | a pair of gauntlets of the eye | 42 | 183g15s | damroll +3, hp +10, hitroll +2 | underling, underdark |
+
 ### Finger Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -858,6 +875,7 @@ These are **unlimited only** light sources.
 | (invis) an elemental ring of frost | 37 | 24g48s | hitroll +4, damroll +3 | valeda elemental |
 | the heart of the elven people | 30 | 3g6s | damroll +3, con +1, ac -2 | illiathorn pass commander |
 | a ruby ring, twisted with silver | 40 | 39g60s | damroll +3, hitroll +5 | a hurried pixie man, valeda |
+
 ### Leg Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
@@ -877,6 +895,7 @@ These are **unlimited only** light sources.
 | a pair of engraved brass leg plates | 43 | 21g73s | damroll +5 | fast pixie patroller, valeda |
 | a pair of tinted leg-guards | 43 | 13g69s | damroll +5,hitroll +5 | halfling guard, tyrinn village |
 | stiff hide leggings | 46 | 16g70s | damroll +4, hitroll +4, str +2 | orc chieftan grarg, valeda |
+
 ### Feet Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
@@ -891,7 +910,9 @@ These are **unlimited only** light sources.
 | an expensive pair of leather boots | 36 | 44g55s | hitroll +4, damroll +3 | merchant graegor, aliuna |
 | simple leather boots | 38 | 19g90s | hitroll +2, damroll +4, saves -2 | enthralled older elf, valeda |
 | a painted ankle bracelet | 39 | 9g43s | hitroll +5, damroll +3 | a dancing sylvan female, valeda |
+| soft calfskin boots | 40 | 33g39s | damroll +3, hitroll +5 | floraena, merakkis kitchen, valeda |
 | a pair of brass-reinforced boots | 43 | 17g32s | hitroll +4, damroll +2, str +2 | pixie guard, valeda |
+
 ### Held Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
@@ -904,6 +925,7 @@ These are **unlimited only** light sources.
 | a large bear carving | 25 | 25g0s | damroll +2, str +2 | a master woodcarver, valeda |
 | a frost wolf's tusk | 39 | 9g90s | damroll +3, con +1 | oterion hunter |
 | a sacred tome | 40 | 37g12s | [-E] damroll +1, hitroll +2, saves -1, hp +20 | tyrlonde, castle of burdon |
+
 ### Floater Items
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
@@ -924,3 +946,4 @@ These are **unlimited only** light sources.
 | the mark of the head priest | 38 | 49g50s | hitroll +5, damroll +5 | aliuna head priest |
 | an aura of contentment | 41 | 29g91s | hitroll +4, damroll +3, ac -3 | pixie mother, valeda |
 | a zipping fly | 43 | 15g82s | hitroll ;4, damroll +3 | zipping pixie guuard, valeda |
+| a pretty stone | 43 | 11g7s | damroll +3, hitroll +4 | kid in heishaer city |
