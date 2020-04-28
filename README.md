@@ -651,13 +651,13 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a blue scroll | 20 | 25 | 50g0s | mines of noal'xyn | shield, stone skin |
 | a rolled parchment | 20 | 20 | 0g0s | sanctuary | identify |
 | the root of the Al'nar bush | 20 | 25 | 25g11s | naerlan | stone skin, cure poison |
-| a vial filled with sticky green ooze | 20 | 20 | du'rahath | regeneration, armor, slow |
-| a tiny beaker full of thinned out black liquid | 20 | 20 | du'rahath | detect invis, detect hidden, detect evil, detect good |
-| a beaker of thick blue liquid | 20 | 20 | du'rahath | phase, blindness, shield, plague |
-| a bubbling crimson potion | 20 | 20 | du'rahath | fireshield, giant strength |
-| a vial of elven spirit | 20 | 20 | illianathoren pass | armor, shield |
-| a vial of elven courage | 20 | 20 | illianathoren pass | giant strength, haste |
-| a vial of elven honour | 20 | 20 | illianathoren pass | sanctuary |
+| a vial filled with sticky green ooze | 20 | 20 | 20g0s |du'rahath | regeneration, armor, slow |
+| a tiny beaker full of thinned out black liquid | 20 | 20 | 25g0s |du'rahath | detect invis, detect hidden, detect evil, detect good |
+| a beaker of thick blue liquid | 20 | 20 | 30g0s |du'rahath | phase, blindness, shield, plague |
+| a bubbling crimson potion | 20 | 20 | 30g0s | du'rahath | fireshield, giant strength |
+| a vial of elven spirit | 20 | 20 | 56g25s |illianathoren pass | armor, shield |
+| a vial of elven courage | 20 | 20 | 56g25s |illianathoren pass | giant strength, haste |
+| a vial of elven honour | 20 | 20 | 56g25s |illianathoren pass | sanctuary |
 | a purple scroll | 20 | 23 | 22g75s | mirage city | faerie fire |
 | the red dragonorb | 21 | 13 | 186g0s | sewers | sanctuary x 6 |
 | a potion of desert survival | 22 | 25 | 23g88s | mirage city | refresh, cure poison |
