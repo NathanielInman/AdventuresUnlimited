@@ -705,6 +705,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a jar of black elder cream | 40 | 40 | 150g39s | tyyrinn village | stone skin, giant strength |
 | a jeweled sceptre | 45 | 47 | 40g0s | valeda | translate x 6 |
 | a pixie doll | 45 | 47 | 35g0s | valeda | haste x 6 |
+| soul of the frost beast | 50 | 55 | 90g0s | frost beast, pyrainn mountains | frost breath x 20, dex -2, con -2 |
 
 ## Items For Leveling
 Keep in mind that the intention for this is **not** to be a comprehensive list of items, but the **best-in-slot** leveling items. Adventures Unlimited has a huge focus on tradeskills, where created items will always be the strongest items for each level tier group (armor is crafted for levels 10, 20, 30 etc.) But if you're leveling quickly, don't have access to an armorsmith or simply the crafted item isn't as strong as it could be, these are great fall-back options.
@@ -743,6 +744,7 @@ These are **unlimited only** light sources.
 | a straw sunhat | 37 | 12g23s | damroll +4, wis +1 | fishing pixie, valeda |
 | a black headpiece | 38 | 37g62s | hitroll +3, damroll +3, ac +3 | head senator abana, aliuna |
 | a dark hood | 38 | 45g4s | hitroll +4, damroll +2 | shi'jal, castle of burden |
+| a monk's hood | 40 | 22g91s | damroll +2, hitroll +4 | pious monk, terrason |
 | a hardened wood helmet | 42 | 24g75s | hitroll +6, damroll +2 | loud-voiced sergeant, valeda |
 | a silver head piece | 42 | 12g10s | hitroll +3, damroll +5 | merakki, merakkis kitchen, valeda |
 | a crown of flowers | 45 | 9g99s | int +5 | hiilyraajie, valeda |
@@ -761,6 +763,7 @@ These are **unlimited only** light sources.
 | an elemental helmet of vigilance | 36 | 0g0s | damroll +4, int +2 | vigilance elemental, valeda |
 | a green hunting cloak | 37 | 33g68s | damroll +4, hitroll +4 | hunter, eirenole |
 | a cape embroidered with nightmares | 40 | 33g91s | damroll +4, str +1, dex +1 | jailcell, terrason |
+| a necklace of wooden prayer beads | 40 | 12g30s | damroll +3, int +1, str +1, con +1 | pious monk, terrason |
 | a brass-reinforced neck brace | 43 | 16g86s | hitroll +4, saves -3, ac -3 | pixie guard, valeda |
 | an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
 
@@ -851,6 +854,7 @@ These are **unlimited only** light sources.
 | a fealtic feather cord | 30 | 22g27s | hitroll +4, wis +1, int +1 | a fealtic bird, the avian tree |
 | an elemental bark bracer | 36 | 16g61s | damroll +2, hitroll +2, dex +2 | a forest elemental, valeda |
 | a hardened wood bracer | 39 | 12g37s | damroll +1, hitroll +8 | alert elven scout, valeda |
+| a runed silver bracer | 40 | 26g25s | damroll +3, hitroll +4 | a nature loving pixie, valeda |
 | a sparkling mithril bangle bracelets | 41 | 24g49s | hitroll +2, damroll +2, wis +1, int +1, con +1, | a small pixie mother, valeda |
 | an engraved brass bracer | 43 | 30g36s | hitroll +7, damroll +1, dex +1 | a zipping pixie guard, valeda |
 | an electrum bracelet | 45 | 25g22s | damroll +3, hitroll +3, str +1 | cyan-haired sprite, heishaer city |
@@ -875,6 +879,7 @@ These are **unlimited only** light sources.
 | (invis) an elemental ring of frost | 37 | 24g48s | hitroll +4, damroll +3 | valeda elemental |
 | the heart of the elven people | 30 | 3g6s | damroll +3, con +1, ac -2 | illiathorn pass commander |
 | a ruby ring, twisted with silver | 40 | 39g60s | damroll +3, hitroll +5 | a hurried pixie man, valeda |
+| a golden, sapphire studded ring | 46 | 23g22s | damroll +4, hitroll +3, hp +20 | caretaker assistant, valeda |
 
 ### Leg Armor
 | name | req lvl | cost | description | found |
@@ -925,6 +930,7 @@ These are **unlimited only** light sources.
 | a large bear carving | 25 | 25g0s | damroll +2, str +2 | a master woodcarver, valeda |
 | a frost wolf's tusk | 39 | 9g90s | damroll +3, con +1 | oterion hunter |
 | a sacred tome | 40 | 37g12s | [-E] damroll +1, hitroll +2, saves -1, hp +20 | tyrlonde, castle of burdon |
+| a magical cloth doll | 45 | 35g0s | con +4 | a pretty little Yara, heishaer city |
 
 ### Floater Items
 | name | req lvl | cost | description | found |
@@ -945,5 +951,6 @@ These are **unlimited only** light sources.
 | an elemental aura of fear | 37 | 2g17s | hitroll +2, damroll +5, str -2 | fear elemental, valeda |
 | the mark of the head priest | 38 | 49g50s | hitroll +5, damroll +5 | aliuna head priest |
 | an aura of contentment | 41 | 29g91s | hitroll +4, damroll +3, ac -3 | pixie mother, valeda |
-| a zipping fly | 43 | 15g82s | hitroll ;4, damroll +3 | zipping pixie guuard, valeda |
+| a zipping fly | 43 | 15g82s | hitroll +4, damroll +3 | zipping pixie guuard, valeda |
 | a pretty stone | 43 | 11g7s | damroll +3, hitroll +4 | kid in heishaer city |
+| eye of the frost beast | 45 | 76g23s | damroll +2, str +1, dex +1, saves -4 | frost beast, pyrainn mountains |
