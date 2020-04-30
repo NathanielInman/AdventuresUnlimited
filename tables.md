@@ -1,25 +1,30 @@
+# Table of Contents
+
+- [Race And Class Table](#race-and-class-table)
+- [Skill And Class Table](#skill-and-class-table)
+- [Spell And Class Table](#spell-and-class-table)
+
 # Race And Class Table
 
-Race         Mag Cle Thi War Pal Cha Myr Apn Mnk Nec
-+------------+---+---+---+---+---+---+---+---+---+---+
-|human       | *   *   *   *   *   *   *   *   *     |
-|sylvan elf  | *   *   *   *   *   *           *     |
-|dwarf       | *   *   *   *   *       *       *     |
-|duergar     | *   *   *   *           *   *         |
-|gnome       | *   *   *           *           *     |
-|goblin      | *   *   *   *       *   *   *   *     |
-|giant       |     *       *   *                     |
-|halfling    | *       *   *       *   *       *     |
-|orc         | *   *   *   *           *   *         |
-|pixie       | *   *   *           *                 |
-|quickling   | *       *           *           *     |
-|drow        | *   *   *   *               *   *     |
-|river troll |     *       *               *         |
-|titan       | *   *       *           *             |
-|heishan elf | *   *       *   *       *       *     |
-|frost giant | *           *           *             |
-|fire giant  | *   *       *                         |
-+------------+---+---+---+---+---+---+---+---+---+---+
+| races | mage | cleric | thief | warrior | antipaladin | paladin | charlatan | myrmidon | monk |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| human | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** | **✓** |
+| sylvan elf | **✓** | **✓** | **✓** | **✓** | **✓** |  |  | **✓** |
+| dwarf | **✓** | **✓** | **✓** | **✓** | **✓** |  | **✓** |  | **✓** |
+| duergar | **✓** | **✓** | **✓** | **✓** |  |  | **✓** | **✓** |  |
+| gnome | **✓** | **✓** | **✓** |  |  | **✓** |  |  | **✓** |
+| goblin | **✓** | **✓** | **✓** | **✓** |  | **✓** | **✓** | **✓** | **✓** |
+| giant |  | **✓** |  | **✓** | **✓** |  |  |  |  |
+| halfling | **✓** |  | **✓** | **✓** |  | **✓** | **✓** |  | **✓** |
+| orc | **✓** | **✓** | **✓** | **✓** |  |  | **✓** | **✓** |  |
+| pixie | **✓** | **✓** | **✓** |  |  | **✓** |  |  |  |
+| quickling | **✓** |  | **✓** |  |  | **✓** |  |  | **✓** |
+| drow | **✓** | **✓** | **✓** | **✓** |  |  |  | **✓** |  |
+| river troll |  | **✓** |  | **✓** |  |  |  | **✓** |  |
+| titan | **✓** | **✓** |  | **✓** |  |  | **✓** |  |  |
+| heishan elf | **✓** | **✓** |  | **✓** | **✓** |  | **✓** |  | **✓** |
+| frost giant | **✓** |  |  | **✓** |  |  | **✓** |  |  |
+| fire giant | **✓** | **✓** |  | **✓** |  |  |  |  |  |
 
 # Skill And Class Table
 
