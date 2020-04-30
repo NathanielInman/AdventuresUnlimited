@@ -688,6 +688,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a powdered snake scale paste | 35 | 39 | 30g0s | valeda | earthshield |
 | crushed white flower petals | 35 | 39 | 30g0s | valeda | armor |
 | thorn shavings | 35 | 39 | 30g0s | valeda | bless |
+| a knobbly stave | 35 | 20 | 30g0s | gnomish studen, tyyrinn | dispel evil x 8 | 
 | some mint leaves | 35 | 39 | 30g0s | valeda | iceshield |
 | a blue potion | 38 | 38 | 57g0s | castle of burden | phase, plague, curse |
 | a red potion | 38 | 38 | 57g50s | castle of burden | detect invis, detect hidden |
@@ -703,6 +704,9 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{
 | a green vial | 40 | 43 | 8g48s | heishaer city | cure critical |
 | a jar of woodruff cream | 40 | 40 | 40g90s | tyyrinn village | detect hidden, detect invis, translate |
 | a jar of black elder cream | 40 | 40 | 150g39s | tyyrinn village | stone skin, giant strength |
+| a potion of warmth | 40 | 42 | 5g64s | schwartz glacier | flamesphere |
+| a potion of emergency get-away | 40 | 45 | 42g0s | schwartz glacier | teleport |
+| a blue pill | 42 | 45 | 12g96s | edible vitamins, heishaer | fly, cure blindness x 2 |
 | a jeweled sceptre | 45 | 47 | 40g0s | valeda | translate x 6 |
 | a pixie doll | 45 | 47 | 35g0s | valeda | haste x 6 |
 | soul of the frost beast | 50 | 55 | 90g0s | frost beast, pyrainn mountains | frost breath x 20, dex -2, con -2 |
@@ -726,6 +730,7 @@ These are **unlimited only** light sources.
 | (invis) a ghostly flame | 31 | 17g40s | hitroll +2, damroll +2, mana +20 | servant in dleivan |
 | elemental water beacon | 35 | 15g62s | hitroll +2, damroll +2, ac -2 | elemental in valeda |
 | a steel lantern | 39 | 12g50s | hitroll +2, damroll +1, hp +10 | hunter in oterion |
+| a bright ball of snow | 40 | 48g25s | hitroll +4, damroll +2 | general store, schwartz glacier |
 | a sylvan-made everlasting light | 46 | 59g23s | hitroll +3, con +1, str +1 | sylvan guard, draek'le |
 
 ### Head Armor
@@ -742,6 +747,7 @@ These are **unlimited only** light sources.
 | a spirit helmet | 28 | 49g50s | [-E, -N] hitroll +2, damroll +4 | west tower guard, mines of noal'xyn |
 | a black leather eyepatch | 35 | 0g0s | hitroll +3, damroll +1, con +2 | blackeye, blackeyes camp |
 | a straw sunhat | 37 | 12g23s | damroll +4, wis +1 | fishing pixie, valeda |
+| a felt hat with stirrups | 37 | 21g12s | [-E] hitroll +3, damroll +3 | vallien knight, terrason |
 | a black headpiece | 38 | 37g62s | hitroll +3, damroll +3, ac +3 | head senator abana, aliuna |
 | a dark hood | 38 | 45g4s | hitroll +4, damroll +2 | shi'jal, castle of burden |
 | a monk's hood | 40 | 22g91s | damroll +2, hitroll +4 | pious monk, terrason |
@@ -779,9 +785,11 @@ These are **unlimited only** light sources.
 | a cleric's tunic | 27 | 23g76s | hitroll +4, damroll +2 | grand clerk alissandra, aliuna |
 | flowing priest's robes | 32 | 6g3s | damroll +1, hitroll +1, str +1, wis +1 | priest on justice road barreston |
 | the wings of a great dragon | 35 | 44g55s | wis +1, str +1, hitroll +4, hp +20 | great dragon in caldera |
+| a knight templars robe | 35 | 21g12s | [-E] hitroll +3, damroll +4 | vallien knight, terrason |
 | blue tent-like robes | 35 | 44g55s | [-G,-E] hitroll +5, damroll +3, ac +3, saves +2 | a corpulent honored guest, aliuna |
 | a shimmering robe | 42 | 75g22s | damroll +5 | malrya the flutist, valeda |
 | an elsfaren cape | 42 | 31g69s | hitroll +4, damroll +4 | forest guard, eirenole |
+| a tinted chest-plate | 43 | 5g64s | damroll +2, hitroll +8, str +2 | a halfling guard, tyyrinn village |
 | a blue master's robe | 45 | 13g76s | hitroll +6, damroll +3 | magical pixie master, valeda |
 
 ### Torso / Body Armor
@@ -807,7 +815,6 @@ These are **unlimited only** light sources.
 | a stiff hide breastplate | 36 | 24g85s | [-G] damroll +4, hitroll +4, dex +2 | orc chieftan grarg, valeda |
 | a satin, sky blue dress | 40 | 55g55s | damroll +2, hitroll +3, ac -5, saves -4 | floraena, marakkis kitchen, valeda |
 | grass green robes | 42 | 13g51s | damroll +4, hitroll +6, dex -1 | caretaker's assistant, valeda |
-| a tinted chest-plate | 43 | 5g64s | damroll +2, hitroll +8, str +2 | a halfling guard, tyyrinn village |
 
 ### Waist Armor
 | name | req lvl | cost | description | found |
@@ -868,6 +875,7 @@ These are **unlimited only** light sources.
 | a pair of red dragon claws | 20 | 11g38s | damroll +3, hitroll +1 | the red dragon, sewers |
 | giant skin gloves | 38 | 19g80s | damroll +1, hitroll +5 | oterion hunter |
 | a pair of gauntlets of the eye | 42 | 183g15s | damroll +3, hp +10, hitroll +2 | underling, underdark |
+| a pair of warm, fuzzy gloves | 46 | 19g80s | hitroll +6, damroll +3 | dockworker, schwartz glacier |
 
 ### Finger Armor
 | name | req lvl | cost | description | found |
@@ -893,6 +901,7 @@ These are **unlimited only** light sources.
 | a pair of bloodied leather pants | 27 | 14g85s | damroll +4 | the meridian, the styweard |
 | silver greaves | 28 | 16g93s | hitroll +5, int -1, dex +1 | guard in mirage |
 | iron leggings | 30 | 0g0s | damroll +2, hitroll +2 | jeroretlan, mines of noal'xyn |
+| a pair of brown, canbas trousers | 30 | 16g26s | [-E] hitroll +2, damroll +3 | vallien knight, terrason |
 | rotting hide greaves | 34 | 6g79s | hitroll +3, damroll +3 | valeda orc |
 | a pair of dark runed legplates | 35 | 24g27s | hitroll +4, damroll +3, str +1 | gharl, naerlan |
 | elemental arbed pants of pain | 36 | 6g8s | damroll +3, hitroll +3, str +2, hp -50 | pain elemental, valeda |
@@ -913,6 +922,7 @@ These are **unlimited only** light sources.
 | boots of flying | 29 | 97g52s | +flying, +300 move | drevlin, underdark |
 | iron combat boots | 30 | 0g0s | hitroll +2, damroll +2, dex +1 | jeroretlan, mines of noal'xyn |
 | an expensive pair of leather boots | 36 | 44g55s | hitroll +4, damroll +3 | merchant graegor, aliuna |
+| a pair of leather boots | 36 | 9g89s | move +500, dex +2 | gnomish student, tyyrinn |
 | simple leather boots | 38 | 19g90s | hitroll +2, damroll +4, saves -2 | enthralled older elf, valeda |
 | a painted ankle bracelet | 39 | 9g43s | hitroll +5, damroll +3 | a dancing sylvan female, valeda |
 | soft calfskin boots | 40 | 33g39s | damroll +3, hitroll +5 | floraena, merakkis kitchen, valeda |
