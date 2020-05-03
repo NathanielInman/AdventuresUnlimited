@@ -760,17 +760,17 @@ Stances take exactly 25 improvements to advance in skill level and have 9 ranks 
 
 | name | requirement | description |
 | --- | --- | --- |
-| viper | none | aggressive fast combat |
-| crane | none | semi-aggresive blocking combat |
-| crab | none | semi-aggressive defensive combat |
-| mongoose | none | semi-aggresive dodging combat |
-| bull | none | aggresive strong combat |
-| mantis | crane, viper | defensive & counter attacks |
-| dragon | bull, crab | strong & defensive combat |
-| tiger | bull, viper | strong & fast combat |
-| monkey | crane, mongoose | nullify advantages of opponents stance |
-| swallow | mongoose, crab | most defensive of all stances |
-| grandmaster | mantis, dragon, tiger, swallow, monkey | most offennsive & defensive of all stances |
+| viper | none | more attacks, more speed (attack first) |
+| crane | none | increase parry chance |
+| crab | none | decrease damage taken |
+| mongoose | none | increase dodge chance |
+| bull | none | increase damage |
+| mantis | crane, viper | same effects as crane & viper |
+| dragon | bull, crab | same effects as bull & crab |
+| tiger | bull, viper | same effects as bull & viper |
+| swallow | mongoose, crab | same effects as mongoose & crab |
+| monkey | crane, mongoose | nullify opponents stance |
+| grandmaster | mantis, dragon, tiger, swallow, monkey | same effects as viper, crane, crab, mongoose & bull |
 
 #### Monk Techniques
 | name | level | requirements |
