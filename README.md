@@ -840,7 +840,7 @@ The absolute key to mastering monk combat is leveraging all the techniques to pe
 ![monk prompt example](./monkPromptExample.png)
 ```
 // next line is in-game command
-prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%Nq {r%P{Dqp {r%X{Dtnl] ( {r%p {D) {r%B%c
+prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{D/{y%lq {r%P{Dqp {r%X{Dtnl] ( {r%p {D) {r%B%c
 
 // next line is for tintin++ configuration of the same prompt
 #prompt {[%1/%2hp %3/%4mp %5/%6mv %7/%8chi %9/%10q %11qp %12tnl] (%13) %14} {<109>[<119>%1<109>/<019>%2<109>hp <159>%3<109>/<059>%4<109>mp <129>%5<109>/<029>%6<109>mv <169>%7<109>/<069>%8<109>chi <139>%9<109>/<039>%10<109>q <019>%11<109>qp <019>%12<109>tnl] (<119>%13<109>) <119>%14}
