@@ -1069,7 +1069,9 @@ These are **unlimited only** light sources.
 | a cape embroidered with nightmares | 40 | 33g91s | damroll +4, str +1, dex +1 | jailcell, terrason |
 | a necklace of wooden prayer beads | 40 | 12g30s | damroll +3, int +1, str +1, con +1 | pious monk, terrason |
 | a brass-reinforced neck brace | 43 | 16g86s | hitroll +4, saves -3, ac -3 | pixie guard, valeda |
+| a delicately-crafted necklace | 45 | 2g80s | hitroll +8, ac -2 | heishaer king |
 | an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
+| a dark grey hooded cloak | 45 | 42g78s | hitroll +10, move +50 | eirenole forest, bandit |
 
 ### Shoulder / About Armor
 | name | req lvl | cost | description | found |
@@ -1089,6 +1091,7 @@ These are **unlimited only** light sources.
 | an elsfaren cape | 42 | 31g69s | hitroll +4, damroll +4 | forest guard, eirenole |
 | a tinted chest-plate | 43 | 5g64s | damroll +2, hitroll +8, str +2 | a halfling guard, tyyrinn village |
 | a blue master's robe | 45 | 13g76s | hitroll +6, damroll +3 | magical pixie master, valeda |
+| a long, cleric's robe | 45 | 14g17s | [-E] damroll +2, hitroll +5 | devout cleric, terrason |
 
 ### Torso / Body Armor
 | name | req lvl | cost | description | found |
@@ -1113,6 +1116,10 @@ These are **unlimited only** light sources.
 | a stiff hide breastplate | 36 | 24g85s | [-G] damroll +4, hitroll +4, dex +2 | orc chieftan grarg, valeda |
 | a satin, sky blue dress | 40 | 55g55s | damroll +2, hitroll +3, ac -5, saves -4 | floraena, marakkis kitchen, valeda |
 | grass green robes | 42 | 13g51s | damroll +4, hitroll +6, dex -1 | caretaker's assistant, valeda |
+| a light woven vest | 48 | 43g16s | hitroll +4, damroll +2, dex +2 | stableboy, eirenole castle |
+| a set of plate-mail | 50 | 15g65s | damroll +4, hitroll +4, con +1 | gromm, yrenelania |
+| stiff fur armor | 52 | 79g20s | [-E] hitroll +5, damroll +3, str +1 | guard, xuergothe castle |
+| a thick yeti pelt | 56 | 1g0s | hitroll +10, ac -12 | yeti, kaer tzoun |
 
 ### Waist Armor
 | name | req lvl | cost | description | found |
@@ -1144,6 +1151,8 @@ These are **unlimited only** light sources.
 | simple leather armbands | 39 | 10g89s | hitroll +3, dex +1, con -1 | halfling citizen, tyyrinn village |
 | braided strands of silver | 42 | 20g29s | hitroll +6, damroll +3 | merakki, merakkis kitchen, valeda |
 | dull steel chain sleeves | 45 | 16g25s | damroll +4, hitroll +5 | jrek, the guardian, valeda |
+| a pair of elven chain-mail sleeves | 45 | 62g12s | hitroll +3, damroll +4, dex +1 | eirenole forest, bandit |
+| a set of steel pauldrons | 51 | 19g4s | hitroll +9 | brave adventurer, kaer tzoun |
 
 ### Wrist Armor
 | name | req lvl | cost | description | found |
@@ -1163,6 +1172,8 @@ These are **unlimited only** light sources.
 | a sparkling mithril bangle bracelets | 41 | 24g49s | hitroll +2, damroll +2, wis +1, int +1, con +1, | a small pixie mother, valeda |
 | an engraved brass bracer | 43 | 30g36s | hitroll +7, damroll +1, dex +1 | a zipping pixie guard, valeda |
 | an electrum bracelet | 45 | 25g22s | damroll +3, hitroll +3, str +1 | cyan-haired sprite, heishaer city |
+| a cold steel bracer | 45 | 43g66s | damroll +3, hitroll +3, str +1 | dwarf, pyrainn mountains |
+| a silver-inlaid steel bracer | 50 | 9g89s | hitroll +6, con +1, str +1, dex +1 | brave adventurer, kaer tzoun |
 
 ### Hand Armor
 | name | req lvl | cost | description | found |
@@ -1186,6 +1197,7 @@ These are **unlimited only** light sources.
 | the heart of the elven people | 30 | 3g6s | damroll +3, con +1, ac -2 | illiathorn pass commander |
 | a ruby ring, twisted with silver | 40 | 39g60s | damroll +3, hitroll +5 | a hurried pixie man, valeda |
 | a golden, sapphire studded ring | 46 | 23g22s | damroll +4, hitroll +3, hp +20 | caretaker assistant, valeda |
+| a signet ring | 55 | 66g33s | damroll +5, hitroll +5, hp +35 | gromm, yrenelania |
 
 ### Leg Armor
 | name | req lvl | cost | description | found |
@@ -1239,6 +1251,7 @@ These are **unlimited only** light sources.
 | a frost wolf's tusk | 39 | 9g90s | damroll +3, con +1 | oterion hunter |
 | a sacred tome | 40 | 37g12s | [-E] damroll +1, hitroll +2, saves -1, hp +20 | tyrlonde, castle of burdon |
 | a magical cloth doll | 45 | 35g0s | con +4 | a pretty little Yara, heishaer city |
+| a corn cob pipe | 48 | 5g82s | damroll +4, wis +2 | plodding traveler, kaer tzoun |
 
 ### Floater Items
 | name | req lvl | cost | description | found |
