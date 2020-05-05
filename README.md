@@ -117,7 +117,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | 4e9n5w6n6w8s2w1n2w4s1s;search west;open w;1qw |
 | 10 - 20 | [Tzimosh's Camp](https://tharel.net/img/map-tzimoshscamp.jpg) | 5w9n4e6n11e3n1e1n |
 | 10 - 20 | Hythian Forest | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
-| 10 - 20 | [urrowholme](https://tharel.net/img/map-burrowholme.gif) | 5w9n4e;open north;5n4w1n |
+| 10 - 20 | [Burrowholme](https://tharel.net/img/map-burrowholme.gif) | 5w9n4e;open north;5n4w1n |
 | 10 - 20 | Goblin Stronghold | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
 | 10 - 20 | [Grungel](https://tharel.net/img/map-grungel.jpg) | 7e1d2s1e3s1w |
 | 10 - 25 | [The Hand of Markov](https://tharel.net/img/map-handofmarkov.gif) | 7s4e10s4w9s2w2s2w |
