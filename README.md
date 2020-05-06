@@ -1036,9 +1036,10 @@ These are **unlimited only** light sources.
 | --- | --- | --- | --- | --- | 
 | a spiked steel helm | 8 | 0g68s | damroll +1 | duergar in naerlan |
 | the shroud of deception | 10 | 2g97s | hitroll +3 | lunatic's alley |
+| a copper helmet | 13 | 9g55s | damroll +1, hitroll +1 | [purchase] Bruavaabwaew Tuuhtwelaag, Naerlan |
 | a large mithril helmet | 15 | 14g34s | hitroll +3 | loahan, foreman in mines of noal'xyn |
 | a golden helmet of courage | 15 | 1g78s | hitroll +2, damroll +1 | shrine of barbades guards |
-| a sheer black veil | 15 | 3g46s | int +1, wis +1 | drow mines |
+| a bronze helmet | 19 | 12g61s | damroll +2, hitroll +1 | [purchase] Bruavaabwaew Tuuhtwelaag, Naerlan |
 | a pair of dirty horns | 20 | 18g92s | str +1, con +1, damroll +2, hitroll +1 | grungel boss |
 | a red bandana | 24 | 19g80s | damroll +2, hitroll +2, hp +2 | a deck hand, meridian |
 | a dark helmet | 28 | 49g50s | [-G, -N] hitroll +2, damroll +4 | east tower guard, mines of noal'xyn |
@@ -1101,9 +1102,8 @@ These are **unlimited only** light sources.
 | studded ream hide armor | 9 | 8g47s | damroll +3, hitroll +1 | unknown |
 | an iron breast-plate | 13 | 9g90s | damroll +2 | a mountain goblin, bose'nisten |
 | a shining chest plate | 15 | 28g35s | hitroll +3, damroll +2 | guard in front of shrine of barbades |
-| a black tunic | 20 | 27g72s | hitroll +2, dex +1 | drow mines |
+| a bronze breastplate | 19 | 19g55s | damroll +1, hitroll +1, str +1 | [purchase] Bruavaabwaew Tuuhtwelaag, Naerlan |
 | a soft velvet vest | 22 | 22g27s | hitroll +2, damroll +2 | aliuna |
-| a mithril vest | 24 | 17g88s | damroll +1, hitroll +1 | mines of noal'xyn foreman loahan |
 | a shadow steel platemail cuirass | 25 | 2g84s | move +100, saves -2, ac -2, dex +1, str +1 | drow in grungnison catacombs |
 | shadow armor | 28 | 49g50s | [-G, -N] con +2, hitroll +5 | east tower guard, mines of noal'xyn |
 | spirit armor | 28 | 49g50s | [-E, -N] con +2, hitroll +5 | west tower guard, mines of noal'xyn |
@@ -1141,8 +1141,9 @@ These are **unlimited only** light sources.
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- | 
 | a pair of leather armbands | 8 | 1g3s | hitroll +2 | lunatic's alley |
-| brass armguards | 14 | 9g79s | damroll +1 | vampire spawn, nerezza |
+| a pair of copper armplates | 13 | 9g55s | damroll +1 | [purchase] Bruavaabwaew Tuuhtwelaag, Naerlan |
 | assassin's sleeves | 15 | 32g47s | damroll +1, hitroll +1 | a drow murderer, underdark |
+| a bronze helmet | 19 | 12g61s | damroll +1, str +1 | [purchase] Bruavaabwaew Tuuhtwelaag, Naerlan |
 | chain mail sleeves | 23 | 3g66s | damroll +3 | an impatient duergar, fideals lake |
 | silver armguards | 28 | 12g99s | hitroll +3, damroll +1 | guard in mirage | 
 | a pair of ravenskin sleeves | 30 | 29g70s | damroll +2, hitroll +2, con +1 | a razor raven, the avian tree |
@@ -1202,9 +1203,11 @@ These are **unlimited only** light sources.
 ### Leg Armor
 | name | req lvl | cost | description | found |
 | --- | --- | --- | --- | --- |
+| a pair of copper legplates | 13 | 9g55s | damroll +1 | [purchase] Bruavaabwaew Tuuhtwelaag, Naerlan |
 | a set of iron-spiked leg plates | 13 | 9g0s | damroll +2 | a mountain goblin, bose'nisten |
 | a pair of shadow steel leg plates | 15 | 6g3s | hitroll +3 | Zzukenethaft |
 | bloodstained trousers | 16 | 0g24s | hitroll +2, damroll +2 | master vampire, nerezza |
+| a pair of bronze legplates | 19 | 19g55s | damroll +1, str +1 | [purchase] Bruavaabwaew Tuuhtwelaag, Naerlan |
 | a pair of black leggings | 22 | 34g65s | damroll +2, con +1 | drow mines |
 | mithril greaves | 24 | 27g47s | hitroll +2 | loahann, foreman at mines of noal'xyn |
 | a stylish set of trousers | 26 | 14g85s | hitroll +3, damroll +1 | girl in merchants house, aliuna |
@@ -1219,6 +1222,7 @@ These are **unlimited only** light sources.
 | a pair of engraved brass leg plates | 43 | 21g73s | damroll +5 | fast pixie patroller, valeda |
 | a pair of tinted leg-guards | 43 | 13g69s | damroll +5,hitroll +5 | halfling guard, tyrinn village |
 | stiff hide leggings | 46 | 16g70s | damroll +4, hitroll +4, str +2 | orc chieftan grarg, valeda |
+| shimmering leggings | 53 | 94g5s | hitroll +10, damroll +1 | sweet-voicec chorus girl, xuergothe |
 
 ### Feet Armor
 | name | req lvl | cost | description | found |
