@@ -1108,7 +1108,6 @@ These are **unlimited only** light sources.
 | shadow armor | 28 | 49g50s | [-G, -N] con +2, hitroll +5 | east tower guard, mines of noal'xyn |
 | spirit armor | 28 | 49g50s | [-E, -N] con +2, hitroll +5 | west tower guard, mines of noal'xyn |
 | a suit of silver armor | 28 | 41g8s | damroll +4 | guard in mirage |
-| a cotton palace uniform | 29 | hitroll +2, damroll +2, con +1 |
 | an Eliem's robe | 30 | 99g0s | hitroll +2, damroll +2, wis +1, int +1, con +1 | Elium in Aliuna |
 | a suit of black chainmail | 30 | 15g24s | damroll +2, dex +2 | guard in castle of burdon |
 | a small, simple green dress | 33 | 23g41s | damroll +3, hitroll +4 | a happy elven girl, valeda |
