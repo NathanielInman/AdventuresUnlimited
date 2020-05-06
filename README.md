@@ -848,6 +848,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 
 ## MUD Client Configuration
 ### Tintin++
+The following are some basic helpful commands:
 ```
 // log into au when tt++ opens automatically
 #event {PROGRAM START} {#ses AdventuresUnlimited tharel.net 5005;y;####USERNAME####;####PASSWORD####;y}
@@ -863,6 +864,32 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 #alias {sleep} {stand;take blanket pocket;drop blanket;r blanket;slow;sl}
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
+Here is a script that buffs your character right before a quest:
+(you need to either add the 'buff' alias or replace it with commands for buffing delimited by semicolons)
+```
+#variable {readyForQuest} {true};
+#action { 1qt }
+{
+  #if {{$readyForQuest}=={false}} {
+    buff;
+    #variable {readyForQuest} {true};
+  }
+}
+#action { 0qt }
+{
+  #if {{$readyForQuest}=={true}} {
+    #showme <138>+-----------------------+<088>;
+    #showme <138>|    <178>Quest Available<138>    |<088>;
+    #showme <138>+-----------------------+<088>;
+    #variable {readyForQuest} {false};
+  }
+}
+#action {You may now quest again.}
+{
+  #line gag;
+}
+```
+
 
 ## Potions Pills Wands Staves and Scrolls
 
