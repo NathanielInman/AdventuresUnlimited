@@ -181,8 +181,8 @@ Additional helpful maps on the [official website](tharel.net):
 | 45 - 60 | Eirenole Castle | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | buy key;unlock north;open north;2n1e2n7e1n |
 | 50 - 60 | Heishaer City | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
-| 50 - 60 | Breyard Village | Unknown |
-| 50 - 60 | The Acoma Estate | Unknown |
+| 50 - 60 | Breyard Village | 41w6s2w2s3w3n3w1s1w1n8w2n2w2s2w3n5w3s1w |
+| 50 - 60 | The Acoma Estate | 7e1d2s1e9s1e |
 | 55 - 65 | The Overlook Grounds | Unknown |
 | 55 - 65 | The Overlook Towers | Unknown |
 | 55 - 65 | Xe'lith | Unknown |
