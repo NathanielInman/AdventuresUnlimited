@@ -667,35 +667,35 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 ### Monk
 
 #### Monk Mantras
-| name | level | mana | awareness | combat | focus | body | spirit | description |
+| name | level | mana | awareness | body | combat | spirit | focus | description |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| spirit invisibility | 13 | 20 | 1 | 0 | 0 | 1 | 1 | invisibility |
-| stone hands | 19 | 35 | 0 | 2 | 1 | 1 | 1 | damage enhancement |
-| spirit eyes | 22 | 20 | 2 | 0 | 1 | 0 | 2 | detect magic, invis, hidden (lvl 31) |
-| stone skin | 29 | 20 | 2 | 0 | 1 | 2 | 0 | | ac self buff |
-| levitate | 30 | 30 | 0 | 2 | 2 | 2 | 2 | fly |
-| strength enhance | 37 | 20 | 2 | 0 | 0 | 3 | 2 | giant strength |
-| metabolize | 37 | 30 | 2 | 2 | 0 | 3 | 2 | haste, cure illness & maledictions |
-| know object | 37 | 20 | 2 | 0 | 3 | 0 | 3 | identify item |
-| iron hands | 39 | 50 | 0 | 3 | 0 | 2 | 2 | damage enhancement |
-| celestial path | 40 | 25 | 4 | 0 | 3 | 3 | 3 | limited gate to adjacent areas & norecall |
-| know speech | 42 | 20 | 2 | 0 | 3 | 0 | 3 | translate |
-| steel hands | 59 | 50 | 2 | 3 | 2 | 2 | 2 | damage enhancement |
-| life cloak | 60 | 50 | 3 | 0 | 2 | 3 | 3 | regenerate
-| healing touch | 65 | 100 | 2 | 0 | 2 | 3 | 2 | heal target regardless of location |
+| spirit invisibility | 13 | 20 | 1 | 1 | 0 | 1 | 0 | invisibility |
+| stone hands | 19 | 35 | 0 | 1 | 2 | 1 | 1 | damage enhancement |
+| spirit eyes | 22 | 20 | 2 | 0 | 0 | 2 | 1 | detect magic, invis, hidden (lvl 31) |
+| stone skin | 29 | 20 | 2 | 2 | 0 | 0 | 1 | | ac self buff |
+| levitate | 30 | 30 | 0 | 2 | 0 | 2 | 2 | fly |
+| strength enhance | 37 | 30 | 2 | 3 | 0 | 2 | 0 | giant strength |
+| metabolize | 37 | 30 | 2 | 3 | 2 | 2 | 0 | haste, cure illness & maledictions |
+| know object | 37 | 20 | 2 | 0 | 0 | 3 | 3 | identify item |
+| iron hands | 39 | 50 | 0 | 2 | 3 | 2 | 0 | damage enhancement |
+| celestial path | 45 | 25 | 4 | 3 | 0 | 3 | 3 | limited gate to adjacent areas & norecall |
+| know speech | 42 | 20 | 2 | 0 | 0 | 3 | 3 | translate |
+| steel hands | 59 | 50 | 2 | 2 | 3 | 2 | 2 | damage enhancement |
+| life cloak | 60 | 50 | 3 | 3 | 0 | 3 | 2 | regenerate |
+| healing touch | 65 | 100 | 2 | 3 | 0 | 2 | 2 | heal target regardless of location |
 | harden | 65 | 80 | 4 | 4 | 4 | 4 | 4 | halves non-exotic damage |
-| flaming hands | 79 | 50 | 2 | 3 | 2 | 3 | 3 | damage enhancement |
-| spirit hands | 99 | 50 | 4 | 4 | 0 | 4 | 4 | damage enhancement |
+| flaming hands | 79 | 50 | 2 | 3 | 3 | 3 | 2 | damage enhancement |
+| spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | damage enhancement |
 
 #### Monk Fight Moves
-| name | level | requirements |
+| name | level | requirements | description |
 | --- | --- | --- |
 | knee | 1 | none |
 | punch | 1 | none |
 | elbow | 1 | none |
 | kick | 1 | none |
 | bodyblow | 10 | none |
-| trip | 10 | none |
+| trip | 10 | none | only works with viper, crane & dragon. 
 | stamp | 17 | kick |
 | swiftkick | 18 | kick |
 | grapple | 23 | bodyblow |
@@ -712,38 +712,92 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 | headbutt | 57 | none |
 
 #### Monk Abilities
-| name | level | requirements | effects |
-| --- | --- | --- | --- |
-| awareness 1 | 1 | 10 practices | unknown |
-| awareness 2 | 15 | 20 practices | unknown |
-| awareness 3 | 30 | 30 practices | unknown |
-| awareness 4 | 45 | 40 practices | unknown |
-| combat 1 | 1 | 10 practices | +3 damroll, +3 hitroll |
-| combat 2 | 15 | 20 practices | +3 damroll, +3 hitroll |
-| combat 3 | 30 | 30 practices | +3 damroll, +3 hitroll |
-| combat 4 | 45 | 40 practices | +3 damroll, +3 hitroll |
-| focus 1 | 1 | 10 practices | longer, more reliable chi |
-| focus 2 | 15 | 20 practices | longer, more reliable chi |
-| focus 3 | 30 | 30 practices | longer, more reliable chi |
-| focus 4 | 45 | 40 practices | longer, more reliable chi |
-| body 1 | 1 | 10 practices | unknown |
-| body 2 | 15 | 20 practices | unknown |
-| body 3 | 30 | 30 practices | unknown |
-| body 4 | 45 | 40 practices | unknown |
-| spirit 1 | 1 | 10 practices | longer, more reliable chi |
-| spirit 2 | 15 | 20 practices | longer, more reliable chi |
-| spirit 3 | 30 | 30 practices | longer, more reliable chi |
-| spirit 4 | 45 | 40 practices | longer, more reliable chi |
+| level | requirements |
+| --- | --- |
+| 1 | 10 practices |
+| 15 | 20 practices |
+| 30 | 30 practices |
+| 45 | 40 practices | 
+
+**Awareness**
+> Awareness has no affect and is only a requirement for mantras.
+
+**Combat**
+- Combat 1
+  - 90% chance for extra attack if player level 6 or above
+  - 15% chance to  prevent blind fighting from reducing number of attacks by 30%
+  - 20% resistant to each attack above 4+ during PK
+  - hitroll and damroll bonus
+    - For players less than level 51: +3 hitroll, +3 damroll
+    - For players greater than level 50: 10% * level + 5dam & hitroll
+- Combat 2
+  - 90% chance for extra attack #1 if player level 6 or above
+  - 75% chance for extra attack #2 if player level 6 or above
+  - 30% chance to  prevent blind fighting from reducing number of attacks by 30%
+  - 40% resistant to each attack above 4+ during PK
+  - hitroll and damroll bonus
+    - For players less than level 51: +6 hitroll, +6 damroll
+    - For players greater than level 50: 10% * level + 10dam & hitroll
+- Combat 3
+  - 90% chance for extra attack #1 if player level 6 or above
+  - 75% chance for extra attack #2 if player level 16 or above
+  - 60% chance for extra attack #3 if player level 31 or above
+  - 45% chance to  prevent blind fighting from reducing number of attacks by 30%
+  - 60% resistant to each attack above 4+ during PK
+  - hitroll and damroll bonus
+    - For players less than level 51: +9 hitroll, +9 damroll
+    - For players greater than level 50: 10% * level + 15dam & hitroll
+- Combat 4
+  - 90% chance for extra attack #1 if player level 6 or above
+  - 75% chance for extra attack #2 if player level 16 or above
+  - 60% chance for extra attack #3 if player level 31 or above
+  - 35% chance for extra attack #4 if player level 51 or above
+  - 60% chance to  prevent blind fighting from reducing number of attacks by 30%
+  - 80% resistant to each attack above 4+ during PK
+  - hitroll and damroll bonus
+    - For players less than level 51: +12 hitroll, +12 damroll
+    - For players greater than level 50: 10% * level + 20dam & hitroll
+    
+**Focus**
+- Focus 1
+  - 50% chance to gain chi
+  - 10% to maintain chi each tick outside battle
+  - 25% to maintain chi when out of mana
+  - 10 - 25% resistance to losing chi from bash during PK
+- Focus 2
+  - 60% chance to gain chi
+  - 30% to maintain chi each tick outside battle
+  - 45% to maintain chi when out of mana
+  - 20 - 50% resistance to losing chi from bash during PK
+- Focus 3
+  - 70% chance to gain chi
+  - 50% to maintain chi each tick outside battle
+  - 65% to maintain chi when out of mana
+  - 30 - 75% resistance to losing chi from bash during PK
+- Focus 4
+  - 80% chance to gain chi
+  - 70% to maintain chi each tick outside battle
+  - 85% to maintain chi when out of mana
+  - 40 - 100% resistance to losing chi from bash during PK
+  
+**Bodyfigh**
+- Focus 1: 10% * level lower AC
+- Focus 2: 20% * level lower AC
+- Focus 3: 30% * level lower AC
+- Focus 4: 40% * level lower AC
+
+**Spirit**
+> Spirit has no affect and is only a requirement for mantras.
 
 #### Monk Chi
 | chi level | trains | player level | mana | other |
 | --- | --- | --- | --- | --- |
 | 1 | 0 | 1 | 5 | |
 | 2 | 10 | 11 | 10 | usage of pressure point |
-| 3 | 15 | 21 | 15 | |
-| 4 | 20 | 31 | 20 | |
-| 5 | 25 | 41 | 25 | |
-| 6 | 30 | 51 | 30 | |
+| 3 | 15 | 21 | 15 | chance to add 2 attacks |
+| 4 | 20 | 31 | 20 | chance to add 2 attacks|
+| 5 | 25 | 41 | 25 | chance to add 3 attacks |
+| 6 | 30 | 51 | 30 | chance to add 4 attacks |
 
 #### Monk Stances
 Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can grandmaster 1 stance per 10 levels.
@@ -775,16 +829,16 @@ Stances take exactly 25 improvements to advance in skill level and have 9 ranks 
 #### Monk Techniques
 | name | level | requirements |
 | --- | --- | --- |
-| thrust kick | 12 | kick, bodyblow |
-| knee | 17 | knee |
-| elbow | 23 | punch, thrust kick |
-| shin kick | 27 | kick, stamp |
-| back fist | 33 | backfist, elbow |
-| palm strike | 39 | backfist |
-| sweep | 43 | shin kick |
-| spin kick | 61 | spinkick, thrust kick |
-| double punch | 67 | punch, backfist |
-| triple kick | 73 | kick, spinkick |
+| thrust kick | 12 | kick (fightstyle), bodyblow (fightstyle) |
+| knee | 17 | knee (fightstyle) |
+| elbow | 23 | punch (fightstyle), thrust kick (technique) |
+| shin kick | 27 | kick (fightstyle), stamp (fightstyle) |
+| back fist | 33 | backfist (fightstyle), elbow (technique) |
+| palm strike | 39 | backfist (technique) |
+| sweep | 43 | shin kick (technique) |
+| spin kick | 61 | spinkick (fightstyle), thrust kick (technique) |
+| double punch | 67 | punch (fightstyle), backfist (fightstyle) |
+| triple kick | 73 | kick (fightstyle), spinkick (fightstyle) |
 
 #### Monk Combos
 The absolute key to mastering monk combat is leveraging all the techniques to perform combinations that deliver drastic effect.
