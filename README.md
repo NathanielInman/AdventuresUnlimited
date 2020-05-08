@@ -20,7 +20,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Spell And Class Table](#spell-and-class-table)
   - [Monk](#monk)
     - [Monk Mantras](#monk-mantras)
-    - [Monk Fight Moves](#monk-fight-moves)
+    - [Monk Fight Moves](#monk-fightstyle-moves)
     - [Monk Abilities](#monk-abilities)
     - [Monk Chi](#monk-chi)
     - [Monk Stances](#monk-stances)
@@ -687,8 +687,8 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 | flaming hands | 79 | 50 | 2 | 3 | 3 | 3 | 2 | damage enhancement |
 | spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | damage enhancement |
 
-#### Monk Fight Moves
-| name | level | requirements | description |
+#### Monk Fightstyle Moves
+| name | level | requirements |
 | --- | --- | --- |
 | knee | 1 | none |
 | punch | 1 | none |
