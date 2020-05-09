@@ -688,28 +688,28 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 | spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | damage enhancement |
 
 #### Monk Fightstyles
-| name | level | requirements | damage |
-| --- | --- | --- | --- |
-| knee | 1 | none | 117% |
-| punch | 1 | none | 117% |
-| elbow | 1 | none | 117% |
-| kick | 1 | none | 117% |
-| bodyblow | 10 | none | 100% |
-| trip | 10 | none | 117% |
-| stamp | 17 | kick | 100% |
-| swiftkick | 18 | kick | 100% |
-| grapple | 23 | bodyblow | 133% |
-| hook | 24 | none | 100% |
-| charge | 26 | bodyblow | 100% |
-| backfist | 27 | bodyblow, punch | 133% |
-| uppercut | 31 | grapple, punch | 100% |
-| forearm | 34 | punch, charge | 133% |
-| hurl | 42 | bodyblow, punch | 100% |
-| jumpkick | 49 | kick, bodyblow | 133% |
-| hammer | 49 | kick, charge | 100% |
-| sweep | 51 | kick, bodyblow | 133% |
-| spinkick | 55 | sweep | 133% |
-| headbutt | 57 | none | 133% |
+| name | level | requirements | damage | description |
+| --- | --- | --- | --- | --- |
+| knee | 1 | none | 117% | basic attack |
+| punch | 1 | none | 117% | basic attack |
+| elbow | 1 | none | 117% | basic attack |
+| kick | 1 | none | 117% | basic attack |
+| bodyblow | 10 | none | 100% | basic attack |
+| trip | 10 | none | 117% | trip affect, affected by player & enemy dex & haste |
+| stamp | 17 | kick | 100% | failable, subtracts between 25 & 50 move from enemy |
+| swiftkick | 18 | kick | 100% | basic attack |
+| grapple | 23 | bodyblow | 133% | failable player strength vs enemy dex |
+| hook | 24 | none | 100% | basic attack |
+| charge | 26 | bodyblow | 100% | basic attack |
+| backfist | 27 | bodyblow, punch | 133% | basic attack |
+| uppercut | 31 | grapple, punch | 100% | failable pllayer vs enemy dex |
+| forearm | 34 | punch, charge | 133% | basic attack |
+| hurl | 42 | bodyblow, punch | 100% | basic attack |
+| jumpkick | 49 | kick, bodyblow | 133% | basic attack |
+| hammer | 49 | kick, charge | 100% | basic attack |
+| sweep | 51 | kick, bodyblow | 133% | basic attack |
+| spinkick | 55 | sweep | 133% | basic attack |
+| headbutt | 57 | none | 133% | basic attack |
 
 #### Monk Abilities
 | level | requirements |
