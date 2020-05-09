@@ -852,7 +852,21 @@ The max upgradable amounts are:
   - chance to add 4 attacks
 
 #### Monk Stances
-Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can grandmaster 1 stance per 10 levels.
+Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can rank up a stance every level. You can grandmaster 1 stance per 8 levels. You can therefor unlock grandmaster stance at level 64 and grandmaster the stance at level 72. You can reach this goal even if you train no stances until level 72 as it is accumulatively unlocked.
+
+Every hit has a possibility to check for improvement:
+```
+percent chance (0-100): 4 * int + level) / 10
+```
+
+If possibility is unlocked it checks for improvement:
+```
+apprentice: 75 - 100%
+trainee: 50 - 75%
+student: 25 - 50%
+fairly experienced: 1 - 25%
+well trained & above: 1%
+```
 
 1. apprentice
 2. trainee
