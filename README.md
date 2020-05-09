@@ -679,22 +679,22 @@ The max upgradable amounts are:
 | name | level | mana | awareness | body | combat | spirit | focus | description |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | spirit invisibility | 13 | 20 | 1 | 1 | 0 | 1 | 0 | invisibility |
-| stone hands | 19 | 35 | 0 | 1 | 2 | 1 | 1 | damage enhancement |
+| stone hands | 19 | 35 | 0 | 1 | 2 | 1 | 1 | +8% damage |
 | spirit eyes | 22 | 20 | 2 | 0 | 0 | 2 | 1 | detect magic, invis, hidden (lvl 31) |
 | stone skin | 29 | 20 | 2 | 2 | 0 | 0 | 1 | | ac self buff |
 | levitate | 30 | 30 | 0 | 2 | 0 | 2 | 2 | fly |
 | strength enhance | 37 | 30 | 2 | 3 | 0 | 2 | 0 | giant strength |
-| metabolize | 37 | 30 | 2 | 3 | 2 | 2 | 0 | haste, cure illness & maledictions |
+| metabolize | 37 | 30 | 2 | 3 | 2 | 2 | 0 | haste, cure poisons & chill touch |
 | know object | 37 | 20 | 2 | 0 | 0 | 3 | 3 | identify item |
-| iron hands | 39 | 50 | 0 | 2 | 3 | 2 | 0 | damage enhancement |
+| iron hands | 39 | 50 | 0 | 2 | 3 | 2 | 0 | +17% damage |
 | celestial path | 45 | 25 | 4 | 3 | 0 | 3 | 3 | limited gate to adjacent areas & norecall |
 | know speech | 42 | 20 | 2 | 0 | 0 | 3 | 3 | translate |
-| steel hands | 59 | 50 | 2 | 2 | 3 | 2 | 2 | damage enhancement |
+| steel hands | 59 | 50 | 2 | 2 | 3 | 2 | 2 | +25% damage |
 | life cloak | 60 | 50 | 3 | 3 | 0 | 3 | 2 | regenerate |
 | healing touch | 65 | 100 | 2 | 3 | 0 | 2 | 2 | heal target regardless of location |
 | harden | 65 | 80 | 4 | 4 | 4 | 4 | 4 | halves non-exotic damage |
-| flaming hands | 79 | 50 | 2 | 3 | 3 | 3 | 2 | damage enhancement |
-| spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | damage enhancement |
+| flaming hands | 79 | 50 | 2 | 3 | 3 | 3 | 2 | +33% damage |
+| spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | +40% damage |
 
 #### Monk Fightstyles
 | name | level | requirements | damage | description |
@@ -799,14 +799,57 @@ The max upgradable amounts are:
 > Spirit has no affect and is only a requirement for mantras.
 
 #### Monk Chi
-| chi level | trains | player level | mana | other |
-| --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 5 | +1% to dodge, +1% to parry, -1% enemy shieldblock, dodge & parry |
-| 2 | 10 | 11 | 10 | usage of pressure point, +1% to dodge, +1% to parry, -2% enemy shieldblock, dodge & parry |
-| 3 | 15 | 21 | 15 | chance to add 2 attacks, +1% to dodge, +1% to parry, -3% enemy shieldblock, dodge & parry |
-| 4 | 20 | 31 | 20 | chance to add 2 attacks, +1% to dodge, +1% to parry, -4% enemy shieldblock, dodge & parry |
-| 5 | 25 | 41 | 25 | chance to add 3 attacks, +2% to dodge, +2% to parry, -5% enemy shieldblock, dodge & parry |
-| 6 | 30 | 51 | 30 | chance to add 4 attacks, +2% to dodge, +2% to parry, -6% enemy shieldblock, dodge & parry |
+
+**CHI 1**: Player Level 1
+  - free to train
+  - consumes 5 mana per hit
+  - +5% + level / 5 damage
+  - +1% to dodge & parry
+  - -1% enemy shieldblock, dodge & parry
+
+**CHI 2**: Player Level 11
+  - costs 10 trains
+  - consumes 10 mana per hit
+  - **usage of pressure point**
+  - +10% + level / 5 damage
+  - +1% to dodge & parry
+  - -2% enemy shieldblock, dodge & parry
+
+**CHI 3**: Player Level 21
+  - costs 15 trains
+  - consumes 15 mana per hit
+  - **usage of pressure point**
+  - 75% chance for +30% + level / 5 damage
+  - +1% to dodge & parry
+  - -3% enemy shieldblcok, dodge & parry
+  - chance to add 2 attacks
+
+**CHI 4**: Pllayer Level 31
+  - costs 20 trains
+  - costs 20 mana per hit
+  - **usage of pressure point**
+  - 75% chance for +40% + level / 5 damage
+  - +1% to dodge & parry
+  - -4% enemy shieldblock, dodge & parry
+  - chance to add 2 attacks
+
+**CHI 5**: Player Level 41
+  - costs 25 trains
+  - costs 25 mana per hit
+  - **usage of pressure point**
+  - 75% chance for +75% + level / 5 damage
+  - +2% to dodge & parry
+  - -5% enemy shieldblock, dodge & parry
+  - chance to add 3 attacks
+
+**CHI 6**: Player level 51
+  - costs 30 trains
+  - costs 30 mana per hit
+  - **usage of pressure poinnt**
+  - 65% chance for +90% + level / 5 damage
+  - +2% to dodge & parry
+  - -6% enemy shieldblock, dodge & parry
+  - chance to add 4 attacks
 
 #### Monk Stances
 Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can grandmaster 1 stance per 10 levels.
