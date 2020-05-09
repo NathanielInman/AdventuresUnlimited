@@ -265,6 +265,10 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 
 | rank | hp cost | wp cost | mv cost | hit cost | dam cost |
 | --- | --- | --- | --- | --- | --- |
+| 1: follower / follower / follower | - | - | - | - | - |
+| 2: devotee / acolyte / disciple | - | - | 465g | - | - |
+| 3: benefactor / supporter / fanatic | 1000g | 1000g | 415g | - | - |
+| 4: protector / advocate / zealot | 950g | 950g | 365g | 2900g | - |
 | 5: apostle / defender / conspirator | 900g | 900g | 315g | 2850g | 4800g |
 | 6: champion / guardian / fiend | 850g | 850g | 265g | 2800g | 4750g |
 | 7: Rha'sion / Nuy'dian / Tza'fiel | 800g | 800g | 215g | 2750g | 4700g |
