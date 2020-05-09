@@ -20,7 +20,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Spell And Class Table](#spell-and-class-table)
   - [Monk](#monk)
     - [Monk Mantras](#monk-mantras)
-    - [Monk Fight Moves](#monk-fightstyle-moves)
+    - [Monk Fightstyles](#monk-fightstyles)
     - [Monk Abilities](#monk-abilities)
     - [Monk Chi](#monk-chi)
     - [Monk Stances](#monk-stances)
@@ -687,29 +687,29 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 | flaming hands | 79 | 50 | 2 | 3 | 3 | 3 | 2 | damage enhancement |
 | spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | damage enhancement |
 
-#### Monk Fightstyle Moves
-| name | level | requirements |
-| --- | --- | --- |
-| knee | 1 | none |
-| punch | 1 | none |
-| elbow | 1 | none |
-| kick | 1 | none |
-| bodyblow | 10 | none |
-| trip | 10 | none | only works with viper, crane & dragon. 
-| stamp | 17 | kick |
-| swiftkick | 18 | kick |
-| grapple | 23 | bodyblow |
-| hook | 24 | none |
-| charge | 26 | bodyblow |
-| backfist | 27 | bodyblow, punch |
-| uppercut | 31 | grapple, punch |
-| forearm | 34 | punch, charge |
-| hurl | 42 | bodyblow, punch |
-| jumpkick | 49 | kick, bodyblow |
-| hammer | 49 | kick, charge |
-| sweep | 51 | kick, bodyblow |
-| spinkick | 55 | sweep |
-| headbutt | 57 | none |
+#### Monk Fightstyles
+| name | level | requirements | damage |
+| --- | --- | --- | --- |
+| knee | 1 | none | 117% |
+| punch | 1 | none | 117% |
+| elbow | 1 | none | 117% |
+| kick | 1 | none | 117% |
+| bodyblow | 10 | none | 100% |
+| trip | 10 | none | 117% |
+| stamp | 17 | kick | 100% |
+| swiftkick | 18 | kick | 100% |
+| grapple | 23 | bodyblow | 133% |
+| hook | 24 | none | 100% |
+| charge | 26 | bodyblow | 100% |
+| backfist | 27 | bodyblow, punch | 133% |
+| uppercut | 31 | grapple, punch | 100% |
+| forearm | 34 | punch, charge | 133% |
+| hurl | 42 | bodyblow, punch | 100% |
+| jumpkick | 49 | kick, bodyblow | 133% |
+| hammer | 49 | kick, charge | 100% |
+| sweep | 51 | kick, bodyblow | 133% |
+| spinkick | 55 | sweep | 133% |
+| headbutt | 57 | none | 133% |
 
 #### Monk Abilities
 | level | requirements |
@@ -780,7 +780,7 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
   - 85% to maintain chi when out of mana
   - 40 - 100% resistance to losing chi from bash during PK
   
-**Bodyfigh**
+**Body**
 - Focus 1: 10% * level lower AC
 - Focus 2: 20% * level lower AC
 - Focus 3: 30% * level lower AC
@@ -792,12 +792,12 @@ The max upgradable amounts are `500 hp/mana/move`,  `80 hitroll` and `53 damroll
 #### Monk Chi
 | chi level | trains | player level | mana | other |
 | --- | --- | --- | --- | --- |
-| 1 | 0 | 1 | 5 | |
-| 2 | 10 | 11 | 10 | usage of pressure point |
-| 3 | 15 | 21 | 15 | chance to add 2 attacks |
-| 4 | 20 | 31 | 20 | chance to add 2 attacks|
-| 5 | 25 | 41 | 25 | chance to add 3 attacks |
-| 6 | 30 | 51 | 30 | chance to add 4 attacks |
+| 1 | 0 | 1 | 5 | +1% to dodge, +1% to parry, -1% enemy shieldblock, dodge & parry |
+| 2 | 10 | 11 | 10 | usage of pressure point, +1% to dodge, +1% to parry, -2% enemy shieldblock, dodge & parry |
+| 3 | 15 | 21 | 15 | chance to add 2 attacks, +1% to dodge, +1% to parry, -3% enemy shieldblock, dodge & parry |
+| 4 | 20 | 31 | 20 | chance to add 2 attacks, +1% to dodge, +1% to parry, -4% enemy shieldblock, dodge & parry |
+| 5 | 25 | 41 | 25 | chance to add 3 attacks, +2% to dodge, +2% to parry, -5% enemy shieldblock, dodge & parry |
+| 6 | 30 | 51 | 30 | chance to add 4 attacks, +2% to dodge, +2% to parry, -6% enemy shieldblock, dodge & parry |
 
 #### Monk Stances
 Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can grandmaster 1 stance per 10 levels.
@@ -812,56 +812,101 @@ Stances take exactly 25 improvements to advance in skill level and have 9 ranks 
 8. master
 9. grandmaster
 
-| name | requirement | description |
-| --- | --- | --- |
-| viper | none | more attacks, more speed (attack first) |
-| crane | none | increase parry chance |
-| crab | none | decrease damage taken |
-| mongoose | none | increase dodge chance |
-| bull | none | increase damage |
-| mantis | crane, viper | same effects as crane & viper |
-| dragon | bull, crab | same effects as bull & crab |
-| tiger | bull, viper | same effects as bull & viper |
-| swallow | mongoose, crab | same effects as mongoose & crab |
-| monkey | crane, mongoose | nullify opponents stance |
-| grandmaster | mantis, dragon, tiger, swallow, monkey | same effects as viper, crane, crab, mongoose & bull |
+**Viper**: Starter Stance
+- allow grapple fightstyle to work if target is flying
+- allow trip fightstyle to work if target is flying
+- up to 50% at grandmaster to +10% success on disarm
+- up to 50% at grandmaster to add 1 extra attack
+- up to 17% at grandmaster to dodge
+- up to 10% increased chance at grandmaster to apply pressure point
+
+**Crane**: Starter Stance
+- allow trip fightstyle to work if target is flying
+
+**Crab**: Starter Stance
+- DECREASE chance of uppercut fightstyle success by 25%
+- up to 17% at grandmaster to parry
+
+**Mongoose**: Starter Stance
+- allow grapple fightstyle to force resting position on target if they're flying
+- up to 17% at grandmaster to dodge
+- up to 10% increased chance at grandmaster to apply pressure point
+
+**Bull**: Starter Stance
+- +73% damage
+- **DECREASE** chance of uppercut fightstyle success by 25%
+- **DECREASE** chance to counter by 5 - 10%
+
+**Mantis**: Requires Crane & Viper Grandmastered
+- up to 50% at grandmaster to add 1 extra attack
+- +10-15% chance to counter
+
+**Dragon**: Requires Bull & Crab Grandmastered
+- +80% damage
+- **DECEREASE** chance of uppercut fightstyle success by 25%
+- allow trip fightstyle to work if target is flying
+- +5-10% chance to counter
+- up to 50% at grandmaster to have 75% for 1 extra attack & 50% for 2 extra attacks, and 25% for 3 extra attacks
+
+**Tiger**: Requires Bull & Viper Grandmastered
+- +89% damage
+- up to 50% at grandmaster to have 75% for 1 extra attack & 50% for 2 extra attacks
+
+**Swallow**: Requires Mongoose & Crab Grandmastered
+- up to 10% increased chance at grandmaster to apply pressure point
+- **DECREASE** chance to counter by 10 - 15%
+
+**Monkey**: Requires Crane & Mongoose Grandmastered
+- +33% damage
+- up to 50% at grandmaster to +15% success on disarm
+
+**Grandmaster**: Requires Mantis, Dragon, Tiger, Swallow & Monkey Grandmastered
+- +100% damage
+- (requires level 60) up to 50% at grandmaster to have 60% for 1 extra attack & 50% for 2 extra attacks, and 30% for 3 extra attacks
+- up to 10% increased chance at grandmaster to apply pressure point
+- +15-20% chance to counter
+- up to 17% at grandmaster to parry
+- up to 17% at grandmaster to dodge
+- up to 50% at grandmaster to +20-25% success on disarm
 
 #### Monk Techniques
-| name | level | requirements |
-| --- | --- | --- |
-| thrust kick | 12 | kick (fightstyle), bodyblow (fightstyle) |
-| knee | 17 | knee (fightstyle) |
-| elbow | 23 | punch (fightstyle), thrust kick (technique) |
-| shin kick | 27 | kick (fightstyle), stamp (fightstyle) |
-| back fist | 33 | backfist (fightstyle), elbow (technique) |
-| palm strike | 39 | backfist (technique) |
-| sweep | 43 | shin kick (technique) |
-| spin kick | 61 | spinkick (fightstyle), thrust kick (technique) |
-| double punch | 67 | punch (fightstyle), backfist (fightstyle) |
-| triple kick | 73 | kick (fightstyle), spinkick (fightstyle) |
+Some techniques may require either fightstyles or other techniques to learn.
+| name | level | requirements | damage |
+| --- | --- | --- | --- |
+| thrust kick | 12 | kick (fightstyle), bodyblow (fightstyle) | 200% |
+| knee | 17 | knee (fightstyle) | 200% |
+| elbow | 23 | punch (fightstyle), thrust kick (technique) | 200% |
+| shin kick | 27 | kick (fightstyle), stamp (fightstyle) | 200% |
+| back fist | 33 | backfist (fightstyle), elbow (technique) | 200% |
+| palm strike | 39 | backfist (technique) | 200% |
+| sweep | 43 | shin kick (technique) | 225% |
+| spin kick | 61 | spinkick (fightstyle), thrust kick (technique) | 200% |
+| double punch | 67 | punch (fightstyle), backfist (fightstyle) | 200% |
+| triple kick | 73 | kick (fightstyle), spinkick (fightstyle) | 225% |
 
 #### Monk Combos
 The absolute key to mastering monk combat is leveraging all the techniques to perform combinations that deliver drastic effect.
 
-| lvl available | name | combo (required aura) | effects |
-| --- | --- | --- | --- |
-| 17 | knee spike | thrust kick (red), knee | tiny damage |
-| 23 | knock | knee (bright blue), elbow (red), thrust kick | chance to knock mob/player out cold |
-| 27 | elbow strike | shin kick (yellow), thrust kick (red), elbow | high damage |
-| 33 | back fist | elbow (red), back fist | average damage |
-| 39 | palm strike | back fist (blue), palm strike | high damage |
-| 39 | silence | elbow (red), palm strike | target can no talk, read scrolls or cast magic |
-| 39 | elbow strike | palm strike (bright red), elbow | average damage |
-| 43 | trip | shin kick (yellow), sweep | slightly helps prevent fleeing, tiny damage |
-| 43 | leg sweep | sweep (red), shin kick | slightly helps prevent fleeing, tiny damage |
-| 61 | thrust kick | spin kick (gold), thrust kick | average damage |
-| 61 | lightning kick | thrust kick (red), thrust kick (bright red), spin kick | high damage |
-| 61 | palm strike | spin kick (gold), back fist (blue), palm strike | massive damage |
-| 67 | burning hands | back fist (blue), elbow (red), double punch | average damage |
-| 67 | glowing hands | elbow (red), elbow (red), double punch | average damage |
-| 67 | flaming hands | double punch (white), double punch | massive damage |
-| 73 | forcekick | thrust kick (red), thrust kick (bright red), triple kick | average damage |
-| 73 | lightning kick | triple kick (gold), double kick (white), spin kick | massive damage |
+| lvl available | name | combo (required aura) | damage | other |
+| --- | --- | --- | --- | --- |
+| 17 | knee spike | thrust kick, knee | 225% | |
+| 23 | knock | knee, elbow, thrust kick | 200% on chi/2 attacks | chi5+ chance to knock |
+| 27 | elbow strike | shin kick, thrust kick, elbow | 225% on chi attacks | |
+| 33 | back fist | elbow, back fist | 200% on chi attacks | |
+| 39 | palm strike | back fist, palm strike | 200% on chi attacks | |
+| 39 | silence | elbow, palm strike | 200% | 60% in chi3 or above to silence |
+| 39 | elbow strike | palm strike, elbow | 225% on chi/2 attacks | |
+| 43 | trip | shin kick, sweep | 200% + 225% | 100% stun at chi6 |
+| 43 | leg sweep | sweep, shin kick | 200% + 225% | 100% stun at chi6 |
+| 61 | thrust kick | spin kick, thrust kick | 200% on chi/2 attacks | |
+| 61 | lightning kick | thrust kick, thrust kick, spin kick | 225% on chi+1 attacks | |
+| 61 | palm strike | spin kick, back fist, palm strike | 200% on chi x 3/2 attacks | |
+| 61 | flurry spin | palm strike, spin kick, sweep | 200% + 200% on chi/2 attacks | |
+| 67 | firefist | back fist, elbow, double punch | 225% on chi/2 attacks | |
+| 67 | glowfist | elbow, elbow, double punch | 225% on chi attacks | |
+| 67 | firefist | double punch, double punch | 225% on chi attacks | |
+| 73 | forcekick | thrust kick, thrust kick, triple kick | 225% on chi attacks | |
+| 73 | lightning kick | triple kick, double kick, spin kick | 225% on chi x 3/2 attacks | |
 
 ## Quest Rewards
 | name | cost |
