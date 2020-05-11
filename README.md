@@ -17,7 +17,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Classes](#classes)
   - [Race And Class Table](#race-and-class-table)
   - [Max Stats](#max-stats)
-    - [Mage](#mage-max-stats)
+    - [Mage](#mage)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
   - [Monk](#monk)
