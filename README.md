@@ -18,6 +18,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Race And Class Table](#race-and-class-table)
   - [Max Stats](#max-stats)
     - [Mage](#mage)
+    - [Cleric](#cleric)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
   - [Monk](#monk)
@@ -407,7 +408,7 @@ The max upgradable amounts are:
 ### Max Stats
 All stats in the following sections are before armor or temple mark. Stats in parenthesis are the adjusted stats after accommodating for primary and secondary stats where primary stats adds 2 and secondary adds 1 to the base stat maximum.
 
-### Mage
+#### Mage
 * Primary Stat: `Intelligence`
 * Secondary Stat: `Intelligence`
 
@@ -428,6 +429,27 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | quickling | 8125 | 5200 | 5000 | 17 | 18 (21) | 16 | 25 | 15 |
 | sylvan elf | 8200 | 5300 | 2100 | 16 | 20 (23) | 18 | 21 | 16 |
 | titan | 8425 | 5220 | 4550 | 20 | 18 (21) | 17 | 16 | 19 |
+
+#### Cleric
+* Primary Stat: `Wisdom`
+* Secondary Stat: `Wisdom`
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| drow | 8950 | 4770 | 4800 | 17 | 20 | 18 (21) | 21 | 16 |
+| duergar | 9325 | 4670 | 4450 | 20 | 16 | 19 (22) | 14 | 21 |
+| dwarf | 9325 | 4670 | 4450 | 20 | 16 | 19 (22) | 14 | 21 |
+| fire giant | 9250 | 4690 | ? | 20 | 18 | 17 (20) | 16 | 20 |
+| giant | 9250 | 4620 | 4550 | 22 | 15 | 18 (21) | 15 | 20 |
+| gnome | 9025 | 4780 | 4650 | 18 | 19 | 20 (23) | 18 | 17 |
+| goblin | 9175 | 4680 | 4800 | 16 | 17 | 18 (21) | 21 | 19 |
+| heishan elf | 9100 | 4710 | 4750 | 17 | 18 | 18 (21) | 20 | 18 |
+| human | 9100 | 4710 | 4650 | 18 | 18 | 18 (21) | 18 | 18 |
+| orc | 9325 | 4640 | 4550 | 21 | 15 | 19 (22) | 16 | 21 |
+| pixie | 8950 | 4840 | 4700 | 16 | 21 | 20 (23) | 19 | 16 |
+| river troll | 9325 | 4650 | 4550 | 20 | 16 | 18 (21) | 16 | 21 |
+| sylvan elf | 8950 | 4770 | 4800 | 16 | 20 | 18 (21) | 21 | 16 |
+| titan | 9175 | 4690 | 4550 | 20 | 18 | 17 (20) | 16 | 19 |
 
 ### Skill And Class Table
 
