@@ -19,9 +19,16 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Max Stats](#max-stats)
     - [Mage](#mage)
     - [Cleric](#cleric)
+    - [Thief](#thief)
+    - [warrior](#warrior)
+    - [paladin](#paladin)
+    - [charlatan](#charlatan)
+    - [myrmidon](#myrmidon)
+    - [antipaladin](#antipaladin)
+    - [monk](#monk)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
-  - [Monk](#monk)
+  - [Monk Details](#monk-details)
     - [Monk Mantras](#monk-mantras)
     - [Monk Fightstyles](#monk-fightstyles)
     - [Monk Abilities](#monk-abilities)
@@ -451,6 +458,133 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | sylvan elf | 8950 | 4770 | 4800 | 16 | 20 | 18 (21) | 21 | 16 |
 | titan | 9175 | 4690 | 4550 | 20 | 18 | 17 (20) | 16 | 19 |
 
+#### Thief
+* Primary Stat: `Dexterity`
+* Secondary Stat: `Dexterity`
+
+:construction: Class Max Stats Section Under Construction :construction:
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| drow | ? | ? | ? | 17 | 20 | 18 | 21 (24) | 16 | 
+| duergar | ? | ? | ? | 20 | 16 | 19 | 14 (27) | 21 |
+| dwarf | ? | ? | ? | 20 | 16 | 19 | 14 (17) | 21 |
+| gnome | ? | ? | ? | 18 | 19 | 20 | 18 (21) | 17 |
+| goblin | ? | ? | ? | 16 | 17 | 18 | 21 (24) | 19 |
+| halfling | ? | ? | ? | 18 | 17 | 17 | 21 (24) | 19 |
+| human | ? | ? | ? | 18 | 18 | 18 | 18 (21) | 18 |
+| orc | ? | ? | ? | 21 | 15 | 19 | 16 (19) | 21 |
+| pixie | ? | ? | ? | 16 | 21 | 20 | 19 (22) | 16 |
+| quickling | ? | ? | ? | 17 | 18 | 16 | 25 (27) | 15 |
+| sylvan elf | ? | ? | ? | 16 | 20 | 18 | 21 (24) | 16 |
+
+#### Warrior
+* Primary Stat: `Strength`
+* Secondary Stat: `Strength`
+
+:construction: Class Max Stats Section Under Construction :construction:
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| drow | ? | ? | ? | 17 (20) | 20 | 18 | 21 | 16 |
+| duergar | ? | ? | ? | 20 (23) | 16 | 19 | 14 | 21 |
+| dwarf | ? | ? | ? | 20 (23) | 16 | 19 | 14 | 21 |
+| fire giant | ? | ? | ? | 20 (23) | 18 | 17 | 16 | 20 |
+| frost giant | ? | ? | ? | 21 (24) | 17 | 18 | 16 | 19 |
+| giant | ? | ? | ? | 22 (25) | 15 | 18 | 15 | 20 |
+| goblin | ? | ? | ? | 16 (19) | 17 | 18 | 21 | 19 |
+| halfling | ? | ? | ? | 18 (21) | 17 | 17 | 21 | 19 |
+| heishan elf | ? | ? | ? | 17 (20) | 18 | 18 | 20 | 18 |
+| human | ? | ? | ? | 18 (21) | 18 | 18 | 18 | 18 |
+| orc | ? | ? | ? | 21 (24) | 15 | 19 | 16 | 21 |
+| river troll | ? | ? | ? | 20 (23) | 16 |18 | 16 | 21 |
+| sylvan elf | ? | ? | ? | 16 (19) | 20 | 18 | 21 | 16 | 
+| titan | ? | ? | ? | 20 (23) | 18 | 17 | 16 | 19 |
+
+
+#### Paladin
+* Primary Stat: `Wisdom`
+* Secondary Stat: `Strength`
+
+:construction: Class Max Stats Section Under Construction :construction:
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| dwarf | ? | ? | ? | 20 (21) | 16 | 19 (21) | 14 | 21 |
+| giant | ? | ? | ? | 22 (23) | 15 | 18 (20) | 15 | 20 |
+| heishan elf | ? | ? | ? | 17 (18) | 18 | 18 (20) | 20 | 18 |
+| human | ? | ? | ? | 18 (19) | 18 | 18 (20) | 18 | 18 |
+| sylvan elf | ? | ? | ? | 16 (17) | 20 | 18 (20) | 21 | 16 |
+
+
+#### Charlatan
+* Primary Stat: `Dexterity`
+* Secondary Stat: `Intelligence`
+
+:construction: Class Max Stats Section Under Construction :construction:
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gnome | ? | ? | ? | 18 | 19 (20) | 20 | 18 (20) | 17 |
+| goblin | ? | ? | ? | 16 | 17 (18) | 18 | 21 (23) | 19 |
+| halfling | ? | ? | ? | 18 | 17 (18) | 17 | 21 (23) | 19 |
+| human | ? | ? | ? | 18 | 18 (19) | 18 | 18 (20) | 18 |
+| pixie | ? | ? | ? | 16 | 21 (22) | 20 | 19 (21) | 16 |
+| quickling | ? | ? | ? | 17 | 18 (19) | 16 | 25 (27) | 15 |
+| sylvan elf | ? | ? | ? | 16 | 20 (21) | 18 | 21 (23) | 16 |
+
+
+#### Myrmidon
+* Primary Stat: `Intelligence`
+* Secondary Stat: `Strength`
+
+:construction: Class Max Stats Section Under Construction :construction:
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| duergar | ? | ? | ? | 20 (21) | 16 (18) | 19 | 14 | 21 |
+| dwarf | ? | ? | ? | 20 (21) | 16 (18) | 19 | 14 | 21 |
+| frost giant | ? | ? | ? | 21 (22) | 17 (19) | 18 | 16 | 19 |
+| goblin | ? | ? | ? | 16 (17) | 17 (19) | 18 | 21 | 19 |
+| halfling | ? | ? | ? | 18 (19) | 17 (19) | 17 | 21 | 19 |
+| heishan elf | ? | ? | ? | 17 (18) | 18 (20) | 18 | 20 | 18 |
+| human | ? | ? | ? | 18 (19) | 18 (20) | 18 | 18 | 18 |
+| orc | ? | ? | ? | 21 (22) | 15 (17) | 19 | 16 | 21 |
+| titan | ? | ? | ? | 20 (21) | 18 (20) | 17 | 16 | 19 |
+
+#### Antipaladin
+* Primary Stat: `Wisdom`
+* Secondary Stat: `Strength`
+
+:construction: Class Max Stats Section Under Construction :construction:
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| drow | ? | ? | ? | 17 (18) | 20 | 18 (20) | 21 | 16 |
+| duergar | ? | ? | ? | 20 (21) | 16 | 19 (21) | 14 | 21 |
+| goblin | ? | ? | ? | 16 (17) |17 | 18 (20) | 21 | 19 |
+| human | ? | ? | ? | 18 (19) | 18 | 18 (20) | 18 | 18 |
+| orc | ? | ? | ? | 21 (22) | 15 | 19 (21) | 16 | 21 |
+| river troll | ? | ? | ? | 20 (21) | 16 | 18 (20) | 16 | 21 |
+
+#### Monk
+* Primary Stat: `Dexterity`
+* Secondary Stat: `Strength`
+
+:construction: Class Max Stats Section Under Construction :construction:
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| drow | ? | ? | ? | 17 (18) | 20 | 18 | 21 (23) | 16 |
+| dwarf | ? | ? | ? | 20 (21) | 16 | 19 | 14 (16) | 21 |
+| gnome | ? | ? | ? | 18 (19) | 19 | 20 | 18 (20) | 17 |
+| goblin | ? | ? | ? | 16 (17) | 17 | 18 | 21 (23) | 19 |
+| halfling | ? | ? | ? | 18 (19) | 17 | 17 | 21 (23) | 19 |
+| heishan elf | ? | ? | ? | 17 (18) | 18 | 18 | 20 (22) | 18 |
+| human | ? | ? | ? | 18 (19) | 18 | 18 | 18 (20) | 18 |
+| quickling | ? | ? | ? | 17 (18) | 18 | 16 | 25 (27) | 15 |
+| sylvan | ? | ? | ? | 16 (17) | 20 | 18 | 21 (23) | 16 |
+
 ### Skill And Class Table
 
 | skills | mage | cleric | thief | warrior | antipaladin | paladin | charlatan | myrmidon | monk |
@@ -722,7 +856,7 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | weaken | 17 | 23 | - | - | 17 | - | 16 | 18 | - |
 | word of recall | 15 | 15 | - | - | 35 | 35 | 20 | 29 | - |
 
-### Monk
+### Monk Details
 
 #### Monk Mantras
 | name | level | mana | awareness | body | combat | spirit | focus | description |
