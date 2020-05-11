@@ -407,9 +407,9 @@ The max upgradable amounts are:
 ### Max Stats
 All stats in the following sections are before armor or temple mark. Stats in parenthesis are the adjusted stats after accommodating for primary and secondary stats where primary stats adds 2 and secondary adds 1 to the base stat maximum.
 
-### Mage Max Stat
-Primary Stat: `Intelligence`
-Secondary Stat: `Intelligence`
+### Mage
+* Primary Stat: `Intelligence`
+* Secondary Stat: `Intelligence`
 
 | races | HP | MP | MV | str | int | wis | dex | con |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1227,6 +1227,8 @@ Here is a script that buffs your character right before a quest:
 | a jeweled sceptre | 45 | 47 | 40g0s | valeda | translate x 6 |
 | a pixie doll | 45 | 47 | 35g0s | valeda | haste x 6 |
 | soul of the frost beast | 50 | 55 | 90g0s | frost beast, pyrainn mountains | frost breath x 20, dex -2, con -2 |
+| a pink-painted doll made of stick | 50 | 55 | 50g0s | young centaur guard, xuergothe | faerie fire x 10 |
+| a songbook | 51 | 56 | 40g0s | litte girl, xuergothe castle | charm person |
 
 ## Items For Leveling
 Keep in mind that the intention for this is **not** to be a comprehensive list of items, but the **best-in-slot** leveling items. Adventures Unlimited has a huge focus on tradeskills, where created items will always be the strongest items for each level tier group (armor is crafted for levels 10, 20, 30 etc.) But if you're leveling quickly, don't have access to an armorsmith or simply the crafted item isn't as strong as it could be, these are great fall-back options.
@@ -1249,6 +1251,7 @@ These are **unlimited only** light sources.
 | a steel lantern | 39 | 12g50s | hitroll +2, damroll +1, hp +10 | hunter in oterion |
 | a bright ball of snow | 40 | 48g25s | hitroll +4, damroll +2 | general store, schwartz glacier |
 | a sylvan-made everlasting light | 46 | 59g23s | hitroll +3, con +1, str +1 | sylvan guard, draek'le |
+| the power stone | 50 | 217g83s | damroll +2, hitroll +1, hp +65 | king of eirenole |
 
 ### Head Armor
 | name | req lvl | cost | description | found |
@@ -1273,6 +1276,9 @@ These are **unlimited only** light sources.
 | a silver head piece | 42 | 12g10s | hitroll +3, damroll +5 | merakki, merakkis kitchen, valeda |
 | a crown of flowers | 45 | 9g99s | int +5 | hiilyraajie, valeda |
 | a hide head-dress | 45 | 10g87s | damroll +3, hitroll +5, hp +50 | orc chieftan grarg, valeda |
+| a platinum crown with sapphires | 50 | 24g41s | [-E][-N] damroll +5, hitroll +5, int +1, con +1, wis +1 | king, terrason |
+| a battered steel helmet | 51 | 31g34s | damroll +3, hitroll +6, str +3 | brave adventurer, kaer tzoun |
+| a heavy gold circlet | 53 | 21g68s | hitroll +6, damroll +4, wis +3 | king of eirenole |
 
 ### Neck Armor
 | name | req lvl | cost | description | found |
@@ -1288,10 +1294,12 @@ These are **unlimited only** light sources.
 | a green hunting cloak | 37 | 33g68s | damroll +4, hitroll +4 | hunter, eirenole |
 | a cape embroidered with nightmares | 40 | 33g91s | damroll +4, str +1, dex +1 | jailcell, terrason |
 | a necklace of wooden prayer beads | 40 | 12g30s | damroll +3, int +1, str +1, con +1 | pious monk, terrason |
+| a delicate necklace | 42 | 15g84s | damroll +5 | girl, heishaer city |
 | a brass-reinforced neck brace | 43 | 16g86s | hitroll +4, saves -3, ac -3 | pixie guard, valeda |
 | a delicately-crafted necklace | 45 | 2g80s | hitroll +8, ac -2 | heishaer king |
 | an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
 | a dark grey hooded cloak | 45 | 42g78s | hitroll +10, move +50 | eirenole forest, bandit |
+| a heavy fur mantle | 51 | 73g76s | hitroll +6, damroll +4, wis +3 | king of eirenole |
 
 ### Shoulder / About Armor
 | name | req lvl | cost | description | found |
@@ -1312,6 +1320,9 @@ These are **unlimited only** light sources.
 | a tinted chest-plate | 43 | 5g64s | damroll +2, hitroll +8, str +2 | a halfling guard, tyyrinn village |
 | a blue master's robe | 45 | 13g76s | hitroll +6, damroll +3 | magical pixie master, valeda |
 | a long, cleric's robe | 45 | 14g17s | [-E] damroll +2, hitroll +5 | devout cleric, terrason |
+| a rabbit fur lines robe | 50 | 21g10s | [-E] hitroll +6, hp +35 | king rastednu, terrason |
+| a blue and gold surcoat | 53 | 61g38s | damroll +4, str +2, ac -8 | gatehouse guard, eirenole castle |
+| a link of golden scales | 54 | 22g81s | dammroll +5, hitroll +5 | warl, bottom of pond in acoma |
 
 ### Torso / Body Armor
 | name | req lvl | cost | description | found |
@@ -1334,6 +1345,7 @@ These are **unlimited only** light sources.
 | a stiff hide breastplate | 36 | 24g85s | [-G] damroll +4, hitroll +4, dex +2 | orc chieftan grarg, valeda |
 | a satin, sky blue dress | 40 | 55g55s | damroll +2, hitroll +3, ac -5, saves -4 | floraena, marakkis kitchen, valeda |
 | grass green robes | 42 | 13g51s | damroll +4, hitroll +6, dex -1 | caretaker's assistant, valeda |
+| a blue master's robe | 45 | 13g76s | hitroll +6, damroll +3 | master pixie, field path valeda |
 | a light woven vest | 48 | 43g16s | hitroll +4, damroll +2, dex +2 | stableboy, eirenole castle |
 | a set of plate-mail | 50 | 15g65s | damroll +4, hitroll +4, con +1 | gromm, yrenelania |
 | stiff fur armor | 52 | 79g20s | [-E] hitroll +5, damroll +3, str +1 | guard, xuergothe castle |
@@ -1354,6 +1366,7 @@ These are **unlimited only** light sources.
 | a wide brown sash | 37 | 16g58s | hitroll +5, con +2 | wide old woman, valeda |
 | a hardened wood bracer | 39 | 12g37s | hit+8,dam+1 | weaponmaster, valeda |
 | an engraved brass girth | 43 | 14g86s | damroll +5, hitroll +2 | fast pixie patroller, valeda |
+| a plain leather sword sheath | 54 | 51g58s | damroll +7, hitroll +7 | kings guard, eirenole castle |
 
 ### Arms Armor
 | name | req lvl | cost | description | found |
@@ -1371,6 +1384,7 @@ These are **unlimited only** light sources.
 | braided strands of silver | 42 | 20g29s | hitroll +6, damroll +3 | merakki, merakkis kitchen, valeda |
 | dull steel chain sleeves | 45 | 16g25s | damroll +4, hitroll +5 | jrek, the guardian, valeda |
 | a pair of elven chain-mail sleeves | 45 | 62g12s | hitroll +3, damroll +4, dex +1 | eirenole forest, bandit |
+| torn brown sleeves | 47 | 19g87s | damroll +2, hitroll +5 | bandit, kaer tzoun |
 | a set of steel pauldrons | 51 | 19g4s | hitroll +9 | brave adventurer, kaer tzoun |
 
 ### Wrist Armor
@@ -1393,6 +1407,7 @@ These are **unlimited only** light sources.
 | an electrum bracelet | 45 | 25g22s | damroll +3, hitroll +3, str +1 | cyan-haired sprite, heishaer city |
 | a cold steel bracer | 45 | 43g66s | damroll +3, hitroll +3, str +1 | dwarf, pyrainn mountains |
 | a silver-inlaid steel bracer | 50 | 9g89s | hitroll +6, con +1, str +1, dex +1 | brave adventurer, kaer tzoun |
+| a bracer forged of silvite | 52 | 31g41s | damroll +3, hitroll +3, ac -5 | dwarven knight, pyrainn mountains |
 
 ### Hand Armor
 | name | req lvl | cost | description | found |
@@ -1440,7 +1455,8 @@ These are **unlimited only** light sources.
 | a pair of engraved brass leg plates | 43 | 21g73s | damroll +5 | fast pixie patroller, valeda |
 | a pair of tinted leg-guards | 43 | 13g69s | damroll +5,hitroll +5 | halfling guard, tyrinn village |
 | stiff hide leggings | 46 | 16g70s | damroll +4, hitroll +4, str +2 | orc chieftan grarg, valeda |
-| shimmering leggings | 53 | 94g5s | hitroll +10, damroll +1 | sweet-voicec chorus girl, xuergothe |
+kjljkk| a pair of strong, thick leather greaves | 51 | 31g34s | damroll +7 | brave adventurer, kaer tzoun |
+| shimmering leggings | 53 | 94g5s | hitroll +10, damroll +1 | sweet-voiced chorus girl, xuergothe |
 
 ### Feet Armor
 | name | req lvl | cost | description | found |
@@ -1459,6 +1475,7 @@ These are **unlimited only** light sources.
 | a painted ankle bracelet | 39 | 9g43s | hitroll +5, damroll +3 | a dancing sylvan female, valeda |
 | soft calfskin boots | 40 | 33g39s | damroll +3, hitroll +5 | floraena, merakkis kitchen, valeda |
 | a pair of brass-reinforced boots | 43 | 17g32s | hitroll +4, damroll +2, str +2 | pixie guard, valeda |
+| soft deerskin boots | 47 | 23g96s | damroll +6 | bandit, kaer tzoun |
 
 ### Held Items
 | name | req lvl | cost | description | found |
