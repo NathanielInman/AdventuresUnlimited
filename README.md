@@ -16,7 +16,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Pets](#pets)
 - [Classes](#classes)
   - [Race And Class Table](#race-and-class-table)
-  - [Max Mage Stats](#max-mage-stats)
+  - [Max Mage Stats](#mage-max-stats)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
   - [Monk](#monk)
@@ -410,6 +410,7 @@ Primary Stat: `Intelligence`
 Secondary Stat: `Intelligence`
 
 | races | HP | MP | MV | str | int | wis | dex | con |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | drow | 8200 | 5300 | 4800 | 17 | 20 (23) | 18 | 21 | 16 |
 | duergar | 8575 | 5200 | 4450 | 20 | 16 (19) | 19 | 14 | 21 |
 | dwarf | 8575 | 5200 | 4450 | 20 | 16 (19) | 19 | 14 | 21 |
