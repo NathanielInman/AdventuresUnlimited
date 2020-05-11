@@ -16,6 +16,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Pets](#pets)
 - [Classes](#classes)
   - [Race And Class Table](#race-and-class-table)
+  - [Max Mage Stats](#max-mage-stats)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
   - [Monk](#monk)
@@ -401,6 +402,29 @@ The max upgradable amounts are:
 | river troll |       | **✓**  |       | **✓**   | **✓**       |         |           |          |       |
 | sylvan elf  | **✓** | **✓**  | **✓** | **✓**   |             | **✓**   | **✓**     |          | **✓** |
 | titan       | **✓** | **✓**  |       | **✓**   |             |         |           | **✓**    |       |
+
+### Mage Max Stats
+All stats below are before armor or temple mark.
+Stats in parenthesis are the adjusted stats after accommodating for primary and secondary stats.
+Primary Stat: `Intelligence`
+Secondary Stat: `Intelligence`
+
+| races | HP | MP | MV | str | int | wis | dex | con |
+| drow | 8200 | 5300 | 4800 | 17 | 20 (23) | 18 | 21 | 16 |
+| duergar | 8575 | 5200 | 4450 | 20 | 16 (19) | 19 | 14 | 21 |
+| dwarf | 8575 | 5200 | 4450 | 20 | 16 (19) | 19 | 14 | 21 |
+| fire giant | 8425 | 5210 | 4550 | 21 | 17 (20) | 18 | 16 | 19 |
+| frost giant | 8500 | 5220 | 4550 | 20 | 18 (21) | 17 | 16 | 20 |
+| gnome | 8275 | 5270 | 4650 | 18 | 19 (22) | 20 | 18 | 17 |
+| goblin | 8425 | 5270 | 4800 | 16 | 17 (20) | 18 | 21 | 19 |
+| halfling | 8425 | 5190 | 4800 | 18 | 17 (20) | 17 | 21 | 19 |
+| heishan elf | 8350 | 5240 | 4750 | 17 | 18 (21) | 18 | 20 | 18 |
+| human | 8350 | 5240 | 4650 | 18 | 18 (21) | 18 | 18 | 18 |
+| orc | 8575 | 5170 | 4550 | 21 | 15 (18) | 19 | 16 | 21 |
+| pixie | 8200 | 5370 | 4700 | 16 | 21 (24) | 20 | 19 | 16 |
+| quickling | 8125 | 5200 | 5000 | 17 | 18 (21) | 16 | 25 | 15 |
+| sylvan elf | 8200 | 5300 | 2100 | 16 | 20 (23) | 18 | 21 | 16 |
+| titan | 8425 | 5220 | 4550 | 20 | 18 (21) | 17 | 16 | 19 |
 
 ### Skill And Class Table
 
