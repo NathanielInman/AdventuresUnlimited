@@ -16,7 +16,8 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Pets](#pets)
 - [Classes](#classes)
   - [Race And Class Table](#race-and-class-table)
-  - [Max Mage Stats](#mage-max-stats)
+  - [Max Stats](#max-stats)
+    - [Mage](#mage-max-stats)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
   - [Monk](#monk)
@@ -403,9 +404,10 @@ The max upgradable amounts are:
 | sylvan elf  | **✓** | **✓**  | **✓** | **✓**   |             | **✓**   | **✓**     |          | **✓** |
 | titan       | **✓** | **✓**  |       | **✓**   |             |         |           | **✓**    |       |
 
-### Mage Max Stats
-All stats below are before armor or temple mark.
-Stats in parenthesis are the adjusted stats after accommodating for primary and secondary stats.
+### Max Stats
+All stats in the following sections are before armor or temple mark. Stats in parenthesis are the adjusted stats after accommodating for primary and secondary stats where primary stats adds 2 and secondary adds 1 to the base stat maximum.
+
+### Mage Max Stat
 Primary Stat: `Intelligence`
 Secondary Stat: `Intelligence`
 
