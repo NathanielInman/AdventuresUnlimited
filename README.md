@@ -1069,7 +1069,7 @@ One leveling strategy is to work on the worst stances first as monks get increas
 7. (50) swallow - only useful after lvl 45 pressure point
 8. (50) mantis - only useful after lvl 50 counter
 10. (50) dragon - only useful after lvl 50 counter
-11. (100) grandmaster
+11. (50) grandmaster
 
 ##### Viper 
 - starter stance
