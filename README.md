@@ -34,6 +34,18 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [Monk Abilities](#monk-abilities)
     - [Monk Chi](#monk-chi)
     - [Monk Stances](#monk-stances)
+      - [leveling strategy](#leveling-strategy)
+      - [viper](#viper)
+      - [crane](#crane)
+      - [crab](#crab)
+      - [mongoose](#mongoose)
+      - [bull](#bull)
+      - [mantis](#mantis)
+      - [dragon](#dragon)
+      - [tiger](#tiger)
+      - [swallow](#swallow)
+      - [monkey](#monkey)
+      - [grandmaster](#grandmaster)
     - [Monk Techniques](#monk-techniques)
     - [Monk Combos](#monk-combos)
 - [Quest Rewards](#quest-rewards)
@@ -1018,7 +1030,7 @@ All stats in the following sections are before armor or temple mark. Stats in pa
   - chance to add 4 attacks
 
 #### Monk Stances
-Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can rank up a stance every level. You can grandmaster 1 stance per 8 levels. You can therefor unlock grandmaster stance at level 64 and grandmaster the stance at level 72. You can reach this goal even if you train no stances until level 72 as it is accumulatively unlocked.
+Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can rank up a stance every level. You can grandmaster 1 stance per 8 levels. This limit disappears at level 50. You can therefor unlock grandmaster stance and grandmaster it at level 50. You can reach this goal even if you train no stances until level 50 as it is accumulatively unlocked.
 
 Every hit has a possibility to check for improvement:
 ```
@@ -1044,7 +1056,23 @@ well trained & above: 1%
 8. master
 9. grandmaster
 
-**Viper**: Starter Stance
+##### Leveling Strategy
+One leveling strategy is to work on the worst stances first as monks get increasingly difficult to level until they unlock pressure point (45) and counter (50).
+
+1. (1-8) Crane - (worst stance, does nothing knock it out first)
+2. (9-16) Mongoose
+3. (17-24) Monkey
+4. (25-32) crab
+4. (33-40) Viper
+5. (41-48) Bull
+6. (49-50) tiger
+7. (50) swallow - only useful after lvl 45 pressure point
+8. (50) mantis - only useful after lvl 50 counter
+10. (50) dragon - only useful after lvl 50 counter
+11. (100) grandmaster
+
+##### Viper 
+- starter stance
 - allow grapple fightstyle to work if target is flying
 - allow trip fightstyle to work if target is flying
 - up to 50% at grandmaster to +10% success on disarm
@@ -1052,47 +1080,57 @@ well trained & above: 1%
 - up to 17% at grandmaster to dodge
 - up to 10% increased chance at grandmaster to apply pressure point
 
-**Crane**: Starter Stance
+##### Crane
+- starter stance
 - allow trip fightstyle to work if target is flying
 
-**Crab**: Starter Stance
+##### Crab
+- starter stance
 - DECREASE chance of uppercut fightstyle success by 25%
 - up to 17% at grandmaster to parry
 
-**Mongoose**: Starter Stance
+##### Mongoose
+- starter stance
 - allow grapple fightstyle to force resting position on target if they're flying
 - up to 17% at grandmaster to dodge
 - up to 10% increased chance at grandmaster to apply pressure point
 
-**Bull**: Starter Stance
+##### Bull
+- starter stance
 - +73% damage
 - **DECREASE** chance of uppercut fightstyle success by 25%
 - **DECREASE** chance to counter by 5 - 10%
 
-**Mantis**: Requires Crane & Viper Grandmastered
+##### Mantis
+- requires crane and viper grandmastered
 - up to 50% at grandmaster to add 1 extra attack
 - +10-15% chance to counter
 
-**Dragon**: Requires Bull & Crab Grandmastered
+##### Dragon
+- requires bull and crab grandmastered
 - +80% damage
-- **DECEREASE** chance of uppercut fightstyle success by 25%
+- **DECREASE** chance of uppercut fightstyle success by 25%
 - allow trip fightstyle to work if target is flying
 - +5-10% chance to counter
 - up to 50% at grandmaster to have 75% for 1 extra attack & 50% for 2 extra attacks, and 25% for 3 extra attacks
 
-**Tiger**: Requires Bull & Viper Grandmastered
+##### Tiger
+- requires bull and viper grandmastered
 - +89% damage
 - up to 50% at grandmaster to have 75% for 1 extra attack & 50% for 2 extra attacks
 
-**Swallow**: Requires Mongoose & Crab Grandmastered
+##### Swallow
+- requires mongoose and crab grandmastered
 - up to 10% increased chance at grandmaster to apply pressure point
 - **DECREASE** chance to counter by 10 - 15%
 
-**Monkey**: Requires Crane & Mongoose Grandmastered
+##### Monkey
+- requires crane and mongoose grandmastered
 - +33% damage
 - up to 50% at grandmaster to +15% success on disarm
 
-**Grandmaster**: Requires Mantis, Dragon, Tiger, Swallow & Monkey Grandmastered
+##### Grandmaster
+- requires mantis, dragon, tiger, swallow & crane grandmastered
 - +100% damage
 - (requires level 60) up to 50% at grandmaster to have 60% for 1 extra attack & 50% for 2 extra attacks, and 30% for 3 extra attacks
 - up to 10% increased chance at grandmaster to apply pressure point
