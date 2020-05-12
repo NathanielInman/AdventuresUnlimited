@@ -875,28 +875,28 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | +40% damage |
 
 #### Monk Fightstyles
-| name | level | requirements | damage | description |
+| name | level | requirements | damage | slottable | description |
 | --- | --- | --- | --- | --- |
-| knee | 1 | none | 117% | basic attack |
-| punch | 1 | none | 117% | basic attack |
-| elbow | 1 | none | 117% | basic attack |
-| kick | 1 | none | 117% | basic attack |
-| bodyblow | 10 | none | 100% | basic attack |
-| trip | 10 | none | 117% | trip affect, affected by player & enemy dex & haste |
-| stamp | 17 | kick | 100% | failable, subtracts between 25 & 50 move from enemy |
-| swiftkick | 18 | kick | 100% | basic attack |
-| grapple | 23 | bodyblow | 133% | failable player strength vs enemy dex |
-| hook | 24 | none | 100% | basic attack |
-| charge | 26 | bodyblow | 100% | basic attack |
-| backfist | 27 | bodyblow, punch | 133% | basic attack |
-| uppercut | 31 | grapple, punch | 100% | failable pllayer vs enemy dex |
-| forearm | 34 | punch, charge | 133% | basic attack |
-| hurl | 42 | bodyblow, punch | 100% | basic attack |
-| jumpkick | 49 | kick, bodyblow | 133% | basic attack |
-| hammer | 49 | kick, charge | 100% | basic attack |
-| sweep | 51 | kick, bodyblow | 133% | basic attack |
-| spinkick | 55 | sweep | 133% | basic attack |
-| headbutt | 57 | none | 133% | basic attack |
+| knee | 1 | none | 117% | 4 | basic attack |
+| punch | 1 | none | 117% | 4 | basic attack |
+| elbow | 1 | none | 117% | 4 | basic attack |
+| kick | 1 | none | 117% | 4 | basic attack |
+| bodyblow | 10 | none | 100% | 4 | basic attack |
+| trip | 10 | none | 117% | 4 | trip affect, affected by player & enemy dex & haste |
+| stamp | 17 | kick | 100% | 3 | failable, subtracts between 25 & 50 move from enemy |
+| swiftkick | 18 | kick | 100% | 3 | basic attack |
+| grapple | 23 | bodyblow | 133% | 2 | failable player strength vs enemy dex |
+| hook | 24 | none | 100% | 2 | basic attack |
+| charge | 26 | bodyblow | 100% | 2 | basic attack |
+| backfist | 27 | bodyblow, punch | 133% | 2 | basic attack |
+| uppercut | 31 | grapple, punch | 100% | 2 | failable pllayer vs enemy dex |
+| forearm | 34 | punch, charge | 133% | 2 | basic attack |
+| hurl | 42 | bodyblow, punch | 100% | 1 | basic attack |
+| jumpkick | 49 | kick, bodyblow | 133% | 1 | basic attack |
+| hammer | 49 | kick, charge | 100% | 1 | basic attack |
+| sweep | 51 | kick, bodyblow | 133% | 1 | basic attack |
+| spinkick | 55 | sweep | 133% | 1 | basic attack |
+| headbutt | 57 | none | 133% | 1 | basic attack |
 
 #### Monk Abilities
 | level | requirements |
