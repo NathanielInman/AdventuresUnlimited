@@ -876,7 +876,7 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 
 #### Monk Fightstyles
 | name | level | requirements | damage | slottable | description |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | knee | 1 | none | 117% | 4 | basic attack |
 | punch | 1 | none | 117% | 4 | basic attack |
 | elbow | 1 | none | 117% | 4 | basic attack |
