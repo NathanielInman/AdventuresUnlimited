@@ -466,17 +466,17 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 
 | races | HP | MP | MV | str | int | wis | dex | con |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| drow | ? | ? | ? | 17 | 20 | 18 | 21 (24) | 16 | 
-| duergar | ? | ? | ? | 20 | 16 | 19 | 14 (27) | 21 |
-| dwarf | ? | ? | ? | 20 | 16 | 19 | 14 (17) | 21 |
-| gnome | ? | ? | ? | 18 | 19 | 20 | 18 (21) | 17 |
-| goblin | ? | ? | ? | 16 | 17 | 18 | 21 (24) | 19 |
-| halfling | ? | ? | ? | 18 | 17 | 17 | 21 (24) | 19 |
-| human | ? | ? | ? | 18 | 18 | 18 | 18 (21) | 18 |
-| orc | ? | ? | ? | 21 | 15 | 19 | 16 (19) | 21 |
-| pixie | ? | ? | ? | 16 | 21 | 20 | 19 (22) | 16 |
-| quickling | ? | ? | ? | 17 | 18 | 16 | 25 (27) | 15 |
-| sylvan elf | ? | ? | ? | 16 | 20 | 18 | 21 (24) | 16 |
+| drow | ? | ? | 4950 | 17 | 20 | 18 | 21 (24) | 16 | 
+| duergar | ? | ? | 4600 | 20 | 16 | 19 | 14 (17) | 21 |
+| dwarf | ? | ? | 4600 | 20 | 16 | 19 | 14 (17) | 21 |
+| gnome | ? | ? | 4800 | 18 | 19 | 20 | 18 (21) | 17 |
+| goblin | ? | ? | 4950 | 16 | 17 | 18 | 21 (24) | 19 |
+| halfling | ? | ? | 4950 | 18 | 17 | 17 | 21 (24) | 19 |
+| human | ? | ? | 4800 | 18 | 18 | 18 | 18 (21) | 18 |
+| orc | ? | ? | 4700 | 21 | 15 | 19 | 16 (19) | 21 |
+| pixie | ? | ? | 4850 | 16 | 21 | 20 | 19 (22) | 16 |
+| quickling | ? | ? | 5100 | 17 | 18 | 16 | 25 (27) | 15 |
+| sylvan elf | ? | ? | 4950 | 16 | 20 | 18 | 21 (24) | 16 |
 
 #### Warrior
 * Primary Stat: `Strength`
@@ -486,9 +486,9 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 
 | races | HP | MP | MV | str | int | wis | dex | con |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| drow | ? | ? | ? | 17 (20) | 20 | 18 | 21 | 16 |
-| duergar | ? | ? | ? | 20 (23) | 16 | 19 | 14 | 21 |
-| dwarf | ? | ? | ? | 20 (23) | 16 | 19 | 14 | 21 |
+| drow | ? | ? | 4800 | 17 (20) | 20 | 18 | 21 | 16 |
+| duergar | ? | ? | 4450 | 20 (23) | 16 | 19 | 14 | 21 |
+| dwarf | ? | ? | 4450 | 20 (23) | 16 | 19 | 14 | 21 |
 | fire giant | ? | ? | ? | 20 (23) | 18 | 17 | 16 | 20 |
 | frost giant | ? | ? | ? | 21 (24) | 17 | 18 | 16 | 19 |
 | giant | ? | ? | ? | 22 (25) | 15 | 18 | 15 | 20 |
@@ -1427,7 +1427,7 @@ These are **unlimited only** light sources.
 | a felt hat with stirrups | 37 | 21g12s | [-E] hitroll +3, damroll +3 | vallien knight, terrason |
 | a black headpiece | 38 | 37g62s | hitroll +3, damroll +3, ac +3 | head senator abana, aliuna |
 | a dark hood | 38 | 45g4s | hitroll +4, damroll +2 | shi'jal, castle of burden |
-| a monk's hood | 40 | 22g91s | damroll +2, hitroll +4 | pious monk, terrason |
+| a monk's hood | 40 | 22g91s | [-E] damroll +2, hitroll +4 | pious monk, terrason |
 | a hardened wood helmet | 42 | 24g75s | hitroll +6, damroll +2 | loud-voiced sergeant, valeda |
 | a silver head piece | 42 | 12g10s | hitroll +3, damroll +5 | merakki, merakkis kitchen, valeda |
 | a crown of flowers | 45 | 9g99s | int +5 | hiilyraajie, valeda |
