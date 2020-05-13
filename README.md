@@ -1199,6 +1199,7 @@ Hit chance: 65 + dexterityBonus + strengthBonus + intelligenceBonus + levelBonus
 Hit chance maximum allowed: 95%
 ```
 ### Armor Class
+Armor class doesn't scale well at later levels. You'd need -2500 AC to remove 30% of 1k damage. Because of this scaling its better not to even worry about damage reduction from armor past beginning of the game.
 ```
 Note that this is based on the "type" of damage, i.e. pierce, slash, bash, exotic
 Monk damage type is bash. Anything not pierce, slash or bash like "divine" is exotic.
@@ -1206,6 +1207,12 @@ Monk damage type is bash. Anything not pierce, slash or bash like "divine" is ex
 Damage reduction for players: (victimAC - 100) / 8
 Damage reduction for mobiles: (victimAC - 100) / 15
 Maximum damage reduction allowed: 30% of the attack
+```
+Example:
+```
+You have -240 AC in slash.
+(-240 - 100) / 15 = You reduce incoming damage by 22 against mobiles (not to exceed 30% of attack)
+(-240 - 100) / 8 = You reduce incoming damage by 42 against players (not to exceed 30% of attack)
 ```
 ## Quest Rewards
 | name | cost |
