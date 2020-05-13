@@ -48,6 +48,8 @@ A collection of resources and information surrounding the Adventures Unlimited M
       - [grandmaster](#grandmaster)
     - [Monk Techniques](#monk-techniques)
     - [Monk Combos](#monk-combos)
+- [Combat Calculations](#combat-calculations)
+  - [Hitroll](#hitroll)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
@@ -1178,6 +1180,19 @@ The absolute key to mastering monk combat is leveraging all the techniques to pe
 | 73 | forcekick | thrust kick, thrust kick, triple kick | 225% on chi attacks | |
 | 73 | lightning kick | triple kick, double kick, spin kick | 225% on chi x 3/2 attacks | |
 
+## Combat Calculations
+### Hitroll
+Since 95% is the maximum allowed hitchance, the recommendation is the find a worst case scenario for achieving a good hit chance, acquiring that much hitroll if feasible and then dumping the rest into other stats instead of wasting extraneous hitroll on armor.
+```
+Dexterity bonus: playerDexterity - enemyDexterity/2
+Strength bonus: playerStrength/4
+Intelligence bonus: playerIntelligence/10
+Level bonus: (playerLevel - enemyLevel)/2
+Hitroll bonus: hitroll / (playerLevel / 10) + 1
+
+Hit chance: 65 + dexterityBonus + strengthBonus + intelligenceBonus + levelBonus + hitrollBonus
+Hit chance maximum allowed: 95%
+```
 ## Quest Rewards
 | name | cost |
 | --- | --- | 
