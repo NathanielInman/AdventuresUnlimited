@@ -1201,9 +1201,10 @@ Hit chance maximum allowed: 95%
 ### Armor Class
 ```
 Note that this is based on the "type" of damage, i.e. pierce, slash, bash, exotic
+Monk damage type is bash. Anything not pierce, slash or bash like "divine" is exotic.
 
-Damage reduction for players: (victimAC - 100) / 8 * damage
-Damage reduction for mobiles: (victimAC - 100) / 15 * damage
+Damage reduction for players: (victimAC - 100) / 8
+Damage reduction for mobiles: (victimAC - 100) / 15
 Maximum damage reduction allowed: 30%
 ```
 ## Quest Rewards
