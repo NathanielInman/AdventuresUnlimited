@@ -50,6 +50,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [Monk Combos](#monk-combos)
 - [Combat Calculations](#combat-calculations)
   - [Hitroll](#hitroll)
+  - [Armor Class](#armor-class)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
@@ -1189,9 +1190,21 @@ Strength bonus: playerStrength/4
 Intelligence bonus: playerIntelligence/10
 Level bonus: (playerLevel - enemyLevel)/2
 Hitroll bonus: hitroll / (playerLevel / 10) + 1
+Rested bonus:
+  0 - 50% Rested: - randomNumberBetween(4,8)
+  51 - 89% Rested: - randomNumberBetween(1,4)
+  90%+ Rested: randomNumberBetween(1,3)
 
-Hit chance: 65 + dexterityBonus + strengthBonus + intelligenceBonus + levelBonus + hitrollBonus
+Hit chance: 65 + dexterityBonus + strengthBonus + intelligenceBonus + levelBonus + hitrollBonus + restedBonus
 Hit chance maximum allowed: 95%
+```
+### Armor Class
+```
+Note that this is based on the "type" of damage, i.e. pierce, slash, bash, exotic
+
+Damage reduction for players: (victimAC - 100) / 8 * damage
+Damage reduction for mobiles: (victimAC - 100) / 15 * damage
+Maximum damage reduction allowed: 30%
 ```
 ## Quest Rewards
 | name | cost |
