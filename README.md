@@ -400,9 +400,16 @@ The max upgradable amounts are:
 | a living whip of flame | 40 | 160g0s | Terrason |
 | a ferret | 40 | 160g0s | A Quickling Village |
 | a carrier pigeon | 40 | 160g0s | A Quickling Village |
+| a snow-white polar bear | 40 | 160g0s | Lost Kingdoms |
 | a spectre of light | 45 | 202g50s | Terrason |
 | a fierce falcon | 45 | 202g50s | A Quickling Village|
+| a  russet-colored fire-cat | 45 | 202g50s | Lost Kingdoms |
 | an enchanted gauntlet of power | 50 | 250g0s | Terrason |
+| a shaggy black wolf | 50 | 250g0s | Lost Kingdoms |
+| a large-tusked wild pig | 55 | 302g50s | Lost Kingdoms |
+| a writhing anaconda | 60 | 360g0s | Lost Kingdoms |
+| a beautiful snow cat | 65 | 422g50s | Lost Kingdoms |
+|  a blonde fox | 65 | 422g50s | Lost Kingdoms |
 
 ## Classes
 ### Race And Class Table
