@@ -1205,7 +1205,7 @@ Monk damage type is bash. Anything not pierce, slash or bash like "divine" is ex
 
 Damage reduction for players: (victimAC - 100) / 8
 Damage reduction for mobiles: (victimAC - 100) / 15
-Maximum damage reduction allowed: 30%
+Maximum damage reduction allowed: 30% of the attack
 ```
 ## Quest Rewards
 | name | cost |
