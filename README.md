@@ -208,11 +208,11 @@ Additional helpful maps on the [official website](tharel.net):
 | 50 - 60 | Heishaer City | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
 | 50 - 60 | Breyard Village | 41w6s2w2s3w3n3w1s1w1n8w2n2w2s2w3n5w3s1w |
 | 50 - 60 | The Acoma Estate | 7e1d2s1e9s1e |
-| 55 - 65 | The Overlook Grounds | Unknown |
-| 55 - 65 | The Overlook Towers | Unknown |
-| 55 - 65 | Xe'lith | Unknown |
-| 55 - 70 | Ruins of Khezauch | Unknown |
-| 55 - 75 | Necropolis | Unknown |
+| 55 - 65 | The Overlook Grounds | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
+| 55 - 65 | The Overlook Towers | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
+| 55 - 65 | Xe'lith | 4e9n5w6n11e3n5e1n3e7n5w4n2w2n6w1u1n1u2e1u |
+| 55 - 70 | Ruins of Khezauch | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1n |
+| 55 - 75 | Necropolis |  4e9n5w6n11e3n4e2s1w2s1e |
 | 60 - 70 | Caranos' Tomb | Unknown |
 | 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | Unknown |
 | 60 - 75 | Tiny Rapids | Unknown |
