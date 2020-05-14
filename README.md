@@ -51,6 +51,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Combat Calculations](#combat-calculations)
   - [Hitroll](#hitroll)
   - [Armor Class](#armor-class)
+  - [Magic Saves](#magic-saves)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
@@ -1221,6 +1222,26 @@ You have -240 AC in slash.
 (-240 - 100) / 15 = You reduce incoming damage by 22 against mobiles (not to exceed 30% of attack)
 (-240 - 100) / 8 = You reduce incoming damage by 42 against players (not to exceed 30% of attack)
 ```
+### Magic Saves
+Saves can prevent effects altogether like blind, or merely reduce damage by a percent depending on the spell.
+
+```
+levelBonus = (playerLevel - enemyLevel) * 5
+berserkBonus = playerLevel / 2
+racialBonus = 
+  if resistant: 2
+  if vulnerable: -2
+enemyPKClassSaveMultiplier =
+  mage, cleric, paladin, charlatan, myrmidon, antipaladin, monk = 0.9
+  thief, warrior, nonPKencounter = 1
+saves = (50 + levelBonus - playerSaves * 2 + berserkBonus + racialBonus) * enemyPKClassSaveMultiplier
+
+spellSave: randomNumberBetween(5,saves)
+isSaveSuccessful: randomNumberBetween(1,100) < spellSave
+Minimum save percentage: 5%
+Maximum save percentage: 95%
+```
+
 ## Quest Rewards
 | name | cost |
 | --- | --- | 
