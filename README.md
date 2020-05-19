@@ -105,7 +105,7 @@ Additional helpful maps on the [official website](tharel.net):
 | ALL | Western Tharel | Unknown |
 | OOC | The Lounge | 3n;go ooc |
 | ALL | The Dwarven Forest | Unknown |
-| ALL | Tucker's Hotel | Unknown |
+| ALL | Tucker's Hotel | 2w1s |
 | ALL | Beaches | 5w17s5e7s2e1s2e1d2s1e1s2e5s1w2s2e1d2e1s1e1s |
 | ALL | Underground Highway |  4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s |
 | ALL | The Neighborhood | Unknown |
