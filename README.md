@@ -214,10 +214,10 @@ Additional helpful maps on the [official website](tharel.net):
 | 55 - 65 | Xe'lith | 4e9n5w6n11e3n5e1n3e7n5w4n2w2n6w1u1n1u2e1u |
 | 55 - 70 | Ruins of Khezauch | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1n |
 | 55 - 75 | Necropolis |  4e9n5w6n11e3n4e2s1w2s1e |
-| 60 - 70 | Caranos' Tomb | Unknown |
-| 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | Unknown |
-| 60 - 75 | Tiny Rapids | Unknown |
-| 60 - 85 | Lost Kingdoms | Unknown |
+| 60 - 70 | Caranos' Tomb | 11e3s6e4s7e6s4e6s3w |
+| 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s2w |
+| 60 - 75 | Tiny Rapids | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s9w1s3w1s4w1n10w1s1w3s6w |
+| 60 - 85 | Lost Kingdoms | 4e9n5w6n11e3n5e1n3e10n1e2n7e1n3e1n6e;go tree |
 | 65 - 75 | Forest of Dreams | Unknown |
 | 65 - 75 | The Overlook Maze | Unknown |
 | 65 - 75 | Ktharstu | Unknown |
