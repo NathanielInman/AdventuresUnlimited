@@ -408,9 +408,14 @@ The max upgradable amounts are:
 | an enchanted gauntlet of power | 50 | 250g0s | Terrason |
 | a shaggy black wolf | 50 | 250g0s | Lost Kingdoms |
 | a large-tusked wild pig | 55 | 302g50s | Lost Kingdoms |
+| a mother needra | 55 | 302g50s | Rivendale |
 | a writhing anaconda | 60 | 360g0s | Lost Kingdoms |
+| a shatra bird | 60 | 360g0s | Rivendale |
 | a beautiful snow cat | 65 | 422g50s | Lost Kingdoms |
-|  a blonde fox | 65 | 422g50s | Lost Kingdoms |
+| a blonde fox | 65 | 422g50s | Lost Kingdoms |
+| a huge yalen sand-worm | 65 | 422g50s | Rivendale |
+| a heishan batle-maid | 70 | 490g0s | Rivendale |
+| an elemental guardian | 75 | 752g50s | Rivendale |
 
 ## Classes
 ### Race And Class Table
@@ -1463,13 +1468,21 @@ Here is a script that buffs your character right before a quest:
 | a jar of woodruff cream | 40 | 40 | 40g90s | tyyrinn village | detect hidden, detect invis, translate |
 | a jar of black elder cream | 40 | 40 | 150g39s | tyyrinn village | stone skin, giant strength |
 | a potion of warmth | 40 | 42 | 5g64s | schwartz glacier | flamesphere |
+| a green vial | 40 | 43 | 8g8s | heishaer city vendor | cure critical x 1 |
 | a potion of emergency get-away | 40 | 45 | 42g0s | schwartz glacier | teleport |
 | a blue pill | 42 | 45 | 12g96s | edible vitamins, heishaer | fly, cure blindness x 2 |
+| a clear potion | 44 | 47 | 4g63s | heishaer city vendor | refresh x 2 |
 | a jeweled sceptre | 45 | 47 | 40g0s | valeda | translate x 6 |
+| a red-trimmed scroll | 45 | 47 | 17g78s | heishaer city vendor | cancellation |
+| a slate-grey pill | 45 | 47 | 13g79s | heishaer city vendor | armor, stone skin, shield |
 | a pixie doll | 45 | 47 | 35g0s | valeda | haste x 6 |
+| a red pill | 50 | 55 | 14g43s | heishaer city vendor | cure disease |
+| a dark bottle | 50 | 55 | 9g60s | heishaer city vendor | detect invis, detect hidden, detect magic |
+| a green-trimmed scroll | 50 | 55 | 26g68s | heishaer city vendor | identify |
 | soul of the frost beast | 50 | 55 | 90g0s | frost beast, pyrainn mountains | frost breath x 20, dex -2, con -2 |
 | a pink-painted doll made of stick | 50 | 55 | 50g0s | young centaur guard, xuergothe | faerie fire x 10 |
 | a songbook | 51 | 56 | 40g0s | litte girl, xuergothe castle | charm person |
+| a spellbook | 65 | 65 | 45g89s | overlook gardens | charm person x 2 |
 
 ## Items For Leveling
 Keep in mind that the intention for this is **not** to be a comprehensive list of items, but the **best-in-slot** leveling items. Adventures Unlimited has a huge focus on tradeskills, where created items will always be the strongest items for each level tier group (armor is crafted for levels 10, 20, 30 etc.) But if you're leveling quickly, don't have access to an armorsmith or simply the crafted item isn't as strong as it could be, these are great fall-back options.
@@ -1520,6 +1533,9 @@ These are **unlimited only** light sources.
 | a platinum crown with sapphires | 50 | 24g41s | [-E][-N] damroll +5, hitroll +5, int +1, con +1, wis +1 | king, terrason |
 | a battered steel helmet | 51 | 31g34s | damroll +3, hitroll +6, str +3 | brave adventurer, kaer tzoun |
 | a heavy gold circlet | 53 | 21g68s | hitroll +6, damroll +4, wis +3 | king of eirenole |
+| the antlers of a stag | 54 | 94g48s | damroll +7, hitroll +3, move +250 | stag, breyard woods |
+| a coif of chainmail | 55 | 33g68s | hitroll +6, damroll +5, str +2 | vigilant guard, eirenole castle |
+| a peaked silk hat | 62 | 79g20s | int +2, wis +2, damroll +2, hitroll +3 | chorus matron |
 
 ### Neck Armor
 | name | req lvl | cost | description | found |
@@ -1564,6 +1580,7 @@ These are **unlimited only** light sources.
 | a rabbit fur lines robe | 50 | 21g10s | [-E] hitroll +6, hp +35 | king rastednu, terrason |
 | a blue and gold surcoat | 53 | 61g38s | damroll +4, str +2, ac -8 | gatehouse guard, eirenole castle |
 | a link of golden scales | 54 | 22g81s | dammroll +5, hitroll +5 | warl, bottom of pond in acoma |
+| billowing golden silk robes | 61 | 79s20s | hitroll +6, dex +2, saves -2, con +1 | chorus matron |
 
 ### Torso / Body Armor
 | name | req lvl | cost | description | found |
@@ -1590,6 +1607,7 @@ These are **unlimited only** light sources.
 | a light woven vest | 48 | 43g16s | hitroll +4, damroll +2, dex +2 | stableboy, eirenole castle |
 | a set of plate-mail | 50 | 15g65s | damroll +4, hitroll +4, con +1 | gromm, yrenelania |
 | stiff fur armor | 52 | 79g20s | [-E] hitroll +5, damroll +3, str +1 | guard, xuergothe castle |
+| a heavy chainmail shirt | 55 | 47g99s | hitroll +6, damroll +5, str ;2 | royal guard, eirenole castle |
 | a thick yeti pelt | 56 | 1g0s | hitroll +10, ac -12 | yeti, kaer tzoun |
 
 ### Waist Armor
@@ -1607,7 +1625,10 @@ These are **unlimited only** light sources.
 | a wide brown sash | 37 | 16g58s | hitroll +5, con +2 | wide old woman, valeda |
 | a hardened wood bracer | 39 | 12g37s | hit+8,dam+1 | weaponmaster, valeda |
 | an engraved brass girth | 43 | 14g86s | damroll +5, hitroll +2 | fast pixie patroller, valeda |
+| a frilly pink skirt | 50 | 25g43s | hitroll +6, con +1, str +1, dex +1 | lalaila maila, tyyrinn village |
 | a plain leather sword sheath | 54 | 51g58s | damroll +7, hitroll +7 | kings guard, eirenole castle |
+| a moss covered belt | 55 | 57g75s | hitroll +4, damroll +3, ac -3, con +1, int +1 | xe'lith patroller |
+| an ornate belt | 57 | 61g40s | hitroll +6, str +2, hp +25 | ekeki, acoma |
 
 ### Arms Armor
 | name | req lvl | cost | description | found |
@@ -1627,6 +1648,7 @@ These are **unlimited only** light sources.
 | a pair of elven chain-mail sleeves | 45 | 62g12s | hitroll +3, damroll +4, dex +1 | eirenole forest, bandit |
 | torn brown sleeves | 47 | 19g87s | damroll +2, hitroll +5 | bandit, kaer tzoun |
 | a set of steel pauldrons | 51 | 19g4s | hitroll +9 | brave adventurer, kaer tzoun |
+| sleeves of chainmail | 53 | 18g94s | hitroll +6, damroll +5, str +2 | watchtower guard, eirenole castle |
 
 ### Wrist Armor
 | name | req lvl | cost | description | found |
@@ -1649,6 +1671,8 @@ These are **unlimited only** light sources.
 | a cold steel bracer | 45 | 43g66s | damroll +3, hitroll +3, str +1 | dwarf, pyrainn mountains |
 | a silver-inlaid steel bracer | 50 | 9g89s | hitroll +6, con +1, str +1, dex +1 | brave adventurer, kaer tzoun |
 | a bracer forged of silvite | 52 | 31g41s | damroll +3, hitroll +3, ac -5 | dwarven knight, pyrainn mountains |
+| a leather wrist guard | 56 | 47g32s | damroll +3, hitroll +9, dex +3 | archer in watchtower, eirenole castle |
+| musical bangle bracelets | 62 | 60g19s | damroll +4, hitroll +4, saves +2 | chorus matron, xuergothe |
 
 ### Hand Armor
 | name | req lvl | cost | description | found |
@@ -1660,6 +1684,8 @@ These are **unlimited only** light sources.
 | giant skin gloves | 38 | 19g80s | damroll +1, hitroll +5 | oterion hunter |
 | a pair of gauntlets of the eye | 42 | 183g15s | damroll +3, hp +10, hitroll +2 | underling, underdark |
 | a pair of warm, fuzzy gloves | 46 | 19g80s | hitroll +6, damroll +3 | dockworker, schwartz glacier |
+| a pair of steel gauntlets | 58 | 31g36s | damroll +6, con +2, str +2 | royal guard, eirenole castle |
+| a pair of moss covered gloves | 59 | 44g55s | damroll +4, hitroll +4 | guard, xe'lith |
 
 ### Finger Armor
 | name | req lvl | cost | description | found |
@@ -1672,6 +1698,7 @@ These are **unlimited only** light sources.
 | the heart of the elven people | 30 | 3g6s | damroll +3, con +1, ac -2 | illiathorn pass commander |
 | a ruby ring, twisted with silver | 40 | 39g60s | damroll +3, hitroll +5 | a hurried pixie man, valeda |
 | a golden, sapphire studded ring | 46 | 23g22s | damroll +4, hitroll +3, hp +20 | caretaker assistant, valeda |
+| a finely crafted silvite ring | 52 | 72g98s | damroll +4, hitroll +4, str +1 | llander, pyrainn mountains |
 | a signet ring | 55 | 66g33s | damroll +5, hitroll +5, hp +35 | gromm, yrenelania |
 
 ### Leg Armor
@@ -1696,8 +1723,9 @@ These are **unlimited only** light sources.
 | a pair of engraved brass leg plates | 43 | 21g73s | damroll +5 | fast pixie patroller, valeda |
 | a pair of tinted leg-guards | 43 | 13g69s | damroll +5,hitroll +5 | halfling guard, tyrinn village |
 | stiff hide leggings | 46 | 16g70s | damroll +4, hitroll +4, str +2 | orc chieftan grarg, valeda |
-kjljkk| a pair of strong, thick leather greaves | 51 | 31g34s | damroll +7 | brave adventurer, kaer tzoun |
+| a pair of strong, thick leather greaves | 51 | 31g34s | damroll +7 | brave adventurer, kaer tzoun |
 | shimmering leggings | 53 | 94g5s | hitroll +10, damroll +1 | sweet-voiced chorus girl, xuergothe |
+| a pair of fine felt leggings | 60 | 64g35s | hitroll +7, damroll +3 | small human boy, overlook grounds |
 
 ### Feet Armor
 | name | req lvl | cost | description | found |
@@ -1717,6 +1745,9 @@ kjljkk| a pair of strong, thick leather greaves | 51 | 31g34s | damroll +7 | bra
 | soft calfskin boots | 40 | 33g39s | damroll +3, hitroll +5 | floraena, merakkis kitchen, valeda |
 | a pair of brass-reinforced boots | 43 | 17g32s | hitroll +4, damroll +2, str +2 | pixie guard, valeda |
 | soft deerskin boots | 47 | 23g96s | damroll +6 | bandit, kaer tzoun |
+| strong knee-high leather boots | 52 | 34g39s | damroll +5, hitroll +5 | cartographer, kaer tzoun |
+| a pair of moss covered boots | 55 | 49g50s | hitroll +5, damroll +5, move +300 | xe'lith patroller |
+| a pair of tough boots | 57 | 20g9s | hitroll +6, damroll +6 | ekeki, acoma |
 
 ### Held Items
 | name | req lvl | cost | description | found |
@@ -1755,3 +1786,5 @@ kjljkk| a pair of strong, thick leather greaves | 51 | 31g34s | damroll +7 | bra
 | a zipping fly | 43 | 15g82s | hitroll +4, damroll +3 | zipping pixie guuard, valeda |
 | a pretty stone | 43 | 11g7s | damroll +3, hitroll +4 | kid in heishaer city |
 | eye of the frost beast | 45 | 76g23s | damroll +2, str +1, dex +1, saves -4 | frost beast, pyrainn mountains |
+| the eyes of warrl | 54 | 101g0s | hitroll +6, mana +50 | warrl, acoma estate |
+| insanity | 60 | 0g99s | int -4, wis -4, damroll +8 | beastie, xuergothe |
