@@ -1200,55 +1200,28 @@ The absolute key to mastering monk combat is leveraging all the techniques to pe
 ## Combat Calculations
 ### Hitroll
 Since 95% is the maximum allowed hitchance, the recommendation is the find a worst case scenario for achieving a good hit chance, acquiring that much hitroll if feasible and then dumping the rest into other stats instead of wasting extraneous hitroll on armor.
-```
-Dexterity bonus: playerDexterity - enemyDexterity/2
-Strength bonus: playerStrength/4
-Intelligence bonus: playerIntelligence/10
-Level bonus: (playerLevel - enemyLevel)/2
-Hitroll bonus: hitroll / (playerLevel / 10) + 1
-Rested bonus:
-  0 - 50% Rested: - randomNumberBetween(4,8)
-  51 - 89% Rested: - randomNumberBetween(1,4)
-  90%+ Rested: randomNumberBetween(1,3)
 
-Hit chance: 65 + dexterityBonus + strengthBonus + intelligenceBonus + levelBonus + hitrollBonus + restedBonus
-Hit chance maximum allowed: 95%
-```
+Things that affect hit chance:
+  - a tiny amount of your intelligence
+  - a small amount of your strength
+  - a large amount of the difference between your enemy and your dexterity
+  - your hitroll becomes less effective at higher levels so more is needed
+  - a *very* large portion can be affected by your rested state
+  - there is a base of 65% chance to hit with possibility to go lower, with a maximum of 95%
+
 ### Armor Class
-Armor class doesn't scale well at later levels. You'd need -2500 AC to remove 30% of 1k damage. Because of this scaling its better not to even worry about damage reduction from armor past beginning of the game.
-```
-Note that this is based on the "type" of damage, i.e. pierce, slash, bash, exotic
-Monk damage type is bash. Anything not pierce, slash or bash like "divine" is exotic.
+Armor class doesn't scale well at later levels. You'd need -2500 AC to remove 30% of 1k damage at hero. Because of this scaling its better not to even worry about damage reduction from armor past beginning of the game.
 
-Damage reduction for players: (victimAC - 100) / 8
-Damage reduction for mobiles: (victimAC - 100) / 15
-Maximum damage reduction allowed: 30% of the attack
-```
-Example:
-```
-You have -240 AC in slash.
-(-240 - 100) / 15 = You reduce incoming damage by 22 against mobiles (not to exceed 30% of attack)
-(-240 - 100) / 8 = You reduce incoming damage by 42 against players (not to exceed 30% of attack)
-```
 ### Magic Saves
 Saves can prevent effects altogether like blind, or merely reduce damage by a percent depending on the spell.
 
-```
-levelBonus = (playerLevel - enemyLevel) * 5
-berserkBonus = playerLevel / 2
-racialBonus = 
-  if resistant: 2
-  if vulnerable: -2
-enemyPKClassSaveMultiplier =
-  mage, cleric, paladin, charlatan, myrmidon, antipaladin, monk = 0.9
-  thief, warrior, nonPKencounter = 1
-saves = (50 + levelBonus - playerSaves * 2 + berserkBonus + racialBonus) * enemyPKClassSaveMultiplier
-
-spellSave: randomNumberBetween(5,saves)
-isSaveSuccessful: randomNumberBetween(1,100) < spellSave
-Minimum save percentage: 5%
-Maximum save percentage: 95%
-```
+Things that affect saves:
+  - racial resistance & invulnerability
+  - mages, clerics, paladins, charlatans, myrmidons, antipaladins & monk have bonuses
+  - warriors & thiefs have negatives
+  - berserk provides an *immense* bonus to magic saves
+  - level difference between an enemy and player provides a *huge* difference
+  - you will always have at least a 5% chance to save, with a maximum of 95%
 
 ## Quest Rewards
 | name | cost |
