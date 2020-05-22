@@ -132,7 +132,8 @@ Additional helpful maps on the [official website](tharel.net):
 | 5 - 30 | Naerlan Sewers | 4s2w1d |
 | 5 - 40 | [The City of Aliuna](https://tharel.net/img/map-aliuna.png) | 11e3s6e4s5e |
 | 8 - 22 | [Haythor Dungeon](https://tharel.net/img/map-haythordungeon.jpg) | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
-| 10 - 15 | The Drow Mines | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s1e2s1w1s2e1s |
+| 10 - 15 | The Drow Mines | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n |
+| contin. | contin. | 2d9s8w1s2w2s2w1s1e2s1w1s2e1s |
 | 10 - 15 | [Cartwrights Farm](https://tharel.net/img/map-cartwrightsfarm.gif) | 9w1d5n7w2n1e |
 | 10 - 15 | [Volencymale](https://tharel.net/img/map-cathedralvolencymale.gif) | 12w4n1e |
 | 10 - 15 | [The Renault House](https://tharel.net/img/map-renaulthouse.jpg) | 7w2n2w;search n |
@@ -229,22 +230,24 @@ Additional helpful maps on the [official website](tharel.net):
 | 70 - 85 | Ruins of Khezaderth | 11e3s6e4s18e1s2e |
 | 70 - 85 | Meneth Naur |  7e1d2s1e7s9e1s |
 | 70 - 90 | Fireblast Mountains | 11e2n5e1n7e6n3w4n5w4n4w3s2e1s1w1n2w2s1w |
-| 75 - 85 | The Overlook Citadel | Unknown |
+| 75 - 85 | The Overlook Citadel | towers in corners of overlook grounds |
 | 75 - 90 | Vlauchauch | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s4w1s4w1n3w2n2w2s |
 | 75 - 90 | The Haze | 7s2u |
 | 75 - 100 | Drakyri Isle | 11e3s6e4s7e5n4e5n5e2s;go pool |
 | 80 - 90 | Shadowbox | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n11w4s2w1n |
 | 85 - 95 | The White Shrine | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s2w1s3w2s1w1s |
-| 85 - 95 | Sildarak's Crypt | Unknown |
+| 85 - 95 | Sildarak's Crypt | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s |
+| contin. | contin. | 2e1d2e1s1e1s1e1s2e1s3e1n2w2n1e1d |
 | 85 - 110 | Urbyrtnol | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1u |
 | 90 - 95 | Eirenole Valley | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n | 
 | contin. | contin. | buy key;unlock north;open north;2n1e9n2e5n |
 | 90 - 110 | Ayasil | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1s3e |
 | 90 - 110 | Arthmore | 11e2n5e1n7e6n3w4n5w4n4w1u |
-| HERO | Kallenpesh Palace | Unknown |
-| HERO | Kallendale Forest | Unknown |
+| HERO | Kallenpesh Palace | inside kallendale forest |
+| HERO | Kallendale Forest | 42w6s2w2s4w4s5w8s1w1s1e9s4w1n1w1n |
 | HERO | The Hall of Heroes | See Aliuna & Terrason |
-| HERO | Il'kaethe | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w5s1w1n17w2s3w1s3w1s1w1s1w |
+| HERO | Il'kaethe | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s |
+| contin. | contin. | 1w5s1w5s1w1n17w2s3w1s3w1s1w1s1w |
 | HERO | The Giants Outpost | 11e2n5e1n7e6n3w4n5w6n2e1n |
 
 ### Quest Masters
