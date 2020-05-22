@@ -218,34 +218,34 @@ Additional helpful maps on the [official website](tharel.net):
 | 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s2w |
 | 60 - 75 | Tiny Rapids | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s9w1s3w1s4w1n10w1s1w3s6w |
 | 60 - 85 | Lost Kingdoms | 4e9n5w6n11e3n5e1n3e10n1e2n7e1n3e1n6e;go tree |
-| 65 - 75 | Forest of Dreams | Unknown |
-| 65 - 75 | The Overlook Maze | Unknown |
-| 65 - 75 | Ktharstu | Unknown |
-| 65 - 80 | The Forbidden Wastes | Unknown |
-| 65 - 80 | Ship in a Bottle | Unknown |
-| 70 - 80 | Connerty Crossing | Unknown |
-| 70 - 80 | Wildlife Refuge | Unknown |
-| 70 - 85 | Tekkit Hill | Unknown |
-| 70 - 85 | Ruins of Khezaderth | Unknown |
-| 70 - 85 | Meneth Naur | Unknown |
-| 70 - 90 | Fireblast Mountains | Unknown |
+| 65 - 75 | Forest of Dreams | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n7w2s;go dream |
+| 65 - 75 | The Overlook Maze | 11e2n5e1n7e6n3w4n5w4n4w2s12w |
+| 65 - 75 | Gtharstu | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e2s2e3s3e1n1e2n |
+| 65 - 80 | The Forbidden Wastes | 4e17s4w9s2w2s1w7s2w1s3w |
+| 65 - 80 | Ship in a Bottle | 39w |
+| 70 - 80 | Connerty Crossing | 33w4n4w3n1w12n1e |
+| 70 - 80 | Wildlife Refuge | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s1e |
+| 70 - 85 | Tekkit Hill | 11e2n5e1n11e1n2e4n2e1n6e |
+| 70 - 85 | Ruins of Khezaderth | 11e3s6e4s18e1s2e |
+| 70 - 85 | Meneth Naur |  7e1d2s1e7s9e1s |
+| 70 - 90 | Fireblast Mountains | 11e2n5e1n7e6n3w4n5w4n4w3s2e1s1w1n2w2s1w |
 | 75 - 85 | The Overlook Citadel | Unknown |
-| 75 - 90 | Vlauchauch | Unknown |
-| 75 - 90 | The Haze | Unknown |
-| 75 - 100 | Drakyri Isle | Unknown |
-| 80 - 90 | Shadowbox | Unknown |
-| 85 - 95 | The White Shrine | Unknown |
+| 75 - 90 | Vlauchauch | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s4w1s4w1n3w2n2w2s |
+| 75 - 90 | The Haze | 7s2u |
+| 75 - 100 | Drakyri Isle | 11e3s6e4s7e5n4e5n5e2s;go pool |
+| 80 - 90 | Shadowbox | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n11w4s2w1n |
+| 85 - 95 | The White Shrine | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s2w1s3w2s1w1s |
 | 85 - 95 | Sildarak's Crypt | Unknown |
-| 85 - 110 | Urbyrtnol | Unknown |
+| 85 - 110 | Urbyrtnol | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1u |
 | 90 - 95 | Eirenole Valley | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n | 
 | contin. | contin. | buy key;unlock north;open north;2n1e9n2e5n |
-| 90 - 110 | Ayasil | Unknown |
-| 90 - 110 | Arthmore | Unknown |
+| 90 - 110 | Ayasil | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1s3e |
+| 90 - 110 | Arthmore | 11e2n5e1n7e6n3w4n5w4n4w1u |
 | HERO | Kallenpesh Palace | Unknown |
 | HERO | Kallendale Forest | Unknown |
-| HERO | The Hall of Heroes | Unknown |
-| HERO | Il'kaethe | Unknown |
-| HERO | The Giants Outpost | Unknown |
+| HERO | The Hall of Heroes | See Aliuna & Terrason |
+| HERO | Il'kaethe | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w5s1w1n17w2s3w1s3w1s1w1s1w |
+| HERO | The Giants Outpost | 11e2n5e1n7e6n3w4n5w6n2e1n |
 
 ### Quest Masters
 | Alignment | Levels | Name | directions |
