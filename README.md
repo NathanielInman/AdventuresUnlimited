@@ -290,7 +290,7 @@ A collection of helpful information related to AU temples
 | 10 | Ili'sion | Auy'dian | Ezt'fiel | 100,000 |
 
 ### Temple Upgrade Costs
-The max upgradable amounts are:
+The max stats a mark can upgrade to are:
   - **HP**: level * 4 + rank * 10
   - **MP**: level * 4 + rank * 10
   - **MV**: level * 10
