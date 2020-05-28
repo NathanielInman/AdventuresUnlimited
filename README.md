@@ -1482,6 +1482,7 @@ These are **unlimited only** light sources.
 | a bright ball of snow | 40 | 48g25s | hitroll +4, damroll +2 | general store, schwartz glacier |
 | a sylvan-made everlasting light | 46 | 59g23s | hitroll +3, con +1, str +1 | sylvan guard, draek'le |
 | the power stone | 50 | 217g83s | damroll +2, hitroll +1, hp +65 | king of eirenole |
+| a watchers light | 65 | 43g0s | damroll +5, hitroll +5, con +1, dex +1, str +1 | rivendale guard |
 
 ### Head Armor
 | name | req lvl | cost | description | found |
@@ -1511,6 +1512,7 @@ These are **unlimited only** light sources.
 | a heavy gold circlet | 53 | 21g68s | hitroll +6, damroll +4, wis +3 | king of eirenole |
 | the antlers of a stag | 54 | 94g48s | damroll +7, hitroll +3, move +250 | stag, breyard woods |
 | a coif of chainmail | 55 | 33g68s | hitroll +6, damroll +5, str +2 | vigilant guard, eirenole castle |
+| grrghnbrr's crown of twigs | 60 | 92g7s | wis +1, str +2, dammroll +6, hitroll +4 | breyard, grrghnbrr's hut |
 | a peaked silk hat | 62 | 79g20s | int +2, wis +2, damroll +2, hitroll +3 | chorus matron |
 
 ### Neck Armor
@@ -1533,6 +1535,8 @@ These are **unlimited only** light sources.
 | an unadorned hemp necklace | 45 | 5g49s | hitroll +8, damroll +5, ac -2 | the hermit sormingo, valeda |
 | a dark grey hooded cloak | 45 | 42g78s | hitroll +10, move +50 | eirenole forest, bandit |
 | a heavy fur mantle | 51 | 73g76s | hitroll +6, damroll +4, wis +3 | king of eirenole |
+| the insignia of the scorpion | 65 | 12g87s | damroll +5, str +2, con +2 | scorpion, caranos' tomb |
+| the crest of caranos | 70 | 31g68s | str +2, damroll +5, hitroll +5 | caranos, caranos' tomb |
 
 ### Shoulder / About Armor
 | name | req lvl | cost | description | found |
@@ -1585,6 +1589,7 @@ These are **unlimited only** light sources.
 | stiff fur armor | 52 | 79g20s | [-E] hitroll +5, damroll +3, str +1 | guard, xuergothe castle |
 | a heavy chainmail shirt | 55 | 47g99s | hitroll +6, damroll +5, str ;2 | royal guard, eirenole castle |
 | a thick yeti pelt | 56 | 1g0s | hitroll +10, ac -12 | yeti, kaer tzoun |
+| a hardened seaweed jerkin | 65 | 37g43s | damroll +4, hitroll +5 | aquatic elf, lost kingdoms |
 
 ### Waist Armor
 | name | req lvl | cost | description | found |
@@ -1625,6 +1630,8 @@ These are **unlimited only** light sources.
 | torn brown sleeves | 47 | 19g87s | damroll +2, hitroll +5 | bandit, kaer tzoun |
 | a set of steel pauldrons | 51 | 19g4s | hitroll +9 | brave adventurer, kaer tzoun |
 | sleeves of chainmail | 53 | 18g94s | hitroll +6, damroll +5, str +2 | watchtower guard, eirenole castle |
+| wooden chain sleeves | 65 | 53g32s | dammroll +7, hitroll +2 | aquatic elf, lost kingdoms |
+| white chain sleeves | 72 | 51g42s | damroll +10 | tiny rapids guard |
 
 ### Wrist Armor
 | name | req lvl | cost | description | found |
@@ -1649,6 +1656,8 @@ These are **unlimited only** light sources.
 | a bracer forged of silvite | 52 | 31g41s | damroll +3, hitroll +3, ac -5 | dwarven knight, pyrainn mountains |
 | a leather wrist guard | 56 | 47g32s | damroll +3, hitroll +9, dex +3 | archer in watchtower, eirenole castle |
 | musical bangle bracelets | 62 | 60g19s | damroll +4, hitroll +4, saves +2 | chorus matron, xuergothe |
+| a golden scorpion clasp | 70 | 26g73s | int +2, dex +2, damroll +5 | caranos, caranos tomb |
+| a pair of cyan bracers | 73 | 49g34s | damroll +5, hitroll +5, str +1, con +1, dex +1 | tiny rapids guard |
 
 ### Hand Armor
 | name | req lvl | cost | description | found |
@@ -1662,6 +1671,7 @@ These are **unlimited only** light sources.
 | a pair of warm, fuzzy gloves | 46 | 19g80s | hitroll +6, damroll +3 | dockworker, schwartz glacier |
 | a pair of steel gauntlets | 58 | 31g36s | damroll +6, con +2, str +2 | royal guard, eirenole castle |
 | a pair of moss covered gloves | 59 | 44g55s | damroll +4, hitroll +4 | guard, xe'lith |
+| soft cyan gloves | 72 | 51g17s | damroll +6, hitroll +10 | tiny rapids guard |
 
 ### Finger Armor
 | name | req lvl | cost | description | found |
@@ -1676,6 +1686,7 @@ These are **unlimited only** light sources.
 | a golden, sapphire studded ring | 46 | 23g22s | damroll +4, hitroll +3, hp +20 | caretaker assistant, valeda |
 | a finely crafted silvite ring | 52 | 72g98s | damroll +4, hitroll +4, str +1 | llander, pyrainn mountains |
 | a signet ring | 55 | 66g33s | damroll +5, hitroll +5, hp +35 | gromm, yrenelania |
+| a silver ring | 71 | 23g36s | int +2, hitroll +6 | head mage, overlook tower |
 
 ### Leg Armor
 | name | req lvl | cost | description | found |
@@ -1702,6 +1713,7 @@ These are **unlimited only** light sources.
 | a pair of strong, thick leather greaves | 51 | 31g34s | damroll +7 | brave adventurer, kaer tzoun |
 | shimmering leggings | 53 | 94g5s | hitroll +10, damroll +1 | sweet-voiced chorus girl, xuergothe |
 | a pair of fine felt leggings | 60 | 64g35s | hitroll +7, damroll +3 | small human boy, overlook grounds |
+| a set of layered leggings | 65 | 34g2s | hitroll +10, str +3, saves -3 | rivendale guard |
 
 ### Feet Armor
 | name | req lvl | cost | description | found |
@@ -1724,6 +1736,7 @@ These are **unlimited only** light sources.
 | strong knee-high leather boots | 52 | 34g39s | damroll +5, hitroll +5 | cartographer, kaer tzoun |
 | a pair of moss covered boots | 55 | 49g50s | hitroll +5, damroll +5, move +300 | xe'lith patroller |
 | a pair of tough boots | 57 | 20g9s | hitroll +6, damroll +6 | ekeki, acoma |
+| hardened seaweed boots | 65 | 42g84s | hitroll +6, saves -2 | aquatic elf, lost kingdoms |
 
 ### Held Items
 | name | req lvl | cost | description | found |
