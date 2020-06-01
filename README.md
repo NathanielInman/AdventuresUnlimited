@@ -418,7 +418,19 @@ The max stats a mark can upgrade to are:
 | a blonde fox | 65 | 422g50s | Lost Kingdoms |
 | a huge yalen sand-worm | 65 | 422g50s | Rivendale |
 | a heishan batle-maid | 70 | 490g0s | Rivendale |
+| a quick bayard | 70 | 490g0s | Wildlife Refuge |
+| a grim-faced pixie mercenary | 70 | 490g0s | Lost Kingdoms |
 | an elemental guardian | 75 | 752g50s | Rivendale |
+| the yeck | 75 | 562g50s | Wildlife Refuge |
+| a greedy gnome mercenary | 75 | 562g50s | Lost Kingdoms |
+| a mischievous alan | 80 | 640g0s | Wildlife Refuge |
+| a professional quickling mercenary | 80 | 640g0s | Lost Kingdoms |
+| a serious sylvan mercenary | 85 | 722g50s | Lost Kingdoms |
+| an outcast drow mercenary | 90 | 810g0s | Lost Kingdoms |
+| a grumbling duergar mercenary | 95 | 902g50s | Lost Kingdoms |
+| an uninterested female mercenary | 95 | 902g50s | Lost Kingdoms |
+| a smiling halfling mercenary | 100 | 1000g0s | Lost Kingdoms |
+| a heavily-muscled giant mercenary | 100 | 1000g0s | Lost Kingdoms |
 
 ## Classes
 ### Race And Class Table
@@ -1458,6 +1470,10 @@ Here is a script that buffs your character right before a quest:
 | soul of the frost beast | 50 | 55 | 90g0s | frost beast, pyrainn mountains | frost breath x 20, dex -2, con -2 |
 | a pink-painted doll made of stick | 50 | 55 | 50g0s | young centaur guard, xuergothe | faerie fire x 10 |
 | a songbook | 51 | 56 | 40g0s | litte girl, xuergothe castle | charm person |
+| a clear potion | 60 | 42 | 95g40s | medn x2, weaken x1 | sold in xe'lith |
+| a dark green potion | 60 | 50 | 50g99s | shield, refresh, change sex | sold in xe'lith |
+| a bubbling elixyr | 60 | 63 | 79g61s | infravision, giant strength, haste | sold in xe'lith |
+| a cloudy potion | 60 | 45 | 53g0s | armor, sanctuary, detect good | sold in xe'lith |
 | a spellbook | 65 | 65 | 45g89s | overlook gardens | charm person x 2 |
 
 ## Items For Leveling
