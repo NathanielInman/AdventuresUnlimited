@@ -1470,11 +1470,12 @@ Here is a script that buffs your character right before a quest:
 | soul of the frost beast | 50 | 55 | 90g0s | frost beast, pyrainn mountains | frost breath x 20, dex -2, con -2 |
 | a pink-painted doll made of stick | 50 | 55 | 50g0s | young centaur guard, xuergothe | faerie fire x 10 |
 | a songbook | 51 | 56 | 40g0s | litte girl, xuergothe castle | charm person |
-| a clear potion | 60 | 42 | 95g40s | medn x2, weaken x1 | sold in xe'lith |
-| a dark green potion | 60 | 50 | 50g99s | shield, refresh, change sex | sold in xe'lith |
-| a bubbling elixyr | 60 | 63 | 79g61s | infravision, giant strength, haste | sold in xe'lith |
-| a cloudy potion | 60 | 45 | 53g0s | armor, sanctuary, detect good | sold in xe'lith |
-| a spellbook | 65 | 65 | 45g89s | overlook gardens | charm person x 2 |
+| a clear potion | 60 | 42 | 95g40s | sold in xe'lith | mend x2, weaken x1 | 
+| a dark green potion | 60 | 50 | 50g99s | sold in xe'lith | shield, refresh, change sex |
+| a bubbling elixyr | 60 | 63 | 79g61s | sold in xe'lith | infravision, giant strength, haste |
+| a cloudy potion | 60 | 45 | 53g0s | sold in xe'lith | armor, sanctuary, detect good |
+| a spellbook | 65 | 65 | 45g89s | overlook gardens | charm person x2 |
+| a color-swirled puppet wand | 88 | 90 | 200g0s | shadowbox | charm person x2 |
 
 ## Items For Leveling
 Keep in mind that the intention for this is **not** to be a comprehensive list of items, but the **best-in-slot** leveling items. Adventures Unlimited has a huge focus on tradeskills, where created items will always be the strongest items for each level tier group (armor is crafted for levels 10, 20, 30 etc.) But if you're leveling quickly, don't have access to an armorsmith or simply the crafted item isn't as strong as it could be, these are great fall-back options.
@@ -1499,6 +1500,7 @@ These are **unlimited only** light sources.
 | a sylvan-made everlasting light | 46 | 59g23s | hitroll +3, con +1, str +1 | sylvan guard, draek'le |
 | the power stone | 50 | 217g83s | damroll +2, hitroll +1, hp +65 | king of eirenole |
 | a watchers light | 65 | 43g0s | damroll +5, hitroll +5, con +1, dex +1, str +1 | rivendale guard |
+| a mystic lantern | 105 | 103g45s | mana +200, wis +2, hp +80, move +100, hitroll +25, +infrared | herbalist, trouthead |
 
 ### Head Armor
 | name | req lvl | cost | description | found |
@@ -1530,6 +1532,10 @@ These are **unlimited only** light sources.
 | a coif of chainmail | 55 | 33g68s | hitroll +6, damroll +5, str +2 | vigilant guard, eirenole castle |
 | grrghnbrr's crown of twigs | 60 | 92g7s | wis +1, str +2, dammroll +6, hitroll +4 | breyard, grrghnbrr's hut |
 | a peaked silk hat | 62 | 79g20s | int +2, wis +2, damroll +2, hitroll +3 | chorus matron |
+| the King's Crown | 85 | 180g19s | hp +100, savingspell -8, str +2, con +2, int +3, wis +3, age +10 | meneth naur |
+| mature antlers | 105 | 198g1s | damroll +17, hitroll +30 | stag, eirenole |
+| a leather helm | 105 | 227g72s | hitroll +30, damroll +25 | giant, giants outpost |
+| steel helmet | 105 | 168g51s | damroll +40, str +3 | elsfar guard, eirenole |
 
 ### Neck Armor
 | name | req lvl | cost | description | found |
@@ -1553,6 +1559,13 @@ These are **unlimited only** light sources.
 | a heavy fur mantle | 51 | 73g76s | hitroll +6, damroll +4, wis +3 | king of eirenole |
 | the insignia of the scorpion | 65 | 12g87s | damroll +5, str +2, con +2 | scorpion, caranos' tomb |
 | the crest of caranos | 70 | 31g68s | str +2, damroll +5, hitroll +5 | caranos, caranos' tomb |
+| a beaded symbol of mahrina's power | 72 | 101g20s | [-E,-N] con +1, dex +1, wis +2, int +2, str +1 | robed priestess, lost kingdoms |
+| a red cloak with gold embroidery | 88 | 97g84s | hitroll +6, damroll +10, mana +75, saves - 10 | fireblast, giant |
+| brilliant white angel wings | 85 | 88g35s | dex +3, hitroll +10, move +10 | har bearer, shaddowbox |
+| a mithril badge, marked 'supervisor' | 91 | 152g6s | damroll +20, hp +50, mana +50, hitroll +5 | supervisor, shadowbox |
+| a silver necklace with embedded emeralds | 105 | 121g18s | damroll +15, hitroll +25, saves -10 | water elemental, eirenole |
+| a golden necklace with embedded emeralds | 105 | 90g29s | dex +4, hitroll +25, move +1000, saves -10 | water elemental, eirenole |
+| a string of pearls | 105 | 57g2s | damroll +25, mana +300 | chattering woman, trouthead |
 
 ### Shoulder / About Armor
 | name | req lvl | cost | description | found |
@@ -1577,6 +1590,14 @@ These are **unlimited only** light sources.
 | a blue and gold surcoat | 53 | 61g38s | damroll +4, str +2, ac -8 | gatehouse guard, eirenole castle |
 | a link of golden scales | 54 | 22g81s | dammroll +5, hitroll +5 | warl, bottom of pond in acoma |
 | billowing golden silk robes | 61 | 79s20s | hitroll +6, dex +2, saves -2, con +1 | chorus matron |
+| a sandy cotton robe | 70 | 49g6s | hitroll +9, damroll +8, con +1 | heishan girl, lost kingdoms |
+| a brightly embroidered mahrinian robe | 72 |60g12s | [-E,-N] damroll +10, hitroll +10, mana +32 | robed priestess, lost kingdoms |
+| a humble, simple black robe | 77 | 29g1s | damroll +6, hitroll +5 | drow female, lost kingdoms |
+| a large black leather vest | 77 | 54g4s | hitroll +10, saves -10 | titan man, lost kingdoms |
+| well-tailored, embroidered robes | 80 | 82g71s | hitroll +6, damroll +9, dex +1 | priestess, lost kingdoms |
+| a simple brown holy robe | 82 | 98g90s | damroll +10, hitroll +15, wis +2, ac -20 | tekkit hill |
+| a rich set of cyan robes | 84 | 98g90s | damroll +5, wis +2, hitroll +20 | tekkit hill, gnomish priest |
+| a heavy brown cotton robe | 104 | 154g60s | hitroll +17, damroll +10, ac - 18 | reclusive hermit, ayasil |
 
 ### Torso / Body Armor
 | name | req lvl | cost | description | found |
@@ -1606,6 +1627,14 @@ These are **unlimited only** light sources.
 | a heavy chainmail shirt | 55 | 47g99s | hitroll +6, damroll +5, str ;2 | royal guard, eirenole castle |
 | a thick yeti pelt | 56 | 1g0s | hitroll +10, ac -12 | yeti, kaer tzoun |
 | a hardened seaweed jerkin | 65 | 37g43s | damroll +4, hitroll +5 | aquatic elf, lost kingdoms |
+| a sandy shirt | 71 | 19g92 | damroll +8, hitroll +9, dex +2 | heishan man, lost kingdoms |
+| a coat made of studded black leather | 73 | 0g0s | damroll +6, hitroll +6, move +200 | kedalla thief, khezaderth |
+| a silver tunic of fine silk | 76 | 99g0s | damroll +15, hitroll +20, mana +75 | atop caravan, shadowbox |
+| a black tunic of fine silk | 76 | 99g0s | damroll +15, hitroll +20, hp +75 | atop caravan mother, shadowbox |
+| coarse brown wool robes | 78 | 32g40s | hitroll +4, damroll +7 | temple servant, lost kingdoms |
+| a heavy leather gnomish apron | 78 | 55g0s | hitroll +8, damroll +8, ac -10 | tekkit hill |
+| shimmering white angel robes | 81 | 99g0s | hitroll ;15, damroll +10 | nalfietta, shadowbox |
+| steel chestplate | 105 | 83g14s | hitroll +17, damroll +30, con +4 | elsfar guard, eirenole |
 
 ### Waist Armor
 | name | req lvl | cost | description | found |
@@ -1626,6 +1655,10 @@ These are **unlimited only** light sources.
 | a plain leather sword sheath | 54 | 51g58s | damroll +7, hitroll +7 | kings guard, eirenole castle |
 | a moss covered belt | 55 | 57g75s | hitroll +4, damroll +3, ac -3, con +1, int +1 | xe'lith patroller |
 | an ornate belt | 57 | 61g40s | hitroll +6, str +2, hp +25 | ekeki, acoma |
+| a brightly beaded leather belt | 72 | 40g20s | [-E] hitroll +10, damroll +10, con +2 | robed priestess, lost kingdoms |
+| a black-dyed hemp belt | 77 | 35g4s | hitroll ;10, dex ;2, con ;2 | worshiping drow, lost kingdoms |
+| a militia issue steel girth | 82 | 21g31s | damroll ;8, hitroll ;10, ac -5, con +2 | tekkit hill guard |
+| a gnomish money pouch | 82 | 75g0s | hitroll ;10, damroll ;10, wis +1 | tekkit hill, pickpocket |
 
 ### Arms Armor
 | name | req lvl | cost | description | found |
@@ -1648,6 +1681,9 @@ These are **unlimited only** light sources.
 | sleeves of chainmail | 53 | 18g94s | hitroll +6, damroll +5, str +2 | watchtower guard, eirenole castle |
 | wooden chain sleeves | 65 | 53g32s | dammroll +7, hitroll +2 | aquatic elf, lost kingdoms |
 | white chain sleeves | 72 | 51g42s | damroll +10 | tiny rapids guard |
+| a set of sleeves | 72 | 25g71s | damroll +10 | guard, overlook tower |
+| militia issue steel arm protectors | 82 | 55g6s | damroll +5, hitroll +15, dex +1 | tekkit hill |
+| some silver bangles with embedded emeralds | 105 | 129g80s | move +350, damroll ;25, saves -10 | water elemental, eirenole |
 
 ### Wrist Armor
 | name | req lvl | cost | description | found |
@@ -1674,6 +1710,11 @@ These are **unlimited only** light sources.
 | musical bangle bracelets | 62 | 60g19s | damroll +4, hitroll +4, saves +2 | chorus matron, xuergothe |
 | a golden scorpion clasp | 70 | 26g73s | int +2, dex +2, damroll +5 | caranos, caranos tomb |
 | a pair of cyan bracers | 73 | 49g34s | damroll +5, hitroll +5, str +1, con +1, dex +1 | tiny rapids guard |
+| a bone-studded black leather bracer | 74 | 25g41s | hitroll +8, damroll +6, ac - 10 | heishan guard, lost kingdoms |
+| a militia issue steel wrist guard | 82 | 34g93s | hitroll +10, dex +1, ac - 5, saves - 5 | tekkit hill guard |
+| a tin bracer | 92 | 15g84s | hitroll +15, damroll +10, dex +1 | tin soldier, shadowbox |
+| a shining bracer | 100 | 72g77s | [-E] damroll +20, hitroll +20 | alanaia, rivendale |
+| a leather bracer | 105 | 288g32s | [-E] damroll +20, hitroll +15, mana +100, hp +200 | durnk giant, giants outpost |
 
 ### Hand Armor
 | name | req lvl | cost | description | found |
@@ -1687,7 +1728,10 @@ These are **unlimited only** light sources.
 | a pair of warm, fuzzy gloves | 46 | 19g80s | hitroll +6, damroll +3 | dockworker, schwartz glacier |
 | a pair of steel gauntlets | 58 | 31g36s | damroll +6, con +2, str +2 | royal guard, eirenole castle |
 | a pair of moss covered gloves | 59 | 44g55s | damroll +4, hitroll +4 | guard, xe'lith |
+| a pair of sand-colored gloves | 71 | 22g82s | hitroll +12, mana +60 | heishan man, lost kingdoms |
+| a pair of craggion hide gloves | 72 | 88g12s | hitroll +7, damroll +5, saves -2, hp +50 | fireblast, street sweeper |
 | soft cyan gloves | 72 | 51g17s | damroll +6, hitroll +10 | tiny rapids guard |
+| a pair of steel gauntlets | 105 | 67g52s | hitroll +40, dex ;4 | elsfar guard, eirenole |
 
 ### Finger Armor
 | name | req lvl | cost | description | found |
@@ -1703,6 +1747,9 @@ These are **unlimited only** light sources.
 | a finely crafted silvite ring | 52 | 72g98s | damroll +4, hitroll +4, str +1 | llander, pyrainn mountains |
 | a signet ring | 55 | 66g33s | damroll +5, hitroll +5, hp +35 | gromm, yrenelania |
 | a silver ring | 71 | 23g36s | int +2, hitroll +6 | head mage, overlook tower |
+| a signet ring | 100 | 98g75s | [-E] damroll +25, hitroll +25, hp +75 | alanaia, rivendale |
+| an emerald ring with a patinum band | 105 | 154g69s | hitroll +20, saves -5, dex +4 | water elemental, eirenole |
+| an emerald ring with an electrum band | 105 | 63g76s | damroll +25, move +500, saves -10 | water elemental, eirenole |
 
 ### Leg Armor
 | name | req lvl | cost | description | found |
@@ -1730,6 +1777,11 @@ These are **unlimited only** light sources.
 | shimmering leggings | 53 | 94g5s | hitroll +10, damroll +1 | sweet-voiced chorus girl, xuergothe |
 | a pair of fine felt leggings | 60 | 64g35s | hitroll +7, damroll +3 | small human boy, overlook grounds |
 | a set of layered leggings | 65 | 34g2s | hitroll +10, str +3, saves -3 | rivendale guard |
+| a set of legplates | 70 | 40g41s | hitroll +7 | guard, overlook tower |
+| craggion hide pants | 70 | 76g24s | [-G,-N] damroll +5, hitroll +5, hp +75 | fireblast, street sweeper |
+| sandy trousers | 71 | 29g90s | hitroll +8, damroll +9, ac -2 | heishan woman, lost kingdoms |
+| fanatical clown pants | 86 | 83g6s | damroll +6, hitroll +8, dex +2, saves +5 | clown, shadowbox |
+| a black pair of satin hose | 94 | 95g33s | dex +3, hitroll +10, damroll +10 | atop caravan, shadowbox |
 
 ### Feet Armor
 | name | req lvl | cost | description | found |
@@ -1753,6 +1805,12 @@ These are **unlimited only** light sources.
 | a pair of moss covered boots | 55 | 49g50s | hitroll +5, damroll +5, move +300 | xe'lith patroller |
 | a pair of tough boots | 57 | 20g9s | hitroll +6, damroll +6 | ekeki, acoma |
 | hardened seaweed boots | 65 | 42g84s | hitroll +6, saves -2 | aquatic elf, lost kingdoms |
+| knee-high black leather boots | 77 | 45g97s | hitroll +10, str +2, con +2, dex -1 | titan man, lost kingdoms |
+| simple leather sandals | 82 | 55g0s | hitroll +8, damroll +8, ac - 10 | tekkit hill |
+| a pair of tin boots | 82 | 8g38s | hitroll +5, damroll +7, move +100 | tin soldier, shadowbox |
+| a dark pair of clown shoes | 83 | 89g75s | dex -2, damroll +10, hp +100, hitroll +5 | clown, shadowbox |
+| simple wooden gypsy sandals | 86 | 50g38s | hitroll +10, damroll +16 | caravan mother, shadowbox |
+| a pair of leather boots | 105 | 75g57s | damroll +25, hitroll +30 | fisherman, trouthead |
 
 ### Held Items
 | name | req lvl | cost | description | found |
@@ -1768,6 +1826,14 @@ These are **unlimited only** light sources.
 | a sacred tome | 40 | 37g12s | [-E] damroll +1, hitroll +2, saves -1, hp +20 | tyrlonde, castle of burdon |
 | a magical cloth doll | 45 | 35g0s | con +4 | a pretty little Yara, heishaer city |
 | a corn cob pipe | 48 | 5g82s | damroll +4, wis +2 | plodding traveler, kaer tzoun |
+| a shimmering golden orb | 82 | 37g42s | [-N,-E] hitroll +23, wis +2, int +2 | good spirit, lost kingdoms |
+| a glinting obsidian orb | 83 | 44g99s | [-G,-N] hitroll +23, str +2, con +2 | a dark shade, lost kingdoms |
+| a shimmering emerald orb | 84 | 68g43s | hitroll +24, dex +2, int +2 | meditating ghost, lost kingdoms |
+| bright mithril badge with markov's device | 85 | 105g44s | [-E,-N] damroll +15, hitroll +15 | young heishan, lost kingdoms |
+| a shimmering emerald orb | 84 | 68g43s | [-E,-G] hitroll +24, dex +2, int +2 | meditating ghost, lost kingdoms |
+| a glinting obsidian orb | 83 | 44g99s | [-G,-N] hitroll +23, str +2, con +2 | a dark shadow, lost kingdoms |
+| a ball of yarn | 76 | 30g0s | hitroll +8, damroll +8, wis +3 | mother, trouthead |
+| a swan feather | 105 | 82g92s | dex +1, int +2, damroll +35, +flying | swan, trouthead |
 
 ### Floater Items
 | name | req lvl | cost | description | found |
@@ -1793,3 +1859,5 @@ These are **unlimited only** light sources.
 | eye of the frost beast | 45 | 76g23s | damroll +2, str +1, dex +1, saves -4 | frost beast, pyrainn mountains |
 | the eyes of warrl | 54 | 101g0s | hitroll +6, mana +50 | warrl, acoma estate |
 | insanity | 60 | 0g99s | int -4, wis -4, damroll +8 | beastie, xuergothe |
+| a floating featherduster | 93 | 74g34s | hitroll +14, damroll +7 | maid, shadowbox |
+| a heart of stone | 103 | 121g3s | hitroll ;30, str +3 | eirenole forest golem |
