@@ -336,7 +336,7 @@ Rarity Percentages:
 | zeririte | metal | exceptional | exceptional | uncommon |
 | xedalium | metal | masterful | masterful | kinda rare |
 | amethyst | mineral | accomplished | passable | very abundant | minor energy resistance
-| glass | mineral | adequate | atrocious | 
+| glass | mineral | adequate | atrocious | everywhere |
 | clay | mineral | adequate | incompetent | everywhere |
 | diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance
 | ebony | mineral | accomplished | passable | very abundant | 
