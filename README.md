@@ -284,7 +284,7 @@ Armorsmiths: 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock n
 | --- | --- | --- |
 | Head | 40 | armorsmithing, jewelcrafting |
 | Neck | 30 | armorsmithing, jewelcrafting |
-| Finger | 8 | jewelcrafting |
+| Finger | 20 | jewelcrafting |
 | Arms | 25 | armorsmithing, jewelcrafting |
 | wrist | 30 | armorsmithing, jewelcrafting |
 | hands | 25 | armorsmithing |
