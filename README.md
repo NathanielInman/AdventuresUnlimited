@@ -272,7 +272,12 @@ Terrason: charlatan, thief, warrior, evil cleric, antipaladin
 Aliuna: monk
 
 ### Tradesguilds
-Locations: south east of aliuna, down in hargath.. south of erinole castle, east north of terrason
+The following is the locations of the tradesguilds: 
+
+Miners: 4e17s4w9s2w2s1w3s1d
+Jewelers: 11e3s6e4s7e6s8e1s
+Weaponsmiths: 4e9n5w6n11e3n5e1n3e7n2w9n14e1n
+Armorsmiths: 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock north;open north;2n6e1s
 
 #### Required Ore Table
 | item | ore required | trades |
