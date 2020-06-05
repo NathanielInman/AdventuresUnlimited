@@ -7,6 +7,8 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Quest Masters](#quest-masters)
   - [Trainers](#trainers)
   - [Tradesguilds](#tradesguilds)
+    - [Required Ore Table](#required-ore-table)
+    - [Materials Table](#materials-table)
 - [Temple](#temple)
   - [Temple Rank Costs](#temple-rank-costs)
   - [Temple Upgrade Costs](#temple-upgrade-costs)
@@ -270,7 +272,106 @@ Terrason: charlatan, thief, warrior, evil cleric, antipaladin
 Aliuna: monk
 
 ### Tradesguilds
-south east of aliuna, down in hargath.. south of erinole castle, east north of terrason
+Locations: south east of aliuna, down in hargath.. south of erinole castle, east north of terrason
+
+#### Required Ore Table
+| item | ore required | trades |
+| --- | --- | --- |
+| Head | 40 | armorsmithing, jewelcrafting |
+| Neck | 30 | armorsmithing, jewelcrafting |
+| Finger | 8 | jewelcrafting |
+| Arms | 25 | armorsmithing, jewelcrafting |
+| wrist | 30 | armorsmithing, jewelcrafting |
+| hands | 25 | armorsmithing |
+| torso | 45 | armorsmithing |
+| waist | 40 | armorsmithing, jewelcrafting |
+| legs | 30 | armorsmithing |
+| feet | 15 | armorsmithing |
+| hold | 30 | armorsmithing, jewelcrafting |
+| shield | 30 | armorsmithing |
+| dagger | 30 | weaponsmithing |
+| sword | 55 | weaponsmithing |
+| mace | 45 | weaponsmithing |
+| polearm | 75 | weaponsmithing |
+| axe | 70 | weaponsmithing |
+| flail | 60 | weaponsmithing |
+| staff | 45 | weaponsmithing |
+| spear | 45 | weaponsmithing |
+
+#### Materials Table
+
+Strength And Magic Percentages:
+```
+0-9=abysmal, 10-19=atrocious, 20-29=incompetent, 30-39=lousy, 40-49=passable,
+50-64=adequate, 65-74=accomplished, 75-84=outstanding, 85-99=exceptional, 100=masterful
+```
+
+Rarity Percentages:
+```
+0-9=extremely rare, 10-19=very rare, 20-29 = kinda rare,30-39 = uncommon, 40-49=barely uncommon
+50-59=common,60-69=very common,70-79=abundant,80-89=very abundant,90-100=everywhere
+```
+
+| name | type | strength | magic | rarity | other |
+| --- | --- | --- | --- | --- | --- |
+| lead | metal | adequate | incompetent | everywhere |
+| gold | metal | adequate | adequate | abundant |
+| pewter | metal | adequate | adequate | everywhere |
+| silver | metal | adequate | passable | abundant |
+| copper | metal | adequate | lousy | abundant |
+| brass | metal | accomplished | incompetent | very abundant |
+| electrum | metal | accomplished | outstanding | very common |
+| bronze | metal | accomplished | lousy | abundant |
+| platinum | metal | accomplished | accomplished | abundant |
+| iron | metal | accomplished | atrocious | very abundant |
+| steel | metal | accomplished | adequate | very abundant |
+| meteorite | metal | outstanding | adequate | very abundant |
+| mithril | metal | outstanding | accomplished | very common |
+| adamantite | metal | outstanding | exceptional | very common |
+| silvite | metal | outstanding | accomplished | very common |
+| cold steel | metal | exceptional | exceptional | common |
+| irlimnite | metal | exceptional | atrocious | very abundant |
+| uulayilium | metal | exceptional | exceptional | common |
+| qyarelite | metal | exceptional | exceptional | barely uncommon |
+| zeririte | metal | exceptional | exceptional | uncommon |
+| xedalium | metal | masterful | masterful | kinda rare |
+| amethyst | mineral | accomplished | passable | very abundant | minor energy resistance
+| glass | mineral | adequate | atrocious | 
+| clay | mineral | adequate | incompetent | everywhere |
+| diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance
+| ebony | mineral | accomplished | passable | very abundant | 
+| emerald | mineral | accomplished | atrocious | abundant | moderate poison resistance
+| garnet | mineral | adequate | exceptional | very common | moderate mental resistance
+| gem | mineral | adequate | adequate | very abundant |
+| granite | mineral | adequate | atrocious | everywhere |
+| ivory | mineral | adequate | outstanding | very abundant |
+| jade | mineral | adequate | accomplished | abundant | lesser acid resistance
+| marble | mineral | adequate | incompetent | everywhere |
+| obsidian | mineral | adequate | adequate | very abundant |
+| onyx | mineral | adequate | incompetent | abundant | minor holy resistance
+| opal | mineral | accomplished | accomplished | very common | minor light resistance
+| pearl | mineral | accomplished | passable | very abundant |
+| pyrite | mineral | accomplished | lousy | very abundant | moderate iron resistance
+| quartz | mineral | accomplished | accomplished | very common | minor magic resistance
+| sapphire | mineral | accomplished | adequate | very common | lesser fire resistance
+| ruby | mineral | outstanding | adequate | very common | moderate cold resistance
+| stone | mineral | accomplished | passable | very abundant |
+| amber | mineral | lousy | very abundant | very common | greater energy resistance
+| aquamarine | mineral | adequate | accomplished | very common | minor drowning resistance
+| azurite | mineral | passable | lousy | very common | extreme iron resistance, minor magic vulnerability
+| beryl | mineral | accomplished | accomplished | common | extreme holy resistance
+| chrysoberyl | mineral | accomplished | accomplished | common | moderate mental resistance
+| citrine | mineral | accomplished | atrocious | abundant | moderate sound resistance
+| heliodor | mineral | accomplished | exceptional | barely uncommon | minor fire vulnerability, extreme cold resistance
+| lapis | mineral | adequate | adequate | very common | moderate fire resistance, minor cold vulnerability
+| moonstone | mineral | adequate | exceptional | barely uncommon | extreme silver resistance
+| morganite | mineral | accomplished | adequate | common | lesser magic resistance
+| olivine | mineral | adequate | outstanding | common | lesser fire resistance
+| spinel | mineral | accomplished | accomplished | adequate | extreme mental resistance
+| sunstone | mineral | adequate | exceptional | barely uncommon | extreme light resistance
+| tanzanite | mineral | adequate | passable | very common | extreme lightning resistance, lesser drowning vulnerability
+| topaz | mineral | adequate | accomplished | uncommon | lesser bash resistance
+| tourmaline | mineral | adequate | adequate | barely uncommon | extreme acid resistance
 
 ## Temple
 A collection of helpful information related to AU temples
