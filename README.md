@@ -450,7 +450,8 @@ The max stats a mark can upgrade to are:
 ### Housing Costs
 | description | diamonds | equivalent gold |
 | --- | --- | --- |
-| additional room heal rate 10% (to a max of 300%) | 125 | 13,750 |
+| additional room heal rate 10% (starts at 100%) | 125 | 13,750 |
+| maxed room heal rate 300% | 2500 | 275,000 |
 | portal | 400 | 44,000 |
 | lock upgrade (hard) | 200 | 22,000 from default easy |
 | lock upgrade (infuriating) | 200 | 22,000 (44,000 from easy) |
