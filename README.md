@@ -448,6 +448,11 @@ The max stats a mark can upgrade to are:
 | 9. Duke/Duchess | 90,000 | 11,000 | 63,000 |
 
 ### Housing Costs
+
+- A housing cost simulator website is available [here](https://homecalculator.nathanielinman.com).
+- A housing cost simulator template of a maxed manor is available [here](https://homecalculator.nathanielinman.com/#/dashboard?locationType=manor&healingRate=400&hasPortal=true&isPublic=false&doorLock=0&doorType=0&lockLevel=50&furnitureItems=8&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1&sanctuary=true&haste=true&phase=true&protection=true&sneak=true&fly=true&invisibility=true&criticalStrike=true&counter=true&dirtKick=true&disarm=true&berserk=true&bash=true&trip=true&resistMonk=true&resistMagic=true&resistPierce=true&resistSlash=true&resistBash=true&resistWood=true&resistSilver=true&resistIron=true&resistLight=true&resistPoison=true&resistHoly=true&resistEnergy=true&resistDisease=true&resistFire=true&resistCold=true&resistLightning=true&resistAcid=true). (727,100 gold)
+- A housing cost simulator template of a maxed house is available [here](https://homecalculator.nathanielinman.com/#/dashboard?locationType=house&healingRate=300&hasPortal=true&isPublic=false&doorLock=1000&doorType=100&lockLevel=100&furnitureItems=3&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1&sanctuary=false&haste=false&phase=false&protection=false&sneak=false&fly=false&invisibility=false&criticalStrike=false&counter=false&dirtKick=false&disarm=false&berserk=false&bash=false&trip=false&resistMonk=false&resistMagic=false&resistPierce=false&resistSlash=false&resistBash=false&resistWood=false&resistSilver=false&resistIron=false&resistLight=false&resistPoison=false&resistHoly=false&resistEnergy=false&resistDisease=false&resistFire=false&resistCold=false&resistLightning=false&resistAcid=false). (651,750 gold)
+
 | description | diamonds | equivalent gold |
 | --- | --- | --- |
 | additional room heal rate 10% (starts at 100%) | 125 | 13,750 |
