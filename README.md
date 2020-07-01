@@ -1440,23 +1440,7 @@ The following is an automated repair command for armorsmith. Merely type `f item
 #action {You fail to remove the blemishes}{ readjust $armorsmithRepairItem; }
 #action {You work with a hammer and anvil to improve the condition}{ repair $armorsmithRepairItem; }
 ```
-The following is an automated smelting loop. It drops ore chunks when they reach 40lbs.
-```
-/* smelting loop, puts 40lb stacks in pocket */
-#var {armorsmithSmeltItem} {none};
-#alias {m %1}{ #var {armorsmithSmeltItem}{ %1 };smelt $armorsmithSmeltItem; }
-#action {You combine your ore and now have %1 pounds of raw %2.}{
-  #var {armorsmithOreWeight} { %1 };
-  #if {$armorsmithOreWeight > 40}{ drop %2; }
-  smelt $armorsmithSmeltItem;
-}
-#action {You now have %1 pounds of raw %2.}{
-  #var {armorsmithOreWeight} { %1 };
-  #if {$armorsmithOreWeight > 40}{ drop %2; };
-  smelt $armorsmithSmeltItem;
-}
-```
-The following is an automated armorsmith trainer. Merely get a bunch of `silver` items from `Mirage City` and then make sure you have a hammer, file and tongs in you inventory and type `m 2.silver` and it'll smelt everything down and make boots with nothing left over when finished. Because it's action-based you can still communicate over channels while it's running.
+The following is an automated armorsmith trainer. Merely get a bunch of `silver` items from `Mirage City` and then make sure you have a hammer, file and tongs in you inventory and type `m 2.silver` and it'll smelt everything down and make boots with nothing left over when finished. Because it's action-based you can still communicate over channels while it's running. Once you've mastered everything don't use this, use the automated crafting loop.
 ```
 #var {armorsmithSmeltItem} {none};
 #var {armorsmithFormItem}{feet};
@@ -1500,6 +1484,80 @@ The following is an automated armorsmith trainer. Merely get a bunch of `silver`
 }
 #action {You quench the form of the} { hold file; finish $armorsmithFormItem; }
 #action {You file down} { smelt $armorsmithOre; }
+```
+The following is a completely automated crafting loop. It smelts failures and automatically restarts until it made an item or you're out of resources. Make sure you you have a hammer, file and tongs in your inventory as well as items to smelt. `m (item name to smelt) (target equip slot) (target level)`:
+```
+/* smithing and smelting loop */
+#var {armorsmithSmeltItem} {none};
+#var {armorsmithFormItem}{feet};
+#var {armorsmithOre}{unknown};
+#var {armorsmithQuantity}{40};
+#var {armorsmithPoundMax}{15};
+#var {armorsmithPoundCur}{0};
+#var {armorsmithForming}{false};
+#var {armorsmithLevel}{105};
+#alias {m %1 %2 %3}{
+  #var {armorsmithSmeltItem}{ %1 };
+  #var {armorsmithFormItem}{ %2 };
+  #var {armorsmithLevel}{ %3 };
+  #if {{%2}=={head}} { #var {armorsmithQuantity}{ 40 }; };
+  #if {{%2}=={neck}} { #var {armorsmithQuantity}{ 30 }; };
+  #if {{%2}=={arms}} { #var {armorsmithQuantity}{ 25 }; };
+  #if {{%2}=={wrist}} { #var {armorsmithQuantity}{ 30 }; };
+  #if {{%2}=={hands}} { #var {armorsmithQuantity}{ 25 }; };
+  #if {{%2}=={torso}} { #var {armorsmithQuantity}{ 45 }; };
+  #if {{%2}=={waist}} { #var {armorsmithQuantity}{ 40 }; };
+  #if {{%2}=={legs}} { #var {armorsmithQuantity}{ 30 }; };
+  #if {{%2}=={feet}} { #var {armorsmithQuantity}{ 15 }; };
+  #if {{%2}=={hold}} { #var {armorsmithQuantity}{ 30 }; };
+  #if {{%2}=={shield}} { #var {armorsmithQuantity}{ 30 }; };
+  #showme <138>+------+ <188>Starting level $armorsmithLevel $armorsmithSmeltItem ($armorsmithQuantity ore)<138> +------+;
+  smelt $armorsmithSmeltItem;
+}
+#action {You combine your ore and now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight < $armorsmithQuantity && "$armorsmithForming" != "true"}{ smelt $armorsmithSmeltItem; };
+  #if {$armorsmithOreWeight >= $armorsmithQuantity}{
+    #var {armorsmithOre}{ %2 };
+    #var {armorsmithForming}{true};
+    hold tongs;form '$armorsmithOre' armor $armorsmithFormItem;
+  }
+}
+#action {You now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight < $armorsmithQuantity && "$armorsmithForming" != "true"}{ smelt $armorsmithSmeltItem; };
+  #if {$armorsmithOreWeight >= $armorsmithQuantity}{
+    #var {armorsmithOre}{ %2 };
+    #var {armorsmithForming}{true};
+    hold tongs;form '$armorsmithOre' armor $armorsmithFormItem;
+  }
+}
+#action {You fail to form} { #var {armorsmithForming}{false}; smelt ruined; }
+#action {You have broken the form} { #var {armorsmithForming}{false}; smelt broken; }
+#action {You have cracked the form} { #var {armorsmithForming}{false}; smelt broken; }
+#action {You filed a large gash into} { #var {armorsmithForming}{false}; smelt $armorsmithSmeltItem; }
+#action {You use your tongs and the anvil to form} {
+  #var {armorsmithPoundCur} { 0 };
+  pound $armorsmithFormItem;
+}
+#action {* CLANG! *} {
+  #math {armorsmithPoundCur} {$armorsmithPoundCur + 1};
+  #if {$armorsmithPoundCur < $armorsmithPoundMax} {
+    #showme <178>+------+ <188> Pounding <168>$armorsmithPoundCur<178>/<068>$armorsmithPoundMax <178>+------+;
+    pound $armorsmithFormItem;
+  }
+  #if {$armorsmithPoundCur == $armorsmithPoundMax} {
+    #showme <178>+------+ <188> Successful Pound! <178>+------+;
+    hold tongs;quench $armorsmithFormItem;
+  }
+}
+#action {You need a hammer to shape}{ hold hammer; pound $armorsmithFormItem; }
+#action {You quench the form of the} { hold file; finish $armorsmithFormItem $armorsmithLevel; }
+#action {You file down} {
+  #var {armorsmithForming}{false};
+  condition $armorsmithOre;
+  #showme <138>+------+ <188>Finished $armorsmithFormItem<138> +------+;
+}
 ```
 
 ## Potions Pills Wands Staves and Scrolls
