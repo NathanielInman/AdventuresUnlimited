@@ -1440,6 +1440,22 @@ The following is an automated repair command for armorsmith. Merely type `f item
 #action {You fail to remove the blemishes}{ readjust $armorsmithRepairItem; }
 #action {You work with a hammer and anvil to improve the condition}{ repair $armorsmithRepairItem; }
 ```
+The following is an automated smelting loop. It drops ore chunks when they reach 40lbs.
+```
+/* smelting loop, puts 40lb stacks in pocket */
+#var {armorsmithSmeltItem} {none};
+#alias {m %1}{ #var {armorsmithSmeltItem}{ %1 };smelt $armorsmithSmeltItem; }
+#action {You combine your ore and now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight > 40}{ drop %2; }
+  smelt $armorsmithSmeltItem;
+}
+#action {You now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight > 40}{ drop %2; };
+  smelt $armorsmithSmeltItem;
+}
+```
 The following is an automated armorsmith trainer. Merely get a bunch of `silver` items from `Mirage City` and then make sure you have a hammer, file and tongs in you inventory and type `m 2.silver` and it'll smelt everything down and make boots with nothing left over when finished. Because it's action-based you can still communicate over channels while it's running.
 ```
 #var {armorsmithSmeltItem} {none};
