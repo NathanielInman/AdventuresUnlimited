@@ -1429,6 +1429,17 @@ Here is a script that buffs your character right before a quest:
   #line gag;
 }
 ```
+The following is an automated repair command for armorsmith. Merely type `f itemname` and it'll fix it provided you have a hammer and wool in your inventory.
+```
+#var {armorsmithRepairItem} {none}
+#alias {f %1}{ #var {armorsmithRepairItem}{ %1 };rebuild $armorsmithRepairItem; }
+#action {This item needs to be repaired}{ repair $armorsmithRepairItem; }
+#action {This item needs to be readjusted}{ readjust $armorsmithRepairItem; }
+#action {This item only needs to be readjusted}{ readjust $armorsmithRepairItem; }
+#action {You succeed in removing a few blemishes}{ readjust $armorsmithRepairItem; }
+#action {You fail to remove the blemishes}{ readjust $armorsmithRepairItem; }
+#action {You work with a hammer and anvil to improve the condition}{ repair $armorsmithRepairItem; }
+```
 The following is an automated armorsmith trainer. Merely get a bunch of `silver` items from `Mirage City` and then make sure you have a hammer, file and tongs in you inventory and type `m 2.silver` and it'll smelt everything down and make boots with nothing left over when finished. Because it's action-based you can still communicate over channels while it's running.
 ```
 #var {armorsmithSmeltItem} {none};
