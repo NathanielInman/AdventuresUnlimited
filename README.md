@@ -1429,7 +1429,51 @@ Here is a script that buffs your character right before a quest:
   #line gag;
 }
 ```
-
+The following is an automated armorsmith trainer. Merely get a bunch of `silver` items from `Mirage City` and then make sure you have a hammer, file and tongs in you inventory and type `m 2.silver` and it'll smelt everything down and make boots with nothing left over when finished. Because it's action-based you can still communicate over channels while it's running.
+```
+#var {armorsmithSmeltItem} {none};
+#var {armorsmithFormItem}{feet};
+#var {armorsmithOre}{unknown};
+#var {armorsmithPoundMax}{100};
+#var {armorsmithPoundCur}{0};
+#alias {m %1}{ #var {armorsmithSmeltItem}{ %1 };smelt $armorsmithSmeltItem; }
+#action {You combine your ore and now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight < 15}{ smelt $armorsmithSmeltItem; };
+  #if {$armorsmithOreWeight > 14}{
+    #var {armorsmithOre}{ %2 };
+    hold tongs;form $armorsmithOre armor $armorsmithFormItem;
+  }
+}
+#action {You now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight < 15}{ smelt $armorsmithSmeltItem; };
+  #if {$armorsmithOreWeight > 14}{
+    #var {armorsmithOre}{ %2 };
+    hold tongs;form $armorsmithOre armor $armorsmithFormItem;
+  }
+}
+#action {You fail to form} { smelt ruined; }
+#action {You have broken the form} { smelt broken; }
+#action {You have cracked the form} { smelt broken; }
+#action {You filed a large gash into} { smelt $armorsmithSmeltItem; }
+#action {You use your tongs and the anvil to form} {
+  hold hammer;
+  #var {armorsmithPoundCur} { 0 };
+  pound $armorsmithFormItem;
+}
+#action {* CLANG! *} {
+  #math {armorsmithPoundCur} {$armorsmithPoundCur + 1};
+  #if {$armorsmithPoundCur < $armorsmithPoundMax} {
+    hold hammer; pound $armorsmithFormItem;
+  }
+  #if {$armorsmithPoundCur == $armorsmithPoundMax} {
+    hold tongs;quench $armorsmithFormItem;
+  }
+}
+#action {You quench the form of the} { hold file; finish $armorsmithFormItem; }
+#action {You file down} { smelt $armorsmithOre; }
+```
 
 ## Potions Pills Wands Staves and Scrolls
 
