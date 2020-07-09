@@ -268,6 +268,7 @@ Additional helpful maps on the [official website](tharel.net):
 
 #### Quest Items
 | Name | Alignment | Hidden | 
+| --- | --- | --- |
 | the chalice of the sun | good | |
 | the amulet of courage | good | |
 | the sceptre of mercy | good | |
