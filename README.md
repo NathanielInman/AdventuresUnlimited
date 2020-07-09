@@ -5,6 +5,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Directions](#directions)
   - [Areas](#areas)
   - [Quest Masters](#quest-masters)
+    - [Quest Items](#quest-items)
   - [Trainers](#trainers)
   - [Tradesguilds](#tradesguilds)
     - [Required Ore Table](#required-ore-table)
@@ -265,6 +266,44 @@ Additional helpful maps on the [official website](tharel.net):
 | Evil | 36-75 | Braime | 4e17s4w7s2e1s2e1d2s1e2n2e1s1u |
 | Evil | 76-100 | Jioxo | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2w1u1s |
 
+#### Quest Items
+| Name | Alignment | Hidden | 
+| the chalice of the sun | good | |
+| the amulet of courage | good | |
+| the sceptre of mercy | good | |
+| the tome of eternal benevolence | good | |
+| the crystalline shard | good | |
+| a cloth woven of innocence | good | |
+| a sliver of hope | good | |
+| the scales of justice | good | |
+| a worry stone | good | |
+| a sliver of the truth | good | **✓** |
+| a piece of lost glory | good | **✓** |
+| a blessed stone of luck | good | **✓** |
+| sacred seedling of the one one tree | neutral | |
+| the silver chronometer | neutral | |
+| the manuscripts of wisdom | neutral | |
+| the talisman of harmony | neutral | |
+| the fruit of the earth | neutral | |
+| the grain of sustenance | neutral | |
+| the three faces of tolerance | neutral | |
+| a platinum coin etched with the image of Irrail | neutral | |
+| a historical almanac | neutral | |
+| a powerful antidote | neutral | **✓** |
+| the incense of meditation | neutral | **✓** |
+| a chunk of petrified wood | neutral | **✓** |
+| the codex of the occult | evil | |
+| the jaded scarab | evil | |
+| the evil eye of torment | evil | |
+| the finger of condemnation | evil | |
+| the blood thorn | evil | |
+| the heart of deception | evil | |
+| a miniature stone obelisk | evil | |
+| a small piece of irlimnite ore | evil | |
+| the cursed tome of destruction | evil | |
+| the rune covered sacrificial knife | evil | **✓** |
+| the ancient blessing of an antipaladin | evil | **✓** |
+| a parchment inscribed with words of power | evil | **✓** |
 ### Trainers
 Barreston: myrmidon, mage
 Rivendale: good cleric, paladin
