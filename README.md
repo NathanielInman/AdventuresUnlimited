@@ -1,6 +1,10 @@
 # AdventuresUnlimited
 A collection of resources and information surrounding the Adventures Unlimited MUD
 
+- [Official Homepage](tharel.net)
+- [Territory Calculator](https://territorycalculator.nathanielinman.com/)
+- [Home Calculator](https://homecalculator.nathanielinman.com/)
+
 ## Table of Contents
 - [Directions](#directions)
   - [Areas](#areas)
