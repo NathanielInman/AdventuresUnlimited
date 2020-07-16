@@ -1473,6 +1473,31 @@ Here is a script that buffs your character right before a quest:
   #line gag;
 }
 ```
+The following is a mining loop:
+```
+/* mining loop - triggers only work when starting w/ td */
+#var {tunnelDirection}{down}
+#var {mining}{false}
+#alias {td}{ #var {tunnelDirection}{down}; #var {mining}{true}; tunnel $tunnelDirection; }
+#action {You need to hold a pickaxe in order to dig}{
+  hold pickaxe;
+  #if {"$mining" == "true"}{ tunnel $tunnelDirection; };
+}
+#action {You chip away at the walls making no pogress}{ #nop; }
+#action {You chip at the walls}{
+  #if {"$mining" == "true"}{
+    #var {tunnelDirection}{south};
+    tunnel $tunnelDirection;
+  };
+}
+#action {You chip away at the walls making very little progress}{ #if {"$mining" == "true"}{tunnel $tunnelDirection;}; }
+#action {You tunnel}{ #if {"$mining" == "true"}{$tunnelDirection; mine; }; }
+#action {You chip off chunks of xedalium}{ take xed;put xed sat; }
+#action {You chip off chunks of %1}{ take chunk;donate chunk clan;drop chunk;mine; }
+#action {You fail to mine the ore from the vein}{ mine; }
+#action {You think there might be ore here but you do not see a vein to mine.}{ mine; }
+#action {You search for a vein of metal in this tunnel but cannot locate one.}{ tunnel $tunnelDirection; }
+```
 The following is an automated repair command for armorsmith. Merely type `f itemname` and it'll fix it provided you have a hammer and wool in your inventory.
 ```
 #var {armorsmithRepairItem} {none}
