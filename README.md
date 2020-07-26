@@ -310,10 +310,20 @@ Additional helpful maps on the [official website](tharel.net):
 | the ancient blessing of an antipaladin | evil | **✓** |
 | a parchment inscribed with words of power | evil | **✓** |
 ### Trainers
-Barreston: myrmidon, mage
-Rivendale: good cleric, paladin
-Terrason: charlatan, thief, warrior, evil cleric, antipaladin
-Aliuna: monk
+Most trainers - with exception of monk - have 3 ranks found within tharel: entry, mid-level and hero.
+
+#### Entry Trainers (up to 10)
+- Unknown
+
+#### Mid Level (up to 40)
+- Thief (Aliuna): 11e3s6e4s7e2n2e1s2w1d
+
+#### Hero Trainers (up to 100)
+- Thief (Terrason): 11e3n12e6n3w4n2w9n8e4n1d2e1s
+- Barreston: warriors, myrmidon, mage
+- Rivendale: good cleric, paladin
+- Terrason: charlatan, warrior, evil cleric, antipaladin
+- Aliuna: monk
 
 ### Tradesguilds
 The following is the locations of the tradesguilds: 
