@@ -36,6 +36,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [monk](#monk)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
+  - [Spec And Class Table](#spec-and-class-table)
   - [Monk Details](#monk-details)
     - [Monk Mantras](#monk-mantras)
     - [Monk Fightstyles](#monk-fightstyles)
@@ -1054,6 +1055,16 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | wind shield | 30 | - | - | - | - | - | 50 | - | - |
 | weaken | 17 | 23 | - | - | 17 | - | 16 | 18 | - |
 | word of recall | 15 | 15 | - | - | 35 | 35 | 20 | 29 | - |
+
+### Spec And Class Table
+| level       | mage  | cleric | antipaladin | paladin | charlatan | myrmidon |
+| 50          | 2     | 1      |  1           | 1      |   1       |  1        |
+| 60          | 1     | 1      |  0           | 0      |   0       |  0        |
+| 70          | 2     | 1      |  1           | 1      |   1       |  1        |
+| 80          | 2     | 1      |  1           | 1      |   1       |  1        |
+| 90          | 1     | 1      |  0           | 0      |   0       |  0        |
+| 100         | 2     | 1      |  1           | 1      |   1       |  1        |
+| total       | 10    | 6      |  4           | 4      |   4       |  4        |
 
 ### Monk Details
 
