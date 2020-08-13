@@ -1058,6 +1058,7 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 
 ### Spec And Class Table
 | level       | mage  | cleric | antipaladin | paladin | charlatan | myrmidon |
+|---|---|---|---|---|---|---|
 | 50          | 2     | 1      |  1           | 1      |   1       |  1        |
 | 60          | 1     | 1      |  0           | 0      |   0       |  0        |
 | 70          | 2     | 1      |  1           | 1      |   1       |  1        |
