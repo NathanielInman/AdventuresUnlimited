@@ -1057,6 +1057,7 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | word of recall | 15 | 15 | - | - | 35 | 35 | 20 | 29 | - |
 
 ### Spec And Class Table
+Specialization points allow a caster to excel further at a spellcasting group. You must master the entire spellgroup before specializing in it.
 | level       | mage  | cleric | antipaladin | paladin | charlatan | myrmidon |
 |---|---|---|---|---|---|---|
 | 50          | 2     | 1      |  1           | 1      |   1       |  1        |
