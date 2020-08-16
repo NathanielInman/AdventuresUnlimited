@@ -37,6 +37,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
   - [Spec And Class Table](#spec-and-class-table)
+  - [Specialization Unlockable Table](#specialization-unlockable-table)
   - [Monk Details](#monk-details)
     - [Monk Mantras](#monk-mantras)
     - [Monk Fightstyles](#monk-fightstyles)
@@ -1067,6 +1068,46 @@ Specialization points allow a caster to excel further at a spellcasting group. Y
 | 90          | 1     | 1      |  0           | 0      |   0       |  0        |
 | 100         | 2     | 1      |  1           | 1      |   1       |  1        |
 | total       | 10    | 6      |  4           | 4      |   4       |  4        |
+
+### Specialization Unlockable Table
+Putting specialization points into certain groups may unlock new versions of spells.
+| name | root spell | rank required | group |
+| --- | --- | --- | --- |
+| shocklash | shocking grasp | 1 | combat |
+| vision shield | cure blindness | 1 | curative |
+| divine vitality | cure disease | 1 | curative |
+| divine fortitude | cure poison | 1 | curative |
+| bestial strength | giant strength | 1 | enhancement |
+| elemental strength | giant strength | 3 | enhancement |
+| dragon strength | giant strength | 5 | enhancement |
+| gazelle agility | haste | 1 | enhancement |
+| viper quickness | haste | 3 | enhancement |
+| snowcat speed | haste | 5 | enhancement |
+| shadow sight | infravision | 1 | enhancement |
+| hex shield | remove curse | 1 | benedictions |
+| goblin weakness | weaken | 3 | maladictions |
+| pixie weakness | weaken | 5 | maladictions |
+| sloth slowness | slow | 1 | maladictions |
+| tortoise plodding | slow | 3 | maladictions |
+| slug speed | slow | 5 | maladictions |
+| curse of the hag | curse | 1 | maladictions |
+| curse of the mummy | curse | 3 | maladictions |
+| curse of the demon | curse | 5 | maladictions |
+| spider poison | poison | 1 | maladictions |
+| snake poison | poison | 2 | maladictions |
+| urthomu pioson | poison | 3 | maladictions |
+| nerassi poison | poison | 4 | maladictions |
+| artilis poison | poison | 5 | maladictions |
+| itchy scabs | plague | 1 | maladictions |
+| oozing blisters | plague | 2 | maladictions |
+| festering sores | plague | 3 | maladictions |
+| puss filled boils | plague | 4 | maladictions |
+| infected pustules | plague | 5 | maladictions |
+| disorientation | blindness | 1 | maladictions |
+| granite skin | stone skin | 1 | protective |
+| iron skin | stone skin | 3 | protective |
+| diamond skin | stone skin | 5 | protective |
+| mystic weakness | dispel magic | 1 | protective |
 
 ### Monk Details
 
