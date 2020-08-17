@@ -74,6 +74,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
     - [Poison Training Loop](#poison-training-loop)
     - [Disease Training Loop](#disease-training-loop)
+    - [Blind Training Loop](#blind-training-loop)
 
 ## Directions
 All `directions` start from `Market Square` within `Naerlan`.
@@ -1776,5 +1777,18 @@ For classes that have 'cure disease' and 'plague', this is the fastest way to ma
 #action {You lost your concentration}{
   #if {"$farmState"=="none"}{ c 'plague' alleus; }
   #if {"$farmState"=="yes"}{ c 'cure disease' alleus; }
+}
+```
+#### Blind Training Loop
+For classes that have 'cure blind' and 'blind', this is the fastest way to master both skills.
+```
+#var {farmState}{none};
+#action {You can see again.}{c 'blind' alleus;#var {farmState}{none};}
+#action {The room seems darker.. then gets}{c 'blind' alleus;}
+#action {The curse of blindness on you is resistant}{c 'cure blind';}
+#action {You are blinded!}{c 'cure blind' alleus;#var {farmState}{yes};}
+#action {You lost your concentration}{
+  #if {"$farmState"=="none"}{ c 'blind' alleus; }
+  #if {"$farmState"=="yes"}{ c 'cure blind' alleus; }
 }
 ```
