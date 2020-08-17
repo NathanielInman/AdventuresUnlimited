@@ -1076,44 +1076,54 @@ Specialization points allow a caster to excel further at a spellcasting group. Y
 | total       | 10    | 6      |  4           | 4      |   4       |  4        |
 
 ### Specialization Unlockable Table
+Different classes have the ability to put more specialization points into certain groups.
+| name | rank |
+|---|---|
+| novice | 0 |
+| initiate | 1 |
+| adept | 2 |
+| expert | 3 | 
+| master | 4 |
+| arcanist | 5 |
+
 Putting specialization points into certain groups may unlock new versions of spells.
 | name | root spell | rank required | group |
 | --- | --- | --- | --- |
-| shocklash | shocking grasp | 1 | combat |
-| vision shield | cure blindness | 2 | curative |
-| divine vitality | cure disease | 2 | curative |
-| divine fortitude | cure poison | 2 | curative |
-| bestial strength | giant strength | 1 | enhancement |
-| elemental strength | giant strength | 3 | enhancement |
-| dragon strength | giant strength | 5 | enhancement |
-| gazelle agility | haste | 1 | enhancement |
-| viper quickness | haste | 3 | enhancement |
-| snowcat speed | haste | 5 | enhancement |
-| shadow sight | infravision | 1 | enhancement |
-| hex shield | remove curse | 1 | benedictions |
-| goblin weakness | weaken | 3 | maladictions |
-| pixie weakness | weaken | 5 | maladictions |
-| sloth slowness | slow | 1 | maladictions |
-| tortoise plodding | slow | 3 | maladictions |
-| slug speed | slow | 5 | maladictions |
-| curse of the hag | curse | 1 | maladictions |
-| curse of the mummy | curse | 3 | maladictions |
-| curse of the demon | curse | 5 | maladictions |
-| spider poison | poison | 1 | maladictions |
-| snake poison | poison | 2 | maladictions |
-| urthomu pioson | poison | 3 | maladictions |
-| nerassi poison | poison | 4 | maladictions |
-| artilis poison | poison | 5 | maladictions |
-| itchy scabs | plague | 1 | maladictions |
-| oozing blisters | plague | 2 | maladictions |
-| festering sores | plague | 3 | maladictions |
-| puss filled boils | plague | 4 | maladictions |
-| infected pustules | plague | 5 | maladictions |
-| disorientation | blindness | 1 | maladictions |
-| granite skin | stone skin | 1 | protective |
-| iron skin | stone skin | 3 | protective |
-| diamond skin | stone skin | 5 | protective |
-| mystic weakness | dispel magic | 1 | protective |
+| shocklash | shocking grasp | initiate | combat |
+| vision shield | cure blindness | adept | curative |
+| divine vitality | cure disease | adept | curative |
+| divine fortitude | cure poison | adept | curative |
+| bestial strength | giant strength | initiate | enhancement |
+| elemental strength | giant strength | expert | enhancement |
+| dragon strength | giant strength | arcanist | enhancement |
+| gazelle agility | haste | initiate | enhancement |
+| viper quickness | haste | expert | enhancement |
+| snowcat speed | haste | arcanist | enhancement |
+| shadow sight | infravision | initiate | enhancement |
+| hex shield | remove curse | initiate | benedictions |
+| goblin weakness | weaken | expert | maladictions |
+| pixie weakness | weaken | arcanist | maladictions |
+| sloth slowness | slow | initiate | maladictions |
+| tortoise plodding | slow | expert | maladictions |
+| slug speed | slow | arcanist | maladictions |
+| curse of the hag | curse | initiate | maladictions |
+| curse of the mummy | curse | expert | maladictions |
+| curse of the demon | curse | arcanist | maladictions |
+| spider poison | poison | initiate | maladictions |
+| snake poison | poison | adept | maladictions |
+| urthomu pioson | poison | expert | maladictions |
+| nerassi poison | poison | master | maladictions |
+| artilis poison | poison | arcanist | maladictions |
+| itchy scabs | plague | initiate | maladictions |
+| oozing blisters | plague | adept | maladictions |
+| festering sores | plague | expert | maladictions |
+| puss filled boils | plague | master | maladictions |
+| infected pustules | plague | arcanist | maladictions |
+| disorientation | blindness | initiate | maladictions |
+| granite skin | stone skin | initiate | protective |
+| iron skin | stone skin | expert | protective |
+| diamond skin | stone skin | arcanist | protective |
+| mystic weakness | dispel magic | initiate | protective |
 
 ### Monk Details
 
