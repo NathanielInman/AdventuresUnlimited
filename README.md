@@ -36,7 +36,8 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [monk](#monk)
   - [Skill And Class Table](#skill-and-class-table)
   - [Spell And Class Table](#spell-and-class-table)
-  - [Spec And Class Table](#spec-and-class-table)
+  - [Specialization And Class Table](#specialization-and-class-table)
+  - [Specialization Table](#specialization-table)
   - [Specialization Unlockable Table](#specialization-unlockable-table)
   - [Monk Details](#monk-details)
     - [Monk Mantras](#monk-mantras)
@@ -1063,8 +1064,10 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | weaken | 17 | 23 | - | - | 17 | - | 16 | 18 | - |
 | word of recall | 15 | 15 | - | - | 35 | 35 | 20 | 29 | - |
 
-### Spec And Class Table
+### Specialization And Class Table
 Specialization points allow a caster to excel further at a spellcasting group. You must master the entire spellgroup before specializing in it.
+
+Mages are the only class that can max a spell group with specialization, all other classes can only put 2 points in a group.
 | level       | mage  | cleric | antipaladin | paladin | charlatan | myrmidon |
 |---|---|---|---|---|---|---|
 | 50          | 2     | 1      |  1           | 1      |   1       |  1        |
@@ -1074,6 +1077,25 @@ Specialization points allow a caster to excel further at a spellcasting group. Y
 | 90          | 1     | 1      |  0           | 0      |   0       |  0        |
 | 100         | 2     | 1      |  1           | 1      |   1       |  1        |
 | total       | 10    | 6      |  4           | 4      |   4       |  4        |
+
+### Specialization Table
+Mages are the only class that can max every spell group with specialization, all other classes can only put 2 points in a group.
+
+| group name | specialization points available |
+| attack | 2 (adept) |
+| benedictions | 2 (adept) |
+| combat | 5 (arcanist) |
+| charlatan spells | 2 (adept) |
+| curative | 2 (adept) |
+| detection | 2 (adept) |
+| draconian | 5 (arcanist) |
+| enhancement | 5 (arcanist) |
+| harmful | 2 (adept) |
+| healing | 2 (adept) |
+| illusion | 1 (initiate) |
+| maladictions | 5 (arcanist) |
+| protective | 5 (arcanist) |
+| weather | 5 (arcanist) |
 
 ### Specialization Unlockable Table
 Different classes have the ability to put more specialization points into certain groups.
