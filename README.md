@@ -66,6 +66,12 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
+  - [Quest Buffer](#quest-buffer)
+  - [Mining Loop](#mining-loop)
+  - [Armorsmith Fixing Loop](#armorsmith-fixing-loop)
+  - [Armorsmith Training Loop](#armorsmith-training-loop)
+  - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
+  - [Poison Training Loop](#poison-training-loop)
 
 ## Directions
 All `directions` start from `Market Square` within `Naerlan`.
@@ -1517,6 +1523,7 @@ The following are some basic helpful commands:
 #alias {sleep} {stand;take blanket pocket;drop blanket;r blanket;slow;sl}
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
 ```
+#### Quest Buffer
 Here is a script that buffs your character right before a quest:
 (you need to either add the 'buff' alias or replace it with commands for buffing delimited by semicolons)
 ```
@@ -1542,6 +1549,7 @@ Here is a script that buffs your character right before a quest:
   #line gag;
 }
 ```
+#### Mining Loop
 The following is a mining loop:
 ```
 /* mining loop - triggers only work when starting w/ td */
@@ -1567,6 +1575,7 @@ The following is a mining loop:
 #action {You think there might be ore here but you do not see a vein to mine.}{ mine; }
 #action {You search for a vein of metal in this tunnel but cannot locate one.}{ tunnel $tunnelDirection; }
 ```
+#### Armorsmith Fixing Loop
 The following is an automated repair command for armorsmith. Merely type `f itemname` and it'll fix it provided you have a hammer and wool in your inventory.
 ```
 #var {armorsmithRepairItem} {none}
@@ -1578,6 +1587,7 @@ The following is an automated repair command for armorsmith. Merely type `f item
 #action {You fail to remove the blemishes}{ readjust $armorsmithRepairItem; }
 #action {You work with a hammer and anvil to improve the condition}{ repair $armorsmithRepairItem; }
 ```
+#### Armorsmith Training Loop
 The following is an automated armorsmith trainer. Merely get a bunch of `silver` items from `Mirage City` and then make sure you have a hammer, file and tongs in you inventory and type `m 2.silver` and it'll smelt everything down and make boots with nothing left over when finished. Because it's action-based you can still communicate over channels while it's running. Once you've mastered everything don't use this, use the automated crafting loop.
 ```
 #var {armorsmithSmeltItem} {none};
@@ -1623,6 +1633,7 @@ The following is an automated armorsmith trainer. Merely get a bunch of `silver`
 #action {You quench the form of the} { hold file; finish $armorsmithFormItem; }
 #action {You file down} { smelt $armorsmithOre; }
 ```
+#### Armorsmith Crafting Loop
 The following is a completely automated crafting loop. It smelts failures and automatically restarts until it made an item or you're out of resources. Make sure you you have a hammer, file and tongs in your inventory as well as items to smelt. `m (item name to smelt) (target equip slot) (target level)`:
 ```
 /* smithing and smelting loop */
@@ -1695,5 +1706,18 @@ The following is a completely automated crafting loop. It smelts failures and au
   #var {armorsmithForming}{false};
   condition $armorsmithOre;
   #showme <138>+------+ <188>Finished $armorsmithFormItem<138> +------+;
+}
+```
+#### Poison Training Loop
+For classes that have 'cure poison' and 'poison', this is the fastest way to master both skills.
+```
+#var {farmState}{none};
+#action {You feel less sick}{c 'poison' alleus;#var {farmState}{none};}
+#action {You feel momentarily ill}{c 'poison' alleus;}
+#action {The poison in you is resistant}{c 'cure poison';}
+#action {You feel sick}{c 'cure poison' alleus;#var {farmState}{yes};}
+#action {You lost your concentration}{
+  #if {"$farmState"=="none"}{ c 'poison' alleus; }
+  #if {"$farmState"=="yes"}{ c 'cure poison' alleus; }
 }
 ```
