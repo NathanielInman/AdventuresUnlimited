@@ -73,6 +73,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [Armorsmith Training Loop](#armorsmith-training-loop)
     - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
     - [Poison Training Loop](#poison-training-loop)
+    - [Disease Training Loop](#disease-training-loop)
 
 ## Directions
 All `directions` start from `Market Square` within `Naerlan`.
@@ -1762,5 +1763,18 @@ For classes that have 'cure poison' and 'poison', this is the fastest way to mas
 #action {You lost your concentration}{
   #if {"$farmState"=="none"}{ c 'poison' alleus; }
   #if {"$farmState"=="yes"}{ c 'cure poison' alleus; }
+}
+```
+#### Disease Training Loop
+For classes that have 'cure disease' and 'plague', this is the fastest way to master both skills.
+```
+#var {farmState}{none};
+#action {Your sores vanish}{c 'plague' alleus;#var {farmState}{none};}
+#action {You feel momentarily ill}{c 'plague' alleus;}
+#action {The curse of the plague on you is resistant}{c 'cure disease';}
+#action {You scream in agony as plague}{c 'cure disease' alleus;#var {farmState}{yes};}
+#action {You lost your concentration}{
+  #if {"$farmState"=="none"}{ c 'plague' alleus; }
+  #if {"$farmState"=="yes"}{ c 'cure disease' alleus; }
 }
 ```
