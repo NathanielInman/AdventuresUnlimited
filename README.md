@@ -66,12 +66,12 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
-  - [Quest Buffer](#quest-buffer)
-  - [Mining Loop](#mining-loop)
-  - [Armorsmith Fixing Loop](#armorsmith-fixing-loop)
-  - [Armorsmith Training Loop](#armorsmith-training-loop)
-  - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
-  - [Poison Training Loop](#poison-training-loop)
+    - [Quest Buffer](#quest-buffer)
+    - [Mining Loop](#mining-loop)
+    - [Armorsmith Fixing Loop](#armorsmith-fixing-loop)
+    - [Armorsmith Training Loop](#armorsmith-training-loop)
+    - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
+    - [Poison Training Loop](#poison-training-loop)
 
 ## Directions
 All `directions` start from `Market Square` within `Naerlan`.
@@ -1507,7 +1507,17 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 
 ## MUD Client Configuration
 ### Tintin++
-The following are some basic helpful commands:
+The most important aspect of tintin++ scripting is knowing `#help` and `#help <command>`, outside of that
+it's recommended to keep different scripts in different files that way you can change the file, save it and
+then reload it into the active AU session without having to exit/re-enter. 
+
+In order to reload a file you merely `#read $filename`, if you removed different aliases or actions you may
+have to remove them from active memory of tintin using the `#kill all` command and reload all the files
+you require. In such cases, it makes the most sense to have a single tintin file that loads all other files
+with `#read` commands so you only have to reload that one file that calls out to all the others like branches
+of a tree.
+
+Outside of that information, here are some basic helpful commands:
 ```
 // log into au when tt++ opens automatically
 #event {PROGRAM START} {#ses AdventuresUnlimited tharel.net 5005;y;####USERNAME####;####PASSWORD####;y}
