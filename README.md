@@ -1082,6 +1082,7 @@ Mages are the only class that can max a spell group with specialization, all oth
 Mages are the only class that can max every spell group with specialization, all other classes can only put 2 points in a group.
 
 | group name | specialization points available |
+|---|---|
 | attack | 2 (adept) |
 | benedictions | 2 (adept) |
 | combat | 5 (arcanist) |
