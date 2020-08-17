@@ -1074,9 +1074,9 @@ Putting specialization points into certain groups may unlock new versions of spe
 | name | root spell | rank required | group |
 | --- | --- | --- | --- |
 | shocklash | shocking grasp | 1 | combat |
-| vision shield | cure blindness | 1 | curative |
-| divine vitality | cure disease | 1 | curative |
-| divine fortitude | cure poison | 1 | curative |
+| vision shield | cure blindness | 2 | curative |
+| divine vitality | cure disease | 2 | curative |
+| divine fortitude | cure poison | 2 | curative |
 | bestial strength | giant strength | 1 | enhancement |
 | elemental strength | giant strength | 3 | enhancement |
 | dragon strength | giant strength | 5 | enhancement |
