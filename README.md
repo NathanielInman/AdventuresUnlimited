@@ -63,7 +63,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Hitroll](#hitroll)
   - [Armor Class](#armor-class)
   - [Magic Saves](#magic-saves)
-  - [Runes](#runes-and-weapon-effects)
+  - [Runes And Weapon Effects](#runes-and-weapon-effects)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
