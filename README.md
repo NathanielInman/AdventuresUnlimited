@@ -1663,6 +1663,7 @@ The following is an automated armorsmith trainer. Merely get a bunch of `silver`
 #var {armorsmithOre}{unknown};
 #var {armorsmithPoundMax}{100};
 #var {armorsmithPoundCur}{0};
+#action {You fail to smelt}{smelt $armorsmithSmeltItem; }
 #alias {m %1}{ #var {armorsmithSmeltItem}{ %1 };smelt $armorsmithSmeltItem; }
 #action {You combine your ore and now have %1 pounds of raw %2.}{
   #var {armorsmithOreWeight} { %1 };
