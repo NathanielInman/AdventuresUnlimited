@@ -63,6 +63,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Hitroll](#hitroll)
   - [Armor Class](#armor-class)
   - [Magic Saves](#magic-saves)
+  - [Runes](#runes-and-weapon-effects)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
@@ -1502,6 +1503,28 @@ Things that affect saves:
   - berserk provides an *immense* bonus to magic saves
   - level difference between an enemy and player provides a *huge* difference
   - you will always have at least a 5% chance to save, with a maximum of 95%
+
+### Runes And Weapon Effects
+| name | damage range |
+| --- | --- |
+| small flaming rune | from 1 to level/4+1, chance to blind with "fire breath" & -4 hitroll | 
+| large flaming rune | from 3 to level/2+3, chance to blind with "fire breath" & -4 hitroll |
+| small frost rune | from 1 to level/6+2, chance to freeze with "chill touch" & -1 str |
+| large frost rune | from 3 to level/3+5, chance to freeze with "chill touch" & -1 str |
+| small water rune | from 1 to level/4+1, chance to add 2 to level damage as drowning |
+| large water rune | from 1 to level/3+5, chance to add 2 to level damage as drowning |
+| small lightning rune | from 1 to level/5+2, chance to daze |
+| large lightning rune | from 3 to level/2+6, chance to daze | 
+| small air rune | from 1 to level/4+1, chance to knock opponent out of room with cyclone |
+| large air rune | from 3 to level/2+3, chance to knock opponent out of room with cyclone |
+| small earth rune | from 1 to level/4+1, chance to knockdown |
+| large earth rune | from 3 to level/2+3, chance to knockdown |
+| small acid rune | from 1 to level/4+1, chance to add from 2 to level damage as acid |
+| large acid rune | from 5 to level/2+8, chance to add from 2 to level damage as acid |
+| vampiric | from 1 to level/5+1 lifesteal, 20% to lower alignment |
+| vorpal | from 1 to level/7+1 manasteal |
+| holy | 17% to deal from 1 to level+2 against evil |
+| unholy | 17% to deal from 1 to level+2 against good |
 
 ## Quest Rewards
 | name | cost |
