@@ -70,6 +70,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [TinTin++](#tintin)
     - [Quest Buffer](#quest-buffer)
     - [Mining Loop](#mining-loop)
+    - [Mining Repair Loop](#mining-repair-loop)
     - [Armorsmith Fixing Loop](#armorsmith-fixing-loop)
     - [Armorsmith Training Loop](#armorsmith-training-loop)
     - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
@@ -1642,6 +1643,23 @@ The following is a mining loop:
 #action {You fail to mine the ore from the vein}{ mine; }
 #action {You think there might be ore here but you do not see a vein to mine.}{ mine; }
 #action {You search for a vein of metal in this tunnel but cannot locate one.}{ tunnel $tunnelDirection; }
+```
+#### Mining Repair Loop
+`note`: This may interfere with a armorsmithing loop due to a certain action.
+```
+#var {minerRepairItem}{none}
+#action {A dark-trimmed %1 falls to the floor}{ take %1; }
+#alias {fm %1}{ reform %1; #var {minerRepairItem}{%1}; }
+#action {You slip with the hammer and}{ reform $minerRepairItem; }
+#action {You work with a hammer and anvil to improve the condition}{ reform $minerRepairItem; }
+#action {This item needs to be refined}{ refine $minerRepairItem; }
+#action {You slip with the steel wool and ding}{ refine $minerRepairItem; }
+#action {You refine the dings from}{ refine $minerRepairItem; }
+#action {This item needs to be rubbed}{ rub $minerRepairItem; }
+#action {You rub a scratch out of}{ rub $minerRepairItem; }
+#action {You fail to rub a scratch}{ rub $minerRepairItem; }
+#action {You cannot find scratches}{ destroy $minerRepairItem; fm $minerRepairItem; }
+#action {You cannot find any blemishes}{ destroy $minerRepairItem; fm $minerRepairItem; }
 ```
 #### Armorsmith Fixing Loop
 The following is an automated repair command for armorsmith. Merely type `f itemname` and it'll fix it provided you have a hammer and wool in your inventory.
