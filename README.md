@@ -68,6 +68,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
+    - [Chat Logging](#chat-logging)
     - [Quest Buffer](#quest-buffer)
     - [Mining Loop](#mining-loop)
     - [Mining Repair Loop](#mining-repair-loop)
@@ -1591,6 +1592,17 @@ Outside of that information, here are some basic helpful commands:
 // some basic aliases, this is for a quickling - hence `haste` and `slow`
 #alias {sleep} {stand;take blanket pocket;drop blanket;r blanket;slow;sl}
 #alias {wake} {rest;haste;stand;take blanket;put blanket pocket;l}
+```
+#### Chat Logging
+You can log your chat to a separate file like this:
+```
+#action {[\s?\s]}{ #line log au.communications;#line gag; }
+#action {^[{IC|Auction|Music|Question|Answer|OOC|Grats|TOT|Newbie|WAR|Clan}]}{ #line log au.communications;#line gag; }
+#action {OOCly }{ #line log au.communications;#line gag; }
+```
+Then in another pane in tmux you can just tail your chat to keep it separate:
+```
+tail -f ./au.communications
 ```
 #### Quest Buffer
 Here is a script that buffs your character right before a quest:
