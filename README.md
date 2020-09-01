@@ -75,6 +75,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [Armorsmith Fixing Loop](#armorsmith-fixing-loop)
     - [Armorsmith Training Loop](#armorsmith-training-loop)
     - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
+    - [Weaponsmith Fixing Loop](#weaponsmith-fixing-loop)
     - [Poison Training Loop](#poison-training-loop)
     - [Disease Training Loop](#disease-training-loop)
     - [Blind Training Loop](#blind-training-loop)
@@ -1806,6 +1807,53 @@ The following is a completely automated crafting loop. It smelts failures and au
   condition $armorsmithOre;
   #showme <138>+------+ <188>Finished $armorsmithFormItem<138> +------+;
 }
+```
+#### Weaponsmith Fixing Loop
+Note that this may interfere with mining or armorsmith loops.
+```
+/* weaponsmith repair loop */
+#var {weaponRepairItem}{none}
+#alias {f %1}{ reconstruct %1; #var {weaponRepairItem}{%1}; }
+#action {You work with a hammer and anvil to improve the condition}{ reconstruct $weaponRepairItem; }
+#action {This item needs to be reconditioned}{ recondition $weaponRepairItem; }
+#action {You slip with the hammer and miss}{ reconstruct $weaponRepairItem; }
+#action {This item needs regular maintenance}{ maintain $weaponRepairItem; }
+#action {You fail to remove the blemishes from}{ maintain $weaponRepairItem; }
+#action {You remove a few blemishes from}{ maintain $weaponRepairItem; }
+
+/* mirage weapon fix farming */
+#var {weaponRepairCurrent}{none}
+#alias {fw}{ f axe; #var {weaponRepairCurrent}{axe}; }
+#action {What weapon did you wish to maintain?}{
+  #if {"$weaponRepairCurrent" == "axe"}{
+    #var {weaponRepairCurrent}{spear};
+    f spear;
+  };
+  #elseif {"$weaponRepairCurrent" == "spear"}{
+    #var {weaponRepairCurrent}{mace};
+    f mace;
+  };
+  #elseif {"$weaponRepairCurrent" == "mace"}{
+    #var {weaponRepairCurrent}{staff};
+    f staff;
+  };
+  #elseif {"$weaponRepairCurrent" == "staff"}{
+    #var {weaponRepairCurrent}{flail};
+    f flail;
+  };
+  #else {
+    #var {weaponRepairCurrent}{none};
+    #showme <138>+------+ <188>Done Fixing Mirage<138> +------+;
+  }
+}
+
+/* mirage weapon farming */
+#action {       * a damaged flail}{ take flail corpse; }
+#action {       * a small bronze spear}{ take spear corpse; }
+#action {       * a steel mace}{ take mace corpse; }
+#action {       * a bronze staff}{ take staff corpse; }
+#action {       * a steel axe}{ take axe corpse; }
+#action {       * a large broadsword}{ take broad corpse; }
 ```
 #### Poison Training Loop
 For classes that have 'cure poison' and 'poison', this is the fastest way to master both skills.
