@@ -63,7 +63,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
   - [Hitroll](#hitroll)
   - [Armor Class](#armor-class)
   - [Magic Saves](#magic-saves)
-  - [Runes And Weapon Effects](#runes-and-weapon-effects)
+  - [Poisons, Runes And Weapon Effects](#poisons-runes-and-weapon-effects)
 - [Quest Rewards](#quest-rewards)
 - [Prompts](#prompts)
 - [MUD Client Configuration](#mud-client-configuration)
@@ -1507,9 +1507,14 @@ Things that affect saves:
   - level difference between an enemy and player provides a *huge* difference
   - you will always have at least a 5% chance to save, with a maximum of 95%
 
-### Runes And Weapon Effects
+### Poisons, Runes And Weapon Effects
 | name | damage range |
 | --- | --- |
+| poison spell | -1 str and poison effect |
+| vinesap poison | -2 str and poison effect |
+| deepsbreath poison | -2 dex and slow effect |
+| bloodmoss poison | -3 str and plague effect |
+| tirimic poison | -2 dex and blind effect |
 | small flaming rune | from 1 to level/4+1, chance to blind with "fire breath" & -4 hitroll | 
 | large flaming rune | from 3 to level/2+3, chance to blind with "fire breath" & -4 hitroll |
 | small frost rune | from 1 to level/6+2, chance to freeze with "chill touch" & -1 str |
