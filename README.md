@@ -76,6 +76,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
     - [Armorsmith Training Loop](#armorsmith-training-loop)
     - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
     - [Weaponsmith Fixing Loop](#weaponsmith-fixing-loop)
+    - [Weaponsmith Training Loop](#weaponsmith-training-loop)
     - [Poison Training Loop](#poison-training-loop)
     - [Disease Training Loop](#disease-training-loop)
     - [Blind Training Loop](#blind-training-loop)
@@ -1859,6 +1860,55 @@ Note that this may interfere with mining or armorsmith loops.
 #action {       * a bronze staff}{ take staff corpse; }
 #action {       * a steel axe}{ take axe corpse; }
 #action {       * a large broadsword}{ take broad corpse; }
+```
+
+#### Weaponsmith Training Loop
+The best way to start this loop is taking all your silver items from `mirage` from your pocket and then doing `m 2.silver`. Daggers are the best way to train weaponsmith even though they're 30lb of metal to craft. This will take a lot longer then armorsmith.
+```
+/* weaponsmith training loop */
+#var {armorsmithSmeltItem} {none};
+#var {armorsmithFormItem}{dagger};
+#var {armorsmithOre}{unknown};
+#var {armorsmithPoundMax}{100};
+#var {armorsmithPoundCur}{0};
+#action {You fail to smelt}{smelt $armorsmithSmeltItem; }
+#alias {m %1}{ #var {armorsmithSmeltItem}{ %1 };smelt $armorsmithSmeltItem; }
+#action {You combine your ore and now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight < 30}{ smelt $armorsmithSmeltItem; };
+  #if {$armorsmithOreWeight > 29}{
+    #var {armorsmithOre}{ %2 };
+    hold tongs;form $armorsmithOre weapon $armorsmithFormItem;
+  }
+}
+#action {You now have %1 pounds of raw %2.}{
+  #var {armorsmithOreWeight} { %1 };
+  #if {$armorsmithOreWeight < 30}{ smelt $armorsmithSmeltItem; };
+  #if {$armorsmithOreWeight > 29}{
+    #var {armorsmithOre}{ %2 };
+    hold tongs;form $armorsmithOre weapon $armorsmithFormItem;
+  }
+}
+#action {You fail to form} { smelt ruined; }
+#action {You have broken the form} { smelt broken; }
+#action {You have cracked the form} { smelt broken; }
+#action {You filed a large gash into} { smelt $armorsmithSmeltItem; }
+#action {You use your tongs and the anvil to form} {
+  hold hammer;
+  #var {armorsmithPoundCur} { 0 };
+  hammer $armorsmithFormItem;
+}
+#action {* CLANG! *} {
+  #math {armorsmithPoundCur} {$armorsmithPoundCur + 1};
+  #if {$armorsmithPoundCur < $armorsmithPoundMax} {
+    hold hammer; hammer $armorsmithFormItem;
+  }
+  #if {$armorsmithPoundCur == $armorsmithPoundMax} {
+    hold tongs;quench $armorsmithFormItem;
+  }
+}
+#action {You quench the form of the} { hold file; file $armorsmithFormItem; }
+#action {You file down} { smelt $armorsmithOre; }
 ```
 #### Poison Training Loop
 For classes that have 'cure poison' and 'poison', this is the fastest way to master both skills.
