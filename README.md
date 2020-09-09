@@ -69,6 +69,7 @@ A collection of resources and information surrounding the Adventures Unlimited M
 - [MUD Client Configuration](#mud-client-configuration)
   - [TinTin++](#tintin)
     - [Chat Logging](#chat-logging)
+    - [Idle Toggler](#idle-toggler)
     - [Quest Buffer](#quest-buffer)
     - [Mining Loop](#mining-loop)
     - [Mining Repair Loop](#mining-repair-loop)
@@ -1610,6 +1611,21 @@ You can log your chat to a separate file like this:
 Then in another pane in tmux you can just tail your chat to keep it separate:
 ```
 tail -f ./au.communications
+```
+#### Idle Toggler
+When idling it's usually best to make sure you're sleeping so you don't drop held items. Drinking from your flask is also a good idea. This toggler requires `drinkflask` macro and a file called `au.communications` you're using for a separate chat panel. You type `idle` to go afk and `noidle` to stop being idle. This will keep an `afk` flag on you while preventing your from logging out. It's usually more respectful to have the `afk` flag so others know when you are actually at the keyboard.
+```
+/* idle toggler */
+#alias {idle}{
+  #ticker {wholist}{board;who;stand;drinkflask;sleep;afk;}{120};
+  #line log au.communications --idle start--;
+  afk;
+}
+#alias {noidle}{
+  #line log au.communications --idle end--;
+  replay;
+  #ticker {wholist}{ #nop; }{120};
+}
 ```
 #### Quest Buffer
 Here is a script that buffs your character right before a quest:
