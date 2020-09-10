@@ -1654,30 +1654,124 @@ Here is a script that buffs your character right before a quest:
 }
 ```
 #### Mining Loop
-The following is a mining loop:
+There is no substitute for mining manually. Keep in mind that even though much of this is automated, you must continue to man the keyboard while this is ongoing or you are playing against the terms of service and will get in trouble. It merely makes your life easier and allows you to talk with others in the game and watch youtube instead of typing `mine` for the thousandth time. It's best to have a bunch of `clear potions` from heishaer in your `pocket` so as to `refresh` your waking state automatically during the process, the loop does this automatically if those exist. You can adjust the actions to remove the `score` trigger that uses `quaf clear` and replace it with `cast refresh` if you have the spell. Mining is hard work! This will continue to mine putting all xedalium into your pocket and donating everything else to the temple pit.
 ```
 /* mining loop - triggers only work when starting w/ td */
 #var {tunnelDirection}{down}
 #var {mining}{false}
-#alias {td}{ #var {tunnelDirection}{down}; #var {mining}{true}; tunnel $tunnelDirection; }
+#alias {tdd}{
+  #var {mining}{false};
+  autoexit;autobrief;automap;
+  recall;
+}
+#alias {td}{
+  #var {tunnelDirection}{down};
+  #var {mining}{true};
+  autoexit;autobrief;automap;
+  order bob recall;
+  tunnel $tunnelDirection;
+}
+#action {Underground Tunnel}{ #line gag; }
 #action {You need to hold a pickaxe in order to dig}{
   hold pickaxe;
-  #if {"$mining" == "true"}{ tunnel $tunnelDirection; };
+  #if {"$mining" == "true"}{
+    tunnel $tunnelDirection;
+    #showme <108>(tunneling);
+    #line gag;
+  };
 }
-#action {You chip away at the walls making no pogress}{ #nop; }
+#action {You feel rested.}{
+  #if {"$mining" == "true"}{
+    take clear pocket;quaf clear;
+  };
+}
+#action {You are a bit tired.}{
+  #if {"$mining" == "true"}{
+    take clear pocket;quaf clear;
+  };
+}
+#action {You feel fatigued.}{
+  #if {"$mining" == "true"}{
+    take clear pocket;quaf clear;
+  };
+}
+#action {You are tired.}{
+  #if {"$mining" == "true"}{
+    take clear pocket;quaf clear;
+  };
+}
+#action {You are asleep on your feet!}{
+  #var {mining}{false};
+  rr;sl;idle;
+}
+#action {You chip away at the walls making no progress}{
+  score;
+  tunnel $tunnelDirection;
+  #showme <108>(tunneling-retry)
+}
 #action {You chip at the walls}{
   #if {"$mining" == "true"}{
     #var {tunnelDirection}{south};
     tunnel $tunnelDirection;
+    #showme <108>(tunneling);
+    #line gag;
   };
 }
-#action {You chip away at the walls making very little progress}{ #if {"$mining" == "true"}{tunnel $tunnelDirection;}; }
-#action {You tunnel}{ #if {"$mining" == "true"}{$tunnelDirection; mine; }; }
-#action {You chip off chunks of xedalium}{ take xed;put xed sat; }
-#action {You chip off chunks of %1}{ take chunk;donate chunk clan;drop chunk;mine; }
-#action {You fail to mine the ore from the vein}{ mine; }
-#action {You think there might be ore here but you do not see a vein to mine.}{ mine; }
-#action {You search for a vein of metal in this tunnel but cannot locate one.}{ tunnel $tunnelDirection; }
+#action {You hammer at the tunnel walls with a steel pickaxe.}{ #line gag; }
+#action {You chip away at the walls making very little progress}{
+  #if {"$mining" == "true"}{
+    tunnel $tunnelDirection;
+    #showme <108>(tunneling-retry)
+  };
+  #line gag;
+}
+#action {It won't fit.}{
+  #if {"$mining" == "true"}{
+    donate chunk temple;
+    drop chunk; /* if temple is full too */
+  };
+}
+#action {You tunnel %1.}{
+  #if {"$mining" == "true"}{
+    $tunnelDirection;
+    score; /* allow potential refresh via clear potion quaf */
+    mine;
+    #showme <108>(move %1);
+    #line gag;
+  };
+}
+#action {You chip off chunks of %1 from the vein.}{
+  #if {"%1" == "xedalium"} {
+    take chunk; put chunk pocket;mine;
+    #showme <178>+------+ <168> Xedalium Chunk! <178>+------+;
+    #line gag;
+  };
+  #else {
+    tunnel $tunnelDirection;
+    #showme <108>+------+ <048> %1 - Ignoring <108>+------+;
+    #line gag;
+  };
+}
+#action {You chip off part of the tunnel wall and find a %1 piece of %2.}{
+  take %2;donate %2 temple;
+  #showme <178>+------+ <158> %2 (%1)! <178>+------+;
+  mine;
+}
+#action {You fail to mine the ore from the vein}{
+  mine;
+  #showme <108>(mining-retry);
+  #line gag;
+}
+#action {You think there might be ore here but you do not see a vein to mine.}{
+  mine;
+  #showme <108>(mining-retry);
+  #line gag;
+}
+#action {You search for a vein of metal in this tunnel but cannot locate one.}{
+  tunnel $tunnelDirection;
+  #showme <108>(tunneling);
+  #line gag;
+}
 ```
 #### Mining Repair Loop
 `note`: This may interfere with a armorsmithing loop due to a certain action.
