@@ -1591,13 +1591,22 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 ![multiline prompt example](./multilinePromptExample.png)
 
 ```
-// next line is in-game command
-prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl] [%p ] [ %B ] [ %t ]%c
-
-// next lines is for tintin++ configuration of the same prompt
-#action {[%1/%2hp %3/%4mp %5/%6mv %11qp %12tnl] [%13] [%14] [%15]} {
-  #showme {<109>[<119>%1<109>/<019>%2<109>hp <159>%3<109>/<059>%4<109>mp <129>%5<109>/<029>%6<109>mv <019>%11<109>qp <019>%12<109>tnl] <019>%13 <119>%14}{-3};
-  #showme {<109>%15}{-2};
+#split 0 2
+#var {restedState}{none};
+#var {petState}{none};
+#action {[%1/%2hp %3/%4mp %5/%6mv %7qp %8tnl] [%9] [%10] [%11]} {
+  #format {restedState}{%p}{%11};
+  #format {petState}{%p}{%9};
+  #if {"$petState" == ""}{ #var {petState}{<109>No pet}; };
+  #else { #var {petState}{<109>Pet: <019>$petState}; };
+  #if {"$restedState" == "You are well rested."}{ #var {restedState}{<129>$restedState}; };
+  #if {"$restedState" == "You feel rested."}{ #var {restedState}{<149>$restedState}; };
+  #if {"$restedState" == "You are a bit tired."}{ #var {restedState}{<169>$restedState}; };
+  #if {"$restedState" == "You feel fatigued."}{ #var {restedState}{<159>$restedState}; };
+  #if {"$restedState" == "You are tired."}{ #var {restedState}{<139>$restedState}; };
+  #if {"$restedState" == "You are asleep on your feet!"}{ #var {restedState}{<119>$restedState}; };
+  #showme {<109>[<119>%1<109>/<019>%2<109>hp <159>%3<109>/<059>%4<109>mp <129>%5<109>/<029>%6<109>mv <019>%7<109>qp <019>%8<109>tnl] $petState <119>%10}{-3};
+  #showme {$restedState}{-2};
   #line gag;
 }
 ```
