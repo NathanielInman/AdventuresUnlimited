@@ -1563,7 +1563,9 @@ Things that affect saves:
 ## Prompts
 
 **Basic Prompt**
+
 ![basic prompt example](./basicPromptExample.png)
+
 ```
 // next line is in-game command
 prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl]{r%p {R%B%c
@@ -1573,7 +1575,9 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl]{r%p {R%B
 ```
 
 **Monk Prompt**
+
 ![monk prompt example](./monkPromptExample.png)
+
 ```
 // next line is in-game command
 prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql {r%P{Dqp {r%X{Dtnl]{r%p {R%B%c
@@ -1583,7 +1587,9 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 ```
 
 **Multiline Prompt**
+
 ![multiline prompt example](./multilinePromptExample.png)
+
 ```
 // next line is in-game command
 prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl] [%p ] [ %B ] [ %t ]%c
