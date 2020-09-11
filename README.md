@@ -1562,8 +1562,17 @@ Things that affect saves:
 
 ## Prompts
 
-**Monk Prompt**
+**Basic Prompt**
+![basic prompt example](./basicPromptExample.png)
+```
+// next line is in-game command
+prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl]{r%p {R%B%c
 
+// next line is for tintin++ configuration of the same prompt
+#prompt {[%1/%2hp %3/%4mp %5/%6mv %11qp %12tnl] %13} {<109>[<119>%1<109>/<019>%2<109>hp <159>%3<109>/<059>%4<109>mp <129>%5<109>/<029>%6<109>mv <019>%11<109>qp <019>%12<109>tnl]<119>%13<109>
+```
+
+**Monk Prompt**
 ![monk prompt example](./monkPromptExample.png)
 ```
 // next line is in-game command
@@ -1571,6 +1580,20 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 
 // next line is for tintin++ configuration of the same prompt
 #prompt {[%1/%2hp %3/%4mp %5/%6mv %7/%8chi %9qt %10ql %11qp %12tnl] %13 %14} {<109>[<119>%1<109>/<019>%2<109>hp <159>%3<109>/<059>%4<109>mp <129>%5<109>/<029>%6<109>mv <169>%7<109>/<069>%8<109>chi <139>%9<109>qt <039>%10<109>ql <019>%11<109>qp <019>%12<109>tnl] <119>%13<109> <119>%14}
+```
+
+**Multiline Prompt**
+![multiline prompt example](./multilinePromptExample.png)
+```
+// next line is in-game command
+prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl] [%p ] [ %B ] [ %t ]%c
+
+// next lines is for tintin++ configuration of the same prompt
+#action {[%1/%2hp %3/%4mp %5/%6mv %11qp %12tnl] [%13] [%14] [%15]} {
+  #showme {<109>[<119>%1<109>/<019>%2<109>hp <159>%3<109>/<059>%4<109>mp <129>%5<109>/<029>%6<109>mv <019>%11<109>qp <019>%12<109>tnl] <019>%13 <119>%14}{-3};
+  #showme {<109>%15}{-2};
+  #line gag;
+}
 ```
 
 ## MUD Client Configuration
@@ -1654,7 +1677,7 @@ Here is a script that buffs your character right before a quest:
 }
 ```
 #### Mining Loop
-There is no substitute for mining manually. Keep in mind that even though much of this is automated, you must continue to man the keyboard while this is ongoing or you are playing against the terms of service and will get in trouble. It merely makes your life easier and allows you to talk with others in the game and watch youtube instead of typing `mine` for the thousandth time. It's best to have a bunch of `clear potions` from heishaer in your `pocket` so as to `refresh` your waking state automatically during the process, the loop does this automatically if those exist. You can adjust the actions to remove the `score` trigger that uses `quaf clear` and replace it with `cast refresh` if you have the spell. Mining is hard work! This will continue to mine putting all xedalium into your pocket and donating everything else to the temple pit.
+There is no substitute for mining manually. Keep in mind that even though much of this is automated, you must continue to man the keyboard while this is ongoing or you are playing against the terms of service and will get in trouble. It merely makes your life easier and allows you to talk with others in the game and watch youtube instead of typing `mine` for the thousandth time. It's best to have a bunch of `clear potions` from heishaer in your `pocket` so as to `refresh` your waking state automatically during the process, the loop does this automatically if those exist. You can adjust the actions to remove the `score` trigger that uses `quaf clear` and replace it with `cast refresh` if you have the spell. Mining is hard work! This will continue to mine putting all xedalium into your pocket and donating everything else to the temple pit. If you have your rested state in your prompt then you can remove the `score` command as it will process automatically while you're mining.
 ```
 /* mining loop - triggers only work when starting w/ td */
 #var {tunnelDirection}{down}
