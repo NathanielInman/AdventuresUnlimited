@@ -9,6 +9,7 @@ This powerful MUD client is very easy to script for. This page is a collection o
 - [Quest Buffer](#quest-buffer)
 - [Mining Loop](#mining-loop)
 - [Mining Repair Loop](#mining-repair-loop)
+- [Mining Smelting Loop](#mining-smelting-loop)
 - [Armorsmith Fixing Loop](#armorsmith-fixing-loop)
 - [Armorsmith Training Loop](#armorsmith-training-loop)
 - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
@@ -283,6 +284,38 @@ There is no substitute for mining manually. Keep in mind that even though much o
 #action {You fail to rub a scratch}{ rub $minerRepairItem; }
 #action {You cannot find scratches}{ destroy $minerRepairItem; fm $minerRepairItem; }
 #action {You cannot find any blemishes}{ destroy $minerRepairItem; fm $minerRepairItem; }
+```
+## Mining Smelting Loop
+This loop starts with `m <item to smelt, usually 2.xed> <size, usually 30. see required ore table>`.
+It will smelt until the desired chunk size is acquired and then it will throw it in a dimensional pocket.
+`note`: This may interfere with armorsmithing or weaponsmithing crafting loops.
+```
+/* smelting chunks loop */
+#var {smeltingItem}{none};
+#var {smeltingSize}{40};
+#var {smeltingWeight}{0};
+#alias {m %1 %2}{
+  #var {smeltingItem}{%1};
+  #var {smeltingSize}{%2};
+  #showme <138>+------+ <188>Starting smelting $smeltingItem ($smeltingSize lb chunks)<138> +------+;
+  smelt $smeltingItem;
+}
+#action {You combine your ore and now have %1 pounds of raw %2.}{
+  #var {smeltingWeight}{%1};
+  #if {$smeltingWeight < $smeltingSize}{ smelt $smeltingItem; };
+  #if {$smeltingWeight >= $smeltingSize}{
+    put %2 pocket;
+    smelt $smeltingItem;
+  }
+}
+#action {You now have %1 pounds of raw %2.}{
+  #var {smeltingWeight}{%1};
+  #if {$smeltingWeight < $smeltingSize}{ smelt $smeltingItem; };
+  #if {$smeltingWeight >= $smeltingSize}{
+    put %2 pocket;
+    smelt $smeltingItem;
+  }
+}
 ```
 ## Armorsmith Fixing Loop
 The following is an automated repair command for armorsmith. Merely type `f itemname` and it'll fix it provided you have a hammer and wool in your inventory.
