@@ -351,6 +351,7 @@ The following is the locations of the tradesguilds:
 | spear | 45 | weaponsmithing |
 
 #### Materials Table
+:construction: **this section is still currently under construction, any help appreciated** :construction:
 
 Strength And Magic Percentages:
 ```
@@ -366,63 +367,63 @@ Rarity Percentages:
 
 | name | type | strength | magic | rarity | other |
 | --- | --- | --- | --- | --- | --- |
-| lead | metal | adequate | incompetent | everywhere |
-| gold | metal | adequate | adequate | abundant |
+| lead | metal | adequate | incompetent | everywhere | Mined equally in Kaer Tzoun & Du'Rahath |
+| gold | metal | adequate | adequate | abundant | Best mined in Hagarth followed by Pyrainn Mountains |
 | pewter | metal | adequate | adequate | everywhere |
-| silver | metal | adequate | passable | abundant |
-| copper | metal | adequate | lousy | abundant |
-| brass | metal | accomplished | incompetent | very abundant |
-| electrum | metal | accomplished | outstanding | very common |
-| bronze | metal | accomplished | lousy | abundant |
-| platinum | metal | accomplished | accomplished | abundant |
-| iron | metal | accomplished | atrocious | very abundant |
-| steel | metal | accomplished | adequate | very abundant |
-| meteorite | metal | outstanding | adequate | very abundant |
-| mithril | metal | outstanding | accomplished | very common |
-| adamantite | metal | outstanding | exceptional | very common |
-| silvite | metal | outstanding | accomplished | very common |
-| cold steel | metal | exceptional | exceptional | common |
-| irlimnite | metal | exceptional | atrocious | very abundant |
-| uulayilium | metal | exceptional | exceptional | common |
-| qyarelite | metal | exceptional | exceptional | barely uncommon |
+| silver | metal | adequate | passable | abundant | Mined in Drow Mines |
+| copper | metal | adequate | lousy | abundant | Best mined in Drow Mines followed by Hagarth or Kaer Tzoun |
+| brass | metal | accomplished | incompetent | very abundant | Mined in The Western Road |
+| electrum | metal | accomplished | outstanding | very common | Best mined in Du'Rahath followed by Fireblast Mountains |
+| bronze | metal | accomplished | lousy | abundant | Mined in The Stone Quarry |
+| platinum | metal | accomplished | accomplished | abundant | Mined equally in The Western Road or Mines of Naol'xyn |
+| iron | metal | accomplished | atrocious | very abundant | Mined in Lost Kingdoms or Pyrainn Mountains |
+| steel | metal | accomplished | adequate | very abundant | Best mined in Drow Mines followed by Pyrainn Mountains |
+| meteorite | metal | outstanding | adequate | very abundant | Mined equally in The Mines of Markov or Du'Rahath |
+| mithril | metal | outstanding | accomplished | very common | Mined equally in Mines of Noa'xyn and Lost Kingdoms |
+| adamantite | metal | outstanding | exceptional | very common | Mined equally in Fireblast Mountains & Lost Kingdoms |
+| silvite | metal | outstanding | accomplished | very common | Best mined in Hagarth followed by The Mines of Markov |
+| cold steel | metal | exceptional | exceptional | common | Best mined in Mines of Noal'xyn followed by Kaer Tzoun |
+| irlimnite | metal | exceptional | atrocious | very abundant | Mined in The Mines of Markov |
+| uulayilium | metal | exceptional | exceptional | common | Mined in The Western Road |
+| qyarelite | metal | exceptional | exceptional | barely uncommon | Mined in The Stone Quarry |
 | zeririte | metal | exceptional | exceptional | uncommon |
-| xedalium | metal | masterful | masterful | kinda rare |
-| amethyst | mineral | accomplished | passable | very abundant | minor energy resistance
-| glass | mineral | adequate | atrocious | everywhere |
+| xedalium | metal | masterful | masterful | kinda rare | Mined in Pyrainn Mountains |
+| amethyst | mineral | accomplished | passable | very abundant | minor energy resistance, best mined in The Western Road |
+| glass | mineral | adequate | atrocious | everywhere | Mined in Pyrainn Mountains or Kaer Tzoun |
 | clay | mineral | adequate | incompetent | everywhere |
-| diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance
-| ebony | mineral | accomplished | passable | very abundant | 
+| diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance, best mined in The Mines of Markov followed by Pyrainnn Mountains |
+| ebony | mineral | accomplished | passable | very abundant | Mined in The Stone Quarry |
 | emerald | mineral | accomplished | atrocious | abundant | moderate poison resistance
-| garnet | mineral | adequate | exceptional | very common | moderate mental resistance
-| gem | mineral | adequate | adequate | very abundant |
+| garnet | mineral | adequate | exceptional | very common | moderate mental resistance, mined in The Mines of Markov |
+| gem | mineral | adequate | adequate | very abundant | Mined in Du'Rahath |
 | granite | mineral | adequate | atrocious | everywhere |
 | ivory | mineral | adequate | outstanding | very abundant |
-| jade | mineral | adequate | accomplished | abundant | lesser acid resistance
-| marble | mineral | adequate | incompetent | everywhere |
-| obsidian | mineral | adequate | adequate | very abundant |
-| onyx | mineral | adequate | incompetent | abundant | minor holy resistance
-| opal | mineral | accomplished | accomplished | very common | minor light resistance
-| pearl | mineral | accomplished | passable | very abundant |
-| pyrite | mineral | accomplished | lousy | very abundant | moderate iron resistance
-| quartz | mineral | accomplished | accomplished | very common | minor magic resistance
-| sapphire | mineral | accomplished | adequate | very common | lesser fire resistance
-| ruby | mineral | outstanding | adequate | very common | moderate cold resistance
-| stone | mineral | accomplished | passable | very abundant |
-| amber | mineral | lousy | very abundant | very common | greater energy resistance
-| aquamarine | mineral | adequate | accomplished | very common | minor drowning resistance
+| jade | mineral | adequate | accomplished | abundant | lesser acid resistance, mined in Mines of Noal'xyn |
+| marble | mineral | adequate | incompetent | everywhere | Best mined in Lost Kingdoms followed by Kaer Tzoun |
+| obsidian | mineral | adequate | adequate | very abundant | Mined in Fireblast Mountains |
+| onyx | mineral | adequate | incompetent | abundant | minor holy resistance, mined in The Drow Mines |
+| opal | mineral | accomplished | accomplished | very common | minor light resistance, mined in The Mines of Markov |
+| pearl | mineral | accomplished | passable | very abundant | 
+| pyrite | mineral | accomplished | lousy | very abundant | moderate iron resistance, Best mined in The Drow Mines or Du'Rahath, followed by Kaer Tzoun or Pyrainn Mountains |
+| quartz | mineral | accomplished | accomplished | very common | minor magic resistance, mined in The Drow Mines |
+| sapphire | mineral | accomplished | adequate | very common | lesser fire resistance, mined in The Mines of Noal'xyn |
+| ruby | mineral | outstanding | adequate | very common | moderate cold resistance, best mined in Lost Kingdoms followed by Pyrainn Mountains |
+| stone | mineral | accomplished | passable | very abundant | best mined in Mines of Noal'xyn followed by Kaer Tzoun |
+| amber | mineral | lousy | very abundant | very common | greater energy resistance, mined in The Western Road |
+| aquamarine | mineral | adequate | accomplished | very common | minor drowning resistance, mined in Fireblast Mountains |
 | azurite | mineral | passable | lousy | very common | extreme iron resistance, minor magic vulnerability
 | beryl | mineral | accomplished | accomplished | common | extreme holy resistance
 | chrysoberyl | mineral | accomplished | accomplished | common | moderate mental resistance
-| citrine | mineral | accomplished | atrocious | abundant | moderate sound resistance
+| citrine | mineral | accomplished | atrocious | abundant | moderate sound resistance, mined in Kaer Tzoun |
 | heliodor | mineral | accomplished | exceptional | barely uncommon | minor fire vulnerability, extreme cold resistance
 | lapis | mineral | adequate | adequate | very common | moderate fire resistance, minor cold vulnerability
-| moonstone | mineral | adequate | exceptional | barely uncommon | extreme silver resistance
+| moonstone | mineral | adequate | exceptional | barely uncommon | extreme silver resistance, mined in The Western Road |
 | morganite | mineral | accomplished | adequate | common | lesser magic resistance
 | olivine | mineral | adequate | outstanding | common | lesser fire resistance
 | spinel | mineral | accomplished | accomplished | adequate | extreme mental resistance
 | sunstone | mineral | adequate | exceptional | barely uncommon | extreme light resistance
 | tanzanite | mineral | adequate | passable | very common | extreme lightning resistance, lesser drowning vulnerability
-| topaz | mineral | adequate | accomplished | uncommon | lesser bash resistance
+| topaz | mineral | adequate | accomplished | uncommon | lesser bash resistance, mined in Du'Rahath |
 | tourmaline | mineral | adequate | adequate | barely uncommon | extreme acid resistance
 
 ## Temple
