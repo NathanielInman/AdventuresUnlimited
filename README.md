@@ -371,7 +371,7 @@ Rarity Percentages:
 | gold | metal | adequate | adequate | abundant | Best mined in Hagarth followed by Pyrainn Mountains |
 | pewter | metal | adequate | adequate | everywhere |
 | silver | metal | adequate | passable | abundant | Mined in Drow Mines |
-| copper | metal | adequate | lousy | abundant | Best mined in Drow Mines followed by Hagarth or Kaer Tzoun |
+| copper | metal | adequate | lousy | abundant | Best mined in Drow Mines followed by Hagarth, The Stone Quarry or Kaer Tzoun |
 | brass | metal | accomplished | incompetent | very abundant | Mined in The Western Road |
 | electrum | metal | accomplished | outstanding | very common | Best mined in Du'Rahath followed by Fireblast Mountains |
 | bronze | metal | accomplished | lousy | abundant | Mined in The Stone Quarry |
