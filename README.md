@@ -72,33 +72,33 @@ Additional helpful maps on the [official website](tharel.net):
   - [Western Ocean Waterways](https://tharel.net/img/map-westernocean.png)
   - [The Western Road](https://tharel.net/img/map-westernroad.png)
 
-| level | name | minable | directions |
+| level | name | mineable | directions |
 | --- | --- | --- | --- |
 | ALL | The Western Beaches | ? | Unknown |
 | ALL | [The Western Ocean](https://tharel.net/img/map-westernocean.png) | ? | Unknown |
 | ALL | The Western Coastline | ? | Unknown |
 | ALL | More Western Ocean | ? | Unknown |
 | ALL | The Western Trails | ? | 42w2s |
-| ALL | [The Western Road](https://tharel.net/img/map-westernroad.png) | ? | 17w |
+| ALL | [The Western Road](https://tharel.net/img/map-westernroad.png) | **✓** | 17w |
 | ALL | Western Tharel | ? | Unknown |
-| OOC | The Lounge | ? | 3n;go ooc |
+| OOC | The Lounge | | 3n;go ooc |
 | ALL | The Dwarven Forest | ? | Unknown |
-| ALL | Tucker's Hotel | ? | 2w1s |
+| ALL | Tucker's Hotel | | 2w1s |
 | ALL | Beaches | ? | 5w17s5e7s2e1s2e1d2s1e1s2e5s1w2s2e1d2e1s1e1s |
 | ALL | Underground Highway | ? |  4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s |
 | ALL | The Neighborhood | ? | Unknown |
 | ALL | Ether | ? | Unknown |
-| ALL | [Naerlan](https://tharel.net/img/map-naerlan.jpg) | ? | Starting Position |
-| 1 - 5 | Survival Training | ? | 2e1n |
+| ALL | [Naerlan](https://tharel.net/img/map-naerlan.jpg) | | Starting Position |
+| 1 - 5 | Survival Training | | 2e1n |
 | 1 - 20 | [Heishnum Desert](https://tharel.net/img/map-heishnumdesert.gif) | | 4e;open east;7e3s6e4s2e1s |
-| 1 - 20 | [The Eastern Moors](https://tharel.net/img/map-easternmoors.png) | ? | 8e1n |
-| 5 - 8 | [School of Faith](https://tharel.net/img/map-schooloffaith.gif) | ? | 6w6s1w |
-| 5 - 10 | T'leisins Pool | ? | 8w4s2w;search north;open n;1n2w2s |
+| 1 - 20 | [The Eastern Moors](https://tharel.net/img/map-easternmoors.png) | | 8e1n |
+| 5 - 8 | [School of Faith](https://tharel.net/img/map-schooloffaith.gif) | | 6w6s1w |
+| 5 - 10 | T'leisins Pool | | 8w4s2w;search north;open n;1n2w2s |
 | 5 - 10 | The Stone Quarry | **✓** | 14w1s |
 | 5 - 10 | Nerezza | ? | 7e1d2s1e7s7e2n3w |
-| 5 - 10 | [Equinilis](https://tharel.net/img/map-equinilis.gif) | ? | 12w4n1w |
-| 5 - 10 | Lunatic's Alley | ? | 5w17s2e1n |
-| 5 - 10 | [Gypsy Camp](https://tharel.net/img/map-gypsycamp.jpg) | ? | 8w2s |
+| 5 - 10 | [Equinilis](https://tharel.net/img/map-equinilis.gif) | | 12w4n1w |
+| 5 - 10 | Lunatic's Alley | | 5w17s2e1n |
+| 5 - 10 | [Gypsy Camp](https://tharel.net/img/map-gypsycamp.jpg) | | 8w2s |
 | 5 - 10 | Naerlan Graveyard | ? | 6w10s1w1s |
 | 5 - 10 | Woodfell Forest | ? | 5w9n4e;open north;6n3e1s |
 | 5 - 15 | The Mines of Markov | **✓** | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n |
@@ -164,10 +164,10 @@ Additional helpful maps on the [official website](tharel.net):
 | 30 - 45 | Quickling Village | ? | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e4s1e |
 | 30 - 50 | Darathorn's Pit | ? | 4e9n5w6n3e2s1e2s1w1n |
 | 35 - 45 | The Sandcastle | ? | 43w3n1w4n3w5n1s1e1n3w |
-| 35 - 45 | Oterion | ? | 7e1d2s1e9s4w1n3w |
+| 35 - 45 | Oterion | | 7e1d2s1e9s4w1n3w |
 | 35 - 45 | Eirenole | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e1n |
-| 35 - 50 | Tyyrinn Village | ? | 7e1d2s1e7s5e2s |
+| 35 - 50 | Tyyrinn Village | | 7e1d2s1e7s5e2s |
 | 35 - 50 | [The City of Terrason](https://tharel.net/img/map-terrason.jpg) | ? | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
 | 35 - 50 | Uchduruk | ? | 11e4n4e1n1e |
 | 40 - 45 | Eirenole Thistle | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
@@ -176,7 +176,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 40 - 50 | Schwartz Glacier | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
 | 40 - 50 | Mystery Manor | ? | 11e4n9e1s3e1n2e1n |
 | 40 - 55 | Pyrainn Mountains | **✓** | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n3w1s |
-| 40 - 55 | Manthalaras | ? | 4e17s4w7s2e1s2e1d5s1w1d1w1s1w;go waterfall |
+| 40 - 55 | Manthalaras | | 4e17s4w7s2e1s2e1d5s1w1d1w1s1w;go waterfall |
 | contin. | contin. | contin. | search north;open north;4n1e1n|
 | 40 - 60 | Draek'le | ? | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | **✓** | 20w1n6w3n1w1u9w3n1u |
