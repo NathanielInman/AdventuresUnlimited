@@ -381,7 +381,7 @@ Rarity Percentages:
 | meteorite | metal | outstanding | adequate | very abundant | Mined equally in The Mines of Markov or Du'Rahath |
 | mithril | metal | outstanding | accomplished | very common | Mined equally in Mines of Noa'xyn and Lost Kingdoms |
 | adamantite | metal | outstanding | exceptional | very common | Mined equally in Fireblast Mountains & Lost Kingdoms |
-| silvite | metal | outstanding | accomplished | very common | Best mined in Hagarth followed by The Mines of Markov |
+| silvite | metal | outstanding | accomplished | very common | Best mined in Hagarth followed by The Mines of Markov or Mt Ka'lri |
 | cold steel | metal | exceptional | exceptional | common | Best mined in Mines of Noal'xyn followed by Kaer Tzoun |
 | irlimnite | metal | exceptional | atrocious | very abundant | Mined in The Mines of Markov |
 | uulayilium | metal | exceptional | exceptional | common | Mined in The Western Road |
