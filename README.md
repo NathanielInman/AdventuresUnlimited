@@ -78,7 +78,7 @@ Additional helpful maps on the [official website](tharel.net):
 | ALL | [The Western Ocean](https://tharel.net/img/map-westernocean.png) | ? | Unknown |
 | ALL | The Western Coastline | ? | Unknown |
 | ALL | More Western Ocean | ? | Unknown |
-| ALL | The Western Trails | ? | 42w2s |
+| ALL | The Western Trails | | 42w2s |
 | ALL | [The Western Road](https://tharel.net/img/map-westernroad.png) | **✓** | 17w |
 | ALL | Western Tharel | ? | Unknown |
 | OOC | The Lounge | | 3n;go ooc |
@@ -115,11 +115,11 @@ Additional helpful maps on the [official website](tharel.net):
 | 10 - 15 | [Cartwrights Farm](https://tharel.net/img/map-cartwrightsfarm.gif) | ? | 9w1d5n7w2n1e |
 | 10 - 15 | [Volencymale](https://tharel.net/img/map-cathedralvolencymale.gif) | ? | 12w4n1e |
 | 10 - 15 | [The Renault House](https://tharel.net/img/map-renaulthouse.jpg) | ? | 7w2n2w;search n |
-| 10 - 15 | Bose'nisten | ? | 5w9n4e6n6w2s |
+| 10 - 15 | Bose'nisten | | 5w9n4e6n6w2s |
 | 10 - 15 | The Bog of Durlah | ? | 7e1d2w2n12w2s |
 | 10 - 15 | Hagarth | **✓** | 4e17s4w9s2w2s1w1s |
 | 10 - 20 | Tark Valley | ? | 9w1d5n11w;open n;1n;open w;1w;open n;n |
-| 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | ? | 4e9n5w6n6w8s2w1n2w4s1s;search west;open w;1qw |
+| 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | **✓** | 4e9n5w6n6w8s2w1n2w4s1s;search west;open w;1qw |
 | 10 - 20 | [Tzimosh's Camp](https://tharel.net/img/map-tzimoshscamp.jpg) | ? | 5w9n4e6n11e3n1e1n |
 | 10 - 20 | Hythian Forest | ? | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
 | 10 - 20 | [Burrowholme](https://tharel.net/img/map-burrowholme.gif) | ? | 5w9n4e;open north;5n4w1n |
@@ -133,11 +133,11 @@ Additional helpful maps on the [official website](tharel.net):
 | 10 - 40 | [Upper Barreston](https://tharel.net/img/map-barrestonupper.png) | ? | 5w9n4e6n6w3n2w3n2w |
 | 13 - 30 | [Sanctuary](https://tharel.net/img/map-sanctuary.gif) | ? | 7e1d2w2n9w5s2e2s2re |
 | 13 - 50 | [Underdark](https://raw.githubusercontent.com/NathanielInman/AdventuresUnlimited/master/underdark.gif) | ? | 4e9n5w6n3e2s1e1s2w |
-| 15 - 25 | Littlefist Glade | ? | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
-| 15 - 25 | [Jasporin](https://tharel.net/img/map-jasporin.jpg) | ? | 5w9n4e6n6w2s6s2w1n1w3n |
+| 15 - 25 | Littlefist Glade | | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
+| 15 - 25 | [Jasporin](https://tharel.net/img/map-jasporin.jpg) | | 5w9n4e6n6w2s6s2w1n1w3n |
 | 15 - 25 | [Longbottom's Shire](https://tharel.net/img/map-longbottomsshire.gif) | ? | 5w9n4e;open north;6n6w3n2w3n2e |
 | 15 - 25 | Fidael's Lake | ? | 9w2d5n2w1n |
-| 15 - 25 | Zzukenathaft | ? | 5w17s5e7s2e1s2e1d1w1s2d |
+| 15 - 25 | Zzukenathaft | | 5w17s5e7s2e1s2e1d1w1s2d |
 | 15 - 30 | Du'Rahath | **✓** | 16w2s1e2s1e |
 | 15 - 30 | Mines of Noal'xyn | **✓** | 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w |
 | 15 - 30 | Caldera Ruins | ? | 16w2s4w |
@@ -176,7 +176,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 40 - 50 | Schwartz Glacier | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
 | 40 - 50 | Mystery Manor | ? | 11e4n9e1s3e1n2e1n |
 | 40 - 55 | Pyrainn Mountains | **✓** | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n3w1s |
-| 40 - 55 | Manthalaras | | 4e17s4w7s2e1s2e1d5s1w1d1w1s1w;go waterfall |
+| 40 - 55 | Manthalaras | ? | 4e17s4w7s2e1s2e1d5s1w1d1w1s1w;go waterfall |
 | contin. | contin. | contin. | search north;open north;4n1e1n|
 | 40 - 60 | Draek'le | ? | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | **✓** | 20w1n6w3n1w1u9w3n1u |
@@ -186,8 +186,8 @@ Additional helpful maps on the [official website](tharel.net):
 | 45 - 60 | Eirenole Castle | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e2n7e1n |
 | 50 - 60 | Heishaer City | ? | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
-| 50 - 60 | Breyard Village | ? | 41w6s2w2s3w3n3w1s1w1n8w2n2w2s2w3n5w3s1w |
-| 50 - 60 | The Acoma Estate | ? | 7e1d2s1e9s1e |
+| 50 - 60 | Breyard Village | | 41w6s2w2s3w3n3w1s1w1n8w2n2w2s2w3n5w3s1w |
+| 50 - 60 | The Acoma Estate | | 7e1d2s1e9s1e |
 | 55 - 65 | The Overlook Grounds | ? | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
 | 55 - 65 | The Overlook Towers | ? | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
 | 55 - 65 | Xe'lith | ? | 4e9n5w6n11e3n5e1n3e7n5w4n2w2n6w1u1n1u2e1u |
@@ -206,7 +206,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 70 - 80 | Wildlife Refuge | ? | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s1e |
 | 70 - 85 | Tekkit Hill | ? | 11e2n5e1n11e1n2e4n2e1n6e |
 | 70 - 85 | Ruins of Khezaderth | ? | 11e3s6e4s18e1s2e |
-| 70 - 85 | Meneth Naur | ? |  7e1d2s1e7s9e1s |
+| 70 - 85 | Meneth Naur | |  7e1d2s1e7s9e1s |
 | 70 - 90 | Fireblast Mountains | **✓** | 11e2n5e1n7e6n3w4n5w4n4w3s2e1s1w1n2w2s1w |
 | 75 - 85 | The Overlook Citadel | ? | towers in corners of overlook grounds |
 | 75 - 90 | Vlauchauch | ? | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s4w1s4w1n3w2n2w2s |
