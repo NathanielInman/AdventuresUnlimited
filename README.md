@@ -386,7 +386,7 @@ Rarity Percentages:
 | irlimnite | metal | exceptional | atrocious | very abundant | Mined in The Mines of Markov |
 | uulayilium | metal | exceptional | exceptional | common | Mined in The Western Road |
 | qyarelite | metal | exceptional | exceptional | barely uncommon | Mined in The Stone Quarry |
-| zeririte | metal | exceptional | exceptional | uncommon |
+| zeririte | metal | exceptional | exceptional | uncommon | Mined in Mt Ka'lri |
 | xedalium | metal | masterful | masterful | kinda rare | Mined in Pyrainn Mountains |
 | amethyst | mineral | accomplished | passable | very abundant | minor energy resistance, best mined in The Western Road |
 | glass | mineral | adequate | atrocious | everywhere | Mined in Pyrainn Mountains or Kaer Tzoun |
