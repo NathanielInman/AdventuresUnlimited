@@ -398,7 +398,7 @@ Rarity Percentages:
 | gem | mineral | adequate | adequate | very abundant | Mined in Du'Rahath |
 | granite | mineral | adequate | atrocious | everywhere |
 | ivory | mineral | adequate | outstanding | very abundant |
-| jade | mineral | adequate | accomplished | abundant | lesser acid resistance, mined in Mines of Noal'xyn |
+| jade | mineral | adequate | accomplished | abundant | lesser acid resistance, mined in Mines of Noal'xyn or The Stone Quarry |
 | marble | mineral | adequate | incompetent | everywhere | Best mined in Lost Kingdoms followed by Kaer Tzoun |
 | obsidian | mineral | adequate | adequate | very abundant | Mined in Fireblast Mountains |
 | onyx | mineral | adequate | incompetent | abundant | minor holy resistance, mined in The Drow Mines |
