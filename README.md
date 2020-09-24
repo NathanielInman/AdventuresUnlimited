@@ -388,7 +388,7 @@ Rarity Percentages:
 | qyarelite | metal | exceptional | exceptional | barely uncommon | Mined in The Stone Quarry |
 | zeririte | metal | exceptional | exceptional | uncommon | Mined in Mt Ka'lri |
 | xedalium | metal | masterful | masterful | kinda rare | Mined in Pyrainn Mountains |
-| amethyst | mineral | accomplished | passable | very abundant | minor energy resistance, best mined in The Western Road |
+| amethyst | mineral | accomplished | passable | very abundant | minor energy resistance, best mined in The Western Road followed by Mt. Ka'lri |
 | glass | mineral | adequate | atrocious | everywhere | Mined in Pyrainn Mountains or Kaer Tzoun |
 | clay | mineral | adequate | incompetent | everywhere |
 | diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance, best mined in The Mines of Markov followed by Pyrainnn Mountains |
