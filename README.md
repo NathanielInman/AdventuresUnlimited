@@ -103,7 +103,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 5 - 10 | Woodfell Forest | ? | 5w9n4e;open north;6n3e1s |
 | 5 - 15 | The Mines of Markov | **✓** | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n |
 | 5 - 15 | Shrine of Barbades | ? | 4e9n5w6n9e2n1w1n1w1u |
-| 5 - 15 | [Deltherian](https://tharel.net/img/map-deltherian.jpg) | ? | 8e7n |
+| 5 - 15 | [Deltherian](https://tharel.net/img/map-deltherian.jpg) | | 8e7n |
 | 5 - 15 | Taverns of Naerlan | ? | Unknown |
 | 5 - 15 | [Travellers' Rest](https://tharel.net/img/map-travellersrest.gif) | ? | 11e3s5w |
 | 5 - 15 | Brovlancor | ? | 4e9n5w6n6w8s2w1n2w4s1w4s2e1s |
@@ -126,7 +126,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 10 - 20 | Goblin Stronghold | ? | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
 | 10 - 20 | [Grungel](https://tharel.net/img/map-grungel.jpg) | ? | 7e1d2s1e3s1w |
 | 10 - 25 | [The Hand of Markov](https://tharel.net/img/map-handofmarkov.gif) | **✓** | 7s4e10s4w9s2w2s2w |
-| 10 - 30 | Illianathoren Pass | ? | 8e7n1w1n1e5n3e3n4e |
+| 10 - 30 | Illianathoren Pass | | 8e7n1w1n1e5n3e3n4e |
 | 10 - 30 | [Khetes](https://tharel.net/img/map-khetes.jpg) | ? | 11e5n2e1s7e3n |
 | 10 - 40 | [Northern Barreston](https://tharel.net/img/map-barreston.png) | ? | 5w9n4e6n6w3n2w3n2w |
 | 10 - 40 | [Lower Barreston](https://tharel.net/img/map-barreston.png) | ? | 5w9n4e6n6w3n2w3n2w |
@@ -142,7 +142,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 15 - 30 | Mines of Noal'xyn | **✓** | 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w |
 | 15 - 30 | Caldera Ruins | ? | 16w2s4w |
 | 15 - 30 | Shaolin Temple | ? |  7e1d2s1e7s1w |
-| 15 - 30 | Grungnison Catacombs | ? | 5w17s5e9s2w2s1w1n2w1n1d |
+| 15 - 30 | Grungnison Catacombs | | 5w17s5e9s2w2s1w1n2w1n1d |
 | 20 - 20 | The Frozen Waste | ? | 11e3s6e4s18e5s1e2s3w1s1w2s1w1s2w1n3w1n1w1n |
 | contin. | contin. | contin. | 2w1s1w1s3w1n2w1n2w2s1w1s1e1s1e2s1e6s1w2s |
 | 20 - 30 | Racomva | ? | 5w17s5e7s2e1s2e1d3n1e1u2n |
@@ -150,13 +150,13 @@ Additional helpful maps on the [official website](tharel.net):
 | contin. | contin. | contin. | 2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;search;go pool;go mirage |
 | 20 - 30 | [The Avian Tree](https://tharel.net/img/map-aviantree.png) | ? | 4e9n5w6n9e2n1e1n |
 | 20 - 30 | The Meridian | ? | 11e3s6e4s23e2n4e |
-| 20 - 35 | Dleivain | ? | 4e9n5w6n9e2n4w1n1w1n;go door |
-| 20 - 55 | Yrenelania | ? | 8e7n1w1n1e4n2e4n8e1d1s2e;go crack;1e1n1e;search south |
+| 20 - 35 | Dleivain | | 4e9n5w6n9e2n4w1n1w1n;go door |
+| 20 - 55 | Yrenelania | | 8e7n1w1n1e4n2e4n8e1d1s2e;go crack;1e1n1e;search south |
 | contin. | contin. | contin. | open south;1s3e1n2e2n3e |
-| 25 - 30 | Goblin Pass | ? | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
+| 25 - 30 | Goblin Pass | | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
 | 25 - 35 | The Hamlet of Elsfar | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | 25 - 35 | Blackeye's Camp | ? | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
-| 25 - 45 | Valeda | ? | 4e9n5w6n11e3n5e1n3e9n |
+| 25 - 45 | Valeda | | 4e9n5w6n11e3n5e1n3e9n |
 | 30 - 40 | Castle of Burden | ? | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n1u |
 | 30 - 40 | Whirlpool | ? |  4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e2s1e1w1s4e1s2e |
 | 30 - 40 | R'tescra | ? | 7e1d2w2n9w4s1e1s1e2s8e3s1w3s |
@@ -169,20 +169,20 @@ Additional helpful maps on the [official website](tharel.net):
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e1n |
 | 35 - 50 | Tyyrinn Village | | 7e1d2s1e7s5e2s |
 | 35 - 50 | [The City of Terrason](https://tharel.net/img/map-terrason.jpg) | ? | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
-| 35 - 50 | Uchduruk | ? | 11e4n4e1n1e |
+| 35 - 50 | Uchduruk | | 11e4n4e1n1e |
 | 40 - 45 | Eirenole Thistle | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e6n1e1n2e2s |
 | 40 - 50 | The Four Seasons | ? | 4s3w2s;go portrait |
-| 40 - 50 | Schwartz Glacier | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
+| 40 - 50 | Schwartz Glacier | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
 | 40 - 50 | Mystery Manor | ? | 11e4n9e1s3e1n2e1n |
 | 40 - 55 | Pyrainn Mountains | **✓** | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n3w1s |
-| 40 - 55 | Manthalaras | ? | 4e17s4w7s2e1s2e1d5s1w1d1w1s1w;go waterfall |
+| 40 - 55 | Manthalaras | | 4e17s4w7s2e1s2e1d5s1w1d1w1s1w;go waterfall |
 | contin. | contin. | contin. | search north;open north;4n1e1n|
 | 40 - 60 | Draek'le | ? | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | **✓** | 20w1n6w3n1w1u9w3n1u |
 | 45 - 55 | Beehive | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s5e2s3e;search south; |
 | contin. | contin. | contin. | open south;2s1e2n5e;go beehive |
-| 45 - 60 | Xuergothe Castle | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s1w6s1w6s2u1s |
+| 45 - 60 | Xuergothe Castle | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s1w6s1w6s2u1s |
 | 45 - 60 | Eirenole Castle | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e2n7e1n |
 | 50 - 60 | Heishaer City | ? | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
@@ -193,7 +193,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 55 - 65 | Xe'lith | ? | 4e9n5w6n11e3n5e1n3e7n5w4n2w2n6w1u1n1u2e1u |
 | 55 - 70 | Ruins of Khezauch | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1n |
 | 55 - 75 | Necropolis | ? |  4e9n5w6n11e3n4e2s1w2s1e |
-| 60 - 70 | Caranos' Tomb | ? | 11e3s6e4s7e6s4e6s3w |
+| 60 - 70 | Caranos' Tomb | | 11e3s6e4s7e6s4e6s3w |
 | 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | ? | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s2w |
 | 60 - 75 | Tiny Rapids | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s9w1s3w1s4w1n10w1s1w3s6w |
 | 60 - 85 | Lost Kingdoms | **✓** | 4e9n5w6n11e3n5e1n3e10n1e2n7e1n3e1n6e;go tree |
@@ -205,7 +205,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 70 - 80 | Connerty Crossing | ? | 33w4n4w3n1w12n1e |
 | 70 - 80 | Wildlife Refuge | ? | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s1e |
 | 70 - 85 | Tekkit Hill | ? | 11e2n5e1n11e1n2e4n2e1n6e |
-| 70 - 85 | Ruins of Khezaderth | ? | 11e3s6e4s18e1s2e |
+| 70 - 85 | Ruins of Khezaderth | | 11e3s6e4s18e1s2e |
 | 70 - 85 | Meneth Naur | |  7e1d2s1e7s9e1s |
 | 70 - 90 | Fireblast Mountains | **✓** | 11e2n5e1n7e6n3w4n5w4n4w3s2e1s1w1n2w2s1w |
 | 75 - 85 | The Overlook Citadel | ? | towers in corners of overlook grounds |
@@ -223,10 +223,10 @@ Additional helpful maps on the [official website](tharel.net):
 | 90 - 110 | Arthmore | ? | 11e2n5e1n7e6n3w4n5w4n4w1u |
 | HERO | Kallenpesh Palace | ? | inside kallendale forest |
 | HERO | Kallendale Forest | ? | 42w6s2w2s4w4s5w8s1w1s1e9s4w1n1w1n |
-| HERO | The Hall of Heroes | ? | See Aliuna & Terrason |
+| HERO | The Hall of Heroes | | See Aliuna & Terrason |
 | HERO | Il'kaethe | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s |
 | contin. | contin. | contin. | 1w5s1w5s1w1n17w2s3w1s3w1s1w1s1w |
-| HERO | The Giants Outpost | ? | 11e2n5e1n7e6n3w4n5w6n2e1n |
+| HERO | The Giants Outpost | | 11e2n5e1n7e6n3w4n5w6n2e1n |
 
 ### Quest Masters
 | Alignment | Levels | Name | directions |
