@@ -397,7 +397,7 @@ Rarity Percentages:
 | garnet | mineral | adequate | exceptional | very common | moderate mental resistance, mined in The Mines of Markov |
 | gem | mineral | adequate | adequate | very abundant | Mined in Du'Rahath |
 | granite | mineral | adequate | atrocious | everywhere |
-| ivory | mineral | adequate | outstanding | very abundant |
+| ivory | mineral | adequate | outstanding | very abundant | Mined in The Stone Quarry |
 | jade | mineral | adequate | accomplished | abundant | lesser acid resistance, mined in Mines of Noal'xyn or The Stone Quarry |
 | marble | mineral | adequate | incompetent | everywhere | Best mined in Lost Kingdoms followed by Kaer Tzoun |
 | obsidian | mineral | adequate | adequate | very abundant | Mined in Fireblast Mountains |
