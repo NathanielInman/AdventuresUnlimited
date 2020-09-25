@@ -74,20 +74,20 @@ Additional helpful maps on the [official website](tharel.net):
 
 | level | name | mineable | directions |
 | --- | --- | --- | --- |
-| ALL | The Western Beaches | ? | Unknown |
-| ALL | [The Western Ocean](https://tharel.net/img/map-westernocean.png) | ? | Unknown |
-| ALL | The Western Coastline | ? | Unknown |
-| ALL | More Western Ocean | ? | Unknown |
+| ALL | The Western Beaches | | 43w7n2w1n |
+| ALL | [The Western Ocean](https://tharel.net/img/map-westernocean.png) | | 35w |
+| ALL | The Western Coastline | | 38w18n |
+| ALL | More Western Ocean | | 38w11n |
 | ALL | The Western Trails | | 42w2s |
 | ALL | [The Western Road](https://tharel.net/img/map-westernroad.png) | **✓** | 17w |
-| ALL | Western Tharel | ? | Unknown |
+| ALL | Western Tharel | | (river teine & lake of mists) 11e2n5e1n7e6n3w4n5w4n4w |
 | OOC | The Lounge | | 3n;go ooc |
-| ALL | The Dwarven Forest | ? | Unknown |
+| ALL | The Dwarven Forest | | 4e17s4w2s |
 | ALL | Tucker's Hotel | | 2w1s |
 | ALL | Beaches | | 5w17s5e7s2e1s2e1d2s1e1s2e5s1w2s2e1d2e1s1e1s |
-| ALL | Underground Highway | ? |  4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s |
-| ALL | The Neighborhood | ? | Unknown |
-| ALL | Ether | ? | Unknown |
+| ALL | Underground Highway | |  4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s |
+| ALL | The Neighborhood | | shops in Naerlan |
+| ALL | Ether | | 6w10s1w4s1u |
 | ALL | [Naerlan](https://tharel.net/img/map-naerlan.jpg) | | Starting Position |
 | 1 - 5 | Survival Training | | 2e1n |
 | 1 - 20 | [Heishnum Desert](https://tharel.net/img/map-heishnumdesert.gif) | | 4e;open east;7e3s6e4s2e1s |
