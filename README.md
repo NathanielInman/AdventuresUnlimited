@@ -390,13 +390,13 @@ Rarity Percentages:
 | xedalium | metal | masterful | masterful | kinda rare | Mined in Pyrainn Mountains |
 | amethyst | mineral | accomplished | passable | very abundant | minor energy resistance, best mined in The Western Road followed by Mt. Ka'lri |
 | glass | mineral | adequate | atrocious | everywhere | Mined in Pyrainn Mountains or Kaer Tzoun |
-| clay | mineral | adequate | incompetent | everywhere |
+| clay | mineral | adequate | incompetent | everywhere | Mined in Mt Ka'lri |
 | diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance, best mined in The Mines of Markov followed by Pyrainnn Mountains |
 | ebony | mineral | accomplished | passable | very abundant | Mined in The Stone Quarry |
 | emerald | mineral | accomplished | atrocious | abundant | moderate poison resistance
 | garnet | mineral | adequate | exceptional | very common | moderate mental resistance, mined in The Mines of Markov |
 | gem | mineral | adequate | adequate | very abundant | Mined in Du'Rahath |
-| granite | mineral | adequate | atrocious | everywhere |
+| granite | mineral | adequate | atrocious | everywhere | Best mined in Fireblast Mountains |
 | ivory | mineral | adequate | outstanding | very abundant | Mined in The Stone Quarry |
 | jade | mineral | adequate | accomplished | abundant | lesser acid resistance, mined in Mines of Noal'xyn or The Stone Quarry |
 | marble | mineral | adequate | incompetent | everywhere | Best mined in Lost Kingdoms followed by Kaer Tzoun |
