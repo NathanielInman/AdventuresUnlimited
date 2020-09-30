@@ -76,6 +76,11 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 
 ![multiline prompt example](./multilinePromptExample.png)
 
+This is required to allow switches to go to tintin++.
+```
+prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl] {R[%p] [%B] [%t]
+```
+The next block is for tintin++ to configure. It's complex with if statements so we avoid `#prompt`
 ```
 #split 0 2
 #var {restedState}{none};
