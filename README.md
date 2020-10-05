@@ -10,6 +10,7 @@ Separate sections of the wiki
 
 - [Monk](https://github.com/NathanielInman/AdventuresUnlimited/blob/master/monk.md)
 - [TinTin++](https://github.com/NathanielInman/AdventuresUnlimited/blob/master/tintin.md)
+- [Speedleveling](https://github.com/NathanielInman/AdventuresUnlimited/blob/master/speedleveling.md)
 
 ## Table of Contents
 - [Directions](#directions)
