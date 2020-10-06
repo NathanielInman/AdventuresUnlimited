@@ -23,6 +23,6 @@
 | 15-20 | Hand of Markov | Dwarf patrol & guards, should net 100-200xp ea still |
 | 21-25 | The Avian Tree | You'll mostly try for avian guards or sentrys in search up. |
 | 26-31 | Valeda | Try for trash mobs in entry and around town, avoid pixie guards |
-| 31 | Naerlan | Grab a beacon from your questmaster as well as some feathers for heishaer, set beacon to "farm" location |
+| 31 | Naerlan | Grab a beacon as well as some feathers for heishaer, set beacon to "farm" location |
 | 31-45 | Heishaer | Kill tons of fish, maybe skip blue minnows until 40 |
 | 45-? | Eirenole Castle | Start with sleeping soldiers, it'll be a bit tough at first. 300+xp |
