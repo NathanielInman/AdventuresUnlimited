@@ -25,4 +25,11 @@
 | 26-31 | Valeda | Try for trash mobs in entry and around town, avoid pixie guards |
 | 31 | Naerlan | Grab a beacon as well as some feathers for heishaer, set beacon to "farm" location |
 | 31-45 | Heishaer | Kill tons of fish, maybe skip blue minnows until 40 |
-| 45-? | Eirenole Castle | Start with sleeping soldiers, it'll be a bit tough at first. 300+xp |
+| 45-55 | Eirenole Castle | Start with sleeping soldiers, it'll be a bit tough at first. 300+xp |
+| 60-65 | Lost Kingdom | northern area, start with kids |
+| 65-70 | Lost Kingdom | eastern area, start with fish |
+| 75-80 | Lost Kingdom | western area, depends on alignment |
+| 80-85 | Lost Kingdom | southern area (dwarves) |
+| 85-88 | Shadowbox | bluebirds and angels for evil/neuter, go caves for good align |
+| 88-90 | Eirenole Forest | careful for 2 guards at entrance, set beacon behind |
+| 90-100 | Trouthead Town | Stick to kids |
