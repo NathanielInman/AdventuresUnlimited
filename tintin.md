@@ -16,6 +16,7 @@ This powerful MUD client is very easy to script for. This page is a collection o
 - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
 - [Weaponsmith Fixing Loop](#weaponsmith-fixing-loop)
 - [Weaponsmith Training Loop](#weaponsmith-training-loop)
+- [Jewelery Fixing Loop](#jewelery-fixing-loop)
 - [Poison Training Loop](#poison-training-loop)
 - [Disease Training Loop](#disease-training-loop)
 - [Blind Training Loop](#blind-training-loop)
@@ -577,6 +578,39 @@ The best way to start this loop is taking all your silver items from `mirage` fr
 }
 #action {You quench the form of the} { hold file; file $armorsmithFormItem; }
 #action {You file down} { smelt $armorsmithOre; }
+```
+## Jewelery Fixing Loop
+Doesn't conflict with anything else
+```
+#var {jewelerRepairItem}{none}
+#alias {fj %1}{ #var {jewelerRepairItem}{%1}; resurface %1; }
+#action {This item needs polishing}{
+  #if {"$jewelerRepairItem" != "none"}{ polish $jewelerRepairItem; };
+}
+#action {You fail to polish a scratch out of}{
+  #if {"$jewelerRepairItem" != "none"}{ polish $jewelerRepairItem; };
+}
+#action {You buff a scratch out of}{
+  #if {"$jewelerRepairItem" != "none"}{ polish $jewelerRepairItem; };
+}
+#action {You slip with the hammer and miss}{
+  #if {"$jewelerRepairItem" != "none"}{ resurface $jewelerRepairItem; };
+}
+#action {You work with a hammer and workbench to improve}{
+  #if {"$jewelerRepairItem" != "none"}{ resurface $jewelerRepairItem; };
+}
+#action {This item needs to be buffed}{
+  #if {"$jewelerRepairItem" != "none"}{ buff $jewelerRepairItem; };
+}
+#action {You slip with the cloth and ding}{
+  #if {"$jewelerRepairItem" != "none"}{ buff $jewelerRepairItem; };
+}
+#action {You buff the dings out of}{
+  #if {"$jewelerRepairItem" != "none"}{ buff $jewelerRepairItem; };
+}
+#action {This item only needs polishing}{
+  #if {"$jewelerRepairItem" != "none"}{ polish $jewelerRepairItem; };
+}
 ```
 ## Poison Training Loop
 For classes that have 'cure poison' and 'poison', this is the fastest way to master both skills.
