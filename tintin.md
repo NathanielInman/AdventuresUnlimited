@@ -8,6 +8,7 @@ This powerful MUD client is very easy to script for. This page is a collection o
 - [Idle Toggler](#idle-toggler)
 - [Quest Buffer](#quest-buffer)
 - [Mining Loop](#mining-loop)
+- [Mining Repair Farm](#mining-repair-farm)
 - [Mining Repair Loop](#mining-repair-loop)
 - [Mining Smelting Loop](#mining-smelting-loop)
 - [Armorsmith Fixing Loop](#armorsmith-fixing-loop)
@@ -273,23 +274,48 @@ There is no substitute for mining manually. Keep in mind that even though much o
   #line gag;
 }
 ```
+## Mining Repair Farm
+Merely add this to the repair loop in order to allow it to automatically drop and destroy dark-trimmed floaters from Bose'nisten and pick them up automatically when farming them. Eventually you might thinking about short-cutting the repair loop if you have the ability to do so, it'll prevent needless usage of "rub" skill afer it's already mastered.
+```
+#action {A dark-trimmed %1 falls to the floor}{ take %1; }
+#action {What mineral item do you wish to reform?}{ #var {minerRepairItem}{none}; }
+#action {You cannot find scratches}{
+  #if {"$minerRepairItem" != "none"}{ destroy $minerRepairItem; fm $minerRepairItem; };
+}
+#action {You cannot find any blemishes}{
+  #if {"$minerRepairItem" != "none"}{ destroy $minerRepairItem; fm $minerRepairItem; };
+}
+```
+
 ## Mining Repair Loop
-`note`: This may interfere with a armorsmithing loop due to a certain action.
+This will no longer interfere with other loops. We `clear` the activation variable after all of the repair items are done.
 ```
 #var {minerRepairItem}{none}
-#action {A dark-trimmed %1 falls to the floor}{ take %1; }
 #alias {fm %1}{ reform %1; #var {minerRepairItem}{%1}; }
-#action {You slip with the hammer and}{ reform $minerRepairItem; }
-#action {You work with a hammer and anvil to improve the condition}{ reform $minerRepairItem; }
-#action {This item needs to be refined}{ refine $minerRepairItem; }
-#action {You slip with the steel wool and ding}{ refine $minerRepairItem; }
-#action {You refine the dings from}{ refine $minerRepairItem; }
-#action {This item needs to be rubbed}{ rub $minerRepairItem; }
-#action {You rub a scratch out of}{ rub $minerRepairItem; }
-#action {You fail to rub a scratch}{ rub $minerRepairItem; }
-#action {You cannot find scratches}{ destroy $minerRepairItem; fm $minerRepairItem; }
-#action {You cannot find any blemishes}{ destroy $minerRepairItem; fm $minerRepairItem; }
+#action {You slip with the hammer and}{ #if {"$minerRepairItem" != "none"}{reform $minerRepairItem;}; }
+#action {You work with a hammer and anvil to improve the condition}{
+  #if {"$minerRepairItem" != "none"}{ reform $minerRepairItem; };
+}
+#action {This item needs to be refined}{
+  #if {"$minerRepairItem" != "none"}{ refine $minerRepairItem; };
+}
+#action {You slip with the steel wool and ding}{
+  #if {"$minerRepairItem" != "none"}{ refine $minerRepairItem; };
+}
+#action {You refine the dings from}{
+  #if {"$minerRepairItem" != "none"}{ refine $minerRepairItem; };
+}
+#action {This item needs to be rubbed}{
+  #if {"$minerRepairItem" != "none"}{ rub $minerRepairItem; };
+}
+#action {You rub a scratch out of}{
+  #if {"$minerRepairItem" != "none"}{ rub $minerRepairItem; };
+}
+#action {You fail to rub a scratch}{
+  #if {"$minerRepairItem" != "none"}{ rub $minerRepairItem; };
+}
 ```
+
 ## Mining Smelting Loop
 This loop starts with `m <item to smelt, usually 2.xed> <size, usually 30. see required ore table>`.
 It will smelt until the desired chunk size is acquired and then it will throw it in a dimensional pocket.
