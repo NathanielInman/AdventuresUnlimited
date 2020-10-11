@@ -16,6 +16,7 @@ This powerful MUD client is very easy to script for. This page is a collection o
 - [Armorsmith Crafting Loop](#armorsmith-crafting-loop)
 - [Weaponsmith Fixing Loop](#weaponsmith-fixing-loop)
 - [Weaponsmith Training Loop](#weaponsmith-training-loop)
+- [Engraving Training Loop](#engraving-training-loop)
 - [Jewelery Fixing Loop](#jewelery-fixing-loop)
 - [Poison Training Loop](#poison-training-loop)
 - [Disease Training Loop](#disease-training-loop)
@@ -611,6 +612,18 @@ Doesn't conflict with anything else
 #action {This item only needs polishing}{
   #if {"$jewelerRepairItem" != "none"}{ polish $jewelerRepairItem; };
 }
+```
+## Engraving Training Loop
+```
+#var {engraved}{no}
+#action {You slip engraving}{
+  #if {"$engraved" == "no"} { engrave ring engraving test; };
+  #else { engrave ring erase engraving; };
+}
+#action {You engrave}{ engrave ring erase engraving; #var {engraved}{yes}; }
+#action {You remove the inscription}{ engrave ring engraving test; #var {engraved}{no}; }
+#action {is of too poor a quality to engrave}{ drop ring; engrave ring engraving test; #var {engraved}{no}; }
+#action {already has an engraving}{ engrave ring erase engraving; #var {engraved}{no}; }
 ```
 ## Poison Training Loop
 For classes that have 'cure poison' and 'poison', this is the fastest way to master both skills.
