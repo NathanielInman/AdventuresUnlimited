@@ -111,8 +111,10 @@ Additional helpful maps on the [official website](tharel.net):
 | 5 - 30 | Naerlan Sewers | ? | 4s2w1d |
 | 5 - 40 | [The City of Aliuna](https://tharel.net/img/map-aliuna.png) | ? | 11e3s6e4s5e |
 | 8 - 22 | [Haythor Dungeon](https://tharel.net/img/map-haythordungeon.jpg) | ? | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
-| 10 - 15 | The Drow Mines | **✓** | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n |
+| 10 - 15 | The Drow Mines | **✓** | (through underdark) 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n |
 | contin. | contin. | contin. | 2d9s8w1s2w2s2w1s1e2s1w1s2e1s |
+| 10 - 15 | The Drow Mines | **✓** | (through goblin stronghold) 4e9n5w6n11e3n5e1n3e7n2w9n1w1n |
+| contin. | contin. | contin. | 3w7n2w2n1d9s8w2s1w1s3w1s1e2s1w1s2e1s |
 | 10 - 15 | [Cartwrights Farm](https://tharel.net/img/map-cartwrightsfarm.gif) | ? | 9w1d5n7w2n1e |
 | 10 - 15 | [Volencymale](https://tharel.net/img/map-cathedralvolencymale.gif) | ? | 12w4n1e |
 | 10 - 15 | [The Renault House](https://tharel.net/img/map-renaulthouse.jpg) | ? | 7w2n2w;search n |
