@@ -120,7 +120,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 10 - 15 | The Bog of Durlah | ? | 7e1d2w2n12w2s |
 | 10 - 15 | Hagarth | **✓** | 4e17s4w9s2w2s1w1s |
 | 10 - 20 | Tark Valley | ? | 9w1d5n11w;open n;1n;open w;1w;open n;n |
-| 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | **✓** | 4e9n5w6n6w8s2w1n2w4s1s;search west;open w;1qw |
+| 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | **✓** | 4e9n5w6n6w8s2w1n2w4s1s1w;search west;open w;1qw |
 | 10 - 20 | [Tzimosh's Camp](https://tharel.net/img/map-tzimoshscamp.jpg) | ? | 5w9n4e6n11e3n1e1n |
 | 10 - 20 | Hythian Forest | ? | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
 | 10 - 20 | [Burrowholme](https://tharel.net/img/map-burrowholme.gif) | ? | 5w9n4e;open north;5n4w1n |
