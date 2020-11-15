@@ -7,6 +7,7 @@ This powerful MUD client is very easy to script for. This page is a collection o
 - [Chat Logging](#chat-logging)
 - [Idle Toggler](#idle-toggler)
 - [Quest Buffer](#quest-buffer)
+- [Mage Buffer](#mage-buffer)
 - [Mining Loop](#mining-loop)
 - [Mining Repair Farm](#mining-repair-farm)
 - [Mining Repair Loop](#mining-repair-loop)
@@ -178,6 +179,154 @@ Here is a script that buffs your character right before a quest:
 {
   #line gag;
 }
+```
+## Mage Buffer
+There's lots of clever functions in here to make your life easier, just ensure you change the "mardios" name to whatever your name is. This prevents people from targeting you with any clever pmote/tell/etc line feed hacks. Log their attempts and report them.
+```
+#var {buffing}{false}
+#function {log}{
+  #format {ts}{%t}{%a %H:%M};
+  #line log au.communications {<178>$ts \};
+  #line log au.communications %0;
+}
+#function {singlebuff}{
+  #if {"$idling" == "true"}{
+    #regex {mardios} {%i%1} { #var {isMardios}{true}; } { #var {isMardios}{false}; };
+    #if {"$isMardios" == "true"}{
+      osay (AUTOMATED) Your abuse has been logged.;
+    };
+    #elseif {"$buffing" == "true"}{
+      @log{{(%1)(MISSED) : single-buff-%2}};
+    };
+    #else {
+      #var {buffing}{true};
+      @log{{(%1) : single-buff-%2}};
+      stand;c '%2' %1;r bench;
+    };
+  };
+  #return;
+}
+#function {fullbuff}{
+  #if {"$idling" == "true"}{
+    #regex {mardios} {%i%1} { #var {isMardios}{true}; } { #var {isMardios}{false}; };
+    #if {"$isMardios" == "true"}{
+      osay (AUTOMATED) Your abuse has been logged.;
+      #return;
+    };
+    #elseif {"$buffing" == "true"}{
+      @log{{(%1)(MISSED) : full-buff}};
+    };
+    #else {
+      #var {buffing}{true};
+      @log{{(%1) : full-buff}};
+      stand;
+      c regen '%1';
+      c haste '%1';
+      c giant '%1';
+      c sanc '%1';
+      c 'stone skin' '%1';
+      c 'armor' '%1';
+      c 'shield' '%1';
+      c phase '%1';
+      c 'protection good' '%1';
+      c fly '%1';
+      r bench;
+    };
+  };
+  #return;
+}
+#action {Ooc - %1 says 'can %2'}{
+  #return @singlebuff{%2;can};
+}
+#action {Ooc - %1 says 'can'}{
+  #return @singlebuff{%1;can};
+}
+#action {Ooc - %1 says 'fly'}{
+  #return @singlebuff{%1;fly};
+}
+#action {Ooc - %1 says 'regen'}{
+  #return @singlebuff{%1;regen};
+}
+#action {Ooc - %1 says 'sanc'}{
+  #return @singlebuff{%1;sanc};
+}
+#action {Ooc - %1 says 'protection good'}{
+  #return @singlebuff{%1;protection good};
+}
+#action {Ooc - %1 says 'protection evil'}{
+  #return @singlebuff{%1;protection evil};
+}
+#action {Ooc - %1 says 'protection neutral'}{
+  #return @singlebuff{%1;protection neutral};
+}
+#action {Ooc - %1 says 'shield'}{
+  #return @singlebuff{%1;shield};
+}
+#action {Ooc - %1 says 'armor'}{
+  #return @singlebuff{%1;armor};
+}
+#action {Ooc - %1 says 'giant'}{
+  #return @singlebuff{%1;giant};
+}
+#action {Ooc - %1 says 'haste'}{
+  #return @singlebuff{%1;haste};
+}
+#action {Ooc - %1 says 'stone'}{
+  #return @singlebuff{%1;stone};
+}
+#action {Ooc - %1 says 'phase'}{
+  #return @singlebuff{%1;phase};
+}
+#action {Ooc - %1 say 'spell %2'}{
+  #return @fullbuff{%2};
+}
+#action {Ooc - %1 %2 says 'spell'}{
+  #return @fullbuff{%2};
+}
+#action {Ooc - %1 says 'spell'}{
+  #return @fullbuff{%1};
+}
+#action {Ooc - %1 says '?spellup?'}{
+  #return @fullbuff{%2};
+}
+#alias {gobuff}{
+  #return gt buff-start;
+  buffself;buffbob;
+  gt buff-end;
+}
+#alias {buffbob}{
+  stand;
+  #3 c can bob;
+  c regen bob;
+  c 'armor' bob;
+  c 'shield' bob;
+  c 'stone skin' bob;
+  c 'protection good' bob;
+  c sanc bob;
+  c haste bob;
+  c phase bob;
+  c giant bob;
+  order bob stand;
+}
+#alias {buffself}{
+  stand;
+  #3 c can;
+  c regen;
+  c 'armor';
+  c 'detect invis';
+  c 'detect hidden';
+  c 'detect evil';
+  c 'detect good';
+  c 'protection good';
+  c armor;
+  c 'shield';
+  c 'stone';
+  c haste;
+  c giant;
+  c phase;
+  c sanc;
+}
+#action {You sit on A marble bench and rest.}{ #var {buffing}{false}; }
 ```
 ## Mining Loop
 There is no substitute for mining manually. Keep in mind that even though much of this is automated, you must continue to man the keyboard while this is ongoing or you are playing against the terms of service and will get in trouble. It merely makes your life easier and allows you to talk with others in the game and watch youtube instead of typing `mine` for the thousandth time. It's best to have a bunch of `clear potions` from heishaer in your `pocket` so as to `refresh` your waking state automatically during the process, the loop does this automatically if those exist. You can adjust the actions to remove the `score` trigger that uses `quaf clear` and replace it with `cast refresh` if you have the spell. Mining is hard work! This will continue to mine putting all xedalium into your pocket and donating everything else to the temple pit. If you have your rested state in your prompt then you can remove the `score` command as it will process automatically while you're mining.
