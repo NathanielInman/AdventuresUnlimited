@@ -28,7 +28,11 @@
 | 23-25 | The Avian Tree | You'll be going all the way to top after sentries and guards |
 | 26-31 | Valeda | Try for trash mobs in entry and around town, avoid pixie guards |
 | 31 | Naerlan | Grab a beacon as well as some feathers for heishaer, set beacon to "farm" location |
-| 31-45 | Heishaer | Kill tons of fish, maybe skip blue minnows until 40 |
+| 31-35 | Heishaer | Kill tons of fish, maybe skip blue minnows at first |
+| 35 | Eirenole | grab 2x [a green hunting cloak](https://itemcalculator.nathanielinman.com/#/dashboard?levelRestriction=30&levelRestriction=40&showStaffs=false&showWands=false&showPills=false&showScrolls=false&showPotions=false&showArmor=true&showWeapons=false&showOther=false&armorFilter=neck&weaponFilter=none&staffFilter=none&wandFilter=none&pillFilter=none&potionFilter=none&scrollFilter=none&areaFilter=none&otherFilter=none&vnum=25173) |
+| 35 | Valeda | Grab 2x [a ruby ring, twisted with silver](https://itemcalculator.nathanielinman.com/#/dashboard?levelRestriction=30&levelRestriction=40&showStaffs=false&showWands=false&showPills=false&showScrolls=false&showPotions=false&showArmor=true&showWeapons=false&showOther=false&armorFilter=finger&weaponFilter=none&staffFilter=none&wandFilter=none&pillFilter=none&potionFilter=none&scrollFilter=none&areaFilter=none&otherFilter=none&vnum=10845)
+| 35 | Schwartz Glacier | Grab new light [a bright ball of snow](https://itemcalculator.nathanielinman.com/#/dashboard?levelRestriction=30&levelRestriction=40&showStaffs=false&showWands=false&showPills=false&showScrolls=false&showPotions=false&showArmor=true&showWeapons=false&showOther=false&armorFilter=hold&weaponFilter=none&staffFilter=none&wandFilter=none&pillFilter=none&potionFilter=none&scrollFilter=none&areaFilter=none&otherFilter=none&vnum=3662) |
+| 35-44 | Heishaer | Make sure to grab 2x [a silver bracer](https://itemcalculator.nathanielinman.com/#/dashboard?levelRestriction=30&levelRestriction=40&showStaffs=false&showWands=false&showPills=false&showScrolls=false&showPotions=false&showArmor=true&showWeapons=false&showOther=false&armorFilter=wrist&weaponFilter=none&staffFilter=none&wandFilter=none&pillFilter=none&potionFilter=none&scrollFilter=none&areaFilter=none&otherFilter=none&vnum=13712) by searching in the treasure spots |
 | 45-55 | Eirenole Castle | Start with sleeping soldiers, it'll be a bit tough at first. 300+xp |
 | 60-65 | Lost Kingdom | northern area, start with kids |
 | 65-70 | Lost Kingdom | eastern area, start with fish |
