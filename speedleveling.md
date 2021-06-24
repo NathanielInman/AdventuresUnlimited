@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | 1 | Survival Training | Immediately get 2 [silver bracelet](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3772) (for leveling only) |
 | 1 | Survival Training | Get [girth](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3780), [legguards](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3768), [claws gloves](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3709) |
-| 2 | Survival Training | Get [dented breastplate](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3764), 2 [iron bracer](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3753), 2 [threadbare cloaks](https://itemcalculator.nathanielinman.com/#/dashboard?lvnum=3705) |
+| 2 | Survival Training | Get [dented breastplate](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3764), 2 [iron bracer](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3753), 2 [threadbare cloaks](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3705) |
 | 3 | Survival Training | [secret rings](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3763) & [floating quartz](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=3770) |
 | 4 | Lunatic's Alley | Grab [Asteri hold](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=25388), maybe [shroud](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=25382) helmet if you're strong |
 | 4-5 | T'leisins Pool | Rip through gypsy camp to get [legs](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=12216) & [feet](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=12217) from hunters in pool |
