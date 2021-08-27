@@ -77,8 +77,21 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 | 45 | 40 practices | 
 
 **Awareness**
-> Awareness has no affect and is only a requirement for mantras.
-
+- Awareness 1
+  - reduces chance of being a successful dirtkick target by 5% if chi level > 0
+  - reduces blind damage penalties by 2%
+- Awareness 2
+  - reduces chance of being a successful dirtkick target by 10% if chi level > 0
+  - reduces blind damage penalties by 4%
+- Awareness 3
+  - reduces chance of being a successful dirtkick target by 15% if chi level > 0
+  - reduces blind damage penalties by 6%
+- Awareness 4
+  - reduces chance of being a successful dirtkick target by 20% if chi level > 0
+  - reduces blind damage penalties by 8%
+- Awareness 5
+  - reduces chance of being a successful dirtkick target by 25% if chi level > 0
+  - reduces blind damage penalties by 10%
 **Combat**
 - Combat 1
   - 90% chance for extra attack if player level 6 or above
@@ -144,7 +157,21 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 - Focus 4: 40% * level lower AC
 
 **Spirit**
-> Spirit has no affect and is only a requirement for mantras.
+- Spirit 1
+  - 5% chance to gain current chi level (1-6) mana on successful combo
+  - reduce mana consumption of chi by 2%
+- Spirit 2
+  - 10% chance to gain current chi level * 2 (2-12) mana on successful combo
+  - reduce mana consumption of chi by 4%
+- Spirit 3
+  - 15% chance to gain current chi level * 3 (3-18) mana on successful combo
+  - reduce mana consumption of chi by 6%
+- Spirit 4
+  - 20% chance to gain current chi level * 4 (4-24) mana on successful combo
+  - reduce mana consumption of chi by 8%
+- Spirit 5
+  - 25% chance to gain current chi level * 5 (5-30) mana on successful combo
+  - reduce mana consumption of chi by 10%
 
 ## Chi
 
@@ -229,7 +256,7 @@ well trained & above: 1%
 ### Leveling Strategy
 One leveling strategy is to work on the worst stances first as monks get increasingly difficult to level until they unlock pressure point (45) and counter (50).
 
-1. (1-8) Crane - (worst stance, does nothing knock it out first)
+1. (1-8) Crane
 2. (9-16) Mongoose
 3. (17-24) Monkey
 4. (25-32) crab
@@ -253,6 +280,7 @@ One leveling strategy is to work on the worst stances first as monks get increas
 ### Crane
 - starter stance
 - allow trip fightstyle to work if target is flying
+- up to 17% at grandmaster to parry
 
 ### Crab
 - starter stance
@@ -278,7 +306,7 @@ One leveling strategy is to work on the worst stances first as monks get increas
 
 ### Dragon
 - requires bull and crab grandmastered
-- +80% damage
+- +66% damage
 - **DECREASE** chance of uppercut fightstyle success by 25%
 - allow trip fightstyle to work if target is flying
 - +5-10% chance to counter
@@ -342,6 +370,7 @@ The absolute key to mastering monk combat is leveraging all the techniques to pe
 | 61 | lightning kick | thrust kick, thrust kick, spin kick | 225% on chi+1 attacks | |
 | 61 | palm strike | spin kick, back fist, palm strike | 200% on chi x 3/2 attacks | |
 | 61 | flurry spin | palm strike, spin kick, sweep | 200% + 200% on chi/2 attacks | |
+| 61 | tornado kick | spin kick, spin kick | 225% on chi attacks to entire room | AOE attack |
 | 67 | firefist | back fist, elbow, double punch | 225% on chi/2 attacks | |
 | 67 | glowfist | elbow, elbow, double punch | 225% on chi attacks | |
 | 67 | firefist | double punch, double punch | 225% on chi attacks | |
