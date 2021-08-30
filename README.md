@@ -640,7 +640,7 @@ All stats in the following sections are before armor or temple mark. Stats in pa
 | orc | 8575 | 5170 | 4550 | 21 | 15 (18) | 19 | 16 | 21 |
 | pixie | 8200 | 5370 | 4700 | 16 | 21 (24) | 20 | 19 | 16 |
 | quickling | 8125 | 5200 | 5000 | 17 | 18 (21) | 16 | 25 | 15 |
-| sylvan elf | 8200 | 5300 | 2100 | 16 | 20 (23) | 18 | 21 | 16 |
+| sylvan elf | 8200 | 5300 | 4800 | 16 | 20 (23) | 18 | 21 | 16 |
 | titan | 8425 | 5220 | 4550 | 20 | 18 (21) | 17 | 16 | 19 |
 
 #### Cleric
