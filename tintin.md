@@ -528,6 +528,7 @@ The following is an automated repair command for armorsmith. Merely type `f item
 #action {You succeed in removing a few blemishes}{ readjust $armorsmithRepairItem; }
 #action {You fail to remove the blemishes}{ readjust $armorsmithRepairItem; }
 #action {You work with a hammer and anvil to improve the condition}{ repair $armorsmithRepairItem; }
+#action {You slip with the hammer and miss}{ rebuild $armorsmithRepairItem; }
 ```
 ## Armorsmith Training Loop
 The following is an automated armorsmith trainer. Merely get a bunch of `silver` items from `Mirage City` and then make sure you have a hammer, file and tongs in you inventory and type `m 2.silver` and it'll smelt everything down and make boots with nothing left over when finished. Because it's action-based you can still communicate over channels while it's running. Once you've mastered everything don't use this, use the automated crafting loop.
