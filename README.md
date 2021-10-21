@@ -484,17 +484,18 @@ The max stats a mark can upgrade to are:
 | armor | armor spell | 15g | 
 
 ## Entitlement
-| name | gold cost | equivalent qp cost | equivalent qp total |
+| name | gold cost | writ cost | equivalent qp cost | equivalent qp total |
 | --- | --- | --- | --- |
-| 1. Citizen | 10,000 | 3,000 | 3,000 |
-| 2. Watcher/Seeker | 20,000 | 4,000 | 7,000 |
-| 3. Master/Mistress | 30,000 | 5,000 | 12,000 |
-| 4. Seneschal | 40,000 | 6,000 | 18,000 |
-| 5. Lord/Lady | 50,000 | 7,000 | 25,000 |
-| 6. Baron/Baroness | 60,000 | 8,000 | 33,000 |
-| 7. Count/Countess | 70,000 | 9,000 | 42,000 |
-| 8. Marquis/Marquise | 80,000 | 10,000 | 52,000 |
-| 9. Duke/Duchess | 90,000 | 11,000 | 63,000 |
+| 1. Citizen | 10,000 | 2,000 | 3,000 | 3,000 |
+| 2. Watcher/Seeker | 20,000 | 2,000 | 4,000 | 7,000 |
+| 3. Master/Mistress | 30,000 | 2,000 | 5,000 | 12,000 |
+| 4. Seneschal | 40,000 | 2,000 | 6,000 | 18,000 |
+| 5. Lord/Lady | 50,000 | 2,000 | 7,000 | 25,000 |
+| 6. Baron/Baroness | 60,000 | 2,000 | 8,000 | 33,000 |
+| 7. Count/Countess | 70,000 | 2,000 | 9,000 | 42,000 |
+| 8. Marquis/Marquise | 80,000 | 2,000 | 10,000 | 52,000 |
+| 9. Duke/Duchess | 90,000 | 2,000 | 11,000 | 63,000 |
+| Total | 450,000 | 18,000 | 63,000 | - |
 
 ### Housing Costs
 
