@@ -1187,7 +1187,7 @@ Things that affect saves:
 | name | cost |
 | --- | --- | 
 | quest recall | 100qp | 
-| a magic tenderbox | 150qp | 
+| a magic tinderbox | 150qp | 
 | a certificate of corpse retrieval | 200qp | 
 | a restring certificate | 400qp | 
 | a reflective silvite mirror | 500qp | 
