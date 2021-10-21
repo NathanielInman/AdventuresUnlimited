@@ -13,7 +13,7 @@
 | 6 | Deltherian | Grab [warbanner](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=1993) from commander |
 | 7-9 | Hand of Markov | Stick to animals and trash mobs |
 | 10 | Hagarth | Buy a [jar of glow-moss light](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=6636) |
-| 10 | Grungel | Grab an [about item](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=2802) |
+| 10 | Grungel | Grab an [the hide of a river-troll](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=2802) |
 | 10 | Shrine of Barbades | Kill guards and wear [helmet](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=6233) & [chestplate](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=6208) |
 | 10 | Burrowholme | Kill guard and wear [shield](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=20730) and [bracers](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=20731) |
 | 10 | Jasporin | Kill a couple kobolds to get [2x robes](https://itemcalculator.nathanielinman.com/#/dashboard?vnum=11408) |
