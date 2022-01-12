@@ -89,9 +89,7 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 - Awareness 4
   - reduces chance of being a successful dirtkick target by 20% if chi level > 0
   - reduces blind damage penalties by 8%
-- Awareness 5
-  - reduces chance of being a successful dirtkick target by 25% if chi level > 0
-  - reduces blind damage penalties by 10%
+
 **Combat**
 - Combat 1
   - 90% chance for extra attack if player level 6 or above
@@ -169,9 +167,6 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 - Spirit 4
   - 20% chance to gain current chi level * 4 (4-24) mana on successful combo
   - reduce mana consumption of chi by 8%
-- Spirit 5
-  - 25% chance to gain current chi level * 5 (5-30) mana on successful combo
-  - reduce mana consumption of chi by 10%
 
 ## Chi
 
