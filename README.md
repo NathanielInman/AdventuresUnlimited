@@ -19,6 +19,7 @@ Separate sections of the wiki
     - [Quest Items](#quest-items)
   - [Trainers](#trainers)
   - [Tradesguilds](#tradesguilds)
+    - [Quality Table](#quality-table)
     - [Required Ore Table](#required-ore-table)
     - [Materials Table](#materials-table)
 - [Temple](#temple)
@@ -328,6 +329,21 @@ The following is the locations of the tradesguilds:
 | jewelers | 11e3s6e4s7e6s8e1s |
 | weaponsmiths | 4e9n5w6n11e3n5e1n3e7n2w9n14e1n | 
 | armorsmiths | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock north;open north;2n6e1s |
+
+#### Quality Table
+| name | percentage |
+| --- | --- |
+| masterful | 96-100 |
+| perfect | 91-95 |
+| first rate | 81-90 |
+| impeccable | 71-80 |
+| fine | 61-70 |
+| standard | 51-60 |
+| sound | 41-50 |
+| imperfect | 31-40 |
+| deficient | 21-30 |
+| faulty | 11-20 |
+| crude | 1-10 |
 
 #### Required Ore Table
 | item | ore required | trades |
