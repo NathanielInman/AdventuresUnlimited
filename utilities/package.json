@@ -1,7 +1,7 @@
 {
-  "name": "playerCalculator",
+  "name": "adventuresunlimited-utilities",
   "version": "0.1.0",
-  "description": "player calculator",
+  "description": "utilities for adventures unlimited mud",
   "main": "vite.config.js",
   "author": {
     "name": "Nathaniel Inman",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nathanielinman/playerCalculator.git"
+    "url": "git://github.com/nathanielinman/adventuresunlimited.git"
   },
   "bugs": {
-    "url": "https://github.com/nathanielinman/playerCalculator/issues"
+    "url": "https://github.com/nathanielinman/adventuresunlimited/issues"
   },
   "scripts": {
     "deploy": "./deploy.sh",
@@ -50,5 +50,5 @@
     "vue-router": "^4.2.1"
   },
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/nathanielinman/playerCalculator"
+  "homepage": "https://github.com/nathanielinman/adventuresunlimited"
 }
