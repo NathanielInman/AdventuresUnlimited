@@ -27,7 +27,7 @@ cd ../../
 echo "Moving files to branch..."
 git checkout github.io
 echo "Extracting files..."
-ls | grep -xv "utilities.tar.gz" | xargs
+ls | grep -xv "utilities.tar.gz" | xargs rm -rf
 sudo tar -C ./ -zxvf utilities.tar.gz
 echo "Cleaning up deployment files..."
 rm ./utilities.tar.gz
