@@ -15,6 +15,7 @@
     "url": "https://github.com/nathanielinman/playerCalculator/issues"
   },
   "scripts": {
+    "deploy": "./deploy.sh",
     "preview": "vite preview",
     "build": "vite build --base=https://nathanielinman.github.io/AdventuresUnlimited",
     "lint": "eslint --ext .vue --ext .js ./",
