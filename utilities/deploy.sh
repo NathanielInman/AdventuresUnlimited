@@ -10,7 +10,7 @@ USER=$(whoami)
 echo "Cleaning distribution folder..."
 rm -rf dist
 echo "Compiling production build..."
-npm run build:production
+npm run build
 echo "Creating log..."
 {
   echo "site: utilities@https://github.io/nathanielinman/adventuresunlimited/utilities";
