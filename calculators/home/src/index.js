@@ -1,7 +1,6 @@
 import 'core-js/stable';
 import './index.styl';
 import 'primeflex/primeflex.css';
-import 'buefy/dist/buefy.min.css';
 import { createApp } from 'vue';
 import PrimeVue from 'primevue/config';
 import Button from 'primevue/button';

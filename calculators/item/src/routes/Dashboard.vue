@@ -614,13 +614,4 @@ span
 .top-button
   margin-bottom 1rem
   margin-top -1rem
-.mb-2
-  margin-bottom 2rem
-.mb-1
-  margin-bottom 1rem
-.mx-r
-  margin-left -1.5rem
-  margin-right -1.5rem
-.b-slider
-  padding 0 1rem
 </style>

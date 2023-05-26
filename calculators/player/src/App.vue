@@ -1,8 +1,9 @@
 <template lang="pug">
+Toast
 .header
   .header-left
     i.fa.fa-bar-chart(style='color:#6af;font-size:1.5rem')
-    span.vertical-left Design Proposal
+    span.vertical-left Adventures Unlimited Utilities
   .header-right
     .tagline
       | hello
@@ -21,13 +22,21 @@
         .animation-wrapper
           i.fa.fa-home
           label Home
+      router-link(to='/damageStrings')
+        .animation-wrapper
+          i.fa.fa-align-left
+          label Damage Strings
+      router-link(to='/home')
+        .animation-wrapper
+          i.fa.fa-home
+          label Home Calculator
       router-link(to='/help')
         .animation-wrapper
           i.fa.fa-question
           label Help
 .footer
   p.
-    #[strong AdventuresUnlimited Colorizor] was written by
+    #[strong AdventuresUnlimited Utilities] was written by
     #[.pl-2]
     #[a(href='http://nathanielinman.com') Nathaniel Inman] of
     #[a(href='http://www.theoestudio.com') The OE Studio].
@@ -67,8 +76,8 @@ export default {
     left 60px
     right 0
     top 60px
-    bottom 0
-    overflow auto
+    bottom 104px
+    overflow-x hidden
 nav
   background #273549
   max-width 300px
