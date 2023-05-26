@@ -1,2 +1,5 @@
 .cache
+.parcel-cache
+.parcel
+dist
 node_modules

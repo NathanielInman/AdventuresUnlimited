@@ -1,6 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router';
 import { helpRoute } from './routes/help/';
-import Dashboard from './routes/Dashboard';
+import Dashboard from './routes/Dashboard.vue';
 
 const routes = [
   ...helpRoute,
