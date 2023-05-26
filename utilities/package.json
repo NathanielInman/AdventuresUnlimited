@@ -16,7 +16,7 @@
   },
   "scripts": {
     "preview": "vite preview",
-    "build": "vite build",
+    "build": "vite build --base=https://nathanielinman.github.io/AdventuresUnlimited",
     "lint": "eslint --ext .vue --ext .js ./",
     "start": "vite serve --mode development"
   },
