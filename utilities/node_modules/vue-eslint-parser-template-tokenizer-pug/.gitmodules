@@ -1,0 +1,3 @@
+[submodule "tests/fixtures/eslint-plugin-vue"]
+	path = tests/fixtures/eslint-plugin-vue
+	url = git@github.com:vuejs/eslint-plugin-vue.git
