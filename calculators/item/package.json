@@ -1,0 +1,44 @@
+{
+  "name": "itemCalculator",
+  "version": "0.3.0",
+  "description": "item calculator for adventures unlimited",
+  "main": "config.babel.js",
+  "author": {
+    "name": "Nathaniel Inman",
+    "email": "nate@theoestudio.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NathanielInman/itemCalculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanielInman/itemCalculator/issues"
+  },
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "prestart": "rm -rf ./parcel",
+    "build:development": "NODE_ENV=development ./node_modules/parcel/bin/cli.js ./src/index.pug -d dist --cache-dir .parcel",
+    "build:production": "NODE_ENV=production ./node_modules/parcel/bin/cli.js build ./src/index.pug -d dist --no-source-maps",
+    "start": "npm run build:development"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "parcel": "^1.12.4",
+    "pug": "^3.0.0",
+    "stylus": "^0.54.7",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "buefy": "^0.8.20",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.5.1"
+  },
+  "readmeFilename": "README.md",
+  "itempage": "https://github.com/NathanielInman/itemCalculator"
+}

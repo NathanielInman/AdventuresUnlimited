@@ -1,0 +1,42 @@
+{
+  "name": "homeCalculator",
+  "version": "0.2.1",
+  "description": "home calculator for adventures unlimited",
+  "author": {
+    "name": "Nathaniel Inman",
+    "email": "nate@theoestudio.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NathanielInman/homeCalculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanielInman/homeCalculator/issues"
+  },
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "prestart": "rm -rf ./parcel",
+    "build:development": "NODE_ENV=development node ./node_modules/parcel/lib/cli.js ./src/index.pug --dist-dir dist --cache-dir .parcel",
+    "build:production": "NODE_ENV=production node ./node_modules/parcel/lib/cli.js build ./src/index.pug --dist-dir dist --no-source-maps --no-scope-hoist",
+    "start": "npm run build:development"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.0.0-beta.2",
+    "@parcel/transformer-stylus": "^2.0.0-beta.2",
+    "@parcel/transformer-vue": "^2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "buefy": "^0.9.8",
+    "core-js": "^3.16.0",
+    "primeflex": "^2.0.0",
+    "primeicons": "^4.1.0",
+    "primevue": "^3.6.0",
+    "vue": "^3.1.5",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^4.0.10",
+    "vuex": "^4.0.2"
+  },
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/NathanielInman/homeCalculator"
+}

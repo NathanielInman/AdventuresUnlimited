@@ -54,7 +54,7 @@ Outside of that information, here are some basic helpful commands:
 
 **Basic Prompt**
 
-![basic prompt example](./basicPromptExample.png)
+![basic prompt example](./screenshots/basicPromptExample.png)
 
 ```
 // next line is in-game command
@@ -66,7 +66,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {r%P{Dqp {r%X{Dtnl]{r%p {R%B
 
 **Monk Prompt**
 
-![monk prompt example](./monkPromptExample.png)
+![monk prompt example](./screenshots/monkPromptExample.png)
 
 ```
 // next line is in-game command
@@ -78,7 +78,7 @@ prompt {D[{R%h{D/{r%Hhp {M%m{D/{m%Mmp {G%v{D/{g%Vmv {c%Cchi {Y%q%Q{Dqt {y%l{Dql 
 
 **Multiline Prompt**
 
-![multiline prompt example](./multilinePromptExample.png)
+![multiline prompt example](./screenshots/multilinePromptExample.png)
 
 This is required to allow switches to go to tintin++.
 ```
