@@ -86,50 +86,41 @@ section(style='padding-top: 0')
           .p-field
             label(for='armor-filter') Armor Filter
             Dropdown#armor-filter.mb-1(placeholder='Filter By Armor Slot',v-model='armorFilter',
-              @input='change()')
-              option(v-for='option in armorSlotOptions',:value='option') {{option}}
+              @change='change()', :options='armorSlotOptions')
           .p-field
             label(for='pill-filter') Pill Filter
             Dropdown#pill-filter.mb-1(placeholder='Filter By Magic Type',v-model='pillFilter',
-              @input='change()')
-              option(v-for='option in pillTypeOptions',:value='option') {{option}}
+              @change='change()', :options='pillTypeOptions')
           .p-field
             label(for='wand-filter') Wand Filter
             Dropdown#wand-filter.mb-1(placeholder='Filter By Magic Type',v-model='wandFilter',
-              @input='change()')
-              option(v-for='option in wandTypeOptions',:value='option') {{option}}
+              @change='change()', :options='wandTypeOptions')
         .col
           .p-field
             label(for='weapon-filter') Weapon Filter
             Dropdown#weapon-filter.mb-1(placeholder='Filter By Weapon Type',v-model='weaponFilter',
-              @input='change()')
-              option(v-for='option in weaponTypeOptions',:value='option') {{option}}
+              @change='change()', :options='weaponTypeOptions')
           .p-field
             label(for='potions-filter') Potions Filter
             Dropdown#potions-filter.mb-1(placeholder='Filter By Magic Type',v-model='potionFilter',
-              @input='change()')
-              option(v-for='option in potionTypeOptions',:value='option') {{option}}
+              @change='change()', :options='potionTypeOptions')
           .p-field
             label(for='area-filter') Area Filter
             Dropdown#area-filter.mb-1(placeholder='Filter By Area',v-model='areaFilter',
-              @input='change()')
-              option(v-for='option in areaOptions',:value='option') {{option}}
+              @change='change()', :options='areaOptions')
         .col
           .p-field
             label(for='other-filter') Other Filter
             Dropdown#other-filter.mb-1(placeholder='Filter By Other Type',v-model='otherFilter',
-              @input='change()')
-              option(v-for='option in otherTypeOptions',:value='option') {{option}}
+              @change='change()', :options='otherTypeOptions')
           .p-field
             label(for='scroll-filter') Scroll Filter
             Dropdown#scroll-filter.mb-1(placeholder='Filter By Magic Type',v-model='scrollFilter',
-              @input='change()')
-              option(v-for='option in scrollTypeOptions',:value='option') {{option}}
+              @change='change()', :options='scrollTypeOptions')
           .p-field
             label(for='stave-filter') Stave Filter
             Dropdown#stave-filter.mb-1(placeholder='Filter By Magic Type',v-model='staffFilter',
-              @input='change()')
-              option(v-for='option in staffTypeOptions',:value='option') {{option}}
+              @change='change()', :options='staffTypeOptions')
       .grid
         .col
           .p-field-checkbox
