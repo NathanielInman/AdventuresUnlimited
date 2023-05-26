@@ -1,9 +1,0 @@
-# node ignores
-node_modules
-
-# distributables
-dist
-
-# vim
-*.swp
-*.swo
