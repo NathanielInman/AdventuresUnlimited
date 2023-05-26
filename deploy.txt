@@ -1,0 +1,6 @@
+site: homecalculator@https://github.io/nathanielinman/adventuresunlimited/calculators/home
+date: 
+user: nate
+hash: 
+application: homecalculator
+version: 
