@@ -501,7 +501,7 @@ The max stats a mark can upgrade to are:
 
 ## Entitlement
 | name | gold cost | writ cost | equivalent qp cost | equivalent qp total |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | 1. Citizen | 10,000 | 2,000 | 3,000 | 3,000 |
 | 2. Watcher/Seeker | 20,000 | 2,000 | 4,000 | 7,000 |
 | 3. Master/Mistress | 30,000 | 2,000 | 5,000 | 12,000 |
