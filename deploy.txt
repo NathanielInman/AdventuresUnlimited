@@ -1,6 +1,6 @@
-site: utilities@https://github.io/nathanielinman/adventuresunlimited/utilities
-date: Fri May 26 02:52:29 PM CDT 2023
+site: homecalculator@https://github.io/nathanielinman/adventuresunlimited/calculators/home
+date: 
 user: nate
-hash: head
-application: utilities
-version: 0.1.0
+hash: 
+application: homecalculator
+version: 
