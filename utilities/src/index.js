@@ -7,8 +7,9 @@ import Dropdown from 'primevue/dropdown';
 import InputNumber from 'primevue/inputnumber';
 import InputSwitch from 'primevue/inputswitch';
 import InputText from 'primevue/inputtext';
-import Panel from 'primevue/panel';
 import Slider from 'primevue/slider';
+import TabPanel from 'primevue/tabpanel';
+import TabView from 'primevue/tabview';
 import Textarea from 'primevue/textarea';
 import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
@@ -29,8 +30,9 @@ createApp(App)
   .component('InputNumber', InputNumber)
   .component('InputSwitch', InputSwitch)
   .component('InputText', InputText)
-  .component('Panel', Panel)
   .component('Slider', Slider)
+  .component('TabPanel', TabPanel)
+  .component('TabView', TabView)
   .component('Textarea', Textarea)
   .component('Toast', Toast)
   .mount('app');

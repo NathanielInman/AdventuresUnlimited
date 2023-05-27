@@ -6,122 +6,9 @@ section(style='padding-top: 0')
     .col.text-right.flex.justify-content-end
       Button(@click='copyURL()') Share URL
   hr
-  .code
-    span.gray short string 
-    span.green-bold (
-    span.green SCORE
-    span.green-bold ) 
-    span.red-bold (
-    span.red LEVEL
-    span.red-bold )
-  hr
-  .code.has-text-left(v-if='output&&output.length')
-    .has-text-right
-      Button.top-button(icon='fa fa-arrow-up',
-       type='is-primary',inverted,@click='change(null)',
-       style='position:absolute;margin-top:-0.4rem;right:2.2rem;',
-       v-if='$route.query.vnum')
-    template(v-for='line in output')
-      .cursor(v-if='line.item',@click='change(line.item.vnum)')
-        .line
-          span(v-for='word in line',:class='word.class') {{word.text}}
-      .line(v-if='!line.item')
-        span(v-for='word in line',:class='word.class') {{word.text}}
-    Button.bottom-button(icon='fa fa-arrow-left',:disabled='page==0',
-      type='is-secondary',inverted,@click='previousPage',
-      v-if='!$route.query.vnum',
-      style='position:absolute;margin-top:-1.9rem;right:5rem')
-    Button.bottom-button(icon='fa fa-arrow-right',:disabled='page==pages-1',
-      type='is-secondary',inverted,@click='nextPage',
-      v-if='!$route.query.vnum',
-      style='position:absolute;margin-top:-1.9rem;right:2.2rem')
-  hr
-  .card.mb-2
-    .card-header
-      p.card-header-title Search Score Configuration (Advanced)
-    .card-content: .content
-      .p-field-checkbox
-        Checkbox#customize-score(v-model='customizeScore',@input='changeScore')
-        label(for='customize-score') Customize Score
-      .grid
-        .col
-          .p-field
-            label(for='strength') Strength
-            InputNumber#strength(v-model='weights.strength',type='number',@input='changeScore')
-          .p-field
-            label(for='dexterity') Dexterity
-            InputNumber#dexterity(v-model='weights.dexterity',type='number',@input='changeScore')
-          .p-field
-            label(for='intelligence') Intelligence
-            InputNumber#intelligence(v-model='weights.intelligence',type='number',@input='changeScore')
-          .p-field
-            label(for='wisdom') Wisdom
-            InputNumber#wisdom(v-model='weights.wisdom',type='number',@input='changeScore')
-          .p-field
-            label(for='constitution') Constitution
-            InputNumber#constitution(v-model='weights.constitution',type='number',@input='changeScore')
-        .col
-          .p-field
-            label(for='hitroll') Hitroll
-            InputNumber#hitroll(v-model='weights.hitroll',type='number',@input='changeScore')
-          .p-field
-            label(for='damroll') Damroll
-            InputNumber#damroll(v-model='weights.damroll',type='number',@input='changeScore')
-        .col
-          .p-field
-            label(for='health') Health
-            InputNumber#health(v-model='weights.health',type='number',@input='changeScore')
-          .p-field
-            label(for='mana') Mana
-            InputNumber#mana(v-model='weights.mana',type='number',@input='changeScore')
-          .p-field
-            label(for='move') Move
-            InputNumber#move(v-model='weights.move',type='number',@input='changeScore')
-  .card.mb-2
-    .card-header
-      p.card-header-title Search Filters
-    .card-content: .content
-      .grid
-        .col
-          .p-field
-            label(for='armor-filter') Armor Filter
-            Dropdown#armor-filter.mb-1(placeholder='Filter By Armor Slot',v-model='armorFilter',
-              @change='change()', :options='armorSlotOptions')
-          .p-field
-            label(for='pill-filter') Pill Filter
-            Dropdown#pill-filter.mb-1(placeholder='Filter By Magic Type',v-model='pillFilter',
-              @change='change()', :options='pillTypeOptions')
-          .p-field
-            label(for='wand-filter') Wand Filter
-            Dropdown#wand-filter.mb-1(placeholder='Filter By Magic Type',v-model='wandFilter',
-              @change='change()', :options='wandTypeOptions')
-        .col
-          .p-field
-            label(for='weapon-filter') Weapon Filter
-            Dropdown#weapon-filter.mb-1(placeholder='Filter By Weapon Type',v-model='weaponFilter',
-              @change='change()', :options='weaponTypeOptions')
-          .p-field
-            label(for='potions-filter') Potions Filter
-            Dropdown#potions-filter.mb-1(placeholder='Filter By Magic Type',v-model='potionFilter',
-              @change='change()', :options='potionTypeOptions')
-          .p-field
-            label(for='area-filter') Area Filter
-            Dropdown#area-filter.mb-1(placeholder='Filter By Area',v-model='areaFilter',
-              @change='change()', :options='areaOptions')
-        .col
-          .p-field
-            label(for='other-filter') Other Filter
-            Dropdown#other-filter.mb-1(placeholder='Filter By Other Type',v-model='otherFilter',
-              @change='change()', :options='otherTypeOptions')
-          .p-field
-            label(for='scroll-filter') Scroll Filter
-            Dropdown#scroll-filter.mb-1(placeholder='Filter By Magic Type',v-model='scrollFilter',
-              @change='change()', :options='scrollTypeOptions')
-          .p-field
-            label(for='stave-filter') Stave Filter
-            Dropdown#stave-filter.mb-1(placeholder='Filter By Magic Type',v-model='staffFilter',
-              @change='change()', :options='staffTypeOptions')
-      .grid
+  TabView
+    TabPanel(header='Search Visibility')
+      .grid.mt-2
         .col
           .p-field-checkbox
             Checkbox#show-pills(v-model='showPills',@change='change()',:binary='true')
@@ -150,10 +37,120 @@ section(style='padding-top: 0')
           .p-field-checkbox
             Checkbox#show-other(v-model='showOther',@change='change()',:binary='true')
             label(for='show-other') Show Other
+    TabPanel(header='Search Filters')
+      .grid.justify-content-between
+        .p-field
+          label(for='armor-filter') Armor Filter
+          Dropdown#armor-filter.mb-1(placeholder='Filter By Armor Slot',v-model='armorFilter',
+            @change='change()', :options='armorSlotOptions')
+        .p-field
+          label(for='pill-filter') Pill Filter
+          Dropdown#pill-filter.mb-1(placeholder='Filter By Magic Type',v-model='pillFilter',
+            @change='change()', :options='pillTypeOptions')
+        .p-field
+          label(for='wand-filter') Wand Filter
+          Dropdown#wand-filter.mb-1(placeholder='Filter By Magic Type',v-model='wandFilter',
+            @change='change()', :options='wandTypeOptions')
+        .p-field
+          label(for='weapon-filter') Weapon Filter
+          Dropdown#weapon-filter.mb-1(placeholder='Filter By Weapon Type',v-model='weaponFilter',
+            @change='change()', :options='weaponTypeOptions')
+        .p-field
+          label(for='potions-filter') Potions Filter
+          Dropdown#potions-filter.mb-1(placeholder='Filter By Magic Type',v-model='potionFilter',
+            @change='change()', :options='potionTypeOptions')
+        .p-field
+          label(for='scroll-filter') Scroll Filter
+          Dropdown#scroll-filter.mb-1(placeholder='Filter By Magic Type',v-model='scrollFilter',
+            @change='change()', :options='scrollTypeOptions')
+        .p-field
+          label(for='stave-filter') Stave Filter
+          Dropdown#stave-filter.mb-1(placeholder='Filter By Magic Type',v-model='staffFilter',
+            @change='change()', :options='staffTypeOptions')
+      .grid.justify-content-between
+        .p-field
+          label(for='area-filter') Area Filter
+          Dropdown#area-filter.mb-1(placeholder='Filter By Area',v-model='areaFilter',
+            @change='change()', :options='areaOptions')
+        .p-field
+          label(for='other-filter') Other Filter
+          Dropdown#other-filter.mb-1(placeholder='Filter By Other Type',v-model='otherFilter',
+            @change='change()', :options='otherTypeOptions')
       .p-field.text-center
         label(for='level-restriction') Level Restriction ({{levelRestriction[0]}} to {{levelRestriction[1]}})
         Slider#level-restriction(v-model='levelRestriction',:min='0',:max='105',
           range,@change='change()')
+    TabPanel(header='Score Configuration (Advanced)')
+      Button.mb-2(type='is-secondary',@click='resetScoreDefaults()') Reset Defaults
+      .grid.justify-content-between
+        .p-field
+          label(for='strength') Strength
+          InputNumber#strength(v-model='weights.strength',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='dexterity') Dexterity
+          InputNumber#dexterity(v-model='weights.dexterity',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='intelligence') Intelligence
+          InputNumber#intelligence(v-model='weights.intelligence',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='wisdom') Wisdom
+          InputNumber#wisdom(v-model='weights.wisdom',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='constitution') Constitution
+          InputNumber#constitution(v-model='weights.constitution',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='damroll') Damroll
+          InputNumber#damroll(v-model='weights.damroll',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='hitroll') Hitroll
+          InputNumber#hitroll(v-model='weights.hitroll',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='health') Health
+          InputNumber#health(v-model='weights.health',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='mana') Mana
+          InputNumber#mana(v-model='weights.mana',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+        .p-field
+          label(for='move') Move
+          InputNumber#move(v-model='weights.move',@change='changeScore',showButtons,buttonLayout='vertical',
+          style='width:50px')
+  hr
+  .code.has-text-left(v-if='output&&output.length')
+    .has-text-right
+      Button.top-button(icon='fa fa-arrow-up',
+       type='is-primary',inverted,@click='change(null)',
+       style='position:absolute;margin-top:-0.4rem;right:2.2rem;',
+       v-if='$route.query.vnum')
+    span.gray #. short string 
+    span.green-bold (
+    span.green SCORE
+    span.green-bold ) 
+    span.red-bold (
+    span.red LEVEL
+    span.red-bold )
+    template(v-for='line in output')
+      .cursor(v-if='line.item',@click='change(line.item.vnum)')
+        .line
+          span(v-for='word in line',:class='word.class') {{word.text}}
+      .line(v-if='!line.item')
+        span(v-for='word in line',:class='word.class') {{word.text}}
+    Button.bottom-button(icon='fa fa-arrow-left',:disabled='page==0',
+      type='is-secondary',inverted,@click='previousPage',
+      v-if='!$route.query.vnum',
+      style='position:absolute;margin-top:-1.9rem;right:5rem')
+    Button.bottom-button(icon='fa fa-arrow-right',:disabled='page==pages-1',
+      type='is-secondary',inverted,@click='nextPage',
+      v-if='!$route.query.vnum',
+      style='position:absolute;margin-top:-1.9rem;right:2.2rem')
 </template>
 <script>
 
@@ -175,18 +172,27 @@ export default {
       page: 0,
       pages: 0,
       itemsPerPage: 20,
-      customizeScore: false,
       weights: {
         strength: 7,
+        strengthDefault: 7,
         dexterity: 7,
+        dexterityDefault: 7,
         intelligence: 7,
+        intelligenceDefault: 7,
         wisdom: 7,
+        wisdomDefault: 7,
         constitution: 7,
+        constitutionDefault: 7,
         hitroll: 4,
+        hitrollDefault: 4,
         damroll: 7,
+        damrollDefault: 7,
         health: 1,
+        healthDefault: 1,
         mana: 1,
-        move: 0
+        manaDefault: 1,
+        move: 0,
+        moveDefault: 0
       },
       armorSlotOptions: [
         'none','finger','neck','body','head','legs','feet','hands','arms',
@@ -351,8 +357,19 @@ export default {
       this.page++;
       this.load();
     },
+    resetScoreDefaults(){
+      this.weights.strength = this.weights.strengthDefault;
+      this.weights.dexterity = this.weights.dexterityDefault;
+      this.weights.intelligence = this.weights.intelligenceDefault;
+      this.weights.wisdom = this.weights.wisdomDefault;
+      this.weights.constitution = this.weights.constitutionDefault;
+      this.weights.hitroll = this.weights.hitrollDefault;
+      this.weights.damroll = this.weigthts.damrollDefault;
+      this.weights.health = this.weights.healthDefault;
+      this.weights.mana = this.weights.manaDefault;
+      this.weights.move = this.weights.moveDefault;
+    },
     changeScore(){
-      if(!this.customizeScore) return; //short-circuit. ignore changes
       this.items.forEach(item=>{
         item.customScore=0;
         (item.affects||[]).forEach(affect=>{
@@ -555,23 +572,14 @@ export default {
 
         if(!items.length){
           this.drawString('{R---> {xNo Results {R<--');
-        }else if(this.customizeScore){
-          const sortedItems = items
-            .sort((a,b)=> a.customScore<b.customScore?1:a.customScore>b.customScore?-1:+a.level<+b.level?1:-1);
+        }
+        const sortedItems = items
+          .sort((a,b)=> a.customScore<b.customScore?1:a.customScore>b.customScore?-1:+a.level<+b.level?1:-1);
 
-          this.pages = Math.floor(sortedItems.length/this.itemsPerPage);
-          for(let i=this.page*this.itemsPerPage;i<(this.page+1)*this.itemsPerPage&&i<sortedItems.length;i++){
-            this.drawItem(items[i],i+1);
-          } //end for
-        }else{
-          const sortedItems = items
-            .sort((a,b)=> +a.score<+b.score?1:+a.score>+b.score?-1:+a.level<+b.level?1:-1);
-
-          this.pages = Math.floor(sortedItems.length/this.itemsPerPage);
-          for(let i=this.page*this.itemsPerPage;i<(this.page+1)*this.itemsPerPage&&i<sortedItems.length;i++){
-            this.drawItem(items[i],i+1);
-          } //end for
-        } //end if
+        this.pages = Math.floor(sortedItems.length/this.itemsPerPage);
+        for(let i=this.page*this.itemsPerPage;i<(this.page+1)*this.itemsPerPage&&i<sortedItems.length;i++){
+          this.drawItem(items[i],i+1);
+        } //end for
       } //end if
     },
     drawItem(item,number){

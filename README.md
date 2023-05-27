@@ -2,9 +2,10 @@
 A collection of resources and information surrounding the Adventures Unlimited MUD
 
 - [Official Homepage](tharel.net)
-- [Item Calculator](https://itemcalculator.nathanielinman.com/)
-- [Territory Calculator](https://territorycalculator.nathanielinman.com/)
-- [Home Calculator](https://homecalculator.nathanielinman.com/)
+- [Item Calculator](https://nathanielinman.github.io/AdventuresUnlimited/#/items)
+- [AU Damage Strings](https://nathanielinman.github.io/AdventuresUnlimited/#/damageStrings)
+- [Territory Calculator](https://nathanielinman.github.io/AdventuresUnlimited/#/territory)
+- [Home Calculator](https://nathanielinman.github.io/AdventuresUnlimited/#/home)
 
 Separate sections of the wiki
 
