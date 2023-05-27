@@ -1,6 +1,6 @@
 site: utilities@https://github.io/nathanielinman/adventuresunlimited/utilities
-date: Fri May 26 11:34:07 PM CDT 2023
+date: Fri May 26 11:37:44 PM CDT 2023
 user: nate
-hash: 766fc1d3374b024036e166855f77835aab6a27b9
+hash: 560d43779b8ec142b5e9578d2923e4d85d575902
 application: utilities
 version: 0.1.0
