@@ -2,7 +2,7 @@
 
 # Main variables
 VERSION=$(awk '/version/{gsub(/("|",)/,"",$2);print $2};' package.json)
-HASH=$(git rev-parse head)
+HASH=$(git rev-parse HEAD)
 TODAY=$(date)
 USER=$(whoami)
 
