@@ -11,118 +11,118 @@ section(style='padding-top: 0')
       .grid.mt-2
         .col
           .p-field-checkbox
-            Checkbox#show-pills(v-model='showPills',@change='change()',:binary='true')
+            Checkbox#show-pills(v-model='query.showPills',@change='change()',:binary='true')
             label(for='show-pills') Show Pills
           .p-field-checkbox
-            Checkbox#show-scrolls(v-model='showScrolls',@change='change()',:binary='true')
+            Checkbox#show-scrolls(v-model='query.showScrolls',@change='change()',:binary='true')
             label(for='show-scrolls') Show Scrolls
         .col
           .p-field-checkbox
-            Checkbox#show-potions(v-model='showPotions',@change='change()',:binary='true')
+            Checkbox#show-potions(v-model='query.showPotions',@change='change()',:binary='true')
             label(for='show-potions') Show Potions
           .p-field-checkbox
-            Checkbox#show-staves(v-model='showStaffs',@change='change()',:binary='true')
+            Checkbox#show-staves(v-model='query.showStaffs',@change='change()',:binary='true')
             label(for='show-staves') Show Staves
         .col
           .p-field-checkbox
-            Checkbox#show-wands(v-model='showWands',@change='change()',:binary='true')
+            Checkbox#show-wands(v-model='query.showWands',@change='change()',:binary='true')
             label(for='show-wands') Show Wands
           .p-field-checkbox
-            Checkbox#show-armor(v-model='showArmor',@change='change()',:binary='true')
+            Checkbox#show-armor(v-model='query.showArmor',@change='change()',:binary='true')
             label(for='show-armor') Show Armor
         .col
           .p-field-checkbox
-            Checkbox#show-weapons(v-model='showWeapons',@change='change()',:binary='true')
+            Checkbox#show-weapons(v-model='query.showWeapons',@change='change()',:binary='true')
             label(for='show-weapons') Show Weapons
           .p-field-checkbox
-            Checkbox#show-other(v-model='showOther',@change='change()',:binary='true')
+            Checkbox#show-other(v-model='query.showOther',@change='change()',:binary='true')
             label(for='show-other') Show Other
     TabPanel(header='Search Filters')
       .grid.justify-content-between
         .p-field
           label(for='armor-filter') Armor Filter
-          Dropdown#armor-filter.mb-1(placeholder='Filter By Armor Slot',v-model='armorFilter',
-            @change='change()', :options='armorSlotOptions')
+          Dropdown#armor-filter.mb-1(placeholder='Filter By Armor Slot',v-model='query.armorFilter',
+            @update:modelValue='change()', :options='options.armorSlots')
         .p-field
           label(for='pill-filter') Pill Filter
-          Dropdown#pill-filter.mb-1(placeholder='Filter By Magic Type',v-model='pillFilter',
-            @change='change()', :options='pillTypeOptions')
+          Dropdown#pill-filter.mb-1(placeholder='Filter By Magic Type',v-model='query.pillFilter',
+            @update:modelValue='change()', :options='options.pillTypes')
         .p-field
           label(for='wand-filter') Wand Filter
-          Dropdown#wand-filter.mb-1(placeholder='Filter By Magic Type',v-model='wandFilter',
-            @change='change()', :options='wandTypeOptions')
+          Dropdown#wand-filter.mb-1(placeholder='Filter By Magic Type',v-model='query.wandFilter',
+            @update:modelValue='change()', :options='options.wandTypes')
         .p-field
           label(for='weapon-filter') Weapon Filter
-          Dropdown#weapon-filter.mb-1(placeholder='Filter By Weapon Type',v-model='weaponFilter',
-            @change='change()', :options='weaponTypeOptions')
+          Dropdown#weapon-filter.mb-1(placeholder='Filter By Weapon Type',v-model='query.weaponFilter',
+            @update:modelValue='change()', :options='options.weaponTypes')
         .p-field
           label(for='potions-filter') Potions Filter
-          Dropdown#potions-filter.mb-1(placeholder='Filter By Magic Type',v-model='potionFilter',
-            @change='change()', :options='potionTypeOptions')
+          Dropdown#potions-filter.mb-1(placeholder='Filter By Magic Type',v-model='query.potionFilter',
+            @update:modelValue='change()', :options='options.potionTypes')
         .p-field
           label(for='scroll-filter') Scroll Filter
-          Dropdown#scroll-filter.mb-1(placeholder='Filter By Magic Type',v-model='scrollFilter',
-            @change='change()', :options='scrollTypeOptions')
+          Dropdown#scroll-filter.mb-1(placeholder='Filter By Magic Type',v-model='query.scrollFilter',
+            @update:modelValue='change()', :options='options.scrollTypes')
         .p-field
           label(for='stave-filter') Stave Filter
-          Dropdown#stave-filter.mb-1(placeholder='Filter By Magic Type',v-model='staffFilter',
-            @change='change()', :options='staffTypeOptions')
+          Dropdown#stave-filter.mb-1(placeholder='Filter By Magic Type',v-model='query.staffFilter',
+            @update:modelValue='change()', :options='options.staffTypes')
       .grid.justify-content-between
         .p-field
           label(for='area-filter') Area Filter
-          Dropdown#area-filter.mb-1(placeholder='Filter By Area',v-model='areaFilter',
-            @change='change()', :options='areaOptions')
+          Dropdown#area-filter.mb-1(placeholder='Filter By Area',v-model='query.areaFilter',
+            @update:modelValue='change()', :options='options.areas')
         .p-field
           label(for='other-filter') Other Filter
-          Dropdown#other-filter.mb-1(placeholder='Filter By Other Type',v-model='otherFilter',
-            @change='change()', :options='otherTypeOptions')
+          Dropdown#other-filter.mb-1(placeholder='Filter By Other Type',v-model='query.otherFilter',
+            @update:modelValue='change()', :options='options.otherTypes')
       .p-field.text-center
-        label(for='level-restriction') Level Restriction ({{levelRestriction[0]}} to {{levelRestriction[1]}})
-        Slider#level-restriction(v-model='levelRestriction',:min='0',:max='105',
+        label(for='level-restriction') Level Restriction ({{minLevel}} to {{maxLevel}})
+        Slider#level-restriction(v-model='query.levelRestriction',:min='0',:max='110',
           range,@change='change()')
     TabPanel(header='Score Configuration (Advanced)')
       Button.mb-2(type='is-secondary',@click='resetScoreDefaults()') Reset Defaults
       .grid.justify-content-between
         .p-field
           label(for='strength') Strength
-          InputNumber#strength(v-model='weights.strength',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#strength(v-model='weights.strength',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='dexterity') Dexterity
-          InputNumber#dexterity(v-model='weights.dexterity',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#dexterity(v-model='weights.dexterity',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='intelligence') Intelligence
-          InputNumber#intelligence(v-model='weights.intelligence',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#intelligence(v-model='weights.intelligence',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='wisdom') Wisdom
-          InputNumber#wisdom(v-model='weights.wisdom',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#wisdom(v-model='weights.wisdom',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='constitution') Constitution
-          InputNumber#constitution(v-model='weights.constitution',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#constitution(v-model='weights.constitution',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='damroll') Damroll
-          InputNumber#damroll(v-model='weights.damroll',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#damroll(v-model='weights.damroll',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='hitroll') Hitroll
-          InputNumber#hitroll(v-model='weights.hitroll',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#hitroll(v-model='weights.hitroll',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='health') Health
-          InputNumber#health(v-model='weights.health',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#health(v-model='weights.health',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='mana') Mana
-          InputNumber#mana(v-model='weights.mana',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#mana(v-model='weights.mana',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
         .p-field
           label(for='move') Move
-          InputNumber#move(v-model='weights.move',@change='changeScore',showButtons,buttonLayout='vertical',
-          style='width:50px')
+          InputNumber#move(v-model='weights.move',@input='changeScore',
+          showButtons,buttonLayout='vertical',style='width:50px')
   hr
   .code.has-text-left(v-if='output&&output.length')
     .has-text-right
@@ -155,196 +155,66 @@ section(style='padding-top: 0')
 </template>
 <script>
 
-import { mapState } from 'pinia';
-import { usersStore } from '../stores/';
+import { mapState, mapGetters, mapActions } from 'pinia';
+import { itemsStore, usersStore } from '../stores/';
 import * as colors from '../colors';
-import {items} from '../items/';
 
 
 // Prepare the main template
 export default {
   name: 'Items',
   computed: {
-    ...mapState(usersStore, ['name'])
+    ...mapState(usersStore, ['name']),
+    ...mapState(itemsStore, ['items','query','weights','options']),
+    ...mapGetters(itemsStore, ['minLevel', 'maxLevel'])
   },
   data(){
     return {
       output: [],
       page: 0,
       pages: 0,
-      itemsPerPage: 20,
-      weights: {
-        strength: 7,
-        strengthDefault: 7,
-        dexterity: 7,
-        dexterityDefault: 7,
-        intelligence: 7,
-        intelligenceDefault: 7,
-        wisdom: 7,
-        wisdomDefault: 7,
-        constitution: 7,
-        constitutionDefault: 7,
-        hitroll: 4,
-        hitrollDefault: 4,
-        damroll: 7,
-        damrollDefault: 7,
-        health: 1,
-        healthDefault: 1,
-        mana: 1,
-        manaDefault: 1,
-        move: 0,
-        moveDefault: 0
-      },
-      armorSlotOptions: [
-        'none','finger','neck','body','head','legs','feet','hands','arms',
-        'shield','about','waist','wrist','wield','hold','float'
-      ],
-      weaponTypeOptions: [
-        'none', 'sword','dagger','spear','mace','axe','flail','whip',
-        'polearm','staff'
-      ],
-      otherTypeOptions: [
-        'none','container','drink','food','fountain','furniture','gem','jewelry','key',
-        'light','lockpick','map','pole','portal','staff','tool','trash',
-        'treasure','warp_stone'
-      ],
-      pillTypeOptions: ['none'],
-      scrollTypeOptions: ['none'],
-      potionTypeOptions: ['none'],
-      wandTypeOptions: ['none'],
-      staffTypeOptions: ['none'],
-      areaOptions: ['none'],
-      items
+      itemsPerPage: 20
     };
   },
   created(){
     const {query} = this.$route;
 
-    Object.keys(
-      this.items
-        .reduce((map,item)=>{
-          map[item.area]=true;
-          return map;
-        },{})
-    ).forEach(key=> this.areaOptions.push(key));
-    Object.keys(
-      this.items
-        .filter(i=> i.itemType==='staff')
-        .reduce((map,item)=>{
-          item.valueFlags.forEach(rawFlag=>{
-            const flag = rawFlag.replace(/'/g,'').split(/\(|\)/g)[1];
-
-            if(isNaN(+flag[0])) map[flag] = true;
-          });
-          return map;
-        },{})
-    ).forEach(key=> this.staffTypeOptions.push(key));
-    Object.keys(
-      this.items
-        .filter(i=> i.itemType==='wand')
-        .reduce((map,item)=>{
-          item.valueFlags.forEach(rawFlag=>{
-            const flag = rawFlag.replace(/'/g,'').split(/\(|\)/g)[1];
-
-            // B is a deprecated flag
-            if(isNaN(+flag[0])&&flag[0]!=='B') map[flag] = true;
-          });
-          return map;
-        },{})
-    ).forEach(key=> this.wandTypeOptions.push(key));
-    Object.keys(
-      this.items
-        .filter(i=> i.itemType==='pill')
-        .reduce((map,item)=>{
-          item.valueFlags.forEach(rawFlag=>{
-            const flag = rawFlag.split(/\(|\)/g)[1];
-
-            if(isNaN(+flag[0])) map[flag] = true;
-          });
-          return map;
-        },{})
-    ).forEach(key=> this.pillTypeOptions.push(key));
-    Object.keys(
-      this.items
-        .filter(i=> i.itemType==='potion')
-        .reduce((map,item)=>{
-          item.valueFlags.forEach(rawFlag=>{
-            const flag = rawFlag.split(/\(|\)/g)[1];
-
-            if(isNaN(+flag[0])) map[flag] = true;
-          });
-          return map;
-        },{})
-    ).forEach(key=> this.potionTypeOptions.push(key));
-    Object.keys(
-      this.items
-        .filter(i=> i.itemType==='scroll')
-        .reduce((map,item)=>{
-          item.valueFlags.forEach(rawFlag=>{
-            const flag = rawFlag.split(/\(|\)/g)[1];
-
-            if(isNaN(+flag[0])) map[flag] = true;
-          });
-          return map;
-        },{})
-    ).forEach(key=> this.scrollTypeOptions.push(key));
-    console.log({query});
-    const levelRestriction = +query.levelRestriction;
-
-    if(!Array.isArray(query.levelRestriction)){
-      this.levelRestriction = [50,100];
-    }else{
-      this.levelRestriction = query.levelRestriction.map(n=>+n);
+    if(Array.isArray(query.levelRestriction)){
+      this.levelRestriction = query.levelRestriction.map(n=>parseInt(n,10));
     }
-    if(!query.hasOwnProperty('showStaffs')){
-      this.showStaffs = true;
-    }else{
+    if(query.hasOwnProperty('showStaffs')){
       this.showStaffs = query.showStaffs==='true';
     } //end if
-    if(!query.hasOwnProperty('showWands')){
-      this.showWands = true;
-    }else{
+    if(query.hasOwnProperty('showWands')){
       this.showWands = query.showWands==='true';
     } //end if
-    if(!query.hasOwnProperty('showPills')){
-      this.showPills = true;
-    }else{
+    if(query.hasOwnProperty('showPills')){
       this.showPills = query.showPills==='true';
     } //end if
-    if(!query.hasOwnProperty('showScrolls')){
-      this.showScrolls = true;
-    }else{
+    if(query.hasOwnProperty('showScrolls')){
       this.showScrolls = query.showScrolls==='true';
     } //end if
-    if(!query.hasOwnProperty('showPotions')){
-      this.showPotions = true;
-    }else{
+    if(query.hasOwnProperty('showPotions')){
       this.showPotions = query.showPotions==='true';
     } //end if
-    if(!query.hasOwnProperty('showArmor')){
-      this.showArmor = true;
-    }else{
+    if(query.hasOwnProperty('showArmor')){
       this.showArmor = query.showArmor==='true';
     } //end if
-    if(!query.hasOwnProperty('showWeapons')){
-      this.showWeapons = true;
-    }else{
+    if(query.hasOwnProperty('showWeapons')){
       this.showWeapons = query.showWeapons==='true';
     } //end if
-    if(!query.hasOwnProperty('showOther')){
-      this.showOther = true;
-    }else{
+    if(query.hasOwnProperty('showOther')){
       this.showOther = query.showOther==='true';
     } //end if
-    this.areaFilter = query.areaFilter || 'none';
-    this.potionFilter = query.potionFilter || 'none';
-    this.scrollFilter = query.scrollFilter || 'none';
-    this.pillFilter = query.pillFilter || 'none';
-    this.staffFilter = query.staffFilter || 'none';
-    this.wandFilter = query.wandFilter || 'none';
-    this.weaponFilter = query.weaponFilter || 'none';
-    this.armorFilter = query.armorFilter || 'none';
-    this.otherFilter = query.otherFilter || 'none';
+    if(query.hasOwnProperty('areaFilter')) this.areaFilter = query.areaFilter;
+    if(query.hasOwnProperty('potionFilter')) this.potionFilter = query.potionFilter;
+    if(query.hasOwnProperty('scrollFilter')) this.scrollFilter = query.scrollFilter;
+    if(query.hasOwnProperty('pillFilter')) this.pillFilter = query.pillFilter;
+    if(query.hasOwnProperty('staffFilter')) this.staffFilter = query.staffFilter;
+    if(query.hasOwnProperty('wandFilter')) this.wandFilter = query.wandFilter;
+    if(query.hasOwnProperty('weaponFilter')) this.weaponFilter = query.weaponFilter;
+    if(query.hasOwnProperty('armorFilter')) this.armorFilter = query.armorFilter;
+    if(query.hasOwnProperty('otherFilter')) this.otherFilter = query.otherFilter;
     this.change(query&&query.vnum ? query.vnum : null);
   },
   methods: {
@@ -417,26 +287,7 @@ export default {
       inputEl.remove();
     },
     change(vnum){
-      const query = {
-        levelRestriction: this.levelRestriction,
-        showStaffs: this.showStaffs,
-        showWands: this.showWands,
-        showPills: this.showPills,
-        showScrolls: this.showScrolls,
-        showPotions: this.showPotions,
-        showArmor: this.showArmor,
-        showWeapons: this.showWeapons,
-        showOther: this.showOther,
-        armorFilter: this.armorFilter,
-        weaponFilter: this.weaponFilter,
-        staffFilter: this.staffFilter,
-        wandFilter: this.wandFilter,
-        pillFilter: this.pillFilter,
-        potionFilter: this.potionFilter,
-        scrollFilter: this.scrollFilter,
-        areaFilter: this.areaFilter,
-        otherFilter: this.otherFilter
-      };
+      const {query} = this;
       if(vnum===undefined){
         this.page = 0;
       }else{
@@ -446,7 +297,7 @@ export default {
       this.load(vnum);
     },
     load(vnum){
-      this.output.length = 0;
+      this.output.splice(0);
       if(vnum){
         const item = this.items.find(item=> item.vnum===vnum);
 
@@ -531,40 +382,40 @@ export default {
       }else{
         const items = this.items.filter(item=>{
 
-          const meetsLevel = +item.level>=this.levelRestriction[0]&&
-                 +item.level<=this.levelRestriction[1],
-                meetsArea = this.areaFilter==='none'||item.area===this.areaFilter,
-                meetsOther = this.otherTypeOptions.includes(item.itemType)&&this.showOther&&(
-                  this.otherFilter==='none'||
-                  item.itemType===this.otherFilter
+          const meetsLevel = +item.level>=this.query.levelRestriction[0]&&
+                 +item.level<=this.query.levelRestriction[1],
+                meetsArea = this.query.areaFilter==='none'||item.area===this.query.areaFilter,
+                meetsOther = this.options.otherTypes.includes(item.itemType)&&this.query.showOther&&(
+                  this.query.otherFilter==='none'||
+                  item.itemType===this.query.otherFilter
                 ),
-                meetsArmor = this.showArmor&&(
-                  this.armorFilter==='none'&&item.itemType==='armor'||
-                  item.wearFlags.includes(this.armorFilter)
+                meetsArmor = this.query.showArmor&&(
+                  this.query.armorFilter==='none'&&item.itemType==='armor'||
+                  item.wearFlags.includes(this.query.armorFilter)
                 ),
-                meetsWeapon = item.itemType==='weapon'&&this.showWeapons&&(
-                  this.weaponFilter==='none'||
-                  item.valueFlags[0].includes(this.weaponFilter)
+                meetsWeapon = item.itemType==='weapon'&&this.query.showWeapons&&(
+                  this.query.weaponFilter==='none'||
+                  item.valueFlags[0].includes(this.query.weaponFilter)
                 ),
-                meetsWand = item.itemType==='wand'&&this.showWands&&(
-                  this.wandFilter==='none'||
-                  item.valueFlags.find(o=>o.includes(this.wandFilter))
+                meetsWand = item.itemType==='wand'&&this.query.showWands&&(
+                  this.query.wandFilter==='none'||
+                  item.valueFlags.find(o=>o.includes(this.query.wandFilter))
                 ),
-                meetsStaff = item.itemType==='staff'&&this.showStaffs&&(
-                  this.staffFilter==='none'||
-                  item.valueFlags.find(o=>o.includes(this.staffFilter))
+                meetsStaff = item.itemType==='staff'&&this.query.showStaffs&&(
+                  this.query.staffFilter==='none'||
+                  item.valueFlags.find(o=>o.includes(this.query.staffFilter))
                 ),
-                meetsPill = item.itemType==='pill'&&this.showPills&&(
-                  this.pillFilter==='none'||
-                  item.valueFlags.find(o=>o.includes(this.pillFilter))
+                meetsPill = item.itemType==='pill'&&this.query.showPills&&(
+                  this.query.pillFilter==='none'||
+                  item.valueFlags.find(o=>o.includes(this.query.pillFilter))
                 ),
-                meetsScroll = item.itemType==='scroll'&&this.showScrolls&&(
-                  this.scrollFilter==='none'||
-                  item.valueFlags.find(o=>o.includes(this.scrollFilter))
+                meetsScroll = item.itemType==='scroll'&&this.query.showScrolls&&(
+                  this.query.scrollFilter==='none'||
+                  item.valueFlags.find(o=>o.includes(this.query.scrollFilter))
                 ),
-                meetsPotion = item.itemType==='potion'&&this.showPotions&&(
-                  this.potionFilter==='none'||
-                  item.valueFlags.find(o=>o.includes(this.potionFilter))
+                meetsPotion = item.itemType==='potion'&&this.query.showPotions&&(
+                  this.query.potionFilter==='none'||
+                  item.valueFlags.find(o=>o.includes(this.query.potionFilter))
                 );
 
           return meetsLevel&&meetsArea&&(
