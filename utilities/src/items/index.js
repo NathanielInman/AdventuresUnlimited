@@ -164,6 +164,7 @@ import upperBarreston from './upperBarreston.json';
 import urbyrtnol from './urbyrtnol.json';
 import valeda from './valeda.json';
 import vallsArea from './vallsArea.json';
+import versesTower from './versusTower.json';
 import vlauchauchCityOfTheDivine from './vlauchauchCityOfTheDivine.json';
 import westernBeaches from './westernBeaches.json';
 import westernCoastline from './westernCoastline.json';
@@ -204,9 +205,9 @@ export const itemsMap = {
   theRuinsOfKhezaderth, theSandcastle, theStoneQuarry, theUndergroundHighway, theWesternRoad,
   theWhirlpool, theWhiteShrine, timaliaQuest, timaQuest2, tinyRapids, tleisinsPool, travellersRest,
   troutheadTown, tuckersHotel, tunnelsOfTharel, tyyrinnVillage, tzimoshsCamp, uchduruk,
-  underdark, upperBarreston, urbyrtnol, valeda, vallsArea, vlauchauchCityOfTheDivine, westernBeaches,
-  westernCoastline, westernOcean, westernOcean2, westernTharel, wildlifeRefuge, wittraWagon,
-  woodfellForest, xelith, xuergotheCastle, yrenelania, zzukenathaft
+  underdark, upperBarreston, urbyrtnol, valeda, vallsArea, versesTower, vlauchauchCityOfTheDivine,
+  westernBeaches, westernCoastline, westernOcean, westernOcean2, westernTharel, wildlifeRefuge,
+  wittraWagon, woodfellForest, xelith, xuergotheCastle, yrenelania, zzukenathaft
 }
 export const items = Object.keys(itemsMap)
   .map(mapName => itemsMap[mapName])

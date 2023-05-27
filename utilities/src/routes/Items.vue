@@ -130,13 +130,14 @@ section(style='padding-top: 0')
        type='is-primary',inverted,@click='change(null)',
        style='position:absolute;margin-top:-0.4rem;right:2.2rem;',
        v-if='$route.query.vnum')
-    span.gray #. short string 
-    span.green-bold (
-    span.green SCORE
-    span.green-bold ) 
-    span.red-bold (
-    span.red LEVEL
-    span.red-bold )
+    template(v-if='!$route.query.vnum')
+      span.gray #. short string 
+      span.green-bold (
+      span.green SCORE
+      span.green-bold ) 
+      span.red-bold (
+      span.red LEVEL
+      span.red-bold )
     template(v-for='line in output')
       .cursor(v-if='line.item',@click='change(line.item.vnum)')
         .line
@@ -213,9 +214,7 @@ export default {
       wandTypeOptions: ['none'],
       staffTypeOptions: ['none'],
       areaOptions: ['none'],
-      items: items
-        .sort((a,b)=> +a.score<+b.score?1:+a.score>+b.score?-1:+a.level<+b.level?1:-1)
-        .filter(o=>o.score<5000)
+      items
     };
   },
   created(){
@@ -349,6 +348,9 @@ export default {
     this.change(query&&query.vnum ? query.vnum : null);
   },
   methods: {
+    sortScore(items){
+      return items.sort((a,b)=> parseInt(a.score,10)<parseInt(b.score,10)?1:-1);
+    },
     previousPage(){
       this.page--;
       this.load();
@@ -371,7 +373,7 @@ export default {
     },
     changeScore(){
       this.items.forEach(item=>{
-        item.customScore=0;
+        item.score=0;
         (item.affects||[]).forEach(affect=>{
           if(
             [
@@ -379,10 +381,10 @@ export default {
               'wisdom','constitution','hitroll','damroll',
               'health','mana','move'
             ].includes(affect.name)
-          ) item.customScore+=parseInt(this.weights[affect.name]||0)*parseInt(affect.amount);
+          ) item.score+=parseInt(this.weights[affect.name]||0)*parseInt(affect.amount);
         });
       });
-      this.items = this.items.sort((a,b)=> a.customScore<b.customScore?1:a.customScore>b.customScore?-1:+a.level<+b.level?1:-1);
+      this.items = this.sortScore(this.items);
       const {query} = this.$router.currentRoute;
 
       this.change(query&&query.vnum?query.vnum:null);
@@ -573,8 +575,8 @@ export default {
         if(!items.length){
           this.drawString('{R---> {xNo Results {R<--');
         }
-        const sortedItems = items
-          .sort((a,b)=> a.customScore<b.customScore?1:a.customScore>b.customScore?-1:+a.level<+b.level?1:-1);
+
+        const sortedItems = this.sortScore(items);
 
         this.pages = Math.floor(sortedItems.length/this.itemsPerPage);
         for(let i=this.page*this.itemsPerPage;i<(this.page+1)*this.itemsPerPage&&i<sortedItems.length;i++){
@@ -583,7 +585,7 @@ export default {
       } //end if
     },
     drawItem(item,number){
-      item.stringified = this.drawString(`${number?`{D${number}. {x`:''}${item.short} {G({g${this.customizeScore?item.customScore:item.score}{G) {R({r${item.level}{R)`);
+      item.stringified = this.drawString(`${number?`{D${number}. {x`:''}${item.short} {G({g${item.score}{G) {R({r${item.level}{R)`);
       item.stringified.item = item; //recursive for function pointer
     },
     drawString(string){
