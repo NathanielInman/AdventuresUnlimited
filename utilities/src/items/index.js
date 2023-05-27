@@ -164,7 +164,7 @@ import upperBarreston from './upperBarreston.json';
 import urbyrtnol from './urbyrtnol.json';
 import valeda from './valeda.json';
 import vallsArea from './vallsArea.json';
-import versesTower from './versusTower.json';
+import versesTower from './versesTower.json';
 import vlauchauchCityOfTheDivine from './vlauchauchCityOfTheDivine.json';
 import westernBeaches from './westernBeaches.json';
 import westernCoastline from './westernCoastline.json';
