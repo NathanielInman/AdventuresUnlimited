@@ -385,22 +385,22 @@ Rarity Percentages:
 50-59=common,60-69=very common,70-79=abundant,80-89=very abundant,90-100=everywhere
 ```
 
-| name | ores & rarity | ore frequency | gems & rarity | gem frequency |
+| name | ores rarity | ore frequency | gems rarity | gem frequency |
 | --- | --- | --- | --- | --- |
-| The Drow Mines | steel (common), copper (common), silver (kinda rare) | 1000 | onyx (common), pyrite (common), quartz (kinda rare) | 10 |
-| Du'Rahath | meteorite (common), electrum (common), lead (kinda rare) | 500 | gem (common), pyrite (common), topaz (kinda rare) | 5 |
-| Fireblast Mountains | gold (common), adamantite (common), electrum (kinda rare) | 1000 | obsidian (common), granite (common), aquamarine (kinda rare) | 20 |
-| The Frozen Waste | cold steel (common), adamantite (common), irlimnite (kinda rare) | 125 | marble (common), sunstone (common), obsidian (kinda rare) | 10 |
-| Kaer Tzoun | steel (kinda rare), cold steel (kinda rare), copper (kinda rare), lead (common) | 1000 | pyrite (kinda rare), glass (kinda rare), citrine (kinda rare), stone (kinda rare), marble (kinda rare) | 50 |
-| The Mines of Markov | meteorite (common), irlimnite (common), silvite (kinda rare) | 1000 | opal (common), diamond (common), garnet (kinda rare) | 10 |
-| Hagarth | gold (common), silvite (common), copper (kinda rare) | 150 | opal (kinda rare), ruby (kinda rare), sapphire (kinda rare), emerald (kinda rare), clay (kinda rare) | 5 |
-| Mt. Ka'lri | zeririte (common), silvite (common), pewter (kinda rare) | 150 | clay (common), amethyst (common), pearl (kinda rare) | 10 |
-| Pyrainn Mountains | electrum (kinda rare), iron (kinda rare), steel (kinda rare), gold (kinda rare), xedalium (kinda rare) | unlimited | diamond (kinda rare), pyrite (kinda rare), amethyst (kinda rare), ruby (kinda rare), glass (kinda rare) | unlimited |
-| Mines of Noal'xyn | mithril (common), cold steel (common), platinum (kinda rare) | 500 | stone (common), sapphire (common), jade (kinda rare) | 5 |
-| The Stone Quarry | qyarelite (common), bronze (common), copper (kinda rare) | 500 | ebony (common), jade (common), ivory (kinda rare) | 25 |
-| Lost Kingdoms | mithril (common), adamantite (common), iron (kinda rare) | 1000 | ruby (common), marble (common), pyrite (kinda rare) | 20 |
-| The Forbidden Wastes | xedalium (common), meteorite (common), zeririte (kinda rare) | 500 | sunstone (common), amber (common), azurite (kinda rare) | 20 |
-| The Western Road | brass (common), ulayilium (common), platinum (kinda rare) | 1500 | amethyst (common), amber (common), moonstone (kinda rare) | 15 |
+| The Drow Mines | steel (common), copper (common), silver (kinda rare) | very common | onyx (common), pyrite (common), quartz (kinda rare) | extremely rare |
+| Du'Rahath | meteorite (common), electrum (common), lead (kinda rare) | common | gem (common), pyrite (common), topaz (kinda rare) | extremely rare |
+| Fireblast Mountains | gold (common), adamantite (common), electrum (kinda rare) | very common | obsidian (common), granite (common), aquamarine (kinda rare) | kinda rare |
+| The Frozen Waste | cold steel (common), adamantite (common), irlimnite (kinda rare) | uncommon | marble (common), sunstone (common), obsidian (kinda rare) | extremely rare |
+| Kaer Tzoun | steel (kinda rare), cold steel (kinda rare), copper (kinda rare), lead (common) | very common | pyrite (kinda rare), glass (kinda rare), citrine (kinda rare), stone (kinda rare), marble (kinda rare) | barely uncommon |
+| The Mines of Markov | meteorite (common), irlimnite (common), silvite (kinda rare) | very common | opal (common), diamond (common), garnet (kinda rare) | extremely rare |
+| Hagarth | gold (common), silvite (common), copper (kinda rare) | barely uncommon | opal (kinda rare), ruby (kinda rare), sapphire (kinda rare), emerald (kinda rare), clay (kinda rare) | extremely rare |
+| Mt. Ka'lri | zeririte (common), silvite (common), pewter (kinda rare) | barely uncommon | clay (common), amethyst (common), pearl (kinda rare) | very rare |
+| Pyrainn Mountains | electrum (kinda rare), iron (kinda rare), steel (kinda rare), gold (kinda rare), xedalium (kinda rare) | very abundant | diamond (kinda rare), pyrite (kinda rare), amethyst (kinda rare), ruby (kinda rare), glass (kinda rare) | kinda rare |
+| Mines of Noal'xyn | mithril (common), cold steel (common), platinum (kinda rare) | common | stone (common), sapphire (common), jade (kinda rare) | extremely rare |
+| The Stone Quarry | qyarelite (common), bronze (common), copper (kinda rare) | common | ebony (common), jade (common), ivory (kinda rare) | kinda rare |
+| Lost Kingdoms | mithril (common), adamantite (common), iron (kinda rare) | very common | ruby (common), marble (common), pyrite (kinda rare) | kinda rare |
+| The Forbidden Wastes | xedalium (common), meteorite (common), zeririte (kinda rare) | common | sunstone (common), amber (common), azurite (kinda rare) | kinda rare |
+| The Western Road | brass (common), ulayilium (common), platinum (kinda rare) | abundant | amethyst (common), amber (common), moonstone (kinda rare) | very rare |
 
 | name | type | strength | magic | rarity | other |
 | --- | --- | --- | --- | --- | --- |
