@@ -20,6 +20,7 @@ Separate sections of the wiki
     - [Quest Items](#quest-items)
   - [Trainers](#trainers)
   - [Tradesguilds](#tradesguilds)
+    - [Enchanting & Tradesguild Tips](#enchanting-and-trandesguild-tips) 
     - [Quality Table](#quality-table)
     - [Required Ore Table](#required-ore-table)
     - [Materials Table](#materials-table)
@@ -330,6 +331,12 @@ The following is the locations of the tradesguilds:
 | jewelers | 11e3s6e4s7e6s8e1s |
 | weaponsmiths | 4e9n5w6n11e3n5e1n3e7n2w9n14e1n | 
 | armorsmiths | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock north;open north;2n6e1s |
+
+#### Enchanting and Tradesguild Tips
+- Before infusing armor or weapons, make sure they have `bless` and `continual light` on them, `humming`, and `fireproof` are bad
+- Continual light can be found east of naerlan, bless scroll can be found in hand of markov
+- Make sure to get +50 force or accuracy before using gems of force or accuracy on level 105 items using xedalium
+- When mining for a long time it makes sense to keep a bunch of "a clear potion" found in heishaer city to cast multiple refresh if you can't cast it
 
 #### Quality Table
 | name | percentage |
