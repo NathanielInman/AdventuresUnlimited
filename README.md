@@ -20,6 +20,7 @@ Separate sections of the wiki
     - [Quest Items](#quest-items)
   - [Trainers](#trainers)
   - [Tradesguilds](#tradesguilds)
+    - [Enchanting & Tradesguild Tips](#enchanting-and-trandesguild-tips) 
     - [Quality Table](#quality-table)
     - [Required Ore Table](#required-ore-table)
     - [Materials Table](#materials-table)
@@ -98,138 +99,138 @@ Additional helpful maps on the [official website](tharel.net):
 | 5 - 8 | [School of Faith](https://tharel.net/img/map-schooloffaith.gif) | | 6w6s1w |
 | 5 - 10 | T'leisins Pool | | 8w4s2w;search north;open n;1n2w2s |
 | 5 - 10 | The Stone Quarry | **✓** | 14w1s |
-| 5 - 10 | Nerezza | ? | 7e1d2s1e7s7e2n3w |
+| 5 - 10 | Nerezza |  | 7e1d2s1e7s7e2n3w |
 | 5 - 10 | [Equinilis](https://tharel.net/img/map-equinilis.gif) | | 12w4n1w |
 | 5 - 10 | Lunatic's Alley | | 5w17s2e1n |
 | 5 - 10 | [Gypsy Camp](https://tharel.net/img/map-gypsycamp.jpg) | | 8w2s |
-| 5 - 10 | Naerlan Graveyard | ? | 6w10s1w1s |
-| 5 - 10 | Woodfell Forest | ? | 5w9n4e;open north;6n3e1s |
+| 5 - 10 | Naerlan Graveyard | | 6w10s1w1s |
+| 5 - 10 | Woodfell Forest | | 5w9n4e;open north;6n3e1s |
 | 5 - 15 | The Mines of Markov | **✓** | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n |
-| 5 - 15 | Shrine of Barbades | ? | 4e9n5w6n9e2n1w1n1w1u |
+| 5 - 15 | Shrine of Barbades | | 4e9n5w6n9e2n1w1n1w1u |
 | 5 - 15 | [Deltherian](https://tharel.net/img/map-deltherian.jpg) | | 8e7n |
-| 5 - 15 | Taverns of Naerlan | ? | Unknown |
-| 5 - 15 | [Travellers' Rest](https://tharel.net/img/map-travellersrest.gif) | ? | 11e3s5w |
-| 5 - 15 | Brovlancor | ? | 4e9n5w6n6w8s2w1n2w4s1w4s2e1s |
-| 5 - 30 | Naerlan Sewers | ? | 4s2w1d |
-| 5 - 40 | [The City of Aliuna](https://tharel.net/img/map-aliuna.png) | ? | 11e3s6e4s5e |
-| 8 - 22 | [Haythor Dungeon](https://tharel.net/img/map-haythordungeon.jpg) | ? | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
+| 5 - 15 | Taverns of Naerlan | | Unknown |
+| 5 - 15 | [Travellers' Rest](https://tharel.net/img/map-travellersrest.gif) | | 11e3s5w |
+| 5 - 15 | Brovlancor | | 4e9n5w6n6w8s2w1n2w4s1w4s2e1s |
+| 5 - 30 | Naerlan Sewers | | 4s2w1d |
+| 5 - 40 | [The City of Aliuna](https://tharel.net/img/map-aliuna.png) | | 11e3s6e4s5e |
+| 8 - 22 | [Haythor Dungeon](https://tharel.net/img/map-haythordungeon.jpg) | | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
 | 10 - 15 | The Drow Mines | **✓** | (through underdark) 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n |
 | contin. | contin. | contin. | 2d9s8w1s2w2s2w1s1e2s1w1s2e1s |
 | 10 - 15 | The Drow Mines | **✓** | (through goblin stronghold) 4e9n5w6n11e3n5e1n3e7n2w9n1w1n |
 | contin. | contin. | contin. | 3w7n2w2n1d9s8w2s1w1s3w1s1e2s1w1s2e1s |
-| 10 - 15 | [Cartwrights Farm](https://tharel.net/img/map-cartwrightsfarm.gif) | ? | 9w1d5n7w2n1e |
-| 10 - 15 | [Volencymale](https://tharel.net/img/map-cathedralvolencymale.gif) | ? | 12w4n1e |
-| 10 - 15 | [The Renault House](https://tharel.net/img/map-renaulthouse.jpg) | ? | 7w2n2w;search n |
+| 10 - 15 | [Cartwrights Farm](https://tharel.net/img/map-cartwrightsfarm.gif) | | 9w1d5n7w2n1e |
+| 10 - 15 | [Volencymale](https://tharel.net/img/map-cathedralvolencymale.gif) | | 12w4n1e |
+| 10 - 15 | [The Renault House](https://tharel.net/img/map-renaulthouse.jpg) | | 7w2n2w;search n |
 | 10 - 15 | Bose'nisten | | 5w9n4e6n6w2s |
-| 10 - 15 | The Bog of Durlah | ? | 7e1d2w2n12w2s |
+| 10 - 15 | The Bog of Durlah | | 7e1d2w2n12w2s |
 | 10 - 15 | Hagarth | **✓** | 4e17s4w9s2w2s1w1s |
-| 10 - 20 | Tark Valley | ? | 9w1d5n11w;open n;1n;open w;1w;open n;n |
+| 10 - 20 | Tark Valley | | 9w1d5n11w;open n;1n;open w;1w;open n;n |
 | 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | **✓** | 4e9n5w6n6w8s2w1n2w4s1s1w;search west;open w;1qw |
-| 10 - 20 | [Tzimosh's Camp](https://tharel.net/img/map-tzimoshscamp.jpg) | ? | 5w9n4e6n11e3n1e1n |
-| 10 - 20 | Hythian Forest | ? | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
-| 10 - 20 | [Burrowholme](https://tharel.net/img/map-burrowholme.gif) | ? | 5w9n4e;open north;5n4w1n |
-| 10 - 20 | Goblin Stronghold | ? | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
-| 10 - 20 | [Grungel](https://tharel.net/img/map-grungel.jpg) | ? | 7e1d2s1e3s1w |
-| 10 - 25 | [The Hand of Markov](https://tharel.net/img/map-handofmarkov.gif) | **✓** | 7s4e10s4w9s2w2s2w |
+| 10 - 20 | [Tzimosh's Camp](https://tharel.net/img/map-tzimoshscamp.jpg) | | 5w9n4e6n11e3n1e1n |
+| 10 - 20 | Hythian Forest | | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
+| 10 - 20 | [Burrowholme](https://tharel.net/img/map-burrowholme.gif) | | 5w9n4e;open north;5n4w1n |
+| 10 - 20 | Goblin Stronghold | | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
+| 10 - 20 | [Grungel](https://tharel.net/img/map-grungel.jpg) | | 7e1d2s1e3s1w |
+| 10 - 25 | [The Hand of Markov](https://tharel.net/img/map-handofmarkov.gif) | | 7s4e10s4w9s2w2s2w |
 | 10 - 30 | Illianathoren Pass | | 8e7n1w1n1e5n3e3n4e |
-| 10 - 30 | [Khetes](https://tharel.net/img/map-khetes.jpg) | ? | 11e5n2e1s7e3n |
-| 10 - 40 | [Northern Barreston](https://tharel.net/img/map-barreston.png) | ? | 5w9n4e6n6w3n2w3n2w |
-| 10 - 40 | [Lower Barreston](https://tharel.net/img/map-barreston.png) | ? | 5w9n4e6n6w3n2w3n2w |
-| 10 - 40 | [Upper Barreston](https://tharel.net/img/map-barrestonupper.png) | ? | 5w9n4e6n6w3n2w3n2w |
-| 13 - 30 | [Sanctuary](https://tharel.net/img/map-sanctuary.gif) | ? | 7e1d2w2n9w5s2e2s2re |
-| 13 - 50 | [Underdark](https://raw.githubusercontent.com/NathanielInman/AdventuresUnlimited/master/screenshots/underdark.gif) | ? | 4e9n5w6n3e2s1e1s2w |
+| 10 - 30 | [Khetes](https://tharel.net/img/map-khetes.jpg) | | 11e5n2e1s7e3n |
+| 10 - 40 | [Northern Barreston](https://tharel.net/img/map-barreston.png) | | 5w9n4e6n6w3n2w3n2w |
+| 10 - 40 | [Lower Barreston](https://tharel.net/img/map-barreston.png) | | 5w9n4e6n6w3n2w3n2w |
+| 10 - 40 | [Upper Barreston](https://tharel.net/img/map-barrestonupper.png) | | 5w9n4e6n6w3n2w3n2w |
+| 13 - 30 | [Sanctuary](https://tharel.net/img/map-sanctuary.gif) | | 7e1d2w2n9w5s2e2s2re |
+| 13 - 50 | [Underdark](https://raw.githubusercontent.com/NathanielInman/AdventuresUnlimited/master/screenshots/underdark.gif) | | 4e9n5w6n3e2s1e1s2w |
 | 15 - 25 | Littlefist Glade | | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
 | 15 - 25 | [Jasporin](https://tharel.net/img/map-jasporin.jpg) | | 5w9n4e6n6w2s6s2w1n1w3n |
-| 15 - 25 | [Longbottom's Shire](https://tharel.net/img/map-longbottomsshire.gif) | ? | 5w9n4e;open north;6n6w3n2w3n2e |
-| 15 - 25 | Fidael's Lake | ? | 9w2d5n2w1n |
+| 15 - 25 | [Longbottom's Shire](https://tharel.net/img/map-longbottomsshire.gif) | | 5w9n4e;open north;6n6w3n2w3n2e |
+| 15 - 25 | Fideal's Lake | | 9w2d5n2w1n |
 | 15 - 25 | Zzukenathaft | | 5w17s5e7s2e1s2e1d1w1s2d |
 | 15 - 30 | Du'Rahath | **✓** | 16w2s1e2s1e |
 | 15 - 30 | Mines of Noal'xyn | **✓** | 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w |
-| 15 - 30 | Caldera Ruins | ? | 16w2s4w |
-| 15 - 30 | Shaolin Temple | ? |  7e1d2s1e7s1w |
+| 15 - 30 | Caldera Ruins | | 16w2s4w |
+| 15 - 30 | Shaolin Temple | |  7e1d2s1e7s1w |
 | 15 - 30 | Grungnison Catacombs | | 5w17s5e9s2w2s1w1n2w1n1d |
-| 20 - 20 | The Frozen Waste | ? | 11e3s6e4s18e5s1e2s3w1s1w2s1w1s2w1n3w1n1w1n |
+| 20 - 20 | The Frozen Waste | **✓** | 11e3s6e4s18e5s1e2s3w1s1w2s1w1s2w1n3w1n1w1n |
 | contin. | contin. | contin. | 2w1s1w1s3w1n2w1n2w2s1w1s1e1s1e2s1e6s1w2s |
-| 20 - 30 | Racomva | ? | 5w17s5e7s2e1s2e1d3n1e1u2n |
-| 20 - 30 | Mirage City | ? | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e1n1e3s1e1s2e2n |
+| 20 - 30 | Racomva | | 5w17s5e7s2e1s2e1d3n1e1u2n |
+| 20 - 30 | Mirage City | | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e1n1e3s1e1s2e2n |
 | contin. | contin. | contin. | 2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;search;go pool;go mirage |
-| 20 - 30 | [The Avian Tree](https://tharel.net/img/map-aviantree.png) | ? | 4e9n5w6n9e2n1e1n |
-| 20 - 30 | The Meridian | ? | 11e3s6e4s23e2n4e |
+| 20 - 30 | [The Avian Tree](https://tharel.net/img/map-aviantree.png) | | 4e9n5w6n9e2n1e1n |
+| 20 - 30 | The Meridian | | 11e3s6e4s23e2n4e |
 | 20 - 35 | Dleivain | | 4e9n5w6n9e2n4w1n1w1n;go door |
 | 20 - 55 | Yrenelania | | 8e7n1w1n1e4n2e4n8e1d1s2e;go crack;1e1n1e;search south |
 | contin. | contin. | contin. | open south;1s3e1n2e2n3e |
 | 25 - 30 | Goblin Pass | | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
-| 25 - 35 | The Hamlet of Elsfar | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
-| 25 - 35 | Blackeye's Camp | ? | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
+| 25 - 35 | The Hamlet of Elsfar | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
+| 25 - 35 | Blackeye's Camp | | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
 | 25 - 45 | Valeda | | 4e9n5w6n11e3n5e1n3e9n |
-| 30 - 40 | Castle of Burden | ? | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n1u |
-| 30 - 40 | Whirlpool | ? |  4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e2s1e1w1s4e1s2e |
-| 30 - 40 | R'tescra | ? | 7e1d2w2n9w4s1e1s1e2s8e3s1w3s |
-| 30 - 40 | Reskel | ? | 4e9n5w6n11e3n5e1n3e8n1e |
-| 30 - 45 | Quickling Village | ? | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e4s1e |
-| 30 - 50 | Darathorn's Pit | ? | 4e9n5w6n3e2s1e2s1w1n |
-| 35 - 45 | The Sandcastle | ? | 43w3n1w4n3w5n1s1e1n3w |
+| 30 - 40 | Castle of Burden | | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n1u |
+| 30 - 40 | Whirlpool | |  4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e2s1e1w1s4e1s2e |
+| 30 - 40 | R'tescra | | 7e1d2w2n9w4s1e1s1e2s8e3s1w3s |
+| 30 - 40 | Reskel | | 4e9n5w6n11e3n5e1n3e8n1e |
+| 30 - 45 | Quickling Village | | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e4s1e |
+| 30 - 50 | Darathorn's Pit | | 4e9n5w6n3e2s1e2s1w1n |
+| 35 - 45 | The Sandcastle | | 43w3n1w4n3w5n1s1e1n3w |
 | 35 - 45 | Oterion | | 7e1d2s1e9s4w1n3w |
-| 35 - 45 | Eirenole | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
+| 35 - 45 | Eirenole | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e1n |
 | 35 - 50 | Tyyrinn Village | | 7e1d2s1e7s5e2s |
-| 35 - 50 | [The City of Terrason](https://tharel.net/img/map-terrason.jpg) | ? | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
+| 35 - 50 | [The City of Terrason](https://tharel.net/img/map-terrason.jpg) | | 4e9n5w6n11e3n5e1n3e10n1e2n1w4n2e4n1w4n2e2n1e1n |
 | 35 - 50 | Uchduruk | | 11e4n4e1n1e |
-| 40 - 45 | Eirenole Thistle | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
+| 40 - 45 | Eirenole Thistle | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e6n1e1n2e2s |
-| 40 - 50 | The Four Seasons | ? | 4s3w2s;go portrait |
+| 40 - 50 | The Four Seasons | | 4s3w2s;go portrait |
 | 40 - 50 | Schwartz Glacier | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s5w |
-| 40 - 50 | Mystery Manor | ? | 11e4n9e1s3e1n2e1n |
+| 40 - 50 | Mystery Manor | | 11e4n9e1s3e1n2e1n |
 | 40 - 55 | Pyrainn Mountains | **✓** | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n3w1s |
 | 40 - 55 | Manthalaras | | 4e17s4w7s2e1s2e1d5s1w1d1w1s1w;go waterfall |
 | contin. | contin. | contin. | search north;open north;4n1e1n|
-| 40 - 60 | Draek'le | ? | 4e9n5w6n11e3n5e1n3e7n5w5s |
+| 40 - 60 | Draek'le | | 4e9n5w6n11e3n5e1n3e7n5w5s |
 | 45 - 55 | Kaer Tzoun | **✓** | 20w1n6w3n1w1u9w3n1u |
-| 45 - 55 | Beehive | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s5e2s3e;search south; |
+| 45 - 55 | Beehive | | 4e17s4w7s2e1s2e1d2s1e1s2e5s5e2s3e;search south; |
 | contin. | contin. | contin. | open south;2s1e2n5e;go beehive |
 | 45 - 60 | Xuergothe Castle | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s1w6s1w6s2u1s |
-| 45 - 60 | Eirenole Castle | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
+| 45 - 60 | Eirenole Castle | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e2n7e1n |
-| 50 - 60 | Heishaer City | ? | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
+| 50 - 60 | Heishaer City | | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
 | 50 - 60 | Breyard Village | | 41w6s2w2s3w3n3w1s1w1n8w2n2w2s2w3n5w3s1w |
 | 50 - 60 | The Acoma Estate | | 7e1d2s1e9s1e |
-| 55 - 65 | The Overlook Grounds | ? | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
-| 55 - 65 | The Overlook Towers | ? | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
-| 55 - 65 | Xe'lith | ? | 4e9n5w6n11e3n5e1n3e7n5w4n2w2n6w1u1n1u2e1u |
-| 55 - 70 | Ruins of Khezauch | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1n |
-| 55 - 75 | Necropolis | ? |  4e9n5w6n11e3n4e2s1w2s1e |
+| 55 - 65 | The Overlook Grounds | | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
+| 55 - 65 | The Overlook Towers | | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
+| 55 - 65 | Xe'lith | | 4e9n5w6n11e3n5e1n3e7n5w4n2w2n6w1u1n1u2e1u |
+| 55 - 70 | Ruins of Khezauch | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1n |
+| 55 - 75 | Necropolis | |  4e9n5w6n11e3n4e2s1w2s1e |
 | 60 - 70 | Caranos' Tomb | | 11e3s6e4s7e6s4e6s3w |
-| 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | ? | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s2w |
-| 60 - 75 | Tiny Rapids | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s9w1s3w1s4w1n10w1s1w3s6w |
+| 60 - 70 | [Rivendale](https://tharel.net/img/map-rivendale.gif) | | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s2w |
+| 60 - 75 | Tiny Rapids | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s9w1s3w1s4w1n10w1s1w3s6w |
 | 60 - 85 | Lost Kingdoms | **✓** | 4e9n5w6n11e3n5e1n3e10n1e2n7e1n3e1n6e;go tree |
-| 65 - 75 | Forest of Dreams | ? | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n7w2s;go dream |
-| 65 - 75 | The Overlook Maze | ? | 11e2n5e1n7e6n3w4n5w4n4w2s12w |
-| 65 - 75 | Gtharstu | ? | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e2s2e3s3e1n1e2n |
-| 65 - 80 | The Forbidden Wastes | ? | 4e17s4w9s2w2s1w7s2w1s3w |
-| 65 - 80 | Ship in a Bottle | ? | 39w |
-| 70 - 80 | Connerty Crossing | ? | 33w4n4w3n1w12n1e |
-| 70 - 80 | Wildlife Refuge | ? | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s1e |
-| 70 - 85 | Tekkit Hill | ? | 11e2n5e1n11e1n2e4n2e1n6e |
+| 65 - 75 | Forest of Dreams | | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n7w2s;go dream |
+| 65 - 75 | The Overlook Maze | | 11e2n5e1n7e6n3w4n5w4n4w2s12w |
+| 65 - 75 | Gtharstu | | 4e17s4w7s2e1s2e1d2s1e1s2e1s2e2s2e3s3e1n1e2n |
+| 65 - 80 | The Forbidden Wastes | **✓**  | 4e17s4w9s2w2s1w7s2w1s3w |
+| 65 - 80 | Ship in a Bottle | | 39w |
+| 70 - 80 | Connerty Crossing | | 33w4n4w3n1w12n1e |
+| 70 - 80 | Wildlife Refuge | | 4e9n5w6n6w8s2w1n2w4s1w4s3w3s1e |
+| 70 - 85 | Tekkit Hill | | 11e2n5e1n11e1n2e4n2e1n6e |
 | 70 - 85 | Ruins of Khezaderth | | 11e3s6e4s18e1s2e |
 | 70 - 85 | Meneth Naur | |  7e1d2s1e7s9e1s |
 | 70 - 90 | Fireblast Mountains | **✓** | 11e2n5e1n7e6n3w4n5w4n4w3s2e1s1w1n2w2s1w |
-| 75 - 85 | The Overlook Citadel | ? | towers in corners of overlook grounds |
-| 75 - 90 | Vlauchauch | ? | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s4w1s4w1n3w2n2w2s |
-| 75 - 90 | The Haze | ? | 7s2u |
-| 75 - 100 | Drakyri Isle | ? | 11e3s6e4s7e5n4e5n5e2s;go pool |
-| 80 - 90 | Shadowbox | ? | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n11w4s2w1n |
-| 85 - 95 | The White Shrine | ? | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s2w1s3w2s1w1s |
-| 85 - 95 | Sildarak's Crypt | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s |
+| 75 - 85 | The Overlook Citadel | | towers in corners of overlook grounds |
+| 75 - 90 | Vlauchauch | | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s4w1s4w1n3w2n2w2s |
+| 75 - 90 | The Haze | | 7s2u |
+| 75 - 100 | Drakyri Isle | | 11e3s6e4s7e5n4e5n5e2s;go pool |
+| 80 - 90 | Shadowbox | | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n11w4s2w1n |
+| 85 - 95 | The White Shrine | | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s2w1s3w2s1w1s |
+| 85 - 95 | Sildarak's Crypt | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s |
 | contin. | contin. | contin. | 2e1d2e1s1e1s1e1s2e1s3e1n2w2n1e1d |
-| 85 - 110 | Urbyrtnol | ? | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1u |
-| 90 - 95 | Eirenole Valley | ? | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n | 
+| 85 - 110 | Urbyrtnol | | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1u |
+| 90 - 95 | Eirenole Valley | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n | 
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e9n2e5n |
-| 90 - 110 | Ayasil | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1s3e |
-| 90 - 110 | Arthmore | ? | 11e2n5e1n7e6n3w4n5w4n4w1u |
-| HERO | Kallenpesh Palace | ? | inside kallendale forest |
-| HERO | Kallendale Forest | ? | 42w6s2w2s4w4s5w8s1w1s1e9s4w1n1w1n |
+| 90 - 110 | Ayasil | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1s3e |
+| 90 - 110 | Arthmore | | 11e2n5e1n7e6n3w4n5w4n4w1u |
+| HERO | Kallenpesh Palace | | inside kallendale forest |
+| HERO | Kallendale Forest | | 42w6s2w2s4w4s5w8s1w1s1e9s4w1n1w1n |
 | HERO | The Hall of Heroes | | See Aliuna & Terrason |
-| HERO | Il'kaethe | ? | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s |
+| HERO | Il'kaethe | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s |
 | contin. | contin. | contin. | 1w5s1w5s1w1n17w2s3w1s3w1s1w1s1w |
 | HERO | The Giants Outpost | | 11e2n5e1n7e6n3w4n5w6n2e1n |
 
@@ -331,6 +332,12 @@ The following is the locations of the tradesguilds:
 | weaponsmiths | 4e9n5w6n11e3n5e1n3e7n2w9n14e1n | 
 | armorsmiths | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock north;open north;2n6e1s |
 
+#### Enchanting and Tradesguild Tips
+- Before infusing armor or weapons, make sure they have `bless` and `continual light` on them, `humming`, and `fireproof` are bad
+- Continual light can be found east of naerlan, bless scroll can be found in hand of markov
+- Make sure to get +50 force or accuracy before using gems of force or accuracy on level 105 items using xedalium
+- When mining for a long time it makes sense to keep a bunch of "a clear potion" found in heishaer city to cast multiple refresh if you can't cast it
+
 #### Quality Table
 | name | percentage |
 | --- | --- |
@@ -370,8 +377,8 @@ The following is the locations of the tradesguilds:
 | staff | 45 | weaponsmithing |
 | spear | 45 | weaponsmithing |
 
+
 #### Materials Table
-:construction: **this section is still currently under construction, any help appreciated** :construction:
 
 Strength And Magic Percentages:
 ```
@@ -385,66 +392,83 @@ Rarity Percentages:
 50-59=common,60-69=very common,70-79=abundant,80-89=very abundant,90-100=everywhere
 ```
 
+| name | ores rarity | ore frequency | gems rarity | gem frequency |
+| --- | --- | --- | --- | --- |
+| The Drow Mines | steel (common), copper (common), silver (kinda rare) | very common | onyx (common), pyrite (common), quartz (kinda rare) | extremely rare |
+| Du'Rahath | meteorite (common), electrum (common), lead (kinda rare) | common | gem (common), pyrite (common), topaz (kinda rare) | extremely rare |
+| Fireblast Mountains | gold (common), adamantite (common), electrum (kinda rare) | very common | obsidian (common), granite (common), aquamarine (kinda rare) | kinda rare |
+| The Frozen Waste | cold steel (common), adamantite (common), irlimnite (kinda rare) | uncommon | marble (common), sunstone (common), obsidian (kinda rare) | extremely rare |
+| Kaer Tzoun | steel (kinda rare), cold steel (kinda rare), copper (kinda rare), lead (common) | very common | pyrite (kinda rare), glass (kinda rare), citrine (kinda rare), stone (kinda rare), marble (kinda rare) | barely uncommon |
+| The Mines of Markov | meteorite (common), irlimnite (common), silvite (kinda rare) | very common | opal (common), diamond (common), garnet (kinda rare) | extremely rare |
+| Hagarth | gold (common), silvite (common), copper (kinda rare) | barely uncommon | opal (kinda rare), ruby (kinda rare), sapphire (kinda rare), emerald (kinda rare), clay (kinda rare) | extremely rare |
+| Mt. Ka'lri | zeririte (common), silvite (common), pewter (kinda rare) | barely uncommon | clay (common), amethyst (common), pearl (kinda rare) | very rare |
+| Pyrainn Mountains | electrum (kinda rare), iron (kinda rare), steel (kinda rare), gold (kinda rare), xedalium (kinda rare) | very abundant | diamond (kinda rare), pyrite (kinda rare), amethyst (kinda rare), ruby (kinda rare), glass (kinda rare) | kinda rare |
+| Mines of Noal'xyn | mithril (common), cold steel (common), platinum (kinda rare) | common | stone (common), sapphire (common), jade (kinda rare) | extremely rare |
+| The Stone Quarry | qyarelite (common), bronze (common), copper (kinda rare) | common | ebony (common), jade (common), ivory (kinda rare) | kinda rare |
+| Lost Kingdoms | mithril (common), adamantite (common), iron (kinda rare) | very common | ruby (common), marble (common), pyrite (kinda rare) | kinda rare |
+| The Forbidden Wastes | xedalium (common), meteorite (common), zeririte (kinda rare) | common | sunstone (common), amber (common), azurite (kinda rare) | kinda rare |
+| The Western Road | brass (common), ulayilium (common), platinum (kinda rare) | abundant | amethyst (common), amber (common), moonstone (kinda rare) | very rare |
+
 | name | type | strength | magic | rarity | other |
 | --- | --- | --- | --- | --- | --- |
-| lead | metal | adequate | incompetent | everywhere | Mined equally in Kaer Tzoun & Du'Rahath |
-| gold | metal | adequate | adequate | abundant | Best mined in Hagarth followed by Pyrainn Mountains |
+| lead | metal | adequate | incompetent | everywhere | Best mined in Kaer Tzoun |
+| gold | metal | adequate | adequate | abundant | Best mined in Hagarth |
 | pewter | metal | adequate | adequate | everywhere | Mined in Mt. Kal'ri |
 | silver | metal | adequate | passable | abundant | Mined in Drow Mines |
-| copper | metal | adequate | lousy | abundant | Best mined in Drow Mines followed by Hagarth, The Stone Quarry or Kaer Tzoun |
+| copper | metal | adequate | lousy | abundant | Best mined in Drow Mines |
 | brass | metal | accomplished | incompetent | very abundant | Mined in The Western Road |
-| electrum | metal | accomplished | outstanding | very common | Best mined in Du'Rahath followed by Fireblast Mountains |
+| electrum | metal | accomplished | outstanding | very common | Best mined in Du'Rahath |
 | bronze | metal | accomplished | lousy | abundant | Mined in The Stone Quarry |
-| platinum | metal | accomplished | accomplished | abundant | Mined equally in The Western Road or Mines of Naol'xyn |
-| iron | metal | accomplished | atrocious | very abundant | Mined in Lost Kingdoms or Pyrainn Mountains |
-| steel | metal | accomplished | adequate | very abundant | Best mined in Drow Mines followed by Pyrainn Mountains |
-| meteorite | metal | outstanding | adequate | very abundant | Mined equally in The Mines of Markov or Du'Rahath |
-| mithril | metal | outstanding | accomplished | very common | Mined equally in Mines of Noa'xyn and Lost Kingdoms |
-| adamantite | metal | outstanding | exceptional | very common | Mined equally in Fireblast Mountains & Lost Kingdoms |
-| silvite | metal | outstanding | accomplished | very common | Best mined in Hagarth followed by The Mines of Markov or Mt Ka'lri |
-| cold steel | metal | exceptional | exceptional | common | Best mined in Mines of Noal'xyn followed by Kaer Tzoun |
-| irlimnite | metal | exceptional | atrocious | very abundant | Mined in The Mines of Markov |
+| platinum | metal | accomplished | accomplished | abundant | Best mined in The Western Road |
+| iron | metal | accomplished | atrocious | very abundant | Best mined in Pyrainn Mountains |
+| steel | metal | accomplished | adequate | very abundant | Best mined in Drow Mines |
+| meteorite | metal | outstanding | adequate | very abundant | Mined equally in The Mines of Markov |
+| mithril | metal | outstanding | accomplished | very common | Mined equally in Mines of Noa'xyn |
+| adamantite | metal | outstanding | exceptional | very common | Best mined equally in Fireblast Mountains |
+| silvite | metal | outstanding | accomplished | very common | Best mined in Hagarth |
+| cold steel | metal | exceptional | exceptional | common | Best mined in Mines of Noal'xyn |
+| irlimnite | metal | exceptional | atrocious | very abundant | Best mined in The Mines of Markov |
 | uulayilium | metal | exceptional | exceptional | common | Mined in The Western Road |
 | qyarelite | metal | exceptional | exceptional | barely uncommon | Mined in The Stone Quarry |
 | zeririte | metal | exceptional | exceptional | uncommon | Mined in Mt Ka'lri |
-| xedalium | metal | masterful | masterful | kinda rare | Mined in Pyrainn Mountains |
-| amethyst | mineral | accomplished | passable | very abundant | minor energy resistance, best mined in The Western Road followed by Mt. Ka'lri |
-| glass | mineral | adequate | atrocious | everywhere | Mined in Pyrainn Mountains or Kaer Tzoun |
-| clay | mineral | adequate | incompetent | everywhere | Mined in Mt Ka'lri |
-| diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance, best mined in The Mines of Markov followed by Pyrainnn Mountains |
+| xedalium | metal | masterful | masterful | kinda rare | Best mined in The Forbidden Wastes |
+| amethyst | mineral | accomplished | passable | very abundant | minor energy resistance, best mined in The Western Road |
+| glass | mineral | adequate | atrocious | everywhere | Best mined in Pyrainn Mountains |
+| clay | mineral | adequate | incompetent | everywhere | Best mined in Mt Ka'lri |
+| diamond | mineral | oustanding | accomplished | very common | lesser lightning resistance, best mined in The Mines of Markov |
 | ebony | mineral | accomplished | passable | very abundant | Mined in The Stone Quarry |
-| emerald | mineral | accomplished | atrocious | abundant | moderate poison resistance
+| emerald | mineral | accomplished | atrocious | abundant | moderate poison resistance, mined in Hagarth |
 | garnet | mineral | adequate | exceptional | very common | moderate mental resistance, mined in The Mines of Markov |
 | gem | mineral | adequate | adequate | very abundant | Mined in Du'Rahath |
 | granite | mineral | adequate | atrocious | everywhere | Best mined in Fireblast Mountains |
 | ivory | mineral | adequate | outstanding | very abundant | Mined in The Stone Quarry |
-| jade | mineral | adequate | accomplished | abundant | lesser acid resistance, mined in Mines of Noal'xyn or The Stone Quarry |
-| marble | mineral | adequate | incompetent | everywhere | Best mined in Lost Kingdoms followed by Kaer Tzoun |
-| obsidian | mineral | adequate | adequate | very abundant | Mined in Fireblast Mountains |
+| jade | mineral | adequate | accomplished | abundant | lesser acid resistance, best mined in The Stone Quarry |
+| marble | mineral | adequate | incompetent | everywhere | Best mined in The Frozen Waste |
+| obsidian | mineral | adequate | adequate | very abundant | Best mined in Fireblast Mountains |
 | onyx | mineral | adequate | incompetent | abundant | minor holy resistance, mined in The Drow Mines |
-| opal | mineral | accomplished | accomplished | very common | minor light resistance, mined in The Mines of Markov |
-| pearl | mineral | accomplished | passable | very abundant | 
-| pyrite | mineral | accomplished | lousy | very abundant | moderate iron resistance, Best mined in The Drow Mines or Du'Rahath, followed by Kaer Tzoun or Pyrainn Mountains |
+| opal | mineral | accomplished | accomplished | very common | minor light resistance, best mined in The Mines of Markov |
+| pearl | mineral | accomplished | passable | very abundant | mined in Mt. Ka'lri |
+| pyrite | mineral | accomplished | lousy | very abundant | moderate iron resistance, Best mined in The Drow Mines |
 | quartz | mineral | accomplished | accomplished | very common | minor magic resistance, mined in The Drow Mines |
 | sapphire | mineral | accomplished | adequate | very common | lesser fire resistance, mined in The Mines of Noal'xyn |
-| ruby | mineral | outstanding | adequate | very common | moderate cold resistance, best mined in Lost Kingdoms followed by Pyrainn Mountains |
-| stone | mineral | accomplished | passable | very abundant | best mined in Mines of Noal'xyn followed by Kaer Tzoun |
-| amber | mineral | lousy | very abundant | very common | greater energy resistance, mined in The Western Road |
+| ruby | mineral | outstanding | adequate | very common | moderate cold resistance, best mined in Lost Kingdoms |
+| stone | mineral | accomplished | passable | very abundant | best mined in Mines of Noal'xyn |
+| amber | mineral | lousy | very abundant | very common | greater energy resistance, best mined in The Western Road |
 | aquamarine | mineral | adequate | accomplished | very common | minor drowning resistance, mined in Fireblast Mountains |
-| azurite | mineral | passable | lousy | very common | extreme iron resistance, minor magic vulnerability
-| beryl | mineral | accomplished | accomplished | common | extreme holy resistance
-| chrysoberyl | mineral | accomplished | accomplished | common | moderate mental resistance
+| azurite | mineral | passable | lousy | very common | extreme iron resistance, minor magic vulnerability, mined in The Forbidden Wastes |
+| beryl | mineral | accomplished | accomplished | common | extreme holy resistance, not possible to mine |
+| chrysoberyl | mineral | accomplished | accomplished | common | moderate mental resistance, not possible to mine |
 | citrine | mineral | accomplished | atrocious | abundant | moderate sound resistance, mined in Kaer Tzoun |
-| heliodor | mineral | accomplished | exceptional | barely uncommon | minor fire vulnerability, extreme cold resistance
-| lapis | mineral | adequate | adequate | very common | moderate fire resistance, minor cold vulnerability
+| heliodor | mineral | accomplished | exceptional | barely uncommon | minor fire vulnerability, extreme cold resistance, not possible to mine |
+| lapis | mineral | adequate | adequate | very common | moderate fire resistance, minor cold vulnerability, not possible to mine |
 | moonstone | mineral | adequate | exceptional | barely uncommon | extreme silver resistance, mined in The Western Road |
-| morganite | mineral | accomplished | adequate | common | lesser magic resistance
-| olivine | mineral | adequate | outstanding | common | lesser fire resistance
-| spinel | mineral | accomplished | accomplished | adequate | extreme mental resistance
-| sunstone | mineral | adequate | exceptional | barely uncommon | extreme light resistance
-| tanzanite | mineral | adequate | passable | very common | extreme lightning resistance, lesser drowning vulnerability
+| morganite | mineral | accomplished | adequate | common | lesser magic resistance, not possible to mine |
+| olivine | mineral | adequate | outstanding | common | lesser fire resistance, not possible to mine |
+| spinel | mineral | accomplished | accomplished | adequate | extreme mental resistance, not possible to mine |
+| sunstone | mineral | adequate | exceptional | barely uncommon | extreme light resistance, best mined in The Forbidden Wastes |
+| tanzanite | mineral | adequate | passable | very common | extreme lightning resistance, lesser drowning vulnerability, not possible to mine |
 | topaz | mineral | adequate | accomplished | uncommon | lesser bash resistance, mined in Du'Rahath |
-| tourmaline | mineral | adequate | adequate | barely uncommon | extreme acid resistance
+| tourmaline | mineral | adequate | adequate | barely uncommon | extreme acid resistance, not possible to mine |
 
 ## Temple
 A collection of helpful information related to AU temples
