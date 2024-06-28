@@ -345,7 +345,7 @@ The following is the locations of the tradesguilds:
 
 #### Poisons Runes and Material Weapon Affects
 | name | damage | description |
-| --- | --- | --- |
+| --- | --- | --- | 
 | iron against vulnerable | 125% base |  |
 | silver against vulnerable | 125% base | |
 | wood against vulnerable | 125% base | |
@@ -356,24 +356,24 @@ The following is the locations of the tradesguilds:
 | tirimic | n/a | causes blind, -2dex, duration is ilvl / 20 ticks |
 | vampiric | 1 to ilvl/5 | grants half of damage in health |
 | vorpal | 1 to ilvl/7 + 1 mana damage | grants half of mana damage as mana |
-| large flame rune | 3 to ilvl/3+3 | as fire type damage, resistable |
-| flame rune | 1 to ilvl/4 | as fire type damage, resistable |
-| large frost rune | 3 to ilvl/3+5 | as frost type damage, resistable |
-| frost rune | 3 to ilvl/6+2 | as frost type damage, resistable |
-| large shocking rune | 3 to ilvl/3+5 | as shocking type damage, resistable |
-| shocking rune | 1 to ilvl/5+2 | as shocking type damage, resistable |
-| large water rune | 5 to ilvl/2+6 | as water type damage, resistable |
-| water rune | 1 to ilvl/4+1 | as water type damage, resistable |
-| large air rune | 3 to ilvl/2+3 | as air type damage, resistable |
-| air rune | 1 to ilvl/4+1 | as air type damage, resistable |
-| large earth rune | 3 to ilvl/2+3 | as earth type damage, resistable |
-| earth rune | 1 to ilvl/4+1 | as earth type damage, resistable |
-| large acid rune | 5 to ilvl/2+8 | as acid type damage, resistable |
-| acid rune | 1 to ilvl/4+1 | as acid type damage, resistable |
-| holy with evil character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable |
-| holy with good character | 13% chance 1 to ilvl+2 | as energy type damage
-| unholy with good character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable |
-| unholy with evil character | 13% chance 1 to ilvl+2 | as energy type damage
+| large flame rune | 3 to ilvl/3+3 | as fire type damage, resistable, chance to fire breath (-4hit +blind) |
+| flame rune | 1 to ilvl/4 | as fire type damage, resistable, chance to fire breath (-4hit +blind) |
+| large frost rune | 3 to ilvl/3+5 | as frost type damage, resistable, chance to chill touch (-1str), chance to damage enemy items |
+| frost rune | 3 to ilvl/6+2 | as frost type damage, resistable, chance to chill touch (-1str), chance to damage enemy items |
+| large shocking rune | 3 to ilvl/3+5 | as shocking type damage, resistable, chance to daze, chance to damage enemy items |
+| shocking rune | 1 to ilvl/5+2 | as shocking type damage, resistable, chance to daze, chance to damage enemy items |
+| large water rune | 5 to ilvl/2+6 | as water type damage, resistable, chance to add 2 to ilvl water damage |
+| water rune | 1 to ilvl/4+1 | as water type damage, resistable, chance to add 2 to ilvl water damage |
+| large air rune | 3 to ilvl/2+3 | as air type damage, resistable, chance to blow enemy out of room |
+| air rune | 1 to ilvl/4+1 | as air type damage, resistable, chance to blow enemy out of room |
+| large earth rune | 3 to ilvl/2+3 | as earth type damage, resistable, chance to knockdown if not flying |
+| earth rune | 1 to ilvl/4+1 | as earth type damage, resistable, chance to knockdown if not flying |
+| large acid rune | 5 to ilvl/2+8 | as acid type damage, resistable, chance to 2 to ilvl acid damage, chance to damage enemy items |
+| acid rune | 1 to ilvl/4+1 | as acid type damage, resistable, chance to 2 to ilvl acid damage, chance to damage enemy items |
+| holy with evil character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable, chance to damage enemy items |
+| holy with good character | 13% chance 1 to ilvl+2 | as energy type damage, chance to damage enemy items |
+| unholy with good character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable, chance to damage enemy items |
+| unholy with evil character | 13% chance 1 to ilvl+2 | as energy type damage, chance to damage enemy items |
 
 #### Quality Table
 | name | percentage |
