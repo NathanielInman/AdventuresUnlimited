@@ -20,7 +20,8 @@ Separate sections of the wiki
     - [Quest Items](#quest-items)
   - [Trainers](#trainers)
   - [Tradesguilds](#tradesguilds)
-    - [Enchanting & Tradesguild Tips](#enchanting-and-trandesguild-tips) 
+    - [Enchanting & Tradesguild Tips](#enchanting-and-tradesguild-tips)
+    - [Poisons Runes and Material Weapon Affects](#poisons-runes-and-material-weapon-affects)
     - [Quality Table](#quality-table)
     - [Required Ore Table](#required-ore-table)
     - [Materials Table](#materials-table)
@@ -337,6 +338,42 @@ The following is the locations of the tradesguilds:
 - Continual light can be found east of naerlan, bless scroll can be found in hand of markov
 - Make sure to get +50 force or accuracy before using gems of force or accuracy on level 105 items using xedalium
 - When mining for a long time it makes sense to keep a bunch of "a clear potion" found in heishaer city to cast multiple refresh if you can't cast it
+- The maximum value of hammers on a weapon you can get is 18, anything past that is just risking breaking the form
+- piercing weapons with razor will always do more damage than bashing, but require more money to maintain if you don't have `sharpen` skill
+- For the best bashing weapon: Make a dagger, evenom weapon, runeblade, runeforge to mace,  imbue hoping for BG, then instill force on it
+- For the best piercing weapon: Make a mace, imbue hoping for BG, runforge to dagger, envenom weapon, runeforge to mace, then still force on it
+
+#### Poisons Runes and Material Weapon Affects
+| name | damage | description |
+| --- | --- | --- |
+| iron against vulnerable | 125% base |  |
+| silver against vulnerable | 125% base | |
+| wood against vulnerable | 125% base | |
+| poison | n/a | causes poison, -1 str, duration is ilvl / 8 ticks |
+| vinesap | n/a | causes poison, -2 str, duration is ilvl / 8 ticks |
+| deepsbreath | n/a | causes slow, -2 dex, duration is ilvl / 12 ticks |
+| bloodmoss | n/a | causes plague, -3 str, duration is ilvl / 12 ticks |
+| tirimic | n/a | causes blind, -2dex, duration is ilvl / 20 ticks |
+| vampiric | 1 to ilvl/5 | grants half of damage in health |
+| vorpal | 1 to ilvl/7 + 1 mana damage | grants half of mana damage as mana |
+| large flame rune | 3 to ilvl/3+3 | as fire type damage, resistable |
+| flame rune | 1 to ilvl/4 | as fire type damage, resistable |
+| large frost rune | 3 to ilvl/3+5 | as frost type damage, resistable |
+| frost rune | 3 to ilvl/6+2 | as frost type damage, resistable |
+| large shocking rune | 3 to ilvl/3+5 | as shocking type damage, resistable |
+| shocking rune | 1 to ilvl/5+2 | as shocking type damage, resistable |
+| large water rune | 5 to ilvl/2+6 | as water type damage, resistable |
+| water rune | 1 to ilvl/4+1 | as water type damage, resistable |
+| large air rune | 3 to ilvl/2+3 | as air type damage, resistable |
+| air rune | 1 to ilvl/4+1 | as air type damage, resistable |
+| large earth rune | 3 to ilvl/2+3 | as earth type damage, resistable |
+| earth rune | 1 to ilvl/4+1 | as earth type damage, resistable |
+| large acid rune | 5 to ilvl/2+8 | as acid type damage, resistable |
+| acid rune | 1 to ilvl/4+1 | as acid type damage, resistable |
+| holy with evil character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable |
+| holy with good character | 13% chance 1 to ilvl+2 | as energy type damage
+| unholy with good character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable |
+| unholy with evil character | 13% chance 1 to ilvl+2 | as energy type damage
 
 #### Quality Table
 | name | percentage |
