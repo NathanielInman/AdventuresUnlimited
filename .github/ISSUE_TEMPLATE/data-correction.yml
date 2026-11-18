@@ -1,0 +1,35 @@
+name: Data correction
+description: A number, name or direction on a page doesn't match the game
+title: "Correction: "
+labels: [data correction]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Link to the page, plus the section or table row if it's a long one
+      placeholder: https://nathanielinman.github.io/AdventuresUnlimited/world/temples.html
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What the page says now
+      placeholder: Rank 5 costs 4,000 gold
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should say
+      placeholder: Rank 5 costs 5,000 gold
+    validations:
+      required: true
+  - type: textarea
+    id: verified
+    attributes:
+      label: How you checked it in game
+      description: The command you typed, what the game printed, your level and class if they matter. Paste the output if you have it.
+      render: text
+    validations:
+      required: true
