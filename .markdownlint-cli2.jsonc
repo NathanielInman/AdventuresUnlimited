@@ -9,7 +9,8 @@
     "MD033": {
       "allowed_elements": [
         "a", "br", "details", "summary", "p", "img",
-        "ToolCards", "DamageStrings", "ItemSearch", "TerritoryCalculator", "HousingCalculator"
+        "ToolCards", "DamageStrings", "ItemSearch", "TerritoryCalculator", "HousingCalculator",
+        "LevelingAlignment", "LevelingGear"
       ]
     },
     // Dash bullets everywhere
