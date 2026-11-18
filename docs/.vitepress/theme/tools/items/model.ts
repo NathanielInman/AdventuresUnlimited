@@ -153,6 +153,8 @@ export interface ItemView {
   haystack: string;
   /** The game boots this item's area */
   loaded: boolean;
+  /** Immortal or test gear no player can use: above level 110, over 100 hit or dam, or 1,000+ average weapon damage */
+  testGear: boolean;
   /** "Wrist", "Sword", "Haste, bless" */
   kind: string;
 }
@@ -223,6 +225,11 @@ export function viewItem(item: Item): ItemView {
     });
   }
   const level = Number(item.level);
+  const dice = /^(\d+)d(\d+)$/.exec(flagValue(item, 'damage') ?? '');
+  const diceAverage = dice ? (Number(dice[1]) * (Number(dice[2]) + 1)) / 2 : 0;
+  const hit = stats[weightStats.findIndex(entry => entry.key === 'hit')];
+  const dam = stats[weightStats.findIndex(entry => entry.key === 'dam')];
+  const testGear = level > 110 || Math.abs(hit) > 100 || Math.abs(dam) > 100 || diceAverage > 1000;
   const typeLabel = capitalize(item.itemType.replace(/_/g, ' '));
   let kind = typeLabel;
 
@@ -250,6 +257,7 @@ export function viewItem(item: Item): ItemView {
     stats,
     haystack: [plain, ...item.names, item.vnum].join(' ').toLowerCase(),
     loaded: !unloadedAreas.has(item.areaKey),
+    testGear,
     kind
   };
 }

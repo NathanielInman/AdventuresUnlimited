@@ -55,7 +55,8 @@ const filterDefaults = {
   other: '',
   from: '',
   level: [0, LEVEL_MAX],
-  unloaded: false
+  unloaded: false,
+  test: false
 };
 
 const { state, ready, set, hrefFor } = useQueryState({
@@ -199,6 +200,7 @@ function passesCommon(view: ItemView): boolean {
   const [low, high] = state.level;
 
   if (state.from ? view.areaKey !== state.from : !state.unloaded && !view.loaded) return false;
+  if (!state.test && view.testGear) return false;
   if (view.level < low || view.level > high) return false;
   if (state.slot && !view.slots.includes(state.slot)) return false;
   for (const term of terms.value) if (!view.haystack.includes(term)) return false;
@@ -409,6 +411,12 @@ const subFilters = computed(() => {
   return list.filter(entry => state.types.includes(entry.group) || state[entry.key] !== '');
 });
 
+const testGearHint = computed(() => {
+  const count = views.value.filter(view => view.testGear).length;
+
+  return `${count ? `${formatNumber(count)} items` : 'A few items'} built for immortals or testing: above level 110, more than +100 hit or damage, or weapon dice averaging over 1,000.`;
+});
+
 const unloadedHint = computed(() => {
   const items = views.value.filter(view => !view.loaded);
   const areas = new Set(items.map(view => view.areaKey)).size;
@@ -580,6 +588,12 @@ const sortLabel = computed(() => {
           :hint="unloadedHint"
           :model-value="state.unloaded"
           @update:model-value="value => setFilter({ unloaded: value })"
+        />
+        <CheckField
+          label="Include immortal and test gear"
+          :hint="testGearHint"
+          :model-value="state.test"
+          @update:model-value="value => setFilter({ test: value })"
         />
       </ToolPanel>
 
