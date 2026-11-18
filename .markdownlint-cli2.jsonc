@@ -6,11 +6,13 @@
     // Inline HTML the pages use: area anchors, line breaks in table cells,
     // collapsed secondary material, the README's centered banner and the
     // tools' components (one tag per .vue file in docs/.vitepress/theme/tools/)
+    // and the home page's sections (docs/.vitepress/theme/home/)
     "MD033": {
       "allowed_elements": [
-        "a", "br", "details", "summary", "p", "img",
+        "a", "br", "details", "summary", "p", "img", "script",
         "ToolCards", "DamageStrings", "ItemSearch", "TerritoryCalculator", "HousingCalculator",
-        "LevelingAlignment", "LevelingGear"
+        "LevelingAlignment", "LevelingGear",
+        "HomeHero", "HomeEntries", "HomeGettingIn", "HomeSpeedwalk", "HomeStats", "HomeNote"
       ]
     },
     // Dash bullets everywhere
