@@ -32,3 +32,58 @@
     transform: none;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Fitting the title. Cinzel is much wider than the default font, so:
+   - from 960px up the title shares the sidebar's 272px column, and gets a
+     smaller size and a narrower right padding to stay inside it
+   - from 768px to 959px the search button shrinks to its icon so the menu
+     fits beside the title
+   - under 360px the title wraps onto two lines beside the logo
+   ------------------------------------------------------------------------- */
+
+@media (min-width: 960px) {
+  .VPNavBar.has-sidebar .wrapper .container > .title {
+    padding-right: 16px;
+  }
+
+  .VPNavBar.has-sidebar .VPNavBarTitle .title {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+  }
+
+  .VPNavBar.has-sidebar .VPNavBarTitle .logo {
+    height: 28px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .VPNavBarTitle .title {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Placeholder,
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Keys {
+    display: none;
+  }
+
+  .VPNavBarSearch .DocSearch-Button.DocSearch-Button {
+    justify-content: center;
+    padding: 0;
+    width: 40px;
+  }
+
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Search-Icon {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 359px) {
+  .VPNavBarTitle .title span {
+    max-width: 7.5em;
+    font-size: 14px;
+    line-height: 1.15;
+    white-space: normal;
+  }
+}
