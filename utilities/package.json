@@ -15,7 +15,6 @@
     "url": "https://github.com/nathanielinman/adventuresunlimited/issues"
   },
   "scripts": {
-    "deploy": "./deploy.sh",
     "preview": "vite preview",
     "build": "vite build",
     "lint": "eslint --ext .vue --ext .js ./",
