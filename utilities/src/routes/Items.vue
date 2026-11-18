@@ -139,7 +139,7 @@ section(style='padding-top: 0')
       span.red LEVEL
       span.red-bold )
     template(v-for='line in output')
-      .cursor(v-if='line.item',@click='change(line.item.vnum)')
+      .cursor(v-if='line.item',@click='change(line.item.vnum,line.item.areaKey)')
         .line
           span(v-for='word in line',:class='word.class') {{word.text}}
       .line(v-if='!line.item')
@@ -215,7 +215,7 @@ export default {
     if(query.hasOwnProperty('weaponFilter')) this.weaponFilter = query.weaponFilter;
     if(query.hasOwnProperty('armorFilter')) this.armorFilter = query.armorFilter;
     if(query.hasOwnProperty('otherFilter')) this.otherFilter = query.otherFilter;
-    this.change(query&&query.vnum ? query.vnum : null);
+    this.change(query&&query.vnum ? query.vnum : null, query.area);
   },
   methods: {
     sortScore(items){
@@ -255,9 +255,9 @@ export default {
         });
       });
       this.items = this.sortScore(this.items);
-      const {query} = this.$router.currentRoute;
+      const {query} = this.$route;
 
-      this.change(query&&query.vnum?query.vnum:null);
+      this.change(query&&query.vnum?query.vnum:null, query.area);
     },
     copyURL(){
       const inputEl = document.createElement('input');
@@ -265,12 +265,13 @@ export default {
       inputEl.style.position = 'absolute';
       inputEl.style.left = '-8000px';
       document.body.appendChild(inputEl);
-      const split = location.href.split('?'),
-            vnumString = split[1].split('&').find(s=>s.includes('vnum')),
-            hasVnum = vnumString&&vnumString.includes('=');
+      const {vnum,area} = this.$route.query;
 
-      if(hasVnum){
-        inputEl.value = `${split[0]}?${vnumString}`;
+      if(vnum){
+        const params = new URLSearchParams({vnum});
+
+        if(area) params.set('area',area);
+        inputEl.value = `${location.href.split('#')[0]}#/items?${params}`;
       }else{
         inputEl.value = location.href;
       } //end if
@@ -286,22 +287,34 @@ export default {
       });
       inputEl.remove();
     },
-    change(vnum){
+    change(vnum,area){
       const {query} = this;
       if(vnum===undefined){
         this.page = 0;
       }else{
         query.vnum = vnum;
+        if(vnum&&area){
+          query.area = area;
+        }else{
+          delete query.area;
+        } //end if
       } //end if
       this.$router.push({query});
-      this.load(vnum);
+      this.load(vnum,query.area);
     },
-    load(vnum){
+    load(vnum,area){
       this.output.splice(0);
       if(vnum){
-        const item = this.items.find(item=> item.vnum===vnum);
+        // The same vnum can exist in several area files; area picks the file
+        const item = area&&this.items.find(item=> item.vnum===vnum&&item.areaKey===area)||
+          this.items.find(item=> item.vnum===vnum);
 
         let str;
+
+        if(!item){
+          this.drawString(`{R---> {xNo item with vnum ${vnum} {R<--`);
+          return;
+        } //end if
 
         this.drawString('{c*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*');
         this.drawString(`       {cName : {C${item.short}`);
