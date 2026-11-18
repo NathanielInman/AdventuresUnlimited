@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme';
 import type { Theme } from 'vitepress';
 import { legacyToolHref } from './tools/lib/legacy-links';
 import { ROUTE_CHANGE_EVENT } from './tools/lib/query-state';
+import Layout from './Layout.vue';
 import './custom.css';
 import './tools/ui/tools.css';
 import './tools/ui/mud-colors.css';
@@ -16,6 +17,7 @@ const tools = import.meta.glob<{ default: Component }>('./tools/*.vue');
 
 export default {
   extends: DefaultTheme,
+  Layout,
   enhanceApp({ app, router, siteData }) {
     for (const [path, load] of Object.entries(tools)) {
       app.component(path.replace(/^.*\/|\.vue$/g, ''), defineAsyncComponent(load));
