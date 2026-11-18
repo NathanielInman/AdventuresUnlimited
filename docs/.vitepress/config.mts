@@ -29,7 +29,9 @@ export default defineConfig({
   srcExclude: ['monk.md', 'tintin.md', 'speedleveling.md'],
   lastUpdated: true,
   head: [
-    ['link', { rel: 'icon', href: `${base}favicon.ico` }],
+    ['link', { rel: 'icon', href: `${base}logo.svg`, type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: '32x32' }],
+    ['meta', { name: 'theme-color', content: '#14203a' }],
     // Cinzel for display type and JetBrains Mono for code, as in the README
     // banner. display=swap keeps text visible while they load.
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -41,6 +43,7 @@ export default defineConfig({
     ['script', {}, forwardOldToolLinks]
   ],
   themeConfig: {
+    logo: { src: '/logo.svg', alt: '' },
     nav: [
       { text: 'Guides', link: '/guides/speed-leveling', activeMatch: '^/guides/' },
       { text: 'World', link: '/world/areas', activeMatch: '^/world/' },
