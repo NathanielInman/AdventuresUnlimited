@@ -1,28 +1,31 @@
 # Specializations
 
-## Specialization And Class Table
-Specialization points allow a caster to excel further at a spellcasting group. You must master the entire spellgroup before specializing in it.
+Specialization points let a caster push further into a spell group. You have to master the whole group before you can specialize in it.
 
-Mages are the only class that can raise a spell group to its maximum rank. Every other class stops at rank 2 (adept) in a group, or at the group's own maximum when that is lower.
-| level       | mage  | cleric | antipaladin | paladin | charlatan | myrmidon |
-|---|---|---|---|---|---|---|
-| 50          | 2     | 1      |  1           | 1      |   1       |  1        |
-| 60          | 1     | 1      |  0           | 0      |   0       |  0        |
-| 70          | 2     | 1      |  1           | 1      |   1       |  1        |
-| 80          | 2     | 1      |  1           | 1      |   1       |  1        |
-| 90          | 1     | 1      |  0           | 0      |   0       |  0        |
-| 100         | 2     | 1      |  1           | 1      |   1       |  1        |
-| total       | 10    | 6      |  4           | 4      |   4       |  4        |
+## Points by level
 
-## Specialization Table
-Each group has its own maximum rank. Mages can reach it in every group; other classes stop at 2 (adept).
+Each class gains specialization points at these levels.
 
-| group name | specialization points available |
-|---|---|
+| level | mage | cleric | antipaladin | paladin | charlatan | myrmidon |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 50 | 2 | 1 | 1 | 1 | 1 | 1 |
+| 60 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 70 | 2 | 1 | 1 | 1 | 1 | 1 |
+| 80 | 2 | 1 | 1 | 1 | 1 | 1 |
+| 90 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 100 | 2 | 1 | 1 | 1 | 1 | 1 |
+| total | 10 | 6 | 4 | 4 | 4 | 4 |
+
+## Group ranks
+
+Each group has its own maximum rank, and mages can raise any group to it. Every other class stops at rank 2 (adept), so only mages go past adept in combat, draconian, enhancement, maladictions, protective and weather.
+
+| group | max rank |
+| --- | --- |
 | attack | 2 (adept) |
 | benedictions | 2 (adept) |
-| combat | 5 (arcanist) |
 | charlatan spells | 2 (adept) |
+| combat | 5 (arcanist) |
 | curative | 2 (adept) |
 | detection | 2 (adept) |
 | draconian | 5 (arcanist) |
@@ -34,18 +37,21 @@ Each group has its own maximum rank. Mages can reach it in every group; other cl
 | protective | 5 (arcanist) |
 | weather | 5 (arcanist) |
 
-## Specialization Unlockable Table
-Ranks are named by how many specialization points a group holds.
+Ranks are named by how many specialization points a group holds:
+
 | name | rank |
-|---|---|
+| --- | ---: |
 | novice | 0 |
 | initiate | 1 |
 | adept | 2 |
-| expert | 3 | 
+| expert | 3 |
 | master | 4 |
 | arcanist | 5 |
 
-Putting specialization points into certain groups may unlock new versions of spells.
+## Unlocked spells
+
+Putting points into some groups unlocks new versions of a spell.
+
 | name | root spell | rank required | group |
 | --- | --- | --- | --- |
 | shocklash | shocking grasp | initiate | combat |
