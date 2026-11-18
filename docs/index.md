@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Adventures Unlimited
 
 hero:
   name: Adventures Unlimited

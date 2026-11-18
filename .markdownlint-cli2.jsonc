@@ -1,0 +1,20 @@
+{
+  "config": {
+    "default": true,
+    // Reference tables and long URLs make line length meaningless here
+    "MD013": false,
+    // Inline HTML the pages use: area anchors, line breaks in table cells and
+    // collapsed secondary material
+    "MD033": { "allowed_elements": ["a", "br", "details", "summary"] },
+    // Dash bullets everywhere
+    "MD004": { "style": "dash" },
+    // Every table row has the header's column count
+    "MD056": true,
+    // Blank lines around tables
+    "MD058": true,
+    // Table pipes with one space each side, no alignment padding
+    "MD060": { "style": "compact" }
+  },
+  "globs": ["README.md", "CONTRIBUTING.md", "docs/**/*.md", "utilities/README.md"],
+  "ignores": ["**/node_modules/**", "docs/.vitepress/**"]
+}
