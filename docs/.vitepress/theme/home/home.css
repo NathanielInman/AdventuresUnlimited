@@ -1,0 +1,52 @@
+/* Shared by the home page components (docs/index.md). VitePress bundles all
+   CSS into one file, so everything here is prefixed to stay on the home page. */
+
+.au-home-section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.au-home-kicker {
+  margin: 0;
+  font-family: var(--au-font-display, 'Cinzel', serif);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+}
+
+.au-home-heading {
+  margin: 8px 0 0;
+  font-family: var(--au-font-display, 'Cinzel', serif);
+  font-size: clamp(26px, 3.6vw, 36px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--vp-c-text-1);
+}
+
+/* v-reveal (lib/motion.ts) */
+.au-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.9s ease var(--au-reveal-delay, 0ms),
+    transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) var(--au-reveal-delay, 0ms);
+}
+
+.au-reveal.is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .au-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
