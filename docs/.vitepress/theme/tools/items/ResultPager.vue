@@ -38,14 +38,15 @@ function go(event: MouseEvent, page: number) {
         class="au-button"
         :href="hrefFor(page - 1)"
         rel="prev"
+        aria-label="Previous page"
         @click="go($event, page - 1)"
       >
         <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-        Previous
+        <span class="label">Previous</span>
       </a>
       <span v-else class="au-button disabled" aria-disabled="true">
         <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
-        Previous
+        <span class="label">Previous</span>
       </span>
       <span class="where">Page {{ page }} of {{ formatNumber(pages) }}</span>
       <a
@@ -53,13 +54,14 @@ function go(event: MouseEvent, page: number) {
         class="au-button"
         :href="hrefFor(page + 1)"
         rel="next"
+        aria-label="Next page"
         @click="go($event, page + 1)"
       >
-        Next
+        <span class="label">Next</span>
         <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
       </a>
       <span v-else class="au-button disabled" aria-disabled="true">
-        Next
+        <span class="label">Next</span>
         <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
       </span>
     </div>
@@ -96,6 +98,19 @@ function go(event: MouseEvent, page: number) {
 /* Beat .vp-doc a: these are buttons */
 .buttons a.au-button {
   text-decoration: none;
+}
+
+/* On a phone the buttons keep their arrows and drop their words, so the
+   page count fits between them */
+@media (max-width: 420px) {
+  .buttons {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .label {
+    display: none;
+  }
 }
 
 .where {
