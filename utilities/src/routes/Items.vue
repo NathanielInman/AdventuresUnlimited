@@ -180,41 +180,41 @@ export default {
     const {query} = this.$route;
 
     if(Array.isArray(query.levelRestriction)){
-      this.levelRestriction = query.levelRestriction.map(n=>parseInt(n,10));
+      this.query.levelRestriction = query.levelRestriction.map(n=>parseInt(n,10));
     }
     if(query.hasOwnProperty('showStaffs')){
-      this.showStaffs = query.showStaffs==='true';
+      this.query.showStaffs = query.showStaffs==='true';
     } //end if
     if(query.hasOwnProperty('showWands')){
-      this.showWands = query.showWands==='true';
+      this.query.showWands = query.showWands==='true';
     } //end if
     if(query.hasOwnProperty('showPills')){
-      this.showPills = query.showPills==='true';
+      this.query.showPills = query.showPills==='true';
     } //end if
     if(query.hasOwnProperty('showScrolls')){
-      this.showScrolls = query.showScrolls==='true';
+      this.query.showScrolls = query.showScrolls==='true';
     } //end if
     if(query.hasOwnProperty('showPotions')){
-      this.showPotions = query.showPotions==='true';
+      this.query.showPotions = query.showPotions==='true';
     } //end if
     if(query.hasOwnProperty('showArmor')){
-      this.showArmor = query.showArmor==='true';
+      this.query.showArmor = query.showArmor==='true';
     } //end if
     if(query.hasOwnProperty('showWeapons')){
-      this.showWeapons = query.showWeapons==='true';
+      this.query.showWeapons = query.showWeapons==='true';
     } //end if
     if(query.hasOwnProperty('showOther')){
-      this.showOther = query.showOther==='true';
+      this.query.showOther = query.showOther==='true';
     } //end if
-    if(query.hasOwnProperty('areaFilter')) this.areaFilter = query.areaFilter;
-    if(query.hasOwnProperty('potionFilter')) this.potionFilter = query.potionFilter;
-    if(query.hasOwnProperty('scrollFilter')) this.scrollFilter = query.scrollFilter;
-    if(query.hasOwnProperty('pillFilter')) this.pillFilter = query.pillFilter;
-    if(query.hasOwnProperty('staffFilter')) this.staffFilter = query.staffFilter;
-    if(query.hasOwnProperty('wandFilter')) this.wandFilter = query.wandFilter;
-    if(query.hasOwnProperty('weaponFilter')) this.weaponFilter = query.weaponFilter;
-    if(query.hasOwnProperty('armorFilter')) this.armorFilter = query.armorFilter;
-    if(query.hasOwnProperty('otherFilter')) this.otherFilter = query.otherFilter;
+    if(query.hasOwnProperty('areaFilter')) this.query.areaFilter = query.areaFilter;
+    if(query.hasOwnProperty('potionFilter')) this.query.potionFilter = query.potionFilter;
+    if(query.hasOwnProperty('scrollFilter')) this.query.scrollFilter = query.scrollFilter;
+    if(query.hasOwnProperty('pillFilter')) this.query.pillFilter = query.pillFilter;
+    if(query.hasOwnProperty('staffFilter')) this.query.staffFilter = query.staffFilter;
+    if(query.hasOwnProperty('wandFilter')) this.query.wandFilter = query.wandFilter;
+    if(query.hasOwnProperty('weaponFilter')) this.query.weaponFilter = query.weaponFilter;
+    if(query.hasOwnProperty('armorFilter')) this.query.armorFilter = query.armorFilter;
+    if(query.hasOwnProperty('otherFilter')) this.query.otherFilter = query.otherFilter;
     this.change(query&&query.vnum ? query.vnum : null, query.area);
   },
   methods: {
@@ -236,7 +236,7 @@ export default {
       this.weights.wisdom = this.weights.wisdomDefault;
       this.weights.constitution = this.weights.constitutionDefault;
       this.weights.hitroll = this.weights.hitrollDefault;
-      this.weights.damroll = this.weigthts.damrollDefault;
+      this.weights.damroll = this.weights.damrollDefault;
       this.weights.health = this.weights.healthDefault;
       this.weights.mana = this.weights.manaDefault;
       this.weights.move = this.weights.moveDefault;
