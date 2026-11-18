@@ -1,9 +1,9 @@
-# Entitlement and Housing
+# Entitlement and housing
 
 ## Entitlement
 
-| name | gold cost | writ cost | equivalent qp cost | equivalent qp total |
-| --- | --- | --- | --- | --- |
+| Rank | Gold | Writ (qp) | Equivalent qp | Running total (qp) |
+| --- | ---: | ---: | ---: | ---: |
 | 1. Citizen | 10,000 | 2,000 | 3,000 | 3,000 |
 | 2. Watcher/Seeker | 20,000 | 2,000 | 4,000 | 7,000 |
 | 3. Master/Mistress | 30,000 | 2,000 | 5,000 | 12,000 |
@@ -15,37 +15,43 @@
 | 9. Duke/Duchess | 90,000 | 2,000 | 11,000 | 63,000 |
 | Total | 450,000 | 18,000 | 63,000 | - |
 
-## Housing Costs
+Each rank takes a writ of entitlement (2,000 qp from a quest master) plus gold. Equivalent qp counts gold at the quest shop's rate of 1,000 qp per 10,000 gold.
 
-- A housing cost simulator website is available [here](https://nathanielinman.github.io/AdventuresUnlimited/#/home).
-- A housing cost simulator template of a maxed manor (private, six level 110 henchmen with every upgrade) is available [here](https://nathanielinman.github.io/AdventuresUnlimited/#/home?locationType=manor&healingRate=400&hasPortal=true&isPublic=false&henchmenNumber=6&henchmenLevel=110&furnitureItems=8&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1&sanctuary=true&haste=true&phase=true&protection=true&sneak=true&fly=true&invisibility=true&criticalStrike=true&counter=true&dirtKick=true&disarm=true&berserk=true&bash=true&trip=true&resistMonk=true&resistMagic=true&resistPierce=true&resistSlash=true&resistBash=true&resistWood=true&resistSilver=true&resistIron=true&resistLight=true&resistPoison=true&resistHoly=true&resistEnergy=true&resistDisease=true&resistFire=true&resistCold=true&resistLightning=true&resistAcid=true). (2,121,350 gold)
-- A housing cost simulator template of a maxed house is available [here](https://nathanielinman.github.io/AdventuresUnlimited/#/home?locationType=house&healingRate=300&hasPortal=true&isPublic=false&doorLock=1000&doorType=100&lockLevel=100&furnitureItems=3&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1). (651,750 gold)
+## Housing costs
 
-| description | diamonds | equivalent gold |
-| --- | --- | --- |
-| additional room heal rate 10% (houses start at 100%, manors at 150%) | 125 | 13,750 |
-| maxed house heal rate 300% | 2500 | 275,000 |
-| maxed manor heal rate 400% (300% for a public manor) | 3125 | 343,750 |
-| portal | 400 | 44,000 |
-| lock upgrade (hard) | 200 | 22,000 from default easy |
-| lock upgrade (infuriating) | 200 | 22,000 (44,000 from easy) |
-| lock upgrade (implausible) | 200 | 22,000 (66,000 from easy) |
-| lock upgrade (improbable) | 200 | 22,000 (88,000 from easy) |
-| lock upgrade (impossible) | 200 | 22,000 (110,000 from easy) |
-| lock level upgrade each (default level is 50)| 10 | 1,100 |
-| lock level upgrade to max | 500 | 55,000 |
-| furniture | 25 | 2,750 |
-| fireplace | 50 | 5,500 |
-| fountain (water) | 150 | 16,500 |
-| fountain (other liquid) | 200 | 22,000 |
-| redecoration | 20 | 2,200 |
-| rekey a lock (not including replacement) | 250 | 27,500 |
-| key replacement | 50 | 5,500 |
-| wood door (default) | free | free |
-| stone door | 50 | 5,500 |
-| metal door | 100 | 11,000 |
-| trough | 50 | 5,500 |
-| crucible | 100 | 11,000 |
-| anvil | 250 | 27,500 |
-| workbench | 250 | 27,500 |
-| forge | 500 | 55,000 |
+The [housing calculator](https://nathanielinman.github.io/AdventuresUnlimited/#/home) prices a house or manor before you buy it. Two ready-made setups:
+
+- [Maxed house](https://nathanielinman.github.io/AdventuresUnlimited/#/home?locationType=house&healingRate=300&hasPortal=true&isPublic=false&doorLock=1000&doorType=100&lockLevel=100&furnitureItems=3&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1): 300% heal rate, a portal, a metal door with an impossible level 100 lock, and 10 items (3 furniture plus one of everything else). 5,925 diamonds, 651,750 gold.
+- [Maxed private manor](https://nathanielinman.github.io/AdventuresUnlimited/#/home?locationType=manor&healingRate=400&hasPortal=true&isPublic=false&henchmenNumber=6&henchmenLevel=110&furnitureItems=8&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1&sanctuary=true&haste=true&phase=true&protection=true&sneak=true&fly=true&invisibility=true&criticalStrike=true&counter=true&dirtKick=true&disarm=true&berserk=true&bash=true&trip=true&resistMonk=true&resistMagic=true&resistPierce=true&resistSlash=true&resistBash=true&resistWood=true&resistSilver=true&resistIron=true&resistLight=true&resistPoison=true&resistHoly=true&resistEnergy=true&resistDisease=true&resistFire=true&resistCold=true&resistLightning=true&resistAcid=true): 400% heal rate, a portal, 15 items (8 furniture plus one of everything else) and six level 110 henchmen with every upgrade. 19,285 diamonds, 2,121,350 gold.
+
+| Upgrade | Diamonds | Gold |
+| --- | ---: | ---: |
+| Heal rate, each +10% | 125 | 13,750 |
+| House heal rate 100% to 300% (max) | 2,500 | 275,000 |
+| Manor heal rate 150% to 400% (max; 300% for a public manor) | 3,125 | 343,750 |
+| Portal | 400 | 44,000 |
+| Lock: easy (default) to hard | 200 | 22,000 |
+| Lock: hard to infuriating | 200 | 22,000 |
+| Lock: infuriating to implausible | 200 | 22,000 |
+| Lock: implausible to improbable | 200 | 22,000 |
+| Lock: improbable to impossible | 200 | 22,000 |
+| Lock: easy to impossible | 1,000 | 110,000 |
+| Lock level, each (starts at 50) | 10 | 1,100 |
+| Lock level 50 to 100 (max) | 500 | 55,000 |
+| Rekey a lock (key not included) | 250 | 27,500 |
+| Replacement key | 50 | 5,500 |
+| Wood door (default) | 0 | 0 |
+| Stone door | 50 | 5,500 |
+| Metal door | 100 | 11,000 |
+| Redecoration | 20 | 2,200 |
+| Furniture | 25 | 2,750 |
+| Fireplace | 50 | 5,500 |
+| Fountain (water) | 150 | 16,500 |
+| Fountain (other liquid) | 200 | 22,000 |
+| Trough | 50 | 5,500 |
+| Crucible | 100 | 11,000 |
+| Anvil | 250 | 27,500 |
+| Workbench | 250 | 27,500 |
+| Forge | 500 | 55,000 |
+
+Gold is diamonds at 110 gold each, the rate the calculator uses. The calculator caps a house at 10 items and a manor at 15, and only prices doors and locks for houses.
