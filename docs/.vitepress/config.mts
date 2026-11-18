@@ -1,15 +1,14 @@
 import { defineConfig } from 'vitepress';
+import { toolCatalog } from './theme/tools/lib/catalog';
 
 const base = '/AdventuresUnlimited/';
 const repo = 'https://github.com/NathanielInman/AdventuresUnlimited';
 
-// The calculators are a separate Vue app deployed under tools/. target: '_self'
-// makes these full page loads instead of client-side routes, which would 404.
+// Nav menu and sidebar group for the tools, from the same list the tools
+// overview page draws its cards from
 const tools = [
-  { text: 'Item search', link: '/tools/#/items', target: '_self' },
-  { text: 'Damage strings', link: '/tools/#/damageStrings', target: '_self' },
-  { text: 'Territory', link: '/tools/#/territory', target: '_self' },
-  { text: 'Housing', link: '/tools/#/home', target: '_self' }
+  { text: 'Overview', link: '/tools/' },
+  ...toolCatalog.map(tool => ({ text: tool.title, link: tool.link }))
 ];
 
 // Before the docs site existed the calculators lived at the site root, so old
@@ -39,7 +38,7 @@ export default defineConfig({
       { text: 'World', link: '/world/areas', activeMatch: '^/world/' },
       { text: 'Classes', link: '/classes/', activeMatch: '^/classes/' },
       { text: 'Crafting', link: '/crafting/', activeMatch: '^/crafting/' },
-      { text: 'Tools', items: tools }
+      { text: 'Tools', items: tools, activeMatch: '^/tools/' }
     ],
     sidebar: [
       {
@@ -88,7 +87,8 @@ export default defineConfig({
         ]
       },
       { text: 'Quests', link: '/quests' },
-      { text: 'Combat', link: '/mechanics/combat' }
+      { text: 'Combat', link: '/mechanics/combat' },
+      { text: 'Tools', items: tools }
     ],
     outline: { level: [2, 3] },
     search: { provider: 'local' },
