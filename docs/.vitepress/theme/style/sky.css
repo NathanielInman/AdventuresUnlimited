@@ -1,0 +1,77 @@
+/* -------------------------------------------------------------------------
+   Sky, dark mode only: faint stars and a moon glow off the top right corner.
+   Fixed behind everything; the stars thin out lower down the screen.
+   Parchment stays flat, so the opaque bars and tables sit on it cleanly.
+   ------------------------------------------------------------------------- */
+
+.au-sky {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: none;
+  pointer-events: none;
+}
+
+.dark .au-sky {
+  display: block;
+}
+
+.au-sky::before,
+.au-sky::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.35));
+  mask-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.35));
+}
+
+.au-sky::before {
+  background-image:
+    radial-gradient(1px 1px at 23px 41px, rgba(207, 233, 251, 0.55), transparent 100%),
+    radial-gradient(1px 1px at 131px 17px, rgba(207, 233, 251, 0.4), transparent 100%),
+    radial-gradient(1px 1px at 77px 152px, rgba(207, 233, 251, 0.45), transparent 100%),
+    radial-gradient(1.5px 1.5px at 190px 98px, rgba(207, 233, 251, 0.5), transparent 100%),
+    radial-gradient(1px 1px at 289px 211px, rgba(207, 233, 251, 0.35), transparent 100%),
+    radial-gradient(1px 1px at 345px 63px, rgba(207, 233, 251, 0.45), transparent 100%);
+  background-size: 373px 263px;
+}
+
+.au-sky::after {
+  background-image:
+    radial-gradient(1.5px 1.5px at 51px 88px, rgba(233, 246, 255, 0.75), transparent 100%),
+    radial-gradient(1px 1px at 246px 31px, rgba(169, 213, 239, 0.7), transparent 100%),
+    radial-gradient(1.5px 1.5px at 412px 197px, rgba(233, 246, 255, 0.6), transparent 100%),
+    radial-gradient(1px 1px at 163px 301px, rgba(169, 213, 239, 0.6), transparent 100%);
+  background-size: 547px 389px;
+  animation: au-twinkle 7s ease-in-out infinite alternate;
+}
+
+/* The moon glow only on wide screens, and below the nav, which leaves a
+   strip of page showing at its right edge */
+@media (min-width: 960px) {
+  .dark .au-sky {
+    top: var(--vp-nav-height);
+    background: radial-gradient(ellipse 34% 40% at 100% 0%, rgba(63, 177, 242, 0.1), transparent 70%);
+  }
+}
+
+@keyframes au-twinkle {
+  from { opacity: 0.25; }
+  to { opacity: 1; }
+}
+
+.au-tab-hidden .au-sky::after {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .au-sky::after {
+    animation: none;
+  }
+}
+
+@media print {
+  .au-sky {
+    display: none;
+  }
+}

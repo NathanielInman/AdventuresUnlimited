@@ -1,0 +1,44 @@
+/* -------------------------------------------------------------------------
+   Motion. The page fades in on first load (effects.ts does it on later
+   route changes), big blocks fade up as they scroll in, and looping art
+   pauses off screen or in a hidden tab.
+   ------------------------------------------------------------------------- */
+
+.VPDoc .content-container {
+  animation: au-enter 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes au-enter {
+  from { opacity: 0; transform: translateY(8px); }
+}
+
+.au-reveal {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.au-reveal.au-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.45s ease-out, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.au-paused,
+.au-paused *,
+.au-tab-hidden [data-au-ambient],
+.au-tab-hidden [data-au-ambient] * {
+  animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPDoc .content-container {
+    animation: none;
+  }
+}
+
+@media print {
+  .au-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

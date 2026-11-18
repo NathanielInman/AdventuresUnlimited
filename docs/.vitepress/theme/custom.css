@@ -10,6 +10,8 @@
 @import './style/content.css';
 @import './style/logo.css';
 @import './style/footer.css';
+@import './style/sky.css';
+@import './style/motion.css';
 
 /* -------------------------------------------------------------------------
    Tokens
