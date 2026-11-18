@@ -1,31 +1,13 @@
 # Monk
-Monks are the most sophisticated class in the game and take a lot of effort to master. This guide helps shed light on what things do and some strategies on making that monk journey easier.
 
-## Table of Contents
-- [Monk](#monk)
-  - [Mantras](#mantras)
-  - [Fightstyles](#fightstyles)
-  - [Abilities](#abilities)
-  - [Chi](#chi)
-  - [Stances](#stances)
-    - [leveling strategy](#leveling-strategy)
-    - [viper](#viper)
-    - [crane](#crane)
-    - [crab](#crab)
-    - [mongoose](#mongoose)
-    - [bull](#bull)
-    - [mantis](#mantis)
-    - [dragon](#dragon)
-    - [tiger](#tiger)
-    - [swallow](#swallow)
-    - [monkey](#monkey)
-    - [grandmaster](#grandmaster)
-  - [Techniques](#techniques)
-  - [Combos](#combos)
-  
+Monks are the most sophisticated class in the game and take a lot of effort to master. This guide explains what each monk system does and gives some strategies to make the journey easier. For monk HP, mana and stat caps see [max stats](max-stats.md#monk); for the skills monks share with other classes see [skills](skills.md).
+
 ## Mantras
+
+The ability columns are the rank you need in each ability to use the mantra.
+
 | name | level | mana | awareness | body | combat | spirit | focus | description |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | spirit invisibility | 13 | 20 | 1 | 1 | 0 | 1 | 0 | invisibility |
 | stone hands | 19 | 35 | 0 | 1 | 2 | 1 | 1 | +8% damage |
 | spirit eyes | 22 | 20 | 2 | 0 | 0 | 2 | 1 | detect magic, invis, hidden (lvl 31) |
@@ -45,21 +27,22 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 | spirit hands | 99 | 50 | 4 | 4 | 4 | 4 | 0 | +40% damage |
 
 ## Fightstyles
+
 | name | level | requirements | damage | slottable | description |
-| --- | --- | --- | --- | --- | --- |
+| --- | ---: | --- | ---: | ---: | --- |
 | knee | 1 | none | 117% | 4 | basic attack |
 | punch | 1 | none | 117% | 4 | basic attack |
 | elbow | 1 | none | 117% | 4 | basic attack |
 | kick | 1 | none | 117% | 4 | basic attack |
 | bodyblow | 10 | none | 100% | 4 | basic attack |
-| trip | 10 | none | 117% | 4 | trip affect, affected by player & enemy dex & haste |
+| trip | 10 | none | 117% | 4 | trip effect, affected by player & enemy dex & haste |
 | stamp | 17 | kick | 100% | 3 | failable, subtracts between 25 & 50 move from enemy |
 | swiftkick | 18 | kick | 100% | 3 | basic attack |
-| grapple | 23 | bodyblow | 133% | 2 | failable player strength vs enemy dex |
+| grapple | 23 | bodyblow | 133% | 2 | failable, player strength vs enemy dex |
 | hook | 24 | none | 100% | 2 | basic attack |
 | charge | 26 | bodyblow | 100% | 2 | basic attack |
 | backfist | 27 | bodyblow, punch | 133% | 2 | basic attack |
-| uppercut | 31 | grapple, punch | 100% | 2 | failable pllayer vs enemy dex |
+| uppercut | 31 | grapple, punch | 100% | 2 | failable, player vs enemy dex |
 | forearm | 34 | punch, charge | 133% | 2 | basic attack |
 | hurl | 42 | bodyblow, punch | 100% | 1 | basic attack |
 | jumpkick | 49 | kick, bodyblow | 133% | 1 | basic attack |
@@ -69,64 +52,70 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 | headbutt | 57 | none | 133% | 1 | basic attack |
 
 ## Abilities
-| level | requirements |
-| --- | --- |
-| 1 | 10 practices |
-| 15 | 20 practices |
-| 30 | 30 practices |
-| 45 | 40 practices | 
 
-**Awareness**
+Each of the five abilities has four ranks. A rank costs practices and needs a minimum level:
+
+| rank | level | cost (practices) |
+| ---: | ---: | ---: |
+| 1 | 1 | 10 |
+| 2 | 15 | 20 |
+| 3 | 30 | 30 |
+| 4 | 45 | 40 |
+
+### Awareness
+
 - Awareness 1
-  - reduces chance of being a successful dirtkick target by 5% if chi level > 0
+  - reduces chance of being a successful dirtkick target by 5% while you have chi
   - reduces blind damage penalties by 2%
 - Awareness 2
-  - reduces chance of being a successful dirtkick target by 10% if chi level > 0
+  - reduces chance of being a successful dirtkick target by 10% while you have chi
   - reduces blind damage penalties by 4%
 - Awareness 3
-  - reduces chance of being a successful dirtkick target by 15% if chi level > 0
+  - reduces chance of being a successful dirtkick target by 15% while you have chi
   - reduces blind damage penalties by 6%
 - Awareness 4
-  - reduces chance of being a successful dirtkick target by 20% if chi level > 0
+  - reduces chance of being a successful dirtkick target by 20% while you have chi
   - reduces blind damage penalties by 8%
 
-**Combat**
+### Combat
+
 - Combat 1
-  - 90% chance for extra attack if player level 6 or above
-  - 15% chance to  prevent blind fighting from reducing number of attacks by 30%
-  - 20% resistant to each attack above 4+ during PK
+  - 90% chance for extra attack #1 if player level 6 or above
+  - 15% chance to prevent blind fighting from reducing number of attacks by 30%
+  - 20% resistance to each attack past the fourth during PK
   - hitroll and damroll bonus
-    - For players less than level 51: +3 hitroll, +3 damroll
-    - For players greater than level 50: 10% * level + 5dam & hitroll
+    - Below level 51: +3 hitroll, +3 damroll
+    - Level 51 and up: level / 10 +5 hitroll and damroll
 - Combat 2
   - 90% chance for extra attack #1 if player level 6 or above
   - 75% chance for extra attack #2 if player level 16 or above
-  - 30% chance to  prevent blind fighting from reducing number of attacks by 30%
-  - 40% resistant to each attack above 4+ during PK
+  - 30% chance to prevent blind fighting from reducing number of attacks by 30%
+  - 40% resistance to each attack past the fourth during PK
   - hitroll and damroll bonus
-    - For players less than level 51: +6 hitroll, +6 damroll
-    - For players greater than level 50: 10% * level + 10dam & hitroll
+    - Below level 51: +6 hitroll, +6 damroll
+    - Level 51 and up: level / 10 +10 hitroll and damroll
 - Combat 3
   - 90% chance for extra attack #1 if player level 6 or above
   - 75% chance for extra attack #2 if player level 16 or above
   - 60% chance for extra attack #3 if player level 31 or above
-  - 45% chance to  prevent blind fighting from reducing number of attacks by 30%
-  - 60% resistant to each attack above 4+ during PK
+  - 45% chance to prevent blind fighting from reducing number of attacks by 30%
+  - 60% resistance to each attack past the fourth during PK
   - hitroll and damroll bonus
-    - For players less than level 51: +9 hitroll, +9 damroll
-    - For players greater than level 50: 10% * level + 15dam & hitroll
+    - Below level 51: +9 hitroll, +9 damroll
+    - Level 51 and up: level / 10 +15 hitroll and damroll
 - Combat 4
   - 90% chance for extra attack #1 if player level 6 or above
   - 75% chance for extra attack #2 if player level 16 or above
   - 60% chance for extra attack #3 if player level 31 or above
   - 35% chance for extra attack #4 if player level 51 or above
-  - 60% chance to  prevent blind fighting from reducing number of attacks by 30%
-  - 80% resistant to each attack above 4+ during PK
+  - 60% chance to prevent blind fighting from reducing number of attacks by 30%
+  - 80% resistance to each attack past the fourth during PK
   - hitroll and damroll bonus
-    - For players less than level 51: +12 hitroll, +12 damroll
-    - For players greater than level 50: 10% * level + 20dam & hitroll
-    
-**Focus**
+    - Below level 51: +12 hitroll, +12 damroll
+    - Level 51 and up: level / 10 +20 hitroll and damroll
+
+### Focus
+
 - Focus 1
   - 50% chance to gain chi
   - 10% to maintain chi each tick outside battle
@@ -147,14 +136,18 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
   - 70% to maintain chi each tick outside battle
   - 85% to maintain chi when out of mana
   - 40 - 100% resistance to losing chi from bash during PK
-  
-**Body**
+
+### Body
+
+Body lowers your AC once you pass level 30.
+
 - Body 1: 10% * level lower AC
 - Body 2: 20% * level lower AC
 - Body 3: 30% * level lower AC
 - Body 4: 40% * level lower AC
 
-**Spirit**
+### Spirit
+
 - Spirit 1
   - 5% chance to gain current chi level (1-6) mana on successful combo
   - reduce mana consumption of chi by 2%
@@ -170,75 +163,88 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 
 ## Chi
 
-**CHI 1**: Player Level 1
-  - free to train
-  - consumes 5 mana per hit
-  - +5% + level / 5 damage
-  - +1% to dodge & parry
-  - -1% enemy shieldblock, dodge & parry
+You can raise your maximum chi by one level every 10 levels, paying the listed trains.
 
-**CHI 2**: Player Level 11
-  - costs 10 trains
-  - consumes 10 mana per hit
-  - **usage of pressure point** (pressure point needs chi 2 or higher, the skill from level 45 and 100% hand to hand)
-  - +10% + level / 5 damage
-  - +1% to dodge & parry
-  - -2% enemy shieldblock, dodge & parry
+### Chi 1 (level 1)
 
-**CHI 3**: Player Level 21
-  - costs 15 trains
-  - consumes 15 mana per hit
-  - **usage of pressure point**
-  - 75% chance for +30% + level / 5 damage
-  - +1% to dodge & parry
-  - -3% enemy shieldblcok, dodge & parry
-  - chance to add 2 attacks
+- free to train
+- consumes 5 mana per hit
+- +5% + level / 5 damage
+- +1% to dodge & parry
+- -1% enemy shield block, dodge & parry
 
-**CHI 4**: Pllayer Level 31
-  - costs 20 trains
-  - costs 20 mana per hit
-  - **usage of pressure point**
-  - 75% chance for +40% + level / 5 damage
-  - +1% to dodge & parry
-  - -4% enemy shieldblock, dodge & parry
-  - chance to add 2 attacks
+### Chi 2 (level 11)
 
-**CHI 5**: Player Level 41
-  - costs 25 trains
-  - costs 25 mana per hit
-  - **usage of pressure point**
-  - 75% chance for +75% + level / 5 damage
-  - +2% to dodge & parry
-  - -5% enemy shieldblock, dodge & parry
-  - chance to add 3 attacks
+- costs 10 trains
+- consumes 10 mana per hit
+- **usage of pressure point** (pressure point needs chi 2 or higher, the skill from level 45 and 100% hand to hand)
+- +10% + level / 5 damage
+- +1% to dodge & parry
+- -2% enemy shield block, dodge & parry
 
-**CHI 6**: Player level 51
-  - costs 30 trains
-  - costs 30 mana per hit
-  - **usage of pressure poinnt**
-  - 65% chance for +90% + level / 5 damage
-  - +2% to dodge & parry
-  - -6% enemy shieldblock, dodge & parry
-  - chance to add 4 attacks
+### Chi 3 (level 21)
+
+- costs 15 trains
+- consumes 15 mana per hit
+- **usage of pressure point**
+- 75% chance for +30% + level / 5 damage
+- +1% to dodge & parry
+- -3% enemy shield block, dodge & parry
+- chance to add 2 attacks
+
+### Chi 4 (level 31)
+
+- costs 20 trains
+- consumes 20 mana per hit
+- **usage of pressure point**
+- 75% chance for +40% + level / 5 damage
+- +1% to dodge & parry
+- -4% enemy shield block, dodge & parry
+- chance to add 2 attacks
+
+### Chi 5 (level 41)
+
+- costs 25 trains
+- consumes 25 mana per hit
+- **usage of pressure point**
+- 75% chance for +75% + level / 5 damage
+- +2% to dodge & parry
+- -5% enemy shield block, dodge & parry
+- chance to add 3 attacks
+
+### Chi 6 (level 51)
+
+- costs 30 trains
+- consumes 30 mana per hit
+- **usage of pressure point**
+- 65% chance for +90% + level / 5 damage
+- +2% to dodge & parry
+- -6% enemy shield block, dodge & parry
+- chance to add 4 attacks
 
 ## Stances
-Stances take exactly 25 improvements to advance in skill level and have 9 ranks of mastery. You can rank up a stance every level. You can grandmaster 1 stance per 8 levels. This limit disappears at level 50. You can therefor unlock grandmaster stance and grandmaster it at level 50. You can reach this goal even if you train no stances until level 50 as it is accumulatively unlocked.
 
-Every hit has a possibility to check for improvement:
-```
+Stances take exactly 25 improvements to advance a rank, and there are 9 ranks of mastery. Below level 50 you can gain one stance rank per level in total, which is enough to grandmaster one stance every 8 levels. The limit disappears at level 50, so you can unlock the grandmaster stance and grandmaster it by level 50. The allowance accumulates, so this works even if you train no stances until level 50.
+
+Every hit has a chance to check for improvement:
+
+```text
 percent chance (0-100): (4 * int learn rate + level) / 10
 ```
 
 The int learn rate is the same per-practice learn percent that intelligence gives every class (85 at int 25, 90 at int 26 and 95 from int 27 up).
 
-If possibility is unlocked it checks for improvement:
-```
+If that roll succeeds, the chance to actually improve depends on your current rank:
+
+```text
 apprentice: 75 - 100%
 trainee: 50 - 75%
 student: 25 - 50%
 fairly experienced: 1 - 25%
 well trained & above: 1%
 ```
+
+The ranks, in order:
 
 1. apprentice
 2. trainee
@@ -250,22 +256,24 @@ well trained & above: 1%
 8. master
 9. grandmaster
 
-### Leveling Strategy
-One leveling strategy is to work on the worst stances first as monks get increasingly difficult to level until they unlock pressure point (45) and counter (50).
+### Leveling strategy
 
-1. (1-8) Crane
-2. (9-16) Mongoose
-3. (17-24) Monkey
+One leveling strategy is to work on the worst stances first, since monks get harder and harder to level until they unlock pressure point (45) and counter (50).
+
+1. (1-8) crane
+2. (9-16) mongoose
+3. (17-24) monkey
 4. (25-32) crab
-4. (33-40) Viper
-5. (41-48) Bull
-6. (49-50) tiger
-7. (50) swallow - only useful after lvl 45 pressure point
-8. (50) mantis - only useful after lvl 50 counter
-10. (50) dragon - only useful after lvl 50 counter
+5. (33-40) viper
+6. (41-48) bull
+7. (49-50) tiger
+8. (50) swallow: only useful after pressure point at level 45
+9. (50) mantis: only useful after counter at level 50
+10. (50) dragon: only useful after counter at level 50
 11. (50) grandmaster
 
-### Viper 
+### Viper
+
 - starter stance
 - allow grapple fightstyle to work if target is flying
 - allow trip fightstyle to work if target is flying
@@ -275,33 +283,39 @@ One leveling strategy is to work on the worst stances first as monks get increas
 - up to 10% increased chance at grandmaster to apply pressure point
 
 ### Crane
+
 - starter stance
 - allow trip fightstyle to work if target is flying
 - up to 17% at grandmaster to parry
 
 ### Crab
+
 - starter stance
-- DECREASE chance of uppercut fightstyle success by 25%
+- **DECREASE** chance of uppercut fightstyle success by 25%
 - up to 17% at grandmaster to parry
 
 ### Mongoose
+
 - starter stance
 - allow grapple fightstyle to force resting position on target if they're flying
 - up to 17% at grandmaster to dodge
 - up to 10% increased chance at grandmaster to apply pressure point
 
 ### Bull
+
 - starter stance
 - +73% damage
 - **DECREASE** chance of uppercut fightstyle success by 25%
 - **DECREASE** chance to counter by 5 - 10%
 
 ### Mantis
+
 - requires crane and viper grandmastered
 - up to 50% at grandmaster to add 1 extra attack
 - +10-15% chance to counter
 
 ### Dragon
+
 - requires bull and crab grandmastered
 - +66% damage
 - **DECREASE** chance of uppercut fightstyle success by 25%
@@ -310,22 +324,26 @@ One leveling strategy is to work on the worst stances first as monks get increas
 - up to 50% at grandmaster to have 75% for 1 extra attack & 50% for 2 extra attacks, and 25% for 3 extra attacks
 
 ### Tiger
+
 - requires bull and viper grandmastered
 - +89% damage
 - up to 50% at grandmaster to have 75% for 1 extra attack & 50% for 2 extra attacks
 
 ### Swallow
+
 - requires mongoose and crab grandmastered
 - up to 10% increased chance at grandmaster to apply pressure point
 - **DECREASE** chance to counter by 10 - 15%
 
 ### Monkey
+
 - requires crane and mongoose grandmastered
 - +33% damage
 - up to 50% at grandmaster to +15% success on disarm
 
 ### Grandmaster
-- requires mantis, dragon, tiger, swallow & monkey grandmastered
+
+- requires mantis, dragon, tiger, swallow & monkey grandmastered (and so all ten other stances)
 - +100% damage
 - (requires level 60) up to 50% at grandmaster to have 60% for 1 extra attack & 50% for 2 extra attacks, and 30% for 3 extra attacks
 - up to 10% increased chance at grandmaster to apply pressure point
@@ -335,9 +353,11 @@ One leveling strategy is to work on the worst stances first as monks get increas
 - up to 50% at grandmaster to +20-25% success on disarm
 
 ## Techniques
-Some techniques may require either fightstyles or other techniques to learn.
+
+Some techniques need fightstyles or other techniques before you can learn them.
+
 | name | level | requirements | damage |
-| --- | --- | --- | --- |
+| --- | ---: | --- | ---: |
 | thrust kick | 12 | kick (fightstyle), bodyblow (fightstyle) | 200% |
 | knee | 17 | knee (fightstyle) | 200% |
 | elbow | 23 | punch (fightstyle), thrust kick (technique) | 200% |
@@ -350,26 +370,27 @@ Some techniques may require either fightstyles or other techniques to learn.
 | triple kick | 73 | kick (fightstyle), spinkick (fightstyle) | 225% |
 
 ## Combos
-The absolute key to mastering monk combat is leveraging all the techniques to perform combinations that deliver drastic effect.
 
-| lvl available | name | combo (required aura) | damage | other |
-| --- | --- | --- | --- | --- |
-| 17 | knee spike | thrust kick, knee | 225% | |
+The key to mastering monk combat is chaining techniques into combos. A combo is the techniques in the order listed; each step before the last leaves an aura that the next one needs. Some combos share a name with another combo or a technique because they finish with the same attack (elbow strike, palm strike, back fist, thrust kick, lightning kick, firefist).
+
+| level | name | combo (required aura) | damage | other |
+| ---: | --- | --- | --- | --- |
+| 17 | knee spike | thrust kick, knee | 225% | - |
 | 23 | knock | knee, elbow, thrust kick | 200% on chi/2 attacks | chi5+ chance to knock |
-| 27 | elbow strike | shin kick, thrust kick, elbow | 225% on chi attacks | |
-| 33 | back fist | elbow, back fist | 200% on chi attacks | |
-| 39 | palm strike | back fist, palm strike | 200% on chi attacks | |
+| 27 | elbow strike | shin kick, thrust kick, elbow | 225% on chi attacks | - |
+| 33 | back fist | elbow, back fist | 200% on chi attacks | - |
+| 39 | palm strike | back fist, palm strike | 200% on chi attacks | - |
 | 39 | silence | elbow, palm strike | 200% | 60% in chi3 or above to silence |
-| 39 | elbow strike | palm strike, elbow | 225% on chi/2 attacks | |
+| 39 | elbow strike | palm strike, elbow | 225% on chi/2 attacks | - |
 | 43 | trip | shin kick, sweep | 200% + 225% | 100% stun at chi6 |
 | 43 | leg sweep | sweep, shin kick | 200% + 225% | 100% stun at chi6 |
-| 61 | thrust kick | spin kick, thrust kick | 200% on chi/2 attacks | |
-| 61 | lightning kick | thrust kick, thrust kick, spin kick | 225% on chi+1 attacks | |
-| 61 | palm strike | spin kick, back fist, palm strike | 200% on chi x 3/2 attacks | |
-| 61 | flurry spin | palm strike, spin kick, sweep | 200% + 200% on chi/2 attacks | |
+| 61 | thrust kick | spin kick, thrust kick | 200% on chi/2 attacks | - |
+| 61 | lightning kick | thrust kick, thrust kick, spin kick | 225% on chi+1 attacks | - |
+| 61 | palm strike | spin kick, back fist, palm strike | 200% on chi x 3/2 attacks | - |
+| 61 | flurry spin | palm strike, spin kick, sweep | 200% + 200% on chi/2 attacks | - |
 | 61 | tornado kick | spin kick, spin kick | 225% on chi attacks to entire room | AOE attack |
-| 67 | firefist | back fist, elbow, double punch | 225% on chi/2 attacks | |
-| 67 | glowfist | elbow, elbow, double punch | 225% on chi attacks | |
-| 67 | firefist | double punch, double punch | 225% on chi attacks | |
-| 73 | forcekick | thrust kick, thrust kick, triple kick | 225% on chi attacks | |
-| 73 | lightning kick | triple kick, double punch, spin kick | 225% on chi x 3/2 attacks | |
+| 67 | firefist | back fist, elbow, double punch | 225% on chi/2 attacks | - |
+| 67 | glowfist | elbow, elbow, double punch | 225% on chi attacks | - |
+| 67 | firefist | double punch, double punch | 225% on chi attacks | - |
+| 73 | forcekick | thrust kick, thrust kick, triple kick | 225% on chi attacks | - |
+| 73 | lightning kick | triple kick, double punch, spin kick | 225% on chi x 3/2 attacks | - |
