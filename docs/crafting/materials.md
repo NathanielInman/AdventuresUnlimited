@@ -92,7 +92,7 @@ The mines and materials tables use these words for strength, magic and rarity.
 | [The Forbidden Wastes](../world/areas.md#forbidden-wastes) | xedalium (common), meteorite (common), zeririte (kinda rare) | common | sunstone (common), amber (common), azurite (kinda rare) | kinda rare |
 | [The Western Road](../world/areas.md#western-road) | brass (common), ulayilium (common), platinum (kinda rare) | abundant | amethyst (common), amber (common), moonstone (kinda rare) | very rare |
 
-## Materials
+## Material properties
 
 | Name | Type | Strength | Magic | Rarity | Notes |
 | --- | --- | --- | --- | --- | --- |
