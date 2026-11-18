@@ -21,6 +21,6 @@
     // Table pipes with one space each side, no alignment padding
     "MD060": { "style": "compact" }
   },
-  "globs": ["README.md", "CONTRIBUTING.md", "docs/**/*.md", "utilities/README.md"],
+  "globs": ["README.md", "CONTRIBUTING.md", "docs/**/*.md"],
   "ignores": ["**/node_modules/**", "docs/.vitepress/**"]
 }

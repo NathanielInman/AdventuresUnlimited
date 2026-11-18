@@ -4,11 +4,4 @@
 # Check #anchors in links between pages, not just that the page exists
 include_fragments = "anchor-only"
 
-# The calculators route on the URL hash (#/items?vnum=...), which is not an
-# HTML anchor, so a fragment check on those links always fails. Check the page
-# they load instead.
-remap = [
-  '^(https://nathanielinman\.github\.io/AdventuresUnlimited/(?:tools/)?)#/.*$ $1',
-]
-
 no_progress = true

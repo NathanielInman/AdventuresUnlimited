@@ -34,4 +34,4 @@ npm run docs:build    # what CI deploys
 npx markdownlint-cli2 # lint README.md and docs/
 ```
 
-The calculators are a separate Vue app; see [utilities/README.md](utilities/README.md).
+The calculators are docs pages too: each one is a Vue component in `docs/.vitepress/theme/tools/`, and [its README](docs/.vitepress/theme/tools/README.md) explains how they fit together.
