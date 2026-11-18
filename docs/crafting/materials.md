@@ -39,6 +39,8 @@
 | staff | 45 | weaponsmithing |
 | spear | 45 | weaponsmithing |
 
+Jewelcrafting always takes 20 pounds of ore, whatever the slot. The numbers above are for armorsmithing and weaponsmithing.
+
 
 ## Materials Table
 
@@ -115,7 +117,7 @@ Rarity Percentages:
 | sapphire | mineral | accomplished | adequate | very common | lesser fire resistance, mined in The Mines of Noal'xyn |
 | ruby | mineral | outstanding | adequate | very common | moderate cold resistance, best mined in Lost Kingdoms |
 | stone | mineral | accomplished | passable | very abundant | best mined in Mines of Noal'xyn |
-| amber | mineral | lousy | very abundant | very common | greater energy resistance, best mined in The Western Road |
+| amber | mineral | lousy | exceptional | very common | greater energy resistance, best mined in The Western Road |
 | aquamarine | mineral | adequate | accomplished | very common | minor drowning resistance, mined in Fireblast Mountains |
 | azurite | mineral | passable | lousy | very common | extreme iron resistance, minor magic vulnerability, mined in The Forbidden Wastes |
 | beryl | mineral | accomplished | accomplished | common | extreme holy resistance, not possible to mine |
@@ -126,7 +128,7 @@ Rarity Percentages:
 | moonstone | mineral | adequate | exceptional | barely uncommon | extreme silver resistance, mined in The Western Road |
 | morganite | mineral | accomplished | adequate | common | lesser magic resistance, not possible to mine |
 | olivine | mineral | adequate | outstanding | common | lesser fire resistance, not possible to mine |
-| spinel | mineral | accomplished | accomplished | adequate | extreme mental resistance, not possible to mine |
+| spinel | mineral | accomplished | accomplished | common | extreme mental resistance, not possible to mine |
 | sunstone | mineral | adequate | exceptional | barely uncommon | extreme light resistance, best mined in The Forbidden Wastes |
 | tanzanite | mineral | adequate | passable | very common | extreme lightning resistance, lesser drowning vulnerability, not possible to mine |
 | topaz | mineral | adequate | accomplished | uncommon | lesser bash resistance, mined in Du'Rahath |
