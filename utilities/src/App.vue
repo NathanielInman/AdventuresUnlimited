@@ -45,8 +45,8 @@ Toast
     #[a(href='http://nathanielinman.com') Nathaniel Inman] of
     #[a(href='http://www.theoestudio.com') The OE Studio].
   p.
-    Copyright © {{(new Date).getFullYear()}}
-    #[a(href='http://www.theoestudio.com') The OE Studio]. All Rights Reserved.
+    Copyright © 2020-{{(new Date).getFullYear()}} Nathaniel Inman. Released under the
+    #[a(href='https://github.com/NathanielInman/AdventuresUnlimited/blob/master/LICENSE') MIT License].
 </template>
 <script>
 // Prepare the main template
