@@ -24,7 +24,7 @@ The max stats a mark can upgrade to are:
   - **Hitroll**: level / 2 + rank# * 3
   - **Damroll**: level / 3 + rank# * 2
 
-| rank | hp cost | wp cost | mv cost | hit cost | dam cost |
+| rank | hp cost | mp cost | mv cost | hit cost | dam cost |
 | --- | --- | --- | --- | --- | --- |
 | 1: follower / follower / follower | - | - | - | - | - |
 | 2: devotee / acolyte / disciple | - | - | 465g | - | - |
@@ -41,7 +41,7 @@ The max stats a mark can upgrade to are:
 | name | description | cost |
 | --- | --- | --- | 
 | light | cure light wounds | 10g | 
-| serious | cure serious wounds | 15g | 
+| serious | cure serious wounds | 16g | 
 | critic | cure critical wounds | 25g | 
 | heal | healing spell | 50g | 
 | blind | cure blindness | 20g | 
