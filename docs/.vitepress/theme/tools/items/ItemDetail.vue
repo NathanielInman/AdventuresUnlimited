@@ -3,6 +3,7 @@ import { computed, onBeforeUnmount, ref } from 'vue';
 import { formatNumber, formatRange, formatSigned } from '../lib/format';
 import { MudText, StatReadout } from '../ui';
 import SourceParts from './SourceParts.vue';
+import type { Item } from '../lib/items';
 import {
   affectLabel,
   conditionVaries,
@@ -19,7 +20,7 @@ import {
 // Everything the game knows about one item, in the order a player reads
 // identify: what it is, what it gives, what it's made of, where it comes from.
 const props = defineProps<{
-  view: ItemView;
+  view: ItemView<Item>;
   weights: number[];
   score: number;
   area: AreaInfo | null;

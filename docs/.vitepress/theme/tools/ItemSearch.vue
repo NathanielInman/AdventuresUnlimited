@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref, shallowRef, useId, watch } from 'vue';
+import { computed, markRaw, onBeforeUnmount, onMounted, ref, shallowRef, useId, watch } from 'vue';
 import { withBase } from 'vitepress';
 import areasSource from '../../../world/areas.md?raw';
 import { formatNumber } from './lib/format';
-import { areaKeys, loadAllItems, loadArea, type Item } from './lib/items';
+import { areaKeys, loadArea, loadItemIndex, type IndexItem, type Item } from './lib/items';
 import { useQueryState } from './lib/query-state';
 import {
   CheckField,
@@ -40,6 +40,8 @@ import {
 
 const PAGE_SIZE = 25;
 const LEVEL_MAX = 120;
+/** How long the text search waits for typing to pause */
+const SEARCH_DELAY = 120;
 
 const filterDefaults = {
   q: '',
@@ -58,7 +60,7 @@ const filterDefaults = {
   test: false
 };
 
-const { state, ready, set, hrefFor } = useQueryState({
+const { state, set, hrefFor } = useQueryState({
   vnum: '',
   area: '',
   ...filterDefaults,
@@ -83,16 +85,18 @@ function resetWeights() {
   set({ ...defaultWeights, page: 1 });
 }
 
-// Item data: one chunk per area, fetched after mount
-const views = shallowRef<ItemView[]>([]);
-const loadedAreas = ref(0);
+// The list comes from the item index, one small file fetched after mount.
+// Views are built once and never made reactive: 11,000 of them behind Vue
+// proxies would make every filter pass slow.
+type ListView = ItemView<IndexItem>;
+
+const views = shallowRef<readonly ListView[]>([]);
+const areaNames = shallowRef(new Map<string, string>());
 const loading = ref(true);
 const failed = ref(false);
 const pendingAreaName = ref<string | null>(null);
 
-function setItems(items: Item[]) {
-  views.value = items.map(viewItem);
-}
+const byVnum = computed(() => new Map(views.value.map(view => [view.vnum, view])));
 
 onMounted(async () => {
   // Old calculator links carry their filters under other names
@@ -111,22 +115,23 @@ onMounted(async () => {
   media.addEventListener('change', onMedia);
   stopMedia = () => media.removeEventListener('change', onMedia);
 
-  try {
-    // A shared item link shows its item as soon as that area arrives
-    if (state.vnum && state.area && areaKeys.includes(state.area)) setItems(await loadArea(state.area));
-    const counted = areaKeys.map(key => loadArea(key).then(() => loadedAreas.value++));
+  // A shared item link fetches its own area file straight away
+  watch(() => [state.vnum, state.area] as const, ([vnum, area]) => loadDetail(vnum, area), { immediate: true });
 
-    await Promise.all(counted);
-    setItems(await loadAllItems());
+  try {
+    const index = await loadItemIndex();
+
+    areaNames.value = index.areas;
+    views.value = index.items.map(item => markRaw(viewItem(item)));
   } catch {
     failed.value = true;
   }
   loading.value = false;
 
   if (pendingAreaName.value) {
-    const match = views.value.find(view => view.areaName === pendingAreaName.value);
+    const match = [...areaNames.value].find(([, name]) => name === pendingAreaName.value);
 
-    if (match) state.from = match.areaKey;
+    if (match) state.from = match[0];
     pendingAreaName.value = null;
   }
 });
@@ -139,14 +144,14 @@ onBeforeUnmount(() => {
   clearTimeout(searchTimer);
 });
 
-// The text search updates the list a moment after typing stops
+// The text search updates the list a moment after typing pauses
 const query = ref('');
 let searchTimer: ReturnType<typeof setTimeout> | undefined;
 
 watch(query, value => {
   clearTimeout(searchTimer);
   if (value === state.q) return;
-  searchTimer = setTimeout(() => setFilter({ q: value }), 200);
+  searchTimer = setTimeout(() => setFilter({ q: value }), SEARCH_DELAY);
 });
 
 watch(
@@ -163,7 +168,7 @@ const customWeights = computed(() => weightStats.some(stat => state[stat.key] !=
 
 interface Row {
   id: string;
-  view: ItemView;
+  view: ListView;
   score: number;
   level: number;
   name: string;
@@ -180,68 +185,48 @@ function kindOf(view: ItemView): string {
   return view.kind;
 }
 
-const rows = computed<Row[]>(() =>
-  views.value.map(view => ({
-    id: view.id,
-    view,
-    score: scoreOf(view, weights.value),
-    level: view.level,
-    name: view.plain,
-    kind: kindOf(view),
-    area: view.areaName
-  }))
-);
+// Sorting compares text the way DataTable does (English, numbers in
+// numeric order), but through one Intl.Collator and only once per item:
+// each text column becomes a rank, so sorting compares numbers.
+// String.localeCompare with options builds its collator on every call,
+// which made a sort of the full list take a third of a second.
+const collator = new Intl.Collator('en', { numeric: true });
 
-const terms = computed(() => state.q.toLowerCase().split(/\s+/).filter(Boolean));
+/** Each value's place in sorted order; equal values share a rank. */
+function rankBy(values: string[], same = (a: string, b: string) => collator.compare(a, b) === 0): Int32Array {
+  const order = values.map((_, index) => index).sort((a, b) => collator.compare(values[a], values[b]));
+  const ranks = new Int32Array(values.length);
+  let rank = 0;
 
-/** Every filter but the type chips and the per-type ones. */
-function passesCommon(view: ItemView): boolean {
-  const [low, high] = state.level;
-
-  if (state.from && view.areaKey !== state.from) return false;
-  if (state.placed && !view.placed) return false;
-  if (!state.test && view.testGear) return false;
-  if (view.level < low || view.level > high) return false;
-  if (state.slot && !view.slots.includes(state.slot)) return false;
-  for (const term of terms.value) if (!view.haystack.includes(term)) return false;
-  return true;
+  order.forEach((index, at) => {
+    if (at > 0 && !same(values[order[at - 1]], values[index])) rank++;
+    ranks[index] = rank;
+  });
+  return ranks;
 }
 
-function passesType(view: ItemView): boolean {
-  const types = state.types;
+const ranks = computed(() => {
+  const list = views.value;
+  const names = list.map(view => view.plain);
+  const kinds = list.map(kindOf);
 
-  if (types.length && !types.includes(view.group)) return false;
-  switch (view.group) {
-    case 'weapon':
-      return !state.weapon || view.weaponClass === state.weapon;
-    case 'other':
-      return !state.other || view.type === state.other;
-    case 'armor':
-      return true;
-    default:
-      return !state[view.group] || view.spells.includes(state[view.group]);
-  }
-}
-
-const common = computed(() => rows.value.filter(row => passesCommon(row.view)));
-const filtered = computed(() => common.value.filter(row => passesType(row.view)));
-
-const typeCounts = computed(() => {
-  const counts = Object.fromEntries(typeGroups.map(group => [group.value, 0])) as Record<TypeGroup, number>;
-
-  for (const row of common.value) counts[row.view.group]++;
-  return counts;
+  return {
+    /** The name column sorts case-insensitively */
+    name: rankBy(names, (a, b) => collator.compare(a.toLowerCase(), b.toLowerCase()) === 0),
+    /** The tie-breaker tells case apart */
+    exactName: rankBy(names),
+    kind: rankBy(kinds),
+    area: rankBy(list.map(view => areaSortName(view.areaName))),
+    kinds
+  };
 });
 
-const typeOptions = computed(() =>
-  typeGroups.map(group => ({
-    ...group,
-    count: loading.value ? undefined : typeCounts.value[group.value]
-  }))
-);
+const scores = computed(() => {
+  const w = weights.value;
 
-// Sorting: the table shows one page, so the whole list is sorted here with
-// the same order DataTable uses; it re-sorting a page changes nothing
+  return Float64Array.from(views.value, view => scoreOf(view, w));
+});
+
 const sortKeys = ['score', 'level', 'name', 'kind', 'area'] as const;
 
 const sort = computed<SortState>(() => {
@@ -259,36 +244,95 @@ function onSort(next: SortState | null) {
   set({ sort: `${next.dir === 'desc' ? '-' : ''}${next.key}`, page: 1 });
 }
 
-const sortValue: Record<string, (row: Row) => number | string> = {
-  score: row => row.score,
-  level: row => row.level,
-  name: row => row.name.toLowerCase(),
-  kind: row => row.kind,
-  area: row => areaSortName(row.area)
-};
-
-const compare = (x: number | string, y: number | string) =>
-  typeof x === 'number' && typeof y === 'number'
-    ? x - y
-    : String(x).localeCompare(String(y), 'en', { numeric: true });
-
-const sorted = computed(() => {
+// The whole list in display order. It only changes with the sort or the
+// weights; filtering walks it and keeps the order, so typing never sorts.
+const ordered = computed(() => {
+  const list = views.value;
+  const score = scores.value;
+  const rank = ranks.value;
   const { key, dir } = sort.value;
-  const value = sortValue[key];
   const sign = dir === 'asc' ? 1 : -1;
+  const level = Int32Array.from(list, view => view.level);
+  const primary: ArrayLike<number> =
+    key === 'level' ? level : key === 'name' ? rank.name : key === 'kind' ? rank.kind : key === 'area' ? rank.area : score;
 
-  return [...filtered.value].sort(
+  return Int32Array.from(list.keys()).sort(
     (a, b) =>
-      compare(value(a), value(b)) * sign ||
-      b.score - a.score ||
-      b.level - a.level ||
-      compare(a.name, b.name)
+      (primary[a] - primary[b]) * sign ||
+      score[b] - score[a] ||
+      level[b] - level[a] ||
+      rank.exactName[a] - rank.exactName[b]
   );
 });
 
-const pageCount = computed(() => Math.max(1, Math.ceil(sorted.value.length / PAGE_SIZE)));
+const terms = computed(() => state.q.toLowerCase().split(/\s+/).filter(Boolean));
+
+// One pass over the ordered list: the matches, and the count of each type
+// among the items that pass every filter but the type ones (for the chips)
+const matched = computed(() => {
+  const list = views.value;
+  const [low, high] = state.level;
+  const { from, placed, test, slot, types, weapon, other } = state;
+  const spellFilter: Record<string, string> = Object.fromEntries(magicGroups.map(group => [group, state[group]]));
+  const words = terms.value;
+  const counts = Object.fromEntries(typeGroups.map(group => [group.value, 0])) as Record<TypeGroup, number>;
+  const hits: number[] = [];
+
+  for (const index of ordered.value) {
+    const view = list[index];
+
+    if (from && view.areaKey !== from) continue;
+    if (placed && !view.placed) continue;
+    if (!test && view.testGear) continue;
+    if (view.level < low || view.level > high) continue;
+    if (slot && !view.slots.includes(slot)) continue;
+    if (words.length && !words.every(word => view.haystack.includes(word))) continue;
+    counts[view.group]++;
+    if (types.length && !types.includes(view.group)) continue;
+    if (view.group === 'weapon') {
+      if (weapon && view.weaponClass !== weapon) continue;
+    } else if (view.group === 'other') {
+      if (other && view.type !== other) continue;
+    } else if (view.group !== 'armor') {
+      const spell = spellFilter[view.group];
+
+      if (spell && !view.spells.includes(spell)) continue;
+    }
+    hits.push(index);
+  }
+  return { hits, counts };
+});
+
+const typeOptions = computed(() =>
+  typeGroups.map(group => ({
+    ...group,
+    count: loading.value ? undefined : matched.value.counts[group.value]
+  }))
+);
+
+const total = computed(() => matched.value.hits.length);
+const pageCount = computed(() => Math.max(1, Math.ceil(total.value / PAGE_SIZE)));
 const page = computed(() => Math.min(Math.max(1, Math.round(state.page) || 1), pageCount.value));
-const pageRows = computed(() => sorted.value.slice((page.value - 1) * PAGE_SIZE, page.value * PAGE_SIZE));
+
+// Rows only for the page on screen
+const pageRows = computed<Row[]>(() => {
+  const list = views.value;
+  const { kinds } = ranks.value;
+
+  return matched.value.hits.slice((page.value - 1) * PAGE_SIZE, page.value * PAGE_SIZE).map(index => {
+    const view = list[index];
+
+    return {
+      id: view.id,
+      view,
+      score: scores.value[index],
+      level: view.level,
+      name: view.plain,
+      kind: kinds[index],
+      area: view.areaName
+    };
+  });
+});
 
 const results = ref<HTMLElement | null>(null);
 
@@ -299,13 +343,16 @@ function goToPage(next: number) {
   if (top < 0) results.value?.scrollIntoView({ block: 'start' });
 }
 
-// Columns: a narrow screen folds type, area and bonuses under the name
+// Columns: a narrow screen folds type, area and bonuses under the name. The
+// table only sees one page, already in order, so its own sort keeps it.
+const pageOrder = (row: Row) => pageRows.value.indexOf(row) * (sort.value.dir === 'asc' ? 1 : -1);
+
 const allColumns: Column<Row>[] = [
-  { key: 'name', label: 'Item', sortable: true, sortValue: sortValue.name },
-  { key: 'level', label: 'Level', align: 'right', sortable: true, width: '5rem' },
-  { key: 'kind', label: 'Type', sortable: true, nowrap: true },
-  { key: 'area', label: 'Area', sortable: true, sortValue: sortValue.area, width: '11rem' },
-  { key: 'score', label: 'Score', align: 'right', sortable: true, width: '5.5rem' }
+  { key: 'name', label: 'Item', sortable: true, sortValue: pageOrder },
+  { key: 'level', label: 'Level', align: 'right', sortable: true, width: '5rem', sortValue: pageOrder },
+  { key: 'kind', label: 'Type', sortable: true, nowrap: true, sortValue: pageOrder },
+  { key: 'area', label: 'Area', sortable: true, sortValue: pageOrder, width: '11rem' },
+  { key: 'score', label: 'Score', align: 'right', sortable: true, width: '5.5rem', sortValue: pageOrder }
 ];
 
 const columns = computed(() =>
@@ -342,7 +389,7 @@ function areaHref(view: ItemView): string | null {
 
 /** An area page link by area key, for the rooms and mobs an item's sources name. */
 function areaHrefForKey(key: string): string | null {
-  const name = detail.value?.view?.item.refs.areas[key] ?? views.value.find(view => view.areaKey === key)?.areaName;
+  const name = detailView.value?.item.refs.areas[key] ?? areaNames.value.get(key);
   const info = name ? areaAnchors.get(areaSlug(name)) : null;
 
   return info ? withBase(`/world/areas.html#${info.slug}`) : null;
@@ -352,7 +399,7 @@ const itemHref = (view: ItemView) => hrefFor({ vnum: view.vnum, area: view.areaK
 
 /** A link to any item by vnum; the area joins the link once the item is loaded. */
 function itemHrefForVnum(vnum: number): string {
-  const view = views.value.find(entry => entry.item.vnum === vnum);
+  const view = byVnum.value.get(String(vnum));
 
   return view ? itemHref(view) : hrefFor({ vnum: String(vnum), area: '' });
 }
@@ -368,10 +415,7 @@ function optionsFrom(values: Iterable<string>, anyLabel: string, label = (value:
 }
 
 const areaOptions = computed(() => {
-  const areas = new Map<string, string>();
-
-  for (const view of views.value) areas.set(view.areaKey, view.areaName);
-  const sortedAreas = [...areas].sort((a, b) => byName(areaSortName(a[1]), areaSortName(b[1])));
+  const sortedAreas = [...areaNames.value].sort((a, b) => byName(areaSortName(a[1]), areaSortName(b[1])));
 
   return [{ label: 'All areas', value: '' }, ...sortedAreas.map(([key, name]) => ({ label: name, value: key }))];
 });
@@ -387,10 +431,10 @@ const slotOptions = computed(() => {
   ];
 });
 
-const groupViews = (group: TypeGroup) => views.value.filter(view => view.group === group);
-
-const subFilters = computed(() => {
+// Each type's own filter, built once from the data
+const allSubFilters = computed(() => {
   const capital = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
+  const groupViews = (group: TypeGroup) => views.value.filter(view => view.group === group);
   const list: { key: FilterKey; group: TypeGroup; label: string; options: { label: string; value: string }[] }[] = [
     {
       key: 'weapon',
@@ -412,9 +456,13 @@ const subFilters = computed(() => {
     }
   ];
 
-  // Show a type's own filter when the type is picked, or when it is set
-  return list.filter(entry => state.types.includes(entry.group) || state[entry.key] !== '');
+  return list;
 });
+
+// Show a type's own filter when the type is picked, or when it is set
+const subFilters = computed(() =>
+  allSubFilters.value.filter(entry => state.types.includes(entry.group) || state[entry.key] !== '')
+);
 
 const testGearHint = computed(() => {
   const count = views.value.filter(view => view.testGear).length;
@@ -435,10 +483,49 @@ const filtersActive = computed(() =>
 );
 
 // The detail view: vnums are unique in the game, so the vnum alone finds the
-// item; links also carry the area so the page can fetch that area first
+// item. It needs the full item, so it loads the item's area file: the one
+// the link names, or the one the index puts the vnum in.
+const detailView = shallowRef<ItemView<Item> | null>(null);
+const detailLoading = ref(false);
+let detailToken = 0;
+
+async function findItem(vnum: string, area: string): Promise<Item | undefined> {
+  const inArea = async (key: string) => (await loadArea(key)).find(item => String(item.vnum) === vnum);
+
+  if (area && areaKeys.includes(area)) {
+    const item = await inArea(area);
+
+    if (item) return item;
+  }
+  const entry = (await loadItemIndex()).items.find(item => String(item.vnum) === vnum);
+
+  return entry && entry.areaKey !== area ? inArea(entry.areaKey) : undefined;
+}
+
+async function loadDetail(vnum: string, area: string) {
+  const token = ++detailToken;
+
+  if (!vnum) {
+    detailLoading.value = false;
+    return;
+  }
+  if (detailView.value?.vnum === vnum) return;
+  detailLoading.value = true;
+  let found: Item | undefined;
+
+  try {
+    found = await findItem(vnum, area);
+  } catch {
+    found = undefined;
+  }
+  if (token !== detailToken) return;
+  detailView.value = found ? markRaw(viewItem(found)) : null;
+  detailLoading.value = false;
+}
+
 const detail = computed(() => {
   if (!state.vnum) return null;
-  return { view: views.value.find(view => view.vnum === state.vnum) ?? null };
+  return { view: detailView.value?.vnum === state.vnum ? detailView.value : null };
 });
 
 const detailScore = computed(() => (detail.value?.view ? scoreOf(detail.value.view, weights.value) : 0));
@@ -467,17 +554,13 @@ function backToList(event: MouseEvent) {
 watch(
   () => state.vnum,
   vnum => {
-    if (vnum) lastViewed.value = detail.value?.view?.id ?? lastViewed.value;
+    if (vnum) lastViewed.value = vnum;
   }
 );
 
 const searchId = useId();
 const resultsId = useId();
-const totalText = computed(() => {
-  const count = filtered.value.length;
-
-  return `${formatNumber(count)} ${count === 1 ? 'item' : 'items'}`;
-});
+const totalText = computed(() => `${formatNumber(total.value)} ${total.value === 1 ? 'item' : 'items'}`);
 
 const sortLabel = computed(() => {
   const names: Record<string, string> = { score: 'score', level: 'level', name: 'name', kind: 'type', area: 'area' };
@@ -496,10 +579,10 @@ const sortLabel = computed(() => {
         </a>
       </p>
 
-      <ToolPanel v-if="!detail?.view" :title="loading ? 'Loading the item' : 'No such item'">
-        <div v-if="loading" class="loading" role="status">
-          <div class="bar"><span :style="{ width: `${(loadedAreas / areaKeys.length) * 100}%` }" /></div>
-          <p class="au-hint">Fetching the item data, {{ loadedAreas }} of {{ areaKeys.length }} areas so far.</p>
+      <ToolPanel v-if="!detail?.view" :title="detailLoading ? 'Loading the item' : 'No such item'">
+        <div v-if="detailLoading" class="loading" role="status">
+          <div class="bar busy"><span /></div>
+          <p class="au-hint">Fetching the item data.</p>
         </div>
         <p v-else class="empty-text">
           No item has vnum {{ state.vnum }}. The item data covers every object the game loads, so this one
@@ -630,14 +713,14 @@ const sortLabel = computed(() => {
         </div>
 
         <div v-if="loading" class="loading" role="status">
-          <div class="bar"><span :style="{ width: `${(loadedAreas / areaKeys.length) * 100}%` }" /></div>
-          <p class="au-hint">Fetching the item data, {{ loadedAreas }} of {{ areaKeys.length }} areas so far.</p>
+          <div class="bar busy"><span /></div>
+          <p class="au-hint">Fetching the item list.</p>
           <div class="skeleton" aria-hidden="true">
             <span v-for="n in 8" :key="n" />
           </div>
         </div>
 
-        <div v-else-if="!failed && !filtered.length" class="empty">
+        <div v-else-if="!failed && !total" class="empty">
           <svg viewBox="0 0 48 48" width="40" height="40" aria-hidden="true">
             <circle cx="21" cy="21" r="12" fill="none" stroke="currentColor" stroke-width="3" />
             <path d="M30 30l9 9" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
@@ -679,7 +762,7 @@ const sortLabel = computed(() => {
           <ResultPager
             :page="page"
             :page-size="PAGE_SIZE"
-            :total="sorted.length"
+            :total="total"
             :href-for="next => hrefFor({ page: next })"
             noun="items"
             @go="goToPage"
@@ -901,7 +984,22 @@ const sortLabel = computed(() => {
   display: block;
   height: 100%;
   background-color: var(--vp-c-brand-1);
-  transition: width 0.2s;
+}
+
+/* One request with no progress to show: a stripe that slides across */
+.bar.busy span {
+  width: 30%;
+  animation: busy 1.2s ease-in-out infinite;
+}
+
+@keyframes busy {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(340%);
+  }
 }
 
 .skeleton {
@@ -934,6 +1032,12 @@ const sortLabel = computed(() => {
 @media (prefers-reduced-motion: reduce) {
   .skeleton span {
     animation: none;
+  }
+
+  .bar.busy span {
+    width: 100%;
+    animation: none;
+    opacity: 0.5;
   }
 }
 

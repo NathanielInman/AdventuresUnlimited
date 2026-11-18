@@ -6,7 +6,7 @@
 // and say where they come from.
 
 import { stripMudColors } from '../lib/mud-color';
-import type { Item, Source } from '../lib/items';
+import type { IndexItem, Item, Source } from '../lib/items';
 
 /** The type chips, in the order the old calculator listed them. */
 export const typeGroups = [
@@ -115,10 +115,14 @@ export interface Affect {
   stat: number;
 }
 
-export interface ItemView {
+/** What a view can be made from: a list entry from the index, or the full item. */
+export type ViewSource = IndexItem | Item;
+
+export interface ItemView<T extends ViewSource = ViewSource> {
   /** Unique: the vnum */
   id: string;
-  item: Item;
+  /** The index entry in lists, the full item in the detail view */
+  item: T;
   vnum: string;
   areaKey: string;
   areaName: string;
@@ -154,7 +158,7 @@ const groupOf = (type: string): TypeGroup =>
 
 export const diceAverage = ([count, sides]: [number, number]) => (count * (sides + 1)) / 2;
 
-export function viewItem(item: Item): ItemView {
+export function viewItem<T extends ViewSource>(item: T): ItemView<T> {
   const group = groupOf(item.type);
   const plain = stripMudColors(item.name).trim();
   const slots = (item.wear ?? []).filter(flag => !notSlots.has(flag)).map(slotKey);
@@ -206,7 +210,7 @@ export function viewItem(item: Item): ItemView {
     affects,
     stats,
     haystack: [plain, item.kw, item.vnum].join(' ').toLowerCase(),
-    placed: Boolean(item.src?.length),
+    placed: 'placed' in item ? item.placed : Boolean(item.src?.length),
     testGear,
     kind
   };
