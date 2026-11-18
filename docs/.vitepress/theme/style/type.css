@@ -1,0 +1,178 @@
+/* Type and ornaments: Cinzel titles over gem-and-rule ornaments, link
+   hovers and focus rings, and inline code in warm amber */
+
+/* -------------------------------------------------------------------------
+   Type
+   ------------------------------------------------------------------------- */
+
+.vp-doc h1,
+.vp-doc > div > h2 {
+  font-family: var(--au-font-display);
+  letter-spacing: 0.01em;
+}
+
+.vp-doc h1 {
+  position: relative;
+  padding-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.vp-doc > div > h2 {
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.VPNavBarTitle .title {
+  font-family: var(--au-font-display);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.VPSidebarItem.level-0 > .item .text {
+  font-family: var(--au-font-display);
+  letter-spacing: 0.06em;
+}
+
+/* -------------------------------------------------------------------------
+   Ornaments: a gem and a fading rule under the title, a fainter rule over
+   each section, a star between flourishes for ---
+   ------------------------------------------------------------------------- */
+
+.vp-doc h1::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 18px;
+  width: min(360px, 80%);
+  height: 1px;
+  background: linear-gradient(90deg, var(--au-rule), transparent);
+  transform-origin: left;
+  animation: au-draw-rule 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.15s both;
+}
+
+.vp-doc h1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--au-amber);
+  box-shadow: 0 0 10px rgba(242, 179, 63, 0.5);
+  transform: rotate(45deg);
+}
+
+@keyframes au-draw-rule {
+  from { transform: scaleX(0); }
+}
+
+.vp-doc > div > h2 {
+  border-top: 0;
+  background: linear-gradient(90deg, var(--au-rule), transparent 70%) 14px 3px / 100% 1px no-repeat;
+}
+
+.vp-doc > div > h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--au-rule);
+  transform: rotate(45deg);
+}
+
+/* A section straight under the title doesn't need a second rule */
+.vp-doc > div > h1 + h2 {
+  margin-top: 36px;
+  padding-top: 0;
+  background: none;
+}
+
+.vp-doc > div > h1 + h2 .header-anchor {
+  top: 0;
+}
+
+.vp-doc > div > h1 + h2::before {
+  content: none;
+}
+
+.vp-doc .header-anchor {
+  font-family: var(--vp-font-family-base);
+  font-size: 0.7em;
+  color: var(--au-amber-ink);
+}
+
+.vp-doc h2 .header-anchor {
+  top: 26px;
+}
+
+.vp-doc hr {
+  position: relative;
+  height: 16px;
+  margin: 36px 0;
+  border: 0;
+}
+
+.vp-doc hr::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--au-rule) 25%, transparent calc(50% - 40px), transparent calc(50% + 40px), var(--au-rule) 75%, transparent);
+}
+
+.vp-doc hr::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% - 32px);
+  width: 64px;
+  height: 16px;
+  background-color: var(--au-amber-ink);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 16'%3E%3Cpath d='M32,1 L34,6 L39,8 L34,10 L32,15 L30,10 L25,8 L30,6 Z M17,8 L20,5 L23,8 L20,11 Z M41,8 L44,5 L47,8 L44,11 Z M10,8 a1.4,1.4 0 1 0 2.8,0 a1.4,1.4 0 1 0 -2.8,0 Z M51.2,8 a1.4,1.4 0 1 0 2.8,0 a1.4,1.4 0 1 0 -2.8,0 Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 16'%3E%3Cpath d='M32,1 L34,6 L39,8 L34,10 L32,15 L30,10 L25,8 L30,6 Z M17,8 L20,5 L23,8 L20,11 Z M41,8 L44,5 L47,8 L44,11 Z M10,8 a1.4,1.4 0 1 0 2.8,0 a1.4,1.4 0 1 0 -2.8,0 Z M51.2,8 a1.4,1.4 0 1 0 2.8,0 a1.4,1.4 0 1 0 -2.8,0 Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* -------------------------------------------------------------------------
+   Links and focus
+   ------------------------------------------------------------------------- */
+
+.vp-doc a:not([class]) {
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-decoration-thickness: 1px;
+  transition: color 0.25s, text-decoration-color 0.25s, text-shadow 0.25s;
+}
+
+.vp-doc a:not([class]):hover {
+  text-decoration-color: currentColor;
+}
+
+.dark .vp-doc a:not([class]):hover {
+  text-shadow: 0 0 14px rgba(63, 177, 242, 0.55);
+}
+
+.vp-doc a:focus-visible,
+.vp-doc summary:focus-visible,
+.VPNavBarTitle .title:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* -------------------------------------------------------------------------
+   Inline code: commands you type, in warm amber
+   ------------------------------------------------------------------------- */
+
+.vp-doc :not(pre) > code {
+  font-size: 0.86em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vp-doc h1::after {
+    animation: none;
+  }
+}

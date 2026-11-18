@@ -1,18 +1,132 @@
-/* Brand colors from the calculators' palette (#3fb1f2 on #273549), darkened
-   in light mode so links and buttons keep readable contrast on white. */
+/* The site's look: a night sky over Tharel in dark mode and warm parchment
+   in light mode, Cinzel display type, ornamented rules and callouts. Colors
+   come from the README banner (.github/assets/make_banner.py).
+
+   Markdown content is matched as `.vp-doc > div > ...`, the page's own
+   top-level elements, so the tools' tables, headings and cards (nested deeper
+   inside their components) keep their own styles. */
+
+@import './style/type.css';
+
+/* -------------------------------------------------------------------------
+   Tokens
+   ------------------------------------------------------------------------- */
+
 :root {
+  /* Palette, shared with the home page */
+  --au-night-0: #070c16;
+  --au-night-1: #14203a;
+  --au-night-2: #273549;
+  --au-glow: #3fb1f2;
+  --au-pale: #a9d5ef;
+  --au-pale-2: #e9f6ff;
+  --au-amber: #f2b33f;
+  --au-ember: #e8743b;
+
+  --au-font-display: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  --au-font-mono: 'JetBrains Mono', monospace;
+
+  /* Accents tuned for text on this theme's background */
+  --au-glow-ink: #1570ad;
+  --au-amber-ink: #8f5c00;
+  --au-ember-ink: #b2451a;
+  --au-verdant-ink: #1d7550;
+  --au-crimson-ink: #b42318;
+  --au-rule: rgba(21, 112, 173, 0.45);
+  --au-medallion-shadow: rgba(60, 40, 10, 0.22);
+
+  /* Brand: darkened in light mode so links keep their contrast */
   --vp-c-brand-1: #1570ad;
   --vp-c-brand-2: #1a7fc1;
   --vp-c-brand-3: #1570ad;
-  --vp-c-brand-soft: rgba(63, 177, 242, 0.14);
+  /* Light enough that the tools' MUD colors keep 4.5:1 on a marked row */
+  --vp-c-brand-soft: rgba(63, 177, 242, 0.11);
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(120deg, #1570ad 20%, #3fb1f2);
+
+  /* Parchment */
+  --vp-c-bg: #fbf8f1;
+  --vp-c-bg-alt: #f4eee2;
+  --vp-c-bg-elv: #fffdf8;
+  --vp-c-bg-soft: #f1eadb;
+  --vp-c-divider: #e5dcc9;
+  --vp-c-gutter: #ebe3d3;
+  --vp-c-border: #cfc3ab;
+  --vp-c-text-1: #2b2b33;
+  --vp-c-gray-1: #dbd3c3;
+  --vp-c-gray-2: #e4ddcf;
+  --vp-c-gray-3: #ebe5d9;
+  --vp-c-gray-soft: rgba(150, 128, 90, 0.13);
+
+  --vp-font-family-mono: var(--au-font-mono), ui-monospace, 'Menlo', 'Monaco', 'Consolas', monospace;
+  --vp-code-color: #8c4a12;
+  --vp-code-bg: rgba(150, 110, 50, 0.1);
+  --vp-header-anchor-symbol: '\2726';
+
+  /* Tables */
+  --au-th-bg: #efe6d3;
+  --au-th-text: #5a5040;
+  --au-table-line: #e6ddca;
+  --au-zebra: rgba(150, 120, 70, 0.045);
+  --au-row-hover: rgba(21, 112, 173, 0.07);
+  --au-scroll-shadow: rgba(90, 65, 20, 0.2);
+
+  /* Skyline under each page */
+  --au-skyline-far: rgba(21, 112, 173, 0.09);
+  --au-skyline-near: rgba(190, 150, 90, 0.16);
+  --au-skyline-keep: rgba(21, 112, 173, 0.32);
+  --au-skyline-ridge: rgba(21, 112, 173, 0.45);
+  --au-skyline-star: transparent;
+  --au-skyline-moon: #e3b453;
+  --au-skyline-moon-glow: rgba(242, 179, 63, 0.16);
 }
 
 .dark {
+  --au-glow-ink: #6cc4f5;
+  --au-amber-ink: #f2c46d;
+  --au-ember-ink: #f08d5c;
+  --au-verdant-ink: #6fd3a8;
+  --au-crimson-ink: #f27c74;
+  --au-rule: rgba(63, 177, 242, 0.45);
+  --au-medallion-shadow: rgba(0, 0, 0, 0.5);
+
   --vp-c-brand-1: #6cc4f5;
   --vp-c-brand-2: #3fb1f2;
   --vp-c-brand-3: #1570ad;
-  --vp-c-brand-soft: rgba(63, 177, 242, 0.16);
+  --vp-c-brand-soft: rgba(63, 177, 242, 0.12);
   --vp-home-hero-name-background: linear-gradient(120deg, #3fb1f2 20%, #a9d5ef);
+
+  /* Night sky */
+  --vp-c-bg: #0b1220;
+  --vp-c-bg-alt: #080e1a;
+  --vp-c-bg-elv: #111a2c;
+  --vp-c-bg-soft: #131d31;
+  --vp-c-divider: #1e2a40;
+  --vp-c-gutter: #04070d;
+  --vp-c-border: #2b3a55;
+  --vp-c-text-1: #e4eef8;
+  --vp-c-text-2: rgba(208, 226, 245, 0.72);
+  --vp-c-text-3: rgba(208, 226, 245, 0.46);
+  --vp-c-gray-1: #4b5b77;
+  --vp-c-gray-2: #37445c;
+  --vp-c-gray-3: #283349;
+  --vp-c-gray-soft: rgba(110, 140, 190, 0.15);
+
+  --vp-code-color: #f0c987;
+  --vp-code-bg: rgba(242, 179, 63, 0.09);
+
+  --au-th-bg: #16223a;
+  --au-th-text: #a9c6df;
+  --au-table-line: #1d2940;
+  --au-zebra: rgba(110, 150, 210, 0.04);
+  --au-row-hover: rgba(63, 177, 242, 0.09);
+  --au-scroll-shadow: rgba(0, 0, 0, 0.6);
+
+  --au-skyline-far: #14203a;
+  --au-skyline-near: #070c16;
+  --au-skyline-keep: #14203a;
+  --au-skyline-ridge: rgba(63, 177, 242, 0.5);
+  --au-skyline-star: #cfe9fb;
+  --au-skyline-moon: #e6f4fd;
+  --au-skyline-moon-glow: rgba(63, 177, 242, 0.18);
 }
