@@ -1,10 +1,9 @@
 # Temples
 
-A collection of helpful information related to AU temples
+## Ranks
 
-## Temple Rank Costs
-| rank | good name | neutral name | evil name | devotion required |
-| --- | --- | --- | --- | --- |
+| Rank | Good | Neutral | Evil | Devotion required |
+| ---: | --- | --- | --- | ---: |
 | 1 | follower | follower | follower | 0 |
 | 2 | devotee | acolyte | disciple | 1,000 |
 | 3 | benefactor | supporter | fanatic | 2,000 |
@@ -16,39 +15,50 @@ A collection of helpful information related to AU temples
 | 9 | Pol'sion | Moy'dian | Ure'fiel | 70,000 |
 | 10 | Ili'sion | Auy'dian | Ezt'fiel | 100,000 |
 
-## Temple Upgrade Costs
-The max stats a mark can upgrade to are:
-  - **HP**: level * 4 + rank * 10
-  - **MP**: level * 4 + rank * 10
-  - **MV**: level * 10
-  - **Hitroll**: level / 2 + rank# * 3
-  - **Damroll**: level / 3 + rank# * 2
+## Mark upgrades
 
-| rank | hp cost | mp cost | mv cost | hit cost | dam cost |
-| --- | --- | --- | --- | --- | --- |
-| 1: follower / follower / follower | - | - | - | - | - |
-| 2: devotee / acolyte / disciple | - | - | 465g | - | - |
-| 3: benefactor / supporter / fanatic | 1000g | 1000g | 415g | - | - |
-| 4: protector / advocate / zealot | 950g | 950g | 365g | 2900g | - |
-| 5: apostle / defender / conspirator | 900g | 900g | 315g | 2850g | 4800g |
-| 6: champion / guardian / fiend | 850g | 850g | 265g | 2800g | 4750g |
-| 7: Rha'sion / Nuy'dian / Tza'fiel | 800g | 800g | 215g | 2750g | 4700g |
-| 8: Kru'sion / Ley'dian / Rte'fiel | 750g | 750g | 165g | 2700g | 4650g |
-| 9: Pol'sion / Moy'dian / Ure'fiel | 700g | 700g | 115g | 2650g | 4600g |
-| 10: Ili'sion / Auy'dian / Ezt'fiel | 650g | 650g | 65g | 2600g | 4550g |
+Your temple can upgrade your mark (its symbol) up to these limits:
 
-## Temple Healer Costs
-| name | description | cost |
-| --- | --- | --- | 
-| light | cure light wounds | 10g | 
-| serious | cure serious wounds | 16g | 
-| critic | cure critical wounds | 25g | 
-| heal | healing spell | 50g | 
-| blind | cure blindness | 20g | 
-| disease | cure disease | 15g | 
-| poison | cure poison | 25g | 
-| uncurse | remove curse from equipment | 50g | 
-| refresh | restore movement | 5g | 
-| mana | restore mana | 10g | 
-| bless | bless spell | 50g | 
-| armor | armor spell | 15g | 
+| Stat | Max bonus |
+| --- | --- |
+| HP | level x 4 + rank x 10 |
+| MP | level x 4 + rank x 10 |
+| MV | level x 10 |
+| Hitroll | level / 2 + rank x 3 |
+| Damroll | level / 3 + rank x 2 |
+
+Each point costs gold, and the price drops 50 gold for every rank you gain. You can add at most 10 points per upgrade. A dash means your rank is too low for that stat.
+
+| [Rank](#ranks) | HP | MP | MV | Hitroll | Damroll |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | - | - | - | - | - |
+| 2 | - | - | 465 | - | - |
+| 3 | 1,000 | 1,000 | 415 | - | - |
+| 4 | 950 | 950 | 365 | 2,900 | - |
+| 5 | 900 | 900 | 315 | 2,850 | 4,800 |
+| 6 | 850 | 850 | 265 | 2,800 | 4,750 |
+| 7 | 800 | 800 | 215 | 2,750 | 4,700 |
+| 8 | 750 | 750 | 165 | 2,700 | 4,650 |
+| 9 | 700 | 700 | 115 | 2,650 | 4,600 |
+| 10 | 650 | 650 | 65 | 2,600 | 4,550 |
+
+Costs are gold per point.
+
+## Temple healer
+
+| Command | Spell | Cost (gold) |
+| --- | --- | ---: |
+| light | cure light wounds | 10 |
+| serious | cure serious wounds | 16 |
+| critic | cure critical wounds | 25 |
+| heal | healing spell | 50 |
+| blind | cure blindness | 20 |
+| disease | cure disease | 15 |
+| poison | cure poison | 25 |
+| uncurse | remove curse from equipment | 50 |
+| refresh | restore movement | 5 |
+| mana | restore mana | 10 |
+| bless | bless spell | 50 |
+| armor | armor spell | 15 |
+
+The healer's price list says 15 gold for serious, but it charges 16.
