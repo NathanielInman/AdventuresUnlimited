@@ -1,9 +1,13 @@
-// Lazy access to the item data in ../data/items/*.json (one file per area,
-// about 4.6 MB in all, written by scripts/generate-items.mjs). The glob is
-// not eager, so each file becomes its own chunk that is only fetched when one
-// of these functions runs; nothing here lands in the docs bundle. Call them
-// from onMounted, never during setup, so prerendering stays fast and other
-// pages never pay for the data. The schema is in ../README.md.
+// Lazy access to the item data written by scripts/generate-items.mjs:
+// ../data/items/*.json (one file per area, about 4.6 MB in all, everything
+// identify knows) and ../data/item-index.json (one file, the few fields a
+// list of items needs). The glob is not eager, so each area file becomes its
+// own chunk that is only fetched when one of these functions runs, and the
+// index is a plain asset fetched as JSON; nothing here lands in the docs
+// bundle. Call them from onMounted, never during setup, so prerendering stays
+// fast and other pages never pay for the data. The schema is in ../README.md.
+
+import indexUrl from '../data/item-index.json?url';
 
 /** [name, area key] for a mob, room or object a source names. */
 export type Ref = [string, string];
@@ -146,4 +150,53 @@ export async function loadAllItems(): Promise<Item[]> {
   const areas = await Promise.all(areaKeys.map(loadArea));
 
   return areas.flat();
+}
+
+/** The fields of an item that a list of items needs, from the index. */
+export type IndexItem = Pick<RawItem, 'vnum' | 'kw' | 'name' | 'type' | 'level' | 'wear' | 'apply' | 'magic'> & {
+  weapon?: { class: string; dice: [number, number] };
+  areaKey: string;
+  areaName: string;
+  /** Some reset, shop, script, quest or code puts it in the world */
+  placed: boolean;
+};
+
+interface IndexFile {
+  /** [key, name] for each area, sorted by key */
+  areas: [string, string][];
+  /** Index items with `a`, the area's position in areas, and `p: 0` when not placed */
+  items: (Omit<IndexItem, 'areaKey' | 'areaName' | 'placed'> & { a: number; p?: 0 })[];
+}
+
+export interface ItemIndex {
+  /** Area key to area name, sorted by key */
+  areas: Map<string, string>;
+  items: IndexItem[];
+}
+
+let index: Promise<ItemIndex> | null = null;
+
+/** Every item, slimmed down for lists: one request of about 300 KB compressed. */
+export function loadItemIndex(): Promise<ItemIndex> {
+  index ??= fetch(indexUrl)
+    .then(response => {
+      if (!response.ok) throw new Error(`${indexUrl}: ${response.status}`);
+      return response.json() as Promise<IndexFile>;
+    })
+    .then(data => {
+      // Filled in place: copying 11,000 objects costs more than it's worth
+      const items = data.items as unknown as (IndexItem & { a: number; p?: 0 })[];
+
+      for (const item of items) {
+        item.areaKey = data.areas[item.a][0];
+        item.areaName = data.areas[item.a][1];
+        item.placed = item.p !== 0;
+      }
+      return { areas: new Map(data.areas), items };
+    })
+    .catch(error => {
+      index = null;
+      throw error;
+    });
+  return index;
 }

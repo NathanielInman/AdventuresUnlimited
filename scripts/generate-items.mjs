@@ -20,7 +20,8 @@
 // schema is documented in docs/.vitepress/theme/tools/README.md.
 //
 // One JSON file per area, keyed by the camelCase of the area's name (the keys
-// the guides link to). Stale files from earlier runs are deleted.
+// the guides link to), plus data/item-index.json, the slim copy of every item
+// that the search list loads. Stale files from earlier runs are deleted.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -35,6 +36,7 @@ if (!root) {
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const outDir = path.resolve(here, '../docs/.vitepress/theme/tools/data/items');
+const indexFile = path.resolve(here, '../docs/.vitepress/theme/tools/data/item-index.json');
 const srcDir = path.join(root, 'src');
 const areaDir = path.join(root, 'area');
 const readSource = name => fs.readFileSync(path.join(srcDir, name), 'latin1');
@@ -1336,6 +1338,31 @@ for (const file of fs.readdirSync(outDir)) {
   if (file.endsWith('.json') && !written.has(file)) fs.rmSync(path.join(outDir, file));
 }
 
+// The search index: what the item list needs, in one file, so the list
+// doesn't have to fetch and parse every area. The detail view still loads
+// the item's own area file. Wear flags drop "take" and the rest of the
+// identify data stays in the area files.
+const indexKeys = [...byKey.keys()].sort();
+const index = {
+  areas: indexKeys.map(key => [key, byKey.get(key).name]),
+  items: indexKeys.flatMap((key, area) =>
+    byKey.get(key).items.map(item => {
+      const entry = { vnum: item.vnum, name: item.name, kw: item.kw, type: item.type, level: item.level, a: area };
+      const wear = item.wear?.filter(flag => flag !== 'take');
+
+      if (wear?.length) entry.wear = wear;
+      if (item.apply) entry.apply = item.apply;
+      if (item.weapon) entry.weapon = { class: item.weapon.class, dice: item.weapon.dice };
+      if (item.magic) entry.magic = { level: item.magic.level, spells: item.magic.spells };
+      if (!item.src?.length) entry.p = 0;
+      return entry;
+    })
+  )
+};
+const indexText = `${JSON.stringify(index)}\n`;
+
+fs.writeFileSync(indexFile, indexText);
+
 // A report, for checking a run against the last one
 const all = [...byKey.values()].flatMap(entry => entry.items);
 const byType = {};
@@ -1345,6 +1372,6 @@ const placed = all.filter(item => item.src?.length).length;
 
 console.log(`${bootFiles.length} files in area.lst, ${areas.length} areas, ${byKey.size} with objects`);
 console.log(`${all.length} objects, ${placed} placed by a reset, script or the game code, ${all.length - placed} not placed`);
-console.log(`${scriptLoads} script loads, ${(bytes / 1024 / 1024).toFixed(2)} MB written`);
+console.log(`${scriptLoads} script loads, ${(bytes / 1024 / 1024).toFixed(2)} MB written, index ${(Buffer.byteLength(indexText) / 1024 / 1024).toFixed(2)} MB`);
 console.log(Object.entries(byType).sort((a, b) => b[1] - a[1]).map(([type, count]) => `${type} ${count}`).join(', '));
 if (unknownBits.size) console.log(`Unknown flag names the loader skips: ${[...unknownBits].join('; ')}`);
