@@ -4,6 +4,7 @@ import { useData } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { computed } from 'vue';
 import DocSkyline from './components/DocSkyline.vue';
+import NotFound from './components/NotFound.vue';
 import SectionBand from './components/SectionBand.vue';
 import { sectionOf } from './components/sections';
 
@@ -18,6 +19,9 @@ const section = computed(() => sectionOf(page.value.relativePath));
     </template>
     <template #doc-after>
       <DocSkyline />
+    </template>
+    <template #not-found>
+      <NotFound />
     </template>
   </DefaultTheme.Layout>
 </template>
