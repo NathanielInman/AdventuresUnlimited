@@ -2,9 +2,9 @@
 
 All `directions` start from `Market Square` within `Naerlan`.
 
-The following are unlisted or possibly removed areas that may need to be removed or added to the `areas` list within the game:
-- Plains of Blodai: 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w
-- Ruined Gerighelm: 5w9n4e6n6w3n2w3n2w
+Two names aren't in the table:
+- Plains of Blodai isn't an area of its own. Its rooms belong to the Main Roads area, and 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w puts you on it.
+- Ruined Gerighelm is in the game's area list (level ALL), but no exit or portal from another area leads into it. The directions this page used to give for it (5w9n4e6n6w3n2w3n2w) are the Barreston ones and end in Upper Barreston.
 
 Additional helpful maps on the [official website](https://tharel.net):
   - [Tharel](https://tharel.net/img/map-tharel.gif)
@@ -51,7 +51,7 @@ Additional helpful maps on the [official website](https://tharel.net):
 | 5 - 15 | The Mines of Markov | **✓** | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1u2e1u3e2u8e1u1w2n |
 | 5 - 15 | Shrine of Barbades | | 4e9n5w6n9e2n1w1n1w1u |
 | 5 - 15 | [Deltherian](https://tharel.net/img/map-deltherian.jpg) | | 8e7n |
-| 5 - 15 | Taverns of Naerlan | | Unknown |
+| 5 - 15 | Taverns of Naerlan | | 4e4n2w1s (the Closed Mouth; the other taverns open off Gharl Road and Wall Road) |
 | 5 - 15 | [Travellers' Rest](https://tharel.net/img/map-travellersrest.gif) | | 11e3s5w |
 | 5 - 15 | Brovlancor | | 4e9n5w6n6w8s2w1n2w4s1w4s2e1s |
 | 5 - 30 | Naerlan Sewers | | 4s2w1d |
@@ -95,6 +95,7 @@ Additional helpful maps on the [official website](https://tharel.net):
 | 20 - 20 | The Frozen Waste | **✓** | 11e3s6e4s18e5s1e2s3w1s1w2s1w1s2w1n3w1n1w1n |
 | contin. | contin. | contin. | 2w1s1w1s3w1n2w1n2w2s1w1s1e1s1e2s1e6s1w2s |
 | 20 - 30 | Racomva | | 5w17s5e7s2e1s2e1d3n1e1u2n |
+| 20 - 30 | Racomva Castle | | 5w17s5e7s2e1s2e1d3n1e1u2n7e |
 | 20 - 30 | Mirage City | | 11e3s6e4s2e4s1w1n1w1s2w3s1e1s1e3n3e1n1e3s1e1s2e2n |
 | contin. | contin. | contin. | 2e1n5e1n1e1s1e1n2e4s1e2u1e1s2e;search up;1u1s;search;go pool;go mirage |
 | 20 - 30 | [The Avian Tree](https://tharel.net/img/map-aviantree.png) | | 4e9n5w6n9e2n1e1n |
@@ -138,7 +139,7 @@ Additional helpful maps on the [official website](https://tharel.net):
 | 50 - 60 | Breyard Village | | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w3s1w |
 | 50 - 60 | The Acoma Estate | | 7e1d2s1e9s1e |
 | 55 - 65 | The Overlook Grounds | | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
-| 55 - 65 | The Overlook Towers | | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
+| 55 - 65 | The Overlook Towers | | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w, then one of the four tower gates in The Overlook Grounds |
 | 55 - 65 | Xe'lith | | 4e9n5w6n11e3n5e1n3e7n5w4n2w2n6w1u1n1u2e1u |
 | 55 - 70 | Ruins of Khezauch | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1n |
 | 55 - 75 | Necropolis | |  4e9n5w6n11e3n4e2s1w2s1e |
@@ -157,7 +158,7 @@ Additional helpful maps on the [official website](https://tharel.net):
 | 70 - 85 | Ruins of Khezaderth | | 11e3s6e4s18e1s2e |
 | 70 - 85 | Meneth Naur | |  7e1d2s1e7s9e1s |
 | 70 - 90 | Fireblast Mountains | **✓** | 11e2n5e1n7e6n3w4n5w4n4w3s2e1s1w1n2w2s1w |
-| 75 - 85 | The Overlook Citadel | | towers in corners of overlook grounds |
+| 75 - 85 | The Overlook Citadel | | through The Overlook Maze: The Arch to the Citadel opens north |
 | 75 - 90 | Vlauchauch | | 4e17s4w9s2w2s1w7s2w1s4w1s1w1s1w1s1w1s4w1s4w1n3w2n2w2s |
 | 75 - 90 | The Haze | | 7s2u |
 | 75 - 100 | Drakyri Isle | | 11e3s6e4s7e5n4e5n5e2s;go pool |
@@ -170,9 +171,10 @@ Additional helpful maps on the [official website](https://tharel.net):
 | contin. | contin. | contin. | buy key;unlock north;open north;2n1e9n2e5n |
 | 90 - 110 | Ayasil | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s1w5s1w4s5e1s3e |
 | 90 - 110 | Arthmore | | 11e2n5e1n7e6n3w4n5w4n4w1u |
-| HERO | Kallenpesh Palace | | inside kallendale forest |
+| HERO | Kallenpesh Palace | | inside Kallendale Forest: from its row, 1w1u1w4d3w1n2w1n9w1s1w3s1s |
 | HERO | Kallendale Forest | | 42w6s2w2s4w4s5w8s1w1s1e9s4w1n1w1n |
-| HERO | The Hall of Heroes | | See Aliuna & Terrason |
+| HERO | The Hall of Heroes | | north of The Alinae in Aliuna, or east of Shiller Park in Terrason |
 | HERO | Il'kaethe | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e5s |
 | contin. | contin. | contin. | 1w5s1w5s1w1n17w2s3w1s3w1s1w1s1w |
 | HERO | The Giants Outpost | | 11e2n5e1n7e6n3w4n5w6n2e1n |
+| HERO | Trouthead Town | | from The Giants Outpost: 5n;open north;1n through a secret panel in Da Olde Pubb |
