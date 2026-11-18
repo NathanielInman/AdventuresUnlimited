@@ -207,6 +207,72 @@
   box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
 }
 
+/* Columns that hold only a check mark, a dash or a level (markdown.ts finds
+   them) stand their headers on end, so a table of ten classes fits */
+.vp-doc > div > table:has(th.au-upright-cell) th.au-upright-cell {
+  padding: 12px 6px 10px;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.vp-doc .au-upright {
+  display: inline-block;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  line-height: 1.2;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.vp-doc > div > table:has(th.au-upright-cell) td:not(:first-child) {
+  padding-right: 6px;
+  padding-left: 6px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tables with six or more columns (the max stats tables, the monk
+   tables, material properties) use tighter cell padding */
+.vp-doc > div > table:has(th:nth-child(6)) :is(th, td) {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* A table that still scrolls sideways (effects.ts adds .au-overflows) says
+   so above its header, and keeps its first column in view while it scrolls */
+.vp-doc > div > table.au-overflows::before {
+  content: 'Scroll the table sideways for more columns \2192';
+  position: sticky;
+  left: 0;
+  display: block;
+  padding: 6px 16px;
+  border-bottom: 1px solid var(--au-table-line);
+  background-color: var(--au-th-bg);
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  white-space: nowrap;
+}
+
+.vp-doc > div > table.au-overflows :is(th, td):first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  box-shadow: 1px 0 0 var(--au-table-line);
+}
+
+.vp-doc > div > table.au-overflows td:first-child {
+  background-color: var(--vp-c-bg);
+}
+
+.vp-doc > div > table.au-overflows tbody tr:nth-child(2n) td:first-child {
+  background-image: linear-gradient(var(--au-zebra), var(--au-zebra));
+}
+
+.vp-doc > div > table.au-overflows tbody tr:hover td:first-child {
+  background-image: linear-gradient(var(--au-row-hover), var(--au-row-hover));
+  box-shadow: inset 3px 0 0 var(--vp-c-brand-1), 1px 0 0 var(--au-table-line);
+}
+
 /* -------------------------------------------------------------------------
    Code blocks
    ------------------------------------------------------------------------- */
@@ -228,5 +294,131 @@
 @media (prefers-reduced-motion: reduce) {
   .vp-doc .au-tool-cards .card:hover {
     transform: none;
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Phones: a table of four or more text columns becomes one card per row,
+   its first cell as the card's title and every other value labelled with
+   its column (markdown.ts copies each header onto its cells as data-label).
+   Tables with upright headers (the class tables) are compact enough to
+   scroll instead.
+   ------------------------------------------------------------------------- */
+
+@media (max-width: 639px) {
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) {
+    width: 100%;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) :is(tbody, tr) {
+    display: block;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) tr {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--au-table-line);
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td {
+    display: block;
+    padding: 2px 0 2px 106px;
+    border: 0;
+    text-align: left !important;
+    line-height: 1.55;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td + td {
+    border-left: 0;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td::before {
+    content: attr(data-label);
+    display: inline-block;
+    width: 96px;
+    margin-left: -106px;
+    margin-right: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+    color: var(--au-th-text);
+  }
+
+  /* Rows of short values (the max stats tables) sit two to a line */
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) tr:has(td.au-short) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td.au-short {
+    padding-left: 62px;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td.au-short::before {
+    width: 54px;
+    margin-left: -62px;
+    margin-right: 8px;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td:first-child {
+    grid-column: 1 / -1;
+    padding: 0 0 6px;
+    font-family: var(--au-font-display);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td:first-child::before {
+    content: none;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) tbody tr:hover td:first-child {
+    box-shadow: none;
+  }
+}
+
+/* Small phones: tighter cells for the tables that still scroll (tightest
+   in the class tables), narrower card labels, and code that may break
+   anywhere as a last resort */
+@media (max-width: 419px) {
+  .vp-doc > div > table :is(th, td) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .vp-doc > div > table:has(th.au-upright-cell) :is(th.au-upright-cell, td:not(:first-child)) {
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td:not(.au-short) {
+    padding-left: 88px;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td:not(.au-short)::before {
+    width: 80px;
+    margin-left: -88px;
+    margin-right: 8px;
+  }
+
+  .vp-doc > div > table:has(th:nth-child(4)):not(:has(th.au-upright-cell)) td code {
+    overflow-wrap: anywhere;
   }
 }

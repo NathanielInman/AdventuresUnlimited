@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 import { toolCatalog } from './theme/tools/lib/catalog';
 import { legacyToolHref } from './theme/tools/lib/legacy-links';
+import { tablePlugin } from './markdown';
 
 const base = '/AdventuresUnlimited/';
 const repo = 'https://github.com/NathanielInman/AdventuresUnlimited';
@@ -28,6 +29,11 @@ export default defineConfig({
   base,
   srcExclude: ['monk.md', 'tintin.md', 'speedleveling.md'],
   lastUpdated: true,
+  markdown: {
+    config: md => {
+      md.use(tablePlugin);
+    }
+  },
   head: [
     ['link', { rel: 'icon', href: `${base}logo.svg`, type: 'image/svg+xml' }],
     ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: '32x32' }],
