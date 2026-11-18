@@ -1,0 +1,17 @@
+{
+  "name": "adventuresunlimited",
+  "private": true,
+  "description": "Guides, reference pages and calculators for the Adventures Unlimited MUD",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "lint:md": "markdownlint-cli2"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.24.0",
+    "vitepress": "1.6.4"
+  }
+}
