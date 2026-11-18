@@ -3,9 +3,9 @@
     "default": true,
     // Reference tables and long URLs make line length meaningless here
     "MD013": false,
-    // Inline HTML the pages use: area anchors, line breaks in table cells and
-    // collapsed secondary material
-    "MD033": { "allowed_elements": ["a", "br", "details", "summary"] },
+    // Inline HTML the pages use: area anchors, line breaks in table cells,
+    // collapsed secondary material and the README's centered banner
+    "MD033": { "allowed_elements": ["a", "br", "details", "summary", "p", "img"] },
     // Dash bullets everywhere
     "MD004": { "style": "dash" },
     // Every table row has the header's column count
