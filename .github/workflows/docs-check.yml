@@ -1,0 +1,36 @@
+name: Docs check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+          cache: npm
+
+      - run: npm ci
+
+      # Globs and rules live in .markdownlint-cli2.jsonc
+      - run: npx markdownlint-cli2
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # Settings live in lychee.toml; the token keeps GitHub links from
+      # hitting the anonymous rate limit.
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: README.md 'docs/**/*.md'
+          token: ${{ secrets.GITHUB_TOKEN }}
