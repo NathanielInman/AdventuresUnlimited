@@ -1,62 +1,164 @@
 # Speed leveling
 
-The fastest route from level 1 to hero that I know of: where to level at each stage and what gear to pick up on the way. Item links open the item in the [item search](../tools/items.md).
+The fastest route from level 1 to hero that I know of: where to level at each stage and what gear to pick up on the way. It works for good, neutral and evil characters. Where your alignment changes where you should hunt or what you can wear, each stage says so. Item links open the item in the [item search](../tools/items.md), and every walk starts from Market Square in Naerlan, like the ones on the [areas](../world/areas.md) page.
 
-## Leveling route
+<LevelingAlignment />
 
-| Level | Area | What to do |
-| ---: | --- | --- |
-| 1 | [Survival Training](../world/areas.md#survival-training) | Immediately get 2 [silver bracelets](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3772&area=survivalTraining) (for leveling only) |
-| 1 | Survival Training | Get [girth](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3780&area=survivalTraining), [legguards](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3768&area=survivalTraining), [clawed gloves](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3709&area=survivalTraining) |
-| 2 | Survival Training | Get [dented breastplate](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3764&area=survivalTraining), 2 [iron bracers](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3753&area=survivalTraining), 2 [threadbare cloaks](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3705&area=survivalTraining) |
-| 3 | Survival Training | Get the [secret rings](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3763&area=survivalTraining) and [floating quartz](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3770&area=survivalTraining) |
-| 4 | [Lunatic's Alley](../world/areas.md#lunatics-alley) | Grab the [Asteri hold](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=25388&area=lunaticsAlley), maybe the [shroud](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=25382&area=lunaticsAlley) helmet if you're strong |
-| 4-5 | [T'leisins Pool](../world/areas.md#tleisins-pool) | Rip through the gypsy camp to get the [legs](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=12216&area=tleisinsPool) and [feet](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=12217&area=tleisinsPool) from the hunters in the pool |
-| 6 | [Deltherian](../world/areas.md#deltherian) | Grab the [warbanner](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=1993&area=deltherian) from the commander |
-| 7-9 | [The Hand of Markov](../world/areas.md#hand-of-markov) | Stick to animals and trash mobs |
-| 10 | [Hagarth](../world/areas.md#hagarth) | Buy a [jar of glow-moss light](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=6636&area=hagarth) |
-| 10 | [Grungel](../world/areas.md#grungel) | Grab [the hide of a river-troll](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=2802&area=grungel) |
-| 10 | [Shrine of Barbades](../world/areas.md#shrine-of-barbades) | Kill the guards and wear the [helmet](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=6233&area=shrineOfBarbades) and [chestplate](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=6208&area=shrineOfBarbades) |
-| 10 | [Burrowholme](../world/areas.md#burrowholme) | Kill the guard and wear the [shield](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20730&area=burrowholme) and [bracers](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20731&area=burrowholme) |
-| 10 | [Jasporin](../world/areas.md#jasporin) | Kill a couple of kobolds to get 2x [robes](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=11408&area=jasporin) |
-| 11 | [Naerlan](../world/areas.md#naerlan) | Kill 2 guards and wear their [copper rings](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3364&area=naerlan) |
-| 11-12 | The Hand of Markov | Dwarves start at 400 xp; avoid the guards at first |
-| 12 | Burrowholme | Buy 2x [cloaks](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20717&area=burrowholme) |
-| 12-15 | The Hand of Markov | Dwarves start at 400 xp |
-| 15 | [Haythor Dungeon](../world/areas.md#haythor-dungeon) | Grab 2x [ream bone bracers](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=18923&area=haythorDungeon) and a [skull belt](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=18944&area=haythorDungeon) |
-| 15-21 | The Hand of Markov | Dwarf patrols and guards, still 100-200 xp each |
-| 21-23 | [The Avian Tree](../world/areas.md#avian-tree) | Mostly go for the avian guards and sentries (`search up`) |
-| 23 | The Avian Tree | Pick up 2x [Aviak Wing Medallions](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20321&area=theAvianTree), 2x [Aviak Talon Rings](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20318&area=theAvianTree) and [Coatl gloves](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20326&area=theAvianTree) |
-| 23 | [Mirage City](../world/areas.md#mirage-city) | Pick up [a suit of silver armor](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=26933&area=mirageCity), [silver greaves](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=26938&area=mirageCity), [silver armguards](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=26931&area=mirageCity) and [a silver bracer](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=26936&area=mirageCity) |
-| 23 | [Mines of Noal'xyn](../world/areas.md#mines-of-noalxyn) | Pick up either [a dark helmet](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10050&area=minesOfNoalxyn) or [a spirit helmet](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10044&area=minesOfNoalxyn), [lead boots](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10066&area=minesOfNoalxyn) and [an iron tower shield](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10076&area=minesOfNoalxyn) |
-| 23-25 | The Avian Tree | Go all the way to the top for sentries and guards |
-| 25-31 | [Valeda](../world/areas.md#valeda) | Go for the trash mobs at the entry and around town; avoid the pixie guards |
-| 31 | Naerlan | Grab a beacon and some feathers for Heishaer, and set the beacon at your farming spot |
-| 31-35 | [Heishaer City](../world/areas.md#heishaer-city) | Kill tons of fish, maybe skip the blue minnows at first |
-| 35 | [Eirenole](../world/areas.md#eirenole) | Grab 2x [a green hunting cloak](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=25173&area=eirenole) |
-| 35 | Valeda | Grab 2x [a ruby ring, twisted with silver](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10845&area=valeda) and 1x [a multicolored bag](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10870&area=valeda) |
-| 35 | [Schwartz Glacier](../world/areas.md#schwartz-glacier) | Grab a new light, [a bright ball of snow](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=3662&area=schwartzGlacier) |
-| 35-39 | Heishaer City | Kill tons of fish, maybe skip the blue minnows at first |
-| 39 | Valeda | Grab [a pair of brass-reinforced boots](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10834&area=valeda) and [a zipping fly](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10832&area=valeda) |
-| 39-45 | Heishaer City | Grab 2x [a gold necklace](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=13707&area=heishaerCity) by searching the treasure spots |
-| 45 | [Mystery Manor](../world/areas.md#mystery-manor) | Grab [a burgundy velvet doublet](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=15074&area=mysteryManor) |
-| 45 | [The City of Terrason](../world/areas.md#city-of-terrason) | Grab [a royal Terrason shield](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=29180&area=shopsOfTerrason) and 2x [a royal Terrason bracer](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=29179&area=shopsOfTerrason) |
-| 45-48 | [Eirenole Castle](../world/areas.md#eirenole-castle) | Start with the sleeping soldiers, it's tough at first. Level up and grab 1x [forest green boots](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=15264&area=eirenoleCastle) |
-| 48 | [Pyrainn Mountains](../world/areas.md#pyrainn-mountains) | Grab 2x [a finely crafted silvite ring](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=5724&area=pyrainnMountains) |
-| 48-49 | Eirenole Castle | Level up and grab 1x [sleeves of chainmail](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=15239&area=eirenoleCastle) and 1x [a royal blue tabard](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=15237&area=eirenoleCastle) |
-| 49-50 | Eirenole Castle | Level up and grab 1x [a plain leather sword sheath](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=15242&area=eirenoleCastle) |
-| 50-51 | Eirenole Castle | Grab [a coif of chainmail](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=15257&area=eirenoleCastle) |
-| 51-55 | Eirenole Castle | Grab 1x [a white fur muff](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=15234&area=eirenoleCastle) |
-| 55-65 | [Lost Kingdoms](../world/areas.md#lost-kingdoms) | Northern or eastern area: start with the kids in the north and avoid the town in the east |
-| 65 | [Tiny Rapids](../world/areas.md#tiny-rapids) | Grab [sturdy knee-high leather boots](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=17387&area=tinyRapids) and [supple leather gloves](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=17400&area=tinyRapids) |
-| 65-70 | Lost Kingdoms | Grab [a sandy shirt](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=11752&area=lostKingdoms), [sandy trousers](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=11753&area=lostKingdoms) and [a sandy cotton robe](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=11756&area=lostKingdoms) |
-| 70 | [Tekkit Hill](../world/areas.md#tekkit-hill) | Grab [a little gnomish doll](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=10172&area=tekkitHill) |
-| 70-75 | Lost Kingdoms | Level in the western area (depends on alignment) and grab [a brightly beaded leather belt](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=11766&area=lostKingdoms) and 2x [a bone-studded black leather bracer](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=11764&area=lostKingdoms) |
-| 75 | [Shadowbox](../world/areas.md#shadowbox) | Grab [a black tunic of fine silk](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=19421&area=shadowbox) |
-| 75-85 | Lost Kingdoms | Southern area (dwarves) |
-| 85-88 | Shadowbox | Bluebirds and angels for evil or neutral, the caves for good alignment. Grab 2x [a mithril badge, marked 'Supervisor'](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=19405&area=shadowbox), [a tin helmet](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=19435&area=shadowbox), [a black pair of satin hose](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=19423&area=shadowbox), [a tin bracer](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=19434&area=shadowbox) and [a floating featherduster](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=19431&area=shadowbox) |
-| 88-90 | Eirenole Forest | Careful of the 2 guards at the entrance; set your beacon past them |
-| 90-100 | Trouthead Town | Stick to the kids |
-| 100 | Eirenole Forest | Grab 2x [an emerald ring with an electrum band](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=21419&area=eirenoleValley), 2x [a silver necklace with embedded emeralds](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=21415&area=eirenoleValley), [a steel chestplate](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=21428&area=eirenoleValley), [a steel helmet](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=21423&area=eirenoleValley), [a pair of steel gauntlets](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=21424&area=eirenoleValley), 1x [some silver bangles with embedded emeralds](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=21416&area=eirenoleValley) and [a steel shield](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=21425&area=eirenoleValley) |
-| 100 | [The Giants Outpost](../world/areas.md#giants-outpost) | Grab [a set of leather greaves](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20413&area=theGiantsOutpost), [a gauze robe](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20417&area=theGiantsOutpost), [a leather belt](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20419&area=theGiantsOutpost) and [a leather bracer](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=20412&area=theGiantsOutpost) |
-| 100 | Trouthead Town | Grab [a pair of leather boots](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html?vnum=14255&area=troutheadTown) and the mystic lantern |
+Spots marked *untested* come from the area files rather than from my own runs: the mobs, levels and alignments are right, but check them in game before you commit a session to one.
+
+## Route at a glance
+
+| Level | Good | Neutral | Evil |
+| ---: | --- | --- | --- |
+| 1-3 | Survival Training | Survival Training | Survival Training |
+| 4-6 | Gear run | Gear run | Gear run |
+| 7-10 | Haythor Dungeon *(untested)* | The Hand of Markov: dwarves | The Hand of Markov: animals and trash |
+| 10-11 | Gear run | Gear run | Gear run |
+| 11-21 | Haythor Dungeon *(untested)* | The Hand of Markov, with trips to Haythor | The Hand of Markov: dwarves |
+| 21-25 | The Avian Tree | Mines of Noal'xyn *(untested)* | The Avian Tree |
+| 25-31 | Valeda: trash, then the orcs | Valeda: the orcs | Valeda: trash |
+| 31-45 | Valeda's orcs, then Heishaer's Kappa and Rusalki *(untested)* | Heishaer City: the yellow and blue fish | Heishaer City: fish |
+| 45-55 | Heishaer's Kappa and Rusalki, then Yrenelania *(untested)* | Eirenole Castle | Eirenole Castle |
+| 55-65 | Lost Kingdoms: northern kids | Necropolis *(untested)* | Lost Kingdoms: northern kids |
+| 65-75 | Lost Kingdoms west: pixies | Lost Kingdoms west: both sides | Lost Kingdoms west: heishan and titans |
+| 75-85 | Lost Kingdoms west: drow temple *(untested)* | Lost Kingdoms south: dwarves | Lost Kingdoms south: dwarves |
+| 85-88 | Shadowbox: the caves | Shadowbox: angels and the caves | Shadowbox: bluebirds and angels |
+| 88-90 | Eirenole Valley | Eirenole Valley: does and air currents | Eirenole Valley |
+| 90-100 | Trouthead Town: the little kids | Trouthead Town: the small kids | Trouthead Town: kids |
+
+## How alignment changes the route
+
+Three rules from the game's code decide most of this.
+
+**Kills are worth more against the other side.** Your alignment against your victim's adds to or takes from each kill's experience (`xp_computeAlignmentFactor` in `fight.c`). Killing your own kind costs you a lot, and a neutral character loses half of everything for killing neutral mobs, which is why a few stages split by alignment:
+
+| You are | Victim very good (over 700) | Good (300 to 700) | Neutral | Evil (-300 to -700) | Very evil (under -700) |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Very good (over 700) | -75% | -50% | 0 | +25% | +33% |
+| Good (300 to 700) | -50% | -33% | 0 | +20% | +25% |
+| Neutral | +25% | +20% | -50% | +20% | +25% |
+| Evil (-300 to -700) | +25% | +20% | 0 | -33% | -50% |
+| Very evil (under -700) | +33% | +25% | 0 | -50% | -75% |
+
+Mobs flagged `noalign` give no bonus or penalty to anyone.
+
+**Your alignment follows your kills.** Every kill pulls you toward the victim's alignment, a few points at a time (`alignment_change_compute`). A neutral character who only farms good dwarves turns evil within a few dozen kills, so neutral characters should split their time between good and evil targets. Good characters hunting evil mobs, and evil characters hunting good ones, only get more so.
+
+**Gear can refuse you.** Anti-good, anti-neutral and anti-evil items zap off a character of that alignment when worn, and again after every kill (`equip_char` in `handler.c`, `group_gain` in `fight.c`), so drifting across a line can drop gear on the floor mid-fight. The game counts 350 and up as good and -350 and down as evil. Two more limits apply to everyone:
+
+- You can wear an item up to 5 levels above your own (`wear_obj` in `act_obj.c`). The gear lists show both: "L28, wear 23".
+- Sylvan elves, heishan elves and frost giants can't wear iron; it burns them and they drop it. Iron items carry an "Iron" tag.
+
+## Levels 1-3: Survival Training
+
+The newbie school (`2e1n`). Get the silver bracelets right away and work through the rest as you level.
+
+<LevelingGear stage="survival" />
+
+## Levels 4-6: First gear run
+
+Lunatic's Alley is behind the warehouse door at the end of its walk. Rip through the gypsy camp on the way into T'leisins Pool for the pants. MentMacro's Park is the city park inside Naerlan's south wall.
+
+<LevelingGear stage="early-run" />
+
+## Levels 7-10: First hunting ground
+
+- **Good:** Haythor Dungeon (`8e7n1w1n1e2n3e1s1e1n1e2s1s2d1s1e1s`, then through the old wooden door). Its small green goblins, mean green orcs and human-sized skeletons are levels 8 and 9 and all evil, so you get the bonus. The large skeleton and a few others attack good and neutral characters on sight. *(untested)* {.au-for-good}
+- **Neutral:** The Hand of Markov (`7s4e10s4w9s2w2s2w1e`). The dwarven women, children and miners are good, so they're worth more to you; the animals are neutral and give half. {.au-for-neutral}
+- **Evil:** The Hand of Markov (`7s4e10s4w9s2w2s2w1e`). Stick to animals and trash mobs. The dwarven women and children are good-aligned and worth a quarter to a third more. {.au-for-evil}
+
+## Levels 10-11: Second gear run
+
+Metes, a traveller sitting by the fire in a Naerlan common room, replaces the river-troll hide from Grungel: his cape has +3 hit where the hide had +1 str. Evil characters skip the golden helmet in the Shrine of Barbades, which zaps them, and keep the shroud.
+
+<LevelingGear stage="ten" />
+
+## Levels 11-21: The Hand of Markov
+
+- **Evil:** Dwarves start at 400 xp. Avoid the guards at first, then from 15 move on to the dwarf patrols and guards, still 100-200 xp each. {.au-for-evil}
+- **Neutral:** The same dwarves, at a quarter more for you, but they pull you toward evil. Break it up with runs through Haythor Dungeon, whose evil mobs pull you back. {.au-for-neutral}
+- **Good:** The dwarves are good-aligned, so they cost you three quarters of each kill. Stay in Haythor Dungeon instead: dark knights at 12, then the drow, orcs, duergar and goblins at 17-20 and the knights and leaders at 21-22. *(untested)* {.au-for-good}
+
+Haythor's gargoyles and sorcerers attack good and neutral characters on sight; evil characters get left alone until they start a fight.
+
+<LevelingGear stage="markov-gear" />
+
+## Levels 21-25: The Avian Tree
+
+- **Good and evil:** Mostly go for the avian guards and sentries (`search up`), all the way to the top for the sentries by 23-25. Evil characters get insulted by the birds and the shopkeeper, nothing worse. {.au-for-good .au-for-evil}
+- **Neutral:** Every bird in the tree is neutral, so you get half. Go to the Mines of Noal'xyn instead: the lost souls (level 21, evil, attack on sight) and later the mutated fish in the underground river (27, evil). The mud golem there leaves neutral characters alone and attacks good and evil ones who start fights in front of it. *(untested)* {.au-for-neutral}
+
+The gear run at 23 visits Mirage City, whose walk on the [areas](../world/areas.md#mirage-city) page no longer matches the desert. The walk below goes through the shimmering wall of heat at the oasis.
+
+<LevelingGear stage="avian-gear" />
+
+## Levels 25-31: Valeda
+
+- **Evil:** Go for the trash mobs at the entry and around town; avoid the pixie guards. {.au-for-evil}
+- **Good:** The same trash costs you nothing. From 29, the orc village is better: its orcs (29-35) are all evil. The orcish sentries at its edge attack on sight. {.au-for-good}
+- **Neutral:** The trash is neutral and gives you half. Head for the orc village as soon as you can take level 29 orcs. *(untested)* {.au-for-neutral}
+
+## Levels 31-45: Heishaer City
+
+At 31, go back to Naerlan: grab a beacon and some feathers for Heishaer, and set the beacon at your farming spot.
+
+- **Evil:** Kill tons of fish. Maybe skip the blue minnows at first (they're 43). The yellow minnows and bass (800) and the blue minnows (1000) are very good, so they pay a third more. {.au-for-evil}
+- **Neutral:** The yellow and blue fish give you a quarter more; skip the red paddlefish, which are neutral and give half. {.au-for-neutral}
+- **Good:** The fish are good-aligned and cost you up to three quarters. Stay on Valeda's orcs into the mid 30s, then come here for the evil ones: the Kappa, the Rusalki and the abaia (43-45). *(untested)* {.au-for-good}
+
+<LevelingGear stage="heishaer-gear" />
+
+## Levels 45-55: Eirenole Castle
+
+- **Evil and neutral:** Start with the sleeping soldiers; it's tough at first. Nearly everyone in the castle is good-aligned, so the whole castle pays the bonus. Neutral characters should mix in some evil kills to stay neutral. {.au-for-evil .au-for-neutral}
+- **Good:** The castle costs you three quarters of each kill. Keep hunting Heishaer's Kappa and Rusalki to about 50, then Yrenelania's orc temple (acolytes 45, dark priests 47, temple guards 48, pit-fiends 54, all evil). *(untested)* {.au-for-good}
+
+Mystery Manor at 45 replaces the City of Terrason trip: the royal Terrason shield and bracers zap evil characters, and the manor's shield and wrist pieces, plus the bracer Heishaer sells, match them for everyone. The castle gear comes off its good-aligned guards, so good characters lose a little alignment collecting it.
+
+<LevelingGear stage="castle-gear" />
+
+## Levels 55-75: Lost Kingdoms
+
+Northern or eastern area (`4e9n5w6n11e3n5e1n3e10n1e2n7e1n3e1n6e;go tree`): start with the kids in the north and avoid the town in the east.
+
+- **Good and evil:** The northern kids are neutral, so no penalty. {.au-for-good .au-for-evil}
+- **Neutral:** The northern kids give you half. The Necropolis (`4e9n5w6n11e3n4e2s1w2s1e`) has skeleton warriors and screaming skulls at 55-60, all evil; the skulls attack on sight. *(untested)* {.au-for-neutral}
+
+From 70, level in the western area, which depends on alignment:
+
+- **Good:** The pixies: evil, 70-78. {.au-for-good}
+- **Neutral:** Both sides. The heishan pull you good and the pixies evil, so switching keeps you neutral. {.au-for-neutral}
+- **Evil:** The heishan and the titans. The robed heishan priestess attacks evil characters on sight, so clear her first or stay out of her room. {.au-for-evil}
+
+<LevelingGear stage="kingdoms-gear" />
+
+## Levels 75-85: Lost Kingdoms south
+
+- **Evil and neutral:** The southern area (dwarves). The priestess of Markov in the dwarven temple attacks evil characters on sight. {.au-for-evil .au-for-neutral}
+- **Good:** The dwarves are good-aligned. Stay west: the drow temple (77-81) and Elbar's priests and priestesses (76) are all evil. *(untested)* {.au-for-good}
+
+## Levels 85-88: Shadowbox
+
+- **Evil:** Bluebirds and angels. {.au-for-evil}
+- **Neutral:** Angels and the caves. The bluebirds are neutral and give you half. {.au-for-neutral}
+- **Good:** The caves: mud crawlers, cave spiders, mud scorpions and leeches, all evil. {.au-for-good}
+
+<LevelingGear stage="shadowbox-gear" />
+
+## Levels 88-100: Eirenole Valley and Trouthead Town
+
+From 88 to 90, Eirenole Valley, the forest north of Eirenole Castle. Careful of the 2 King's Valley Guards at the entrance, who attack on sight; set your beacon past them.
+
+- **Neutral:** Almost everything in the valley is neutral and gives you half. The prancing does and the currents of air don't count alignment, so hunt those. {.au-for-neutral}
+
+From 90, Trouthead Town (through the secret panel in Da Olde Pubb at the Giants Outpost: `11e2n5e1n7e6n3w4n5w6n2e1n5n;open north;1n`). Stick to the kids.
+
+- **Good:** The pretty little girls, cute little boys and the homely and whooping little ones are close to neutral, so no penalty. The small girls, small boys and toddlers are good-aligned and cost you a third to a half. {.au-for-good}
+- **Neutral:** The reverse: the small girls, small boys and toddlers give you a fifth more, the little ones half. {.au-for-neutral}
+- **Evil:** All of them; the small ones pay a fifth to a quarter more. {.au-for-evil}
+
+## Hero gear
+
+At 100 you can wear level 105 gear. Trouthead's shops sell some of the best of it, so a few pieces need no fight at all.
+
+<LevelingGear stage="hero-gear" />
