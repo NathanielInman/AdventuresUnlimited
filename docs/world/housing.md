@@ -21,14 +21,15 @@ Each rank takes a writ of entitlement (2,000 qp from a quest master) plus gold. 
 
 The [housing calculator](../tools/housing.md) prices a house or manor before you buy it. Two ready-made setups:
 
-- [Maxed house](https://nathanielinman.github.io/AdventuresUnlimited/tools/housing.html?locationType=house&healingRate=300&hasPortal=true&isPublic=false&doorLock=1000&doorType=100&lockLevel=100&furnitureItems=3&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1): 300% heal rate, a portal, a metal door with an impossible level 100 lock, and 10 items (3 furniture plus one of everything else). 5,925 diamonds, 651,750 gold.
-- [Maxed private manor](https://nathanielinman.github.io/AdventuresUnlimited/tools/housing.html?locationType=manor&healingRate=400&hasPortal=true&isPublic=false&henchmenNumber=6&henchmenLevel=110&furnitureItems=8&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1&sanctuary=true&haste=true&phase=true&protection=true&sneak=true&fly=true&invisibility=true&criticalStrike=true&counter=true&dirtKick=true&disarm=true&berserk=true&bash=true&trip=true&resistMonk=true&resistMagic=true&resistPierce=true&resistSlash=true&resistBash=true&resistWood=true&resistSilver=true&resistIron=true&resistLight=true&resistPoison=true&resistHoly=true&resistEnergy=true&resistDisease=true&resistFire=true&resistCold=true&resistLightning=true&resistAcid=true): 400% heal rate, a portal, 15 items (8 furniture plus one of everything else) and six level 110 henchmen with every upgrade. 19,285 diamonds, 2,121,350 gold.
+- [Maxed house](https://nathanielinman.github.io/AdventuresUnlimited/tools/housing.html?healingRate=300&hasPortal=true&doorLock=1000&doorType=100&lockLevel=110&furnitureItems=5&fireplaceItems=1&fountainItems=1&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1): 300% heal rate, a portal, a metal door with an impossible level 110 lock, 5 furniture, a fireplace, a fountain and one of each tool. 6,075 diamonds, 668,250 gold.
+- [Maxed private manor](https://nathanielinman.github.io/AdventuresUnlimited/tools/housing.html?locationType=manor&healingRate=400&hasPortal=true&furnitureItems=10&fireplaceItems=1&fountainItems=1&guests=2&troughItems=1&crucibleItems=1&anvilItems=1&workbenchItems=1&forgeItems=1&henchmenNumber=6&henchmenLevel=110&sanctuary=true&haste=true&phase=true&protection=true&sneak=true&fly=true&invisibility=true&criticalStrike=true&counter=true&dirtKick=true&disarm=true&berserk=true&bash=true&trip=true&resistMonk=true&resistMagic=true&resistPierce=true&resistSlash=true&resistBash=true&resistWood=true&resistSilver=true&resistIron=true&resistLight=true&resistPoison=true&resistHoly=true&resistEnergy=true&resistDisease=true&resistFire=true&resistCold=true&resistLightning=true&resistAcid=true): 400% heal rate, a portal, 10 furniture, a fireplace, a fountain, one of each tool, two permanent guests and six level 110 henchmen with every upgrade. 22,660 diamonds, 2,492,600 gold.
 
 | Upgrade | Diamonds | Gold |
 | --- | ---: | ---: |
-| Heal rate, each +10% | 125 | 13,750 |
+| House heal rate, each +10% | 125 | 13,750 |
+| Manor heal rate, each +10% | 250 | 27,500 |
 | House heal rate 100% to 300% (max) | 2,500 | 275,000 |
-| Manor heal rate 150% to 400% (max; 300% for a public manor) | 3,125 | 343,750 |
+| Manor heal rate 150% to 400% (max; 300% for a public manor) | 6,250 | 687,500 |
 | Portal | 400 | 44,000 |
 | Lock: easy (default) to hard | 200 | 22,000 |
 | Lock: hard to infuriating | 200 | 22,000 |
@@ -37,7 +38,7 @@ The [housing calculator](../tools/housing.md) prices a house or manor before you
 | Lock: improbable to impossible | 200 | 22,000 |
 | Lock: easy to impossible | 1,000 | 110,000 |
 | Lock level, each (starts at 50) | 10 | 1,100 |
-| Lock level 50 to 100 (max) | 500 | 55,000 |
+| Lock level 50 to 110 (max) | 600 | 66,000 |
 | Rekey a lock (key not included) | 250 | 27,500 |
 | Replacement key | 50 | 5,500 |
 | Wood door (default) | 0 | 0 |
@@ -53,5 +54,11 @@ The [housing calculator](../tools/housing.md) prices a house or manor before you
 | Anvil | 250 | 27,500 |
 | Workbench | 250 | 27,500 |
 | Forge | 500 | 55,000 |
+| Furniture portal inside a manor | 50 | 5,500 |
+| Permanent guest (private manor, up to 2) | 100 | 11,000 |
+| Henchman past the first two (up to 6) | 200 | 22,000 |
+| Henchman level, each +5 (75 to 110) | 100 | 11,000 |
 
-Gold is diamonds at 110 gold each, the rate the calculator uses. The calculator caps a house at 10 items and a manor at 15, and only prices doors and locks for houses.
+Gold is diamonds at 110 gold each, the rate the calculator uses. Prices come from the game's `help house`, `help manor_house`, `help manor_tools` and `help henchmen`.
+
+A house holds 10 objects counting its key and pit, so 8 are yours to place; a manor holds 15 counting its pit and invitation, so 13 are yours. A portal takes one of those slots. Anvils, crucibles, workbenches, forges and troughs are tools and don't count. Doors and locks are priced for houses only; henchman upgrades are priced per henchman.
