@@ -15,30 +15,25 @@ hero:
       link: /world/areas
     - theme: alt
       text: Search items
-      link: /tools/#/items
-      target: _self
+      link: /tools/items
 
 features:
   - title: Item search
-    details: Filter every item in the area files by type, slot, area and level, weight the stats you care about, and share a link to any item.
-    link: /tools/#/items
+    details: Search every item by name, type, slot, area and level, weight the stats you care about, and share a link to any item.
+    link: /tools/items
     linkText: Open the item search
-    target: _self
   - title: Damage strings
     details: The damage range behind each combat message, for monks and for everyone else.
-    link: /tools/#/damageStrings
+    link: /tools/damage-strings
     linkText: Open the damage table
-    target: _self
   - title: Territory
-    details: Paste your territory clan list and get back the areas nobody has conquered yet.
-    link: /tools/#/territory
+    details: Paste your territory clan list and see every conquerable area your clan doesn't hold yet, filtered to your level.
+    link: /tools/territory
     linkText: Open the territory tool
-    target: _self
   - title: Housing
     details: Price a house or manor in diamonds and gold before you buy it. Every option lands in the URL, so you can send someone your exact build.
-    link: /tools/#/home
+    link: /tools/housing
     linkText: Open the housing calculator
-    target: _self
   - title: Speed leveling
     details: Where to level and what to wear from 1 to hero.
     link: /guides/speed-leveling

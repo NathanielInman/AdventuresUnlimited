@@ -18,10 +18,10 @@ This is a fan project. It isn't affiliated with the game's staff, and anything h
 
 | Tool | What it does |
 | --- | --- |
-| [Item search](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/items) | Search and filter every item in the game, with links you can share |
-| [Damage strings](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/damageStrings) | The damage range behind each combat message, for monks and everyone else |
-| [Territory](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/territory) | Paste your `territory clan` list and get back the areas nobody has conquered |
-| [Housing](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/home) | Price a house or manor in diamonds and gold before you buy it |
+| [Item search](https://nathanielinman.github.io/AdventuresUnlimited/tools/items.html) | Search and filter every item in the game, with links you can share |
+| [Damage strings](https://nathanielinman.github.io/AdventuresUnlimited/tools/damage-strings.html) | The damage range behind each combat message, for monks and everyone else |
+| [Territory](https://nathanielinman.github.io/AdventuresUnlimited/tools/territory.html) | Paste your `territory clan` list and see the conquerable areas your clan doesn't hold |
+| [Housing](https://nathanielinman.github.io/AdventuresUnlimited/tools/housing.html) | Price a house or manor in diamonds and gold before you buy it |
 
 ## Guides
 
