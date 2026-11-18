@@ -1,0 +1,232 @@
+/* Callouts, tables, details and code blocks in page content */
+
+/* -------------------------------------------------------------------------
+   Callouts: a carved edge in the callout's color, its rune beside the title
+   ------------------------------------------------------------------------- */
+
+.vp-doc .custom-block {
+  --au-cb: var(--au-glow-ink);
+  --au-cb-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2 L14.2,9.8 L22,12 L14.2,14.2 L12,22 L9.8,14.2 L2,12 L9.8,9.8 Z'/%3E%3C/svg%3E");
+  position: relative;
+  padding: 14px 18px 14px 20px;
+  border: 1px solid color-mix(in srgb, var(--au-cb) 26%, transparent);
+  border-left: 3px solid var(--au-cb);
+  border-radius: 4px 12px 12px 4px;
+  background:
+    linear-gradient(100deg, color-mix(in srgb, var(--au-cb) 11%, transparent), color-mix(in srgb, var(--au-cb) 3%, transparent) 70%),
+    var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.vp-doc .custom-block:hover {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--au-cb) 20%, transparent), 0 4px 18px color-mix(in srgb, var(--au-cb) 12%, transparent);
+}
+
+.vp-doc .custom-block.tip {
+  --au-cb: var(--au-verdant-ink);
+  --au-cb-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12,2 C8,7 6.5,10 6.5,13.5 a5.5,5.5 0 0 0 11,0 C17.5,10 16,7 12,2 Z'/%3E%3C/svg%3E");
+}
+
+.vp-doc .custom-block.important {
+  --au-cb: var(--au-amber-ink);
+  --au-cb-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6,3 H18 L22.5,9 L12,22 L1.5,9 Z'/%3E%3C/svg%3E");
+}
+
+.vp-doc .custom-block.warning {
+  --au-cb: var(--au-ember-ink);
+  --au-cb-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M12,2 L23,21 H1 Z M10.8,8.5 H13.2 V14.8 H10.8 Z M10.8,16.6 H13.2 V19 H10.8 Z'/%3E%3C/svg%3E");
+}
+
+.vp-doc .custom-block.danger,
+.vp-doc .custom-block.caution {
+  --au-cb: var(--au-crimson-ink);
+  --au-cb-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M12,2 C6.5,2 3,6 3,10.5 C3,13.5 4.6,15.6 7,16.6 V20 a1,1 0 0 0 1,1 H16 a1,1 0 0 0 1,-1 V16.6 C19.4,15.6 21,13.5 21,10.5 C21,6 17.5,2 12,2 Z M6.3,11 a2.2,2.2 0 1 0 4.4,0 a2.2,2.2 0 1 0 -4.4,0 Z M13.3,11 a2.2,2.2 0 1 0 4.4,0 a2.2,2.2 0 1 0 -4.4,0 Z M12,13.6 L13.1,15.8 H10.9 Z'/%3E%3C/svg%3E");
+}
+
+.vp-doc .custom-block.details {
+  --au-cb: var(--vp-c-border);
+}
+
+.vp-doc .custom-block .custom-block-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-family: var(--au-font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--au-cb);
+}
+
+.vp-doc .custom-block:not(.details) .custom-block-title::before {
+  content: '';
+  flex: none;
+  width: 15px;
+  height: 15px;
+  background-color: currentColor;
+  -webkit-mask: var(--au-cb-icon) center / contain no-repeat;
+  mask: var(--au-cb-icon) center / contain no-repeat;
+}
+
+.vp-doc .custom-block a {
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc .custom-block code {
+  color: var(--vp-code-color);
+  background-color: var(--vp-code-bg);
+}
+
+/* Plain <details> in a page, like the map list on the areas page */
+.vp-doc > div > details:not(.custom-block) {
+  margin: 16px 0;
+  padding: 0 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background-color: var(--vp-c-bg-soft);
+  transition: border-color 0.25s;
+}
+
+.vp-doc > div > details:not(.custom-block):hover,
+.vp-doc > div > details[open]:not(.custom-block) {
+  border-color: color-mix(in srgb, var(--au-glow-ink) 40%, transparent);
+}
+
+.vp-doc > div > details:not(.custom-block) > summary {
+  margin: 0 -16px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vp-doc > div > details:not(.custom-block) > summary::marker {
+  color: var(--au-amber-ink);
+}
+
+/* -------------------------------------------------------------------------
+   Tables: framed, header row on a tinted band that sticks under the nav
+   when the table fits its column (effects.ts adds .au-fits), faint zebra
+   rows and a marked row under the pointer
+   ------------------------------------------------------------------------- */
+
+:root {
+  --au-sticky-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + var(--au-sticky-extra, 0px));
+}
+
+@media (max-width: 1279px) {
+  :root {
+    --au-sticky-top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px + var(--au-sticky-extra, 0px));
+  }
+}
+
+@media (max-width: 959px) {
+  :root {
+    --au-sticky-top: calc(var(--vp-layout-top-height, 0px) + 48px + var(--au-sticky-extra, 0px));
+  }
+}
+
+.vp-doc > div > table {
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--au-table-line);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  background-color: var(--vp-c-bg);
+}
+
+.vp-doc > div > table.au-fits {
+  overflow: clip;
+}
+
+/* A table wider than its column scrolls sideways; a shadow at the edge
+   says there is more (covers that scroll with the content hide it at the
+   ends) */
+.vp-doc > div > table:not(.au-fits) {
+  background:
+    linear-gradient(to right, var(--vp-c-bg) 40%, transparent) left center / 40px 100% no-repeat local,
+    linear-gradient(to left, var(--vp-c-bg) 40%, transparent) right center / 40px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, var(--au-scroll-shadow), transparent) left center / 14px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, var(--au-scroll-shadow), transparent) right center / 14px 100% no-repeat scroll,
+    var(--vp-c-bg);
+}
+
+.vp-doc > div > table tr {
+  border: 0;
+  background-color: transparent;
+  transition: background-color 0.15s;
+}
+
+.vp-doc > div > table :is(th, td) {
+  border: 0;
+  border-bottom: 1px solid var(--au-table-line);
+}
+
+.vp-doc > div > table :is(th, td) + :is(th, td) {
+  border-left: 1px solid var(--au-table-line);
+}
+
+.vp-doc > div > table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.vp-doc > div > table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom-color: color-mix(in srgb, var(--au-glow-ink) 35%, var(--au-table-line));
+  background-color: var(--au-th-bg);
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  color: var(--au-th-text);
+}
+
+/* Only once the table isn't its own scroll box, or the offset would push
+   the header down inside it */
+.vp-doc > div > table.au-fits th {
+  position: sticky;
+  top: var(--au-sticky-top);
+  z-index: 2;
+}
+
+.vp-doc > div > table th a {
+  color: inherit;
+}
+
+.vp-doc > div > table tbody tr:nth-child(2n) {
+  background-color: var(--au-zebra);
+}
+
+.vp-doc > div > table tbody tr:hover {
+  background-color: var(--au-row-hover);
+}
+
+.vp-doc > div > table tbody tr:hover td:first-child {
+  box-shadow: inset 3px 0 0 var(--vp-c-brand-1);
+}
+
+/* -------------------------------------------------------------------------
+   Code blocks
+   ------------------------------------------------------------------------- */
+
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* The tools overview's cards lift and glow a little under the pointer */
+.vp-doc .au-tool-cards .card {
+  transition: border-color 0.25s, background-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.vp-doc .au-tool-cards .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px color-mix(in srgb, var(--au-glow) 18%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vp-doc .au-tool-cards .card:hover {
+    transform: none;
+  }
+}
