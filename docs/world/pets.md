@@ -39,7 +39,7 @@
 | a snow-white polar bear | 40 | 160g0s | Lost Kingdoms |
 | a spectre of light | 45 | 202g50s | Terrason |
 | a fierce falcon | 45 | 202g50s | A Quickling Village|
-| a  russet-colored fire-cat | 45 | 202g50s | Lost Kingdoms |
+| a russet-colored fire-cat | 45 | 202g50s | Lost Kingdoms |
 | an enchanted gauntlet of power | 50 | 250g0s | Terrason |
 | a shaggy black wolf | 50 | 250g0s | Lost Kingdoms |
 | a large-tusked wild pig | 55 | 302g50s | Lost Kingdoms |
@@ -48,11 +48,11 @@
 | a shatra bird | 60 | 360g0s | Rivendale |
 | a beautiful snow cat | 65 | 422g50s | Lost Kingdoms |
 | a blonde fox | 65 | 422g50s | Lost Kingdoms |
-| a huge yalen sand-worm | 65 | 422g50s | Rivendale |
-| a heishan batle-maid | 70 | 490g0s | Rivendale |
+| a huge Yalen sand-worm | 65 | 422g50s | Rivendale |
+| a Heishan battle-maid | 70 | 490g0s | Rivendale |
 | a quick bayard | 70 | 490g0s | Wildlife Refuge |
 | a grim-faced pixie mercenary | 70 | 490g0s | Lost Kingdoms |
-| an elemental guardian | 75 | 752g50s | Rivendale |
+| an elemental guardian | 75 | 562g50s | Rivendale |
 | the yeck | 75 | 562g50s | Wildlife Refuge |
 | a greedy gnome mercenary | 75 | 562g50s | Lost Kingdoms |
 | a mischievous alan | 80 | 640g0s | Wildlife Refuge |
