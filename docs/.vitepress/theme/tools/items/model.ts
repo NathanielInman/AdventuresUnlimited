@@ -145,8 +145,12 @@ export interface ItemView<T extends ViewSource = ViewSource> {
   stats: number[];
   /** Lowercase name, keywords and vnum for the text search */
   haystack: string;
-  /** A reset, shop, script, quest or the game's code puts it in the world */
+  /** A reset, shop, script, quest or the game's code puts it somewhere players can reach */
   placed: boolean;
+  /** Something places it, but only in areas players can't reach */
+  unreachable: boolean;
+  /** From an area players can't reach and not placed anywhere they can: hidden with the test gear */
+  hidden: boolean;
   /** Immortal or test gear no player can use: above level 110, over 100 hit or dam, or 1,000+ average weapon damage */
   testGear: boolean;
   /** "Wrist", "Sword", "Haste, bless" */
@@ -185,6 +189,7 @@ export function viewItem<T extends ViewSource>(item: T): ItemView<T> {
   const average = item.weapon ? diceAverage(item.weapon.dice) : 0;
   const testGear = item.level > 110 || Math.abs(hit) > 100 || Math.abs(dam) > 100 || average > 1000;
   const typeLabel = capitalize(item.type.replace(/_/g, ' '));
+  const placed = ('placed' in item ? item.placed : Boolean(item.src?.length)) && !item.unreachable;
   let kind = typeLabel;
 
   if (group === 'weapon') kind = capitalize(weaponClass === 'none' || !weaponClass ? 'weapon' : weaponClass);
@@ -210,7 +215,9 @@ export function viewItem<T extends ViewSource>(item: T): ItemView<T> {
     affects,
     stats,
     haystack: [plain, item.kw, item.vnum].join(' ').toLowerCase(),
-    placed: 'placed' in item ? item.placed : Boolean(item.src?.length),
+    placed,
+    unreachable: Boolean(item.unreachable),
+    hidden: item.areaReach === 'none' && !placed,
     testGear,
     kind
   };
@@ -362,6 +369,8 @@ export interface SourceEntry {
 
 export function sourceLines(item: Item, context: SourceContext): SourceEntry[] {
   const { mobs, rooms, objs, areas } = item.refs;
+  const closed = new Set(item.refs.unreachable ?? []);
+  const closedNote = (key: string) => (closed.has(key) ? ", which players can't reach" : '');
   const plain = (text: string) => stripMudColors(text).trim();
   const lines: SourceEntry[] = [];
 
@@ -369,7 +378,7 @@ export function sourceLines(item: Item, context: SourceContext): SourceEntry[] {
     const name = areas[key] ?? key;
     const href = context.areaHref(key);
 
-    return [' (', href ? { text: name, href } : name, ')'];
+    return [' (', href ? { text: name, href } : name, closedNote(key), ')'];
   };
 
   /** One room inline, "in Room (Area)"; more go in a list under the line. */
@@ -388,7 +397,11 @@ export function sourceLines(item: Item, context: SourceContext): SourceEntry[] {
       const href = context.areaHref(key);
 
       return {
-        inline: [` in ${known.length} rooms of `, href ? { text: areas[key] ?? key, href } : (areas[key] ?? key)],
+        inline: [
+          ` in ${known.length} rooms of `,
+          href ? { text: areas[key] ?? key, href } : (areas[key] ?? key),
+          closed.has(key) ? ` (${closedNote(key).slice(2)})` : ''
+        ],
         list: known.map(vnum => [plain(rooms[vnum][0])])
       };
     }

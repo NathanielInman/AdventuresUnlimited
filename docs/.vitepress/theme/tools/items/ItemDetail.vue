@@ -145,6 +145,14 @@ const sources = computed(() =>
   sourceLines(item.value, { itemHref: props.itemHref, areaHref: props.areaHrefFor })
 );
 
+/** "through a portal or a script", from the area's ways in */
+const viaText = computed(() => {
+  const via = item.value.areaVia ?? [];
+
+  if (!via.length) return 'by special means';
+  return via.length === 1 ? via[0] : `${via.slice(0, -1).join(', ')} or ${via.at(-1)}`;
+});
+
 const copied = ref(false);
 let timer: ReturnType<typeof setTimeout> | undefined;
 
@@ -370,6 +378,10 @@ onBeforeUnmount(() => clearTimeout(timer));
 
       <section class="card wide">
         <h3 class="card-title">Where to find it</h3>
+        <div v-if="view.unreachable" class="unplaced" role="note">
+          <strong>Out of reach.</strong>
+          Everything that loads it is in an area no exit, portal or script leads players to, so players can't get it.
+        </div>
         <ul v-if="sources.length" class="sources">
           <li v-for="(source, index) in sources" :key="index" :class="`source-${source.kind}`">
             <SourceParts :parts="source.line" />
@@ -385,7 +397,9 @@ onBeforeUnmount(() => clearTimeout(timer));
         </div>
         <p class="where">
           Its area file is <a v-if="areaHref" :href="areaHref">{{ view.areaName }}</a><template v-else>{{ view.areaName }}</template><template v-if="areaLevels">, {{ areaLevels }}</template>.
-          <template v-if="areaHref">The areas page has directions from Market Square.</template>
+          <template v-if="item.areaReach === 'none'">Players can't reach that area: no exit, portal or script leads into it.</template>
+          <template v-else-if="item.areaReach === 'special'">Players only get there {{ viaText }}.</template>
+          <template v-else-if="areaHref">The areas page has directions from Market Square.</template>
         </p>
       </section>
     </div>

@@ -3,7 +3,7 @@ import { computed, markRaw, onBeforeUnmount, onMounted, ref, shallowRef, useId, 
 import { withBase } from 'vitepress';
 import areasSource from '../../../world/areas.md?raw';
 import { formatNumber } from './lib/format';
-import { areaKeys, loadArea, loadItemIndex, type IndexItem, type Item } from './lib/items';
+import { areaKeys, loadArea, loadItemIndex, type IndexArea, type IndexItem, type Item } from './lib/items';
 import { useQueryState } from './lib/query-state';
 import {
   CheckField,
@@ -91,7 +91,7 @@ function resetWeights() {
 type ListView = ItemView<IndexItem>;
 
 const views = shallowRef<readonly ListView[]>([]);
-const areaNames = shallowRef(new Map<string, string>());
+const areaNames = shallowRef(new Map<string, IndexArea>());
 const loading = ref(true);
 const failed = ref(false);
 const pendingAreaName = ref<string | null>(null);
@@ -129,7 +129,7 @@ onMounted(async () => {
   loading.value = false;
 
   if (pendingAreaName.value) {
-    const match = [...areaNames.value].find(([, name]) => name === pendingAreaName.value);
+    const match = [...areaNames.value].find(([, area]) => area.name === pendingAreaName.value);
 
     if (match) state.from = match[0];
     pendingAreaName.value = null;
@@ -295,7 +295,7 @@ const matched = computed(() => {
 
     if (from && view.areaKey !== from) continue;
     if (placed && !view.placed) continue;
-    if (!test && view.testGear) continue;
+    if (!test && (view.testGear || (view.hidden && view.areaKey !== from))) continue;
     if (view.level < low || view.level > high) continue;
     if (slot && !view.slots.includes(slot)) continue;
     if (words.length && !words.every(word => view.haystack.includes(word))) continue;
@@ -400,7 +400,7 @@ function areaHref(view: ItemView): string | null {
 
 /** An area page link by area key, for the rooms and mobs an item's sources name. */
 function areaHrefForKey(key: string): string | null {
-  const name = detailView.value?.item.refs.areas[key] ?? areaNames.value.get(key);
+  const name = detailView.value?.item.refs.areas[key] ?? areaNames.value.get(key)?.name;
   const info = name ? areaAnchors.get(areaSlug(name)) : null;
 
   return info ? withBase(`/world/areas.html#${info.slug}`) : null;
@@ -425,10 +425,13 @@ function optionsFrom(values: Iterable<string>, anyLabel: string, label = (value:
   ];
 }
 
+// Areas players can't reach join the list with the test gear, or when a
+// link picks one
 const areaOptions = computed(() => {
-  const sortedAreas = [...areaNames.value].sort((a, b) => byName(areaSortName(a[1]), areaSortName(b[1])));
+  const shown = [...areaNames.value].filter(([key, area]) => area.reach !== 'none' || state.test || key === state.from);
+  const sortedAreas = shown.sort((a, b) => byName(areaSortName(a[1].name), areaSortName(b[1].name)));
 
-  return [{ label: 'All areas', value: '' }, ...sortedAreas.map(([key, name]) => ({ label: name, value: key }))];
+  return [{ label: 'All areas', value: '' }, ...sortedAreas.map(([key, area]) => ({ label: area.name, value: key }))];
 });
 
 const slotOptions = computed(() => {
@@ -476,15 +479,20 @@ const subFilters = computed(() =>
 );
 
 const testGearHint = computed(() => {
-  const count = views.value.filter(view => view.testGear).length;
+  const test = views.value.filter(view => view.testGear).length;
+  const hidden = views.value.filter(view => view.hidden && !view.testGear).length;
+  const areas = [...areaNames.value.values()].filter(area => area.reach === 'none').length;
 
-  return `${count ? `${formatNumber(count)} items` : 'A few items'} built for immortals or testing: above level 110, more than +100 hit or damage, or weapon dice averaging over 1,000.`;
+  return (
+    `${test ? `${formatNumber(test)} items` : 'A few items'} built for immortals or testing (above level 110, more than +100 hit or damage, or weapon dice averaging over 1,000)` +
+    `${hidden ? `, and ${formatNumber(hidden)} from ${formatNumber(areas)} areas no exit, portal or script leads players to` : ''}.`
+  );
 });
 
 const placedHint = computed(() => {
   const count = views.value.filter(view => !view.placed).length;
 
-  return `Hides ${count ? formatNumber(count) : 'the'} items no reset, shop, script or quest loads: crafted things, staff gifts and leftovers.`;
+  return `Hides ${count ? formatNumber(count) : 'the'} items no reset, shop, script or quest loads where players can go: crafted things, staff gifts and leftovers.`;
 });
 
 const filtersActive = computed(() =>
@@ -681,7 +689,7 @@ const sortLabel = computed(() => {
           @update:model-value="value => setFilter({ placed: value })"
         />
         <CheckField
-          label="Include immortal and test gear"
+          label="Include immortal, test and unreachable gear"
           :hint="testGearHint"
           :model-value="state.test"
           @update:model-value="value => setFilter({ test: value })"
@@ -757,7 +765,7 @@ const sortLabel = computed(() => {
           >
             <template #cell-name="{ row }">
               <a class="item-link" :href="itemHref(row.view)" @click="openItem($event, row.view)"><MudText :text="row.view.name" /></a>
-              <span v-if="!row.view.placed" class="flag">not placed</span>
+              <span v-if="!row.view.placed" class="flag">{{ row.view.unreachable ? 'out of reach' : 'not placed' }}</span>
               <span v-if="narrow" class="meta">{{ row.kind }} · {{ row.area }}</span>
               <span v-if="bonusesOf(row.view)" class="meta bonuses">{{ bonusesOf(row.view) }}</span>
             </template>
