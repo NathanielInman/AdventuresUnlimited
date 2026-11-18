@@ -6,7 +6,7 @@ The following are unlisted or possibly removed areas that may need to be removed
 - Plains of Blodai: 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n10w
 - Ruined Gerighelm: 5w9n4e6n6w3n2w3n2w
 
-Additional helpful maps on the [official website](tharel.net):
+Additional helpful maps on the [official website](https://tharel.net):
   - [Tharel](https://tharel.net/img/map-tharel.gif)
   - [Naerlan](https://tharel.net/img/map-naerlan.jpg)
   - [Naerlan: Out the East Gate](https://tharel.net/img/map-gate-east.png)
