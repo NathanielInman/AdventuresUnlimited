@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import { toolCatalog } from './theme/tools/lib/catalog';
+import { legacyToolHref } from './theme/tools/lib/legacy-links';
 
 const base = '/AdventuresUnlimited/';
 const repo = 'https://github.com/NathanielInman/AdventuresUnlimited';
@@ -11,14 +12,13 @@ const tools = [
   ...toolCatalog.map(tool => ({ text: tool.title, link: tool.link }))
 ];
 
-// Before the docs site existed the calculators lived at the site root, so old
-// bookmarks look like /AdventuresUnlimited/#/items?vnum=123. Send those on to
-// the same hash under tools/.
+// The calculators used to be a hash-routed app (/#/items?vnum=123, later
+// /tools/#/items?vnum=123). This runs first on every page and sends those old
+// links on to the tool's page with the same query. Links followed inside the
+// site are handled by the router hook in theme/index.ts.
 const forwardOldToolLinks = `(function () {
-  var b = '${base}', p = location.pathname;
-  if (location.hash.indexOf('#/') === 0 && (p === b || p === b + 'index.html')) {
-    location.replace(b + 'tools/' + location.hash);
-  }
+  var target = (${legacyToolHref.toString()})('${base}', location.pathname, location.hash);
+  if (target) location.replace(target);
 })();`;
 
 export default defineConfig({
