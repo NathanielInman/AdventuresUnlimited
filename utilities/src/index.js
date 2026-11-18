@@ -1,3 +1,10 @@
+// Stylesheets are bundled from node_modules so they stay on the installed
+// versions; the order matches the old CDN links, with app styles last.
+import 'minireset.css/minireset.css';
+import 'primevue/resources/themes/nova/theme.css';
+import 'primevue/resources/primevue.min.css';
+import 'primeicons/primeicons.css';
+import 'font-awesome/css/font-awesome.css';
 import './index.styl';
 import 'primeflex/primeflex.css';
 import PrimeVue from 'primevue/config';
