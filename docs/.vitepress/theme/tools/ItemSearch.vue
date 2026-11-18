@@ -192,9 +192,8 @@ function kindOf(view: ItemView): string {
 // which made a sort of the full list take a third of a second.
 const collator = new Intl.Collator('en', { numeric: true });
 
-/** Each value's place in sorted order; equal values share a rank. */
-function rankBy(values: string[], same = (a: string, b: string) => collator.compare(a, b) === 0): Int32Array {
-  const order = values.map((_, index) => index).sort((a, b) => collator.compare(values[a], values[b]));
+/** Each value's place in sorted order; values the test calls the same share a rank. */
+function ranksOf(values: string[], order: number[], same: (a: string, b: string) => boolean): Int32Array {
   const ranks = new Int32Array(values.length);
   let rank = 0;
 
@@ -205,21 +204,26 @@ function rankBy(values: string[], same = (a: string, b: string) => collator.comp
   return ranks;
 }
 
-const ranks = computed(() => {
-  const list = views.value;
-  const names = list.map(view => view.plain);
-  const kinds = list.map(kindOf);
+const sortedOrder = (values: string[]) => values.map((_, index) => index).sort((a, b) => collator.compare(values[a], values[b]));
+const sameText = (a: string, b: string) => collator.compare(a, b) === 0;
+
+const nameRanks = computed(() => {
+  const names = views.value.map(view => view.plain);
+  const order = sortedOrder(names);
 
   return {
-    /** The name column sorts case-insensitively */
-    name: rankBy(names, (a, b) => collator.compare(a.toLowerCase(), b.toLowerCase()) === 0),
+    // The name column sorts case-insensitively; names that differ only in
+    // case sit next to each other in the collator's order, so one sort serves both
+    name: ranksOf(names, order, (a, b) => sameText(a.toLowerCase(), b.toLowerCase())),
     /** The tie-breaker tells case apart */
-    exactName: rankBy(names),
-    kind: rankBy(kinds),
-    area: rankBy(list.map(view => areaSortName(view.areaName))),
-    kinds
+    exact: ranksOf(names, order, sameText)
   };
 });
+
+const kinds = computed(() => views.value.map(kindOf));
+const rankOf = (values: string[]) => ranksOf(values, sortedOrder(values), sameText);
+const kindRanks = computed(() => rankOf(kinds.value));
+const areaRanks = computed(() => rankOf(views.value.map(view => areaSortName(view.areaName))));
 
 const scores = computed(() => {
   const w = weights.value;
@@ -249,19 +253,27 @@ function onSort(next: SortState | null) {
 const ordered = computed(() => {
   const list = views.value;
   const score = scores.value;
-  const rank = ranks.value;
+  const names = nameRanks.value;
   const { key, dir } = sort.value;
   const sign = dir === 'asc' ? 1 : -1;
   const level = Int32Array.from(list, view => view.level);
   const primary: ArrayLike<number> =
-    key === 'level' ? level : key === 'name' ? rank.name : key === 'kind' ? rank.kind : key === 'area' ? rank.area : score;
+    key === 'level'
+      ? level
+      : key === 'name'
+        ? names.name
+        : key === 'kind'
+          ? kindRanks.value
+          : key === 'area'
+            ? areaRanks.value
+            : score;
 
   return Int32Array.from(list.keys()).sort(
     (a, b) =>
       (primary[a] - primary[b]) * sign ||
       score[b] - score[a] ||
       level[b] - level[a] ||
-      rank.exactName[a] - rank.exactName[b]
+      names.exact[a] - names.exact[b]
   );
 });
 
@@ -317,7 +329,6 @@ const page = computed(() => Math.min(Math.max(1, Math.round(state.page) || 1), p
 // Rows only for the page on screen
 const pageRows = computed<Row[]>(() => {
   const list = views.value;
-  const { kinds } = ranks.value;
 
   return matched.value.hits.slice((page.value - 1) * PAGE_SIZE, page.value * PAGE_SIZE).map(index => {
     const view = list[index];
@@ -328,7 +339,7 @@ const pageRows = computed<Row[]>(() => {
       score: scores.value[index],
       level: view.level,
       name: view.plain,
-      kind: kinds[index],
+      kind: kinds.value[index],
       area: view.areaName
     };
   });
