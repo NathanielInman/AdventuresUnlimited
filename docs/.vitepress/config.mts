@@ -29,7 +29,10 @@ export default defineConfig({
   base,
   srcExclude: ['monk.md', 'tintin.md', 'speedleveling.md'],
   lastUpdated: true,
-  head: [['script', {}, forwardOldToolLinks]],
+  head: [
+    ['link', { rel: 'icon', href: `${base}favicon.ico` }],
+    ['script', {}, forwardOldToolLinks]
+  ],
   themeConfig: {
     nav: [
       { text: 'Guides', link: '/guides/speed-leveling', activeMatch: '^/guides/' },
