@@ -1,0 +1,67 @@
+/* AU color codes (see lib/mud-color.ts). A terminal's bright colors are
+   bold, so .mud-bright is bold in both themes; the hues are tuned per theme to
+   stay readable (at least 4.5:1) on the page and on a highlighted row. {w is
+   the terminal's normal text color and {W its bright white, so in light mode
+   they map to the page's text colors. */
+
+.au-mud {
+  font-family: var(--vp-font-family-mono);
+  white-space: pre;
+  color: var(--vp-c-text-1);
+}
+
+.au-mud .mud-bright {
+  font-weight: 700;
+}
+
+:root {
+  --au-mud-red: #b3261e;
+  --au-mud-red-bright: #c4212b;
+  --au-mud-green: #2b7a0b;
+  --au-mud-green-bright: #1a7531;
+  --au-mud-yellow: #8a6100;
+  --au-mud-yellow-bright: #8f5f00;
+  --au-mud-blue: #1f4fbf;
+  --au-mud-blue-bright: #0960c9;
+  --au-mud-magenta: #8e3196;
+  --au-mud-magenta-bright: #a626a4;
+  --au-mud-cyan: #0b6e7a;
+  --au-mud-cyan-bright: #08707e;
+  --au-mud-white: #3c3c43;
+  --au-mud-white-bright: #1b1b1f;
+  --au-mud-dark-grey: #6b6b73;
+}
+
+.dark {
+  --au-mud-red: #e86e75;
+  --au-mud-red-bright: #ff7b7b;
+  --au-mud-green: #8cc265;
+  --au-mud-green-bright: #9fe87a;
+  --au-mud-yellow: #d2b45a;
+  --au-mud-yellow-bright: #ffe066;
+  --au-mud-blue: #6d9cf5;
+  --au-mud-blue-bright: #93b8ff;
+  --au-mud-magenta: #c678dd;
+  --au-mud-magenta-bright: #ee9bff;
+  --au-mud-cyan: #4fb3bf;
+  --au-mud-cyan-bright: #7ce3ee;
+  --au-mud-white: #c8c8cc;
+  --au-mud-white-bright: #ffffff;
+  --au-mud-dark-grey: #8e8e96;
+}
+
+.au-mud .mud-red { color: var(--au-mud-red); }
+.au-mud .mud-red.mud-bright { color: var(--au-mud-red-bright); }
+.au-mud .mud-green { color: var(--au-mud-green); }
+.au-mud .mud-green.mud-bright { color: var(--au-mud-green-bright); }
+.au-mud .mud-yellow { color: var(--au-mud-yellow); }
+.au-mud .mud-yellow.mud-bright { color: var(--au-mud-yellow-bright); }
+.au-mud .mud-blue { color: var(--au-mud-blue); }
+.au-mud .mud-blue.mud-bright { color: var(--au-mud-blue-bright); }
+.au-mud .mud-magenta { color: var(--au-mud-magenta); }
+.au-mud .mud-magenta.mud-bright { color: var(--au-mud-magenta-bright); }
+.au-mud .mud-cyan { color: var(--au-mud-cyan); }
+.au-mud .mud-cyan.mud-bright { color: var(--au-mud-cyan-bright); }
+.au-mud .mud-white { color: var(--au-mud-white); }
+.au-mud .mud-white.mud-bright { color: var(--au-mud-white-bright); }
+.au-mud .mud-dark-grey { color: var(--au-mud-dark-grey); }

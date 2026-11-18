@@ -1,0 +1,158 @@
+/* Shared styles for the tools' form controls. Only VitePress tokens, so light
+   and dark mode follow the site. The theme imports this file once. */
+
+.au-tool {
+  margin: 24px 0;
+  font-size: 15px;
+}
+
+.au-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.au-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--vp-c-text-1);
+}
+
+.au-label-value {
+  font-weight: 400;
+  color: var(--vp-c-text-2);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Doubled class to beat .vp-doc p margins */
+.au-hint.au-hint {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--vp-c-text-2);
+}
+
+.au-control {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--vp-input-border-color);
+  border-radius: 8px;
+  background-color: var(--vp-input-bg-color);
+  color: var(--vp-c-text-1);
+  font: inherit;
+  font-size: 15px;
+  line-height: 22px;
+  transition: border-color 0.2s;
+}
+
+.au-control:hover {
+  border-color: var(--vp-c-brand-2);
+}
+
+.au-control::placeholder {
+  color: var(--vp-c-text-3);
+}
+
+.au-control[type='number'] {
+  font-variant-numeric: tabular-nums;
+}
+
+.au-unit-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.au-unit-wrap .au-control {
+  padding-right: 4.5em;
+}
+
+.au-unit {
+  position: absolute;
+  right: 12px;
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+  pointer-events: none;
+}
+
+/* One focus ring for every control, buttons included */
+.au-control:focus-visible,
+.au-focus:focus-visible,
+.au-tool :is(button, a, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.au-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--vp-button-alt-border);
+  border-radius: 20px;
+  background-color: var(--vp-button-alt-bg);
+  color: var(--vp-button-alt-text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.au-button:hover {
+  border-color: var(--vp-button-alt-hover-border);
+  background-color: var(--vp-button-alt-hover-bg);
+  color: var(--vp-button-alt-hover-text);
+}
+
+.au-button.brand {
+  border-color: var(--vp-button-brand-border);
+  background-color: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text);
+}
+
+.au-button.brand:hover {
+  border-color: var(--vp-button-brand-hover-border);
+  background-color: var(--vp-button-brand-hover-bg);
+  color: var(--vp-button-brand-hover-text);
+}
+
+.au-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* A row of actions that wraps on narrow screens */
+.au-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+}
+
+/* A row of StatReadouts, numbers lined up on their baseline */
+.au-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: last baseline;
+  gap: 16px 40px;
+  margin: 16px 0;
+}
