@@ -32,7 +32,7 @@ Additional helpful maps on the [official website](tharel.net):
 | ALL | The Dwarven Forest | | 4e17s4w2s |
 | ALL | Tucker's Hotel | | 2w1s |
 | ALL | Beaches | | 5w17s5e7s2e1s2e1d2s1e1s2e5s1w2s2e1d2e1s1e1s |
-| ALL | Underground Highway | |  4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n2d9s8w1s2w2s2w1s |
+| ALL | Underground Highway | |  4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n1d9s8w1s2w2s2w1s |
 | ALL | The Neighborhood | | shops in Naerlan |
 | ALL | Ether | | 6w10s1w4s1u |
 | ALL | [Naerlan](https://tharel.net/img/map-naerlan.jpg) | | Starting Position |
@@ -48,7 +48,7 @@ Additional helpful maps on the [official website](tharel.net):
 | 5 - 10 | [Gypsy Camp](https://tharel.net/img/map-gypsycamp.jpg) | | 8w2s |
 | 5 - 10 | Naerlan Graveyard | | 6w10s1w1s |
 | 5 - 10 | Woodfell Forest | | 5w9n4e;open north;6n3e1s |
-| 5 - 15 | The Mines of Markov | **✓** | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1unw2e1u3e2u8e1u1w2n |
+| 5 - 15 | The Mines of Markov | **✓** | 5w17s5e;open s;9s2w2s1w1n1u2n1u3n1u2w1u2e1u3e2u8e1u1w2n |
 | 5 - 15 | Shrine of Barbades | | 4e9n5w6n9e2n1w1n1w1u |
 | 5 - 15 | [Deltherian](https://tharel.net/img/map-deltherian.jpg) | | 8e7n |
 | 5 - 15 | Taverns of Naerlan | | Unknown |
@@ -58,19 +58,19 @@ Additional helpful maps on the [official website](tharel.net):
 | 5 - 40 | [The City of Aliuna](https://tharel.net/img/map-aliuna.png) | | 11e3s6e4s5e |
 | 8 - 22 | [Haythor Dungeon](https://tharel.net/img/map-haythordungeon.jpg) | | 8e7n1w1n1e2n3e1s1e1n1e2s1s2ds1e1s |
 | 10 - 15 | The Drow Mines | **✓** | (through underdark) 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w2n |
-| contin. | contin. | contin. | 2d9s8w1s2w2s2w1s1e2s1w1s2e1s |
+| contin. | contin. | contin. | 1d9s8w1s2w2s2w1s1e2s1w1s2e1s |
 | 10 - 15 | The Drow Mines | **✓** | (through goblin stronghold) 4e9n5w6n11e3n5e1n3e7n2w9n1w1n |
 | contin. | contin. | contin. | 3w7n2w2n1d9s8w2s1w1s3w1s1e2s1w1s2e1s |
 | 10 - 15 | [Cartwrights Farm](https://tharel.net/img/map-cartwrightsfarm.gif) | | 9w1d5n7w2n1e |
 | 10 - 15 | [Volencymale](https://tharel.net/img/map-cathedralvolencymale.gif) | | 12w4n1e |
 | 10 - 15 | [The Renault House](https://tharel.net/img/map-renaulthouse.jpg) | | 7w2n2w;search n |
 | 10 - 15 | Bose'nisten | | 5w9n4e6n6w2s |
-| 10 - 15 | The Bog of Durlah | | 7e1d2w2n12w2s |
+| 10 - 15 | The Bog of Durlah | | 7e1d2w2n11w2s |
 | 10 - 15 | Hagarth | **✓** | 4e17s4w9s2w2s1w1s |
 | 10 - 20 | Tark Valley | | 9w1d5n11w;open n;1n;open w;1w;open n;n |
-| 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | **✓** | 4e9n5w6n6w8s2w1n2w4s1s1w;search west;open w;1qw |
+| 10 - 20 | [Mt Ka'lri](https://tharel.net/img/map-mtkalri.png) | **✓** | 4e9n5w6n6w8s2w1n2w4s1w;search west;open w;1w |
 | 10 - 20 | [Tzimosh's Camp](https://tharel.net/img/map-tzimoshscamp.jpg) | | 5w9n4e6n11e3n1e1n |
-| 10 - 20 | Hythian Forest | | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e1s1e |
+| 10 - 20 | Hythian Forest | | 5w17s5e;open south;7s2e1s2e1d2s1e1s1e |
 | 10 - 20 | [Burrowholme](https://tharel.net/img/map-burrowholme.gif) | | 5w9n4e;open north;5n4w1n |
 | 10 - 20 | Goblin Stronghold | | 5w9n4e6n6w2s4s2e;search s;2s2w1s2e3s |
 | 10 - 20 | [Grungel](https://tharel.net/img/map-grungel.jpg) | | 7e1d2s1e3s1w |
@@ -80,12 +80,12 @@ Additional helpful maps on the [official website](tharel.net):
 | 10 - 40 | [Northern Barreston](https://tharel.net/img/map-barreston.png) | | 5w9n4e6n6w3n2w3n2w |
 | 10 - 40 | [Lower Barreston](https://tharel.net/img/map-barreston.png) | | 5w9n4e6n6w3n2w3n2w |
 | 10 - 40 | [Upper Barreston](https://tharel.net/img/map-barrestonupper.png) | | 5w9n4e6n6w3n2w3n2w |
-| 13 - 30 | [Sanctuary](https://tharel.net/img/map-sanctuary.gif) | | 7e1d2w2n9w5s2e2s2re |
+| 13 - 30 | [Sanctuary](https://tharel.net/img/map-sanctuary.gif) | | 7e1d2w2n9w5s2e2s2e |
 | 13 - 50 | [Underdark](../assets/maps/underdark.gif) | | 4e9n5w6n3e2s1e1s2w |
 | 15 - 25 | Littlefist Glade | | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w6n |
 | 15 - 25 | [Jasporin](https://tharel.net/img/map-jasporin.jpg) | | 5w9n4e6n6w2s6s2w1n1w3n |
 | 15 - 25 | [Longbottom's Shire](https://tharel.net/img/map-longbottomsshire.gif) | | 5w9n4e;open north;6n6w3n2w3n2e |
-| 15 - 25 | Fideal's Lake | | 9w2d5n2w1n |
+| 15 - 25 | Fideal's Lake | | 9w1d5n2w1n |
 | 15 - 25 | Zzukenathaft | | 5w17s5e7s2e1s2e1d1w1s2d |
 | 15 - 30 | Du'Rahath | **✓** | 16w2s1e2s1e |
 | 15 - 30 | Mines of Noal'xyn | **✓** | 4e;open e;7e3s6e4s5e11e2e5s1e2s3w1s1w1s2w |
@@ -103,8 +103,8 @@ Additional helpful maps on the [official website](tharel.net):
 | 20 - 55 | Yrenelania | | 8e7n1w1n1e4n2e4n8e1d1s2e;go crack;1e1n1e;search south |
 | contin. | contin. | contin. | open south;1s3e1n2e2n3e |
 | 25 - 30 | Goblin Pass | | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n2w1n |
-| 25 - 35 | The Hamlet of Elsfar | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
-| 25 - 35 | Blackeye's Camp | | 5w17s5e;open south;7s2e1s2e1s2e1d2s1e2s |
+| 25 - 35 | The Hamlet of Elsfar | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n;buy key;unlock north;open north;2n3w |
+| 25 - 35 | Blackeye's Camp | | 5w17s5e;open south;7s2e1s2e1d2s1e2s |
 | 25 - 45 | Valeda | | 4e9n5w6n11e3n5e1n3e9n |
 | 30 - 40 | Castle of Burden | | 4e9n5w6n11e3n5e1n3e7n2w9n1w1n3w7n1u |
 | 30 - 40 | Whirlpool | |  4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e2s1e1w1s4e1s2e |
@@ -133,9 +133,9 @@ Additional helpful maps on the [official website](tharel.net):
 | contin. | contin. | contin. | open south;2s1e2n5e;go beehive |
 | 45 - 60 | Xuergothe Castle | | 4e17s4w7s2e1s2e1d2s1e1s2e5s1w2s2e1d2s1e4s1w6s1w6s2u1s |
 | 45 - 60 | Eirenole Castle | | 4e9n5w6n6w3n2w3n2w1s1w1n10w3s5w4n3e11n6e8n1w4n2e1n |
-| contin. | contin. | contin. | buy key;unlock north;open north;2n1e2n7e1n |
+| contin. | contin. | contin. | buy key;unlock north;open north;2n7e1n |
 | 50 - 60 | Heishaer City | | 7e1d2s1e7s7e6n3e1n1e3s1e1s2e2n2e |
-| 50 - 60 | Breyard Village | | 41w6s2w2s3w3n3w1s1w1n8w2n2w2s2w3n5w3s1w |
+| 50 - 60 | Breyard Village | | 41w1s1w5s2w2s3w2n1w1n2w1s1w1n8w2n2w2s2w3n5w3s1w |
 | 50 - 60 | The Acoma Estate | | 7e1d2s1e9s1e |
 | 55 - 65 | The Overlook Grounds | | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
 | 55 - 65 | The Overlook Towers | | 4e9n5w6n11e3n5e1n3e7n5w4n4w2s1w |
