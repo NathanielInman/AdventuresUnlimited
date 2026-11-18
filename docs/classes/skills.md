@@ -1,13 +1,14 @@
-# Skills by Class
+# Skills
 
+The level each class can first use a skill. See [spells](spells.md) for spells and [max stats](max-stats.md) for each class's stats.
 
-| skills | mage | cleric | thief | warrior | antipaladin | paladin | charlatan | myrmidon | monk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| skill | mage | cleric | thief | warrior | antipaladin | paladin | charlatan | myrmidon | monk |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | archery | - | - | 20 | 20 | 20 | 20 | 20 | 20 | - |
 | attune | - | - | - | - | - | - | - | 65 | - |
 | axe | - | - | 1 | 1 | 1 | 1 | - | 1 | 1 |
 | backstab | - | - | 12 | - | 17 | - | 20 | - | - |
-| bash | - | - | - | 1 | 14 | 12 | - | 10| 21 |
+| bash | - | - | - | 1 | 14 | 12 | - | 10 | 21 |
 | berserk | - | - | - | 18 | - | - | - | - | - |
 | blind fighting | - | - | 42 | 36 | 70 | 70 | - | 60 | 40 |
 | brew | 25 | 25 | - | - | - | - | 50 | - | - |
@@ -18,8 +19,8 @@
 | charge | - | - | - | 62 | - | - | - | - | - |
 | circle | - | - | 25 | - | - | - | - | - | - |
 | cloak of divinity | - | 75 | - | - | - | - | - | - | - |
+| consecrate | - | 64 | - | - | - | - | - | - | - |
 | cook | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
-| consecrate | - | 64 | -  | - | - | - | - | - | - |
 | counter | - | - | - | 55 | 65 | 65 | - | 60 | 50 |
 | critical strike | - | - | - | 50 | 60 | 60 | - | 55 | - |
 | dagger | 1 | - | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
@@ -66,8 +67,8 @@
 | pressure point | - | - | - | - | - | - | - | - | 45 |
 | rescue | - | - | - | 5 | - | 1 | - | - | 25 |
 | round | - | - | - | - | - | - | 15 | - | - |
-| runecut | - | - | - | - | - | - | - | 52 | - |
 | runeblade | - | - | - | - | - | - | - | 63 | - |
+| runecut | - | - | - | - | - | - | - | 52 | - |
 | runeforge | - | - | - | - | - | - | - | 60 | - |
 | runesplit | - | - | - | - | - | - | - | 60 | - |
 | scribe | 25 | 25 | - | - | - | - | 50 | - | - |
@@ -83,11 +84,11 @@
 | spear | - | - | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | spell lore | 39 | 39 | - | - | 44 | 44 | 44 | 44 | - |
 | spellcraft | 60 | 60 | - | - | - | - | - | - | - |
+| staff | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | staves | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | steadiness | - | - | 21 | - | - | - | - | - | - |
 | steal | - | - | 5 | - | - | - | 6 | - | 30 |
 | subterfuge | - | - | 15 | - | - | - | - | - | - |
-| staff | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | sword | 1 | - | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | target | - | - | - | 53 | 72 | 72 | - | 72 | 64 |
 | third attack | 52 | 47 | 32 | 18 | 30 | 30 | 37 | 27 | - |
@@ -96,11 +97,15 @@
 | throwing dart | 151 | - | 151 | - | - | - | 151 | - | - |
 | throwing knife | 151 | - | 151 | 151 | - | - | 151 | 151 | - |
 | throwing needle | - | 151 | 151 | - | - | - | 151 | - | - |
-| throwing spear | - | - | - | 151 | 151 | 151 | - | 151 | - |
 | throwing shuriken | - | - | - | - | - | - | - | - | 151 |
+| throwing spear | - | - | - | 151 | 151 | 151 | - | 151 | - |
 | trip | - | - | 1 | 15 | 20 | - | 5 | 20 | - |
 | wands | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | warcry | - | - | - | 14 | - | - | - | - | - |
 | whip | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
 | whirlwind | - | - | - | 60 | - | - | - | - | - |
 | whittle | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+
+A - means the class can't learn the skill. 151 is the first immortal level (mortals stop at 120). The listed classes can train these throwing skills, but in the game's source no mortal level unlocks them.
+
+Weaponsmaster, in the monk's default package, is a creation group rather than a skill. It holds axe, dagger, flail, mace, polearm, spear, sword, whip and staff.

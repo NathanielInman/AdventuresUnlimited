@@ -1,8 +1,9 @@
-# Spells by Class
+# Spells
 
+The level each class can first cast a spell. See [skills](skills.md) for skills and [specializations](specializations.md) for spell group ranks.
 
-| spells | mage | cleric | thief | warrior | antipaladin | paladin | charlatan | myrmidon | monk |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| spell | mage | cleric | thief | warrior | antipaladin | paladin | charlatan | myrmidon | monk |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | acid blast | 35 | - | - | - | - | - | 40 | 45 | - |
 | acid breath | 40 | - | - | - | - | - | - | - | - |
 | acid shield | 30 | - | - | - | - | - | 50 | - | - |
@@ -55,8 +56,8 @@
 | detect poison | 22 | 13 | - | - | - | 18 | - | - | - |
 | dispel evil | - | 25 | - | - | 12 | 24 | - | - | - |
 | dispel good | - | 25 | - | - | 24 | - | - | - | - |
-| dispel neutral | - | 25 | - | - | 24 | 25 | - | - | - |
 | dispel magic | 28 | 11 | - | - | 12 | 44 | 50 | 35 | - |
+| dispel neutral | - | 25 | - | - | 24 | 25 | - | - | - |
 | divine light | - | 73 | - | - | - | - | - | - | - |
 | divine wrath | - | 85 | - | - | - | - | - | - | - |
 | dome of respite | - | 85 | - | - | - | - | - | - | - |
@@ -79,9 +80,9 @@
 | frenzy | - | 24 | - | - | 24 | 24 | - | - | - |
 | frost breath | 44 | - | - | - | - | - | - | - | - |
 | gas breath | 52 | - | - | - | - | - | 50 | - | - |
-| gate | 28  | 36 | - | - | - | - | 26 | 40 | - |
+| gate | 28 | 36 | - | - | - | - | 26 | 40 | - |
 | giant strength | 14 | - | - | - | - | - | 10 | 20 | - |
-| harm | - | 25 | - | - | 25 | 30| - | - | - |
+| harm | - | 25 | - | - | 25 | 30 | - | - | - |
 | haste | 21 | - | - | - | - | - | 16 | 29 | - |
 | heal | - | 30 | - | - | - | 35 | - | - | - |
 | heat metal | - | 21 | - | - | 26 | 26 | - | - | - |
@@ -119,15 +120,15 @@
 | meteor swarm | 77 | - | - | - | - | - | - | - | - |
 | nexus | 45 | 40 | - | - | - | - | 40 | 50 | - |
 | pass door | 31 | 42 | - | - | - | - | 26 | 36 | - |
-| phase | 50  | - | - | - | - | - | - | - | - |
+| phase | 50 | - | - | - | - | - | - | - | - |
 | plague | 27 | 21 | - | - | 27 | - | 32 | - | - |
 | poison | 18 | 16 | - | - | 22 | - | 21 | - | - |
 | portal | 35 | - | - | - | - | - | - | - | - |
 | protection evil | 18 | 13 | - | - | - | 20 | - | - | - |
 | protection good | 18 | 13 | - | - | 20 | - | - | - | - |
 | protection neutral | 18 | 13 | - | - | 20 | 20 | - | - | - |
-| psychic allergy | 66 | - | - | - | - | - | - | - | - |
 | psychic agony | 85 | - | - | - | - | - | - | - | - |
+| psychic allergy | 66 | - | - | - | - | - | - | - | - |
 | psychic stun | 53 | - | - | - | - | - | - | - | - |
 | rap | 20 | - | - | - | - | - | 50 | - | - |
 | ray of truth | - | 50 | - | - | - | 60 | - | - | - |
@@ -158,7 +159,9 @@
 | translate | 40 | 55 | - | - | - | - | 44 | 44 | - |
 | transmute | 43 | - | - | - | - | - | - | - | - |
 | ventriloquate | 1 | - | 4 | - | - | - | 1 | - | - |
+| weaken | 17 | 23 | - | - | 17 | - | 16 | 18 | - |
 | water shield | 30 | - | - | - | - | - | 50 | - | - |
 | wind shield | 30 | - | - | - | - | - | 50 | - | - |
-| weaken | 17 | 23 | - | - | 17 | - | 16 | 18 | - |
 | word of recall | 15 | 15 | - | - | 35 | 35 | 20 | 29 | - |
+
+A - means the class can't learn the spell.
