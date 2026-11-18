@@ -3,6 +3,7 @@
 import { useData } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import { computed } from 'vue';
+import DocSkyline from './components/DocSkyline.vue';
 import SectionBand from './components/SectionBand.vue';
 import { sectionOf } from './components/sections';
 
@@ -14,6 +15,9 @@ const section = computed(() => sectionOf(page.value.relativePath));
   <DefaultTheme.Layout>
     <template #doc-before>
       <SectionBand v-if="section" :key="section.id" :section="section" />
+    </template>
+    <template #doc-after>
+      <DocSkyline />
     </template>
   </DefaultTheme.Layout>
 </template>
