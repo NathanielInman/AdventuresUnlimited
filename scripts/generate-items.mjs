@@ -509,7 +509,7 @@ const specials = new Map();
 
 function loadArea(r, file) {
   const area = {
-    file, name: 'New Area', version: 0, location: 0, objects: []
+    file, name: 'New Area', version: 0, location: 0, display: 1, objects: [], rooms: []
   };
 
   for (;;) {
@@ -524,7 +524,8 @@ function loadArea(r, file) {
       case 'builders': r.string(); break;
       case 'credits': area.credits = r.string(); break;
       case 'location': area.location = r.number(); break;
-      case 'clan': case 'conquer': case 'display': case 'jurisdiction':
+      case 'display': area.display = r.number(); break;
+      case 'clan': case 'conquer': case 'jurisdiction':
       case 'orbvnum': case 'orblocation': case 'original':
         r.number(); break;
       case 'conquered_by': r.string(); break;
@@ -727,6 +728,8 @@ function loadObjects(r, area) {
   }
 }
 
+const EX = name => define(`EX_${name}`);
+
 function loadRooms(r, area) {
   for (;;) {
     if (r.letter() !== '#') r.fail('Load_rooms: # not found.');
@@ -734,12 +737,12 @@ function loadRooms(r, area) {
 
     if (vnum === 0) break;
     if (rooms.has(vnum)) r.fail(`Load_rooms: vnum ${vnum} duplicated.`);
-    const room = { vnum, area, progs: [], resets: [] };
+    const room = { vnum, area, progs: [], resets: [], exits: [], doors: {} };
 
     room.name = r.string();
     r.string();
     r.number();
-    r.flag();
+    room.flags = r.flag();
     r.number();
     if (area.version > 1) r.flag();
     for (;;) {
@@ -754,18 +757,26 @@ function loadRooms(r, area) {
         case 'H': case 'M': r.number(); break;
         case 'B': r.number(); r.number(); r.number(); r.string(); break;
         case 'C': case 'O': case 'R': r.string(); break;
-        case 'D':
-          r.number();
+        case 'D': {
+          const exit = { door: r.number(), minlevel: 0, maxlevel: null, flags: 0 };
+
           r.string();
           r.string();
           if (area.version > 0) {
-            r.number();
-            r.number();
-            r.flag();
-          } else r.number();
-          r.number();
-          r.number();
+            exit.minlevel = r.number();
+            exit.maxlevel = r.number();
+            exit.flags = r.flag();
+          } else {
+            // Old areas: a lock number that stands for door flags
+            exit.flags = [0, EX('ISDOOR'), EX('ISDOOR') | EX('PICKPROOF'), EX('ISDOOR') | EX('NOPASS'), EX('ISDOOR') | EX('NOPASS') | EX('PICKPROOF')][r.number()] ?? 0;
+          }
+          exit.key = r.number();
+          exit.to = r.number();
+          // A later exit in the same direction replaces the earlier one
+          room.exits = room.exits.filter(other => other.door !== exit.door);
+          room.exits.push(exit);
           break;
+        }
         case 'E': r.string(); r.string(); break;
         case 'P': readProg(r, room); break;
         case 'T': r.number(); r.number(); r.number(); break;
@@ -773,6 +784,7 @@ function loadRooms(r, area) {
       }
     }
     rooms.set(vnum, room);
+    area.rooms.push(room);
   }
 }
 
@@ -798,6 +810,8 @@ function loadResets(r) {
     if (rVnum === -1) r.fail('load_resets : rVnum == -1');
     // new_reset drops a reset whose room isn't loaded yet
     if (letter !== 'D') rooms.get(rVnum)?.resets.push(reset);
+    // D sets a door's state at each reset: 0 open, 1 closed, 2 locked
+    else if (rooms.has(reset.arg1)) rooms.get(reset.arg1).doors[reset.arg2] = reset.arg3;
   }
 }
 
@@ -1293,6 +1307,270 @@ for (const name of codeFiles) {
 }
 
 // ---------------------------------------------------------------------------
+// Which areas players can reach
+// ---------------------------------------------------------------------------
+
+// The room graph: every exit a mortal can use, plus the other ways the game
+// moves players (portals and windows the resets place, mob programs that
+// transfer players, recall to clan halls and religion temples, and rooms the
+// C code sends players to). A flood fill from the rooms players start and
+// recall to sorts each area into "walk" (reached by exits alone), "special"
+// (only by those other means) or "none". The `areas` command's Display flag
+// plays no part: plenty of hidden areas are roads, temples and guilds.
+//
+// Left out on purpose: spells and skills that reach rooms at random or by
+// a player's own choice (teleport, gate, summon, portal, nexus, beacon),
+// which can land almost anywhere and say nothing about where an area is.
+
+const ROOM = name => define(`ROOM_${name}`);
+const mortalsBarred = ROOM('GODS_ONLY') | ROOM('IMP_ONLY');
+const difficulty = EX('EASY') | EX('HARD') | EX('INFURIATING') | EX('IMPLAUSABLE') | EX('IMPROBABLE') | EX('IMPOSSIBLE');
+const placedVnums = new Set([...sources.keys()]);
+
+/** Directed edges by room: [{ to, how, note }]; how is "walk" or a way in. */
+const edges = new Map();
+const addEdge = (from, to, how, note) => {
+  if (!rooms.has(from) || !rooms.has(to) || from === to) return;
+  if (!edges.has(from)) edges.set(from, []);
+  edges.get(from).push({ to, how, note });
+};
+
+/** The ways in, as the item search words them after "Players only get there". */
+const wayText = {
+  portal: 'through a portal',
+  window: 'by climbing through a window',
+  script: 'when a mob program moves them',
+  clan: 'by clan recall or a clan death',
+  religion: "by recalling to their religion's temple",
+  code: 'when the game itself moves them'
+};
+
+// Exits. A locked, pickproof door that can't be bashed needs its key, and
+// only counts when that key exists and something places it.
+const lockedDoors = [];
+
+for (const room of rooms.values()) {
+  for (const exit of room.exits) {
+    const target = rooms.get(exit.to);
+
+    if (!target || exit.flags & EX('IMPASSABLE') || target.flags & mortalsBarred) continue;
+    const locked = exit.flags & EX('LOCKED') || room.doors[exit.door] === 2;
+
+    if (locked && exit.flags & EX('PICKPROOF') && !(exit.flags & difficulty)) {
+      const keyed = objects.has(exit.key) && placedVnums.has(exit.key);
+
+      lockedDoors.push({ from: room.vnum, to: exit.to, key: exit.key, keyed });
+      if (!keyed) continue;
+    }
+    addEdge(room.vnum, exit.to, 'walk');
+  }
+}
+
+/** Rooms an object is put in: on the floor, or loaded there by a script. */
+const objectRooms = vnum =>
+  [...(sources.get(vnum)?.values() ?? [])].filter(source => source.k === 'floor' || source.k === 'script').flatMap(source => source.rooms);
+
+// Portals (enter <portal>: value 3 is the room, unless it's random) and
+// windows (climb through <window>: value 0 is the room) lying in a room
+for (const obj of objects.values()) {
+  if (obj.type === T('PORTAL') && !(obj.values[2] & define('GATE_RANDOM'))) {
+    for (const from of objectRooms(obj.vnum)) addEdge(from, obj.values[3], 'portal', `object ${obj.vnum} in room ${from}`);
+  } else if (obj.type === T('WINDOW')) {
+    for (const from of objectRooms(obj.vnum)) addEdge(from, obj.values[0], 'window', `object ${obj.vnum} in room ${from}`);
+  }
+}
+
+// Portals the C code puts out: the function that creates a portal object
+// and drops it in one of a list of rooms (the Wittra Wagon's wandering door)
+for (const name of codeFiles) {
+  const code = stripComments(readSource(name));
+
+  for (const match of code.matchAll(/create_object\s*\(\s*get_obj_index\s*\(\s*(OBJ_VNUM_\w+)\s*\)[\s\S]*?\n\}/g)) {
+    const portal = objects.get(rawDefines.has(match[1]) ? define(match[1]) : NaN);
+
+    if (portal?.type !== T('PORTAL')) continue;
+    for (const place of match[0].matchAll(/\blocation\s*=\s*(\d+)\s*;/g)) {
+      addEdge(Number(place[1]), portal.values[3], 'portal', `${match[1]} from ${name}`);
+    }
+  }
+}
+
+// Mob programs: "mob transfer <who> <room>" and "mob gtransfer", by any
+// prefix the game accepts ("mob trans"), also under "mob at <room>" or
+// forced on another mob. A program runs where its mob resets, in its room,
+// or where its object lies. Mental Anguish (ROOM_VNUM_MENTAL) doesn't count:
+// it's the cell for players who attack a questmaster or break the killing
+// rules, and only an immortal lets them out.
+const transfer = /\bmob\s+(?:at\s+(\d+)\s+mob\s+)?g?trans\w*\s+\S+\s+(\d+)/gi;
+const punishment = new Set([define('ROOM_VNUM_MENTAL')]);
+
+for (const prog of progs.values()) {
+  const moves = [...prog.code.matchAll(transfer)];
+
+  if (!moves.length) continue;
+  const from = new Set();
+
+  for (const { kind, owner } of runnersOf(prog.vnum)) {
+    if (kind === 'room') from.add(owner.vnum);
+    else if (kind === 'mob') for (const room of mobRooms.get(owner.vnum) ?? []) from.add(room);
+    else for (const source of sources.get(owner.vnum)?.values() ?? []) for (const room of source.rooms) from.add(room);
+  }
+  for (const move of moves) {
+    const to = Number(move[2]);
+
+    if (rooms.get(to)?.flags & ROOM('IMP_ONLY') || punishment.has(to)) continue;
+    if (move[1]) addEdge(Number(move[1]), to, 'script', `program ${prog.vnum}`);
+    else for (const room of from) addEdge(room, to, 'script', `program ${prog.vnum}`);
+  }
+}
+
+// Where players start and recall: new characters in the school, everyone's
+// default recall and death room, the temple, and Market Square
+const startRooms = ['MARKET', 'SCHOOL', 'TEMPLE', 'ALTAR'].map(name => define(`ROOM_VNUM_${name}`));
+
+// Other ways in that start nowhere in particular: clan halls (recall, death
+// and the clan temple, from data/guild.dat), religion temples (recall, from
+// data/religion.dat; dead religions left out) and the rooms the C code sends
+// players to. Only the room numbers are read from the data files.
+const seeds = [];
+const readData = name => {
+  const file = path.join(root, 'data', name);
+
+  return fs.existsSync(file) ? fs.readFileSync(file, 'latin1') : '';
+};
+
+for (const clan of readData('guild.dat').split(/^Guild\s/m).slice(1)) {
+  if (/^Immortal~/i.test(clan.trim())) continue;
+  const numbers = [...clan.matchAll(/^(?:Rooms|Recroom)\s+([\d \t]+)$/gm)].flatMap(m => m[1].trim().split(/\s+/).map(Number));
+
+  for (const vnum of numbers) if (vnum > 0) seeds.push({ room: vnum, how: 'clan' });
+}
+for (const religion of readData('religion.dat').split(/^Name\s/m).slice(1)) {
+  if (/^Flags\s+\S*D/m.test(religion)) continue;
+  const recall = /^Recall\s+(\d+)/m.exec(religion);
+
+  if (recall) seeds.push({ room: Number(recall[1]), how: 'religion' });
+}
+for (const [vnum, why] of [
+  [define('ROOM_VNUM_JAIL'), 'jail (special.c)'],
+  [define('ROOM_VNUM_TAXMASTER'), 'unpaid taxes (special.c)'],
+  [3013, 'the stocks (special.c)'],
+  [3052, 'escorted out of Naerlan (special.c)'],
+  [3053, 'escorted out of Naerlan (special.c)'],
+  [3256, 'escorted out of Naerlan (special.c)'],
+  [3268, 'escorted out of Naerlan (special.c)'],
+  [3403, 'bail (mayor.c)'],
+  [define('ROOM_VNUM_LOUNGE'), 'goooc (act_enter.c)'],
+  [define('ROOM_VNUM_FWASTE'), 'the Wheel of Fate (mob_jobs.c)'],
+  [define('ROOM_VNUM_DSEA'), 'the Wheel of Fate (mob_jobs.c)'],
+  [define('ROOM_VNUM_ARTH'), 'the Wheel of Fate (mob_jobs.c)'],
+  [8603, 'an invader thrown out of a clan hall (pk.c)'],
+  [8634, 'a collapsing mine tunnel (update.c)']
+]) {
+  seeds.push({ room: vnum, how: 'code', note: why });
+}
+
+// Flood fill. Walking first, from the start rooms; then everything, where
+// each room collects the ways in that lead to it (a room reached on foot
+// from a portal's far side was reached through that portal).
+const walked = new Set(startRooms.filter(vnum => rooms.has(vnum)));
+/** The room each room was first reached from, for the report's routes. */
+const cameFrom = new Map();
+
+for (const queue = [...walked]; queue.length; ) {
+  const from = queue.shift();
+
+  for (const { to, how } of edges.get(from) ?? []) {
+    if (how === 'walk' && !walked.has(to)) {
+      walked.add(to);
+      cameFrom.set(to, from);
+      queue.push(to);
+    }
+  }
+}
+
+/** Room vnum to the set of ways in (empty for rooms reached on foot). */
+const reached = new Map([...walked].map(vnum => [vnum, new Set()]));
+const notes = new Map();
+const visit = (vnum, ways, queue, from) => {
+  if (!rooms.has(vnum)) return;
+  const known = reached.get(vnum);
+
+  if (!known) {
+    reached.set(vnum, new Set(ways));
+    if (from !== undefined) cameFrom.set(vnum, from);
+    queue.push(vnum);
+  } else if (known.size && [...ways].some(way => !known.has(way))) {
+    for (const way of ways) known.add(way);
+    queue.push(vnum);
+  }
+};
+const queue = [...walked];
+
+for (const seed of seeds) {
+  visit(seed.room, [seed.how], queue);
+  if (seed.note && rooms.has(seed.room)) notes.set(`${seed.how}:${seed.room}`, seed.note);
+}
+while (queue.length) {
+  const vnum = queue.shift();
+  const ways = reached.get(vnum);
+
+  for (const { to, how, note } of edges.get(vnum) ?? []) {
+    if (walked.has(to)) continue;
+    const next = how === 'walk' ? ways : ways.size ? ways : new Set([how]);
+
+    if (how !== 'walk' && !ways.size && !reached.has(to)) notes.set(`${how}:${to}`, note);
+    visit(to, next, queue, vnum);
+  }
+}
+
+for (const area of areas) {
+  const own = area.rooms.filter(room => reached.has(room.vnum));
+
+  area.reach = area.rooms.some(room => walked.has(room.vnum)) ? 'walk' : own.length ? 'special' : 'none';
+  area.ways = new Set(area.reach === 'special' ? own.flatMap(room => [...reached.get(room.vnum)]) : []);
+}
+
+// Areas that share a key (two files, one name) take the best of the two
+const reachRank = { walk: 2, special: 1, none: 0 };
+const keyReach = new Map();
+const keyWays = new Map();
+
+for (const area of areas) {
+  if (!keyReach.has(area.key) || reachRank[area.reach] > reachRank[keyReach.get(area.key)]) keyReach.set(area.key, area.reach);
+  keyWays.set(area.key, new Set([...(keyWays.get(area.key) ?? []), ...area.ways]));
+}
+
+// An item is out of reach when every source is in an area players can't
+// reach: a room's area, the area of a mob with no reset, or a container or
+// scripted object that is itself out of reach (or, when nothing places that
+// object, its area). Quest, random and code sources reach everyone.
+const sourceReachable = new Map();
+const keyOpen = key => keyReach.get(key) !== 'none';
+
+function reachableFrom(vnum, seen) {
+  if (seen.has(vnum)) return false;
+  seen.add(vnum);
+  return [...(sources.get(vnum)?.values() ?? [])].some(source => {
+    if (source.rooms.length) return source.rooms.some(room => keyOpen(rooms.get(room).area.key));
+    if (source.k === 'container' || (source.k === 'script' && source.obj !== undefined)) {
+      // An object nothing places (crafted, a reward) counts by its own area
+      return sources.has(source.obj) ? reachableFrom(source.obj, seen) : keyOpen(objects.get(source.obj).area.key);
+    }
+    if (source.mob !== undefined) return keyOpen(mobs.get(source.mob).area.key);
+    return true;
+  });
+}
+
+const objectReachable = vnum => {
+  if (!sourceReachable.has(vnum)) sourceReachable.set(vnum, reachableFrom(vnum, new Set()));
+  return sourceReachable.get(vnum);
+};
+
+// Before the output below tidies the sources
+for (const vnum of objects.keys()) objectReachable(vnum);
+
+// ---------------------------------------------------------------------------
 // Output
 // ---------------------------------------------------------------------------
 
@@ -1320,8 +1598,16 @@ for (const area of areas) {
       for (const [, key] of Object.values(table)) entry.areas[key] = areas.find(other => other.key === key).name;
     }
     if (found.length) item.src = found;
+    if (found.length && !objectReachable(obj.vnum)) item.unreachable = true;
     entry.items.push(item);
   }
+}
+for (const [key, entry] of byKey) {
+  entry.reach = keyReach.get(key);
+  if (entry.reach === 'special') entry.via = [...keyWays.get(key)].sort().map(way => wayText[way]);
+  const closed = Object.keys(entry.areas).filter(other => !keyOpen(other)).sort();
+
+  if (closed.length) entry.unreachable = closed;
 }
 
 const written = new Set();
@@ -1344,7 +1630,7 @@ for (const file of fs.readdirSync(outDir)) {
 // identify data stays in the area files.
 const indexKeys = [...byKey.keys()].sort();
 const index = {
-  areas: indexKeys.map(key => [key, byKey.get(key).name]),
+  areas: indexKeys.map(key => [key, byKey.get(key).name, byKey.get(key).reach]),
   items: indexKeys.flatMap((key, area) =>
     byKey.get(key).items.map(item => {
       const entry = { vnum: item.vnum, name: item.name, kw: item.kw, type: item.type, level: item.level, a: area };
@@ -1355,6 +1641,7 @@ const index = {
       if (item.weapon) entry.weapon = { class: item.weapon.class, dice: item.weapon.dice };
       if (item.magic) entry.magic = { level: item.magic.level, spells: item.magic.spells };
       if (!item.src?.length) entry.p = 0;
+      if (item.unreachable) entry.u = 1;
       return entry;
     })
   )
@@ -1374,4 +1661,58 @@ console.log(`${bootFiles.length} files in area.lst, ${areas.length} areas, ${byK
 console.log(`${all.length} objects, ${placed} placed by a reset, script or the game code, ${all.length - placed} not placed`);
 console.log(`${scriptLoads} script loads, ${(bytes / 1024 / 1024).toFixed(2)} MB written, index ${(Buffer.byteLength(indexText) / 1024 / 1024).toFixed(2)} MB`);
 console.log(Object.entries(byType).sort((a, b) => b[1] - a[1]).map(([type, count]) => `${type} ${count}`).join(', '));
+// Reach, for checking a run against the last one
+const describe = area => {
+  if (area.reach !== 'special') return '';
+  const ways = [...area.ways].map(way => {
+    const note = [...notes].find(([at]) => at.startsWith(`${way}:`) && area.rooms.some(room => at === `${way}:${room.vnum}`));
+
+    return note ? `${way} (${note[1]})` : way;
+  });
+
+  return `: ${ways.join(', ')}`;
+};
+
+for (const reach of ['special', 'none']) {
+  const list = areas.filter(area => area.reach === reach);
+
+  console.log(`\n${list.length} areas ${reach === 'none' ? "players can't reach" : 'reached only by special means'}:`);
+  for (const area of list) {
+    const count = area.objects.length;
+
+    console.log(`  ${area.name} (${area.file}, ${area.rooms.length} rooms, ${count} objects${area.display ? '' : ', Display 0'})${describe(area)}`);
+  }
+}
+const hiddenAreas = areas.filter(area => area.display === 0);
+/** The areas on the way to an area, from the first of its rooms the fill reached. */
+const route = area => {
+  const first = area.rooms.find(room => reached.has(room.vnum));
+  const names = [];
+
+  for (let vnum = first?.vnum; vnum !== undefined; vnum = cameFrom.get(vnum)) {
+    const name = rooms.get(vnum).area.name;
+
+    if (names[0] !== name) names.unshift(name);
+  }
+  const from = cameFrom.get(first?.vnum);
+  const door = from === undefined ? '' : ` (room ${from} ${rooms.get(from).name} to ${first.vnum} ${first.name})`;
+
+  const count = area.rooms.filter(room => reached.has(room.vnum)).length;
+
+  return `${names.join(' > ')}${door}, ${count} of ${area.rooms.length} rooms`;
+};
+
+// ROUTES=1 lists how the fill first got into each area reached by special
+// means, and each area the areas command hides
+if (process.env.ROUTES) {
+  for (const area of areas.filter(other => other.reach === 'special' || (other.reach === 'walk' && other.display === 0))) {
+    console.log(`  ${area.reach}: ${area.name}: ${route(area)}`);
+  }
+}
+
+console.log(`\nDisplay 0 areas by reach: ${['walk', 'special', 'none'].map(reach => `${reach} ${hiddenAreas.filter(area => area.reach === reach).length}`).join(', ')}`);
+console.log(`${all.filter(item => item.unreachable).length} objects placed only in areas players can't reach`);
+const keyless = lockedDoors.filter(door => !door.keyed);
+
+console.log(`${lockedDoors.length} locked pickproof doors, ${keyless.length} with no placed key: ${keyless.map(door => `${door.from}->${door.to} (key ${door.key})`).join(', ')}`);
 if (unknownBits.size) console.log(`Unknown flag names the loader skips: ${[...unknownBits].join('; ')}`);
