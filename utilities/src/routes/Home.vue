@@ -226,7 +226,7 @@ export default {
       if(this.locationType==='manor'){
         this.healingRate = 150;
       }else{
-        this.healingrate = 100;
+        this.healingRate = 100;
       } //end if
     }else{
       this.healingRate = +query.healingRate;
@@ -236,9 +236,9 @@ export default {
     this.henchmenLevel = +query.henchmenLevel||75;
     this.hasPortal = query.hasPortal==='true';
     this.isPublic = query.isPublic==='true';
-    this.doorLock = +query.doorLock;
-    this.doorType = +query.doorType;
-    this.lockLevel = +query.lockLevel;
+    this.doorLock = +query.doorLock||0;
+    this.doorType = +query.doorType||0;
+    this.lockLevel = +query.lockLevel||50;
     this.furnitureItems = +query.furnitureItems||0;
     this.fireplaceItems = +query.fireplaceItems||0;
     this.fountainItems = +query.fountainItems||0;
