@@ -5,12 +5,8 @@ Toast
     i.fa.fa-bar-chart(style='color:#6af;font-size:1.5rem')
     span.vertical-left Adventures Unlimited Utilities
   .header-right
-    .tagline
-      | hello
-      .pl-1.username {{ name }}
-      .pr-2 !
-    .a.icon(href='/')
-      i.fa.fa-sign-out
+    a.icon(href='../', title='Adventures Unlimited docs')
+      i.fa.fa-book
 .content-wrapper
   .main-container
     router-view
@@ -20,8 +16,8 @@ Toast
     .menu-wrapper: .menu
       router-link(to='/')
         .animation-wrapper
-          i.fa.fa-question
-          label Help
+          i.fa.fa-th-large
+          label Dashboard
       router-link(to='/items')
         .animation-wrapper
           i.fa.fa-tasks
@@ -38,6 +34,10 @@ Toast
         .animation-wrapper
           i.fa.fa-map-marker
           label Territories
+      router-link(to='/help')
+        .animation-wrapper
+          i.fa.fa-question
+          label Help
 .footer
   p.
     #[strong AdventuresUnlimited Utilities] was written by
@@ -49,16 +49,10 @@ Toast
     #[a(href='http://www.theoestudio.com') The OE Studio]. All Rights Reserved.
 </template>
 <script>
-import { mapState } from 'pinia';
-import { usersStore } from './stores/';
-
 // Prepare the main template
 export default {
   name: 'app',
-  data: () => ({ expanded: false }),
-  computed: {
-    ...mapState(usersStore, ['name'])
-  }
+  data: () => ({ expanded: false })
 };
 </script>
 <style lang="stylus" scoped>
@@ -143,14 +137,8 @@ nav
     color white
 .header-right
   display flex
-  .tagline
-    color white
-    display flex
-  .username
-    color #a9d5ef
-    margin-left 0.25rem
   .icon
-    width 2rem
+    font-size 1.5rem
     color white
     text-decoration none
     &:hover
