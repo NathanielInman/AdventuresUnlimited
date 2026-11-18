@@ -1,60 +1,36 @@
 # Poisons, Runes and Weapon Effects
 
+ilvl is the weapon's item level. A poison put on with `envenom` uses the poison's own level instead, which drops by 2 with every hit until it wears off.
+
+Runes, poisons and the vampiric and vorpal drains fire on every hit that lands. Holy and unholy fire on 1 hit in 6. Most "chance to" effects also need the target to fail a saving throw.
+
 | name | damage | description |
-| --- | --- | --- | 
-| iron against vulnerable | 125% base |  |
-| silver against vulnerable | 125% base | |
-| wood against vulnerable | 125% base | |
-| poison | n/a | causes poison, -1 str, duration is ilvl / 8 ticks |
-| vinesap | n/a | causes poison, -2 str, duration is ilvl / 8 ticks |
-| deepsbreath | n/a | causes slow, -2 dex, duration is ilvl / 12 ticks |
-| bloodmoss | n/a | causes plague, -3 str, duration is ilvl / 12 ticks |
-| tirimic | n/a | causes blind, -2dex, duration is ilvl / 20 ticks |
-| vampiric | 1 to ilvl/5 | grants half of damage in health |
-| vorpal | 1 to ilvl/7 + 1 mana damage | grants half of mana damage as mana |
-| large flame rune | 3 to ilvl/3+3 | as fire type damage, resistable, chance to fire breath (-4hit +blind) |
-| flame rune | 1 to ilvl/4 | as fire type damage, resistable, chance to fire breath (-4hit +blind) |
-| large frost rune | 3 to ilvl/3+5 | as frost type damage, resistable, chance to chill touch (-1str), chance to damage enemy items |
-| frost rune | 3 to ilvl/6+2 | as frost type damage, resistable, chance to chill touch (-1str), chance to damage enemy items |
-| large shocking rune | 3 to ilvl/3+5 | as shocking type damage, resistable, chance to daze, chance to damage enemy items |
-| shocking rune | 1 to ilvl/5+2 | as shocking type damage, resistable, chance to daze, chance to damage enemy items |
-| large water rune | 5 to ilvl/2+6 | as water type damage, resistable, chance to add 2 to ilvl water damage |
-| water rune | 1 to ilvl/4+1 | as water type damage, resistable, chance to add 2 to ilvl water damage |
-| large air rune | 3 to ilvl/2+3 | as air type damage, resistable, chance to blow enemy out of room |
-| air rune | 1 to ilvl/4+1 | as air type damage, resistable, chance to blow enemy out of room |
-| large earth rune | 3 to ilvl/2+3 | as earth type damage, resistable, chance to knockdown if not flying |
-| earth rune | 1 to ilvl/4+1 | as earth type damage, resistable, chance to knockdown if not flying |
-| large acid rune | 5 to ilvl/2+8 | as acid type damage, resistable, chance to 2 to ilvl acid damage, chance to damage enemy items |
-| acid rune | 1 to ilvl/4+1 | as acid type damage, resistable, chance to 2 to ilvl acid damage, chance to damage enemy items |
-| holy with evil character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable, chance to damage enemy items |
-| holy with good character | 13% chance 1 to ilvl+2 | as energy type damage, chance to damage enemy items |
-| unholy with good character | 13% chance 1 to ilvl/5+2 | as energy type damage, resistable, chance to damage enemy items |
-| unholy with evil character | 13% chance 1 to ilvl+2 | as energy type damage, chance to damage enemy items |
-
-## Poisons, Runes And Weapon Effects (older table)
-
-| name | damage range |
-| --- | --- |
-| poison spell | -1 str and poison effect |
-| vinesap poison | -2 str and poison effect |
-| deepsbreath poison | -2 dex and slow effect |
-| bloodmoss poison | -3 str and plague effect |
-| tirimic poison | -2 dex and blind effect |
-| small flaming rune | from 1 to level/4+1, chance to blind with "fire breath" & -4 hitroll | 
-| large flaming rune | from 3 to level/2+3, chance to blind with "fire breath" & -4 hitroll |
-| small frost rune | from 1 to level/6+2, chance to freeze with "chill touch" & -1 str |
-| large frost rune | from 3 to level/3+5, chance to freeze with "chill touch" & -1 str |
-| small water rune | from 1 to level/4+1, chance to add 2 to level damage as drowning |
-| large water rune | from 1 to level/3+5, chance to add 2 to level damage as drowning |
-| small lightning rune | from 1 to level/5+2, chance to daze |
-| large lightning rune | from 3 to level/2+6, chance to daze | 
-| small air rune | from 1 to level/4+1, chance to knock opponent out of room with cyclone |
-| large air rune | from 3 to level/2+3, chance to knock opponent out of room with cyclone |
-| small earth rune | from 1 to level/4+1, chance to knockdown |
-| large earth rune | from 3 to level/2+3, chance to knockdown |
-| small acid rune | from 1 to level/4+1, chance to add from 2 to level damage as acid |
-| large acid rune | from 5 to level/2+8, chance to add from 2 to level damage as acid |
-| vampiric | from 1 to level/5+1 lifesteal, 20% to lower alignment |
-| vorpal | from 1 to level/7+1 manasteal |
-| holy | 17% to deal from 1 to level+2 against evil |
-| unholy | 17% to deal from 1 to level+2 against good |
+| --- | --- | --- |
+| iron against vulnerable | 125% base | 75% against a target resistant to iron |
+| silver against vulnerable | 125% base | 75% against a target resistant to silver |
+| wood against vulnerable | 125% base | 75% against a target resistant to wood |
+| poison | - | causes poison, -1 str, duration is ilvl/8 ticks |
+| vinesap | - | causes poison, -2 str, duration is ilvl/8 ticks |
+| deepsbreath | - | causes slow, -2 dex, duration is ilvl/12 ticks |
+| bloodmoss | - | causes plague, -3 str, duration is ilvl/12 ticks |
+| tirimic | - | causes blind, -2 dex, duration is ilvl/20 ticks |
+| vampiric | 1 to ilvl/5+1 | heals you for half the damage dealt, 20% chance to shift your alignment one point toward evil |
+| vorpal | 1 to ilvl/7+1 mana | drains the target's mana, you get half of it back (plus 1) and lose 1 hit point |
+| flame rune | 1 to ilvl/4+1 | resistable fire damage, chance to blind with "fire breath" (-4 hitroll) |
+| large flame rune | 3 to ilvl/2+3 | resistable fire damage, chance to blind with "fire breath" (-4 hitroll) |
+| frost rune | 1 to ilvl/6+2 | resistable cold damage, chance of "chill touch" (-1 str), chance to damage enemy items |
+| large frost rune | 3 to ilvl/3+5 | resistable cold damage, chance of "chill touch" (-1 str), chance to damage enemy items |
+| shocking (lightning) rune | 1 to ilvl/5+2 | resistable lightning damage, chance to daze, chance to damage enemy items |
+| large shocking (lightning) rune | 3 to ilvl/3+5 | resistable lightning damage, chance to daze, chance to damage enemy items |
+| water rune | 1 to ilvl/4+1 | resistable drowning damage, chance to add 2 to ilvl drowning damage |
+| large water rune | 5 to ilvl/2+6 | resistable drowning damage, chance to add 2 to ilvl drowning damage |
+| air rune | 1 to ilvl/4+1 | resistable air damage, chance to blow the enemy out of the room with a cyclone |
+| large air rune | 3 to ilvl/2+3 | resistable air damage, chance to blow the enemy out of the room with a cyclone |
+| earth rune | 1 to ilvl/4+1 | resistable earth damage, only against a standing target, chance to knock it down if not flying |
+| large earth rune | 3 to ilvl/2+3 | resistable earth damage, only against a standing target, chance to knock it down if not flying |
+| acid rune | 1 to ilvl/4+1 | resistable acid damage, chance to add 2 to ilvl acid damage, chance to damage enemy items |
+| large acid rune | 5 to ilvl/2+8 | resistable acid damage, chance to add 2 to ilvl acid damage, chance to damage enemy items |
+| holy, devoted by you | 1 to ilvl+2 on 1 hit in 6 (17%) | energy damage against an evil target, chance to damage enemy items |
+| holy, devoted by someone else | 1 to ilvl/5+2 on 1 hit in 6 (17%) | if you're evil, the weapon hits you instead, as resistable energy damage |
+| unholy, devoted by you | 1 to ilvl+2 on 1 hit in 6 (17%) | energy damage against a good target, chance to damage enemy items |
+| unholy, devoted by someone else | 1 to ilvl/5+2 on 1 hit in 6 (17%) | if you're good, the weapon hits you instead, as resistable energy damage |
