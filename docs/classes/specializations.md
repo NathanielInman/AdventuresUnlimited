@@ -3,7 +3,7 @@
 ## Specialization And Class Table
 Specialization points allow a caster to excel further at a spellcasting group. You must master the entire spellgroup before specializing in it.
 
-Mages are the only class that can max a spell group with specialization, all other classes can only put 2 points in a group.
+Mages are the only class that can raise a spell group to its maximum rank. Every other class stops at rank 2 (adept) in a group, or at the group's own maximum when that is lower.
 | level       | mage  | cleric | antipaladin | paladin | charlatan | myrmidon |
 |---|---|---|---|---|---|---|
 | 50          | 2     | 1      |  1           | 1      |   1       |  1        |
@@ -15,7 +15,7 @@ Mages are the only class that can max a spell group with specialization, all oth
 | total       | 10    | 6      |  4           | 4      |   4       |  4        |
 
 ## Specialization Table
-Mages are the only class that can max every spell group with specialization, all other classes can only put 2 points in a group.
+Each group has its own maximum rank. Mages can reach it in every group; other classes stop at 2 (adept).
 
 | group name | specialization points available |
 |---|---|
@@ -35,7 +35,7 @@ Mages are the only class that can max every spell group with specialization, all
 | weather | 5 (arcanist) |
 
 ## Specialization Unlockable Table
-Different classes have the ability to put more specialization points into certain groups.
+Ranks are named by how many specialization points a group holds.
 | name | rank |
 |---|---|
 | novice | 0 |
@@ -70,7 +70,7 @@ Putting specialization points into certain groups may unlock new versions of spe
 | curse of the demon | curse | arcanist | maladictions |
 | spider poison | poison | initiate | maladictions |
 | snake poison | poison | adept | maladictions |
-| urthomu pioson | poison | expert | maladictions |
+| urthomu poison | poison | expert | maladictions |
 | nerassi poison | poison | master | maladictions |
 | artilis poison | poison | arcanist | maladictions |
 | itchy scabs | plague | initiate | maladictions |
