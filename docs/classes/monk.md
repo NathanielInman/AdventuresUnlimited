@@ -29,13 +29,13 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 | spirit invisibility | 13 | 20 | 1 | 1 | 0 | 1 | 0 | invisibility |
 | stone hands | 19 | 35 | 0 | 1 | 2 | 1 | 1 | +8% damage |
 | spirit eyes | 22 | 20 | 2 | 0 | 0 | 2 | 1 | detect magic, invis, hidden (lvl 31) |
-| stone skin | 29 | 20 | 2 | 2 | 0 | 0 | 1 | | ac self buff |
+| stone skin | 29 | 20 | 2 | 2 | 0 | 0 | 1 | ac self buff |
 | levitate | 30 | 30 | 0 | 2 | 0 | 2 | 2 | fly |
 | strength enhance | 37 | 30 | 2 | 3 | 0 | 2 | 0 | giant strength |
 | metabolize | 37 | 30 | 2 | 3 | 2 | 2 | 0 | haste, cure poisons & chill touch |
 | know object | 37 | 20 | 2 | 0 | 0 | 3 | 3 | identify item |
 | iron hands | 39 | 50 | 0 | 2 | 3 | 2 | 0 | +17% damage |
-| celestial path | 45 | 25 | 4 | 3 | 0 | 3 | 3 | limited gate to adjacent areas & norecall |
+| celestial path | 40 | 25 | 4 | 3 | 0 | 3 | 3 | limited gate to adjacent areas & norecall |
 | know speech | 42 | 20 | 2 | 0 | 0 | 3 | 3 | translate |
 | steel hands | 59 | 50 | 2 | 2 | 3 | 2 | 2 | +25% damage |
 | life cloak | 60 | 50 | 3 | 3 | 0 | 3 | 2 | regenerate |
@@ -100,7 +100,7 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
     - For players greater than level 50: 10% * level + 5dam & hitroll
 - Combat 2
   - 90% chance for extra attack #1 if player level 6 or above
-  - 75% chance for extra attack #2 if player level 6 or above
+  - 75% chance for extra attack #2 if player level 16 or above
   - 30% chance to  prevent blind fighting from reducing number of attacks by 30%
   - 40% resistant to each attack above 4+ during PK
   - hitroll and damroll bonus
@@ -149,10 +149,10 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
   - 40 - 100% resistance to losing chi from bash during PK
   
 **Body**
-- Focus 1: 10% * level lower AC
-- Focus 2: 20% * level lower AC
-- Focus 3: 30% * level lower AC
-- Focus 4: 40% * level lower AC
+- Body 1: 10% * level lower AC
+- Body 2: 20% * level lower AC
+- Body 3: 30% * level lower AC
+- Body 4: 40% * level lower AC
 
 **Spirit**
 - Spirit 1
@@ -180,7 +180,7 @@ Monks are the most sophisticated class in the game and take a lot of effort to m
 **CHI 2**: Player Level 11
   - costs 10 trains
   - consumes 10 mana per hit
-  - **usage of pressure point**
+  - **usage of pressure point** (pressure point needs chi 2 or higher, the skill from level 45 and 100% hand to hand)
   - +10% + level / 5 damage
   - +1% to dodge & parry
   - -2% enemy shieldblock, dodge & parry
@@ -226,8 +226,10 @@ Stances take exactly 25 improvements to advance in skill level and have 9 ranks 
 
 Every hit has a possibility to check for improvement:
 ```
-percent chance (0-100): 4 * int + level) / 10
+percent chance (0-100): (4 * int learn rate + level) / 10
 ```
+
+The int learn rate is the same per-practice learn percent that intelligence gives every class (85 at int 25, 90 at int 26 and 95 from int 27 up).
 
 If possibility is unlocked it checks for improvement:
 ```
@@ -323,7 +325,7 @@ One leveling strategy is to work on the worst stances first as monks get increas
 - up to 50% at grandmaster to +15% success on disarm
 
 ### Grandmaster
-- requires mantis, dragon, tiger, swallow & crane grandmastered
+- requires mantis, dragon, tiger, swallow & monkey grandmastered
 - +100% damage
 - (requires level 60) up to 50% at grandmaster to have 60% for 1 extra attack & 50% for 2 extra attacks, and 30% for 3 extra attacks
 - up to 10% increased chance at grandmaster to apply pressure point
@@ -341,7 +343,7 @@ Some techniques may require either fightstyles or other techniques to learn.
 | elbow | 23 | punch (fightstyle), thrust kick (technique) | 200% |
 | shin kick | 27 | kick (fightstyle), stamp (fightstyle) | 200% |
 | back fist | 33 | backfist (fightstyle), elbow (technique) | 200% |
-| palm strike | 39 | backfist (technique) | 200% |
+| palm strike | 39 | back fist (technique) | 200% |
 | sweep | 43 | shin kick (technique) | 225% |
 | spin kick | 61 | spinkick (fightstyle), thrust kick (technique) | 200% |
 | double punch | 67 | punch (fightstyle), backfist (fightstyle) | 200% |
@@ -370,4 +372,4 @@ The absolute key to mastering monk combat is leveraging all the techniques to pe
 | 67 | glowfist | elbow, elbow, double punch | 225% on chi attacks | |
 | 67 | firefist | double punch, double punch | 225% on chi attacks | |
 | 73 | forcekick | thrust kick, thrust kick, triple kick | 225% on chi attacks | |
-| 73 | lightning kick | triple kick, double kick, spin kick | 225% on chi x 3/2 attacks | |
+| 73 | lightning kick | triple kick, double punch, spin kick | 225% on chi x 3/2 attacks | |
