@@ -2,16 +2,18 @@
 
 Notes, tables and calculators for [Adventures Unlimited](https://tharel.net), a fantasy MUD set in the world of Tharel. Connect with any MUD client to `tharel.net` port `5005`.
 
-This is a fan project. It isn't affiliated with the game's staff, and anything here can drift from the live game. If you spot something wrong, [open an issue](https://github.com/NathanielInman/AdventuresUnlimited/issues/new) with what you saw in game.
+The same pages are on [the docs site](https://nathanielinman.github.io/AdventuresUnlimited/) with search, a sidebar and the calculators.
+
+This is a fan project. It isn't affiliated with the game's staff, and anything here can drift from the live game. If you spot something wrong, [open an issue](https://github.com/NathanielInman/AdventuresUnlimited/issues/new?template=data-correction.yml) with what you saw in game.
 
 ## Tools
 
 | Tool | What it does |
 | --- | --- |
-| [Item search](https://nathanielinman.github.io/AdventuresUnlimited/#/items) | Search and filter every item in the game, with links you can share |
-| [Damage strings](https://nathanielinman.github.io/AdventuresUnlimited/#/damageStrings) | The damage range behind each combat message, for monks and everyone else |
-| [Territory](https://nathanielinman.github.io/AdventuresUnlimited/#/territory) | Paste your `territory clan` list and get back the areas nobody has conquered |
-| [Housing](https://nathanielinman.github.io/AdventuresUnlimited/#/home) | Price a house or manor in diamonds and gold before you buy it |
+| [Item search](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/items) | Search and filter every item in the game, with links you can share |
+| [Damage strings](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/damageStrings) | The damage range behind each combat message, for monks and everyone else |
+| [Territory](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/territory) | Paste your `territory clan` list and get back the areas nobody has conquered |
+| [Housing](https://nathanielinman.github.io/AdventuresUnlimited/tools/#/home) | Price a house or manor in diamonds and gold before you buy it |
 
 ## Guides
 
