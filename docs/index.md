@@ -19,7 +19,7 @@ hero:
 
 features:
   - title: Item search
-    details: Search every item by name, type, slot, area and level, weight the stats you care about, and share a link to any item.
+    details: Search every item by name, type, slot, area and level, weight the stats you care about, see where each one turns up, and share a link to any item.
     link: /tools/items
     linkText: Open the item search
   - title: Damage strings

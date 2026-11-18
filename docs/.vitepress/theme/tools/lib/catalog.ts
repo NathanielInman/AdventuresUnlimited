@@ -11,7 +11,7 @@ export const toolCatalog: ToolEntry[] = [
   {
     title: 'Item search',
     link: '/tools/items',
-    summary: 'Filter every item in the area files by type, slot, area and level, weight the stats you care about, and share a link to any item.'
+    summary: 'Filter every object the game loads by type, slot, area and level, weight the stats you care about, see who carries or sells each one, and share a link to any item.'
   },
   {
     title: 'Damage strings',

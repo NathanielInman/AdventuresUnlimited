@@ -1,135 +1,99 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue';
-import { formatNumber, formatSigned } from '../lib/format';
+import { formatNumber, formatRange, formatSigned } from '../lib/format';
 import { MudText, StatReadout } from '../ui';
+import SourceParts from './SourceParts.vue';
 import {
-  conditionOf,
-  flagValue,
-  qualityOf,
-  readFlag,
+  affectLabel,
+  conditionVaries,
+  craftsmanship,
+  diceAverage,
+  medianRange,
   slotLabels,
+  sourceLines,
   weightStats,
   type AreaInfo,
   type ItemView
 } from './model';
 
-// Everything the item data knows about one item, in the order a player
-// reads lore output: what it is, what it gives, what it's made of, where it
-// comes from.
+// Everything the game knows about one item, in the order a player reads
+// identify: what it is, what it gives, what it's made of, where it comes from.
 const props = defineProps<{
   view: ItemView;
   weights: number[];
   score: number;
   area: AreaInfo | null;
   areaHref: string | null;
-  /** Items with the same vnum in other area files */
-  twins: { view: ItemView; href: string }[];
+  /** Link to another item by vnum */
+  itemHref: (vnum: number) => string;
+  /** Link to an area on the areas page, by area key */
+  areaHrefFor: (key: string) => string | null;
 }>();
 
 const item = computed(() => props.view.item);
 
-// Weight is in tenths of a pound; identify prints weight / 10
-const pounds = computed(() => {
-  const tenths = Number(item.value.weight);
-
-  if (!Number.isFinite(tenths)) return null;
-  return Math.floor(tenths / 10);
-});
-
-const cost = computed(() => {
-  const value = Number(item.value.cost);
-
-  return Number.isFinite(value) ? { gold: Math.floor(value / 100), silver: value % 100 } : null;
-});
+const cost = computed(() => ({ gold: Math.floor(item.value.cost / 100), silver: item.value.cost % 100 }));
 
 const bonusRows = computed(() =>
   props.view.affects.map(affect => {
-    const weight = affect.stat >= 0 ? props.weights[affect.stat] : null;
+    const weight = affect.stat >= 0 && affect.amount !== null ? props.weights[affect.stat] : null;
 
-    return { ...affect, weight, points: weight === null ? null : weight * affect.amount };
+    return { ...affect, weight, points: weight === null || affect.amount === null ? null : weight * affect.amount };
   })
 );
 
+/** "6 to 8" when copies roll around the listed value. */
+const rollText = (value: number) => {
+  const range = medianRange(item.value, value);
+
+  if (!range) return null;
+  return range[0] === range[1] ? `always ${range[0]}` : `${range[0]} to ${range[1]}`;
+};
+
 const armorClass = computed(() => {
-  if (props.view.group !== 'armor') return null;
-  return ['pierce', 'bash', 'slash', 'vs magic'].map(kind => ({
-    kind: kind === 'vs magic' ? 'Magic' : kind[0].toUpperCase() + kind.slice(1),
-    value: Number(flagValue(item.value, `${kind}:`) ?? 0)
-  }));
+  const ac = item.value.ac;
+
+  if (!ac) return null;
+  return ['Pierce', 'Bash', 'Slash', 'Magic'].map((kind, index) => ({ kind, value: ac[index], roll: rollText(ac[index]) }));
 });
 
 const weapon = computed(() => {
-  if (props.view.group !== 'weapon') return null;
-  const dice = flagValue(item.value, 'damage') ?? '';
-  const match = /^(\d+)d(\d+)$/.exec(dice);
-  const average = match ? (Number(match[1]) * (Number(match[2]) + 1)) / 2 : null;
-  const specials = (flagValue(item.value, 'special type') ?? '').split(',').filter(Boolean);
+  const data = item.value.weapon;
 
+  if (!data) return null;
+  const [count, sides] = data.dice;
+  const countRange = medianRange(item.value, count);
+  const sidesRange = medianRange(item.value, sides);
+  let varies: string | null = null;
+
+  if (countRange || sidesRange) {
+    const [lowCount, highCount] = countRange ?? [count, count];
+    const [lowSides, highSides] = sidesRange ?? [sides, sides];
+
+    varies = `Copies roll ${formatRange(lowCount, highCount)} dice of ${formatRange(lowSides, highSides)} sides.`;
+  }
   return {
-    weaponClass: flagValue(item.value, 'weapon class') ?? '',
-    dice,
-    average,
-    attack: flagValue(item.value, 'weapon type') ?? '',
-    specials
+    ...data,
+    dice: `${count}d${sides}`,
+    average: diceAverage(data.dice),
+    craft: craftsmanship(item.value),
+    varies
   };
 });
 
-const charges = computed(() => {
-  if (!['wand', 'staff'].includes(props.view.group)) return null;
-  return {
-    left: Number(flagValue(item.value, 'charges left') ?? 0),
-    total: Number(flagValue(item.value, 'charges total') ?? 0)
-  };
-});
+const magic = computed(() => item.value.magic ?? null);
+const charged = computed(() => magic.value?.charges !== undefined);
 
-const containerFlagNames = ['closeable', 'pickproof', 'closed', 'locked', 'put on'];
+const container = computed(() => item.value.container ?? null);
 
-// The generator labelled value 0 "container weight" and value 3 "container
-// capacity", but identify prints value 0 as the capacity and value 3 as the
-// maximum weight.
-const container = computed(() => {
-  if (item.value.itemType !== 'container') return null;
-  const values = item.value.values;
-  const flags = readFlag(values[1]);
+const light = computed(() => item.value.light ?? null);
 
-  return {
-    capacity: Number(values[0]),
-    maxWeight: Number(values[3]),
-    multiplier: Number(values[4]),
-    key: Number(values[2]),
-    flags: containerFlagNames.filter((_, bit) => flags & (1 << bit))
-  };
-});
+const drink = computed(() => item.value.drink ?? null);
 
-// Lights: value 2 is the hours left, -1 (every flag bit) for one that never
-// burns out. The item data decoded that as 67,108,926.
-const lightHours = computed(() => {
-  if (item.value.itemType !== 'light') return null;
-  return readFlag(item.value.values[2]);
-});
-
-const drink = computed(() => {
-  if (item.value.itemType !== 'drink') return null;
-  return {
-    liquid: (flagValue(item.value, 'drink liquid type') ?? '').replace(/'/g, ''),
-    left: Number(item.value.values[1]),
-    total: Number(item.value.values[0])
-  };
-});
-
-const lockpick = computed(() =>
-  item.value.itemType === 'lockpick' ? readFlag(item.value.values[0]) : null
-);
-
-const furniture = computed(() => {
-  if (item.value.itemType !== 'furniture') return null;
-  const { maxPeople, maxWeight, healBonus, manaBonus, flags } = item.value.furniture;
-
-  return { maxPeople, maxWeight, healBonus, manaBonus, flags };
-});
+const furniture = computed(() => item.value.furniture ?? null);
 
 const alignment = computed(() => {
-  const flags = item.value.extraflags;
+  const flags = item.value.flags ?? [];
   const banned = ['good', 'neutral', 'evil'].filter(side => flags.includes(`anti${side}`));
 
   if (!banned.length) return null;
@@ -147,23 +111,16 @@ const flagNotes: Record<string, string> = {
   sellextract: 'destroyed when sold',
   area_only: "can't leave its area",
   nolocate: "can't be found with locate object",
-  nouncurse: "can't be uncursed"
+  nouncurse: "can't be uncursed",
+  no_sell: "can't be sold",
+  noauction: "can't be auctioned"
 };
 
-const otherFlags = computed(() =>
-  item.value.extraflags.filter(flag => !/^anti(good|neutral|evil)$/.test(flag))
-);
+const otherFlags = computed(() => (item.value.flags ?? []).filter(flag => !/^anti(good|neutral|evil)$/.test(flag)));
 
 const notes = computed(() =>
-  item.value.extraflags.filter(flag => flagNotes[flag]).map(flag => flagNotes[flag])
+  (item.value.flags ?? []).filter(flag => flagNotes[flag]).map(flag => flagNotes[flag])
 );
-
-const limit = computed(() => {
-  const allowed = item.value.totalAllowed;
-
-  if (!allowed || allowed === 'unlimited') return null;
-  return Number(allowed);
-});
 
 const areaLevels = computed(() => {
   const levels = props.area?.levels ?? '';
@@ -175,11 +132,17 @@ const areaLevels = computed(() => {
   return '';
 });
 
-const quality = computed(() => qualityOf(item.value.quality));
-const condition = computed(() => conditionOf(item.value));
-const material = computed(() => item.value.submaterial.filter(Boolean).join(' '));
-const materialGroup = computed(() => item.value.material.filter(Boolean).join(' '));
+const condition = computed(() => item.value.cond ?? 'mint');
+const varies = computed(() => conditionVaries(item.value));
 const slots = computed(() => props.view.slots.map(slot => slotLabels[slot] ?? slot));
+const wearText = computed(() => (item.value.wear ?? []).join(' ') || 'none');
+
+// Long room lists stop here
+const roomLimit = 8;
+
+const sources = computed(() =>
+  sourceLines(item.value, { itemHref: props.itemHref, areaHref: props.areaHrefFor })
+);
 
 const copied = ref(false);
 let timer: ReturnType<typeof setTimeout> | undefined;
@@ -236,24 +199,13 @@ onBeforeUnmount(() => clearTimeout(timer));
       </button>
     </header>
 
-    <div v-if="!view.loaded" class="warning" role="note">
-      <strong>Not in the game.</strong>
-      {{ view.areaName }} is in the source tree but not in the game's area list, so this item can't drop.
-      <template v-if="twins.some(twin => twin.view.loaded)">
-        In play, vnum {{ view.vnum }} is
-        <template v-for="twin in twins.filter(t => t.view.loaded)" :key="twin.view.id">
-          <a :href="twin.href"><MudText :text="twin.view.name" /></a> from {{ twin.view.areaName }}.
-        </template>
-      </template>
-    </div>
-
-    <p v-if="item.long" class="long"><MudText :text="item.long" /></p>
+    <p v-if="item.desc" class="long"><MudText :text="item.desc" /></p>
 
     <div class="au-stats readouts">
       <StatReadout label="Score" :value="score" primary />
       <StatReadout label="Level" :value="view.level" />
-      <StatReadout label="Weight" :value="pounds === null ? '?' : pounds" :unit="pounds === null ? undefined : 'lb'" />
-      <StatReadout label="Value" :value="cost ? cost.gold : '?'" :unit="cost ? `gold${cost.silver ? `, ${cost.silver} silver` : ''}` : undefined" />
+      <StatReadout label="Weight" :value="item.lb" unit="lb" />
+      <StatReadout label="Value" :value="formatNumber(cost.gold)" :unit="`gold${cost.silver ? `, ${cost.silver} silver` : ''}`" />
     </div>
 
     <div class="grid">
@@ -272,7 +224,7 @@ onBeforeUnmount(() => clearTimeout(timer));
           <tbody>
             <tr v-for="(row, index) in bonusRows" :key="index">
               <th scope="row">{{ row.label }}</th>
-              <td class="num">{{ formatSigned(row.amount) }}</td>
+              <td class="num">{{ row.amount === null ? row.text : formatSigned(row.amount) }}</td>
               <td class="num muted">{{ row.weight === null ? '-' : `× ${row.weight}` }}</td>
               <td class="num">{{ row.points === null ? '-' : formatNumber(row.points) }}</td>
             </tr>
@@ -289,114 +241,150 @@ onBeforeUnmount(() => clearTimeout(timer));
         </p>
       </section>
 
+      <section v-if="item.aff" class="card">
+        <h3 class="card-title">Affects</h3>
+        <p class="spells">Wearing it gives you</p>
+        <ul class="spell-list">
+          <li v-for="name in item.aff" :key="name">{{ affectLabel(name) }}</li>
+        </ul>
+      </section>
+
       <section v-if="armorClass" class="card">
         <h3 class="card-title">Armor class</h3>
         <dl class="ac">
           <div v-for="entry in armorClass" :key="entry.kind">
             <dt>{{ entry.kind }}</dt>
             <dd>{{ formatNumber(entry.value) }}</dd>
+            <dd v-if="entry.roll" class="roll">{{ entry.roll }}</dd>
           </div>
         </dl>
+        <p v-if="armorClass.some(entry => entry.roll)" class="au-hint">
+          Each copy can roll a point either way, and never below 1.
+        </p>
       </section>
 
       <section v-if="weapon" class="card">
         <h3 class="card-title">Weapon</h3>
         <dl class="facts">
-          <div><dt>Class</dt><dd>{{ weapon.weaponClass }}</dd></div>
+          <div><dt>Class</dt><dd>{{ weapon.class }}</dd></div>
           <div>
             <dt>Damage</dt>
             <dd>
-              {{ weapon.dice }}<template v-if="weapon.average !== null">, {{ formatNumber(weapon.average, weapon.average % 1 ? 1 : 0) }} on average</template>
+              {{ weapon.dice }}, {{ formatNumber(weapon.average, weapon.average % 1 ? 1 : 0) }} on average
             </dd>
           </div>
-          <div><dt>Attack</dt><dd>{{ weapon.attack }}</dd></div>
-          <div v-if="weapon.specials.length">
-            <dt>Special</dt>
-            <dd class="tags"><span v-for="special in weapon.specials" :key="special" class="tag">{{ special }}</span></dd>
+          <div><dt>Attack</dt><dd>{{ weapon.attack }}<template v-if="weapon.dam !== weapon.attack">, {{ weapon.dam }} damage</template></dd></div>
+          <div v-if="weapon.craft"><dt>Craftsmanship</dt><dd>{{ weapon.craft }}</dd></div>
+          <div v-if="weapon.flags">
+            <dt>Flags</dt>
+            <dd class="tags"><span v-for="flag in weapon.flags" :key="flag" class="tag">{{ flag }}</span></dd>
           </div>
         </dl>
+        <p v-if="weapon.varies" class="au-hint">{{ weapon.varies }}</p>
       </section>
 
-      <section v-if="view.spells.length" class="card">
-        <h3 class="card-title">{{ charges ? 'Charges' : 'Spells' }}</h3>
+      <section v-if="magic" class="card">
+        <h3 class="card-title">{{ charged ? 'Charges' : 'Spells' }}</h3>
         <p class="spells">
-          <template v-if="charges">
-            {{ charges.left }} of {{ charges.total }} charges of level {{ view.spellLevel }}
+          <template v-if="charged">
+            {{ magic.charges }} of {{ magic.max }} charges of level {{ magic.level }}
           </template>
-          <template v-else>Level {{ view.spellLevel }} spells of</template>
+          <template v-else>Level {{ magic.level }} spells of</template>
         </p>
         <ul class="spell-list">
-          <li v-for="spell in view.spells" :key="spell">{{ spell }}</li>
+          <li v-for="(spell, index) in magic.spells" :key="index">{{ spell }}</li>
         </ul>
       </section>
 
       <section v-if="container" class="card">
         <h3 class="card-title">Container</h3>
         <dl class="facts">
-          <div><dt>Capacity</dt><dd>{{ formatNumber(container.capacity) }}</dd></div>
-          <div><dt>Maximum weight</dt><dd>{{ formatNumber(container.maxWeight) }}</dd></div>
-          <div v-if="container.multiplier !== 100"><dt>Weight multiplier</dt><dd>{{ container.multiplier }}%</dd></div>
-          <div v-if="container.flags.length"><dt>Flags</dt><dd>{{ container.flags.join(', ') }}</dd></div>
+          <div><dt>Capacity</dt><dd>{{ formatNumber(container.cap) }}</dd></div>
+          <div><dt>Maximum weight</dt><dd>{{ formatNumber(container.maxw) }}</dd></div>
+          <div v-if="container.mult !== undefined"><dt>Weight multiplier</dt><dd>{{ container.mult }}%</dd></div>
+          <div v-if="container.flags"><dt>Flags</dt><dd>{{ container.flags.join(', ') }}</dd></div>
+          <div v-if="container.key"><dt>Key</dt><dd><a :href="itemHref(container.key)">vnum {{ container.key }}</a></dd></div>
         </dl>
       </section>
 
-      <section v-if="lightHours !== null" class="card">
+      <section v-if="light !== null" class="card">
         <h3 class="card-title">Light</h3>
-        <p class="spells">{{ lightHours < 0 ? 'Never burns out' : `Burns for ${formatNumber(lightHours)} hours` }}</p>
+        <p class="spells">{{ light === 'infinite' ? 'Never burns out' : `Burns for ${formatNumber(light)} hours` }}</p>
       </section>
 
       <section v-if="drink" class="card">
-        <h3 class="card-title">Drink</h3>
-        <p class="spells">{{ drink.left }} of {{ drink.total }} drinks of {{ drink.liquid }}</p>
-      </section>
-
-      <section v-if="lockpick !== null" class="card">
-        <h3 class="card-title">Lockpick</h3>
-        <p class="spells">Adds {{ lockpick }}% to pick locks</p>
+        <h3 class="card-title">{{ view.type === 'fountain' ? 'Fountain' : 'Drink' }}</h3>
+        <p class="spells">
+          <template v-if="view.type === 'fountain'">Flows with {{ drink.color }} {{ drink.liquid }}</template>
+          <template v-else-if="drink.left > 0">{{ drink.left }} of {{ drink.max }} drinks of {{ drink.color }} {{ drink.liquid }}</template>
+          <template v-else>Empty, holds {{ drink.max }} drinks</template>
+          <template v-if="drink.poison">, poisoned</template>
+        </p>
       </section>
 
       <section v-if="furniture" class="card">
         <h3 class="card-title">Furniture</h3>
         <dl class="facts">
-          <div><dt>Holds</dt><dd>{{ furniture.maxPeople }} {{ furniture.maxPeople === '1' ? 'person' : 'people' }}</dd></div>
-          <div v-if="furniture.flags.length"><dt>Use</dt><dd>{{ furniture.flags.join(', ') }}</dd></div>
-          <div v-if="Number(furniture.healBonus)"><dt>Healing</dt><dd>{{ furniture.healBonus }}%</dd></div>
-          <div v-if="Number(furniture.manaBonus)"><dt>Mana</dt><dd>{{ furniture.manaBonus }}%</dd></div>
+          <div><dt>Holds</dt><dd>{{ furniture.people }} {{ furniture.people === 1 ? 'person' : 'people' }}</dd></div>
+          <div v-if="furniture.flags"><dt>Use</dt><dd>{{ furniture.flags.map(flag => flag.replace(/_/g, ' ')).join(', ') }}</dd></div>
+          <div v-if="furniture.heal"><dt>Healing</dt><dd>{{ furniture.heal }}%</dd></div>
+          <div v-if="furniture.mana"><dt>Mana</dt><dd>{{ furniture.mana }}%</dd></div>
+        </dl>
+      </section>
+
+      <section v-if="item.info" class="card">
+        <h3 class="card-title">{{ view.typeLabel }}</h3>
+        <dl class="facts">
+          <div v-for="[label, value] in item.info" :key="label"><dt>{{ label }}</dt><dd>{{ value }}</dd></div>
         </dl>
       </section>
 
       <section class="card wide">
         <h3 class="card-title">Details</h3>
         <dl class="facts two">
-          <div><dt>Keywords</dt><dd class="mono">{{ item.names.join(' ') }}</dd></div>
-          <div><dt>Type</dt><dd>{{ view.typeLabel.toLowerCase() }}</dd></div>
-          <div><dt>Worn</dt><dd>{{ slots.length ? slots.join(', ').toLowerCase() : 'not worn' }}</dd></div>
-          <div v-if="material || materialGroup">
+          <div><dt>Keywords</dt><dd class="mono">{{ item.kw }}</dd></div>
+          <div><dt>Type</dt><dd>{{ view.type }}</dd></div>
+          <div><dt>Wear</dt><dd>{{ wearText }}</dd></div>
+          <div v-if="item.sub || item.mat">
             <dt>Material</dt>
-            <dd>{{ material || materialGroup }}<span v-if="material && materialGroup" class="muted"> ({{ materialGroup }})</span></dd>
+            <dd>{{ item.sub || item.mat }}<span v-if="item.sub && item.mat" class="muted"> ({{ item.mat }})</span></dd>
           </div>
-          <div><dt>Quality</dt><dd>{{ quality }} <span class="muted">({{ item.quality }})</span></dd></div>
-          <div v-if="condition"><dt>Condition</dt><dd>{{ condition }} <span class="muted">when new</span></dd></div>
+          <div v-if="item.qual"><dt>Quality</dt><dd>{{ item.qual }}</dd></div>
+          <div>
+            <dt>Condition</dt>
+            <dd>{{ condition }}<span v-if="varies" class="muted"> at best; copies spawn as low as damaged</span></dd>
+          </div>
           <div v-if="alignment"><dt>Alignment</dt><dd>{{ alignment }}</dd></div>
           <div v-if="otherFlags.length">
             <dt>Flags</dt>
             <dd class="tags"><span v-for="flag in otherFlags" :key="flag" class="tag">{{ flag }}</span></dd>
           </div>
           <div v-if="notes.length"><dt>Note</dt><dd>{{ notes.join('; ') }}</dd></div>
-          <div><dt>Random drops</dt><dd>{{ item.rarity }}</dd></div>
-          <div v-if="limit !== null"><dt>Limit</dt><dd>{{ formatNumber(limit) }} in the world at once</dd></div>
+          <div v-if="item.limit !== undefined"><dt>Limit</dt><dd>{{ formatNumber(item.limit) }} in the world at once</dd></div>
+          <div v-if="item.rarity"><dt>Rarity</dt><dd>a reset loads it {{ item.rarity }}% of the time</dd></div>
+          <div v-if="item.val"><dt>Values</dt><dd class="mono">{{ item.val.join(' ') }}</dd></div>
+          <div v-if="item.owner"><dt>Old owner</dt><dd>{{ item.owner }}</dd></div>
         </dl>
       </section>
 
       <section class="card wide">
         <h3 class="card-title">Where to find it</h3>
+        <ul v-if="sources.length" class="sources">
+          <li v-for="(source, index) in sources" :key="index" :class="`source-${source.kind}`">
+            <SourceParts :parts="source.line" />
+            <ul v-if="source.rooms" class="rooms">
+              <li v-for="(room, roomIndex) in source.rooms.slice(0, roomLimit)" :key="roomIndex"><SourceParts :parts="room" /></li>
+              <li v-if="source.rooms.length > roomLimit" class="muted">and {{ source.rooms.length - roomLimit }} more</li>
+            </ul>
+          </li>
+        </ul>
+        <div v-else class="unplaced" role="note">
+          <strong>Not placed in the world.</strong>
+          No reset, shop, script or quest loads it: it's crafted, a quest reward, or given by staff.
+        </div>
         <p class="where">
-          In <a v-if="areaHref" :href="areaHref">{{ view.areaName }}</a><template v-else>{{ view.areaName }}</template><template v-if="areaLevels">, {{ areaLevels }}</template>.
+          Its area file is <a v-if="areaHref" :href="areaHref">{{ view.areaName }}</a><template v-else>{{ view.areaName }}</template><template v-if="areaLevels">, {{ areaLevels }}</template>.
           <template v-if="areaHref">The areas page has directions from Market Square.</template>
-        </p>
-        <p v-if="twins.length && view.loaded" class="au-hint">
-          The same vnum is also in
-          <template v-for="(twin, index) in twins" :key="twin.view.id"><template v-if="index">, </template><a :href="twin.href">{{ twin.view.areaName }}</a></template><template v-if="twins.every(twin => !twin.view.loaded)">, an area file the game doesn't load</template>.
         </p>
       </section>
     </div>
@@ -466,14 +454,36 @@ onBeforeUnmount(() => clearTimeout(timer));
   margin: 0;
 }
 
-.warning {
-  padding: 12px 16px;
+.unplaced {
+  margin-bottom: 10px;
+  padding: 10px 14px;
   border: 1px solid var(--vp-c-warning-2);
   border-left-width: 4px;
   border-radius: 8px;
   background-color: var(--vp-c-warning-soft);
   font-size: 14px;
   line-height: 22px;
+}
+
+.sources.sources {
+  margin: 0 0 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.sources li + li {
+  margin-top: 4px;
+}
+
+.rooms.rooms {
+  margin: 2px 0 0;
+  padding-left: 20px;
+  list-style: circle;
+}
+
+.rooms li + li {
+  margin-top: 0;
 }
 
 .grid {
@@ -569,10 +579,6 @@ onBeforeUnmount(() => clearTimeout(timer));
   line-height: 22px;
 }
 
-.where + .au-hint {
-  margin-top: 8px;
-}
-
 .card .au-hint {
   margin-top: 8px;
 }
@@ -602,6 +608,13 @@ onBeforeUnmount(() => clearTimeout(timer));
   font-weight: 600;
   line-height: 28px;
   font-variant-numeric: tabular-nums;
+}
+
+.ac dd.roll {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--vp-c-text-2);
 }
 
 .facts {

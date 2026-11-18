@@ -32,7 +32,6 @@ import {
   scoreOf,
   slotLabels,
   typeGroups,
-  unloadedAreas,
   viewItem,
   weightStats,
   type ItemView,
@@ -55,7 +54,7 @@ const filterDefaults = {
   other: '',
   from: '',
   level: [0, LEVEL_MAX],
-  unloaded: false,
+  placed: false,
   test: false
 };
 
@@ -199,7 +198,8 @@ const terms = computed(() => state.q.toLowerCase().split(/\s+/).filter(Boolean))
 function passesCommon(view: ItemView): boolean {
   const [low, high] = state.level;
 
-  if (state.from ? view.areaKey !== state.from : !state.unloaded && !view.loaded) return false;
+  if (state.from && view.areaKey !== state.from) return false;
+  if (state.placed && !view.placed) return false;
   if (!state.test && view.testGear) return false;
   if (view.level < low || view.level > high) return false;
   if (state.slot && !view.slots.includes(state.slot)) return false;
@@ -319,12 +319,7 @@ const columns = computed(() =>
 function bonusesOf(view: ItemView): string {
   const parts: string[] = [];
 
-  if (view.group === 'weapon') {
-    const dice = view.item.valueFlags.find(flag => flag.startsWith('damage'));
-    const match = dice && /\((\d+d\d+)\)/.exec(dice);
-
-    if (match) parts.push(match[1]);
-  }
+  if (view.item.weapon) parts.push(`${view.item.weapon.dice[0]}d${view.item.weapon.dice[1]}`);
   if (view.spells.length) parts.push(`L${view.spellLevel ?? '?'} ${view.spells.join(', ')}`);
   const bonuses = bonusSummary(view);
 
@@ -345,7 +340,22 @@ function areaHref(view: ItemView): string | null {
   return info ? withBase(`/world/areas.html#${info.slug}`) : null;
 }
 
+/** An area page link by area key, for the rooms and mobs an item's sources name. */
+function areaHrefForKey(key: string): string | null {
+  const name = detail.value?.view?.item.refs.areas[key] ?? views.value.find(view => view.areaKey === key)?.areaName;
+  const info = name ? areaAnchors.get(areaSlug(name)) : null;
+
+  return info ? withBase(`/world/areas.html#${info.slug}`) : null;
+}
+
 const itemHref = (view: ItemView) => hrefFor({ vnum: view.vnum, area: view.areaKey });
+
+/** A link to any item by vnum; the area joins the link once the item is loaded. */
+function itemHrefForVnum(vnum: number): string {
+  const view = views.value.find(entry => entry.item.vnum === vnum);
+
+  return view ? itemHref(view) : hrefFor({ vnum: String(vnum), area: '' });
+}
 
 // Filter choices, from the data
 const byName = (a: string, b: string) => a.localeCompare(b, 'en');
@@ -360,15 +370,10 @@ function optionsFrom(values: Iterable<string>, anyLabel: string, label = (value:
 const areaOptions = computed(() => {
   const areas = new Map<string, string>();
 
-  for (const view of views.value) {
-    if (state.unloaded || view.loaded || view.areaKey === state.from) areas.set(view.areaKey, view.areaName);
-  }
+  for (const view of views.value) areas.set(view.areaKey, view.areaName);
   const sortedAreas = [...areas].sort((a, b) => byName(areaSortName(a[1]), areaSortName(b[1])));
 
-  return [
-    { label: 'All areas', value: '' },
-    ...sortedAreas.map(([key, name]) => ({ label: unloadedAreas.has(key) ? `${name} (not loaded)` : name, value: key }))
-  ];
+  return [{ label: 'All areas', value: '' }, ...sortedAreas.map(([key, name]) => ({ label: name, value: key }))];
 });
 
 const slotOptions = computed(() => {
@@ -417,13 +422,10 @@ const testGearHint = computed(() => {
   return `${count ? `${formatNumber(count)} items` : 'A few items'} built for immortals or testing: above level 110, more than +100 hit or damage, or weapon dice averaging over 1,000.`;
 });
 
-const unloadedHint = computed(() => {
-  const items = views.value.filter(view => !view.loaded);
-  const areas = new Set(items.map(view => view.areaKey)).size;
+const placedHint = computed(() => {
+  const count = views.value.filter(view => !view.placed).length;
 
-  return items.length
-    ? `${areas} area files in the game's source aren't in its area list, so their ${formatNumber(items.length)} items can't drop.`
-    : "Some area files in the game's source aren't in its area list, so their items can't drop.";
+  return `Hides ${count ? formatNumber(count) : 'the'} items no reset, shop, script or quest loads: crafted things, staff gifts and leftovers.`;
 });
 
 const filtersActive = computed(() =>
@@ -432,17 +434,11 @@ const filtersActive = computed(() =>
   )
 );
 
-// The detail view
+// The detail view: vnums are unique in the game, so the vnum alone finds the
+// item; links also carry the area so the page can fetch that area first
 const detail = computed(() => {
   if (!state.vnum) return null;
-  const matches = views.value.filter(view => view.vnum === state.vnum);
-  const exact = state.area ? matches.find(view => view.areaKey === state.area) : undefined;
-  const view = exact ?? matches.find(view => view.loaded) ?? matches[0] ?? null;
-
-  return {
-    view,
-    twins: matches.filter(match => match !== view).map(twin => ({ view: twin, href: itemHref(twin) }))
-  };
+  return { view: views.value.find(view => view.vnum === state.vnum) ?? null };
 });
 
 const detailScore = computed(() => (detail.value?.view ? scoreOf(detail.value.view, weights.value) : 0));
@@ -506,8 +502,8 @@ const sortLabel = computed(() => {
           <p class="au-hint">Fetching the item data, {{ loadedAreas }} of {{ areaKeys.length }} areas so far.</p>
         </div>
         <p v-else class="empty-text">
-          No item has vnum {{ state.vnum }}<template v-if="state.area"> in {{ state.area }}</template>.
-          The item data only covers items with stat bonuses, plus every staff, wand, pill, potion and scroll.
+          No item has vnum {{ state.vnum }}. The item data covers every object the game loads, so this one
+          is gone from the game or never was in it.
         </p>
       </ToolPanel>
 
@@ -518,7 +514,8 @@ const sortLabel = computed(() => {
           :score="detailScore"
           :area="areaInfo(detail.view)"
           :area-href="areaHref(detail.view)"
-          :twins="detail.twins"
+          :item-href="itemHrefForVnum"
+          :area-href-for="areaHrefForKey"
         />
       </ToolPanel>
     </template>
@@ -584,10 +581,10 @@ const sortLabel = computed(() => {
         </FieldGrid>
 
         <CheckField
-          label="Include areas the game doesn't load"
-          :hint="unloadedHint"
-          :model-value="state.unloaded"
-          @update:model-value="value => setFilter({ unloaded: value })"
+          label="Only items placed in the world"
+          :hint="placedHint"
+          :model-value="state.placed"
+          @update:model-value="value => setFilter({ placed: value })"
         />
         <CheckField
           label="Include immortal and test gear"
@@ -666,7 +663,7 @@ const sortLabel = computed(() => {
           >
             <template #cell-name="{ row }">
               <a class="item-link" :href="itemHref(row.view)" @click="openItem($event, row.view)"><MudText :text="row.view.name" /></a>
-              <span v-if="!row.view.loaded" class="flag">not loaded</span>
+              <span v-if="!row.view.placed" class="flag">not placed</span>
               <span v-if="narrow" class="meta">{{ row.kind }} · {{ row.area }}</span>
               <span v-if="bonusesOf(row.view)" class="meta bonuses">{{ bonusesOf(row.view) }}</span>
             </template>
@@ -870,11 +867,11 @@ const sortLabel = computed(() => {
 .flag {
   margin-left: 8px;
   padding: 0 6px;
-  border: 1px solid var(--vp-c-warning-2);
+  border: 1px dashed var(--vp-c-text-3);
   border-radius: 6px;
   font-size: 12px;
   line-height: 18px;
-  color: var(--vp-c-warning-1);
+  color: var(--vp-c-text-2);
   white-space: nowrap;
 }
 

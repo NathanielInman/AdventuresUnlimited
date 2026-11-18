@@ -1,11 +1,12 @@
-// Turns the raw area-file items (lib/items.ts) into what the item search
-// shows: numbers instead of strings, the stat bonuses the score weighs, the
-// spells on magic items, and the labels the game itself uses. Where the item
-// data disagrees with the MUD source (src/act_info.c identify_object, which
-// prints what lore and identify show), the source wins and the comment says so.
+// Turns the item data (lib/items.ts) into what the item search shows: the
+// stat bonuses the score weighs, the spells on magic items, readable labels
+// and where to find each item. The data already reads the way the game does
+// (scripts/generate-items.mjs decodes it like the loader and identify); the
+// few things here that the data leaves out are worked out from the MUD source
+// and say where they come from.
 
 import { stripMudColors } from '../lib/mud-color';
-import type { Item } from '../lib/items';
+import type { Item, Source } from '../lib/items';
 
 /** The type chips, in the order the old calculator listed them. */
 export const typeGroups = [
@@ -25,16 +26,16 @@ export const magicGroups = ['staff', 'wand', 'pill', 'potion', 'scroll'] as cons
 
 /** The ten stats the score weighs, with the old calculator's defaults. */
 export const weightStats = [
-  { key: 'str', affect: 'strength', label: 'Strength', short: 'str', weight: 7 },
-  { key: 'dex', affect: 'dexterity', label: 'Dexterity', short: 'dex', weight: 7 },
-  { key: 'int', affect: 'intelligence', label: 'Intelligence', short: 'int', weight: 7 },
-  { key: 'wis', affect: 'wisdom', label: 'Wisdom', short: 'wis', weight: 7 },
-  { key: 'con', affect: 'constitution', label: 'Constitution', short: 'con', weight: 7 },
-  { key: 'hit', affect: 'hitroll', label: 'Hitroll', short: 'hit', weight: 4 },
-  { key: 'dam', affect: 'damroll', label: 'Damroll', short: 'dam', weight: 7 },
-  { key: 'hp', affect: 'health', label: 'Hit points', short: 'hp', weight: 1 },
-  { key: 'mana', affect: 'mana', label: 'Mana', short: 'mana', weight: 1 },
-  { key: 'move', affect: 'move', label: 'Moves', short: 'move', weight: 0 }
+  { key: 'str', apply: 'strength', label: 'Strength', short: 'str', weight: 7 },
+  { key: 'dex', apply: 'dexterity', label: 'Dexterity', short: 'dex', weight: 7 },
+  { key: 'int', apply: 'intelligence', label: 'Intelligence', short: 'int', weight: 7 },
+  { key: 'wis', apply: 'wisdom', label: 'Wisdom', short: 'wis', weight: 7 },
+  { key: 'con', apply: 'constitution', label: 'Constitution', short: 'con', weight: 7 },
+  { key: 'hit', apply: 'hitroll', label: 'Hitroll', short: 'hit', weight: 4 },
+  { key: 'dam', apply: 'damroll', label: 'Damroll', short: 'dam', weight: 7 },
+  { key: 'hp', apply: 'hp', label: 'Hit points', short: 'hp', weight: 1 },
+  { key: 'mana', apply: 'mana', label: 'Mana', short: 'mana', weight: 1 },
+  { key: 'move', apply: 'move', label: 'Moves', short: 'move', weight: 0 }
 ] as const;
 
 export type WeightKey = (typeof weightStats)[number]['key'];
@@ -44,31 +45,11 @@ export const defaultWeights = Object.fromEntries(
   weightStats.map(stat => [stat.key, stat.weight])
 ) as Weights;
 
-// Area files in the source tree that the game doesn't boot: they're missing
-// from area/area.lst, which db.c reads at startup. Several reuse vnums of
-// areas that do load (Golem Settlement and The Giants Outpost share 24), and
-// the game exits on a duplicate vnum, so these are old or unfinished copies.
-// Their items can't turn up in play.
-export const unloadedAreas = new Set([
-  'arachnos',
-  'dividedSouls',
-  'dwarvenCatacombs',
-  'dwarvenKingdom',
-  'elementalCanyon',
-  'godQuest',
-  'golemSettlement',
-  'haonDor',
-  'highTower',
-  'plains',
-  'ruinedThalos',
-  'sandsOfSorrow',
-  'theHallOfUhrbak'
-]);
-
-/** Wear slots in the order the game lists them, with readable names. */
+/** Wear slots in the order the game lists them. The keys are the slot filter's URL values. */
 export const slotLabels: Record<string, string> = {
   finger: 'Finger',
   neck: 'Neck',
+  symbol: 'Holy symbol',
   body: 'Body',
   head: 'Head',
   legs: 'Legs',
@@ -80,54 +61,62 @@ export const slotLabels: Record<string, string> = {
   waist: 'Waist',
   wrist: 'Wrist',
   belt: 'Belt',
+  hip: 'Hip',
   wield: 'Wielded',
   hold: 'Held',
   float: 'Floating nearby'
 };
 
-// The generator numbered the saving throws one off: APPLY 21 is savingrod in
-// src/tables.c apply_flags, not savingpara (which is 20, the same as saves),
-// and so on up. All of them change the same saving throw. Hit points are
-// "hp" in the game.
-const affectLabels: Record<string, string> = {
-  health: 'Hit points',
-  hitroll: 'Hitroll',
-  damroll: 'Damroll',
+// Wear flags that aren't slots, and the one whose filter value predates the
+// game's own name for it
+const notSlots = new Set(['take', 'nosac']);
+const slotKey = (flag: string) => (flag === 'wearfloat' ? 'float' : flag);
+
+// Apply names are src/tables.c apply_flags, as identify prints them
+const applyLabels: Record<string, string> = {
+  hp: 'Hit points',
   ac: 'Armor class',
   saves: 'Saves',
-  'saving para': 'Saving rod',
-  'saving rod': 'Saving petrification',
-  'saving petri': 'Saving breath',
-  'saving breath': 'Saving spell',
-  'saving spell': 'Spell affect',
-  'damage resistance': 'Damage resistance',
-  'damage bonus': 'Damage bonus'
+  savingrod: 'Saving rod',
+  savingpetri: 'Saving petrification',
+  savingbreath: 'Saving breath',
+  savingspell: 'Saving spell',
+  spellaffect: 'Spell affect',
+  'dam-resist': 'Damage resistance',
+  'dam-bonus': 'Damage bonus',
+  weapon: 'Weapon'
 };
 
-const affectShort: Record<string, string> = {
+const applyShort: Record<string, string> = {
   ac: 'AC',
   saves: 'saves',
-  'saving para': 'saves',
-  'saving rod': 'saves',
-  'saving petri': 'saves',
-  'saving breath': 'saves',
-  'damage resistance': 'dam resist',
-  'damage bonus': 'dam bonus'
+  savingrod: 'saves',
+  savingpetri: 'saves',
+  savingbreath: 'saves',
+  savingspell: 'saves',
+  'dam-resist': 'dam resist',
+  'dam-bonus': 'dam bonus'
 };
 
-const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
+export const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
+
+/** "detect_invis" -> "detect invis", the way the game's help names affects. */
+export const affectLabel = (name: string) => name.replace(/_/g, ' ');
 
 export interface Affect {
   name: string;
   label: string;
   short: string;
-  amount: number;
+  /** The modifier, or null for a weapon apply, which adds flags instead */
+  amount: number | null;
+  /** The weapon flags a weapon apply adds */
+  text?: string;
   /** Index into weightStats, or -1 when the score ignores it */
   stat: number;
 }
 
 export interface ItemView {
-  /** Unique: area key plus vnum */
+  /** Unique: the vnum */
   id: string;
   item: Item;
   vnum: string;
@@ -141,9 +130,10 @@ export interface ItemView {
   group: TypeGroup;
   type: string;
   typeLabel: string;
-  /** Wear slots, without "takeable" */
+  /** Wear slots, as slotLabels keys */
   slots: string[];
   weaponClass: string;
+  /** Spells, each once */
   spells: string[];
   spellLevel: number | null;
   affects: Affect[];
@@ -151,8 +141,8 @@ export interface ItemView {
   stats: number[];
   /** Lowercase name, keywords and vnum for the text search */
   haystack: string;
-  /** The game boots this item's area */
-  loaded: boolean;
+  /** A reset, shop, script, quest or the game's code puts it in the world */
+  placed: boolean;
   /** Immortal or test gear no player can use: above level 110, over 100 hit or dam, or 1,000+ average weapon damage */
   testGear: boolean;
   /** "Wrist", "Sword", "Haste, bless" */
@@ -162,101 +152,61 @@ export interface ItemView {
 const groupOf = (type: string): TypeGroup =>
   (typeGroups.some(group => group.value === type) ? type : 'other') as TypeGroup;
 
-/** The value inside "label: (value)". */
-export function flagValue(item: Item, prefix: string): string | null {
-  const flag = item.valueFlags.find(text => text.startsWith(prefix));
-  const match = flag && /\((.*)\)\s*$/.exec(flag);
-
-  return match ? match[1] : null;
-}
-
-const cleanSpell = (raw: string) => raw.replace(/^'|'$/g, '').trim();
-const isSpell = (name: string) =>
-  name !== '' && name !== 'reserved' && name !== 'undefined' && !/^-?\d+$/.test(name);
-
-function spellsOf(item: Item): string[] {
-  const spells = item.valueFlags
-    .map(text => /^spell\d?: \((.*)\)\s*$/.exec(text))
-    .filter((match): match is RegExpExecArray => match !== null)
-    .map(match => cleanSpell(match[1]))
-    .filter(isSpell);
-
-  return [...new Set(spells)];
-}
-
-/** Reads an area-file flag field (fread_flag): letters A-Z, a-f are bits, digits a number. */
-export function readFlag(text: string | undefined): number {
-  if (!text) return 0;
-  if (/^-?\d+$/.test(text)) return Number(text);
-  let value = 0;
-
-  for (const char of text) {
-    if (char >= 'A' && char <= 'Z') value += 2 ** (char.charCodeAt(0) - 65);
-    else if (char >= 'a' && char <= 'z') value += 2 ** (26 + char.charCodeAt(0) - 97);
-  }
-  // All 32 bits set is -1 in the game's int
-  return value >= 2 ** 32 - 1 ? -1 : value;
-}
+export const diceAverage = ([count, sides]: [number, number]) => (count * (sides + 1)) / 2;
 
 export function viewItem(item: Item): ItemView {
-  const group = groupOf(item.itemType);
-  const plain = stripMudColors(item.short).trim();
-  const slots = item.wearFlags.filter(flag => flag !== 'takeable');
-  const weaponClass = group === 'weapon' ? (flagValue(item, 'weapon class') ?? '') : '';
-  const spells = (magicGroups as readonly string[]).includes(group) ? spellsOf(item) : [];
-  const spellLevel = spells.length ? Number(flagValue(item, 'level')) : null;
+  const group = groupOf(item.type);
+  const plain = stripMudColors(item.name).trim();
+  const slots = (item.wear ?? []).filter(flag => !notSlots.has(flag)).map(slotKey);
+  const weaponClass = item.weapon?.class ?? '';
+  const spells = item.magic ? [...new Set(item.magic.spells)] : [];
   const stats = weightStats.map(() => 0);
   const affects: Affect[] = [];
 
-  for (const affect of item.affects ?? []) {
-    const amount = Number(affect.amount);
+  for (const [name, modifier] of item.apply ?? []) {
+    const stat = weightStats.findIndex(entry => entry.apply === name);
 
-    // The game skips APPLY_NONE and zero modifiers when it lists affects
-    if (affect.name === 'none' || !amount) continue;
-    const stat = weightStats.findIndex(entry => entry.affect === affect.name);
-
-    if (stat >= 0) stats[stat] += amount;
+    if (typeof modifier === 'number' && stat >= 0) stats[stat] += modifier;
     affects.push({
-      name: affect.name,
-      label: affectLabels[affect.name] ?? capitalize(affect.name),
-      short: stat >= 0 ? weightStats[stat].short : (affectShort[affect.name] ?? affect.name),
-      amount,
+      name,
+      label: applyLabels[name] ?? capitalize(name),
+      short: stat >= 0 ? weightStats[stat].short : (applyShort[name] ?? name),
+      amount: typeof modifier === 'number' ? modifier : null,
+      text: typeof modifier === 'string' ? modifier : undefined,
       stat
     });
   }
-  const level = Number(item.level);
-  const dice = /^(\d+)d(\d+)$/.exec(flagValue(item, 'damage') ?? '');
-  const diceAverage = dice ? (Number(dice[1]) * (Number(dice[2]) + 1)) / 2 : 0;
   const hit = stats[weightStats.findIndex(entry => entry.key === 'hit')];
   const dam = stats[weightStats.findIndex(entry => entry.key === 'dam')];
-  const testGear = level > 110 || Math.abs(hit) > 100 || Math.abs(dam) > 100 || diceAverage > 1000;
-  const typeLabel = capitalize(item.itemType.replace(/_/g, ' '));
+  const average = item.weapon ? diceAverage(item.weapon.dice) : 0;
+  const testGear = item.level > 110 || Math.abs(hit) > 100 || Math.abs(dam) > 100 || average > 1000;
+  const typeLabel = capitalize(item.type.replace(/_/g, ' '));
   let kind = typeLabel;
 
-  if (group === 'weapon') kind = capitalize(weaponClass || 'weapon');
+  if (group === 'weapon') kind = capitalize(weaponClass === 'none' || !weaponClass ? 'weapon' : weaponClass);
   else if (spells.length) kind = typeLabel;
   else if (slots.length) kind = slots.map(slot => slotLabels[slot] ?? capitalize(slot)).join(', ');
 
   return {
-    id: `${item.areaKey}:${item.vnum}`,
+    id: String(item.vnum),
     item,
-    vnum: item.vnum,
+    vnum: String(item.vnum),
     areaKey: item.areaKey,
-    areaName: item.area,
-    name: item.short,
+    areaName: item.areaName,
+    name: item.name,
     plain,
-    level: Number.isFinite(level) ? level : 0,
+    level: item.level,
     group,
-    type: item.itemType,
+    type: item.type,
     typeLabel,
     slots,
     weaponClass,
     spells,
-    spellLevel: Number.isFinite(spellLevel) ? spellLevel : null,
+    spellLevel: item.magic?.level ?? null,
     affects,
     stats,
-    haystack: [plain, ...item.names, item.vnum].join(' ').toLowerCase(),
-    loaded: !unloadedAreas.has(item.areaKey),
+    haystack: [plain, item.kw, item.vnum].join(' ').toLowerCase(),
+    placed: Boolean(item.src?.length),
     testGear,
     kind
   };
@@ -275,7 +225,9 @@ const shortOrder = ['dam', 'hit', 'hp', 'mana', 'move', 'str', 'dex', 'int', 'wi
 export function bonusSummary(view: ItemView): string {
   const totals = new Map<string, number>();
 
-  for (const affect of view.affects) totals.set(affect.short, (totals.get(affect.short) ?? 0) + affect.amount);
+  for (const affect of view.affects) {
+    if (affect.amount !== null) totals.set(affect.short, (totals.get(affect.short) ?? 0) + affect.amount);
+  }
   const rank = (key: string) => {
     const index = shortOrder.indexOf(key);
 
@@ -289,38 +241,237 @@ export function bonusSummary(view: ItemView): string {
     .join(', ');
 }
 
-// Condition: the area file stores a letter, which db2.c load_objects turns
-// into a number (P 100, G 90, A 75, W 50, D 25, B 10, R 0), and identify
-// prints that as mint, excellent, fair, mediocre, damaged or ruined. The item
-// data used made-up words for the letters instead (masterful for P).
-const conditionNames: Record<string, string> = {
-  masterful: 'mint',
-  exceptional: 'excellent',
-  outstanding: 'fair',
-  adequate: 'mediocre',
-  incompetent: 'damaged',
-  atrocious: 'ruined',
-  abysmal: 'ruined',
-  100: 'mint'
-};
+// Copies differ from the area file in two ways, both in src/db.c
+// create_object. Weapons, armor and jewelry of metal or mineral above level 5
+// spawn at a random condition from 25 up to the listed one (shop copies get
+// the listed one). Weapons and armor with no world limit pass each dice and
+// armor value through number_median, which moves a value under 100 up or
+// down by one some of the time and never leaves it below 1.
 
-export function conditionOf(item: Item): string | null {
-  return item.condition === undefined ? null : (conditionNames[String(item.condition)] ?? null);
+/** True when copies spawn in a random condition, worse than the listed one. */
+export function conditionVaries(item: Item): boolean {
+  return (
+    (item.mat === 'metal' || item.mat === 'mineral') &&
+    item.level > 5 &&
+    ['weapon', 'jewelry', 'armor'].includes(item.type)
+  );
 }
 
-/** The quality word identify prints for an item's quality number. */
-export function qualityOf(quality: number): string {
-  if (quality > 95) return 'masterful';
-  if (quality > 90) return 'perfect';
-  if (quality > 80) return 'first rate';
-  if (quality > 70) return 'impeccable';
-  if (quality > 60) return 'fine';
-  if (quality > 50) return 'standard';
-  if (quality > 40) return 'sound';
-  if (quality > 30) return 'imperfect';
-  if (quality > 20) return 'deficient';
-  if (quality > 10) return 'faulty';
-  return 'crude';
+/** The lowest and highest a value can roll on a copy, or null when every copy matches the data. */
+export function medianRange(item: Item, value: number): [number, number] | null {
+  if (item.limit !== undefined || !['weapon', 'armor'].includes(item.type)) return null;
+  const low = Math.max(1, value < 100 ? value - 1 : value);
+  const high = Math.max(1, value < 100 ? value + 1 : value);
+
+  return low === value && high === value ? null : [low, high];
+}
+
+/** identify's craftsmanship word for a weapon (src/act_info.c identify_object); bows and crossbows get none. */
+export function craftsmanship(item: Item): string | null {
+  const weapon = item.weapon;
+
+  if (!weapon || /bow/.test(weapon.class)) return null;
+  const ave = Math.trunc(((1 + weapon.dice[1]) * weapon.dice[0]) / 2);
+  const level = item.level;
+  const at = (times: number, over: number) => Math.trunc((level * times) / over);
+
+  if (ave > at(55, 40)) return 'supreme';
+  if (ave > at(66, 50)) return 'finely crafted';
+  if (ave > at(253, 200)) return 'excellent';
+  if (ave > at(121, 100)) return 'well made';
+  if (ave > at(231, 200)) return 'average';
+  if (ave > at(11, 10)) return 'acceptable';
+  if (ave > at(209, 200)) return 'tolerable';
+  if (ave > at(99, 100)) return 'inferior';
+  if (ave > at(187, 200)) return 'inadequate';
+  if (ave > at(88, 100)) return 'poor';
+  return 'defective';
+}
+
+// Where to find it: one readable line per source
+
+export interface SourceLink {
+  text: string;
+  href?: string;
+}
+
+/** A line of parts, some of them links. */
+export type SourceLine = (string | SourceLink)[];
+
+const triggerText: Record<string, string> = {
+  act: 'reacting to something in the room',
+  bribe: 'when paid',
+  death: 'when it dies',
+  entry: 'when it arrives',
+  fight: 'during a fight',
+  give: 'when given the right thing',
+  greet: 'when someone arrives',
+  grall: 'when someone arrives',
+  kill: 'when attacked',
+  hpcnt: 'when hurt badly enough',
+  random: 'now and then',
+  speech: 'when someone says the right words',
+  exit: 'when someone leaves',
+  exall: 'when someone leaves',
+  delay: 'after a delay',
+  surr: 'when someone surrenders',
+  command: 'on a command',
+  wear: 'when worn',
+  remove: 'when removed',
+  sac: 'when sacrificed',
+  examine: 'when examined',
+  zap: 'when zapped',
+  drop: 'when dropped',
+  use: 'when used',
+  sleep: 'when someone sleeps',
+  rest: 'when someone rests'
+};
+
+/** "spell_create_food" -> "the create food spell", "do_chop" -> "the chop command". */
+export function codeLabel(fn: string): string {
+  if (fn.startsWith('spell_')) return `the ${fn.slice(6).replace(/_/g, ' ')} spell`;
+  if (fn.startsWith('do_')) return `the ${fn.slice(3).replace(/_/g, ' ')} command`;
+  return `the game itself (${fn})`;
+}
+
+export const formatCoins = (cost: number) => {
+  const gold = Math.floor(cost / 100);
+  const silver = cost % 100;
+
+  return `${gold.toLocaleString('en-US')} gold${silver ? `, ${silver} silver` : ''}`;
+};
+
+export interface SourceContext {
+  /** Link to an item by vnum */
+  itemHref: (vnum: number) => string;
+  /** Link to an area on the areas page, by area key */
+  areaHref: (key: string) => string | null;
+}
+
+/** Turns the item's sources into lines, grouped by kind. */
+export interface SourceEntry {
+  kind: Source['k'];
+  line: SourceLine;
+  /** Rooms, when there's more than one */
+  rooms?: SourceLine[];
+}
+
+export function sourceLines(item: Item, context: SourceContext): SourceEntry[] {
+  const { mobs, rooms, objs, areas } = item.refs;
+  const plain = (text: string) => stripMudColors(text).trim();
+  const lines: SourceEntry[] = [];
+
+  const areaPart = (key: string): SourceLine => {
+    const name = areas[key] ?? key;
+    const href = context.areaHref(key);
+
+    return [' (', href ? { text: name, href } : name, ')'];
+  };
+
+  /** One room inline, "in Room (Area)"; more go in a list under the line. */
+  const roomParts = (vnums: number[]): { inline: SourceLine; list?: SourceLine[] } => {
+    const known = vnums.filter(vnum => rooms[vnum]);
+
+    if (!known.length) return { inline: [] };
+    const roomLine = (vnum: number): SourceLine => [plain(rooms[vnum][0]), ...areaPart(rooms[vnum][1])];
+
+    if (known.length === 1) return { inline: [' in ', ...roomLine(known[0])] };
+    const keys = new Set(known.map(vnum => rooms[vnum][1]));
+
+    // Rooms all in one area name it once, on the line
+    if (keys.size === 1) {
+      const [key] = keys;
+      const href = context.areaHref(key);
+
+      return {
+        inline: [` in ${known.length} rooms of `, href ? { text: areas[key] ?? key, href } : (areas[key] ?? key)],
+        list: known.map(vnum => [plain(rooms[vnum][0])])
+      };
+    }
+    return { inline: [` in ${known.length} rooms`], list: known.map(roomLine) };
+  };
+
+  const mobName = (vnum: number) => plain(mobs[vnum]?.[0] ?? `mob ${vnum}`);
+  const limitText = (source: Source) => (source.max !== undefined ? `, at most ${source.max} in the world` : '');
+
+  for (const source of item.src ?? []) {
+    const { inline: where, list: rooms } = roomParts(source.rooms ?? []);
+
+    switch (source.k) {
+      case 'floor':
+        lines.push({ kind: source.k, line: ['On the ground', ...where], rooms });
+        break;
+      case 'carried':
+      case 'worn':
+        lines.push({
+          kind: source.k,
+          line: [
+            `${source.k === 'worn' ? 'Worn' : 'Carried'} by ${mobName(source.mob!)}`,
+            ...where,
+            limitText(source)
+          ],
+          rooms
+        });
+        break;
+      case 'shop':
+        lines.push({
+          kind: source.k,
+          line: [
+            `Sold by ${mobName(source.mob!)}`,
+            ...where,
+            source.price !== undefined ? ` for ${formatCoins(source.price)}` : ''
+          ],
+          rooms
+        });
+        break;
+      case 'container': {
+        const [name] = objs[source.obj!] ?? [`object ${source.obj}`];
+
+        lines.push({
+          kind: source.k,
+          line: [
+            source.n ? `${source.n} at a time inside ` : 'Inside ',
+            { text: plain(name), href: context.itemHref(source.obj!) },
+            limitText(source)
+          ]
+        });
+        break;
+      }
+      case 'script': {
+        const when = triggerText[source.trig ?? ''] ?? '';
+        let who: SourceLine;
+
+        if (source.mob !== undefined) who = [`a script on ${mobName(source.mob)}`, ...where];
+        else if (source.obj !== undefined) {
+          const [name] = objs[source.obj] ?? [`object ${source.obj}`];
+
+          who = ['a script on ', { text: plain(name), href: context.itemHref(source.obj) }];
+        } else who = ['a script', ...where];
+        lines.push({ kind: source.k, line: ['Made by ', ...who, when ? `, ${when}` : ''], rooms });
+        break;
+      }
+      case 'quest':
+        lines.push({
+          kind: source.k,
+          line: [
+            source.qp
+              ? `Bought from a questmaster for ${source.qp.toLocaleString('en-US')} quest points`
+              : 'A quest item: a questmaster sends you to find it'
+          ]
+        });
+        break;
+      case 'random':
+        lines.push({
+          kind: source.k,
+          line: [`A random drop: any mob of level 10 or more can carry it, about one reset in ${source.per!.toLocaleString('en-US')}`]
+        });
+        break;
+      case 'code':
+        lines.push({ kind: source.k, line: [`Made by ${codeLabel(source.fn!)}`] });
+        break;
+    }
+  }
+  return lines;
 }
 
 // Area links: the areas page gives each row an explicit anchor. The page's
